@@ -1,0 +1,33 @@
+{
+  "num_dossiers": 1200,
+  "seed": 20260403,
+  "compliant_rate_target": 0.35,
+  "countries": [
+    "Tanzania",
+    "Burkina Faso",
+    "Uganda",
+    "Botswana"
+  ],
+  "holistic_distribution": {
+    "reject_and_return": 706,
+    "standard_review": 9,
+    "fast_track": 405,
+    "deep_review": 80
+  },
+  "defect_distribution": {
+    "short_section": 113,
+    "clinical_failed": 180,
+    "gmp_certificate_expired": 175,
+    "inn_infringement": 216,
+    "gmp_non_compliant": 242,
+    "gmp_outdated": 162,
+    "clinical_missing": 219,
+    "missing_section": 158
+  },
+  "files": {
+    "dossiers_jsonl": "dossiers.jsonl",
+    "section_labels_csv": "section_labels.csv",
+    "holistic_labels_csv": "holistic_labels.csv",
+    "dossiers_pdf_dir": "dossiers_pdf"
+  }
+}

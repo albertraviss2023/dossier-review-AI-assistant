@@ -1,0 +1,66 @@
+project: regulatory_dossier_policy_copilot
+version: 1.0
+last_updated: 2026-04-02
+
+metrics:
+  section_presence_accuracy:
+    min: 0.97
+    stretch: 0.99
+  section_length_macro_f1:
+    min: 0.93
+    stretch: 0.96
+  section_correctness_macro_f1:
+    min: 0.85
+    stretch: 0.90
+  gmp_evidence_extraction_macro_f1:
+    min: 0.88
+    stretch: 0.92
+  pivotal_trial_outcome_extraction_macro_f1:
+    min: 0.86
+    stretch: 0.90
+  holistic_policy_macro_f1:
+    min: 0.82
+    stretch: 0.88
+  reject_and_return_recall:
+    min: 0.90
+    stretch: 0.94
+  expected_calibration_error:
+    max: 0.08
+    stretch_max: 0.05
+  retrieval_recall_at_10:
+    min: 0.88
+    stretch: 0.93
+  retrieval_ndcg_at_10:
+    min: 0.75
+    stretch: 0.82
+  grounded_claim_rate:
+    min: 0.95
+    stretch: 0.98
+  unsupported_critical_claim_rate:
+    max: 0.03
+    stretch_max: 0.01
+  correct_abstain_rate:
+    min: 0.85
+    stretch: 0.92
+  standard_route_p95_seconds:
+    max: 8
+    stretch_max: 5
+  fallback_route_p95_seconds:
+    max: 30
+    stretch_max: 20
+  soak_test_error_rate_2h:
+    max: 0.01
+    stretch_max: 0.003
+  restricted_data_egress_events:
+    max: 0
+  audit_trace_coverage:
+    min: 1.0
+  fixed_set_rerun_variance:
+    max: 0.02
+    stretch_max: 0.01
+
+release_gates:
+  require_all_unit_tests_pass: true
+  require_all_integration_tests_pass: true
+  require_security_scan_pass: true
+  require_metric_thresholds_pass: true

@@ -1,0 +1,32 @@
+{
+  "created_at_utc": "2026-04-02T22:42:14.974996+00:00",
+  "reviewer_id": "senior_reviewer_sim_v1",
+  "adjudication_profile": "strict",
+  "input_jsonl": "dossier-review-AI-assistant\\synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
+  "num_records": 300,
+  "target_dist": {
+    "fast_track": 0.25,
+    "standard_review": 0.25,
+    "deep_review": 0.25,
+    "reject_and_return": 0.25
+  },
+  "gold_distribution": {
+    "reject_and_return": 122,
+    "fast_track": 93,
+    "deep_review": 79,
+    "standard_review": 6
+  },
+  "model_distribution_in_sample": {
+    "reject_and_return": 118,
+    "fast_track": 147,
+    "deep_review": 27,
+    "standard_review": 8
+  },
+  "override_count": 60,
+  "override_rate": 0.2,
+  "files": {
+    "gold_set_jsonl": "gold_set.jsonl",
+    "gold_holistic_labels_csv": "gold_holistic_labels.csv",
+    "gold_section_labels_csv": "gold_section_labels.csv"
+  }
+}

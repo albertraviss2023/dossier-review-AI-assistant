@@ -1,0 +1,44 @@
+{
+  "created_at_utc": "2026-04-02T22:43:09.380365+00:00",
+  "input_jsonl": "dossier-review-AI-assistant\\synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
+  "seed": 20260403,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "counts": {
+    "total": 1200,
+    "train": 838,
+    "val": 181,
+    "test": 181
+  },
+  "label_distribution": {
+    "train": {
+      "fast_track": 284,
+      "reject_and_return": 494,
+      "deep_review": 56,
+      "standard_review": 4
+    },
+    "val": {
+      "reject_and_return": 107,
+      "fast_track": 61,
+      "standard_review": 1,
+      "deep_review": 12
+    },
+    "test": {
+      "fast_track": 60,
+      "reject_and_return": 105,
+      "deep_review": 12,
+      "standard_review": 4
+    }
+  },
+  "files": {
+    "train_jsonl": "train.jsonl",
+    "val_jsonl": "val.jsonl",
+    "test_jsonl": "test.jsonl",
+    "train_ids": "train_ids.txt",
+    "val_ids": "val_ids.txt",
+    "test_ids": "test_ids.txt"
+  }
+}

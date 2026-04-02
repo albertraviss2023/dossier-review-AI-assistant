@@ -1,0 +1,47 @@
+{
+  "project_name": "dossier-review-AI-assistant",
+  "last_updated": "2026-04-03",
+  "root_path": "c:/Users/alber/OneDrive/Data Engineering/Projects/MlOps/dossier-review-AI-assistant",
+  "docs": {
+    "requirements": "docs/requirements-spec.md",
+    "implementation_plan": "docs/implementation-plan.md",
+    "architecture": "docs/architecture-diagrams.md",
+    "acceptance_criteria": "docs/acceptance-criteria.yaml"
+  },
+  "data": {
+    "raw": {
+      "version": "v1_2026-04-03",
+      "path": "synthetic_data/data/raw/v1_2026-04-03",
+      "num_dossiers": 1200
+    },
+    "gold": {
+      "version": "strict_v1_2026-04-03",
+      "path": "synthetic_data/data/gold/strict_v1_2026-04-03",
+      "num_records": 300,
+      "adjudication_profile": "strict",
+      "override_rate": 0.2
+    },
+    "splits": {
+      "version": "v1_2026-04-03",
+      "path": "synthetic_data/data/splits/v1_2026-04-03",
+      "counts": {
+        "train": 838,
+        "val": 181,
+        "test": 181
+      }
+    }
+  },
+  "model_options": {
+    "primary": "ai/gemma4:4B-Q4_K_XL",
+    "embedding": "ai/qwen3-embedding:4B",
+    "reranker": "ai/qwen3-reranker:0.6B",
+    "optional_function_model": "ai/functiongemma:Q4_K_XL-270M"
+  },
+  "next_steps": [
+    "Start Docker Desktop and validate docker model runtime",
+    "Stand up local inference and retrieval services",
+    "Implement evaluator harness against acceptance criteria",
+    "Implement API plus web UI flow with audit trail",
+    "Enable CI quality and security gates"
+  ]
+}

@@ -1,0 +1,1201 @@
+dossier_id,country,holistic_policy_decision,risk_score,compliant_submission,inn_infringement,gmp_inspection_status,gmp_inspection_recent,gmp_certificate_validity,clinical_data_available,pivotal_trial_outcome,defect_modes
+DOS-B63CA90FE3,Tanzania,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-CE95BD1106,Burkina Faso,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-FCD93952AF,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-FC7ECD5DFC,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-2E963DD254,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C237F47C50,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|inn_infringement
+DOS-288A5A7FBE,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-8DEAA9641B,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-346D774AE3,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-7D01D5D687,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F64D385F44,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-695CA08EB8,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-312E65772F,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7CED088D10,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2442FFE1CD,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-0256D4CB67,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-26614980BA,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-FA3951368A,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1BBBA7306E,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|short_section
+DOS-23239489F5,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-09B2A7C174,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|short_section
+DOS-DBC3E45B62,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|short_section
+DOS-AD26A62EC8,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DFC1C90395,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1198D59DB2,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-17631C05A1,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed
+DOS-BDD3582B95,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-AC8D72FCD5,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|short_section
+DOS-6A0496D48C,Tanzania,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-57CDE5B52B,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-4272169CB8,Uganda,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-5BDF040ADA,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|short_section
+DOS-EF744C4D97,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-0E89CF1C2B,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-25C19F423A,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-9594558696,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-4D458A1AC2,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-94E79D62DF,Botswana,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|short_section
+DOS-E5383FE246,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-169C538D8F,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-74BD1CDD5C,Botswana,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-F9972FD27C,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BB78442068,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-7671739A52,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-34AC4AE12A,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-01A799C4C2,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F695D09D9C,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|missing_section
+DOS-F1460A1126,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8BDF76249A,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|missing_section
+DOS-4369B1822D,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-AF420FD301,Botswana,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement
+DOS-9A1E080324,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-A00AE8B247,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-A9E5EC27EC,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CC076549B6,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-FA4B71CC9E,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-50734FAC2F,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-F4822AE8F0,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-89F37A1A72,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-9437E3F9A5,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-EF95C1C850,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-0B03A892AB,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|missing_section
+DOS-ECE2F4FEFF,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-86EDBEF791,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|inn_infringement
+DOS-1B759A48CE,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E6AF017A37,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|short_section
+DOS-D4D7338A72,Tanzania,reject_and_return,0.92,False,True,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_outdated|inn_infringement
+DOS-0B110478F3,Botswana,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_non_compliant
+DOS-1B6D4C0797,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3BFFBFCDB7,Uganda,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_outdated
+DOS-644AB5BC4D,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-653AC7DE1A,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-85FDF3215D,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-FB375339D2,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-935E46AC27,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|short_section
+DOS-532A7F0852,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B6CE442E5F,Botswana,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-B2795B11C3,Tanzania,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-FC7D7A8D6A,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-60A313F1BB,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-2018074D4E,Botswana,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-0A00D82C8C,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-B2B6CC4389,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-789685610A,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-96E1DECDF3,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-96E1FE7A3A,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-BA853B4FD9,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6CC399825C,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-F22AE98FAF,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-E469CE4099,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-18AB1EE7C7,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CA1821BC3B,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|inn_infringement
+DOS-3356BB9CCB,Uganda,reject_and_return,0.92,False,True,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|inn_infringement
+DOS-E6CD264AE5,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-B006B749C2,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-C4C223CE0B,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5B99AC7AB3,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1CE779332F,Uganda,reject_and_return,0.92,False,True,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|inn_infringement
+DOS-19AA18C02E,Uganda,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|short_section
+DOS-0F979E07B6,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-E4F261D94A,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-7C543C8569,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-13461501E9,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|short_section
+DOS-029AB4012F,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,short_section
+DOS-9586194DA8,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BC1B4C519F,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-E1DCF9692B,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-98C7B72501,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6528AC7F78,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|missing_section
+DOS-8D7FA51B1D,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-3209AAA3AD,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1D2D66FFCC,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-59329FF46D,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|missing_section
+DOS-8FAE377DED,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DF307C6EBC,Botswana,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-865A2CB91C,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-0B11CEF04D,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6AFA9516C9,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CDAD8B492F,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-46B5BDFC8F,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-40FC605476,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|short_section
+DOS-701B03D5DD,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-9F56767DBD,Uganda,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-C2C0141FEE,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-A4D47C0E3E,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FD78D5C4DA,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-82FC72D67D,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-65A3DD4C85,Uganda,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-53ECF4DB90,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement
+DOS-5A659BE48F,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-F3C4E0AB1D,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-887657B730,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5FF630A2A8,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-7843151C6C,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-33458688BE,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-55177C2A59,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-9F934B1DAC,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-D9F7ECF622,Uganda,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement
+DOS-3BA7F776DD,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-CD887D9DE2,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-A2DB0F583F,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-83945554AE,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CB82450085,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9D51FBDB14,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-67F3C3925E,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-A8C5D6B9A7,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-2551EB00A9,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-50FF2C9C3C,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-87CC4BFD72,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1320CD9562,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1A469E8D5B,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5C48C1E6ED,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement|missing_section
+DOS-B72D5ABF74,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-29CAF2AE05,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|missing_section
+DOS-0409B76C95,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-6998D726C2,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-36CBAC4078,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7CE3AF64FB,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-CF3640B8B0,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5F9860DA0D,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6995C96F26,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-A42DF66D77,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-ED77E14302,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-7DF8DF50B7,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-DCE60A27EC,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-167B868959,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|inn_infringement
+DOS-0990BCAFEF,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,inn_infringement
+DOS-6D57A6D86F,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|short_section
+DOS-05880613B3,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|missing_section
+DOS-FB5A68BA00,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-8098770232,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-C3DEA3BB58,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-065C19B96D,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-B8810C7416,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-61592B1ABD,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|missing_section
+DOS-EC67686ABE,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section|short_section
+DOS-881BAAC29D,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-7D345305A2,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-EB12BB876F,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-71CDBBCED6,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-9880C62C34,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_non_compliant
+DOS-62F5A92752,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-9C380F94B2,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-4BE9DBD33D,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-DDFCBD704F,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-6D0988019F,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-D15F68D309,Tanzania,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-313E148514,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A72E9F7EDF,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8D3596C72D,Uganda,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-25B284E650,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CE55DCDA73,Uganda,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section|short_section
+DOS-CB5A2EF4FC,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DD81463549,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-025A8AC27B,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|short_section
+DOS-41B3479541,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-A1AE22E72F,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-6F756B3EEC,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-7C417DA8B2,Uganda,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-F1B9DD7B5A,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-6922D6BB91,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-8EBBEBC866,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-0F44DD138F,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-01941CD4F5,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-68B04605A2,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2625748093,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-46275365A9,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section|short_section
+DOS-A90EB295D3,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,inn_infringement|short_section
+DOS-EAF2BE1CDA,Botswana,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-19172D2F2E,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4CADCBE641,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|short_section
+DOS-90B1DB866C,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|short_section
+DOS-0F5A0ED390,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-281194DCB4,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-1E4D65D42A,Tanzania,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|inn_infringement
+DOS-64324A99CF,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-BDD32F1F3C,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B3C95A43C3,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-C212EA1949,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-3025C5C656,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-AD57BE780F,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2F3ECCA279,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-674649CC7C,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FED343AA8F,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-204F69BB17,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-C7C3728A7E,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-E97E3DF217,Uganda,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement|missing_section
+DOS-9C51438596,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-F3C6C753CE,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4249ADBDE4,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3B2DB14628,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|missing_section
+DOS-FD34F2EF73,Uganda,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-A78A3BFFD8,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2D5339DC80,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-FACC3C6BF6,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-907B7539CC,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-6981807738,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-68927FD338,Uganda,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-5C4EDFBB63,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-1FE24A7A53,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-03A2DB8122,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-415870BC1A,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-19E5296354,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CEBEC48D25,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-3E925F9832,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-FF790B3C79,Uganda,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|inn_infringement
+DOS-E60AAB5C9E,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B2F4D803AE,Botswana,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-D939BBF7EC,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-98508E645B,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-53691E088B,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-30ECAB7F8D,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-A0BF597FDF,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B0AA82B1E2,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-272671BA6C,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BA879EA3AD,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-2098D55987,Burkina Faso,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|missing_section
+DOS-D4E3D8AE57,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-9DD7821D94,Botswana,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-3489C047BB,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-2CC73B8644,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-FFBC8BD587,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D9F45E7F0B,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-DD36EEB869,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-9A5B6035AE,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-1308132045,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-19ED4B869E,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-5239084247,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-515ECFC0ED,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-7D71488173,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-32A288DBEE,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E4E1B6158F,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|inn_infringement
+DOS-144EE9F170,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-ADF9C49799,Tanzania,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-07E3B19DA5,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-588CBBFC34,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-F73CDD7E82,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-2E93B789ED,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-725ADFE436,Botswana,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-DB82C501AF,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-359B94B1FB,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-82DF53D8B8,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|short_section
+DOS-18E0136858,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-0CD4868A83,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3A125D888C,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5A457AF2B8,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-87F19CE1FC,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-33BD824149,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AF9514E595,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,missing_section
+DOS-DA6473A607,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AAF2EF16B0,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-18281553C2,Uganda,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-5D5E6D03DA,Botswana,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-26D7600126,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6D7D0E3771,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-9EA5A6A7D1,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-8D5B2F93CD,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-5797948462,Uganda,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|short_section
+DOS-49E0F4BFA8,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2C86E75349,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-AEDA69EB3F,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E31277E336,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4E16608987,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-5AE9228E6C,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|short_section
+DOS-96A9F77151,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BCEE0C6C75,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-375DBE31AA,Uganda,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-3B255B58DF,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-331E905727,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-DDBFB44789,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-930ED28901,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B11CF0D1CE,Uganda,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-CD0212A2B1,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B228D8F1DA,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2D15211BFF,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-782042CE57,Botswana,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-37000505AD,Tanzania,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|inn_infringement
+DOS-AF4718A709,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-C05E99320B,Uganda,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-3501B3E355,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-D05C9241E6,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E54F356F31,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EA0FC03DD8,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1408E02DDA,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_non_compliant
+DOS-DC8ED65D34,Botswana,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-F20B376221,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-498C24C653,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-126FB729D2,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9B7BC739DD,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-FD99319895,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-FC455A4013,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-9CEDA451D1,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-1DD2CE6623,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-280881B154,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-8832ECA2BA,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-57E3ED45E9,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-E658D01806,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-23F521C5E1,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B257388E62,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-02F258BF89,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-136C2A1E06,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-2440E1F4BD,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-0A1C5E8183,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D186C19E1D,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DAF0ED63A5,Tanzania,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|inn_infringement
+DOS-588A52C5ED,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-F314D1B7CA,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A5DB572D76,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-D4850E20FF,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-219DAE424C,Uganda,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|missing_section
+DOS-024BABC06F,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AF9A54E79A,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FA03B0C331,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-38B8EB3DEA,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-55BD39BE4F,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-D6536A5348,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6FD0104ADF,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-895B3F33B4,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-84280E035C,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-96A4A67B90,Uganda,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-D16CFADB5A,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CCD432EB73,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-710A99C848,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7E736CE06E,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-DD157EC960,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-67A860B22B,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-8F4F7EBAA1,Uganda,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-BF385B8B5D,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-0E485E820D,Burkina Faso,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-9054178A0E,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-4BA40ABC28,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-4545E9BEDC,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_non_compliant
+DOS-41383612E7,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E5C98277B8,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BB2CC3707B,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-B9C953DCC9,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-3E153E6F53,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5D4B560FD7,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|short_section
+DOS-1C0BABC62C,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DD17DDACA2,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-844E63BB94,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1D2F7B8331,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-10D63CA6E2,Tanzania,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-7E7A8D2F75,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E76261229D,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BBF0C5DA62,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-34EA2F853B,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AF2EB78E11,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_outdated
+DOS-6345DB2C6D,Botswana,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-3C79D95824,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1A99E12161,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5D0D81EE9E,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-2E40AB8020,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-5D8C5641ED,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|missing_section
+DOS-90DC7111E0,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-5E5C31E099,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-68CD933DE3,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1E45F64533,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FC89A35C52,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-31C705D6A1,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-F25ECD6636,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-860F6B0E10,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-2C6A5A5CFC,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4D6C26DEDC,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-FD5FF48D64,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-7AE6939602,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-99E962A265,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-90B907FF06,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-4939A35188,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-600C28C329,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-E2E9A6C8CB,Botswana,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-A32DD17AB2,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_outdated
+DOS-7AA637C7BB,Uganda,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-944C32746D,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-E6DCB790FD,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-14A87B6E09,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-EFC0955417,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F6B35CAF5A,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-3D8B5861AB,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-22F9BC14E2,Botswana,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-F526B3CE4E,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed
+DOS-7C30E667F1,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-385219AED1,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4D52E749D1,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|short_section
+DOS-5BD3CC8449,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-463626ADCF,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-255CF4F519,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-357ADA4A5D,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-D9ACB432C4,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-E1A202F819,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-24B9CE14B0,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6C01FAF4D3,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BA7F77E233,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-41776892DB,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A5103F909C,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-260AD9B63B,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-1C9E8F8CBD,Botswana,reject_and_return,0.92,False,False,non_compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-F455C524A1,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-C585F88E75,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1ED6968170,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FBD7C1E5CF,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section|short_section
+DOS-0CDBD2A87A,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-942851D1B8,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-31F88238D3,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AE7B897162,Botswana,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-6645F66ECD,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|short_section
+DOS-63B4132FA5,Uganda,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-AE2C7359A7,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B30BE5DFD8,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|short_section
+DOS-BD27839164,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BA812AE846,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-216A9DB306,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_non_compliant
+DOS-D4717EE7CC,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|short_section
+DOS-373D43FB4A,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-78B85167F8,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-691F126C0F,Uganda,reject_and_return,0.92,False,False,non_compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-90A2B96026,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F22FDEE6C7,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AAC93BBFBB,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-5D8AC82DBD,Botswana,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-2133337B11,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EB37E75F78,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-A4271B1DEE,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1FCD7F8D84,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EF0E00E4A5,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-A6B155FB4A,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5C14D0384F,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-3307251465,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-C88D6F43DB,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-42926C1014,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-7CBFE2230E,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-7263DBB3E7,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|missing_section
+DOS-D803EB300B,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-4971A29498,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C91F71878E,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D7DF58DE37,Botswana,fast_track,0.28,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-7A35A7E6B8,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|missing_section
+DOS-B16ADD3DCE,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-D05F2DB85E,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2FDB8DEBEB,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-601001B58D,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-6B184C4993,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-015EA45BB0,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-8C0B7775F1,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|missing_section
+DOS-2A66368EA4,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-4150CE4AF3,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|inn_infringement
+DOS-1CDD24A3B0,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-55737BE1D9,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|short_section
+DOS-C8B4D2F2DA,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-AF94957204,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-98CBA56788,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EFFE01C2D7,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-F3DE8F1DC5,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-320246E1C2,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-C2FB1A3FA8,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-2B112D9AB4,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-27D14E0920,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated
+DOS-ED01AF1238,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|missing_section
+DOS-5B0590B823,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-34DECE7839,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-10FABECEC0,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-FBD0C07D45,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-4F7A182520,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C9D2024BCA,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-76A42945EC,Uganda,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-855FAD7ED8,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-AC5B68F6A9,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BE8A6B3A65,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-43C9209941,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|missing_section
+DOS-AFB1CE1306,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-DF126A0BBA,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-082C2B0B10,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-54CE82F144,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-12A9D66B54,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-31EB53B760,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D00DC6F3FC,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-363529E694,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|short_section
+DOS-91A12EFD53,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section|short_section
+DOS-63A6648925,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-50E24612DD,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-491BD61F46,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-D210690A03,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-002F1FA6BD,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DC289FB575,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-D032364ED4,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-386BBFF30C,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|short_section
+DOS-839D67343C,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-16460956AC,Botswana,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|inn_infringement
+DOS-5CE1F5E5DF,Uganda,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-60A46333CA,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5FD0FD18A6,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section|short_section
+DOS-E701D4AA13,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-D86E3B6864,Tanzania,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-1762F76075,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-39B66F228D,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-73B5057DB7,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-5546ADF1EB,Tanzania,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-C60A41AFAE,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-92BA9CD319,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-D04FF52BB3,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D58ACB06B7,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,missing_section
+DOS-4CC2853C56,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-050464F122,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-75B032887E,Uganda,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-179E964C6A,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-29EA889BFD,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_non_compliant
+DOS-C3C92E4AAF,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-65C655F376,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-822FD75DE9,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-F9274D99CB,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing
+DOS-F05C4990B6,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-536C9F891C,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|short_section
+DOS-F8A6680EA5,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-C980E20A1B,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement|missing_section
+DOS-F248209FA0,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-83D59CE058,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-9447BB17B9,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-1B84B7EB54,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-58A5EB30BB,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-8550AB9C1E,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-C551AE81C5,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_non_compliant
+DOS-BD49B15CA1,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-29BAC96407,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-6FAD4B8A93,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-0E10473D2D,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-35E3CB24FC,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A3017832A6,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-4BE3CA04C5,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9094CFB5C9,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|inn_infringement
+DOS-2187CBD387,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4EBDBAD60F,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BE7B57BF63,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-3998F6D27E,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4E9EEFDEDC,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_outdated
+DOS-7DD3FEA5FF,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-74C8083561,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CA22070267,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-BF64143A37,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7A936F5AFC,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EBD16F270F,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EE4BAD4B87,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3128536BD2,Botswana,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-32D38D1A64,Uganda,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-66730639A7,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B3FA45F611,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-4492B7B904,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5CEFC31ED5,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DF6B8B3202,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F0B2205C29,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement|short_section
+DOS-6649B9B170,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-EB55CC5724,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-593D090FEE,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|short_section
+DOS-AF6EC68E8F,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-E977836966,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-DF0DFA1340,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-D4118C784F,Tanzania,reject_and_return,0.92,False,True,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-2BB1A32D4D,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A3FD327EA8,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-9D8387E216,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CD2F9E0B46,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C0139D8760,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-56C873D5CB,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3AE0AD0ED6,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-4CB26B92DE,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6108B0E3C2,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_non_compliant
+DOS-473B9E17CB,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-D4494465D7,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-8F8B8C4A8C,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2F6F51233D,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|short_section
+DOS-42B4BBF86E,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|missing_section
+DOS-F1381D9160,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-69A073FED6,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-8F3386644A,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-CA7B4C6A4B,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|missing_section
+DOS-68B7B695F6,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-3ED5EBE0A7,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-A619D65130,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-2A42A092D1,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-4BBA7AD0CD,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-1D4134FB2A,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-4B4A9232BE,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_non_compliant
+DOS-1A578A1FB5,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CF22CD73F2,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-A3990395BC,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8A23703A6F,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-B161BA156D,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DE546DA7BF,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-14B16328AB,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-283721F904,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed
+DOS-8FF1930511,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-9CEA1E29FA,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|short_section
+DOS-D54279D0BB,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5FCE7F3716,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-A7ED8B7258,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-A0FA235272,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E62291F0FA,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-86E5372A26,Botswana,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-2AC8D8F484,Tanzania,reject_and_return,0.92,False,True,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-2201A83F82,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-0A57F9DFD8,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-38330BE295,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DE3C098231,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_outdated
+DOS-E1722B8429,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-03C78012FA,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AE899C7610,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-A2C8021320,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-559AC8FDF8,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_outdated
+DOS-94EA374C69,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement
+DOS-5CDE71088A,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-4E3768BC24,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-D20D2CF3A7,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-C13F31C74B,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-21D7C64B33,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-CA67F5099E,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-3F9B1DC5C8,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5907624747,Uganda,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|inn_infringement
+DOS-0AB577610C,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-32EDCB3AE9,Botswana,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-36A9C54090,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-95DDF7F465,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-4879EE50BA,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-91566FAAFB,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B3D2D4F86E,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-E17CE26345,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-DC66EC67B0,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F5A2613965,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-C1E280EDF4,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-449CA7B273,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-C548B8EE41,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-97704185C1,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-614E4C8891,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-549907A617,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-25ECE00DB7,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D7D543F2CC,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-077A8CD22F,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|short_section
+DOS-13F3DA0CD1,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-847CDEBBAA,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-97553B7CEE,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4461B0B31E,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-10C7D25684,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F3BD5153E8,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-B6E8F5FB2F,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-0CF74526C9,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-08169031A4,Botswana,reject_and_return,0.92,False,True,non_compliant,True,expired,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-D0601A069A,Botswana,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|missing_section
+DOS-0D23CA7CF0,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-0F51A2F275,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-4C167C7EDF,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-26428CE0A1,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1D73A6AD80,Uganda,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|inn_infringement
+DOS-E2B0D29B18,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9FAAA1C710,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-9C69100735,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E0505AA5B2,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-380BFB479E,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-1D93D264AC,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-A9F2E68517,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|inn_infringement
+DOS-DF73795704,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|short_section
+DOS-D04EFD1718,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DF9B0A0ADB,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-5287C4FD4C,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-059998921D,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-BB21D68CAD,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-288C47EA41,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-00814C39AA,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2F2728F996,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FD5408F001,Tanzania,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-A18C75D06D,Uganda,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_non_compliant|short_section
+DOS-F33B4E1216,Burkina Faso,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-E3087CB8F3,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-47423624B3,Botswana,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|inn_infringement
+DOS-0F9742FA8A,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-4CA06F8B3A,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-50C3A9D9A8,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-69E48A82EC,Botswana,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-573C934A58,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-95B4779EFD,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D678E8669B,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-25228149BF,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-701395F679,Uganda,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_outdated|missing_section
+DOS-2363F1A209,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-28AD83961B,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|short_section
+DOS-DFBBECFBE7,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-3F25C87C10,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-726C1D178C,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-E6000BFF13,Uganda,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-E72A6E16AA,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4989045184,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-FC8B98C411,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4846C48516,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-A6470A5B91,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A403C2C125,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|missing_section
+DOS-41A547E3F0,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-B8EF9EA2CB,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-4AFCD505C0,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-70F8470A99,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-2DBBE88701,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9931789AA2,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_outdated
+DOS-8D2EA2F2BC,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_outdated|missing_section
+DOS-BEC4569C9D,Botswana,fast_track,0.28,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-C1B22224E3,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6DE2F35112,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6F22B815C2,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-60ECC184C3,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4E18A55F26,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-33E8CC917F,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,inn_infringement
+DOS-F1D7E5C2F7,Botswana,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|inn_infringement
+DOS-15A83EF21C,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-4A84018C47,Botswana,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|short_section
+DOS-A07A36A34C,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-8ABEB48EE9,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A70707543B,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-97A01123A4,Botswana,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|missing_section
+DOS-114579BCED,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-89024DBCEE,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2D8BD563A3,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-4C505DE640,Burkina Faso,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|missing_section
+DOS-3EE2F49EF0,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7F5DF64C62,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|short_section
+DOS-6B69B558E8,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-4BE47304D4,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|short_section
+DOS-1897081A35,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6790DB3AB3,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FF88FD023D,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-1CC242FAFC,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AB49206224,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-BE8F7C7B01,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|missing_section
+DOS-8576A4B397,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-B2BAFD3DF5,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-258D4D4681,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-02A34B239A,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-374B8399E6,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-4118F9485F,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5A1FC36160,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-D43564B992,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|short_section
+DOS-FE493F75B4,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DFF589382D,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|short_section
+DOS-30E07C0C5F,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-AE0B52DCA6,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-668840116E,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3445F23A6C,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-D763D56D25,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-EE195AFE3F,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|short_section
+DOS-5E9BDC1439,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1D0BAED8C8,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-7B1DD8834D,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-FE7CB408F5,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D62E93B208,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9CBDFFAD14,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BB06FA7855,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-B7289D7579,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-E32ED7EF55,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated
+DOS-DAFD20BB27,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|missing_section
+DOS-ACFA9B0746,Uganda,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-572F8427B2,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-54A01195B4,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-53ABAB86E7,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-F71205A1F2,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-706BC8D829,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-971F4815F3,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-CFA3BF9DCE,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-636BFC34D0,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4AF87BAAEA,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-2F3B8E005F,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BEF251FE7A,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-537C1B2556,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_outdated
+DOS-CFD95C9D0E,Uganda,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|short_section
+DOS-993D5EB6F7,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E3313F3421,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-6DF9F7D198,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,inn_infringement|short_section
+DOS-15C9598CA2,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-090D465FA4,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired
+DOS-DCD5E13E32,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A62E1A14BE,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3748D449BB,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3F84D47318,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement|missing_section
+DOS-C3539D722D,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E1F8D2331F,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|inn_infringement
+DOS-CC252ACBF8,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CE4A8B00E2,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EE9CCD664E,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|short_section
+DOS-69B6DE3795,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-E5A73EFB01,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_outdated
+DOS-6BC9F87E42,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-E6269E353A,Botswana,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|inn_infringement
+DOS-3C559CF8FB,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-0FEF7C737D,Uganda,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-6DDDF9D827,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-228E6B4BFA,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6FD3EC2B64,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-324B19EB56,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section
+DOS-7000974E42,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section|short_section
+DOS-628C121A90,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AA77A39924,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EAB12DFC07,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DEA39C8FA5,Uganda,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-CE38EE94AE,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B424D7D3E8,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-5FEE870AE6,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-283E74FB20,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-3A03F2491A,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-FA40A68DBC,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-B769ED7D5E,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-A2F8DFBEC8,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_outdated
+DOS-F4D556E44C,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-2DFCAD08FC,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E3793E86DF,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-1BC7DAFEA7,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-78E668DE9A,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-7CA339FC99,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-F65CE37BD2,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-D2FA64AFF3,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,expired,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-3107FA72D1,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-DBACECCCF1,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-70D7E9B193,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C0A95FC7E2,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-810A276A19,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CE6097DDBD,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E50B437797,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B2603C2DE7,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|short_section
+DOS-7F2BEB4386,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DCADBE6648,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-901A7FC264,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-9D17C04DC5,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-414A8D06EF,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|short_section
+DOS-CEF0291C79,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-8EFDC824A4,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-D19F450A1C,Uganda,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-222C15690E,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8DD6D305F8,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3C182EC1C1,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|missing_section
+DOS-B3DFE278D0,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-A583CC7F51,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-57BB76B4D7,Botswana,fast_track,0.28,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-42F8E22BC6,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-50ED1F4D93,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|missing_section
+DOS-17ED592D47,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-502A0970F0,Botswana,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-214E3162EF,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-C240BE9172,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2E9C1B5109,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|inn_infringement
+DOS-97CC482A8B,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-773A0ECEAF,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F61BE5584F,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-EE5FC96B87,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3AE28C4C6E,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-32B931CEC1,Botswana,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|inn_infringement
+DOS-143949B3E1,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|missing_section
+DOS-7B1B41CCA2,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-BE54810E4D,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-CA0A19EB4B,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-8591BFBAD2,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-2902455F78,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-B39163E7BA,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6F9AC6F6D8,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section|short_section
+DOS-4841C2377D,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement|missing_section
+DOS-CCB234C182,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2F7A6EC558,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FF63098F31,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-1582C3E372,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-7D807F750D,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_non_compliant
+DOS-12AF17FD9A,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-6E2B46659D,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-8DD0EDE794,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C03426ABDD,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated
+DOS-327C63F3B0,Uganda,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-DCAE146BEC,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-9F5A6A3159,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|inn_infringement
+DOS-4E0D225B2B,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-0BFC96AA86,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-FD078CBC1F,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5F05C7A058,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F83BD4B156,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2C1A15B4B4,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EDC5903847,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-0358A5DE19,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B4431BAB84,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5D7E857736,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DF194EA3C0,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-3A8622CC83,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-2E2EEC4B66,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1686DEB2A2,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing
+DOS-7EB8D8A634,Uganda,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-5C40CC749F,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|missing_section
+DOS-0EF0C9FEDC,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-50720A3292,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|inn_infringement
+DOS-671A1AFF78,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-FEFB639A61,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-1B84394E3A,Tanzania,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section|short_section
+DOS-079FCEBBA4,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BB75CAF1F0,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-B056D1B594,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CA2ABC5DDC,Tanzania,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-20B579CAB3,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-B861C79BC5,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-FAD398E70C,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-10DF82A998,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-72766CC415,Tanzania,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-62A379FE79,Botswana,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-E9C9E7DA6E,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement|missing_section
+DOS-C8AC5B7691,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-6ABD160DA4,Botswana,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-3E9E15AD89,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-457169B2D7,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-B60B4AC22D,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-60490AC246,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-B3364BD138,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6FF3CE9AE3,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-57F2B32298,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-DEFA81F163,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-76D8F8798C,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DB9D189015,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-61A689E230,Botswana,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-0AFD3A3099,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-42E35D8589,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|missing_section
+DOS-A804AE6DCF,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-90ACAECC20,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-264337FBF7,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-87608D2A75,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C794AEBE3A,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-F0859C2D42,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-324ABC9BD7,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-7205F6655D,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-482EE82368,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-7D10D5824E,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AF026D064C,Uganda,reject_and_return,0.92,False,True,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|inn_infringement
+DOS-A72734D514,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-59BD19DAA4,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8635AE9856,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-B5E2BD3452,Uganda,reject_and_return,0.92,False,True,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-3F4683BE37,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B6D0110C70,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-2D7E3A7D0F,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-36A9409FD6,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-0ECCC274CE,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-E4B09B1B8A,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1B9187BE40,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-344395AE38,Uganda,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|short_section
+DOS-0FBB513894,Uganda,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-3A5AC342D9,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1D55829B9B,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A75C4907E3,Tanzania,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-A893F6B36F,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|short_section
+DOS-12E6439505,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-6E6E31F9CC,Uganda,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-3CBC7D9B52,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|missing_section
+DOS-95E60C125E,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-F119CC6376,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-ABB75DE109,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-B1CC521496,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|missing_section
+DOS-EF2417BCA2,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-DEADB41596,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-137421DDA1,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_outdated|missing_section
+DOS-90A9CEEC94,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|missing_section
+DOS-3476B106AB,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A8B36600EA,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9FE6744962,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-66FD547F27,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2FC481EE8E,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-76310A00F3,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EFB26A3703,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-B3ECA974BB,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|missing_section
+DOS-F7AB4DB8F9,Tanzania,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|missing_section
+DOS-9957BA6BEE,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-6485F4CBE5,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-01FB368C4D,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-87633B4CAF,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-94DB93654C,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-9EE90F46EA,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5B03110255,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-BBB70BFC3D,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E7F057D322,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-942C2AE18F,Uganda,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|inn_infringement
+DOS-BDABE1756C,Botswana,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|inn_infringement
+DOS-D5D87A9783,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-C60E103DCC,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-C22AB2BB02,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_outdated
+DOS-AACC5791FB,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|short_section
+DOS-61E72C5C20,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7BF37C3B12,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-A8F288B641,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-45821F8C15,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|missing_section
+DOS-0EA6BF201C,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-3163DC090B,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement
+DOS-5F5F31FC47,Botswana,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_non_compliant
+DOS-329037B011,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-28811227F8,Uganda,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-4F13FB94B1,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-0180B6AACD,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E98BE90CD1,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8EBC58F99E,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A202ED4A2C,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-78BAC1B760,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-831082BC25,Uganda,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|missing_section
+DOS-4198B5B884,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-2E1ABC998A,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5E9066F8D6,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-4FF3F90C13,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-23F1435E3D,Botswana,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-F6BF126BAE,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_outdated
+DOS-80D73F4063,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-FE5C86E964,Burkina Faso,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated|inn_infringement
+DOS-D378622EC0,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-B116753FF9,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-D65A363571,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DEB2AA0789,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-CC2A613B3A,Tanzania,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-90C6C39B40,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E910CDCB24,Uganda,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-B0FDEA409C,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DAF832156E,Uganda,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-98C8D798F1,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-DAB56A1975,Burkina Faso,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-12AA2AD795,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-72C176A2D9,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_outdated
+DOS-9DA55F5CFB,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement|missing_section
+DOS-98AB8D9669,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|missing_section
+DOS-F956A9B369,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|missing_section
+DOS-9135E866AE,Botswana,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement|short_section
+DOS-56507B1A94,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-0E493D51DC,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-03CBBE6FA5,Tanzania,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-258F07E8AE,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8D93108433,Burkina Faso,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-9B73BED291,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A227D2447D,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E1A45089C4,Tanzania,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-A0F625E474,Burkina Faso,standard_review,0.64,False,False,compliant,True,valid,True,endpoint_met,short_section
+DOS-D2DCD89C7E,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|short_section
+DOS-9037728FDF,Botswana,reject_and_return,0.92,False,False,compliant,False,expired,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-627F44B64C,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-04AA58832D,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-33B3E8FF8E,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-1C08C97E12,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-1871458F20,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-D0FD2B6EEB,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-BD55BE9D52,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-060E9CA91B,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-E3485C6E98,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-B06C9870A6,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated|missing_section
+DOS-B2444A312C,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-B3F45A2824,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-FFCDF260E2,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-66055BBA44,Uganda,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement|missing_section
+DOS-5F32C9FF29,Uganda,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|inn_infringement
+DOS-1979A5F592,Burkina Faso,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-B8BD0E88FA,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-00E28E87E7,Uganda,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,inn_infringement
+DOS-EEE91B0D78,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|short_section
+DOS-6E25B37319,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EF77295584,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,inn_infringement
+DOS-30DDBA764A,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7577E66ABA,Uganda,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_not_met,clinical_failed|inn_infringement|short_section
+DOS-109A14CA05,Uganda,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-63CC1D2CF2,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-5206064543,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|inn_infringement
+DOS-24451812AC,Botswana,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-070BBEBD34,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-E2A43F62EB,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|missing_section
+DOS-F06A46D25D,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-CDF1896A52,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1A5715663A,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-0D877147D2,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-61F5A8596D,Uganda,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-CF1EDECFFD,Burkina Faso,reject_and_return,0.92,False,True,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-FF3191236F,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section|short_section
+DOS-108EAF1FD9,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|short_section
+DOS-5D5600AE44,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated|short_section
+DOS-5211508CD2,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-8251F3E7E1,Tanzania,reject_and_return,0.92,False,True,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-03357EB0D7,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-62FD16C946,Uganda,reject_and_return,0.92,False,False,non_compliant,False,expired,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-89EA171F73,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-59D44678E2,Botswana,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-3BE92D7342,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F464ED0DE8,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-A9642F40B3,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9909201373,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement
+DOS-D8CE8D9F54,Uganda,reject_and_return,0.92,False,True,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant|inn_infringement
+DOS-B0DBB77311,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-33667E0483,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-17732A3DC3,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BD85725AFD,Botswana,reject_and_return,0.92,False,False,non_compliant,False,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|gmp_non_compliant
+DOS-AF09A645E1,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-747C61FB14,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-7DAC1B9513,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-2BECB02E8D,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-EAB17BEE9D,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|missing_section|short_section
+DOS-76F5BDD5AC,Botswana,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,gmp_certificate_expired|inn_infringement
+DOS-BC0D1085C0,Botswana,reject_and_return,0.92,False,False,non_compliant,False,expired,False,missing_evidence,clinical_missing|gmp_non_compliant|missing_section
+DOS-0B34353E68,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-65524A6A87,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-118F5E829E,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-DFCEC3805B,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant|missing_section
+DOS-F8A9E02E7B,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|inn_infringement
+DOS-5CFC3C9437,Burkina Faso,deep_review,0.78,False,False,compliant,True,valid,True,endpoint_met,missing_section
+DOS-12D0F17374,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-A1EB3AAF75,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-5AAD8F4438,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-371188B4CB,Botswana,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-FB1BD7DE25,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-BA5648E06A,Uganda,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|short_section
+DOS-31EC73EEB2,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_met,inn_infringement|missing_section|short_section
+DOS-617B7F3031,Tanzania,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired
+DOS-4F19EB03BE,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,False,missing_evidence,clinical_missing|inn_infringement|missing_section
+DOS-E31662B72C,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-4C3B174AD5,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|missing_section
+DOS-6FE5D6B8E3,Botswana,reject_and_return,0.92,False,True,non_compliant,True,valid,False,missing_evidence,clinical_missing|gmp_non_compliant|inn_infringement
+DOS-58523C7371,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9F0C4E8E5B,Botswana,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-59E6A86838,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F8003C7D5E,Tanzania,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed
+DOS-B15F8BE37A,Uganda,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement
+DOS-7055BB9E50,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-B44A4095D9,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-A74E448E72,Uganda,reject_and_return,0.92,False,False,compliant,True,valid,True,endpoint_not_met,clinical_failed|short_section
+DOS-3A1F05E484,Tanzania,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-F030A673FE,Tanzania,reject_and_return,0.92,False,True,compliant,False,valid,True,endpoint_met,gmp_outdated|inn_infringement|missing_section
+DOS-3804FED838,Tanzania,reject_and_return,0.92,False,False,compliant,False,valid,True,endpoint_not_met,clinical_failed|gmp_outdated
+DOS-9AFB1B81E2,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-9E6CC6D3DE,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-CD18C97FA9,Tanzania,reject_and_return,0.92,False,True,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired|inn_infringement
+DOS-922A16506D,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9B59EDC563,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-99E901259A,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-AD2D4DD794,Botswana,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_not_met,clinical_failed|gmp_non_compliant
+DOS-EE8F311484,Uganda,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-D267D7FA91,Botswana,reject_and_return,0.92,False,True,compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_outdated|inn_infringement
+DOS-21930402A8,Botswana,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-C7A0328138,Uganda,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant|missing_section
+DOS-ED39A1710D,Uganda,reject_and_return,0.92,False,True,compliant,True,expired,True,endpoint_not_met,clinical_failed|inn_infringement|missing_section
+DOS-5C7E32D6DA,Botswana,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-729D0E145F,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-27FF5117F3,Tanzania,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-636919585D,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-05C837DB81,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-DA2D944EED,Burkina Faso,deep_review,0.78,False,False,compliant,False,valid,True,endpoint_met,gmp_outdated
+DOS-1A4205BBA9,Uganda,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-EFF3F53F42,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-5C60727740,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing
+DOS-2E708F2FC6,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,expired,True,endpoint_met,gmp_certificate_expired|gmp_non_compliant
+DOS-2A4AF58259,Tanzania,reject_and_return,0.92,False,False,non_compliant,True,valid,True,endpoint_met,gmp_non_compliant
+DOS-CABD3FDE0B,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,valid,False,missing_evidence,clinical_missing|short_section
+DOS-95752F0DB2,Uganda,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-333CE7C483,Uganda,reject_and_return,0.92,False,False,compliant,False,expired,True,endpoint_not_met,clinical_failed|gmp_certificate_expired|gmp_outdated
+DOS-0FF2F64A16,Uganda,reject_and_return,0.92,False,False,non_compliant,True,expired,True,endpoint_met,gmp_non_compliant
+DOS-51A958C8D6,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-CB321F3FCC,Burkina Faso,reject_and_return,0.92,False,False,non_compliant,False,valid,False,missing_evidence,clinical_missing|gmp_non_compliant
+DOS-DA34395B8D,Botswana,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement|missing_section
+DOS-8C8C4CB2ED,Burkina Faso,reject_and_return,0.92,True,False,compliant,True,expired,True,endpoint_met,
+DOS-5F28CFEB3A,Uganda,reject_and_return,0.92,False,False,compliant,True,expired,True,endpoint_met,gmp_certificate_expired
+DOS-492EDEA841,Botswana,reject_and_return,0.92,False,False,compliant,False,valid,False,missing_evidence,clinical_missing|gmp_outdated
+DOS-5DADA7FBD9,Uganda,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-9864AC8445,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-2ED997BF30,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-710167C701,Burkina Faso,reject_and_return,0.92,False,True,compliant,True,valid,True,endpoint_met,inn_infringement
+DOS-1BB77D06F8,Botswana,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-F21FB6CE91,Burkina Faso,fast_track,0.28,True,False,compliant,True,valid,True,endpoint_met,
+DOS-1835509351,Tanzania,reject_and_return,0.92,False,False,non_compliant,False,valid,True,endpoint_met,gmp_non_compliant
+DOS-CFB60C9B4C,Burkina Faso,reject_and_return,0.92,False,False,compliant,True,expired,False,missing_evidence,clinical_missing|gmp_certificate_expired

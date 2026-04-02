@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/dossier-review-AI-assistant/dossier.schema.json",
+  "title": "Synthetic Regulatory Dossier",
+  "type": "object",
+  "required": [
+    "dossier_id",
+    "country",
+    "submission_date",
+    "product",
+    "organization",
+    "policy_signals",
+    "sections",
+    "labels",
+    "provenance"
+  ],
+  "properties": {
+    "dossier_id": { "type": "string" },
+    "country": {
+      "type": "string",
+      "enum": ["Tanzania", "Burkina Faso", "Uganda", "Botswana"]
+    },
+    "submission_date": { "type": "string", "format": "date" },
+    "product": {
+      "type": "object",
+      "required": ["product_name", "inn_name", "atc_code", "dosage_form", "strength"],
+      "properties": {
+        "product_name": { "type": "string" },
+        "inn_name": { "type": "string" },
+        "atc_code": { "type": "string" },
+        "dosage_form": { "type": "string" },
+        "strength": { "type": "string" }
+      }
+    },
+    "organization": {
+      "type": "object",
+      "required": ["applicant", "manufacturer", "facility_country"],
+      "properties": {
+        "applicant": { "type": "string" },
+        "manufacturer": { "type": "string" },
+        "facility_country": { "type": "string" }
+      }
+    },
+    "policy_signals": {
+      "type": "object",
+      "required": [
+        "inn_infringement",
+        "gmp_inspection_status",
+        "gmp_inspection_recent",
+        "gmp_certificate_validity",
+        "clinical_data_available",
+        "pivotal_trial_outcome"
+      ],
+      "properties": {
+        "inn_infringement": { "type": "boolean" },
+        "gmp_inspection_status": { "type": "string" },
+        "gmp_inspection_recent": { "type": "boolean" },
+        "gmp_certificate_validity": { "type": "string", "enum": ["valid", "expired"] },
+        "clinical_data_available": { "type": "boolean" },
+        "pivotal_trial_outcome": { "type": "string" }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "section_id",
+          "module",
+          "title",
+          "text",
+          "critical",
+          "constraints",
+          "labels",
+          "metrics"
+        ],
+        "properties": {
+          "section_id": { "type": "string" },
+          "module": { "type": "string" },
+          "title": { "type": "string" },
+          "text": { "type": "string" },
+          "critical": { "type": "boolean" },
+          "constraints": {
+            "type": "object",
+            "required": ["min_chars", "max_chars"],
+            "properties": {
+              "min_chars": { "type": "integer", "minimum": 0 },
+              "max_chars": { "type": "integer", "minimum": 0 }
+            }
+          },
+          "labels": {
+            "type": "object",
+            "required": ["presence", "length_status", "correctness", "error_tags"],
+            "properties": {
+              "presence": { "type": "string", "enum": ["present", "missing"] },
+              "length_status": {
+                "type": "string",
+                "enum": ["length_ok", "too_short", "too_long", "missing"]
+              },
+              "correctness": { "type": "string", "enum": ["correct", "partial", "incorrect"] },
+              "error_tags": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "required": ["char_count"],
+            "properties": {
+              "char_count": { "type": "integer", "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "labels": {
+      "type": "object",
+      "required": ["holistic_policy_decision", "risk_score", "compliant_submission"],
+      "properties": {
+        "holistic_policy_decision": {
+          "type": "string",
+          "enum": ["fast_track", "standard_review", "deep_review", "reject_and_return"]
+        },
+        "risk_score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "compliant_submission": { "type": "boolean" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["synthetic", "defect_modes"],
+      "properties": {
+        "synthetic": { "type": "boolean" },
+        "defect_modes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
