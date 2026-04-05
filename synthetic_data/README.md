@@ -85,6 +85,24 @@ python dossier-review-AI-assistant/synthetic_data/create_splits.py \
   --test-ratio 0.15
 ```
 
+## Class rebalance augmentation (holistic labels)
+Use this when `standard_review` and `deep_review` are underrepresented:
+```powershell
+python dossier-review-AI-assistant/synthetic_data/rebalance_holistic_classes.py \
+  --input-jsonl dossier-review-AI-assistant/synthetic_data/data/raw/v1_2026-04-03/dossiers.jsonl \
+  --output-dir dossier-review-AI-assistant/synthetic_data/data/raw/balanced_v1_2026-04-05 \
+  --min-class-count 180 \
+  --seed 20260405
+```
+
+Then regenerate splits on the balanced dataset:
+```powershell
+python dossier-review-AI-assistant/synthetic_data/create_splits.py \
+  --input-jsonl dossier-review-AI-assistant/synthetic_data/data/raw/balanced_v1_2026-04-05/dossiers.jsonl \
+  --output-dir dossier-review-AI-assistant/synthetic_data/data/splits/balanced_v1_2026-04-05 \
+  --seed 20260405
+```
+
 ## Recommended strategy: PDF-first with canonical labels
 Because real submissions are PDF-based, this generator is PDF-first by default.
 Use a dual representation approach:

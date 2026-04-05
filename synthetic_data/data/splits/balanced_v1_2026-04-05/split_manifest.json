@@ -1,0 +1,44 @@
+{
+  "created_at_utc": "2026-04-05T07:07:34.992749+00:00",
+  "input_jsonl": "synthetic_data\\data\\raw\\balanced_v1_2026-04-05\\dossiers.jsonl",
+  "seed": 20260405,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "counts": {
+    "total": 1471,
+    "train": 1030,
+    "val": 222,
+    "test": 219
+  },
+  "label_distribution": {
+    "train": {
+      "reject_and_return": 494,
+      "standard_review": 126,
+      "deep_review": 126,
+      "fast_track": 284
+    },
+    "val": {
+      "reject_and_return": 107,
+      "fast_track": 61,
+      "standard_review": 27,
+      "deep_review": 27
+    },
+    "test": {
+      "standard_review": 27,
+      "reject_and_return": 105,
+      "fast_track": 60,
+      "deep_review": 27
+    }
+  },
+  "files": {
+    "train_jsonl": "train.jsonl",
+    "val_jsonl": "val.jsonl",
+    "test_jsonl": "test.jsonl",
+    "train_ids": "train_ids.txt",
+    "val_ids": "val_ids.txt",
+    "test_ids": "test_ids.txt"
+  }
+}

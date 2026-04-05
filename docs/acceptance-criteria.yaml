@@ -1,6 +1,6 @@
 project: regulatory_dossier_policy_copilot
-version: 1.0
-last_updated: 2026-04-02
+version: 1.1
+last_updated: 2026-04-05
 
 metrics:
   section_presence_accuracy:
@@ -51,10 +51,23 @@ metrics:
   soak_test_error_rate_2h:
     max: 0.01
     stretch_max: 0.003
+  zenbook_standard_route_peak_rss_gb:
+    max: 20
+    stretch_max: 16
+  zenbook_fallback_route_peak_rss_gb:
+    max: 26
+    stretch_max: 22
+  oom_kill_events_2h:
+    max: 0
   restricted_data_egress_events:
     max: 0
   audit_trace_coverage:
     min: 1.0
+  lineage_tag_coverage:
+    min: 1.0
+  retention_policy_compliance_rate:
+    min: 0.99
+    stretch: 1.0
   fixed_set_rerun_variance:
     max: 0.02
     stretch_max: 0.01

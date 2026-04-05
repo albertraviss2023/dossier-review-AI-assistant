@@ -68,11 +68,14 @@ Exit criteria:
 ### Day 6: Security, Observability, and CI/CD Gates
 - Enforce RBAC and signed audit logs.
 - Add restricted-workload egress controls.
+- Enforce data governance controls (classification tags, lineage fields, retention jobs).
+- Add memory governance checks for 32 GB RAM hosts (peak RSS capture, OOM prevention guardrails).
 - Add Prometheus/Grafana dashboards and alert rules.
 - Add CI gates for quality thresholds and security checks.
 
 Exit criteria:
 - Release pipeline blocks failing metrics/tests.
+- Governance and RAM safety thresholds are evaluated in CI release gates.
 - Security checks pass in CI.
 
 ### Day 7: UAT, Hardening, and Release Candidate
@@ -91,6 +94,8 @@ Exit criteria:
 - Prefer quantized route by default.
 - Use streamed route only under explicit complexity/uncertainty triggers.
 - Cache retrieval and embeddings to reduce repeated compute.
+- Maintain a 32 GB RAM operating budget with explicit route-level memory envelopes.
+- Throttle or abstain under memory pressure instead of overcommitting RAM.
 
 ## 5. Risk Register and Mitigations
 - Risk: Hallucinated unsupported outputs.

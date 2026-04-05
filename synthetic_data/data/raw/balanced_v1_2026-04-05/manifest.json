@@ -1,0 +1,38 @@
+{
+  "created_at_utc": "2026-04-05T07:06:57.094517+00:00",
+  "input_jsonl": "synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
+  "num_dossiers": 1471,
+  "seed": 20260405,
+  "min_class_count": 180,
+  "original_distribution": {
+    "reject_and_return": 706,
+    "standard_review": 9,
+    "fast_track": 405,
+    "deep_review": 80
+  },
+  "holistic_distribution": {
+    "reject_and_return": 706,
+    "standard_review": 180,
+    "fast_track": 405,
+    "deep_review": 180
+  },
+  "augmentation_counts": {
+    "standard_review": 171,
+    "deep_review": 100
+  },
+  "defect_distribution": {
+    "short_section": 300,
+    "clinical_failed": 180,
+    "gmp_certificate_expired": 175,
+    "inn_infringement": 216,
+    "gmp_non_compliant": 242,
+    "gmp_outdated": 240,
+    "clinical_missing": 219,
+    "missing_section": 191
+  },
+  "files": {
+    "dossiers_jsonl": "dossiers.jsonl",
+    "section_labels_csv": "section_labels.csv",
+    "holistic_labels_csv": "holistic_labels.csv"
+  }
+}

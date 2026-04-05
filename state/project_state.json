@@ -1,6 +1,8 @@
 {
   "project_name": "dossier-review-AI-assistant",
-  "last_updated": "2026-04-03",
+  "last_updated": "2026-04-05",
+  "active_development_host": "ASUS laptop (current)",
+  "target_validation_host": "ASUS Zenbook 32GB RAM",
   "root_path": "c:/Users/alber/OneDrive/Data Engineering/Projects/MlOps/dossier-review-AI-assistant",
   "docs": {
     "requirements": "docs/requirements-spec.md",
@@ -10,9 +12,9 @@
   },
   "data": {
     "raw": {
-      "version": "v1_2026-04-03",
-      "path": "synthetic_data/data/raw/v1_2026-04-03",
-      "num_dossiers": 1200
+      "version": "balanced_v1_2026-04-05",
+      "path": "synthetic_data/data/raw/balanced_v1_2026-04-05",
+      "num_dossiers": 1471
     },
     "gold": {
       "version": "strict_v1_2026-04-03",
@@ -22,26 +24,28 @@
       "override_rate": 0.2
     },
     "splits": {
-      "version": "v1_2026-04-03",
-      "path": "synthetic_data/data/splits/v1_2026-04-03",
+      "version": "balanced_v1_2026-04-05",
+      "path": "synthetic_data/data/splits/balanced_v1_2026-04-05",
       "counts": {
-        "train": 838,
-        "val": 181,
-        "test": 181
+        "train": 1030,
+        "val": 222,
+        "test": 219
       }
     }
   },
   "model_options": {
     "primary": "ai/gemma4:4B-Q4_K_XL",
-    "embedding": "ai/qwen3-embedding:4B",
-    "reranker": "ai/qwen3-reranker:0.6B",
-    "optional_function_model": "ai/functiongemma:Q4_K_XL-270M"
+    "embedding": "ai/gemma4:4B-Q4_K_XL",
+    "reranker": "ai/gemma4:4B-Q4_K_XL",
+    "optional_function_model": "ai/gemma4:4B-Q4_K_XL",
+    "policy": "gemma4_only"
   },
   "next_steps": [
-    "Start Docker Desktop and validate docker model runtime",
-    "Stand up local inference and retrieval services",
-    "Implement evaluator harness against acceptance criteria",
-    "Implement API plus web UI flow with audit trail",
-    "Enable CI quality and security gates"
+    "On ASUS current laptop: finalize local Docker model runtime check in non-mock mode",
+    "On Zenbook 32GB: run memory-governance validation for standard/fallback peak RSS and OOM=0",
+    "Swap lexical-only retrieval with hybrid pgvector plus BM25 retrieval and reranking",
+    "Replace weak-label policy baseline with trained section and holistic models",
+    "Run end-to-end CI quality and security gates on GitHub Actions",
+    "Add observability dashboards and signed audit trail hardening"
   ]
 }

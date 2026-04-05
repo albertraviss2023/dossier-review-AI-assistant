@@ -1,0 +1,162 @@
+{
+  "summary": {
+    "records_evaluated": 40,
+    "all_metrics_passed": false,
+    "release_gate_status": {
+      "require_metric_thresholds_pass": false,
+      "overall_passed": false
+    }
+  },
+  "metrics": {
+    "section_presence_accuracy": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.97,
+        "stretch": 0.99
+      },
+      "passed": true
+    },
+    "section_length_macro_f1": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.93,
+        "stretch": 0.96
+      },
+      "passed": true
+    },
+    "section_correctness_macro_f1": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.85,
+        "stretch": 0.9
+      },
+      "passed": true
+    },
+    "gmp_evidence_extraction_macro_f1": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.88,
+        "stretch": 0.92
+      },
+      "passed": true
+    },
+    "pivotal_trial_outcome_extraction_macro_f1": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.86,
+        "stretch": 0.9
+      },
+      "passed": true
+    },
+    "holistic_policy_macro_f1": {
+      "value": 0.642857,
+      "threshold": {
+        "min": 0.82,
+        "stretch": 0.88
+      },
+      "passed": false
+    },
+    "reject_and_return_recall": {
+      "value": 0.428571,
+      "threshold": {
+        "min": 0.9,
+        "stretch": 0.94
+      },
+      "passed": false
+    },
+    "expected_calibration_error": {
+      "value": 0.317,
+      "threshold": {
+        "max": 0.08,
+        "stretch_max": 0.05
+      },
+      "passed": false
+    },
+    "retrieval_recall_at_10": {
+      "value": 0.908929,
+      "threshold": {
+        "min": 0.88,
+        "stretch": 0.93
+      },
+      "passed": true
+    },
+    "retrieval_ndcg_at_10": {
+      "value": 0.980501,
+      "threshold": {
+        "min": 0.75,
+        "stretch": 0.82
+      },
+      "passed": true
+    },
+    "grounded_claim_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.95,
+        "stretch": 0.98
+      },
+      "passed": true
+    },
+    "unsupported_critical_claim_rate": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0.03,
+        "stretch_max": 0.01
+      },
+      "passed": true
+    },
+    "correct_abstain_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.85,
+        "stretch": 0.92
+      },
+      "passed": true
+    },
+    "standard_route_p95_seconds": {
+      "value": 0.000915,
+      "threshold": {
+        "max": 8,
+        "stretch_max": 5
+      },
+      "passed": true
+    },
+    "fallback_route_p95_seconds": {
+      "value": 0.000401,
+      "threshold": {
+        "max": 30,
+        "stretch_max": 20
+      },
+      "passed": true
+    },
+    "soak_test_error_rate_2h": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0.01,
+        "stretch_max": 0.003
+      },
+      "passed": true
+    },
+    "restricted_data_egress_events": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0
+      },
+      "passed": true
+    },
+    "audit_trace_coverage": {
+      "value": 1.0,
+      "threshold": {
+        "min": 1.0
+      },
+      "passed": true
+    },
+    "fixed_set_rerun_variance": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0.02,
+        "stretch_max": 0.01
+      },
+      "passed": true
+    }
+  }
+}

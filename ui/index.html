@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dossier Review Assistant</title>
+    <style>
+      :root {
+        --bg: #f7f7f4;
+        --panel: #ffffff;
+        --text: #1f2a37;
+        --muted: #5f6b7a;
+        --accent: #006d77;
+        --border: #d6dbe1;
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: linear-gradient(180deg, #f9f8f5 0%, #eef3f4 100%);
+        color: var(--text);
+      }
+      main {
+        max-width: 900px;
+        margin: 2.5rem auto;
+        padding: 0 1rem;
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.2rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 1.6rem;
+      }
+      p {
+        color: var(--muted);
+      }
+      input, button {
+        font: inherit;
+      }
+      input {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.6rem;
+        margin: 0.3rem 0 0.8rem;
+      }
+      button {
+        border: 0;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #fff;
+        padding: 0.6rem 1rem;
+        cursor: pointer;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      code {
+        background: #eef3f4;
+        padding: 0.1rem 0.3rem;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1>Dossier Review API Shell</h1>
+        <p>Foundation UI for Day-1 validation. Search across indexed dossier sections.</p>
+        <label for="query">Query</label>
+        <input id="query" value="GMP certificate validity and inspection outcome" />
+        <button id="searchBtn">Run Retrieval Search</button>
+        <h2>Results</h2>
+        <ul id="results"></ul>
+      </div>
+    </main>
+    <script>
+      async function runSearch() {
+        const query = document.getElementById("query").value;
+        const res = await fetch("/v1/retrieval/search", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query, top_k: 5 }),
+        });
+        const data = await res.json();
+        const list = document.getElementById("results");
+        list.innerHTML = "";
+        (data.citations || []).forEach((c) => {
+          const li = document.createElement("li");
+          li.innerHTML = `<code>${c.citation_id}</code> (${c.score}) - ${c.snippet}`;
+          list.appendChild(li);
+        });
+      }
+      document.getElementById("searchBtn").addEventListener("click", runSearch);
+    </script>
+  </body>
+</html>
+

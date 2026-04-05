@@ -1,0 +1,37 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality-and-security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install .[dev]
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Run evaluation harness
+        run: python -m evaluation.run_evaluation --max-records 120 --output state/eval/ci_report.json
+
+      - name: Enforce metric thresholds
+        run: python scripts/check_eval_gate.py state/eval/ci_report.json --acceptance docs/acceptance-criteria.yaml
+
+      - name: Generate retention compliance report
+        run: python scripts/retention_compliance.py --retention-days 30 --output state/audit/retention_report_ci.json
+
+      - name: Run security and model policy gate
+        run: python scripts/security_gate.py

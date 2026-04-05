@@ -2,10 +2,10 @@
 
 ## 1. Document Control
 - Project: Regulatory Dossier Policy Copilot (Agentic RAG, Local-First)
-- Version: 1.0
+- Version: 1.1
 - Status: Draft for build execution
 - Owner: Data Science / MLOps
-- Last Updated: 2026-04-02
+- Last Updated: 2026-04-05
 
 ## 2. Policy Problem, Decision, and Business Impact
 ### 2.1 Problem Statement
@@ -67,6 +67,10 @@ It also generates section-level compliance and correctness diagnostics to justif
 - NFR-04: Security with RBAC, least privilege, and encrypted storage.
 - NFR-05: Performance within laptop constraints (8GB VRAM GPU).
 - NFR-06: CI quality gates must block unsafe/low-quality releases.
+- NFR-07: Data governance controls must be enforced for classification, lineage, retention, and deletion.
+- NFR-08: Local RAG indexes must preserve data-domain isolation (synthetic vs restricted data).
+- NFR-09: Memory-aware execution must support a 32 GB RAM laptop profile (Asus Zenbook class host).
+- NFR-10: Zero out-of-policy data egress events are permitted for restricted dossiers.
 
 ## 7. Data Requirements
 ### 7.1 Dossier Schema Requirements
@@ -189,14 +193,19 @@ Labeling method:
 - Log route decisions for optimization analysis.
 
 ### 9.3 Resource Constraints
-Hardware baseline:
-- GPU: RTX 3070 8GB VRAM
-- Host memory constrained; avoid multiple concurrent heavy models.
+Primary local build profile:
+- Host: Asus Zenbook class laptop with 32 GB RAM.
+- Runtime model family: Gemma 4 only.
+- GPU: optional; the system must still operate in CPU-compatible mode when discrete GPU is unavailable.
 
-Operational constraints:
-- Only one GPU-heavy inference service active at a time.
-- Cache retrieval and embeddings aggressively.
-- Use async queue for expensive requests.
+Operational memory constraints:
+- Reserve at least 6 GB RAM for OS and user tooling; AI stack working set must remain <= 26 GB.
+- Standard route target memory envelope: <= 20 GB peak RSS.
+- Fallback route target memory envelope: <= 26 GB peak RSS.
+- Only one heavy inference route active at a time.
+- Cache retrieval artifacts aggressively but enforce bounded cache size.
+- Use async queue for expensive requests and cap fallback queue depth.
+- Trigger throttle/abstain behavior when free RAM drops below safe threshold.
 
 ## 10. Privacy, Security, and Governance Requirements
 - Data locality: restricted dossier data remains local.
@@ -205,6 +214,23 @@ Operational constraints:
 - PII redaction in logs and observability traces.
 - Full audit logging (user, model version, evidence IDs, policy output).
 - Secrets never committed; scanned in CI.
+
+### 10.1 Data Governance Principles (Local Agentic RAG)
+- Data classification: every artifact is tagged as `synthetic`, `internal`, or `restricted`.
+- Purpose limitation: indexed content is used only for dossier review and policy-support workflows.
+- Data minimization: ingest and index only required sections/metadata for decisions.
+- Lineage and provenance: each recommendation must link to source dossier ID, section ID, model version, and prompt version.
+- Retention and deletion: retention windows are defined per class, with auditable deletion jobs.
+- Domain isolation: synthetic and restricted data are stored and indexed in separate namespaces.
+- Access governance: least-privilege access to raw files, indexes, and audit logs.
+- Governance by default: PR and CI checks must block releases with policy violations.
+
+### 10.2 RAM Governance Principles (Gemma 4 on 32 GB Hosts)
+- Capacity-first scheduling: never co-run multiple heavy inference routes on a 32 GB machine.
+- Bounded concurrency: fallback route concurrency remains capped at 1.
+- Memory observability: collect per-route peak RSS and include in release gates.
+- OOM prevention: enforce request queue backpressure and fail-safe abstention over crash-risk execution.
+- Predictable degradation: if memory pressure is high, prefer smaller context windows and policy abstention paths.
 
 ## 11. Acceptance Criteria
 
@@ -226,8 +252,13 @@ Operational constraints:
 | Standard route latency | p95 | <= 8s | <= 5s |
 | Fallback route latency | p95 | <= 30s | <= 20s |
 | Reliability | 2-hour soak test error rate | <= 1% | <= 0.3% |
+| Memory governance (Zenbook 32 GB) | Standard route peak RSS | <= 20 GB | <= 16 GB |
+| Memory governance (Zenbook 32 GB) | Fallback route peak RSS | <= 26 GB | <= 22 GB |
+| Memory governance (Zenbook 32 GB) | OOM kill events (2-hour soak) | 0 | 0 |
 | Privacy compliance | Restricted-data external egress events | 0 | 0 |
 | Audit coverage | Recommendations with full trace | 100% | 100% |
+| Governance coverage | Recommendations with lineage tags | 100% | 100% |
+| Retention governance | Retention-policy deletion compliance | >= 99% | 100% |
 | CI quality gates | Mandatory checks passed | 100% | 100% |
 | Reproducibility | Fixed-set rerun variance | <= 2% | <= 1% |
 
