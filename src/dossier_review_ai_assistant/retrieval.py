@@ -8,10 +8,50 @@ from dataclasses import dataclass
 from .data import EvidenceChunk
 
 TOKEN_PATTERN = re.compile(r"\b[a-z0-9][a-z0-9\-]{1,}\b")
+SPLIT_PATTERN = re.compile(r"\b(?:vs\.?|versus|with|and)\b", re.IGNORECASE)
 
 
 def tokenize(text: str) -> list[str]:
     return TOKEN_PATTERN.findall(text.lower())
+
+
+def decompose_query(query: str) -> list[str]:
+    normalized = " ".join(query.strip().split())
+    if not normalized:
+        return []
+
+    lowered = normalized.lower()
+    candidate = normalized
+    if lowered.startswith("compare "):
+        candidate = normalized[8:].strip()
+
+    segments = [segment.strip(" ,.;:") for segment in SPLIT_PATTERN.split(candidate) if segment.strip(" ,.;:")]
+    subqueries: list[str] = []
+    seen: set[str] = set()
+
+    def _add(value: str) -> None:
+        cleaned = " ".join(value.split())
+        key = cleaned.lower()
+        if len(cleaned) < 3 or key in seen:
+            return
+        seen.add(key)
+        subqueries.append(cleaned)
+
+    _add(normalized)
+    for segment in segments:
+        _add(segment)
+    return subqueries
+
+
+def merge_hits(*hit_lists: list[RetrievalHit], top_k: int = 5) -> list[RetrievalHit]:
+    best_by_citation: dict[str, RetrievalHit] = {}
+    for hit_list in hit_lists:
+        for hit in hit_list:
+            current = best_by_citation.get(hit.chunk.citation_id)
+            if current is None or hit.score > current.score:
+                best_by_citation[hit.chunk.citation_id] = hit
+    merged = sorted(best_by_citation.values(), key=lambda item: item.score, reverse=True)
+    return merged[:top_k]
 
 
 @dataclass(frozen=True)
@@ -72,4 +112,3 @@ class LexicalRetriever:
 
         hits.sort(key=lambda hit: hit.score, reverse=True)
         return hits[:top_k]
-

@@ -1,6 +1,6 @@
 # Dossier Review AI Assistant - Handoff State
 
-Last updated: 2026-04-05 (Africa/Kampala)
+Last updated: 2026-04-10 (Africa/Kampala)
 
 ## Repository Identity
 - Repo folder name: `dossier-review-AI-assistant`
@@ -22,10 +22,12 @@ Last updated: 2026-04-05 (Africa/Kampala)
 - Memory governance telemetry and guardrails are implemented (RAM snapshot + memory-pressure abstain guard).
 - Lineage tags are attached to review/retrieval audit events.
 - Retention compliance tooling is implemented (`scripts/retention_compliance.py`).
+- AMR/AWaRe stewardship requirements are implemented in policy logic, API responses, and synthetic dossier schema/data.
+- Reserve fast-track plus restricted-authorization handling and Watch similarity restriction rules are covered by tests.
 
 ## Current Data Assets (Versioned)
 - Raw dataset (active): `synthetic_data/data/raw/balanced_v1_2026-04-05`
-  - `num_dossiers`: 1471
+  - `num_dossiers`: 1475
   - Files: `dossiers.jsonl`, `section_labels.csv`, `holistic_labels.csv`, `manifest.json`
 - Raw dataset (original): `synthetic_data/data/raw/v1_2026-04-03`
   - `num_dossiers`: 1200
@@ -34,9 +36,9 @@ Last updated: 2026-04-05 (Africa/Kampala)
   - `adjudication_profile`: strict
   - `override_rate`: 0.20
 - Splits (active): `synthetic_data/data/splits/balanced_v1_2026-04-05`
-  - `train`: 1030
-  - `val`: 222
-  - `test`: 219
+  - `train`: 1034
+  - `val`: 223
+  - `test`: 218
 
 ## Key Docs
 - `docs/requirements-spec.md`
@@ -56,8 +58,9 @@ Last updated: 2026-04-05 (Africa/Kampala)
 2. On Zenbook 32 GB host: run memory envelope validation (`zenbook_*_peak_rss_gb`, `oom_kill_events_2h`).
 3. Upgrade retrieval path from lexical-only to hybrid BM25 + pgvector.
 4. Replace weak-label baseline with trained section and holistic models.
-5. Add observability dashboards and signed audit record checks.
-6. Run full CI on GitHub Actions and verify release gates.
+5. Validate AMR/AWaRe scenario realism with domain reviewers and tune surveillance assumptions if needed.
+6. Add observability dashboards and signed audit record checks.
+7. Run full CI on GitHub Actions and verify release gates.
 
 ## Governance/Continuity Commands
 ```powershell

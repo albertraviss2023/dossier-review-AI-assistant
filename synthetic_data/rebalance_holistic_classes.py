@@ -99,6 +99,12 @@ def write_holistic_csv(path: Path, dossiers: list[dict[str, Any]]) -> None:
         "gmp_certificate_validity",
         "clinical_data_available",
         "pivotal_trial_outcome",
+        "aware_category",
+        "amr_unmet_need",
+        "targets_mdr_pathogen",
+        "glass_resistance_trend",
+        "similarity_to_existing_watch",
+        "existing_watch_comparator",
         "defect_modes",
     ]
     with path.open("w", encoding="utf-8", newline="") as f:
@@ -122,6 +128,12 @@ def write_holistic_csv(path: Path, dossiers: list[dict[str, Any]]) -> None:
                     "gmp_certificate_validity": signals.get("gmp_certificate_validity"),
                     "clinical_data_available": signals.get("clinical_data_available"),
                     "pivotal_trial_outcome": signals.get("pivotal_trial_outcome"),
+                    "aware_category": signals.get("aware_category"),
+                    "amr_unmet_need": signals.get("amr_unmet_need"),
+                    "targets_mdr_pathogen": signals.get("targets_mdr_pathogen"),
+                    "glass_resistance_trend": signals.get("glass_resistance_trend"),
+                    "similarity_to_existing_watch": signals.get("similarity_to_existing_watch"),
+                    "existing_watch_comparator": signals.get("existing_watch_comparator"),
                     "defect_modes": ",".join(defect_modes),
                 }
             )
@@ -266,4 +278,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

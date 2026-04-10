@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-04-05T07:07:34.992749+00:00",
+  "created_at_utc": "2026-04-10T09:43:44.070413+00:00",
   "input_jsonl": "synthetic_data\\data\\raw\\balanced_v1_2026-04-05\\dossiers.jsonl",
   "seed": 20260405,
   "ratios": {
@@ -8,28 +8,28 @@
     "test": 0.15
   },
   "counts": {
-    "total": 1471,
-    "train": 1030,
-    "val": 222,
-    "test": 219
+    "total": 1475,
+    "train": 1034,
+    "val": 223,
+    "test": 218
   },
   "label_distribution": {
     "train": {
-      "reject_and_return": 494,
       "standard_review": 126,
-      "deep_review": 126,
-      "fast_track": 284
+      "reject_and_return": 535,
+      "fast_track": 247,
+      "deep_review": 126
     },
     "val": {
-      "reject_and_return": 107,
-      "fast_track": 61,
-      "standard_review": 27,
-      "deep_review": 27
+      "reject_and_return": 115,
+      "fast_track": 54,
+      "deep_review": 27,
+      "standard_review": 27
     },
     "test": {
+      "fast_track": 51,
+      "reject_and_return": 113,
       "standard_review": 27,
-      "reject_and_return": 105,
-      "fast_track": 60,
       "deep_review": 27
     }
   },

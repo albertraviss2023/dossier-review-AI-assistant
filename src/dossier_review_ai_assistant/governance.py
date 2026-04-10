@@ -19,13 +19,14 @@ def build_lineage_tags(
     settings: Settings,
     route: str | None = None,
     data_classification: str = "synthetic",
+    model_id: str | None = None,
 ) -> dict[str, str]:
     tags = {
         "data_classification": data_classification,
         "data_version": settings.data_version,
         "split_version": settings.split_version,
         "model_policy": settings.model_policy,
-        "model_id": settings.model_id,
+        "model_id": model_id or settings.model_id,
         "prompt_version": settings.prompt_version,
     }
     if route:
@@ -92,4 +93,3 @@ def retention_stats(
         "malformed_records": malformed,
         "compliance_rate": round(compliance_rate, 6),
     }
-

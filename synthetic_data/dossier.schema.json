@@ -49,7 +49,13 @@
         "gmp_inspection_recent",
         "gmp_certificate_validity",
         "clinical_data_available",
-        "pivotal_trial_outcome"
+        "pivotal_trial_outcome",
+        "aware_category",
+        "amr_unmet_need",
+        "targets_mdr_pathogen",
+        "glass_resistance_trend",
+        "similarity_to_existing_watch",
+        "existing_watch_comparator"
       ],
       "properties": {
         "inn_infringement": { "type": "boolean" },
@@ -57,7 +63,19 @@
         "gmp_inspection_recent": { "type": "boolean" },
         "gmp_certificate_validity": { "type": "string", "enum": ["valid", "expired"] },
         "clinical_data_available": { "type": "boolean" },
-        "pivotal_trial_outcome": { "type": "string" }
+        "pivotal_trial_outcome": { "type": "string" },
+        "aware_category": { "type": "string", "enum": ["access", "watch", "reserve", "not_applicable"] },
+        "amr_unmet_need": { "type": "string", "enum": ["routine", "moderate", "high", "critical", "not_applicable"] },
+        "targets_mdr_pathogen": { "type": "boolean" },
+        "glass_resistance_trend": {
+          "type": "string",
+          "enum": ["rising", "stable", "declining", "not_applicable"]
+        },
+        "similarity_to_existing_watch": {
+          "type": "string",
+          "enum": ["low", "moderate", "high", "not_applicable"]
+        },
+        "existing_watch_comparator": { "type": "string" }
       }
     },
     "sections": {

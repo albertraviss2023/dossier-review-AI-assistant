@@ -15,13 +15,13 @@ def test_lineage_tags_complete():
     settings = load_settings()
     tags = build_lineage_tags(settings=settings, route="standard")
     assert lineage_is_complete(tags)
-    assert tags["model_policy"] == "gemma4_only"
+    assert tags["model_policy"] == "local_multi_model"
 
 
 def test_lineage_coverage_ratio():
     settings = load_settings()
     complete = build_lineage_tags(settings=settings, route="standard")
-    incomplete = {"model_policy": "gemma4_only"}
+    incomplete = {"model_policy": "local_multi_model"}
     ratio = lineage_coverage([complete, incomplete])
     assert 0.0 < ratio < 1.0
 
@@ -35,4 +35,3 @@ def test_retention_stats_marks_expired_records():
     summary = retention_stats(records, retention_days=30, now_utc=now)
     assert summary["expired_records"] == 1
     assert summary["retained_records"] == 1
-

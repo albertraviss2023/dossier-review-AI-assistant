@@ -66,6 +66,7 @@ ATC_CODES = [
     "R03AC02",
     "S01ED01",
 ]
+NON_ANTIBACTERIAL_ATC_CODES = [code for code in ATC_CODES if not code.startswith("J01")]
 INN_POOL = [
     "abacavir",
     "abiraterone",
@@ -185,6 +186,8 @@ INN_POOL = [
     "lamivudine",
     "dolutegravir",
     "ibuprofen",
+    "colistin",
+    "cefiderocol",
 ]
 PROTECTED_NAME_POOL = [
     "Panadoll",
@@ -227,6 +230,143 @@ STUDY_INDICATIONS = [
     "moderate pain",
     "bacterial skin infection",
 ]
+ANTIBIOTIC_PROFILES = {
+    "amikacin": {
+        "atc_code": "J01GB06",
+        "aware_category": "watch",
+        "watch_comparator": "gentamicin",
+    },
+    "amoxicillin": {
+        "atc_code": "J01CA04",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "ampicillin": {
+        "atc_code": "J01CA01",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "azithromycin": {
+        "atc_code": "J01FA10",
+        "aware_category": "watch",
+        "watch_comparator": "clarithromycin",
+    },
+    "benzylpenicillin": {
+        "atc_code": "J01CE01",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "cefalexin": {
+        "atc_code": "J01DB01",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "cefiderocol": {
+        "atc_code": "J01DI02",
+        "aware_category": "reserve",
+        "watch_comparator": "not_applicable",
+    },
+    "cefixime": {
+        "atc_code": "J01DD08",
+        "aware_category": "watch",
+        "watch_comparator": "ceftriaxone",
+    },
+    "cefpodoxime": {
+        "atc_code": "J01DD13",
+        "aware_category": "watch",
+        "watch_comparator": "ceftriaxone",
+    },
+    "ceftriaxone": {
+        "atc_code": "J01DD04",
+        "aware_category": "watch",
+        "watch_comparator": "cefotaxime",
+    },
+    "chloramphenicol": {
+        "atc_code": "J01BA01",
+        "aware_category": "watch",
+        "watch_comparator": "thiamphenicol",
+    },
+    "ciprofloxacin": {
+        "atc_code": "J01MA02",
+        "aware_category": "watch",
+        "watch_comparator": "ofloxacin",
+    },
+    "clarithromycin": {
+        "atc_code": "J01FA09",
+        "aware_category": "watch",
+        "watch_comparator": "erythromycin",
+    },
+    "clindamycin": {
+        "atc_code": "J01FF01",
+        "aware_category": "watch",
+        "watch_comparator": "lincomycin",
+    },
+    "colistin": {
+        "atc_code": "J01XB01",
+        "aware_category": "reserve",
+        "watch_comparator": "not_applicable",
+    },
+    "doxycycline": {
+        "atc_code": "J01AA02",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "erythromycin": {
+        "atc_code": "J01FA01",
+        "aware_category": "watch",
+        "watch_comparator": "azithromycin",
+    },
+    "gentamicin": {
+        "atc_code": "J01GB03",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "levofloxacin": {
+        "atc_code": "J01MA12",
+        "aware_category": "watch",
+        "watch_comparator": "ciprofloxacin",
+    },
+    "linezolid": {
+        "atc_code": "J01XX08",
+        "aware_category": "reserve",
+        "watch_comparator": "not_applicable",
+    },
+    "metronidazole": {
+        "atc_code": "J01XD01",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "moxifloxacin": {
+        "atc_code": "J01MA14",
+        "aware_category": "watch",
+        "watch_comparator": "levofloxacin",
+    },
+    "nitrofurantoin": {
+        "atc_code": "J01XE01",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "piperacillin": {
+        "atc_code": "J01CA12",
+        "aware_category": "watch",
+        "watch_comparator": "ampicillin",
+    },
+    "sulfamethoxazole": {
+        "atc_code": "J01EC01",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "trimethoprim": {
+        "atc_code": "J01EA01",
+        "aware_category": "access",
+        "watch_comparator": "not_applicable",
+    },
+    "vancomycin": {
+        "atc_code": "J01XA01",
+        "aware_category": "reserve",
+        "watch_comparator": "not_applicable",
+    },
+}
 
 SECTION_SPECS = [
     {
@@ -379,6 +519,13 @@ class Context:
     clinical_data_available: bool
     pivotal_trial_count: int
     indication: str
+    therapeutic_area: str
+    aware_category: str
+    amr_unmet_need: str
+    targets_mdr_pathogen: bool
+    glass_resistance_trend: str
+    similarity_to_existing_watch: str
+    existing_watch_comparator: str
     defects: List[str]
 
 
@@ -446,8 +593,115 @@ def generate_brand_name(rng: random.Random) -> str:
     return f"{rng.choice(prefixes)}{rng.choice(suffixes)}"
 
 
+def build_antibacterial_profile(rng: random.Random, inn: str) -> Dict[str, str | bool]:
+    profile = ANTIBIOTIC_PROFILES[inn]
+    aware_category = str(profile["aware_category"])
+    comparator = str(profile["watch_comparator"])
+
+    if aware_category == "reserve":
+        return {
+            "therapeutic_area": "antibacterial",
+            "atc_code": str(profile["atc_code"]),
+            "aware_category": aware_category,
+            "amr_unmet_need": rng.choices(["critical", "high"], weights=[0.75, 0.25], k=1)[0],
+            "targets_mdr_pathogen": True,
+            "glass_resistance_trend": rng.choices(["rising", "stable"], weights=[0.8, 0.2], k=1)[0],
+            "similarity_to_existing_watch": "not_applicable",
+            "existing_watch_comparator": comparator,
+        }
+
+    if aware_category == "watch":
+        similarity = rng.choices(["high", "moderate", "low"], weights=[0.35, 0.35, 0.30], k=1)[0]
+        if similarity == "high":
+            glass_trend = rng.choices(["rising", "stable"], weights=[0.8, 0.2], k=1)[0]
+        else:
+            glass_trend = rng.choices(["rising", "stable", "declining"], weights=[0.4, 0.45, 0.15], k=1)[0]
+        return {
+            "therapeutic_area": "antibacterial",
+            "atc_code": str(profile["atc_code"]),
+            "aware_category": aware_category,
+            "amr_unmet_need": rng.choices(["routine", "moderate"], weights=[0.75, 0.25], k=1)[0],
+            "targets_mdr_pathogen": False,
+            "glass_resistance_trend": glass_trend,
+            "similarity_to_existing_watch": similarity,
+            "existing_watch_comparator": comparator,
+        }
+
+    return {
+        "therapeutic_area": "antibacterial",
+        "atc_code": str(profile["atc_code"]),
+        "aware_category": aware_category,
+        "amr_unmet_need": "routine",
+        "targets_mdr_pathogen": False,
+        "glass_resistance_trend": rng.choices(["stable", "declining", "rising"], weights=[0.55, 0.25, 0.20], k=1)[0],
+        "similarity_to_existing_watch": "low",
+        "existing_watch_comparator": comparator,
+    }
+
+
+def amr_product_statement(ctx: Context) -> str:
+    if ctx.aware_category == "reserve":
+        return (
+            " WHO AWaRe category: Reserve. Indication is restricted to suspected or confirmed MDR infections "
+            "after Access options have failed or are not suitable. The dossier proposes specialist-only use "
+            "under restricted authorization controls."
+        )
+    if ctx.aware_category == "watch":
+        return (
+            f" WHO AWaRe category: Watch. Similarity to existing Watch comparator {ctx.existing_watch_comparator} "
+            f"is assessed as {ctx.similarity_to_existing_watch}. Stewardship materials describe controlled use "
+            "to limit cross-resistance pressure."
+        )
+    if ctx.aware_category == "access":
+        return (
+            " WHO AWaRe category: Access. Product is positioned for routine antibacterial use with standard "
+            "stewardship monitoring and local resistance surveillance."
+        )
+    return ""
+
+
+def amr_clinical_statement(ctx: Context) -> str:
+    if ctx.aware_category == "reserve":
+        return (
+            f" The clinical program addresses a {ctx.amr_unmet_need} unmet need in MDR infections. "
+            f"GLASS-aligned surveillance trend is {ctx.glass_resistance_trend}, and enrollment focused on "
+            "patients with limited remaining treatment options."
+        )
+    if ctx.aware_category == "watch":
+        return (
+            f" GLASS-aligned surveillance trend is {ctx.glass_resistance_trend}, and cross-resistance risk "
+            f"relative to {ctx.existing_watch_comparator} is assessed as {ctx.similarity_to_existing_watch}."
+        )
+    if ctx.aware_category == "access":
+        return (
+            f" GLASS-aligned surveillance trend is {ctx.glass_resistance_trend}, supporting continued first-line "
+            "or second-line use with routine monitoring."
+        )
+    return ""
+
+
 def build_base_context(rng: random.Random) -> Context:
     inn = rng.choice(INN_POOL)
+    antibacterial_profile = ANTIBIOTIC_PROFILES.get(inn)
+    if antibacterial_profile:
+        amr_profile = build_antibacterial_profile(rng, inn)
+        atc_code = str(amr_profile["atc_code"])
+        therapeutic_area = str(amr_profile["therapeutic_area"])
+        aware_category = str(amr_profile["aware_category"])
+        amr_unmet_need = str(amr_profile["amr_unmet_need"])
+        targets_mdr_pathogen = bool(amr_profile["targets_mdr_pathogen"])
+        glass_resistance_trend = str(amr_profile["glass_resistance_trend"])
+        similarity_to_existing_watch = str(amr_profile["similarity_to_existing_watch"])
+        existing_watch_comparator = str(amr_profile["existing_watch_comparator"])
+    else:
+        atc_code = rng.choice(NON_ANTIBACTERIAL_ATC_CODES)
+        therapeutic_area = "non_antibacterial"
+        aware_category = "not_applicable"
+        amr_unmet_need = "not_applicable"
+        targets_mdr_pathogen = False
+        glass_resistance_trend = "not_applicable"
+        similarity_to_existing_watch = "not_applicable"
+        existing_watch_comparator = "not_applicable"
     inspection_date = random_date_in_past(rng, 0, 2)
     certificate_expiry = inspection_date + timedelta(days=rng.randint(500, 1000))
     submission = random_date_in_past(rng, 0, 1)
@@ -457,7 +711,7 @@ def build_base_context(rng: random.Random) -> Context:
         submission_date=submission.isoformat(),
         product_name=generate_brand_name(rng),
         inn_name=inn,
-        atc_code=rng.choice(ATC_CODES),
+        atc_code=atc_code,
         dosage_form=rng.choice(DOSAGE_FORMS),
         strength=f"{rng.choice([125, 250, 500, 850, 1000])} mg",
         applicant=f"{rng.choice(APPLICANT_PREFIXES)} Therapeutics",
@@ -471,6 +725,13 @@ def build_base_context(rng: random.Random) -> Context:
         clinical_data_available=True,
         pivotal_trial_count=rng.randint(2, 4),
         indication=rng.choice(STUDY_INDICATIONS),
+        therapeutic_area=therapeutic_area,
+        aware_category=aware_category,
+        amr_unmet_need=amr_unmet_need,
+        targets_mdr_pathogen=targets_mdr_pathogen,
+        glass_resistance_trend=glass_resistance_trend,
+        similarity_to_existing_watch=similarity_to_existing_watch,
+        existing_watch_comparator=existing_watch_comparator,
         defects=[],
     )
     return ctx
@@ -499,6 +760,7 @@ def compose_section_text(rng: random.Random, section_id: str, ctx: Context, targ
         "m1_product_information": (
             f"Proposed product name is {ctx.product_name}. INN is {ctx.inn_name}. Labeling, SmPC/PIL content, contraindications, "
             "dosing information, and medication error mitigation statements are included with linguistic review notes."
+            f"{amr_product_statement(ctx)}"
         ),
         "m2_quality_overall_summary": (
             f"Quality Overall Summary for API {ctx.inn_name} describes specification strategy, control points, impurity profile, "
@@ -507,7 +769,7 @@ def compose_section_text(rng: random.Random, section_id: str, ctx: Context, targ
         "m2_clinical_overview": (
             f"Clinical overview summarizes therapeutic rationale for {ctx.indication}. Pivotal program includes "
             f"{ctx.pivotal_trial_count} studies. Reported outcome category: {ctx.clinical_outcome}. Benefit-risk narrative, "
-            "safety findings, and subgroup considerations are included."
+            f"safety findings, and subgroup considerations are included.{amr_clinical_statement(ctx)}"
         ),
         "m3_api_quality": (
             f"API quality section provides synthesis route, material controls, specification limits, analytical validation, "
@@ -528,10 +790,12 @@ def compose_section_text(rng: random.Random, section_id: str, ctx: Context, targ
         "m5_trial_listing": (
             f"Clinical study table lists pivotal and supportive studies for {ctx.indication}, including protocol IDs, trial phase, "
             "sample sizes, randomization details, and completion status."
+            f"{amr_clinical_statement(ctx)}"
         ),
         "m5_pivotal_trial_reports": (
             f"Pivotal trial reports document primary and secondary endpoints, statistical analysis plan adherence, "
             f"and outcome category {ctx.clinical_outcome}. Safety outcomes, serious adverse events, and subgroup analyses are included."
+            f"{amr_clinical_statement(ctx)}"
         ),
         "m5_bioequivalence": (
             "Biopharmaceutics section includes comparative dissolution, bioequivalence evidence, analytical method validation, "
@@ -842,6 +1106,17 @@ def validate_internal_consistency(ctx: Context, sections: Dict[str, Dict]) -> Li
         if "inn_infringement" not in sections["m1_product_information"]["error_tags"]:
             issues.append("inn_infringement defect missing on product information section")
 
+    if ctx.aware_category == "reserve" and not ctx.targets_mdr_pathogen:
+        issues.append("reserve AWaRe category requires targets_mdr_pathogen=true")
+    if ctx.aware_category == "watch" and ctx.similarity_to_existing_watch == "high":
+        if ctx.existing_watch_comparator == "not_applicable":
+            issues.append("watch high-similarity dossier missing comparator")
+    if ctx.aware_category == "not_applicable":
+        if ctx.glass_resistance_trend != "not_applicable":
+            issues.append("non-antibacterial dossier has AMR resistance trend")
+        if ctx.amr_unmet_need != "not_applicable":
+            issues.append("non-antibacterial dossier has AMR unmet need")
+
     return issues
 
 
@@ -853,6 +1128,11 @@ def holistic_decision(
     gmp_status: str,
     gmp_recent: bool,
     gmp_cert_validity: str,
+    aware_category: str,
+    amr_unmet_need: str,
+    targets_mdr_pathogen: bool,
+    glass_resistance_trend: str,
+    similarity_to_existing_watch: str,
 ) -> Tuple[str, float]:
     incorrect_critical = 0
     partial_sections = 0
@@ -869,12 +1149,28 @@ def holistic_decision(
         or gmp_cert_validity == "expired"
         or clinical_outcome == "endpoint_not_met"
     )
+    reserve_fast_track = (
+        aware_category == "reserve"
+        and targets_mdr_pathogen
+        and amr_unmet_need in {"high", "critical"}
+    )
+    watch_similarity_guard = (
+        aware_category == "watch"
+        and similarity_to_existing_watch == "high"
+        and glass_resistance_trend == "rising"
+    )
 
     if high_risk or incorrect_critical >= 2:
         return "reject_and_return", 0.92
 
+    if watch_similarity_guard:
+        return "deep_review", 0.74
+
     if (not clinical_data_available) or (not gmp_recent) or incorrect_critical == 1:
         return "deep_review", 0.78
+
+    if reserve_fast_track:
+        return "fast_track", 0.34
 
     if partial_sections >= 1:
         return "standard_review", 0.64
@@ -906,6 +1202,11 @@ def build_dossier_record(rng: random.Random, compliant: bool) -> Dict:
         gmp_status=ctx.gmp_status,
         gmp_recent=gmp_recent,
         gmp_cert_validity=gmp_cert_validity,
+        aware_category=ctx.aware_category,
+        amr_unmet_need=ctx.amr_unmet_need,
+        targets_mdr_pathogen=ctx.targets_mdr_pathogen,
+        glass_resistance_trend=ctx.glass_resistance_trend,
+        similarity_to_existing_watch=ctx.similarity_to_existing_watch,
     )
 
     section_items = []
@@ -963,6 +1264,12 @@ def build_dossier_record(rng: random.Random, compliant: bool) -> Dict:
             "gmp_certificate_validity": gmp_cert_validity,
             "clinical_data_available": ctx.clinical_data_available,
             "pivotal_trial_outcome": ctx.clinical_outcome,
+            "aware_category": ctx.aware_category,
+            "amr_unmet_need": ctx.amr_unmet_need,
+            "targets_mdr_pathogen": ctx.targets_mdr_pathogen,
+            "glass_resistance_trend": ctx.glass_resistance_trend,
+            "similarity_to_existing_watch": ctx.similarity_to_existing_watch,
+            "existing_watch_comparator": ctx.existing_watch_comparator,
         },
         "gmp_details": {
             "last_inspection_date": ctx.gmp_last_inspection,
@@ -1043,6 +1350,12 @@ def write_holistic_labels_csv(path: Path, dossiers: List[Dict]) -> None:
                 "gmp_certificate_validity",
                 "clinical_data_available",
                 "pivotal_trial_outcome",
+                "aware_category",
+                "amr_unmet_need",
+                "targets_mdr_pathogen",
+                "glass_resistance_trend",
+                "similarity_to_existing_watch",
+                "existing_watch_comparator",
                 "defect_modes",
             ]
         )
@@ -1061,6 +1374,12 @@ def write_holistic_labels_csv(path: Path, dossiers: List[Dict]) -> None:
                     p["gmp_certificate_validity"],
                     p["clinical_data_available"],
                     p["pivotal_trial_outcome"],
+                    p["aware_category"],
+                    p["amr_unmet_need"],
+                    p["targets_mdr_pathogen"],
+                    p["glass_resistance_trend"],
+                    p["similarity_to_existing_watch"],
+                    p["existing_watch_comparator"],
                     "|".join(dossier["provenance"]["defect_modes"]),
                 ]
             )
@@ -1147,6 +1466,14 @@ def _dossier_to_pdf_lines(dossier: Dict) -> List[str]:
     lines.append(
         f"Policy Label: {dossier['labels']['holistic_policy_decision']} | "
         f"Risk Score: {dossier['labels']['risk_score']}"
+    )
+    policy_signals = dossier["policy_signals"]
+    lines.append(
+        "AMR Stewardship: "
+        f"AWaRe={policy_signals['aware_category']} | "
+        f"Unmet Need={policy_signals['amr_unmet_need']} | "
+        f"GLASS Trend={policy_signals['glass_resistance_trend']} | "
+        f"Watch Similarity={policy_signals['similarity_to_existing_watch']}"
     )
     lines.append("")
     lines.append("SECTION CONTENT")

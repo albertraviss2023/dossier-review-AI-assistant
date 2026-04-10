@@ -18,6 +18,8 @@ Regulatory Dossier Policy Copilot.
 - GMP non-compliance (`gmp_non_compliant`)
 - GMP evidence outdated (`gmp_outdated`)
 - GMP certificate expired (`gmp_certificate_expired`)
+- Watch-category cross-resistance restriction scenarios (`similarity_to_existing_watch=high` with rising GLASS trend)
+- Reserve-category accelerated-review stewardship scenarios (`aware_category=reserve` with MDR unmet need)
 - Missing section (`missing_section` / `missing_critical_section`)
 - Section too short (`insufficient_detail`)
 
@@ -122,12 +124,22 @@ Policy signals:
 - `gmp_certificate_validity`
 - `clinical_data_available`
 - `pivotal_trial_outcome`
+- `aware_category`
+- `amr_unmet_need`
+- `targets_mdr_pathogen`
+- `glass_resistance_trend`
+- `similarity_to_existing_watch`
+- `existing_watch_comparator`
 
 Holistic policy decision:
 - `fast_track`
 - `standard_review`
 - `deep_review`
 - `reject_and_return`
+
+AMR stewardship control:
+- `standard_authorization`
+- `restricted_authorization`
 
 ## Country scope
 Synthetic dossiers are generated across:

@@ -1,6 +1,6 @@
 {
   "project_name": "dossier-review-AI-assistant",
-  "last_updated": "2026-04-05",
+  "last_updated": "2026-04-10",
   "active_development_host": "ASUS laptop (current)",
   "target_validation_host": "ASUS Zenbook 32GB RAM",
   "root_path": "c:/Users/alber/OneDrive/Data Engineering/Projects/MlOps/dossier-review-AI-assistant",
@@ -14,7 +14,7 @@
     "raw": {
       "version": "balanced_v1_2026-04-05",
       "path": "synthetic_data/data/raw/balanced_v1_2026-04-05",
-      "num_dossiers": 1471
+      "num_dossiers": 1475
     },
     "gold": {
       "version": "strict_v1_2026-04-03",
@@ -27,9 +27,9 @@
       "version": "balanced_v1_2026-04-05",
       "path": "synthetic_data/data/splits/balanced_v1_2026-04-05",
       "counts": {
-        "train": 1030,
-        "val": 222,
-        "test": 219
+        "train": 1034,
+        "val": 223,
+        "test": 218
       }
     }
   },
@@ -45,6 +45,7 @@
     "On Zenbook 32GB: run memory-governance validation for standard/fallback peak RSS and OOM=0",
     "Swap lexical-only retrieval with hybrid pgvector plus BM25 retrieval and reranking",
     "Replace weak-label policy baseline with trained section and holistic models",
+    "Validate AMR/AWaRe stewardship scenarios against domain-review expectations and GLASS-aligned surveillance assumptions",
     "Run end-to-end CI quality and security gates on GitHub Actions",
     "Add observability dashboards and signed audit trail hardening"
   ]

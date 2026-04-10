@@ -153,6 +153,13 @@ def adjudicate_holistic(
     incorrect_noncritical = 0
     partial_sections = 0
     missing_sections = 0
+    aware_category = str(policy.get("aware_category", "not_applicable"))
+    amr_unmet_need = str(policy.get("amr_unmet_need", "not_applicable"))
+    targets_mdr_pathogen = bool(policy.get("targets_mdr_pathogen", False))
+    glass_resistance_trend = str(policy.get("glass_resistance_trend", "not_applicable"))
+    similarity_to_existing_watch = str(policy.get("similarity_to_existing_watch", "not_applicable"))
+    existing_watch_comparator = str(policy.get("existing_watch_comparator", "not_applicable"))
+
     for sec in dossier["sections"]:
         sid = sec["section_id"]
         lbl = section_labels[sid]
@@ -187,6 +194,10 @@ def adjudicate_holistic(
     if policy["pivotal_trial_outcome"] == "endpoint_not_met":
         reasons.append("Pivotal trial failed to meet primary endpoint.")
         evidence_sections.append("m5_pivotal_trial_reports")
+    if aware_category in {"access", "watch", "reserve"}:
+        reasons.append(f"WHO AWaRe category is {aware_category}.")
+        evidence_sections.append("m1_product_information")
+        evidence_sections.append("m2_clinical_overview")
 
     high_risk = (
         policy["inn_infringement"]
@@ -195,16 +206,41 @@ def adjudicate_holistic(
         or policy["pivotal_trial_outcome"] == "endpoint_not_met"
     )
     moderate_risk = (not policy["clinical_data_available"]) or (not policy["gmp_inspection_recent"])
+    reserve_fast_track = (
+        aware_category == "reserve"
+        and targets_mdr_pathogen
+        and amr_unmet_need in {"high", "critical"}
+    )
+    watch_similarity_guard = (
+        aware_category == "watch"
+        and similarity_to_existing_watch == "high"
+        and glass_resistance_trend == "rising"
+    )
     pivotal_trial_count = int(clinical.get("pivotal_trial_count", 0))
+
+    if reserve_fast_track:
+        reasons.append(
+            "Reserve antibiotic addresses an MDR unmet need and is eligible for accelerated review with restricted authorization."
+        )
+        evidence_sections.append("m5_pivotal_trial_reports")
+    if watch_similarity_guard:
+        reasons.append(
+            f"High similarity to Watch comparator {existing_watch_comparator} plus rising GLASS resistance supports restricted authorization."
+        )
+        evidence_sections.append("m1_product_information")
+        evidence_sections.append("m5_pivotal_trial_reports")
+
     if profile == "strict":
         if high_risk or incorrect_critical >= 1:
             decision, confidence = "reject_and_return", 0.97
-        elif moderate_risk or missing_sections >= 1:
+        elif watch_similarity_guard or moderate_risk or missing_sections >= 1:
             decision, confidence = "deep_review", 0.88
-        elif pivotal_trial_count < 3:
+        elif pivotal_trial_count < 3 and not reserve_fast_track:
             decision, confidence = "deep_review", 0.82
             reasons.append("Strict profile requires >= 3 pivotal studies for non-escalated review.")
             evidence_sections.append("m5_trial_listing")
+        elif reserve_fast_track:
+            decision, confidence = "fast_track", 0.94
         elif partial_sections >= 1 or incorrect_noncritical >= 1:
             decision, confidence = "standard_review", 0.76
         else:
@@ -212,8 +248,10 @@ def adjudicate_holistic(
     else:
         if high_risk or incorrect_critical >= 2:
             decision, confidence = "reject_and_return", 0.95
-        elif moderate_risk or incorrect_critical == 1 or missing_sections >= 1:
+        elif watch_similarity_guard or moderate_risk or incorrect_critical == 1 or missing_sections >= 1:
             decision, confidence = "deep_review", 0.83
+        elif reserve_fast_track:
+            decision, confidence = "fast_track", 0.92
         elif partial_sections >= 1 or incorrect_noncritical >= 1:
             decision, confidence = "standard_review", 0.73
         else:
@@ -300,9 +338,16 @@ def write_outputs(output_dir: Path, records: List[Dict], args: argparse.Namespac
                 "override_of_model",
                 "override_reason",
                 "label_source",
+                "aware_category",
+                "amr_unmet_need",
+                "targets_mdr_pathogen",
+                "glass_resistance_trend",
+                "similarity_to_existing_watch",
+                "existing_watch_comparator",
             ]
         )
         for rec in records:
+            policy = rec["policy_signals"]
             w.writerow(
                 [
                     rec["dossier_id"],
@@ -313,6 +358,12 @@ def write_outputs(output_dir: Path, records: List[Dict], args: argparse.Namespac
                     rec["gold"]["override_of_model"],
                     rec["gold"]["override_reason"],
                     rec["gold"]["label_source"],
+                    policy.get("aware_category"),
+                    policy.get("amr_unmet_need"),
+                    policy.get("targets_mdr_pathogen"),
+                    policy.get("glass_resistance_trend"),
+                    policy.get("similarity_to_existing_watch"),
+                    policy.get("existing_watch_comparator"),
                 ]
             )
 

@@ -17,6 +17,14 @@ class EvidenceChunk:
     text: str
 
 
+@dataclass(frozen=True)
+class KnowledgeWikiPage:
+    page_id: str
+    title: str
+    tags: tuple[str, ...]
+    sections: tuple[dict[str, str], ...]
+
+
 @lru_cache(maxsize=4)
 def load_dossiers(path: str) -> list[dict[str, Any]]:
     dossiers: list[dict[str, Any]] = []
@@ -26,6 +34,28 @@ def load_dossiers(path: str) -> list[dict[str, Any]]:
             if line:
                 dossiers.append(json.loads(line))
     return dossiers
+
+
+@lru_cache(maxsize=2)
+def load_knowledge_wiki(path: str) -> list[KnowledgeWikiPage]:
+    payload = json.loads(Path(path).read_text(encoding="utf-8"))
+    pages: list[KnowledgeWikiPage] = []
+    for row in payload:
+        pages.append(
+            KnowledgeWikiPage(
+                page_id=str(row["page_id"]),
+                title=str(row["title"]),
+                tags=tuple(str(tag) for tag in row.get("tags", [])),
+                sections=tuple(
+                    {
+                        "heading": str(section["heading"]),
+                        "text": str(section["text"]),
+                    }
+                    for section in row.get("sections", [])
+                ),
+            )
+        )
+    return pages
 
 
 def build_evidence_chunks(dossiers: list[dict[str, Any]]) -> list[EvidenceChunk]:
@@ -51,3 +81,22 @@ def build_evidence_chunks(dossiers: list[dict[str, Any]]) -> list[EvidenceChunk]
             )
     return chunks
 
+
+def build_knowledge_wiki_chunks(pages: list[KnowledgeWikiPage]) -> list[EvidenceChunk]:
+    chunks: list[EvidenceChunk] = []
+    for page in pages:
+        for idx, section in enumerate(page.sections, start=1):
+            section_id = f"{page.page_id}:{idx}"
+            tag_text = " ".join(page.tags)
+            text = f"{page.title}. {section['heading']}. {section['text']} {tag_text}".strip()
+            chunks.append(
+                EvidenceChunk(
+                    citation_id=f"knowledge_wiki:{section_id}",
+                    dossier_id="knowledge_wiki",
+                    section_id=section_id,
+                    section_title=f"{page.title} - {section['heading']}",
+                    module="wiki",
+                    text=text,
+                )
+            )
+    return chunks

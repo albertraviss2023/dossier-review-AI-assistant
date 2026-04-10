@@ -5,98 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dossier Review Assistant</title>
     <style>
-      :root {
-        --bg: #f7f7f4;
-        --panel: #ffffff;
-        --text: #1f2a37;
-        --muted: #5f6b7a;
-        --accent: #006d77;
-        --border: #d6dbe1;
-      }
-      body {
-        margin: 0;
-        font-family: "Segoe UI", Tahoma, sans-serif;
-        background: linear-gradient(180deg, #f9f8f5 0%, #eef3f4 100%);
-        color: var(--text);
-      }
-      main {
-        max-width: 900px;
-        margin: 2.5rem auto;
-        padding: 0 1rem;
-      }
-      .card {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1.2rem;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-      }
-      h1 {
-        margin-top: 0;
-        font-size: 1.6rem;
-      }
-      p {
-        color: var(--muted);
-      }
-      input, button {
-        font: inherit;
-      }
-      input {
-        width: 100%;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        padding: 0.6rem;
-        margin: 0.3rem 0 0.8rem;
-      }
-      button {
-        border: 0;
-        border-radius: 8px;
-        background: var(--accent);
-        color: #fff;
-        padding: 0.6rem 1rem;
-        cursor: pointer;
-      }
-      ul {
-        padding-left: 1.2rem;
-      }
-      code {
-        background: #eef3f4;
-        padding: 0.1rem 0.3rem;
-        border-radius: 4px;
-      }
+      :root{--bg:#f7efe5;--panel:#fffdf9;--text:#1d2a31;--muted:#62727a;--accent:#b34f39;--secondary:#0d6671;--border:rgba(29,42,49,.1);--shadow:0 16px 42px rgba(20,28,34,.08)}
+      *{box-sizing:border-box} body{margin:0;color:var(--text);font-family:"Segoe UI",sans-serif;background:radial-gradient(circle at top left,rgba(179,79,57,.16),transparent 24%),radial-gradient(circle at top right,rgba(13,102,113,.14),transparent 24%),linear-gradient(180deg,#fbf7f1,#efe6d9)}
+      main{width:min(1280px,calc(100% - 1.5rem));margin:0 auto;padding:1.25rem 0 2rem}
+      .hero,.card{border:1px solid var(--border);border-radius:20px;background:rgba(255,253,249,.93);box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+      .hero{padding:1.35rem 1.45rem;margin-bottom:1rem}
+      .eyebrow,.pill,.chip,.status{display:inline-flex;align-items:center;padding:.28rem .6rem;border-radius:999px;font-size:.8rem;font-weight:700}
+      .eyebrow{background:rgba(13,102,113,.12);color:var(--secondary);text-transform:uppercase;letter-spacing:.06em}
+      h1,h2,h3{margin:0;font-family:Georgia,serif;line-height:1.08} h1{font-size:clamp(2.1rem,4vw,3.4rem);max-width:13ch} h2{font-size:1.35rem} h3{font-size:1rem}
+      p{margin:.7rem 0 0;color:var(--muted);line-height:1.55}
+      .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:1rem}.span-4{grid-column:span 4}.span-5{grid-column:span 5}.span-7{grid-column:span 7}.span-8{grid-column:span 8}
+      .card{padding:1rem}.head{display:flex;justify-content:space-between;gap:.75rem;align-items:flex-start;margin-bottom:.9rem}
+      .status{background:rgba(45,125,70,.12);color:#2d7d46}.pill,.chip{background:rgba(29,42,49,.06)}
+      .field2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}.stack{display:grid;gap:.8rem}.list{display:grid;gap:.65rem}.scroll{max-height:330px;overflow:auto;padding-right:.15rem}
+      label{display:block;margin-bottom:.35rem;font-size:.9rem;font-weight:700}
+      input,select,textarea,button{font:inherit} input,select,textarea{width:100%;padding:.72rem .78rem;border:1px solid rgba(29,42,49,.14);border-radius:12px;background:#fff}
+      textarea{min-height:102px;resize:vertical}
+      button{border:0;border-radius:999px;padding:.72rem 1rem;color:#fff;cursor:pointer;background:linear-gradient(135deg,var(--accent),#8a3b29);box-shadow:0 10px 22px rgba(179,79,57,.22)}
+      button.secondary{background:linear-gradient(135deg,var(--secondary),#0a535b);box-shadow:0 10px 22px rgba(13,102,113,.2)} button:disabled{opacity:.72;cursor:wait}
+      .btns,.chips{display:flex;flex-wrap:wrap;gap:.55rem}
+      .meta{display:flex;flex-wrap:wrap;gap:.6rem}.box,.item,.entry,.callout,.empty,.error{padding:.85rem .9rem;border-radius:14px}
+      .item,.entry,.box{border:1px solid rgba(29,42,49,.08);background:rgba(255,255,255,.74)} .callout{background:rgba(13,102,113,.08);color:var(--secondary)} .empty{background:rgba(29,42,49,.05);color:var(--muted)} .error{background:rgba(179,79,57,.11);color:#8a3b29}
+      .entry.active{border-color:rgba(13,102,113,.28)} .entry{cursor:pointer}
+      .label{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)} .value{margin-top:.18rem;font-weight:700}
+      .meter{position:relative;height:12px;margin-top:.7rem;border-radius:999px;background:rgba(29,42,49,.08);overflow:hidden}.meter>span{position:absolute;inset:0 auto 0 0;background:linear-gradient(135deg,var(--secondary),var(--accent))}
+      .mark{position:absolute;top:-3px;bottom:-3px;width:2px;background:rgba(201,127,23,.75)}
+      pre{margin:0;padding:.9rem;border-radius:14px;background:#232830;color:#f5f7fb;font:13px/1.55 Consolas,monospace;white-space:pre-wrap}
+      code{padding:.12rem .32rem;border-radius:6px;background:rgba(29,42,49,.08);font:12px Consolas,monospace}
+      @media (max-width:1024px){.span-4,.span-5,.span-7,.span-8{grid-column:span 12}.field2{grid-template-columns:1fr}}
     </style>
   </head>
   <body>
     <main>
-      <div class="card">
-        <h1>Dossier Review API Shell</h1>
-        <p>Foundation UI for Day-1 validation. Search across indexed dossier sections.</p>
-        <label for="query">Query</label>
-        <input id="query" value="GMP certificate validity and inspection outcome" />
-        <button id="searchBtn">Run Retrieval Search</button>
-        <h2>Results</h2>
-        <ul id="results"></ul>
-      </div>
+      <section class="hero">
+        <div class="eyebrow">Local Retrieval Control Room</div>
+        <h1>Dossier Review Continuity Console</h1>
+        <p>Switch between Gemma E4B, Gemma E2B, and Qwen 3.5, watch context pressure live, auto-compact at 98% of the selected window, and link new chats to older threads with carryover summaries kept at lower cost.</p>
+      </section>
+
+      <section class="grid">
+        <article class="card span-4">
+          <div class="head"><div><h2>Chat Continuity</h2><p>Create linked review threads and monitor compaction before the window fills up.</p></div><span class="status" id="healthStatus">Loading</span></div>
+          <div class="meta" id="systemMetrics"></div>
+          <div class="callout" id="systemNarrative" style="margin-top:.75rem;">Loading runtime status.</div>
+          <div class="stack" style="margin-top:.85rem;">
+            <div class="box">
+              <div class="field2">
+                <div><label for="conversationTitle">New chat title</label><input id="conversationTitle" value="AMR review thread" /></div>
+                <div><label for="conversationContextWindow">Context window</label><input id="conversationContextWindow" type="number" min="1024" max="32768" value="4096" /></div>
+              </div>
+              <div class="field2" style="margin-top:.7rem;">
+                <div><label for="linkConversationSelect">Link previous chat</label><select id="linkConversationSelect"></select></div>
+                <div><label for="modelSelect">Model</label><select id="modelSelect"></select></div>
+              </div>
+              <div class="btns" style="margin-top:.75rem;"><button id="createConversationBtn">Start New Chat</button><button id="saveContextBtn" class="secondary">Update Window</button></div>
+            </div>
+            <div class="box">
+              <div class="head" style="margin-bottom:.55rem;"><div><h3>Active Thread</h3><p id="activeConversationLabel" style="margin-top:.35rem;">No chat selected yet.</p></div><span class="pill" id="conversationEngineBadge">No engine</span></div>
+              <div id="contextMonitorPanel" class="empty">Create or select a chat to inspect context pressure and compaction status.</div>
+              <div id="conversationSummaries" class="stack" style="margin-top:.75rem;"></div>
+            </div>
+            <div class="box"><h3>Review Threads</h3><div id="conversationList" class="list" style="margin-top:.7rem;"></div></div>
+          </div>
+        </article>
+
+        <article class="card span-8">
+          <div class="head"><div><h2>Review Studio</h2><p>Each review turn can land in a chat so the next question sees compressed continuity without paying full context cost.</p></div><div class="chips"><span class="pill">Auto compact at 98%</span><span class="pill">Linked carryover</span></div></div>
+          <div class="field2">
+            <div><label for="dossierSample">Sample dossier</label><select id="dossierSample"></select></div>
+            <div><label for="topK">Top K evidence</label><input id="topK" type="number" min="3" max="12" value="6" /></div>
+          </div>
+          <div class="field2" style="margin-top:.75rem;">
+            <div><label for="dossierId">Dossier ID</label><input id="dossierId" /></div>
+            <div><label>Selected chat</label><div class="callout" id="selectedConversationBadge">Standalone review mode. Create or select a chat to preserve continuity.</div></div>
+          </div>
+          <div class="callout" id="modelDescription" style="margin-top:.8rem;">Loading model catalog.</div>
+          <div style="margin-top:.8rem;"><label for="reviewQuestion">Review question</label><textarea id="reviewQuestion">Compare GMP certificate validity with pivotal trial outcome, keep prior conversation context in view, and explain the recommendation with citations.</textarea></div>
+          <div class="btns" style="margin-top:.8rem;"><button id="previewDossierBtn" class="secondary">Preview Dossier</button><button id="reviewBtn">Run Review Turn</button></div>
+          <div class="stack" style="margin-top:.9rem;">
+            <div><h3>Dossier Summary</h3><div id="dossierSummary" class="empty" style="margin-top:.5rem;">Select a dossier to inspect the summary.</div></div>
+            <div><h3>Review Result</h3><div id="reviewSummary" class="empty" style="margin-top:.5rem;">Run a review turn to see recommendation, rationale, and citations.</div></div>
+            <div><h3>Conversation Timeline</h3><div id="conversationTimeline" class="empty" style="margin-top:.5rem;">Review turns will accumulate here when a chat is selected.</div></div>
+          </div>
+        </article>
+
+        <article class="card span-5">
+          <div class="head"><div><h2>Retrieval Lab</h2><p>Inspect query decomposition before blaming the model.</p></div></div>
+          <label for="retrievalQuery">Retrieval query</label><textarea id="retrievalQuery">Compare WHO AWaRe reserve controls with watch similarity restrictions.</textarea>
+          <div class="btns" style="margin-top:.75rem;"><button id="retrievalBtn" class="secondary">Run Retrieval Search</button></div>
+          <div id="retrievalResults" class="stack" style="margin-top:.75rem;"><div class="empty">Retrieval results will appear here with decomposed sub-queries.</div></div>
+        </article>
+
+        <article class="card span-7">
+          <div class="head"><div><h2>Knowledge Wiki</h2><p>Curated operating guidance stays separately attributable from dossier evidence.</p></div><span class="pill">Indexed local wiki</span></div>
+          <label for="wikiQuery">Wiki question</label><textarea id="wikiQuery">How should Reserve fast-tracking and Watch restriction be handled together?</textarea>
+          <div class="btns" style="margin-top:.75rem;"><button id="wikiSearchBtn">Search Knowledge Wiki</button></div>
+          <div class="stack" style="margin-top:.75rem;">
+            <div><h3>Wiki Catalog</h3><div id="wikiCatalog" class="list" style="margin-top:.5rem;"></div></div>
+            <div><h3>Wiki Search Results</h3><div id="wikiResults" class="empty" style="margin-top:.5rem;">Search the wiki to inspect page-level citations.</div></div>
+          </div>
+        </article>
+      </section>
     </main>
     <script>
-      async function runSearch() {
-        const query = document.getElementById("query").value;
-        const res = await fetch("/v1/retrieval/search", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ query, top_k: 5 }),
-        });
-        const data = await res.json();
-        const list = document.getElementById("results");
-        list.innerHTML = "";
-        (data.citations || []).forEach((c) => {
-          const li = document.createElement("li");
-          li.innerHTML = `<code>${c.citation_id}</code> (${c.score}) - ${c.snippet}`;
-          list.appendChild(li);
-        });
-      }
-      document.getElementById("searchBtn").addEventListener("click", runSearch);
+      const state={models:[],dossiers:[],conversations:[],selectedConversationId:""};
+      const esc=(v)=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
+      const setBusy=(id,b)=>{const e=document.getElementById(id);if(e)e.disabled=b};
+      const empty=(id,m)=>document.getElementById(id).innerHTML=`<div class="empty">${esc(m)}</div>`;
+      const error=(id,m)=>document.getElementById(id).innerHTML=`<div class="error">${esc(m)}</div>`;
+      async function j(url,opt){const r=await fetch(url,opt);const p=await r.json();if(!r.ok)throw new Error(p.detail||"Request failed");return p}
+      const chips=(xs)=>xs?.length?`<div class="chips">${xs.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div>`:`<div class="empty">No sub-queries returned.</div>`;
+      const cites=(xs)=>xs?.length?`<div class="list">${xs.map(c=>`<div class="item ${c.dossier_id==="knowledge_wiki"?"wiki":"dossier"}"><div class="label"><code>${esc(c.citation_id)}</code> | ${esc(c.section_title)} | score ${esc(c.score)}</div><div style="margin-top:.32rem;">${esc(c.snippet)}</div></div>`).join("")}</div>`:`<div class="empty">No citations returned.</div>`;
+      function renderHealth(h,m){document.getElementById("healthStatus").textContent=h.status.toUpperCase();document.getElementById("systemMetrics").innerHTML=`<div class="item"><div class="label">Dossiers</div><div class="value">${h.dossiers_loaded}</div></div><div class="item"><div class="label">Models</div><div class="value">${m.available_models.length}</div></div><div class="item"><div class="label">Default Context</div><div class="value">${h.default_context_window_tokens}</div></div><div class="item"><div class="label">Free RAM</div><div class="value">${h.system_available_ram_gb.toFixed(2)} GB</div></div>`;document.getElementById("systemNarrative").innerHTML=`Default profile <strong>${esc(h.default_model_id)}</strong> runs under <strong>${esc(h.model_policy)}</strong>. Context compaction is designed to fire at <strong>98%</strong> of the selected window.`}
+      function populateModels(m){state.models=m.available_models;const s=document.getElementById("modelSelect");s.innerHTML=m.available_models.map(x=>`<option value="${esc(x.id)}" ${x.id===m.default_model_id?"selected":""}>${esc(x.label)}</option>`).join("");renderModelDesc()}
+      function renderModelDesc(){const id=document.getElementById("modelSelect").value;const m=state.models.find(x=>x.id===id);document.getElementById("modelDescription").innerHTML=m?`<strong>${esc(m.label)}</strong> uses runtime alias <code>${esc(m.runtime_model_id)}</code>. ${esc(m.description)}`:"Model metadata unavailable."}
+      function populateDossiers(d){state.dossiers=d.items;const s=document.getElementById("dossierSample");s.innerHTML=d.items.map((x,i)=>`<option value="${esc(x.dossier_id)}" ${i===0?"selected":""}>${esc(x.product_name)} | ${esc(x.inn_name)} | ${esc(x.country)}</option>`).join("");if(d.items.length){document.getElementById("dossierId").value=d.items[0].dossier_id;previewDossier()}}
+      function convoOptions(){document.getElementById("linkConversationSelect").innerHTML=`<option value="">No linked carryover</option>${state.conversations.map(c=>`<option value="${esc(c.conversation_id)}">${esc(c.title)} | ${c.context_window_tokens} ctx</option>`).join("")}`}
+      function renderConvoList(){const c=document.getElementById("conversationList");if(!state.conversations.length){c.innerHTML='<div class="empty">No chats yet. Start one to enable continuity and compaction.</div>';return}c.innerHTML=state.conversations.map(x=>`<div class="entry ${x.conversation_id===state.selectedConversationId?"active":""}" data-id="${esc(x.conversation_id)}"><div><strong>${esc(x.title)}</strong></div><div class="label" style="margin-top:.25rem;">${esc(x.selected_model_id)} | ${x.context_window_tokens} ctx | ${Math.round((x.context_monitor.usage_ratio||0)*100)}% used</div><div class="chips" style="margin-top:.45rem;"><span class="chip">Compactions ${x.compaction_count}</span><span class="chip">${x.carryover_available?"Linked carryover":"Fresh thread"}</span></div></div>`).join("");c.querySelectorAll(".entry").forEach(e=>e.onclick=()=>loadConversation(e.dataset.id))}
+      function meter(m){const pct=Math.min(100,Math.round((m.usage_ratio||0)*100)),mark=Math.min(100,Math.round((m.compaction_threshold_ratio||.98)*100));return `<div class="meta"><div class="item"><div class="label">Used</div><div class="value">${m.used_tokens}</div></div><div class="item"><div class="label">Remaining</div><div class="value">${m.remaining_tokens}</div></div><div class="item"><div class="label">Compactions</div><div class="value">${m.compaction_count}</div></div><div class="item"><div class="label">Engine</div><div class="value">${esc(m.conversation_engine)}</div></div></div><div class="meter"><span style="width:${pct}%"></span><div class="mark" style="left:${mark}%"></div></div><div class="chips" style="margin-top:.65rem;"><span class="chip">${pct}% of ${m.context_window_tokens} tokens</span><span class="chip">Summary ${m.rolling_summary_tokens}</span><span class="chip">Carryover ${m.carryover_tokens}</span><span class="chip">${m.auto_compaction_required?"Compaction due now":"Compaction below threshold"}</span></div>`}
+      function renderConvoDetail(d){const c=d.conversation;state.selectedConversationId=c.conversation_id;document.getElementById("conversationContextWindow").value=c.context_window_tokens;document.getElementById("activeConversationLabel").innerHTML=`<strong>${esc(c.title)}</strong><br><span class="label"><code>${esc(c.conversation_id)}</code></span>`;document.getElementById("conversationEngineBadge").textContent=c.context_monitor.conversation_engine;document.getElementById("selectedConversationBadge").innerHTML=`Active chat <strong>${esc(c.title)}</strong> will receive this review turn and carry continuity forward.`;document.getElementById("contextMonitorPanel").innerHTML=meter(c.context_monitor);document.getElementById("conversationSummaries").innerHTML=`${d.carryover_summary?`<div class="callout"><strong>Carryover summary</strong><br>${esc(d.carryover_summary)}</div>`:""}${d.rolling_summary?`<div class="callout"><strong>Rolling compacted summary</strong><br>${esc(d.rolling_summary)}</div>`:""}${!d.carryover_summary&&!d.rolling_summary?'<div class="empty">No compacted summary yet. It will appear automatically as the chat approaches 98% of the window.</div>':""}`;document.getElementById("conversationTimeline").innerHTML=d.messages.length?`<div class="list scroll">${d.messages.map(m=>`<div class="item ${m.archived?"archived":""}"><div class="label">${esc(m.role)} | ${esc(m.created_at_utc)} | ${m.tokens_estimate} tokens</div><div style="margin-top:.32rem;">${esc(m.content)}</div></div>`).join("")}</div>`:'<div class="empty">No turns in this chat yet.</div>';renderConvoList()}
+      function renderWiki(pages){document.getElementById("wikiCatalog").innerHTML=pages?.length?pages.map(p=>`<div class="item"><div><strong>${esc(p.title)}</strong></div><div class="label"><code>${esc(p.page_id)}</code></div><div class="chips" style="margin-top:.45rem;">${(p.tags||[]).map(t=>`<span class="chip">${esc(t)}</span>`).join("")}</div></div>`).join(""):'<div class="empty">No wiki pages were returned.</div>'}
+      async function loadConversations(autoSelect=true){const p=await j("/v1/conversations");state.conversations=p.items;convoOptions();renderConvoList();if(p.items.length&&(!state.selectedConversationId||!autoSelect))await loadConversation(p.items[0].conversation_id);if(!p.items.length){state.selectedConversationId="";document.getElementById("selectedConversationBadge").textContent="Standalone review mode. Create or select a chat to preserve continuity."}}
+      async function loadConversation(id){if(!id)return;const d=await j(`/v1/conversations/${encodeURIComponent(id)}`);renderConvoDetail(d)}
+      async function createConversation(){setBusy("createConversationBtn",true);try{const p=await j("/v1/conversations",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({title:document.getElementById("conversationTitle").value.trim()||null,context_window_tokens:Number(document.getElementById("conversationContextWindow").value||4096),linked_from_conversation_id:document.getElementById("linkConversationSelect").value||null,model_id:document.getElementById("modelSelect").value||null,dossier_id:document.getElementById("dossierId").value.trim()||null})});await loadConversations(false);renderConvoDetail(p)}catch(e){error("contextMonitorPanel",e.message)}finally{setBusy("createConversationBtn",false)}}
+      async function updateContext(){if(!state.selectedConversationId){error("contextMonitorPanel","Select a chat before updating the context window.");return}setBusy("saveContextBtn",true);try{const p=await j(`/v1/conversations/${encodeURIComponent(state.selectedConversationId)}/context`,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify({context_window_tokens:Number(document.getElementById("conversationContextWindow").value||4096)})});await loadConversations(true);renderConvoDetail(p)}catch(e){error("contextMonitorPanel",e.message)}finally{setBusy("saveContextBtn",false)}}
+      async function previewDossier(){const id=document.getElementById("dossierId").value.trim();if(!id){empty("dossierSummary","Enter a dossier ID to preview.");return}setBusy("previewDossierBtn",true);try{const p=await j(`/v1/dossiers/${encodeURIComponent(id)}`);document.getElementById("dossierSummary").innerHTML=`<div class="meta"><div class="item"><div class="label">Product</div><div class="value">${esc(p.product.product_name)}</div></div><div class="item"><div class="label">INN</div><div class="value">${esc(p.product.inn_name)}</div></div><div class="item"><div class="label">Country</div><div class="value">${esc(p.country)}</div></div><div class="item"><div class="label">AWaRe</div><div class="value">${esc(p.policy_signals.aware_category)}</div></div></div><div class="callout" style="margin-top:.75rem;">Applicant <strong>${esc(p.organization.applicant)}</strong> submitted <strong>${esc(p.product.product_name)}</strong> on <strong>${esc(p.submission_date)}</strong>.</div>`}catch(e){error("dossierSummary",e.message)}finally{setBusy("previewDossierBtn",false)}}
+      async function runReview(){const dossier_id=document.getElementById("dossierId").value.trim(),question=document.getElementById("reviewQuestion").value.trim();if(!dossier_id||!question){error("reviewSummary","Both dossier ID and review question are required.");return}setBusy("reviewBtn",true);try{const p=await j("/v1/review",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({dossier_id,question,top_k:Number(document.getElementById("topK").value||6),model_id:document.getElementById("modelSelect").value||null,conversation_id:state.selectedConversationId||null})});document.getElementById("reviewSummary").innerHTML=`<div class="chips"><span class="chip">Recommendation <strong>${esc(p.recommendation)}</strong></span><span class="chip">Route <strong>${esc(p.route)}</strong></span><span class="chip">Model <strong>${esc(p.selected_model.label)}</strong></span><span class="chip">Authorization <strong>${esc(p.amr_stewardship.authorization_control)}</strong></span>${p.context_monitor?`<span class="chip">Context ${Math.round(p.context_monitor.usage_ratio*100)}%</span>`:""}</div><div class="stack" style="margin-top:.75rem;"><div><div class="label">Sub-queries</div>${chips(p.sub_queries)}</div><div><div class="label">Rationale</div><pre>${esc(p.rationale)}</pre></div><div><div class="label">Citations</div>${cites(p.citations)}</div></div>`;await loadConversations(true);if(p.conversation_id)await loadConversation(p.conversation_id)}catch(e){error("reviewSummary",e.message)}finally{setBusy("reviewBtn",false)}}
+      async function runRetrieval(){setBusy("retrievalBtn",true);try{const p=await j("/v1/retrieval/search",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({query:document.getElementById("retrievalQuery").value.trim(),top_k:6})});document.getElementById("retrievalResults").innerHTML=`<div><div class="label">Sub-queries</div>${chips(p.sub_queries)}</div><div><div class="label">Citations</div>${cites(p.citations)}</div>`}catch(e){error("retrievalResults",e.message)}finally{setBusy("retrievalBtn",false)}}
+      async function runWiki(){setBusy("wikiSearchBtn",true);try{const p=await j("/v1/knowledge-wiki/search",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({query:document.getElementById("wikiQuery").value.trim(),top_k:6})});document.getElementById("wikiResults").innerHTML=`<div><div class="label">Sub-queries</div>${chips(p.sub_queries)}</div><div><div class="label">Citations</div>${cites(p.citations)}</div>`}catch(e){error("wikiResults",e.message)}finally{setBusy("wikiSearchBtn",false)}}
+      async function boot(){try{const [h,m,d,w]=await Promise.all([j("/health"),j("/v1/models"),j("/v1/dossiers?limit=12"),j("/v1/knowledge-wiki")]);renderHealth(h,m);populateModels(m);populateDossiers(d);renderWiki(w.pages);await loadConversations(true)}catch(e){document.getElementById("healthStatus").textContent="ERROR";document.getElementById("systemNarrative").textContent=e.message;error("reviewSummary",e.message);error("wikiResults",e.message);error("retrievalResults",e.message)}}
+      document.getElementById("modelSelect").addEventListener("change",renderModelDesc);
+      document.getElementById("dossierSample").addEventListener("change",e=>{document.getElementById("dossierId").value=e.target.value;previewDossier()});
+      document.getElementById("createConversationBtn").addEventListener("click",createConversation);
+      document.getElementById("saveContextBtn").addEventListener("click",updateContext);
+      document.getElementById("previewDossierBtn").addEventListener("click",previewDossier);
+      document.getElementById("reviewBtn").addEventListener("click",runReview);
+      document.getElementById("retrievalBtn").addEventListener("click",runRetrieval);
+      document.getElementById("wikiSearchBtn").addEventListener("click",runWiki);
+      boot();
     </script>
   </body>
 </html>
-

@@ -1,34 +1,34 @@
 {
-  "created_at_utc": "2026-04-05T07:06:57.094517+00:00",
+  "created_at_utc": "2026-04-10T09:43:27.566182+00:00",
   "input_jsonl": "synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
-  "num_dossiers": 1471,
+  "num_dossiers": 1475,
   "seed": 20260405,
   "min_class_count": 180,
   "original_distribution": {
-    "reject_and_return": 706,
-    "standard_review": 9,
-    "fast_track": 405,
-    "deep_review": 80
+    "reject_and_return": 763,
+    "fast_track": 352,
+    "deep_review": 72,
+    "standard_review": 13
   },
   "holistic_distribution": {
-    "reject_and_return": 706,
-    "standard_review": 180,
-    "fast_track": 405,
-    "deep_review": 180
+    "reject_and_return": 763,
+    "fast_track": 352,
+    "deep_review": 180,
+    "standard_review": 180
   },
   "augmentation_counts": {
-    "standard_review": 171,
-    "deep_review": 100
+    "deep_review": 108,
+    "standard_review": 167
   },
   "defect_distribution": {
-    "short_section": 300,
-    "clinical_failed": 180,
-    "gmp_certificate_expired": 175,
-    "inn_infringement": 216,
-    "gmp_non_compliant": 242,
-    "gmp_outdated": 240,
-    "clinical_missing": 219,
-    "missing_section": 191
+    "clinical_failed": 232,
+    "gmp_non_compliant": 246,
+    "inn_infringement": 263,
+    "gmp_certificate_expired": 155,
+    "short_section": 267,
+    "clinical_missing": 197,
+    "gmp_outdated": 197,
+    "missing_section": 198
   },
   "files": {
     "dossiers_jsonl": "dossiers.jsonl",

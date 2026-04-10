@@ -8,7 +8,8 @@ Policy-focused MLOps project for regulatory dossier review with local-first priv
 - `state/` handoff context for cross-laptop continuation
 
 ## Model Policy
-- Gemma 4 only. See `docs/model-policy.md`.
+- Switchable local profiles: Gemma E4B, Gemma E2B, and Qwen 3.5.
+- Optional local vLLM path is supported through environment configuration; Hugging Face tokens must be injected through environment variables and never committed.
 - Development host can be Asus (current), while release memory envelopes target a 32 GB Zenbook profile.
 
 ## API Contracts
@@ -24,6 +25,13 @@ python dossier-review-AI-assistant/synthetic_data/create_splits.py --help
 Run the local API:
 ```powershell
 python -m uvicorn dossier_review_ai_assistant.api:app --reload --app-dir src
+```
+
+Optional vLLM runtime setup:
+```powershell
+$env:HF_TOKEN="<your_hf_token>"
+$env:DOSSIER_MODEL_MODE="vllm"
+$env:DOSSIER_VLLM_BASE_URL="http://127.0.0.1:8001/v1/chat/completions"
 ```
 
 Local infra stack (Postgres/pgvector, Redis, MinIO, MLflow):
@@ -45,16 +53,21 @@ python scripts/retention_compliance.py --retention-days 30 --output state/audit/
 ```
 
 ## Current Dataset Snapshot
-- Raw (active): `synthetic_data/data/raw/balanced_v1_2026-04-05` (1471 dossiers)
+- Raw (active): `synthetic_data/data/raw/balanced_v1_2026-04-05` (1475 dossiers)
 - Raw (original): `synthetic_data/data/raw/v1_2026-04-03` (1200 dossiers)
 - Gold: `synthetic_data/data/gold/strict_v1_2026-04-03` (300 dossiers)
-- Splits (active): `synthetic_data/data/splits/balanced_v1_2026-04-05` (1030/222/219)
-- Splits (original): `synthetic_data/data/splits/v1_2026-04-03` (838/181/181)
+- Splits (active): `synthetic_data/data/splits/balanced_v1_2026-04-05` (1034/223/218)
+- Splits (original): `synthetic_data/data/splits/v1_2026-04-03` (838/183/179)
 
 ## Session Continuation (Token-Saving)
 1. Open `state/HANDOFF_STATE.md`
 2. Open `state/project_state.json`
 3. Continue implementation from `docs/implementation-plan.md` Day 4-7
+
+## Conversation Continuity
+- New review chats default to a `4096` token context window.
+- The UI shows live context usage and auto-compacts at `98%` of the configured window.
+- New chats can link to previous chats, carrying forward a compressed summary instead of the raw full transcript.
 
 ## Push and Fetch Workflow
 From this folder:

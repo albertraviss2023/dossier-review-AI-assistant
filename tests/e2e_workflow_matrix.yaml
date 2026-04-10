@@ -1,0 +1,83 @@
+iterations:
+  - mock
+  - snapshot
+  - live
+
+external_sources:
+  - who_aware
+  - who_glass
+  - rxnorm
+  - pubchem
+  - chembl
+  - unichem
+  - knowledge_wiki
+
+workflows:
+  - id: E2E-01
+    name: ingest_and_detect_antibacterial_ingredient
+    modes: [mock, snapshot, live]
+    required_result: ingredient normalized and classified as antibacterial or not applicable
+  - id: E2E-02
+    name: who_aware_lookup
+    modes: [mock, snapshot, live]
+    required_result: returned AWaRe group matches pinned WHO source
+  - id: E2E-03
+    name: reserve_mdr_fast_track
+    modes: [mock, snapshot, live]
+    required_result: fast_track plus restricted_authorization with WHO-backed evidence
+  - id: E2E-04
+    name: watch_similarity_rising_glass
+    modes: [mock, snapshot, live]
+    required_result: deep_review or restricted-authorization escalation with chemistry and GLASS evidence
+  - id: E2E-05
+    name: access_without_escalation
+    modes: [mock, snapshot, live]
+    required_result: non-escalated recommendation with cited source evidence
+  - id: E2E-06
+    name: non_antibacterial_not_applicable
+    modes: [mock, snapshot, live]
+    required_result: AWaRe logic marked not_applicable with no false escalation
+  - id: E2E-07
+    name: unresolved_ingredient_normalization
+    modes: [mock, snapshot, live]
+    required_result: abstain or reviewer intervention; no fabricated mapping
+  - id: E2E-08
+    name: aware_source_unavailable
+    modes: [mock, snapshot, live]
+    required_result: fallback to pinned snapshot or abstain
+  - id: E2E-09
+    name: glass_source_unavailable_or_stale
+    modes: [mock, snapshot, live]
+    required_result: cached snapshot used if valid or safe degradation triggered
+  - id: E2E-10
+    name: chemistry_source_timeout_or_rate_limit
+    modes: [mock, snapshot, live]
+    required_result: retry and fallback policy exercised; no silent chemistry omission
+  - id: E2E-11
+    name: chemistry_source_disagreement
+    modes: [mock, snapshot, live]
+    required_result: discrepancy logged and recommendation abstains or downgrades confidence
+  - id: E2E-12
+    name: reviewer_rationale_and_audit_trace
+    modes: [mock, snapshot, live]
+    required_result: rationale includes dossier evidence, external evidence, versions, and provenance
+  - id: E2E-13
+    name: knowledge_wiki_search_and_citation
+    modes: [mock, snapshot, live]
+    required_result: wiki pages are searchable with page metadata and section citations
+  - id: E2E-14
+    name: multi_hop_dossier_plus_wiki_question
+    modes: [mock, snapshot, live]
+    required_result: decomposition and synthesis return both dossier and wiki evidence
+  - id: E2E-15
+    name: switchable_model_execution_path
+    modes: [mock, snapshot, live]
+    required_result: selected model is honored and recorded in the response and audit trace
+  - id: E2E-16
+    name: context_window_monitor_and_auto_compaction
+    modes: [mock, snapshot, live]
+    required_result: usage is surfaced and oversized threads compact before the next turn
+  - id: E2E-17
+    name: linked_chat_carryover
+    modes: [mock, snapshot, live]
+    required_result: predecessor thread is summarized and successor thread starts with carryover context

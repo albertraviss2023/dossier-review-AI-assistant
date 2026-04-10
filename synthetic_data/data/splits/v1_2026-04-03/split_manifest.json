@@ -1,6 +1,6 @@
 {
-  "created_at_utc": "2026-04-02T22:43:09.380365+00:00",
-  "input_jsonl": "dossier-review-AI-assistant\\synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
+  "created_at_utc": "2026-04-10T09:43:27.312760+00:00",
+  "input_jsonl": "synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
   "seed": 20260403,
   "ratios": {
     "train": 0.7,
@@ -10,26 +10,26 @@
   "counts": {
     "total": 1200,
     "train": 838,
-    "val": 181,
-    "test": 181
+    "val": 183,
+    "test": 179
   },
   "label_distribution": {
     "train": {
-      "fast_track": 284,
-      "reject_and_return": 494,
-      "deep_review": 56,
-      "standard_review": 4
+      "fast_track": 247,
+      "reject_and_return": 535,
+      "deep_review": 50,
+      "standard_review": 6
     },
     "val": {
-      "reject_and_return": 107,
-      "fast_track": 61,
-      "standard_review": 1,
-      "deep_review": 12
+      "fast_track": 54,
+      "reject_and_return": 115,
+      "standard_review": 3,
+      "deep_review": 11
     },
     "test": {
-      "fast_track": 60,
-      "reject_and_return": 105,
-      "deep_review": 12,
+      "reject_and_return": 113,
+      "fast_track": 51,
+      "deep_review": 11,
       "standard_review": 4
     }
   },

@@ -1,0 +1,78 @@
+[
+  {
+    "page_id": "retrieval-first-architecture",
+    "title": "Retrieval-First Architecture",
+    "tags": ["retrieval", "rag", "query-decomposition", "evaluation"],
+    "sections": [
+      {
+        "heading": "Core Principle",
+        "text": "The project treats retrieval quality as the primary determinant of dossier-review quality. Model choice is secondary to chunking, source coverage, query decomposition, and evidence reconciliation."
+      },
+      {
+        "heading": "Query Decomposition",
+        "text": "Complex reviewer questions should be decomposed into focused sub-queries before retrieval. Each sub-query targets a specific document, section, or external knowledge topic, and the results are merged with explicit provenance."
+      },
+      {
+        "heading": "Evaluation Focus",
+        "text": "Retrieval quality must be measured independently from answer generation using recall, ranking quality, multi-hop coverage, and source-attribution completeness."
+      }
+    ]
+  },
+  {
+    "page_id": "who-aware-and-glass",
+    "title": "WHO AWaRe and GLASS Policy Stack",
+    "tags": ["who", "aware", "glass", "antimicrobial-resistance"],
+    "sections": [
+      {
+        "heading": "AWaRe Source of Truth",
+        "text": "WHO AWaRe is the authoritative source for Access, Watch, and Reserve assignment. Production policy decisions must not rely on synthetic or hand-maintained substitute lists."
+      },
+      {
+        "heading": "Reserve Stewardship",
+        "text": "Reserve antibiotics can be accelerated for review when they address critical MDR unmet need, but authorization controls should remain restrictive to preserve last-resort effectiveness."
+      },
+      {
+        "heading": "Watch Escalation",
+        "text": "A Watch antibiotic that is highly similar to an existing Watch comparator and paired with rising GLASS resistance should be escalated for restricted authorization and deeper review."
+      }
+    ]
+  },
+  {
+    "page_id": "chemistry-normalization-workflow",
+    "title": "Chemistry Normalization Workflow",
+    "tags": ["rxnorm", "pubchem", "chembl", "unichem", "similarity"],
+    "sections": [
+      {
+        "heading": "Normalization Order",
+        "text": "Ingredient names should be normalized through RxNorm before chemistry comparison. Brand names, salts, hydrates, and formulation-level strings must resolve to an active moiety or parent ingredient."
+      },
+      {
+        "heading": "Primary Chemistry Source",
+        "text": "PubChem PUG-REST is the primary source for canonical SMILES, InChI, InChIKey, parent-compound relationships, and structure-level lookup."
+      },
+      {
+        "heading": "Cross-Check and Reconciliation",
+        "text": "ChEMBL and UniChem should be used to cross-check identifiers and chemistry context. If the normalization chain cannot reconcile identifiers confidently, the policy flow should abstain rather than infer."
+      }
+    ]
+  },
+  {
+    "page_id": "model-switching-guidance",
+    "title": "Model Switching Guidance",
+    "tags": ["gemma-e4b", "gemma-e2b", "qwen-3.5", "ui", "routing"],
+    "sections": [
+      {
+        "heading": "Role of the Model Switch",
+        "text": "UI model switching exists to let reviewers and developers compare local synthesis behavior across Gemma E4B, Gemma E2B, and Qwen 3.5. It does not replace retrieval quality or source validation."
+      },
+      {
+        "heading": "Recommended Usage",
+        "text": "Gemma E4B should be used as the balanced default, Gemma E2B as the lighter fast option, and Qwen 3.5 as an alternative synthesis profile for difficult comparative questions."
+      },
+      {
+        "heading": "Audit Requirement",
+        "text": "Every review response and audit trace should record the selected model profile so differences in synthesis can be reproduced."
+      }
+    ]
+  }
+]

@@ -1,301 +1,301 @@
-dossier_id,country,model_decision,final_human_decision,reviewer_confidence,override_of_model,override_reason,label_source
-DOS-67F3C3925E,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-DA34395B8D,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-F33B4E1216,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-EE4BAD4B87,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-DAFD20BB27,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-FA03B0C331,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-264337FBF7,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-50734FAC2F,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-4CB26B92DE,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-628C121A90,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-20B579CAB3,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-CF3640B8B0,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-99E962A265,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-58523C7371,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-94DB93654C,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-2CC73B8644,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-9B59EDC563,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-74BD1CDD5C,Botswana,standard_review,standard_review,0.76,False,none,machine_adjudicated
-DOS-5206064543,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-A804AE6DCF,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-FD5408F001,Tanzania,standard_review,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-373D43FB4A,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-56C873D5CB,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-2E9C1B5109,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-B06C9870A6,Uganda,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated
-DOS-2C6A5A5CFC,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-4369B1822D,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-5E5C31E099,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-17ED592D47,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-7CBFE2230E,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-2133337B11,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-1D93D264AC,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-8591BFBAD2,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-7D10D5824E,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-B2603C2DE7,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-6E25B37319,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-5F05C7A058,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-1A578A1FB5,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-CC2A613B3A,Tanzania,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated
-DOS-76310A00F3,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-5FD0FD18A6,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-A0F625E474,Burkina Faso,standard_review,standard_review,0.76,False,none,machine_adjudicated
-DOS-DD17DDACA2,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-1BC7DAFEA7,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-D16CFADB5A,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-070BBEBD34,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-FA4B71CC9E,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-1979A5F592,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-4F7A182520,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-6FF3CE9AE3,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-4E16608987,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-96A9F77151,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-2BECB02E8D,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-5AAD8F4438,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-8ABEB48EE9,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-2D5339DC80,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-1762F76075,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-059998921D,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-D678E8669B,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-18AB1EE7C7,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-1198D59DB2,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-636919585D,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-222C15690E,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-9DD7821D94,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-C237F47C50,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-B6E8F5FB2F,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-94EA374C69,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-5C14D0384F,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-6995C96F26,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-F248209FA0,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-A3990395BC,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-68CD933DE3,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-C4C223CE0B,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-AE7B897162,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-0A57F9DFD8,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-414A8D06EF,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-4FF3F90C13,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-4BA40ABC28,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-0F979E07B6,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-9FE6744962,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-D378622EC0,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-BBF0C5DA62,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-63B4132FA5,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-8D7FA51B1D,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-6DDDF9D827,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-97A01123A4,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-98C7B72501,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-E1A202F819,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-050464F122,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-2A42A092D1,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-C88D6F43DB,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-F7AB4DB8F9,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-0CF74526C9,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-695CA08EB8,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-FF63098F31,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-2DFCAD08FC,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-97553B7CEE,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-4CA06F8B3A,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-02A34B239A,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-3E9E15AD89,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-BB75CAF1F0,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-5F9860DA0D,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-C2C0141FEE,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-26614980BA,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-29EA889BFD,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-F64D385F44,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-B161BA156D,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-4249ADBDE4,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-386BBFF30C,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-82DF53D8B8,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-DEA39C8FA5,Uganda,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated
-DOS-1CC242FAFC,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-8F3386644A,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-491BD61F46,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-E1A45089C4,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-A9642F40B3,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-27D14E0920,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-53ABAB86E7,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-EAB12DFC07,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-0E485E820D,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-2F3ECCA279,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-D43564B992,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-FBD0C07D45,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-1E45F64533,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-B056D1B594,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-30DDBA764A,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-CE95BD1106,Burkina Faso,standard_review,standard_review,0.76,False,none,machine_adjudicated
-DOS-31F88238D3,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-D04EFD1718,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-AD57BE780F,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-1BB77D06F8,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-922A16506D,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-DF0DFA1340,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-617B7F3031,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-72C176A2D9,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-FF790B3C79,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-D7DF58DE37,Botswana,fast_track,deep_review,0.88,True,policy_guardrail_escalation,machine_adjudicated
-DOS-57F2B32298,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-C2FB1A3FA8,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-ADF9C49799,Tanzania,standard_review,standard_review,0.76,False,none,machine_adjudicated
-DOS-3025C5C656,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-C22AB2BB02,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-E50B437797,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-F4D556E44C,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-2D8BD563A3,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-DCADBE6648,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-380BFB479E,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-0358A5DE19,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-8251F3E7E1,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-7CA339FC99,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-1B84B7EB54,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-34EA2F853B,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-B257388E62,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-3A5AC342D9,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-F0859C2D42,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-1B9187BE40,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-CC076549B6,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-1835509351,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-D4717EE7CC,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-0F44DD138F,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-E5C98277B8,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-FD5FF48D64,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-3C182EC1C1,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-5239084247,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-CFA3BF9DCE,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-01941CD4F5,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-4BBA7AD0CD,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-9C69100735,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-57CDE5B52B,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-329037B011,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-4118F9485F,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-7055BB9E50,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-312E65772F,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-9C380F94B2,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-9594558696,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-E469CE4099,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-7F2BEB4386,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-2B112D9AB4,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-35E3CB24FC,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-F73CDD7E82,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-EFF3F53F42,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-BD55BE9D52,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-46B5BDFC8F,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-DE546DA7BF,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-E72A6E16AA,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-E6CD264AE5,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-0AFD3A3099,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-1D55829B9B,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-D4850E20FF,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-0CD4868A83,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-3A125D888C,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-5287C4FD4C,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-19ED4B869E,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-AD26A62EC8,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-76D8F8798C,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-E2E9A6C8CB,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-66730639A7,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-12D0F17374,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-17732A3DC3,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-710A99C848,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-F61BE5584F,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-D210690A03,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-1C0BABC62C,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-887657B730,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-E5A73EFB01,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-34AC4AE12A,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-7DAC1B9513,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-87633B4CAF,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-8098770232,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-1B6D4C0797,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-A72734D514,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-706BC8D829,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-4272169CB8,Uganda,standard_review,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-E6269E353A,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-E1DCF9692B,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-2C1A15B4B4,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-F3C4E0AB1D,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-4939A35188,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-7C543C8569,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-87608D2A75,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-F6B35CAF5A,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-90C6C39B40,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-19E5296354,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-4A84018C47,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-CB82450085,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-3F4683BE37,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-DFC1C90395,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-12A9D66B54,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-7A936F5AFC,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-674649CC7C,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-8EFDC824A4,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-57BB76B4D7,Botswana,fast_track,deep_review,0.88,True,policy_guardrail_escalation,machine_adjudicated
-DOS-4BE9DBD33D,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-B2444A312C,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-A00AE8B247,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-4AFCD505C0,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-281194DCB4,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-3998F6D27E,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-87F19CE1FC,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-216A9DB306,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-DD81463549,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-0AB577610C,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-38330BE295,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-66FD547F27,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-710167C701,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-0FF2F64A16,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-EE195AFE3F,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-30ECAB7F8D,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-FC7D7A8D6A,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-065C19B96D,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-A6470A5B91,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-3445F23A6C,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-4D458A1AC2,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-6D0988019F,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-F3C6C753CE,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-0B34353E68,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-002F1FA6BD,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-614E4C8891,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-14B16328AB,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-2A4AF58259,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-3476B106AB,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-7B1DD8834D,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-F314D1B7CA,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-0ECCC274CE,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-1B759A48CE,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-33E8CC917F,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-30E07C0C5F,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-5C40CC749F,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-4BE3CA04C5,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-F0B2205C29,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-0B03A892AB,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-E4F261D94A,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-BA853B4FD9,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-DAB56A1975,Burkina Faso,standard_review,standard_review,0.76,False,none,machine_adjudicated
-DOS-C794AEBE3A,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-7D345305A2,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-DF6B8B3202,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-090D465FA4,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-A9E5EC27EC,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-A3017832A6,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-FCD93952AF,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-143949B3E1,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-98508E645B,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-A583CC7F51,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-9D51FBDB14,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-313E148514,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-A62E1A14BE,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-1D2F7B8331,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-36A9C54090,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-9135E866AE,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-7263DBB3E7,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-3EE2F49EF0,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-03CBBE6FA5,Tanzania,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated
-DOS-F464ED0DE8,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-85FDF3215D,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated
-DOS-D19F450A1C,Uganda,standard_review,standard_review,0.76,False,none,machine_adjudicated
-DOS-2D7E3A7D0F,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated
-DOS-B7289D7579,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
-DOS-A0BF597FDF,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated
-DOS-3B255B58DF,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated
+dossier_id,country,model_decision,final_human_decision,reviewer_confidence,override_of_model,override_reason,label_source,aware_category,amr_unmet_need,targets_mdr_pathogen,glass_resistance_trend,similarity_to_existing_watch,existing_watch_comparator
+DOS-10B6A7E2DE,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-2410524236,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-8616375BBF,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-D45AEBA30A,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DB138935D1,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-5D2F0F8EA9,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-293FBD2F6F,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F850ACD3ED,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3F5EA1AC3D,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4EDD06197F,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-20C06F820E,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-FD3F8CEC3C,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-9F143F4D9B,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-6DCD68C539,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,watch,routine,False,stable,high,thiamphenicol
+DOS-5E0ED46B6E,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C77F8F4DC7,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-127FE994C0,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,watch,routine,False,rising,moderate,ofloxacin
+DOS-86643B5D93,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,watch,routine,False,stable,high,ceftriaxone
+DOS-2283EC88B7,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-D78D1D83E7,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-B9AEDB2F6F,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1653489A93,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-8ECBAB4E4B,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4139BC87B8,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,high,thiamphenicol
+DOS-CA435611E2,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4D743C22EB,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-0028D6A771,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,stable,high,ciprofloxacin
+DOS-4A5F81A082,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,rising,high,ceftriaxone
+DOS-158A67C688,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-FA014E7957,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-60B5BEF35E,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-BB29FEFC37,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1D5D70317B,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-96059F841C,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,rising,low,not_applicable
+DOS-7EDC54C379,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-495EAFE4AB,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-11A07C174B,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A157791B8B,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-0853992233,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3BF53293FB,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-66C11EF814,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B8FACDC71C,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-CF4744AB4A,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,rising,low,not_applicable
+DOS-FA9F645A25,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7A537A43DF,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-473C24A5CA,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A718F44153,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-6CA85964EA,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,high,ofloxacin
+DOS-183B7E5DFE,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C06CA81DD8,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1BC1770A6F,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-79770737DD,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1D18A263FF,Burkina Faso,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-84AD12282F,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-AC2AC9BA39,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,reserve,high,True,rising,not_applicable,not_applicable
+DOS-A28CF36E46,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F85A80DD94,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-D8BD4B2F0D,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-ECAC193A34,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B86BACD65E,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,high,clarithromycin
+DOS-BBFF2FDC2D,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4CAA048C80,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-65AD4BEBD7,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F97178C095,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3F27B1B6E1,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4D4CBB939D,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-0D7C575F81,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-2F23C3A6B0,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-801323507B,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,watch,moderate,False,rising,low,erythromycin
+DOS-78C67E7EC1,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,moderate,ampicillin
+DOS-20B792D24E,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F07818C315,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,rising,low,not_applicable
+DOS-3746015DC2,Botswana,fast_track,fast_track,0.94,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-76DAEB8367,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-11BB11B5D2,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F19516AAD5,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-902DD1A87E,Tanzania,fast_track,fast_track,0.94,False,none,machine_adjudicated,reserve,high,True,rising,not_applicable,not_applicable
+DOS-48E0CDD2BB,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-CAD4E17270,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,watch,routine,False,stable,moderate,ampicillin
+DOS-8B7FB26975,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-357CE091CE,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7114CC0D97,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DA7463B5F0,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B273BB30D2,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-8B60B71DD1,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-799A5B32F3,Burkina Faso,standard_review,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,watch,moderate,False,rising,moderate,levofloxacin
+DOS-20A16017AE,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,stable,low,lincomycin
+DOS-3567222AC9,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-E0954EB116,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-28CB1BDB85,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-75B4E0FD03,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1C0E9CAF9A,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-CE22C9082B,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-416F475864,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A4538E12AD,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-331460F9FA,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4C69FA1794,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-1322878926,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-E5E8A38546,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3FF5D208D8,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-438E58ABC3,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-853F9252B6,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DBD980901D,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1E19639943,Botswana,standard_review,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4D8225252F,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-799CFD96C6,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-27D5D83CBE,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-0CA47D950A,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A5F6448E70,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-456D6AE455,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A8D8F45987,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-8470B1217C,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-8E3DCD0743,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4E59DBB000,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,watch,routine,False,stable,low,azithromycin
+DOS-E8A629F788,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-4F3752E31D,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-436242ECF8,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DAA8DD3E25,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-2C771638E3,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B48A9EB73A,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A14776F5BF,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,moderate,False,stable,moderate,levofloxacin
+DOS-ADAD7C9B96,Burkina Faso,standard_review,standard_review,0.76,False,none,machine_adjudicated,access,routine,False,rising,low,not_applicable
+DOS-88D0A499EB,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A85586AA52,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-741D3F3642,Botswana,standard_review,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F2A921CC93,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-9388DC1B2D,Burkina Faso,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-0996F8657E,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-10E12965A2,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-EF4F41FADB,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-29C783BAB9,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-2186AF45A5,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3F9AF6EB97,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-401755DFE0,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1F38179319,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-23832FD4EC,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-420E764509,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-FD2FCB9FC1,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-62EF364D37,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-76EB3995BA,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,stable,low,lincomycin
+DOS-24B7AE1B81,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-E1CBCC6C49,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-FEDAF45FE8,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-08AA0EE80D,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-AF777A70F6,Uganda,standard_review,standard_review,0.76,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-E3420C9528,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-044E60491E,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-CF04B6DA45,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-EA09777464,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C158DDD49D,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7944916355,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-66B87C66CE,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,watch,routine,False,declining,moderate,gentamicin
+DOS-9D86A15744,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-EC2D939654,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-A52DA06098,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,watch,routine,False,stable,high,gentamicin
+DOS-827D8BDE6B,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3E8C48BE8B,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-D6F780182D,Uganda,standard_review,standard_review,0.76,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-5A772CFD37,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,moderate,False,rising,low,ampicillin
+DOS-C8A675AB21,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-6DDA0B00C8,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-9DC5627876,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C1C7D557BB,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-44EA8336AF,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F1E8AC0BA5,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7EFBD823EC,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1D82E337C8,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3819702FE8,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1F6989483D,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-45D07324EF,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-23D126E0AD,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-24ED95D37A,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-AD56E12C2C,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-AEA88C2A4F,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C382FC2583,Uganda,standard_review,standard_review,0.76,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-42FD8F9264,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-37E120CFE1,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-980D494FA0,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7516722100,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-5F477F2FDD,Uganda,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-FF3B62DC2B,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-ABA317CD0B,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7E75ACBFB3,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-21A6413A39,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,high,ceftriaxone
+DOS-5835474C97,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-BBF8321B70,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3C67B932C7,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,stable,low,thiamphenicol
+DOS-C638AF48F3,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-5BB6A73E47,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,moderate,False,rising,high,ampicillin
+DOS-1BA46FC477,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-49B9F3A8C8,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F3D1494789,Burkina Faso,fast_track,deep_review,0.88,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-526563A434,Uganda,fast_track,fast_track,0.94,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-86F1705B2C,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-94CFE8A1DA,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-8EE8DFDE96,Tanzania,standard_review,standard_review,0.76,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-19D72FA0C4,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-2B00649F25,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1C1D8C448D,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-610806DE2D,Uganda,standard_review,standard_review,0.76,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-CC3D50EA72,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7DFBF124AD,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-580E5C978D,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-FB29003B60,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,stable,high,azithromycin
+DOS-DB90753C6B,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-EA19290F98,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-27789E11E1,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,watch,routine,False,rising,moderate,ceftriaxone
+DOS-77746A48EC,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-6F88767A15,Uganda,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,high,erythromycin
+DOS-3A8C489390,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,watch,routine,False,rising,low,cefotaxime
+DOS-8A7D71BEAA,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DD5DBD4D46,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-43F78A628D,Burkina Faso,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated,watch,routine,False,stable,low,gentamicin
+DOS-9503C4F30B,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-02CF48F1D8,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-564ECA04D9,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,rising,moderate,levofloxacin
+DOS-42071E36FE,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-BD0111220D,Burkina Faso,fast_track,fast_track,0.94,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-605DC7BD09,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-52855431A4,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-BA79A4C47D,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-9B194DDA68,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-BDC5205450,Burkina Faso,fast_track,fast_track,0.94,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-2100FF696F,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,reserve,high,True,rising,not_applicable,not_applicable
+DOS-0E4E7276EA,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-72B57FB083,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-4FCE49B43F,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-98E2C5229B,Botswana,standard_review,standard_review,0.76,False,none,machine_adjudicated,watch,moderate,False,rising,low,levofloxacin
+DOS-81D56811EC,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-72E491C56D,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C4ED796E3B,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7E4D524696,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-07451C3FE9,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-CB283BD19C,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-802FB737D1,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B895335D64,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-620B802053,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-0B750990A2,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,rising,high,erythromycin
+DOS-90F83CF728,Uganda,deep_review,reject_and_return,0.97,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-067A803FAE,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3B7D423D65,Tanzania,fast_track,fast_track,0.94,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-56CBCE5973,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-ECBDEFC028,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-887206CD97,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-BB0D7A3C09,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-981948B315,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3B6989E07A,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-49D5EC3471,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,high,cefotaxime
+DOS-D09F26F66E,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7540DBE78D,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-B2D0BE54EA,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3838E18D61,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C236D7BB24,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-FE5839FD8A,Tanzania,standard_review,standard_review,0.76,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-2CECD38A83,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-52E9A86C5C,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-EAAAB57C4C,Burkina Faso,deep_review,deep_review,0.88,False,none,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-5FC5E264F7,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-E43F632B04,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-6D434AB80C,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,watch,routine,False,stable,low,clarithromycin
+DOS-6CB50F178F,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1132928DAE,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-8277D0F126,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,access,routine,False,declining,low,not_applicable
+DOS-9838C0B5D3,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B99A45707B,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,routine,False,rising,high,ceftriaxone
+DOS-257EF8D791,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7B7592BD64,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DBD6494750,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,reserve,critical,True,rising,not_applicable,not_applicable
+DOS-5F31986F3B,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-EDACE722B4,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,watch,moderate,False,stable,low,erythromycin
+DOS-77EB3B97D8,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-21F1DA5A19,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DB46FC27A3,Botswana,deep_review,deep_review,0.88,False,none,machine_adjudicated,watch,moderate,False,rising,high,lincomycin
+DOS-5C4FEA6B70,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B70A234EBA,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-446EFC82D3,Burkina Faso,standard_review,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-66FA011212,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-D8B362F91A,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,access,routine,False,rising,low,not_applicable
+DOS-CFEEDB9A1D,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-8F76099047,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-7B8BD30606,Botswana,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-0381E8E253,Tanzania,fast_track,deep_review,0.88,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-F3BB4C0E1B,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-D5A2034A4D,Burkina Faso,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-3872DCA2EA,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-1112EB8829,Burkina Faso,standard_review,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-24C2611C0E,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-DBB8B687C2,Botswana,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-6AF1C8D81D,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-5A4AE9C873,Botswana,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-C0341CF91B,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-E19FF92413,Burkina Faso,fast_track,fast_track,0.93,False,none,machine_adjudicated,access,routine,False,stable,low,not_applicable
+DOS-5A9D46BF98,Tanzania,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-B71DCA8386,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,access,routine,False,rising,low,not_applicable
+DOS-D7395C6FEB,Tanzania,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-ABF4BDE8BE,Uganda,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-59BAE6057A,Tanzania,deep_review,deep_review,0.88,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-EB1C35AFCB,Uganda,fast_track,fast_track,0.93,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-D97FB7C728,Tanzania,fast_track,deep_review,0.82,True,policy_guardrail_escalation,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable
+DOS-255DD5E521,Burkina Faso,reject_and_return,reject_and_return,0.97,False,none,machine_adjudicated,not_applicable,not_applicable,False,not_applicable,not_applicable,not_applicable

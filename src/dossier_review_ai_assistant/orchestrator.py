@@ -4,8 +4,8 @@ from dataclasses import dataclass
 from typing import Any
 
 from .gates import retrieval_confidence, route_request, verify_claim_groundedness
-from .inference import Gemma4Client
-from .policy import apply_policy_rules
+from .inference import LocalModelClient
+from .policy import apply_policy_rules, evaluate_amr_stewardship
 from .retrieval import RetrievalHit
 
 
@@ -22,6 +22,8 @@ class OrchestrationResult:
     verifier: dict[str, Any]
     hits: list[RetrievalHit]
     section_diagnostics: list[dict[str, Any]]
+    amr_stewardship: dict[str, Any]
+    selected_model_id: str
 
 
 def build_section_diagnostics(dossier: dict[str, Any]) -> list[dict[str, Any]]:
@@ -61,9 +63,12 @@ def run_review_orchestration(
     dossier: dict[str, Any],
     question: str,
     hits: list[RetrievalHit],
+    model_id: str,
+    conversation_context: str | None = None,
     force_fallback: bool = False,
 ) -> OrchestrationResult:
     recommendation, rule_hits, policy_confidence = apply_policy_rules(dossier)
+    amr_stewardship = evaluate_amr_stewardship(dossier)
     evidence = [
         {
             "citation_id": hit.chunk.citation_id,
@@ -103,14 +108,17 @@ def run_review_orchestration(
             },
             hits=hits,
             section_diagnostics=build_section_diagnostics(dossier),
+            amr_stewardship=amr_stewardship,
+            selected_model_id=model_id,
         )
 
-    generator = Gemma4Client()
+    generator = LocalModelClient(model_id=model_id)
     generated = generator.generate(
         question=question,
         recommendation=recommendation,
         evidence=evidence,
         route=route,
+        conversation_context=conversation_context,
     )
 
     valid_citations = {ev["citation_id"] for ev in evidence}
@@ -135,5 +143,6 @@ def run_review_orchestration(
         verifier=verifier,
         hits=hits,
         section_diagnostics=build_section_diagnostics(dossier),
+        amr_stewardship=amr_stewardship,
+        selected_model_id=model_id,
     )
-

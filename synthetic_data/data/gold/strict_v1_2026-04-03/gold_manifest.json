@@ -1,8 +1,8 @@
 {
-  "created_at_utc": "2026-04-02T22:42:14.974996+00:00",
+  "created_at_utc": "2026-04-10T09:43:26.291783+00:00",
   "reviewer_id": "senior_reviewer_sim_v1",
   "adjudication_profile": "strict",
-  "input_jsonl": "dossier-review-AI-assistant\\synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
+  "input_jsonl": "synthetic_data\\data\\raw\\v1_2026-04-03\\dossiers.jsonl",
   "num_records": 300,
   "target_dist": {
     "fast_track": 0.25,
@@ -11,19 +11,19 @@
     "reject_and_return": 0.25
   },
   "gold_distribution": {
-    "reject_and_return": 122,
-    "fast_track": 93,
+    "reject_and_return": 127,
     "deep_review": 79,
-    "standard_review": 6
-  },
-  "model_distribution_in_sample": {
-    "reject_and_return": 118,
-    "fast_track": 147,
-    "deep_review": 27,
+    "fast_track": 86,
     "standard_review": 8
   },
-  "override_count": 60,
-  "override_rate": 0.2,
+  "model_distribution_in_sample": {
+    "reject_and_return": 123,
+    "fast_track": 135,
+    "deep_review": 29,
+    "standard_review": 13
+  },
+  "override_count": 58,
+  "override_rate": 0.1933,
   "files": {
     "gold_set_jsonl": "gold_set.jsonl",
     "gold_holistic_labels_csv": "gold_holistic_labels.csv",

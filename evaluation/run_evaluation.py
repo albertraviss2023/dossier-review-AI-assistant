@@ -223,6 +223,7 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
                 dossier=dossier,
                 question=query,
                 hits=hits,
+                model_id=settings.model_id,
                 force_fallback=False,
             )
             standard_latencies.append(time.perf_counter() - t0)
@@ -237,6 +238,7 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
                 dossier=dossier,
                 question=query,
                 hits=hits,
+                model_id=settings.model_id,
                 force_fallback=True,
             )
             fallback_latencies.append(time.perf_counter() - t1)
@@ -271,6 +273,7 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
             dossier=dossier,
             question=hard_query,
             hits=low_hits,
+            model_id=settings.model_id,
             force_fallback=False,
         )
         abstain_correct.append(1 if abstain_result.abstained else 0)
