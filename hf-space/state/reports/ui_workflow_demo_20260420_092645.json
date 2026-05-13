@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-04-20T09:26:45.293010",
+  "conversation_id": "conv-f722fb1b74",
+  "dossier_id": "DOS-9D9BC5402A",
+  "selected_context_window": 16384,
+  "review_preview": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **Medizyme** (levofloxacin), submitted by **National Therapeutics**. The structured review found **4** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Medizyme'.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. The ingredient was normalized to **levofloxacin** for stewardship checks. Restricted authorization is triggered because the chemistry profile shows **high** similarity to **ciprofloxacin**. Local GLASS surveillance data indicates rising resistance, wh",
+  "wiki_preview": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **Medizyme** (levofloxacin), submitted by **National Therapeutics**. The structured review found **4** unresolved requirement-level concerns. The dossier originates from **Burkina Faso**.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Medizyme'.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. The i",
+  "graph_title": "Dossier Relationship Graph",
+  "graph_type": "network",
+  "graph_node_count": 18,
+  "graph_edge_count": 16
+}

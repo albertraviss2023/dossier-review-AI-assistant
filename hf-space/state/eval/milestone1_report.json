@@ -1,0 +1,369 @@
+{
+  "summary": {
+    "records_evaluated": 20,
+    "all_metrics_passed": false,
+    "failed_metrics": [
+      "approval_denied_recall",
+      "chunking_retrieval_lift_vs_section_baseline",
+      "expected_calibration_error",
+      "fixed_set_rerun_variance",
+      "gmp_evidence_extraction_macro_f1",
+      "holistic_policy_macro_f1",
+      "pivotal_trial_outcome_extraction_macro_f1"
+    ],
+    "release_gate_status": {
+      "require_metric_thresholds_pass": false,
+      "overall_passed": false
+    },
+    "retention_summary": {
+      "retention_days": 30,
+      "total_records": 20,
+      "retained_records": 20,
+      "expired_records": 0,
+      "malformed_records": 0,
+      "compliance_rate": 1.0
+    },
+    "evaluation_profile": {
+      "retriever": "hybrid_bm25_densevector_rrf_rerank_v2",
+      "baseline_retriever": "lexical_section_monolith_v1",
+      "external_source_mode": "snapshot_only",
+      "conversation_eval_mode": "conversation_store_linked_context_v1"
+    },
+    "amr_scope": {
+      "aware_applicable_records": 12,
+      "watch_restriction_positive_records": 5
+    },
+    "synthetic_data_coverage": {
+      "total_test_records_available": 218,
+      "balanced_selection_applied": true,
+      "selected_approval_denied_records": 0,
+      "selected_watch_restriction_positive_records": 5,
+      "selected_aware_applicable_records": 12
+    }
+  },
+  "metrics": {
+    "section_presence_accuracy": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.97,
+        "stretch": 0.99
+      },
+      "passed": true
+    },
+    "section_length_macro_f1": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.93,
+        "stretch": 0.96
+      },
+      "passed": true
+    },
+    "section_correctness_macro_f1": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.85,
+        "stretch": 0.9
+      },
+      "passed": true
+    },
+    "gmp_evidence_extraction_macro_f1": {
+      "value": 0.473684,
+      "threshold": {
+        "min": 0.88,
+        "stretch": 0.92
+      },
+      "passed": false
+    },
+    "pivotal_trial_outcome_extraction_macro_f1": {
+      "value": 0.25,
+      "threshold": {
+        "min": 0.86,
+        "stretch": 0.9
+      },
+      "passed": false
+    },
+    "holistic_policy_macro_f1": {
+      "value": 0.0,
+      "threshold": {
+        "min": 0.82,
+        "stretch": 0.88
+      },
+      "passed": false
+    },
+    "approval_denied_recall": {
+      "value": 0.0,
+      "threshold": {
+        "min": 0.9,
+        "stretch": 0.94
+      },
+      "passed": false
+    },
+    "expected_calibration_error": {
+      "value": 0.95132,
+      "threshold": {
+        "max": 0.08,
+        "stretch_max": 0.05
+      },
+      "passed": false
+    },
+    "retrieval_recall_at_10": {
+      "value": 0.935,
+      "threshold": {
+        "min": 0.88,
+        "stretch": 0.93
+      },
+      "passed": true
+    },
+    "retrieval_ndcg_at_10": {
+      "value": 0.991914,
+      "threshold": {
+        "min": 0.75,
+        "stretch": 0.82
+      },
+      "passed": true
+    },
+    "chunking_budget_overrun_rate": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0.0
+      },
+      "passed": true
+    },
+    "chunking_retrieval_lift_vs_section_baseline": {
+      "value": 0.056667,
+      "threshold": {
+        "min": 0.1,
+        "stretch": 0.14
+      },
+      "passed": false
+    },
+    "aware_category_macro_f1": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.95,
+        "stretch": 0.98
+      },
+      "passed": true
+    },
+    "source_backed_resolution_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.95,
+        "stretch": 1.0
+      },
+      "passed": true
+    },
+    "chemistry_identifier_coverage_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.95,
+        "stretch": 1.0
+      },
+      "passed": true
+    },
+    "watch_restriction_recall": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.85,
+        "stretch": 0.95
+      },
+      "passed": true
+    },
+    "grounded_claim_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.95,
+        "stretch": 0.98
+      },
+      "passed": true
+    },
+    "unsupported_critical_claim_rate": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0.03,
+        "stretch_max": 0.01
+      },
+      "passed": true
+    },
+    "correct_abstain_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.85,
+        "stretch": 0.92
+      },
+      "passed": true
+    },
+    "conversational_followup_success_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.9,
+        "stretch": 0.97
+      },
+      "passed": true
+    },
+    "linked_context_carryover_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.9,
+        "stretch": 0.97
+      },
+      "passed": true
+    },
+    "external_source_trace_integrity_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.95,
+        "stretch": 1.0
+      },
+      "passed": true
+    },
+    "external_source_context_awareness_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.9,
+        "stretch": 0.97
+      },
+      "passed": true
+    },
+    "intent_routing_accuracy": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.92,
+        "stretch": 0.97
+      },
+      "passed": true
+    },
+    "context_scope_precision": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.9,
+        "stretch": 0.96
+      },
+      "passed": true
+    },
+    "source_leakage_rate": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0.05,
+        "stretch_max": 0.02
+      },
+      "passed": true
+    },
+    "model_packet_contract_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.98,
+        "stretch": 1.0
+      },
+      "passed": true
+    },
+    "llm_judge_groundedness": {
+      "value": 0.96552,
+      "threshold": {
+        "min": 0.85,
+        "stretch": 0.95
+      },
+      "passed": true
+    },
+    "llm_judge_answer_relevance": {
+      "value": 0.995147,
+      "threshold": {
+        "min": 0.85,
+        "stretch": 0.95
+      },
+      "passed": true
+    },
+    "llm_judge_context_precision": {
+      "value": 0.99394,
+      "threshold": {
+        "min": 0.8,
+        "stretch": 0.9
+      },
+      "passed": true
+    },
+    "standard_route_p95_seconds": {
+      "value": 0.015762,
+      "threshold": {
+        "max": 8,
+        "stretch_max": 5
+      },
+      "passed": true
+    },
+    "fallback_route_p95_seconds": {
+      "value": 0.013665,
+      "threshold": {
+        "max": 30,
+        "stretch_max": 20
+      },
+      "passed": true
+    },
+    "soak_test_error_rate_2h": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0.01,
+        "stretch_max": 0.003
+      },
+      "passed": true
+    },
+    "zenbook_standard_route_peak_rss_gb": {
+      "value": 1.1064,
+      "threshold": {
+        "max": 20,
+        "stretch_max": 16
+      },
+      "passed": true
+    },
+    "zenbook_fallback_route_peak_rss_gb": {
+      "value": 1.1064,
+      "threshold": {
+        "max": 26,
+        "stretch_max": 22
+      },
+      "passed": true
+    },
+    "oom_kill_events_2h": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0
+      },
+      "passed": true
+    },
+    "restricted_data_egress_events": {
+      "value": 0.0,
+      "threshold": {
+        "max": 0
+      },
+      "passed": true
+    },
+    "audit_trace_coverage": {
+      "value": 1.0,
+      "threshold": {
+        "min": 1.0
+      },
+      "passed": true
+    },
+    "lineage_tag_coverage": {
+      "value": 1.0,
+      "threshold": {
+        "min": 1.0
+      },
+      "passed": true
+    },
+    "retention_policy_compliance_rate": {
+      "value": 1.0,
+      "threshold": {
+        "min": 0.99,
+        "stretch": 1.0
+      },
+      "passed": true
+    },
+    "fixed_set_rerun_variance": {
+      "value": 0.3,
+      "threshold": {
+        "max": 0.02,
+        "stretch_max": 0.01
+      },
+      "passed": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Pre-market authorization SOP flow">
+  <defs>
+    <style>
+      .title{font:700 26px 'Segoe UI',Arial,sans-serif;fill:#0f172a}
+      .node{fill:#e0f2fe;stroke:#0369a1;stroke-width:2;rx:12;ry:12}
+      .text{font:600 14px 'Segoe UI',Arial,sans-serif;fill:#0c4a6e}
+      .arrow{stroke:#334155;stroke-width:2.5;marker-end:url(#m)}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0,0 10,4 0,8" fill="#334155"/>
+    </marker>
+  </defs>
+  <text x="30" y="42" class="title">Pre-Market Authorization SOP Sequence</text>
+  <rect class="node" x="30" y="90" width="260" height="56"/><text class="text" x="46" y="124">1) Submission Intake</text>
+  <rect class="node" x="330" y="90" width="260" height="56"/><text class="text" x="346" y="124">2) Administrative Completeness</text>
+  <rect class="node" x="630" y="90" width="260" height="56"/><text class="text" x="646" y="124">3) Dossier Structure Mapping</text>
+  <rect class="node" x="930" y="90" width="240" height="56"/><text class="text" x="946" y="124">4) Applicable Rules</text>
+
+  <rect class="node" x="30" y="202" width="260" height="56"/><text class="text" x="46" y="236">5) WHO INN Similarity</text>
+  <rect class="node" x="330" y="202" width="260" height="56"/><text class="text" x="346" y="236">6) Technical Section Review</text>
+  <rect class="node" x="630" y="202" width="260" height="56"/><text class="text" x="646" y="236">7) AMR Stewardship (if applies)</text>
+  <rect class="node" x="930" y="202" width="240" height="56"/><text class="text" x="946" y="236">8) Findings Register</text>
+
+  <rect class="node" x="180" y="314" width="260" height="56"/><text class="text" x="196" y="348">9) Severity Classification</text>
+  <rect class="node" x="480" y="314" width="260" height="56"/><text class="text" x="496" y="348">10) Cross-Section Consistency</text>
+  <rect class="node" x="780" y="314" width="260" height="56"/><text class="text" x="796" y="348">11) Completeness + Verdict</text>
+
+  <line class="arrow" x1="290" y1="118" x2="330" y2="118"/>
+  <line class="arrow" x1="590" y1="118" x2="630" y2="118"/>
+  <line class="arrow" x1="890" y1="118" x2="930" y2="118"/>
+
+  <line class="arrow" x1="1050" y1="146" x2="1050" y2="202"/>
+  <line class="arrow" x1="930" y1="230" x2="890" y2="230"/>
+  <line class="arrow" x1="630" y1="230" x2="590" y2="230"/>
+  <line class="arrow" x1="330" y1="230" x2="290" y2="230"/>
+
+  <line class="arrow" x1="160" y1="258" x2="160" y2="314"/>
+  <line class="arrow" x1="440" y1="342" x2="480" y2="342"/>
+  <line class="arrow" x1="740" y1="342" x2="780" y2="342"/>
+</svg>

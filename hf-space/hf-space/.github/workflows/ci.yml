@@ -1,0 +1,45 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality-and-security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone source repository without marketplace actions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          GH_SHA: ${{ github.sha }}
+        run: |
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPO}.git" src-repo
+          cd src-repo
+          git checkout "${GH_SHA}"
+
+      - name: Install dependencies
+        working-directory: src-repo
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install .[dev]
+
+      - name: Run tests
+        working-directory: src-repo
+        run: python3 -m pytest
+
+      - name: Run evaluation harness
+        working-directory: src-repo
+        run: python3 -m evaluation.run_evaluation --max-records 120 --output state/eval/ci_report.json
+
+      - name: Enforce metric thresholds
+        working-directory: src-repo
+        run: python3 scripts/check_eval_gate.py state/eval/ci_report.json --acceptance docs/acceptance-criteria.yaml
+
+      - name: Generate retention compliance report
+        working-directory: src-repo
+        run: python3 scripts/retention_compliance.py --retention-days 30 --output state/audit/retention_report_ci.json
+
+      - name: Run security and model policy gate
+        working-directory: src-repo
+        run: python3 scripts/security_gate.py

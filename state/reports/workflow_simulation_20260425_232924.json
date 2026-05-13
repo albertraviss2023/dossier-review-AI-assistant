@@ -1,0 +1,166 @@
+{
+  "report_id": "workflow_simulation_20260425_232924",
+  "executed_at_utc": "2026-04-25T23:30:21.738017+00:00",
+  "step_results": [
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260425_232924",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 1,
+      "step_name": "Intake & Summary",
+      "prompt": "Summarize this submission and identify the active ingredient and review pathway.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nProduct name 'Reserve Review Demo' has 17.65% similarity to INN 'cefiderocol'. Rule result: p",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260425_232924",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 2,
+      "step_name": "INN Similarity",
+      "prompt": "Perform the WHO INN similarity review. Does the name block acceptance based on naming rules?",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "I found guidance that is relevant to this review question:\n- Active dossier context: **Reserve Review Demo** (cefiderocol).\n- Structured Dossier Review SOP - Mandatory Rule Checks: Structured Dossier Review SOP. Mandatory Rule Checks.Mandatory Rule Checks WHO INN similarity review must always be completed and reported. Antimicrobial dossiers must trigger AWaR... [knowledge_wiki:structured-dossier-review-sop:2:c1]\n- S",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260425_232924",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 3,
+      "step_name": "AMR Stewardship",
+      "prompt": "If antimicrobial, perform the AMR stewardship review using AWaRe rules. What is the category and recommended control?",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nProduct name 'Reserve Review Demo' has 17.65% similarity to INN 'cefiderocol'. Rule result: p",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260425_232924",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 4,
+      "step_name": "Technical Review",
+      "prompt": "Review the dossier for technical compliance. Are there any missing or inadequate sections?",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nProduct name 'Reserve Review Demo' has 17.65% similarity to INN 'cefiderocol'. Rule result: p",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260425_232924",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 5,
+      "step_name": "Overall Verdict",
+      "prompt": "Based on the structured review steps, give the final overall judgment and recommendation.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nProduct name 'Reserve Review Demo' has 17.65% similarity to INN 'cefiderocol'. Rule result: p",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260425_232924",
+      "dossier_label": "naming_conflict",
+      "step_id": 1,
+      "step_name": "Intake & Summary",
+      "prompt": "Summarize this submission and identify the active ingredient and review pathway.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 100.00% similarity to INN 'amoxicillin'. Rule result: flagged. Evaluated ",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260425_232924",
+      "dossier_label": "naming_conflict",
+      "step_id": 2,
+      "step_name": "INN Similarity",
+      "prompt": "Perform the WHO INN similarity review. Does the name block acceptance based on naming rules?",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "I found guidance that is relevant to this review question:\n- Active dossier context: **amoxicillin** (amoxicillin).\n- Structured Dossier Review SOP - Mandatory Rule Checks: Structured Dossier Review SOP. Mandatory Rule Checks.Mandatory Rule Checks WHO INN similarity review must always be completed and reported. Antimicrobial dossiers must trigger AWaR... [knowledge_wiki:structured-dossier-review-sop:2:c1]\n- Structure",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260425_232924",
+      "dossier_label": "naming_conflict",
+      "step_id": 3,
+      "step_name": "AMR Stewardship",
+      "prompt": "If antimicrobial, perform the AMR stewardship review using AWaRe rules. What is the category and recommended control?",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 100.00% similarity to INN 'amoxicillin'. Rule result: flagged. Evaluated ",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260425_232924",
+      "dossier_label": "naming_conflict",
+      "step_id": 4,
+      "step_name": "Technical Review",
+      "prompt": "Review the dossier for technical compliance. Are there any missing or inadequate sections?",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 100.00% similarity to INN 'amoxicillin'. Rule result: flagged. Evaluated ",
+      "notes": [
+        "Grounded with links"
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260425_232924",
+      "dossier_label": "naming_conflict",
+      "step_id": 5,
+      "step_name": "Overall Verdict",
+      "prompt": "Based on the structured review steps, give the final overall judgment and recommendation.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 100.00% similarity to INN 'amoxicillin'. Rule result: flagged. Evaluated ",
+      "notes": [
+        "Grounded with links"
+      ]
+    }
+  ],
+  "generated_reports": [
+    {
+      "report_id": "report-89022ce1da1b",
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260425_232924",
+      "message": "Reviewer report generated successfully.",
+      "report_title": "Regulatory Review - WF-RESERVE_FAST_TRACK-20260425_232924",
+      "html_download_url": "/v1/reports/report-89022ce1da1b/html",
+      "text_download_url": "/v1/reports/report-89022ce1da1b/text",
+      "word_download_url": "/v1/reports/report-89022ce1da1b/word",
+      "json_download_url": "/v1/reports/report-89022ce1da1b/json",
+      "email_subject": "Regulatory Review - WF-RESERVE_FAST_TRACK-20260425_232924 - approval_granted",
+      "email_body": "Regulatory Review - WF-RESERVE_FAST_TRACK-20260425_232924\n\nSubmission Summary\n- Dossier Id: WF-RESERVE_FAST_TRACK-20260425_232924\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Workflow Applicant\n- Product Name: Reserve Review Demo\n- Active Ingredient: cefiderocol\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: fast_track\n\nAdministrative Review Outcome\n- Status: administratively_complete\n- No administrative violations were detected from the available dossier evidence.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Reserve Review Demo\n- Who Inn: cefiderocol\n- Similarity Index: 0.1765\n- Threshold: 0.7",
+      "report_lifecycle_status": "completed"
+    },
+    {
+      "report_id": "report-a6081b6cc8ec",
+      "dossier_id": "WF-NAMING_CONFLICT-20260425_232924",
+      "message": "Reviewer report generated successfully.",
+      "report_title": "Regulatory Review - WF-NAMING_CONFLICT-20260425_232924",
+      "html_download_url": "/v1/reports/report-a6081b6cc8ec/html",
+      "text_download_url": "/v1/reports/report-a6081b6cc8ec/text",
+      "word_download_url": "/v1/reports/report-a6081b6cc8ec/word",
+      "json_download_url": "/v1/reports/report-a6081b6cc8ec/json",
+      "email_subject": "Regulatory Review - WF-NAMING_CONFLICT-20260425_232924 - approval_denied",
+      "email_body": "Regulatory Review - WF-NAMING_CONFLICT-20260425_232924\n\nSubmission Summary\n- Dossier Id: WF-NAMING_CONFLICT-20260425_232924\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Workflow Applicant\n- Product Name: amoxicillin\n- Active Ingredient: amoxicillin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: amoxicillin\n- Who Inn: amoxicillin\n- Similarity Index: 1.0\n- Threshold: 0.7",
+      "report_lifecycle_status": "completed"
+    }
+  ],
+  "passed_steps": 10,
+  "failed_steps": 0
+}

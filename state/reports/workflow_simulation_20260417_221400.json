@@ -1,0 +1,852 @@
+{
+  "report_id": "workflow_simulation_20260417_221400",
+  "executed_at_utc": "2026-04-17T22:16:16.572009",
+  "step_results": [
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 1,
+      "step_name": "Submission intake and familiarization",
+      "prompt": "Summarize this submission, including dossier ID, applicant, product, active ingredient, dosage form, strength, and review pathway.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n**AMR Stewardship Analysis:** Th",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 2,
+      "step_name": "Administrative completeness review",
+      "prompt": "Review the administrative completeness of this dossier and list any missing mandatory administrative documents or formal eligibility problems.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n**AMR Stewardship Analysis:** Th",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 3,
+      "step_name": "Structural dossier mapping",
+      "prompt": "Map the dossier structure, identify major sections and annex-like evidence, and flag any missing, empty, or unreadable required sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n**AMR Stewardship Analysis:** The product is classified under the **ACCESS** category. Access-category antibiotic remain",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 4,
+      "step_name": "Applicable rules and requirements identification",
+      "prompt": "Identify the applicable review rules, naming rules, product-type rules, and AMR stewardship rules that apply to this dossier.",
+      "passed": false,
+      "abstained": true,
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 5,
+      "step_name": "WHO INN similarity review",
+      "prompt": "Perform the WHO INN similarity review. State the proposed product name, WHO INN matched, similarity index, threshold result, interpretation, and whether naming blocks acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n### WHO Guidelines Alignment\n\nTh",
+      "notes": [
+        "INN similarity step should explicitly mention the computed naming review."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 6,
+      "step_name": "Section-by-section technical review",
+      "prompt": "Review all major dossier sections for presence, adequacy, rule compliance, and missing evidence. List non-compliant or partially compliant sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n**AMR Stewardship Analysis:** Th",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 7,
+      "step_name": "AMR stewardship review using AWaRe rules",
+      "prompt": "If this product is antimicrobial, perform the AMR stewardship review using AWaRe rules, including category, restrictions, fast-track status, and stewardship caution. If not applicable, say so explicitly.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n### WHO Guidelines Alignment\n\nTh",
+      "notes": [
+        "AMR step should explicitly resolve AWaRe or clearly state not applicable."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 8,
+      "step_name": "Identification and recording of findings",
+      "prompt": "Record all findings identified so far, with the workflow step, violated rule, location in dossier, severity, and recommended follow-up.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern. The dossier originates from **Uganda**.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review ",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 9,
+      "step_name": "Severity classification",
+      "prompt": "Classify the identified findings by severity as critical, major, minor, or advisory, and explain which ones block acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n**AMR Stewardship Analysis:** The product is classified under the **ACCESS** category. Access-category antibiotic remain",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 10,
+      "step_name": "Cross-section consistency review",
+      "prompt": "Check cross-section consistency for product identity, active ingredient, manufacturing site, shelf-life claims, clinical claims, and antimicrobial positioning.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern. The primary manufacturing site is identified as **Workflow Manufacturer**, located in **Uganda**.\n\n### Naming Policy Comp",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 11,
+      "step_name": "Review completeness confirmation",
+      "prompt": "Confirm whether all mandatory workflow steps have been completed, including INN similarity review and AMR stewardship where relevant.",
+      "passed": false,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n**AMR Stewardship Analysis:** Th",
+      "notes": [
+        "Completeness step should explicitly state whether the workflow is complete.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "dossier_label": "standard",
+      "step_id": 12,
+      "step_name": "Overall judgment",
+      "prompt": "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n**AMR Stewardship Analysis:** Th",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 1,
+      "step_name": "Submission intake and familiarization",
+      "prompt": "Summarize this submission, including dossier ID, applicant, product, active ingredient, dosage form, strength, and review pathway.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n**AMR Stewardship Analys",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 2,
+      "step_name": "Administrative completeness review",
+      "prompt": "Review the administrative completeness of this dossier and list any missing mandatory administrative documents or formal eligibility problems.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n**AMR Stewardship Analys",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 3,
+      "step_name": "Structural dossier mapping",
+      "prompt": "Map the dossier structure, identify major sections and annex-like evidence, and flag any missing, empty, or unreadable required sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiot",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 4,
+      "step_name": "Applicable rules and requirements identification",
+      "prompt": "Identify the applicable review rules, naming rules, product-type rules, and AMR stewardship rules that apply to this dossier.",
+      "passed": false,
+      "abstained": true,
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 5,
+      "step_name": "WHO INN similarity review",
+      "prompt": "Perform the WHO INN similarity review. State the proposed product name, WHO INN matched, similarity index, threshold result, interpretation, and whether naming blocks acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n### WHO Guidelines Align",
+      "notes": [
+        "INN similarity step should explicitly mention the computed naming review."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 6,
+      "step_name": "Section-by-section technical review",
+      "prompt": "Review all major dossier sections for presence, adequacy, rule compliance, and missing evidence. List non-compliant or partially compliant sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n**AMR Stewardship Analys",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 7,
+      "step_name": "AMR stewardship review using AWaRe rules",
+      "prompt": "If this product is antimicrobial, perform the AMR stewardship review using AWaRe rules, including category, restrictions, fast-track status, and stewardship caution. If not applicable, say so explicitly.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n### WHO Guidelines Align",
+      "notes": [
+        "AMR step should explicitly resolve AWaRe or clearly state not applicable."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 8,
+      "step_name": "Identification and recording of findings",
+      "prompt": "Record all findings identified so far, with the workflow step, violated rule, location in dossier, severity, and recommended follow-up.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns. The dossier originates from **Uganda**.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 9,
+      "step_name": "Severity classification",
+      "prompt": "Classify the identified findings by severity as critical, major, minor, or advisory, and explain which ones block acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiot",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 10,
+      "step_name": "Cross-section consistency review",
+      "prompt": "Check cross-section consistency for product identity, active ingredient, manufacturing site, shelf-life claims, clinical claims, and antimicrobial positioning.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns. The primary manufacturing site is identified as **Workflow Manufacturer**, located in **Uganda**.\n\n### Naming ",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 11,
+      "step_name": "Review completeness confirmation",
+      "prompt": "Confirm whether all mandatory workflow steps have been completed, including INN similarity review and AMR stewardship where relevant.",
+      "passed": false,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n**AMR Stewardship Analys",
+      "notes": [
+        "Completeness step should explicitly state whether the workflow is complete.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "dossier_label": "watch",
+      "step_id": 12,
+      "step_name": "Overall judgment",
+      "prompt": "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n**AMR Stewardship Analys",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 1,
+      "step_name": "Submission intake and familiarization",
+      "prompt": "Summarize this submission, including dossier ID, applicant, product, active ingredient, dosage form, strength, and review pathway.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AMR Stewardship An",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 2,
+      "step_name": "Administrative completeness review",
+      "prompt": "Review the administrative completeness of this dossier and list any missing mandatory administrative documents or formal eligibility problems.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AMR Stewardship An",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 3,
+      "step_name": "Structural dossier mapping",
+      "prompt": "Map the dossier structure, identify major sections and annex-like evidence, and flag any missing, empty, or unreadable required sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibi",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 4,
+      "step_name": "Applicable rules and requirements identification",
+      "prompt": "Identify the applicable review rules, naming rules, product-type rules, and AMR stewardship rules that apply to this dossier.",
+      "passed": false,
+      "abstained": true,
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 5,
+      "step_name": "WHO INN similarity review",
+      "prompt": "Perform the WHO INN similarity review. State the proposed product name, WHO INN matched, similarity index, threshold result, interpretation, and whether naming blocks acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n### WHO Guidelines A",
+      "notes": [
+        "INN similarity step should explicitly mention the computed naming review."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 6,
+      "step_name": "Section-by-section technical review",
+      "prompt": "Review all major dossier sections for presence, adequacy, rule compliance, and missing evidence. List non-compliant or partially compliant sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AMR Stewardship An",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 7,
+      "step_name": "AMR stewardship review using AWaRe rules",
+      "prompt": "If this product is antimicrobial, perform the AMR stewardship review using AWaRe rules, including category, restrictions, fast-track status, and stewardship caution. If not applicable, say so explicitly.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n### WHO Guidelines A",
+      "notes": [
+        "AMR step should explicitly resolve AWaRe or clearly state not applicable."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 8,
+      "step_name": "Identification and recording of findings",
+      "prompt": "Record all findings identified so far, with the workflow step, violated rule, location in dossier, severity, and recommended follow-up.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns. The dossier originates from **Uganda**.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Sca",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 9,
+      "step_name": "Severity classification",
+      "prompt": "Classify the identified findings by severity as critical, major, minor, or advisory, and explain which ones block acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibi",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 10,
+      "step_name": "Cross-section consistency review",
+      "prompt": "Check cross-section consistency for product identity, active ingredient, manufacturing site, shelf-life claims, clinical claims, and antimicrobial positioning.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns. The primary manufacturing site is identified as **Workflow Manufacturer**, located in **Uganda**.\n\n### Namin",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 11,
+      "step_name": "Review completeness confirmation",
+      "prompt": "Confirm whether all mandatory workflow steps have been completed, including INN similarity review and AMR stewardship where relevant.",
+      "passed": false,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Workflow Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AMR Stewardship An",
+      "notes": [
+        "Completeness step should explicitly state whether the workflow is complete.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "dossier_label": "quality_failure",
+      "step_id": 12,
+      "step_name": "Overall judgment",
+      "prompt": "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+      "passed": false,
+      "abstained": true,
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 1,
+      "step_name": "Submission intake and familiarization",
+      "prompt": "Summarize this submission, including dossier ID, applicant, product, active ingredient, dosage form, strength, and review pathway.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 2,
+      "step_name": "Administrative completeness review",
+      "prompt": "Review the administrative completeness of this dossier and list any missing mandatory administrative documents or formal eligibility problems.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 3,
+      "step_name": "Structural dossier mapping",
+      "prompt": "Map the dossier structure, identify major sections and annex-like evidence, and flag any missing, empty, or unreadable required sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 4,
+      "step_name": "Applicable rules and requirements identification",
+      "prompt": "Identify the applicable review rules, naming rules, product-type rules, and AMR stewardship rules that apply to this dossier.",
+      "passed": false,
+      "abstained": true,
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 5,
+      "step_name": "WHO INN similarity review",
+      "prompt": "Perform the WHO INN similarity review. State the proposed product name, WHO INN matched, similarity index, threshold result, interpretation, and whether naming blocks acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "INN similarity step should explicitly mention the computed naming review."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 6,
+      "step_name": "Section-by-section technical review",
+      "prompt": "Review all major dossier sections for presence, adequacy, rule compliance, and missing evidence. List non-compliant or partially compliant sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 7,
+      "step_name": "AMR stewardship review using AWaRe rules",
+      "prompt": "If this product is antimicrobial, perform the AMR stewardship review using AWaRe rules, including category, restrictions, fast-track status, and stewardship caution. If not applicable, say so explicitly.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "AMR step should explicitly resolve AWaRe or clearly state not applicable."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 8,
+      "step_name": "Identification and recording of findings",
+      "prompt": "Record all findings identified so far, with the workflow step, violated rule, location in dossier, severity, and recommended follow-up.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern. The dossier originates from **Uganda**.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicilli",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 9,
+      "step_name": "Severity classification",
+      "prompt": "Classify the identified findings by severity as critical, major, minor, or advisory, and explain which ones block acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 10,
+      "step_name": "Cross-section consistency review",
+      "prompt": "Check cross-section consistency for product identity, active ingredient, manufacturing site, shelf-life claims, clinical claims, and antimicrobial positioning.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern. The primary manufacturing site is identified as **Workflow Manufacturer**, located in **Uganda**.\n\n### Naming Policy Violation\n\nProduc",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 11,
+      "step_name": "Review completeness confirmation",
+      "prompt": "Confirm whether all mandatory workflow steps have been completed, including INN similarity review and AMR stewardship where relevant.",
+      "passed": false,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "Completeness step should explicitly state whether the workflow is complete.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "dossier_label": "naming_conflict",
+      "step_id": 12,
+      "step_name": "Overall judgment",
+      "prompt": "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation t",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 1,
+      "step_name": "Submission intake and familiarization",
+      "prompt": "Summarize this submission, including dossier ID, applicant, product, active ingredient, dosage form, strength, and review pathway.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo'.\n\n**AMR Stewardship Analysis:** The pr",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 2,
+      "step_name": "Administrative completeness review",
+      "prompt": "Review the administrative completeness of this dossier and list any missing mandatory administrative documents or formal eligibility problems.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo'.\n\n**AMR Stewardship Analysis:** The pr",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 3,
+      "step_name": "Structural dossier mapping",
+      "prompt": "Map the dossier structure, identify major sections and annex-like evidence, and flag any missing, empty, or unreadable required sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **RESERVE** category. Reserve antibiotic targets a critic",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 4,
+      "step_name": "Applicable rules and requirements identification",
+      "prompt": "Identify the applicable review rules, naming rules, product-type rules, and AMR stewardship rules that apply to this dossier.",
+      "passed": false,
+      "abstained": true,
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 5,
+      "step_name": "WHO INN similarity review",
+      "prompt": "Perform the WHO INN similarity review. State the proposed product name, WHO INN matched, similarity index, threshold result, interpretation, and whether naming blocks acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo'.\n\n### WHO Guidelines Alignment\n\nThe pr",
+      "notes": [
+        "INN similarity step should explicitly mention the computed naming review."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 6,
+      "step_name": "Section-by-section technical review",
+      "prompt": "Review all major dossier sections for presence, adequacy, rule compliance, and missing evidence. List non-compliant or partially compliant sections.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo'.\n\n**AMR Stewardship Analysis:** The pr",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 7,
+      "step_name": "AMR stewardship review using AWaRe rules",
+      "prompt": "If this product is antimicrobial, perform the AMR stewardship review using AWaRe rules, including category, restrictions, fast-track status, and stewardship caution. If not applicable, say so explicitly.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo'.\n\n### WHO Guidelines Alignment\n\nThe pr",
+      "notes": [
+        "AMR step should explicitly resolve AWaRe or clearly state not applicable."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 8,
+      "step_name": "Identification and recording of findings",
+      "prompt": "Record all findings identified so far, with the workflow step, violated rule, location in dossier, severity, and recommended follow-up.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns. The dossier originates from **Uganda**.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 9,
+      "step_name": "Severity classification",
+      "prompt": "Classify the identified findings by severity as critical, major, minor, or advisory, and explain which ones block acceptance.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **RESERVE** category. Reserve antibiotic targets a critic",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 10,
+      "step_name": "Cross-section consistency review",
+      "prompt": "Check cross-section consistency for product identity, active ingredient, manufacturing site, shelf-life claims, clinical claims, and antimicrobial positioning.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns. The primary manufacturing site is identified as **Workflow Manufacturer**, located in **Uganda**.\n\n### Naming Policy Complia",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 11,
+      "step_name": "Review completeness confirmation",
+      "prompt": "Confirm whether all mandatory workflow steps have been completed, including INN similarity review and AMR stewardship where relevant.",
+      "passed": false,
+      "abstained": true,
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "notes": [
+        "Completeness step should explicitly state whether the workflow is complete.",
+        "Step failed its workflow expectation."
+      ]
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "dossier_label": "reserve_fast_track",
+      "step_id": 12,
+      "step_name": "Overall judgment",
+      "prompt": "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+      "passed": true,
+      "abstained": false,
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo'.\n\n**AMR Stewardship Analysis:** The pr",
+      "notes": [
+        "Step should complete without abstention and produce a grounded answer."
+      ]
+    }
+  ],
+  "generated_reports": [
+    {
+      "dossier_id": "WF-STANDARD-20260417_221400",
+      "label": "standard",
+      "report_id": "report-c0211d86226f",
+      "passed": true,
+      "final_verdict": "acceptable",
+      "json_download_url": "/v1/reports/report-c0211d86226f/json",
+      "text_download_url": "/v1/reports/report-c0211d86226f/text",
+      "html_download_url": "/v1/reports/report-c0211d86226f/html"
+    },
+    {
+      "dossier_id": "WF-WATCH-20260417_221400",
+      "label": "watch",
+      "report_id": "report-734e67fc6184",
+      "passed": true,
+      "final_verdict": "requires_revision",
+      "json_download_url": "/v1/reports/report-734e67fc6184/json",
+      "text_download_url": "/v1/reports/report-734e67fc6184/text",
+      "html_download_url": "/v1/reports/report-734e67fc6184/html"
+    },
+    {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "label": "quality_failure",
+      "report_id": "report-ae79381d663b",
+      "passed": true,
+      "final_verdict": "escalate_for_higher_review",
+      "json_download_url": "/v1/reports/report-ae79381d663b/json",
+      "text_download_url": "/v1/reports/report-ae79381d663b/text",
+      "html_download_url": "/v1/reports/report-ae79381d663b/html"
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "label": "naming_conflict",
+      "report_id": "report-1d61b73cb2ab",
+      "passed": true,
+      "final_verdict": "not_acceptable",
+      "json_download_url": "/v1/reports/report-1d61b73cb2ab/json",
+      "text_download_url": "/v1/reports/report-1d61b73cb2ab/text",
+      "html_download_url": "/v1/reports/report-1d61b73cb2ab/html"
+    },
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_221400",
+      "label": "reserve_fast_track",
+      "report_id": "report-b3712ad1a9de",
+      "passed": true,
+      "final_verdict": "acceptable_with_conditions",
+      "json_download_url": "/v1/reports/report-b3712ad1a9de/json",
+      "text_download_url": "/v1/reports/report-b3712ad1a9de/text",
+      "html_download_url": "/v1/reports/report-b3712ad1a9de/html"
+    }
+  ],
+  "passed_steps": 49,
+  "failed_steps": 11,
+  "report_pass_count": 5
+}

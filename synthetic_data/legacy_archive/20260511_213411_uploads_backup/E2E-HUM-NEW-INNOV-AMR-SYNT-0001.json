@@ -1,0 +1,558 @@
+{
+  "dossier_id": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001",
+  "country": "Rwanda",
+  "submission_date": "2026-01-11",
+  "product": {
+    "product_name": "Synthetic Synteromycin Product",
+    "inn_name": "synteromycin",
+    "atc_code": "J01XX00",
+    "dosage_form": "oral suspension",
+    "strength": "250 mg/5 mL"
+  },
+  "organization": {
+    "applicant": "Synthetic Applicant 858",
+    "manufacturer": "Synthetic Manufacturer 75",
+    "facility_country": "South Africa"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "reserve",
+    "amr_unmet_need": "routine",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "stable",
+    "similarity_to_existing_watch": "low",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "gmp_details": {
+    "last_inspection_date": "2025-01-15",
+    "certificate_number": "GMP-VALID-2026",
+    "certificate_expiry": "2027-12-29"
+  },
+  "clinical_details": {
+    "pivotal_trial_count": 2,
+    "indication": "infectious_disease",
+    "outcome": "endpoint_met"
+  },
+  "sections": [
+    {
+      "section_id": "m1_application_form",
+      "module": "Module 1",
+      "title": "Application Form",
+      "text": "Application Form for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 343
+      }
+    },
+    {
+      "section_id": "m1_cover_letter",
+      "module": "Module 1",
+      "title": "Cover Letter",
+      "text": "Cover Letter for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 339
+      }
+    },
+    {
+      "section_id": "m1_authorization_letter",
+      "module": "Module 1",
+      "title": "Letter of Authorization",
+      "text": "Letter of Authorization for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 350
+      }
+    },
+    {
+      "section_id": "m1_gmp_certificate",
+      "module": "Module 1",
+      "title": "GMP Certificate",
+      "text": "GMP Certificate for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nGMP Certificate No: GMP-T-0001; Site Address: Synthetic Industrial Park; Expiry Date: 2027-12-29.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 440
+      }
+    },
+    {
+      "section_id": "m1_cpp_certificates",
+      "module": "Module 1",
+      "title": "CPP / Certificate Documents",
+      "text": "CPP / Certificate Documents for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 354
+      }
+    },
+    {
+      "section_id": "m1_product_label",
+      "module": "Module 1",
+      "title": "Product Label",
+      "text": "Product Label for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 340
+      }
+    },
+    {
+      "section_id": "m1_pil",
+      "module": "Module 1",
+      "title": "Patient Information Leaflet",
+      "text": "Patient Information Leaflet for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nPIL Section: What this medicine is and what it is used for.\nPIL Route and Form: Route=oral; Dosage form=oral suspension; Strength=250 mg/5 mL.\nPIL Instructions: Follow the prescribed dose schedule. Do not exceed recommended dose.\nPIL Warnings: Do not use if you are allergic to the active ingredient or related medicines. Seek immediate medical care for rash, breathing difficulty, or severe diarrhoea. Use exactly as prescribed; complete the full treatment course where applicable.\nPIL Storage: Store below 30C, protect from moisture/light, keep out of reach of children.\nPIL Adverse Effects: Common effects include gastrointestinal upset and headache; serious effects require urgent review.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1047
+      }
+    },
+    {
+      "section_id": "m1_smpc",
+      "module": "Module 1",
+      "title": "SmPC",
+      "text": "SmPC for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nSmPC 4.1 Therapeutic indications: As approved in the application form.\nSmPC 4.2 Posology and method of administration: Dose by age/weight and clinical condition as approved.\nSmPC 4.3 Contraindications: Known hypersensitivity to active ingredient or excipients, Severe allergy to related therapeutic class where applicable.\nSmPC 4.4 Special warnings and precautions: monitor organ function and hypersensitivity risks.\nSmPC 4.8 Undesirable effects: nausea, diarrhoea, rash, dizziness; serious adverse reactions listed.\nSmPC 6.4 Special precautions for storage: store according to label and stability commitments.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 942
+      }
+    },
+    {
+      "section_id": "m1_payment_proof",
+      "module": "Module 1",
+      "title": "Proof of Payment",
+      "text": "Proof of Payment for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 343
+      }
+    },
+    {
+      "section_id": "m2_qos",
+      "module": "Module 2",
+      "title": "Quality Overall Summary",
+      "text": "Quality Overall Summary for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 350
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "Module 2",
+      "title": "Clinical Overview / Justification",
+      "text": "Clinical Overview / Justification for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 360
+      }
+    },
+    {
+      "section_id": "m2_be_summary",
+      "module": "Module 2",
+      "title": "Bioequivalence Summary",
+      "text": "Bioequivalence Summary for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 349
+      }
+    },
+    {
+      "section_id": "m3_drug_substance",
+      "module": "Module 3",
+      "title": "Drug Substance Information",
+      "text": "Drug Substance Information for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 353
+      }
+    },
+    {
+      "section_id": "m3_drug_product",
+      "module": "Module 3",
+      "title": "Drug Product Information",
+      "text": "Drug Product Information for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 351
+      }
+    },
+    {
+      "section_id": "m3_manufacturing_process",
+      "module": "Module 3",
+      "title": "Manufacturing Process",
+      "text": "Manufacturing Process for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 348
+      }
+    },
+    {
+      "section_id": "m3_batch_formula",
+      "module": "Module 3",
+      "title": "Batch Formula",
+      "text": "Batch Formula for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 340
+      }
+    },
+    {
+      "section_id": "m3_specifications",
+      "module": "Module 3",
+      "title": "Specifications",
+      "text": "Specifications for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 341
+      }
+    },
+    {
+      "section_id": "m3_analytical_procedures",
+      "module": "Module 3",
+      "title": "Analytical Procedures",
+      "text": "Analytical Procedures for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 348
+      }
+    },
+    {
+      "section_id": "m3_method_validation",
+      "module": "Module 3",
+      "title": "Method Validation",
+      "text": "Method Validation for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 344
+      }
+    },
+    {
+      "section_id": "m3_coa",
+      "module": "Module 3",
+      "title": "Certificate of Analysis",
+      "text": "Certificate of Analysis for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nCoA Table: Batch Number=BCH-24011; Specification Limits=Conforms; Results=Within limits; Conclusion=Pass; Authorized Signature=Present.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 486
+      }
+    },
+    {
+      "section_id": "m3_stability",
+      "module": "Module 3",
+      "title": "Stability Data",
+      "text": "Stability Data for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nStability Table: 0, 3, 6, 9, 12 months; Conditions=30C/75%RH; Conclusion supports shelf life.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 435
+      }
+    },
+    {
+      "section_id": "m3_container_closure",
+      "module": "Module 3",
+      "title": "Container Closure System",
+      "text": "Container Closure System for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 351
+      }
+    },
+    {
+      "section_id": "m4_nonclinical",
+      "module": "Module 4",
+      "title": "Nonclinical Study Reports / Justification",
+      "text": "Nonclinical Study Reports / Justification for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 368
+      }
+    },
+    {
+      "section_id": "m5_be_or_clinical",
+      "module": "Module 5",
+      "title": "Bioequivalence / Clinical Study Reports",
+      "text": "Bioequivalence / Clinical Study Reports for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nClinical Summary: Endpoint met where applicable; Effect size and safety summary included.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 456
+      }
+    },
+    {
+      "section_id": "m5_reference_comparator",
+      "module": "Module 5",
+      "title": "Reference / Comparator Product Evidence",
+      "text": "Reference / Comparator Product Evidence for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer 75 (South Africa).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 10,
+        "max_chars": 10000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 366
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "approval_granted",
+    "risk_score": 0.12,
+    "compliant_submission": true
+  },
+  "quality_summary": {
+    "correct": 25,
+    "partial": 0,
+    "incorrect": 0
+  },
+  "provenance": {
+    "synthetic": true,
+    "defect_modes": []
+  },
+  "review_program": "marketing_authorization"
+}

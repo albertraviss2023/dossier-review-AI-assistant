@@ -1,0 +1,313 @@
+{
+  "generated_at_utc": "2026-04-17T22:16:12.998854+00:00",
+  "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+  "report_title": "Structured Workflow Review Report - WF-QUALITY_FAILURE-20260417_221400",
+  "recipient_email": null,
+  "report_payload": {
+    "report_title": "Structured Workflow Review Report - WF-QUALITY_FAILURE-20260417_221400",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+        "submission_type": "pre_market_authorization",
+        "applicant": "Workflow Applicant",
+        "product_name": "Scanned Review Demo",
+        "active_ingredient": "levofloxacin",
+        "dosage_form": "unknown",
+        "strength": "unknown",
+        "jurisdiction": "Uganda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_incomplete",
+        "violations": [
+          "Administrative application section is missing."
+        ]
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Scanned Review Demo",
+        "who_inn": "cefalexin",
+        "similarity_index": 0.5497,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "No INN infringement detected for 'Scanned Review Demo'.",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [
+          {
+            "section": "Imported Section 1",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          },
+          {
+            "section": "Visual Evidence Summary - Page 1",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          },
+          {
+            "section": "Visual Evidence Summary - Page 2",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          }
+        ]
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "watch",
+        "stewardship_rule_application": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096.",
+        "fast_track_status": false,
+        "authorization_control": "restricted_authorization",
+        "watch_or_reserve_caution": true,
+        "findings": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.",
+          "Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+        ]
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Administrative completeness review",
+          "issue": "Mandatory administrative application section is missing.",
+          "violated_rule": "Missing mandatory administrative documents = violation",
+          "severity": "major",
+          "location": "Module 1 / Administrative",
+          "recommendation": "Provide the required administrative section and supporting documents."
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+          "violated_rule": "Required evidence missing = violation",
+          "severity": "major",
+          "location": "Manufacturer and GMP Evidence",
+          "recommendation": "Resolve GMP deficiencies and provide current manufacturing evidence."
+        },
+        {
+          "workflow_step": "AMR stewardship review using AWaRe rules",
+          "issue": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+          "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+          "severity": "major",
+          "location": "AMR Stewardship Narrative",
+          "recommendation": "Document the stewardship restriction and reviewer control measures."
+        },
+        {
+          "workflow_step": "Cross-section consistency review",
+          "issue": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+          "violated_rule": "Claim not supported by evidence = violation",
+          "severity": "major",
+          "location": "Stability and Shelf-Life Justification",
+          "recommendation": "Provide or correctly map the stability section before finalizing the review."
+        }
+      ],
+      "severity_classification": {
+        "critical": 0,
+        "major": 4,
+        "minor": 0,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "violations_found",
+        "findings": [
+          "No stability section was mapped, so shelf-life claims cannot be cross-checked."
+        ]
+      },
+      "review_completeness_confirmation": {
+        "status": "review_incomplete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": false,
+          "structural_dossier_mapping": true,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": true,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "Administrative completeness review could not be confirmed because the administrative section was not mapped.",
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "escalate_for_higher_review",
+        "system_recommendation": "abstain",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Mandatory administrative application section is missing.",
+          "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+          "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+          "Shelf-life claims could not be cross-checked against a mapped stability section."
+        ],
+        "escalation_needed": true
+      }
+    },
+    "review_payload": {
+      "dossier_id": "WF-QUALITY_FAILURE-20260417_221400",
+      "selected_model": {
+        "id": "gemma-e4b",
+        "label": "Gemma E4B",
+        "runtime_model_id": "gemma-e4b",
+        "description": "Primary balanced local model for dossier review."
+      },
+      "sub_queries": [
+        "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "details about Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "requirements for Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification."
+      ],
+      "intent": "dossier_review",
+      "response_contract": "dossier_review_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "conversation_id": "conv-752a781c9c",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 3479,
+        "remaining_tokens": 617,
+        "usage_ratio": 0.84937,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 732,
+        "carryover_tokens": 0,
+        "active_message_tokens": 2747,
+        "archived_messages_count": 12,
+        "compaction_count": 1,
+        "auto_compaction_required": false,
+        "last_compacted_at": "2026-04-17T22:16:12.514155+00:00",
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "abstain",
+      "confidence": 0.0,
+      "route": "fallback",
+      "abstained": true,
+      "abstain_reason": "insufficient_retrieval_evidence",
+      "rationale": "Abstained because no evidence chunks were retrieved for the request.",
+      "chain_of_thought": null,
+      "policy_rule_hits": [
+        "gmp_expired",
+        "gmp_certificate_expired",
+        "policy_information_gap",
+        "restricted_authorization"
+      ],
+      "section_diagnostics": [
+        {
+          "section_id": "raw_section_1",
+          "title": "Imported Section 1",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        },
+        {
+          "section_id": "visual_page_1",
+          "title": "Visual Evidence Summary - Page 1",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        },
+        {
+          "section_id": "visual_page_2",
+          "title": "Visual Evidence Summary - Page 2",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        }
+      ],
+      "citations": [],
+      "verifier": {
+        "grounded_claim_rate": 0.0,
+        "unsupported_critical_claim_rate": 1.0,
+        "passed": false
+      },
+      "memory": {
+        "process_rss_gb": 0.9615,
+        "system_total_ram_gb": 31.7568,
+        "system_available_ram_gb": 12.1521,
+        "system_used_ram_percent": 61.7,
+        "min_free_ram_gb": 0.5,
+        "standard_route_rss_limit_gb": 20.0,
+        "fallback_route_rss_limit_gb": 26.0,
+        "within_budget": true
+      },
+      "lineage_tags": {
+        "data_classification": "synthetic",
+        "data_version": "balanced_v1_2026-04-05",
+        "split_version": "balanced_v1_2026-04-05",
+        "model_policy": "local_multi_model",
+        "model_id": "gemma-e4b",
+        "prompt_version": "review_v1",
+        "route_profile": "fallback"
+      },
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "levofloxacin",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "levofloxacin",
+        "parent_compound": "levofloxacin",
+        "pubchem_cid": "149096",
+        "canonical_smiles": "CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23",
+        "inchikey": "GSDSWSVVBLHKDQ-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL1433",
+        "unichem_id": "UC149096",
+        "aware_category": "watch",
+        "amr_unmet_need": "moderate",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "rising",
+        "similarity_to_existing_watch": "high",
+        "existing_watch_comparator": "ciprofloxacin",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "restricted_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": true,
+        "watch_similarity_restriction": true,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.",
+          "Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+        ],
+        "rationale": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+      },
+      "metrics": {
+        "latency_seconds": 0.0568,
+        "input_tokens_estimate": 1376,
+        "output_tokens_estimate": 27
+      },
+      "visualization_data": null
+    },
+    "email_subject": "Structured Workflow Review Report - WF-QUALITY_FAILURE-20260417_221400 - abstain",
+    "email_body": "Structured Workflow Review Report - WF-QUALITY_FAILURE-20260417_221400\n\nSubmission Summary\n- Dossier Id: WF-QUALITY_FAILURE-20260417_221400\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: Scanned Review Demo\n- Active Ingredient: levofloxacin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- Administrative application section is missing.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: Scanned Review Demo\n- Who Inn: cefalexin\n- Similarity Index: 0.5497\n- Threshold: 0.7\n- Threshold Result: passed\n- Similarity Type: orthographic\n- Interpretation: No INN infringement detected for 'Scanned Review Demo'.\n- Flag Status: acceptable_naming\n- Rule Consequence: No blocking INN naming issue was identified.\n\nSection-by-Section Scientific And Regulatory Findings\n- Imported Section 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False\n- Visual Evidence Summary - Page 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False"
+  },
+  "email_subject": "Structured Workflow Review Report - WF-QUALITY_FAILURE-20260417_221400 - abstain",
+  "email_body": "Structured Workflow Review Report - WF-QUALITY_FAILURE-20260417_221400\n\nSubmission Summary\n- Dossier Id: WF-QUALITY_FAILURE-20260417_221400\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: Scanned Review Demo\n- Active Ingredient: levofloxacin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- Administrative application section is missing.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: Scanned Review Demo\n- Who Inn: cefalexin\n- Similarity Index: 0.5497\n- Threshold: 0.7\n- Threshold Result: passed\n- Similarity Type: orthographic\n- Interpretation: No INN infringement detected for 'Scanned Review Demo'.\n- Flag Status: acceptable_naming\n- Rule Consequence: No blocking INN naming issue was identified.\n\nSection-by-Section Scientific And Regulatory Findings\n- Imported Section 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False\n- Visual Evidence Summary - Page 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False"
+}

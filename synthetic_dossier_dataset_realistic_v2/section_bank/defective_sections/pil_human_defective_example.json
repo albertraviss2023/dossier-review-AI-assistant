@@ -1,0 +1,11 @@
+{
+  "section_id": "m1_pil",
+  "section_name": "Patient Information Leaflet",
+  "quality": "defective",
+  "known_issues": [
+    "missing_route",
+    "missing_warnings",
+    "missing_storage"
+  ],
+  "text": "Patient leaflet attached.\nUse medicine as directed.\nNo detailed warnings provided."
+}

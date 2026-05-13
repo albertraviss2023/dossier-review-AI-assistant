@@ -1,0 +1,690 @@
+{
+  "split": "stress_test",
+  "dossier_ids": [
+    "HUM-NEW-INNOV-AMR-SYNT-0001-Q",
+    "VET-NEW-BIO-AMR-OXYT-0003-Q",
+    "HUM-REN-BIO-NONAMR-CARD-0005-Q",
+    "VET-REN-GEN-NONAMR-MULT-0007-Q",
+    "HUM-NEW-FDC-AMR-SYNT-0009-Q",
+    "VET-REN-INNOV-NONAMR-ANTI-0011-Q",
+    "HUM-NEW-LINE-NONAMR-CARD-0013-Q",
+    "VET-NEW-LINE-NONAMR-MULT-0015-Q",
+    "HUM-REN-LINE-NONAMR-CARD-0017",
+    "HUM-REN-LINE-NONAMR-CARD-0017-Q",
+    "VET-REN-LINE-NONAMR-MULT-0019-Q"
+  ],
+  "split_metadata": [
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001",
+      "split": "train",
+      "family_id": "FAM-0001",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001-Q",
+      "split": "train",
+      "family_id": "FAM-0001",
+      "is_base_gold": false,
+      "mutation_id": "expired_gmp_certificate"
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-AMR-OXYT-0003",
+      "split": "train",
+      "family_id": "FAM-0002",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-AMR-OXYT-0003-Q",
+      "split": "train",
+      "family_id": "FAM-0002",
+      "is_base_gold": false,
+      "mutation_id": "unsupported_shelf_life"
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-NONAMR-CARD-0005",
+      "split": "train",
+      "family_id": "FAM-0003",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-NONAMR-CARD-0005-Q",
+      "split": "train",
+      "family_id": "FAM-0003",
+      "is_base_gold": false,
+      "mutation_id": "inconsistent_strength"
+    },
+    {
+      "dossier_id": "VET-REN-GEN-NONAMR-MULT-0007",
+      "split": "validation",
+      "family_id": "FAM-0004",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-GEN-NONAMR-MULT-0007-Q",
+      "split": "validation",
+      "family_id": "FAM-0004",
+      "is_base_gold": false,
+      "mutation_id": "missing_pil"
+    },
+    {
+      "dossier_id": "HUM-NEW-FDC-AMR-SYNT-0009",
+      "split": "train",
+      "family_id": "FAM-0005",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-FDC-AMR-SYNT-0009-Q",
+      "split": "train",
+      "family_id": "FAM-0005",
+      "is_base_gold": false,
+      "mutation_id": "expired_gmp_certificate"
+    },
+    {
+      "dossier_id": "VET-REN-INNOV-NONAMR-ANTI-0011",
+      "split": "test",
+      "family_id": "FAM-0006",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-INNOV-NONAMR-ANTI-0011-Q",
+      "split": "test",
+      "family_id": "FAM-0006",
+      "is_base_gold": false,
+      "mutation_id": "inconsistent_route"
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-NONAMR-CARD-0013",
+      "split": "train",
+      "family_id": "FAM-0007",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-NONAMR-CARD-0013-Q",
+      "split": "train",
+      "family_id": "FAM-0007",
+      "is_base_gold": false,
+      "mutation_id": "coa_result_out_of_specification"
+    },
+    {
+      "dossier_id": "VET-NEW-LINE-NONAMR-MULT-0015",
+      "split": "train",
+      "family_id": "FAM-0008",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-LINE-NONAMR-MULT-0015-Q",
+      "split": "train",
+      "family_id": "FAM-0008",
+      "is_base_gold": false,
+      "mutation_id": "inconsistent_route"
+    },
+    {
+      "dossier_id": "HUM-REN-LINE-NONAMR-CARD-0017",
+      "split": "train",
+      "family_id": "FAM-0009",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-LINE-NONAMR-CARD-0017-Q",
+      "split": "train",
+      "family_id": "FAM-0009",
+      "is_base_gold": false,
+      "mutation_id": "unreadable_scanned_certificate"
+    },
+    {
+      "dossier_id": "VET-REN-LINE-NONAMR-MULT-0019",
+      "split": "train",
+      "family_id": "FAM-0010",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-LINE-NONAMR-MULT-0019-Q",
+      "split": "train",
+      "family_id": "FAM-0010",
+      "is_base_gold": false,
+      "mutation_id": "gmp_site_mismatch"
+    },
+    {
+      "dossier_id": "HUM-REN-INNOV-AMR-SYNT-0021",
+      "split": "train",
+      "family_id": "FAM-0011",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-INNOV-AMR-SYNT-0021-Q",
+      "split": "train",
+      "family_id": "FAM-0011",
+      "is_base_gold": false,
+      "mutation_id": "inconsistent_strength"
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-NONAMR-ANTI-0023",
+      "split": "train",
+      "family_id": "FAM-0012",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-NONAMR-ANTI-0023-Q",
+      "split": "train",
+      "family_id": "FAM-0012",
+      "is_base_gold": false,
+      "mutation_id": "inconsistent_route"
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-AMR-SYNT-0025",
+      "split": "train",
+      "family_id": "FAM-0013",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-AMR-SYNT-0025-Q",
+      "split": "train",
+      "family_id": "FAM-0013",
+      "is_base_gold": false,
+      "mutation_id": "unreadable_scanned_certificate"
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-AMR-LACT-0027",
+      "split": "validation",
+      "family_id": "FAM-0014",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-AMR-LACT-0027-Q",
+      "split": "validation",
+      "family_id": "FAM-0014",
+      "is_base_gold": false,
+      "mutation_id": "inconsistent_route"
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-AMR-CEFT-0029",
+      "split": "test",
+      "family_id": "FAM-0015",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-AMR-CEFT-0029-Q",
+      "split": "test",
+      "family_id": "FAM-0015",
+      "is_base_gold": false,
+      "mutation_id": "gmp_site_mismatch"
+    },
+    {
+      "dossier_id": "VET-NEW-GEN-NONAMR-MULT-0031",
+      "split": "train",
+      "family_id": "FAM-0016",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-GEN-NONAMR-MULT-0031-Q",
+      "split": "train",
+      "family_id": "FAM-0016",
+      "is_base_gold": false,
+      "mutation_id": "missing_withdrawal_period"
+    },
+    {
+      "dossier_id": "HUM-REN-GEN-AMR-CEFT-0033",
+      "split": "test",
+      "family_id": "FAM-0017",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-GEN-AMR-CEFT-0033-Q",
+      "split": "test",
+      "family_id": "FAM-0017",
+      "is_base_gold": false,
+      "mutation_id": "missing_pharmacovigilance_summary"
+    },
+    {
+      "dossier_id": "VET-REN-BIO-NONAMR-ANTI-0035",
+      "split": "train",
+      "family_id": "FAM-0018",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-BIO-NONAMR-ANTI-0035-Q",
+      "split": "train",
+      "family_id": "FAM-0018",
+      "is_base_gold": false,
+      "mutation_id": "missing_pil"
+    },
+    {
+      "dossier_id": "HUM-NEW-BIO-NONAMR-CARD-0037",
+      "split": "train",
+      "family_id": "FAM-0019",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-BIO-NONAMR-CARD-0037-Q",
+      "split": "train",
+      "family_id": "FAM-0019",
+      "is_base_gold": false,
+      "mutation_id": "missing_reference_product"
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-NONAMR-ANTI-0039",
+      "split": "train",
+      "family_id": "FAM-0020",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-NONAMR-ANTI-0039-Q",
+      "split": "train",
+      "family_id": "FAM-0020",
+      "is_base_gold": false,
+      "mutation_id": "unsupported_shelf_life"
+    },
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0041",
+      "split": "train",
+      "family_id": "FAM-0021",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0041-Q",
+      "split": "train",
+      "family_id": "FAM-0021",
+      "is_base_gold": false,
+      "mutation_id": "missing_smpc"
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-AMR-OXYT-0043",
+      "split": "train",
+      "family_id": "FAM-0022",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-AMR-OXYT-0043-Q",
+      "split": "train",
+      "family_id": "FAM-0022",
+      "is_base_gold": false,
+      "mutation_id": "missing_antimicrobial_use_warning"
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-NONAMR-CARD-0045",
+      "split": "test",
+      "family_id": "FAM-0023",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-NONAMR-CARD-0045-Q",
+      "split": "test",
+      "family_id": "FAM-0023",
+      "is_base_gold": false,
+      "mutation_id": "gmp_site_mismatch"
+    },
+    {
+      "dossier_id": "VET-REN-GEN-NONAMR-MULT-0047",
+      "split": "train",
+      "family_id": "FAM-0024",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-GEN-NONAMR-MULT-0047-Q",
+      "split": "train",
+      "family_id": "FAM-0024",
+      "is_base_gold": false,
+      "mutation_id": "missing_smpc"
+    },
+    {
+      "dossier_id": "HUM-NEW-FDC-AMR-CEFT-0049",
+      "split": "train",
+      "family_id": "FAM-0025",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-FDC-AMR-CEFT-0049-Q",
+      "split": "train",
+      "family_id": "FAM-0025",
+      "is_base_gold": false,
+      "mutation_id": "missing_amr_classification"
+    },
+    {
+      "dossier_id": "VET-REN-INNOV-NONAMR-ANTI-0051",
+      "split": "test",
+      "family_id": "FAM-0026",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-INNOV-NONAMR-ANTI-0051-Q",
+      "split": "test",
+      "family_id": "FAM-0026",
+      "is_base_gold": false,
+      "mutation_id": "wrong_reference_product"
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-NONAMR-CARD-0053",
+      "split": "train",
+      "family_id": "FAM-0027",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-NONAMR-CARD-0053-Q",
+      "split": "train",
+      "family_id": "FAM-0027",
+      "is_base_gold": false,
+      "mutation_id": "missing_coa_batch_number"
+    },
+    {
+      "dossier_id": "VET-NEW-LINE-NONAMR-ANTI-0055",
+      "split": "train",
+      "family_id": "FAM-0028",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-LINE-NONAMR-ANTI-0055-Q",
+      "split": "train",
+      "family_id": "FAM-0028",
+      "is_base_gold": false,
+      "mutation_id": "stability_data_missing"
+    },
+    {
+      "dossier_id": "HUM-REN-LINE-NONAMR-CARD-0057",
+      "split": "validation",
+      "family_id": "FAM-0029",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-LINE-NONAMR-CARD-0057-Q",
+      "split": "validation",
+      "family_id": "FAM-0029",
+      "is_base_gold": false,
+      "mutation_id": "wrong_reference_product"
+    },
+    {
+      "dossier_id": "VET-REN-LINE-NONAMR-MULT-0059",
+      "split": "train",
+      "family_id": "FAM-0030",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-LINE-NONAMR-MULT-0059-Q",
+      "split": "train",
+      "family_id": "FAM-0030",
+      "is_base_gold": false,
+      "mutation_id": "gmp_site_mismatch"
+    },
+    {
+      "dossier_id": "HUM-REN-INNOV-AMR-SYNT-0061",
+      "split": "validation",
+      "family_id": "FAM-0031",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-INNOV-AMR-SYNT-0061-Q",
+      "split": "validation",
+      "family_id": "FAM-0031",
+      "is_base_gold": false,
+      "mutation_id": "missing_be_report"
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-NONAMR-ANTI-0063",
+      "split": "validation",
+      "family_id": "FAM-0032",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-NONAMR-ANTI-0063-Q",
+      "split": "validation",
+      "family_id": "FAM-0032",
+      "is_base_gold": false,
+      "mutation_id": "missing_be_report"
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-AMR-SYNT-0065",
+      "split": "test",
+      "family_id": "FAM-0033",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-AMR-SYNT-0065-Q",
+      "split": "test",
+      "family_id": "FAM-0033",
+      "is_base_gold": false,
+      "mutation_id": "gmp_site_mismatch"
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-AMR-LACT-0067",
+      "split": "train",
+      "family_id": "FAM-0034",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-INNOV-AMR-LACT-0067-Q",
+      "split": "train",
+      "family_id": "FAM-0034",
+      "is_base_gold": false,
+      "mutation_id": "missing_be_report"
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-AMR-CEFT-0069",
+      "split": "test",
+      "family_id": "FAM-0035",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-AMR-CEFT-0069-Q",
+      "split": "test",
+      "family_id": "FAM-0035",
+      "is_base_gold": false,
+      "mutation_id": "gmp_site_mismatch"
+    },
+    {
+      "dossier_id": "VET-NEW-GEN-NONAMR-MULT-0071",
+      "split": "validation",
+      "family_id": "FAM-0036",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-GEN-NONAMR-MULT-0071-Q",
+      "split": "validation",
+      "family_id": "FAM-0036",
+      "is_base_gold": false,
+      "mutation_id": "missing_withdrawal_period"
+    },
+    {
+      "dossier_id": "HUM-REN-GEN-AMR-CEFT-0073",
+      "split": "train",
+      "family_id": "FAM-0037",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-GEN-AMR-CEFT-0073-Q",
+      "split": "train",
+      "family_id": "FAM-0037",
+      "is_base_gold": false,
+      "mutation_id": "coa_result_out_of_specification"
+    },
+    {
+      "dossier_id": "VET-REN-BIO-NONAMR-ANTI-0075",
+      "split": "train",
+      "family_id": "FAM-0038",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-BIO-NONAMR-ANTI-0075-Q",
+      "split": "train",
+      "family_id": "FAM-0038",
+      "is_base_gold": false,
+      "mutation_id": "stability_data_missing"
+    },
+    {
+      "dossier_id": "HUM-NEW-BIO-NONAMR-CARD-0077",
+      "split": "train",
+      "family_id": "FAM-0039",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-BIO-NONAMR-CARD-0077-Q",
+      "split": "train",
+      "family_id": "FAM-0039",
+      "is_base_gold": false,
+      "mutation_id": "wrong_reference_product"
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-NONAMR-ANTI-0079",
+      "split": "train",
+      "family_id": "FAM-0040",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-NONAMR-ANTI-0079-Q",
+      "split": "train",
+      "family_id": "FAM-0040",
+      "is_base_gold": false,
+      "mutation_id": "scanned_coa_not_extractable"
+    },
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0081",
+      "split": "validation",
+      "family_id": "FAM-0041",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0081-Q",
+      "split": "validation",
+      "family_id": "FAM-0041",
+      "is_base_gold": false,
+      "mutation_id": "unreadable_scanned_certificate"
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-AMR-LACT-0083",
+      "split": "train",
+      "family_id": "FAM-0042",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-BIO-AMR-LACT-0083-Q",
+      "split": "train",
+      "family_id": "FAM-0042",
+      "is_base_gold": false,
+      "mutation_id": "missing_amr_classification"
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-NONAMR-METF-0085",
+      "split": "train",
+      "family_id": "FAM-0043",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-REN-BIO-NONAMR-METF-0085-Q",
+      "split": "train",
+      "family_id": "FAM-0043",
+      "is_base_gold": false,
+      "mutation_id": "missing_variation_history"
+    },
+    {
+      "dossier_id": "VET-REN-GEN-NONAMR-MULT-0087",
+      "split": "train",
+      "family_id": "FAM-0044",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-GEN-NONAMR-MULT-0087-Q",
+      "split": "train",
+      "family_id": "FAM-0044",
+      "is_base_gold": false,
+      "mutation_id": "missing_pharmacovigilance_summary"
+    },
+    {
+      "dossier_id": "HUM-NEW-FDC-AMR-SYNT-0089",
+      "split": "train",
+      "family_id": "FAM-0045",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-FDC-AMR-SYNT-0089-Q",
+      "split": "train",
+      "family_id": "FAM-0045",
+      "is_base_gold": false,
+      "mutation_id": "unreadable_scanned_certificate"
+    },
+    {
+      "dossier_id": "VET-REN-INNOV-NONAMR-ANTI-0091",
+      "split": "train",
+      "family_id": "FAM-0046",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-REN-INNOV-NONAMR-ANTI-0091-Q",
+      "split": "train",
+      "family_id": "FAM-0046",
+      "is_base_gold": false,
+      "mutation_id": "missing_reference_product"
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-NONAMR-CARD-0093",
+      "split": "train",
+      "family_id": "FAM-0047",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "HUM-NEW-LINE-NONAMR-CARD-0093-Q",
+      "split": "train",
+      "family_id": "FAM-0047",
+      "is_base_gold": false,
+      "mutation_id": "coa_result_out_of_specification"
+    },
+    {
+      "dossier_id": "VET-NEW-LINE-NONAMR-MULT-0095",
+      "split": "test",
+      "family_id": "FAM-0048",
+      "is_base_gold": true,
+      "mutation_id": null
+    },
+    {
+      "dossier_id": "VET-NEW-LINE-NONAMR-MULT-0095-Q",
+      "split": "test",
+      "family_id": "FAM-0048",
+      "is_base_gold": false,
+      "mutation_id": "missing_veterinary_target_species"
+    }
+  ]
+}

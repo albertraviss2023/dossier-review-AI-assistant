@@ -1,0 +1,107 @@
+{
+  "dossier_id": "UPLOAD-CHEM-001",
+  "country": "Rwanda",
+  "submission_date": "2026-04-11",
+  "demo_focus": "Renewal-style antimicrobial dossier for chemistry identity alignment, comparator review, and stewardship interpretation under controlled-use policy.",
+  "product": {
+    "product_name": "Respivox Plus",
+    "inn_name": "moxifloxacin",
+    "atc_code": "J01MA14",
+    "dosage_form": "tablet",
+    "strength": "400 mg"
+  },
+  "organization": {
+    "applicant": "Great Lakes Pharma",
+    "manufacturer": "Kigali Oral Solids Plant",
+    "facility_country": "Rwanda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "watch",
+    "amr_unmet_need": "moderate",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "rising",
+    "similarity_to_existing_watch": "high",
+    "existing_watch_comparator": "levofloxacin"
+  },
+  "sections": [
+    {
+      "section_id": "m1_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "The primary commercial manufacturing site for the finished pharmaceutical product is Kigali Oral Solids Plant, located in Rwanda. The facility was subject to a comprehensive GMP inspection by a recognized stringent regulatory authority. The latest inspection concluded on 2025-01-01, resulting in a formal compliance status of 'compliant'. The active GMP certificate number is GMP-123456, which remains valid until 2027-01-01. Site master files, a summary of recent inspection observations, and evidence of completed Corrective and Preventive Actions (CAPA) are included in the annex. Recent regulatory inspections yielded no critical observations, and all major findings have been effectively closed. Inspection history, CAPA closure records, and site responsibilities were reconciled across the manufacturing chain. Data were analyzed using a mixed-effects model for repeated measures, adjusting for baseline covariates. Where applicable, protocol deviations were assessed for impact on interpretation of outcomes. The analytical procedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy, precision, and specificity. Batch manufacturing records and standar The manufacturing site remains compliant and the GMP certificate is valid.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 600
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1275
+      }
+    },
+    {
+      "section_id": "m2_clinical",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Respivox Plus for the treatment of infections. The pivotal clinical development program comprised 2 well-controlled studies. Based on the integrated analysis, the reported clinical outcome category is 'endpoint_met'. The overall benefit-risk profile is considered highly favorable for the target patient population. Safety findings were consistent with the known pharmacological class effects, and appropriate risk minimization measures have been integrated into the proposed prescribing information.  GLASS-aligned surveillance trend is rising, and cross-resistance risk relative to levofloxacin is assessed as high. The target population demographics are broadly representative of the intended commercial patient cohort. Statistical significance was set at an alpha level of 0.05, and all tests were two-sided. Benefit-risk language was reviewed for consistency with the submitted efficacy and safety summaries. Stability testing was conducted in climatic zones III and IV, reflecting the intended distribution markets. The clinical overview links the therapeutic rationale to the pivotal evidence package and the",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1200
+      }
+    },
+    {
+      "section_id": "m5_stewardship",
+      "module": "5",
+      "title": "AMR Stewardship Narrative",
+      "text": "The tabular listing of clinical studies provides a comprehensive inventory of all trials conducted in support of the proposed indication (infections). This includes Phase I pharmacokinetic/pharmacodynamic studies, Phase II dose-finding studies, and the pivotal Phase III efficacy and safety trials. For each study, the table details the protocol identifier, study design, randomization ratio, number of enrolled subjects, study duration, and current completion status.  GLASS-aligned surveillance trend is rising, and cross-resistance risk relative to levofloxacin is assessed as high. All referenced documents are available in the dossier annex and traceable by section identifier. Method validation records and quality controls were reviewed for internal consistency. Data were analyzed using a mixed-effects model for repeated measures, adjusting for baseline covariates. The analytical procedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy, precision, and specificity. A randomized, double-blind, parallel-group study design was employed to minimize selection and observer bias. The manufacturing site operates under a fully implemented Pharmaceutica",
+      "critical": true,
+      "constraints": {
+        "min_chars": 90,
+        "max_chars": 700
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "partial",
+        "error_tags": [
+          "watch_similarity_risk"
+        ]
+      },
+      "metrics": {
+        "char_count": 1200
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "deep_review",
+    "risk_score": 0.63,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": true,
+    "defect_modes": [
+      "chemistry_comparator_review"
+    ]
+  }
+}

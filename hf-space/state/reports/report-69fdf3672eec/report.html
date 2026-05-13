@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Live Reviewer Decision Report</title>
+    <style>
+      body { font-family: 'Segoe UI', sans-serif; margin: 32px; color: #1f2933; }
+      h1, h2, h3 { font-family: Georgia, serif; }
+      .hero { border: 1px solid #d7dfe5; border-radius: 18px; padding: 20px; background: #fbf8f3; }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+      .card { border: 1px solid #d7dfe5; border-radius: 16px; padding: 14px; background: #fff; }
+      .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #eef2f5; margin-right: 6px; margin-bottom: 6px; }
+      .muted { color: #5f6f7a; }
+      ul { padding-left: 20px; }
+      pre { white-space: pre-wrap; background: #232830; color: #f5f7fb; padding: 16px; border-radius: 14px; }
+      table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+      th, td { border-bottom: 1px solid #e6ecef; text-align: left; padding: 8px; vertical-align: top; }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Live Reviewer Decision Report</h1>
+      <p class="muted">Dossier UPLOAD-WATCH-001 | Product Respivox | Applicant East Africa Therapeutics</p>
+      <div class="grid">
+        <div class="card"><strong>Recommendation</strong><div>deep_review</div></div>
+        <div class="card"><strong>Confidence</strong><div>0.54873</div></div>
+        <div class="card"><strong>Authorization</strong><div>restricted_authorization</div></div>
+      </div>
+    </div>
+    <h2>Executive Summary</h2>
+    <pre>Question: Review this dossier, summarize the findings across all criteria, and recommend the regulatory action with citations.
+Selected model: gemma-e4b
+Proposed recommendation: deep_review
+Conversation context: none
+Grounded rationale:
+1. Evidence from Model Switching Guidance - Recommended Usage supports regulatory assessment for deep_review using model gemma-e4b. [knowledge_wiki:model-switching-guidance:2:c1]
+2. Evidence from Manufacturer and GMP Evidence supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m1_gmp:c1]
+3. Evidence from AMR Stewardship Narrative supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m5_stewardship:c1]</pre>
+    <h2>Findings Across Criteria</h2>
+    <ul><li>Respivox submitted by East Africa Therapeutics was assessed for pre-market authorization.</li><li>The system recommendation is deep_review through the fallback review path.</li><li>Decision-driving policy signals: restricted_authorization.</li><li>Critical criteria needing reviewer attention: AMR Stewardship Narrative [present, length_ok, partial].</li><li>Groundedness verification passed with grounded claim rate 1.0.</li><li>AMR stewardship outcome: AWaRe watch, GLASS trend rising, authorization control restricted_authorization.</li></ul>
+    <h2>Criteria Diagnostics</h2>
+    <table>
+      <thead><tr><th>Section</th><th>Presence</th><th>Length</th><th>Correctness</th><th>Critical</th></tr></thead>
+      <tbody>
+        <tr><td>Manufacturer and GMP Evidence</td><td>present</td><td>length_ok</td><td>correct</td><td>True</td></tr><tr><td>Clinical Overview and Benefit-Risk Summary</td><td>present</td><td>length_ok</td><td>correct</td><td>True</td></tr><tr><td>AMR Stewardship Narrative</td><td>present</td><td>length_ok</td><td>partial</td><td>True</td></tr>
+      </tbody>
+    </table>
+    <h2>Stewardship And Verification</h2>
+    <div>
+      <span class="pill">AWaRe watch</span>
+      <span class="pill">GLASS rising</span>
+      <span class="pill">Grounded claim rate 1.0</span>
+      <span class="pill">Verifier passed True</span>
+    </div>
+    <h2>Evidence Citations</h2>
+    <table>
+      <thead><tr><th>Citation</th><th>Section</th><th>Snippet</th></tr></thead>
+      <tbody>
+        <tr><td>knowledge_wiki:model-switching-guidance:2:c1</td><td>Model Switching Guidance - Recommended Usage</td><td>Model Switching Guidance. Recommended Usage.Recommended Usage Gemma E4B should be used as the balanced default, Gemma E2B as the lighter fast option, and Qwen 3.5 as an alternative synthesis profile for difficult compara...</td></tr><tr><td>UPLOAD-WATCH-001:m1_gmp:c1</td><td>Manufacturer and GMP Evidence</td><td>Manufacturing site passed its last inspection and current GMP certification is valid with no critical findings.</td></tr><tr><td>UPLOAD-WATCH-001:m5_stewardship:c1</td><td>AMR Stewardship Narrative</td><td>The dossier acknowledges high similarity to ciprofloxacin and cites rising resistance concerns. The applicant proposes additional restrictions to reduce stewardship friction.</td></tr><tr><td>UPLOAD-WATCH-001:m2_clinical_overview:c1</td><td>Clinical Overview and Benefit-Risk Summary</td><td>Clinical overview reports the primary endpoint was met in respiratory infection, but the overall stewardship narrative emphasizes resistance risk and careful comparator analysis.</td></tr><tr><td>knowledge_wiki:model-switching-guidance:1:c1</td><td>Model Switching Guidance - Role of the Model Switch</td><td>Model Switching Guidance. Role of the Model Switch.Role of the Model Switch UI model switching exists to let reviewers and developers compare local synthesis behavior across Gemma E4B, Gemma E2B, and Qwen 3.5. It does no...</td></tr><tr><td>knowledge_wiki:retrieval-first-architecture:1:c1</td><td>Retrieval-First Architecture - Core Principle</td><td>Retrieval-First Architecture. Core Principle.Core Principle The project treats retrieval quality as the primary determinant of dossier-review quality. Model choice is secondary to chunking, source coverage, query decompo...</td></tr><tr><td>knowledge_wiki:who-aware-and-glass:3:c1</td><td>WHO AWaRe and GLASS Policy Stack - Watch Escalation</td><td>WHO AWaRe and GLASS Policy Stack. Watch Escalation.Watch Escalation A Watch antibiotic that is highly similar to an existing Watch comparator and paired with rising GLASS resistance should be escalated for restricted aut...</td></tr>
+      </tbody>
+    </table>
+  </body>
+</html>

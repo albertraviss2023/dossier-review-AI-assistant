@@ -1,0 +1,49 @@
+Robustness Final Review Report - SIM-SCANNED-20260417_213706
+Dossier: SIM-SCANNED-20260417_213706
+Product: Scanned Review Demo
+Applicant: Demo Applicant
+Recommendation: additional_information_required
+Confidence: 0.56701
+Authorization: restricted_authorization
+
+Executive Summary
+### Final Answer
+
+### Executive Summary
+
+The current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **3** unresolved requirement-level concerns.
+
+### Naming Policy Compliance
+
+No INN infringement detected for 'Scanned Review Demo'.
+
+**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096. A restricted authorization is triggered due to **high** chemical similarity to ciprofloxacin. Furthermore, local GLASS surveillance data indicates rising resistance trends, increasing the regulatory risk.
+
+### Detailed Findings
+
+I have prioritized the following **3** key issues based on their likely regulatory impact:
+
+1. **MAJOR**: GMP and manufacturing quality evidence - Manufacturing quality evidence shows non-compliance or expired certification. [SIM-SCANNED-20260417_213706:visual_page_1:c1]
+
+2. **MAJOR**: Clinical efficacy and benefit-risk support - Clinical support is insufficient because the pivotal endpoint failed or remains unclear. [SIM-SCANNED-20260417_213706:visual_page_1:c1]
+
+3. **MAJOR**: AMR stewardship alignment - Stewardship review applies and authorization controls are required. [SIM-SCANNED-20260417_213706:raw_section_1:c1]
+
+### Conclusion. In conclusion, **Additional Information Required** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents.
+
+Findings Across Criteria
+- **Scanned Review Demo** (INN: levofloxacin) submitted by **Demo Applicant** was assessed for pre-market authorization.
+- The system recommendation is **Additional Information Required** through the **Fallback** review path.
+- Decision-driving policy signals: Gmp Expired, Gmp Certificate Expired, Policy Information Gap, Restricted Authorization.
+- No critical dossier criteria were flagged as missing, malformed, or incorrect in the current review pass.
+- Groundedness verification **passed** with a grounded claim rate of 1.0.
+- AMR stewardship outcome: **AWaRe WATCH**, GLASS trend **Rising**, authorization control **Restricted Authorization**.
+
+Criteria Diagnostics
+- Imported Section 1: presence=present, length=length_ok, correctness=correct, critical=False
+- Visual Evidence Summary - Page 1: presence=present, length=length_ok, correctness=correct, critical=False
+- Visual Evidence Summary - Page 2: presence=present, length=length_ok, correctness=correct, critical=False
+
+Evidence Citations
+- SIM-SCANNED-20260417_213706:visual_page_1:c1 | Visual Evidence Summary - Page 1 | Visual evidence type: gmp certificate or site evidence. Visual evidence suggests an expired GMP certificate or expired quality evidence. OCR excerpt: Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expire...
+- SIM-SCANNED-20260417_213706:raw_section_1:c1 | Imported Section 1 | Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expired and critic Clinical Overview and Benefit-Risk Summary Primaryendpoint was not metand the reviewer needsreturn-for-completion action. AMRStewardship ...

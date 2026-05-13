@@ -1,0 +1,485 @@
+{
+  "generated_at_utc": "2026-04-17T22:25:01.672983+00:00",
+  "dossier_id": "WF-STANDARD-20260417_222251",
+  "report_title": "Structured Workflow Review Report - WF-STANDARD-20260417_222251",
+  "recipient_email": null,
+  "report_payload": {
+    "report_title": "Structured Workflow Review Report - WF-STANDARD-20260417_222251",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "WF-STANDARD-20260417_222251",
+        "submission_type": "pre_market_authorization",
+        "applicant": "Workflow Applicant",
+        "product_name": "Standard Review Demo",
+        "active_ingredient": "nitrofurantoin",
+        "dosage_form": "unknown",
+        "strength": "unknown",
+        "jurisdiction": "Uganda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_incomplete",
+        "violations": [
+          "No proof of payment was detected in the administrative material."
+        ]
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Standard Review Demo",
+        "who_inn": "metronidazole",
+        "similarity_index": 0.5474,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "No INN infringement detected for 'Standard Review Demo'.",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [
+          {
+            "section": "Application Form and Administrative Information",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Manufacturer and GMP Evidence",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Product Information and Naming",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Quality Overall Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Clinical Overview and Benefit-Risk Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "API Quality and Control Strategy",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "FPP Manufacturing Process and Controls",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Stability and Shelf-Life Justification",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Nonclinical Study Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          },
+          {
+            "section": "Tabular Listing of Clinical Studies",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Pivotal Clinical Trial Reports",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Biopharmaceutics and Bioequivalence Evidence",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          }
+        ]
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "access",
+        "stewardship_rule_application": "Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to nitrofurantoin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved nitrofurantoin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved nitrofurantoin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety nitrofurantoin, parent compound nitrofurantoin, PubChem CID 6604200, ChEMBL CHEMBL572, and UniChem UC6604200.",
+        "fast_track_status": false,
+        "authorization_control": "standard_authorization",
+        "watch_or_reserve_caution": false,
+        "findings": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to nitrofurantoin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved nitrofurantoin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved nitrofurantoin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety nitrofurantoin, parent compound nitrofurantoin, PubChem CID 6604200, ChEMBL CHEMBL572, and UniChem UC6604200."
+        ]
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Administrative completeness review",
+          "issue": "No proof of payment was detected in the administrative material.",
+          "violated_rule": "Missing proof of payment where required = violation",
+          "severity": "minor",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Confirm the payment receipt or fee evidence is included where required."
+        }
+      ],
+      "severity_classification": {
+        "critical": 0,
+        "major": 0,
+        "minor": 1,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "consistent",
+        "findings": []
+      },
+      "review_completeness_confirmation": {
+        "status": "review_complete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": true,
+          "structural_dossier_mapping": true,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": true,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "acceptable",
+        "system_recommendation": "approval_granted",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [],
+        "escalation_needed": false
+      }
+    },
+    "review_payload": {
+      "dossier_id": "WF-STANDARD-20260417_222251",
+      "selected_model": {
+        "id": "gemma-e4b",
+        "label": "Gemma E4B",
+        "runtime_model_id": "gemma-e4b",
+        "description": "Primary balanced local model for dossier review."
+      },
+      "sub_queries": [
+        "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "details about Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "requirements for Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification."
+      ],
+      "intent": "dossier_review",
+      "response_contract": "dossier_review_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "conversation_id": "conv-5b328d5087",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 3379,
+        "remaining_tokens": 717,
+        "usage_ratio": 0.82495,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 943,
+        "carryover_tokens": 0,
+        "active_message_tokens": 2436,
+        "archived_messages_count": 14,
+        "compaction_count": 1,
+        "auto_compaction_required": false,
+        "last_compacted_at": "2026-04-17T22:25:01.144424+00:00",
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "approval_granted",
+      "confidence": 0.58697,
+      "route": "fallback",
+      "abstained": false,
+      "abstain_reason": null,
+      "rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n### Overall Judgment\n\nBased on the full structured review, the overall judgment is **acceptable**. This aligns with the grounded system recommendation of **Approval Granted**.\n\nNo blocking rule violations prevent the dossier from proceeding on the current evidence.\n\n**AMR Stewardship Analysis:** The product is classified under the **ACCESS** category. Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to nitrofurantoin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved nitrofurantoin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved nitrofurantoin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety nitrofurantoin, parent compound nitrofurantoin, PubChem CID 6604200, ChEMBL CHEMBL572, and UniChem UC6604200.\n\n### Detailed Findings\n- Evidence from **Application Form and Administrative Information** supports This dossier constitutes a formal application for Marketing Authorization of Simvvia (simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The applicant, Unite.. [WF-STANDARD-20260417_222251:m1_application_admin:c1]\n- Evidence from **Stability and Shelf-Life Justification** supports A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. Data from both accelerated (40\u00b0C/75% RH for 6 months) and long-term storage conditions.. [WF-STANDARD-20260417_222251:m3_stability:c1]\n\n### Conclusion. In conclusion, **Approval Granted** is the grounded regulatory path. The reviewer should confirm the stewardship plan aligns with the AWaRe categorization and local resistance trends.",
+      "chain_of_thought": "{\n \"intent\": \"dossier_review\",\n \"resolved_terms\": [],\n \"retrieval_strategy\": \"Precision search across dossier_review_v1 domain\",\n \"bouncer_audit\": [\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m1_application_admin:c1\",\n \"section\": \"Application Form and Administrative Information\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.181\n },\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m3_stability:c1\",\n \"section\": \"Stability and Shelf-Life Justification\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.174\n },\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m4_nonclinical_summary:c1\",\n \"section\": \"Nonclinical Study Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.173\n },\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m2_quality_overall_summary:c1\",\n \"section\": \"Quality Overall Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.152\n },\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m3_api_quality:c1\",\n \"section\": \"API Quality and Control Strategy\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.147\n },\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m2_clinical_overview:c1\",\n \"section\": \"Clinical Overview and Benefit-Risk Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.143\n },\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m1_product_information:c1\",\n \"section\": \"Product Information and Naming\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.138\n },\n {\n \"chunk_id\": \"WF-STANDARD-20260417_222251:m5_pivotal_trial_reports:c1\",\n \"section\": \"Pivotal Clinical Trial Reports\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.136\n }\n ]\n}",
+      "policy_rule_hits": [],
+      "section_diagnostics": [
+        {
+          "section_id": "m1_application_admin",
+          "title": "Application Form and Administrative Information",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_manufacturer_gmp",
+          "title": "Manufacturer and GMP Evidence",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_product_information",
+          "title": "Product Information and Naming",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m2_quality_overall_summary",
+          "title": "Quality Overall Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m2_clinical_overview",
+          "title": "Clinical Overview and Benefit-Risk Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_api_quality",
+          "title": "API Quality and Control Strategy",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_fpp_manufacturing",
+          "title": "FPP Manufacturing Process and Controls",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_stability",
+          "title": "Stability and Shelf-Life Justification",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m4_nonclinical_summary",
+          "title": "Nonclinical Study Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        },
+        {
+          "section_id": "m5_trial_listing",
+          "title": "Tabular Listing of Clinical Studies",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m5_pivotal_trial_reports",
+          "title": "Pivotal Clinical Trial Reports",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m5_bioequivalence",
+          "title": "Biopharmaceutics and Bioequivalence Evidence",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m1_application_admin:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m1_application_admin",
+          "section_title": "Application Form and Administrative Information",
+          "score": 0.18055,
+          "snippet": "This dossier constitutes a formal application for Marketing Authorization of Simvvia (simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The applicant, United Therapeutics, formall..."
+        },
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m3_stability:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m3_stability",
+          "section_title": "Stability and Shelf-Life Justification",
+          "score": 0.17443,
+          "snippet": "A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. Data from both accelerated (40\u00b0C/75% RH for 6 months) and long-term storage conditions (spanning up to 36 mon..."
+        },
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m4_nonclinical_summary:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m4_nonclinical_summary",
+          "section_title": "Nonclinical Study Summary",
+          "score": 0.17316,
+          "snippet": "The nonclinical testing program evaluated the primary pharmacodynamics, secondary pharmacodynamics, safety pharmacology, and comprehensive toxicology profile of the compound. Repeat-dose toxicity studies in two mammalian..."
+        },
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m2_quality_overall_summary:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m2_quality_overall_summary",
+          "section_title": "Quality Overall Summary",
+          "score": 0.15198,
+          "snippet": "This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for simvastatin. The control strategy justifies the proposed specifications for both the active s..."
+        },
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m3_api_quality:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m3_api_quality",
+          "section_title": "API Quality and Control Strategy",
+          "score": 0.14683,
+          "snippet": "The active pharmaceutical ingredient (API) section details the complete synthesis route, starting from well-defined regulatory starting materials. Robust in-process controls and intermediate specifications ensure the con..."
+        },
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m2_clinical_overview:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m2_clinical_overview",
+          "section_title": "Clinical Overview and Benefit-Risk Summary",
+          "score": 0.14324,
+          "snippet": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Simvvia for the treatment of bacterial skin infection. The pivotal clinical development program comprised 2 well-controlled studies. Ba..."
+        },
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m1_product_information:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m1_product_information",
+          "section_title": "Product Information and Naming",
+          "score": 0.13784,
+          "snippet": "The proposed proprietary name for this medicinal product is Simvvia, containing the active pharmaceutical ingredient simvastatin. The draft Summary of Product Characteristics (SmPC), Patient Information Leaflet (PIL), an..."
+        },
+        {
+          "citation_id": "WF-STANDARD-20260417_222251:m5_pivotal_trial_reports:c1",
+          "dossier_id": "WF-STANDARD-20260417_222251",
+          "section_id": "m5_pivotal_trial_reports",
+          "section_title": "Pivotal Clinical Trial Reports",
+          "score": 0.13616,
+          "snippet": "Detailed clinical study reports (CSRs) for the pivotal efficacy trials are provided. These randomized, double-blind, actively-controlled trials evaluated the primary and secondary endpoints in accordance with the pre-spe..."
+        }
+      ],
+      "verifier": {
+        "grounded_claim_rate": 1.0,
+        "unsupported_critical_claim_rate": 0.0,
+        "passed": true
+      },
+      "memory": {
+        "process_rss_gb": 0.9744,
+        "system_total_ram_gb": 31.7568,
+        "system_available_ram_gb": 11.6533,
+        "system_used_ram_percent": 63.3,
+        "min_free_ram_gb": 0.5,
+        "standard_route_rss_limit_gb": 20.0,
+        "fallback_route_rss_limit_gb": 26.0,
+        "within_budget": true
+      },
+      "lineage_tags": {
+        "data_classification": "synthetic",
+        "data_version": "balanced_v1_2026-04-05",
+        "split_version": "balanced_v1_2026-04-05",
+        "model_policy": "local_multi_model",
+        "model_id": "gemma-e4b",
+        "prompt_version": "review_v1",
+        "route_profile": "fallback"
+      },
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "nitrofurantoin",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "nitrofurantoin",
+        "parent_compound": "nitrofurantoin",
+        "pubchem_cid": "6604200",
+        "canonical_smiles": "O=[N+]([O-])N1CC(=O)N(C1=O)N=CC2=CC=CO2",
+        "inchikey": "NQCHQHZLSJFNQJ-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL572",
+        "unichem_id": "UC6604200",
+        "aware_category": "access",
+        "amr_unmet_need": "not_applicable",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "stable",
+        "similarity_to_existing_watch": "not_applicable",
+        "existing_watch_comparator": "not_applicable",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "standard_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": false,
+        "watch_similarity_restriction": false,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to nitrofurantoin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved nitrofurantoin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved nitrofurantoin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety nitrofurantoin, parent compound nitrofurantoin, PubChem CID 6604200, ChEMBL CHEMBL572, and UniChem UC6604200."
+        ],
+        "rationale": "Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to nitrofurantoin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved nitrofurantoin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved nitrofurantoin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety nitrofurantoin, parent compound nitrofurantoin, PubChem CID 6604200, ChEMBL CHEMBL572, and UniChem UC6604200."
+      },
+      "metrics": {
+        "latency_seconds": 0.0846,
+        "input_tokens_estimate": 1714,
+        "output_tokens_estimate": 817
+      },
+      "visualization_data": null
+    },
+    "email_subject": "Structured Workflow Review Report - WF-STANDARD-20260417_222251 - approval_granted",
+    "email_body": "Structured Workflow Review Report - WF-STANDARD-20260417_222251\n\nSubmission Summary\n- Dossier Id: WF-STANDARD-20260417_222251\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: Standard Review Demo\n- Active Ingredient: nitrofurantoin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: Standard Review Demo\n- Who Inn: metronidazole\n- Similarity Index: 0.5474\n- Threshold: 0.7\n- Threshold Result: passed\n- Similarity Type: orthographic\n- Interpretation: No INN infringement detected for 'Standard Review Demo'.\n- Flag Status: acceptable_naming\n- Rule Consequence: No blocking INN naming issue was identified.\n\nSection-by-Section Scientific And Regulatory Findings\n- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True\n- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True"
+  },
+  "email_subject": "Structured Workflow Review Report - WF-STANDARD-20260417_222251 - approval_granted",
+  "email_body": "Structured Workflow Review Report - WF-STANDARD-20260417_222251\n\nSubmission Summary\n- Dossier Id: WF-STANDARD-20260417_222251\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: Standard Review Demo\n- Active Ingredient: nitrofurantoin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: Standard Review Demo\n- Who Inn: metronidazole\n- Similarity Index: 0.5474\n- Threshold: 0.7\n- Threshold Result: passed\n- Similarity Type: orthographic\n- Interpretation: No INN infringement detected for 'Standard Review Demo'.\n- Flag Status: acceptable_naming\n- Rule Consequence: No blocking INN naming issue was identified.\n\nSection-by-Section Scientific And Regulatory Findings\n- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True\n- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True"
+}

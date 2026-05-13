@@ -1,0 +1,54 @@
+{
+  "generated_at_utc": "2026-05-13T08:27:44.904913+00:00",
+  "passed": true,
+  "scenario_count": 5,
+  "passed_count": 5,
+  "failed_count": 0,
+  "scenarios": [
+    {
+      "name": "generic_paracetamol_reference_review",
+      "passed": true,
+      "summary": "Generic patient-information comparison and INN review completed.",
+      "details": {
+        "innovator_reference": "Panadol",
+        "overall_alignment": "not_aligned",
+        "inn_decision_effect": "can_continue"
+      }
+    },
+    {
+      "name": "antimicrobial_watch_caution",
+      "passed": true,
+      "summary": "AWaRe classification and stewardship flag computed.",
+      "details": {
+        "aware_category": "Watch",
+        "stewardship_flag": "review_required"
+      }
+    },
+    {
+      "name": "incorrect_section_example_comparison",
+      "passed": true,
+      "summary": "Incorrect section comparison produced deterministic findings.",
+      "details": {
+        "classification": "non_compliant"
+      }
+    },
+    {
+      "name": "chat_chart_and_markdown_table_routing",
+      "passed": true,
+      "summary": "Chart request and findings tables rendered through the app.",
+      "details": {
+        "chart_type": "pie",
+        "review_recommendation": "approval_granted"
+      }
+    },
+    {
+      "name": "external_source_supported_answer_trace",
+      "passed": true,
+      "summary": "External-source-backed cache trace was preserved in the MCP envelope.",
+      "details": {
+        "source_type": "external",
+        "audit_tool": "fetch_innovator_patient_information"
+      }
+    }
+  ]
+}

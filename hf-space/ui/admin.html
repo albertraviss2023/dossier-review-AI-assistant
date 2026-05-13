@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel - Pre-Market Screening Workstation</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg: radial-gradient(circle at top left, rgba(191, 219, 254, 0.45) 0%, rgba(248, 250, 252, 0.96) 42%, #eaf1ff 100%);
+      --panel: rgba(255, 255, 255, 0.82);
+      --border: rgba(15, 23, 42, 0.08);
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+    }
+    body { margin: 0; min-height: 100vh; font-family: Inter, sans-serif; background: var(--bg); color: var(--text); }
+    .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 24px; box-shadow: var(--shadow); backdrop-filter: blur(18px); }
+    .field-label { display:block; font-size:.68rem; font-weight:800; text-transform:uppercase; letter-spacing:.12em; color: var(--muted); margin-bottom:.45rem; }
+  </style>
+</head>
+<body class="p-4 md:p-6">
+  <div class="max-w-7xl mx-auto flex flex-col gap-4">
+    <header class="panel px-6 py-4 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="/brand-mark.svg" class="w-10 h-10 rounded-xl border border-slate-200 bg-white p-1.5" alt="Logo">
+        <div>
+          <h1 class="text-xl font-bold tracking-tight">Pre-Market Screening Workstation - Admin Panel</h1>
+          <p class="text-sm text-slate-500">Manage process-scoped users, reviewer access, and governed review programs.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div id="adminUserBadge" class="px-3 py-1.5 rounded-full border border-slate-200 text-xs font-semibold text-slate-600">Loading...</div>
+        <a href="/review" class="px-4 py-2 rounded-xl bg-slate-950 text-white text-sm font-semibold">Back to review</a>
+      </div>
+    </header>
+
+    <main class="grid grid-cols-1 xl:grid-cols-[360px_1fr] gap-4 min-h-0">
+      <section class="panel p-5 h-fit">
+        <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">Create user</span>
+        <h2 class="text-lg font-bold tracking-tight mt-2">Add reviewer or superuser</h2>
+        <p class="text-sm text-slate-500 mt-2">Each superuser can manage only the review program they are assigned to.</p>
+        <form id="createUserForm" class="mt-5 space-y-4">
+          <div>
+            <label class="field-label" for="displayName">Display name</label>
+            <input id="displayName" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-blue-400" required />
+          </div>
+          <div>
+            <label class="field-label" for="username">Username</label>
+            <input id="username" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-blue-400" required />
+          </div>
+          <div>
+            <label class="field-label" for="password">Password</label>
+            <input id="password" type="password" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-blue-400" required />
+          </div>
+          <div>
+            <label class="field-label" for="role">Role</label>
+            <select id="role" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-blue-400">
+              <option value="reviewer">Reviewer</option>
+              <option value="superuser">Superuser</option>
+            </select>
+          </div>
+          <div>
+            <span class="field-label">Review programs</span>
+            <label class="flex items-center gap-2 text-sm text-slate-600 mb-2"><input id="scopeMarketing" type="checkbox" checked class="rounded" /> Marketing authorization</label>
+            <label class="flex items-center gap-2 text-sm text-slate-600"><input id="scopeClinical" type="checkbox" class="rounded" /> Clinical trial</label>
+          </div>
+          <button class="w-full rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 transition-all" type="submit">Create user</button>
+          <p id="createUserMessage" class="text-sm text-slate-500 min-h-[20px]"></p>
+        </form>
+      </section>
+
+      <section class="flex flex-col gap-4 min-h-0">
+        <section class="panel p-5 min-h-0 flex flex-col">
+          <div class="flex items-center justify-between gap-3">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">Access registry</span>
+              <h2 class="text-lg font-bold tracking-tight mt-2">Program users</h2>
+            </div>
+            <button id="refreshUsersBtn" class="px-4 py-2 rounded-xl border border-slate-200 text-sm font-semibold hover:bg-white">Refresh</button>
+          </div>
+          <div id="userList" class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-4 overflow-y-auto pr-1"></div>
+        </section>
+
+        <section class="panel p-5 min-h-0 flex flex-col">
+          <div class="flex items-center justify-between gap-3">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">Dossier assignment</span>
+              <h2 class="text-lg font-bold tracking-tight mt-2">Assign incoming dossiers</h2>
+            </div>
+            <button id="refreshAssignmentsBtn" class="px-4 py-2 rounded-xl border border-slate-200 text-sm font-semibold hover:bg-white">Refresh</button>
+          </div>
+          <div id="assignmentList" class="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-4 overflow-y-auto pr-1"></div>
+        </section>
+
+        <section class="panel p-5 min-h-0 flex flex-col">
+          <div class="flex items-center justify-between gap-3">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">Program dashboard</span>
+              <h2 class="text-lg font-bold tracking-tight mt-2">Overall Progress & ToT</h2>
+            </div>
+            <button id="refreshDashboardBtn" class="px-4 py-2 rounded-xl border border-slate-200 text-sm font-semibold hover:bg-white">Refresh</button>
+          </div>
+          <div id="adminSummaryCards" class="mt-4 grid grid-cols-2 lg:grid-cols-5 gap-3"></div>
+          <div id="progressByReviewerTable" class="mt-4 overflow-x-auto"></div>
+        </section>
+
+        <section class="panel p-5 min-h-0 flex flex-col">
+          <div class="flex items-center justify-between gap-3">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">Performance intelligence</span>
+              <h2 class="text-lg font-bold tracking-tight mt-2">Reviewer ToT leaderboard</h2>
+            </div>
+            <button id="refreshPerformanceBtn" class="px-4 py-2 rounded-xl border border-slate-200 text-sm font-semibold hover:bg-white">Refresh</button>
+          </div>
+          <div id="performanceSummary" class="mt-4 text-sm text-slate-600"></div>
+          <div id="performanceTable" class="mt-3 overflow-x-auto"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const urlApiBase = new URLSearchParams(window.location.search).get('api_base');
+    if (urlApiBase) {
+      localStorage.setItem('pmada-api-base', urlApiBase);
+    }
+    const API_BASE = (localStorage.getItem('pmada-api-base') || '').replace(/\/+$/, '');
+
+    function resolveApiUrl(url) {
+      if (!url) return url;
+      if (/^https?:\/\//i.test(url)) return url;
+      if (!API_BASE) return url;
+      return `${API_BASE}${url.startsWith('/') ? '' : '/'}${url}`;
+    }
+
+    async function apiCall(url, method = 'GET', body = null) {
+      const options = { method, headers: { 'Content-Type': 'application/json' } };
+      if (body) options.body = JSON.stringify(body);
+      const res = await fetch(resolveApiUrl(url), options);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || data.message || 'Request failed');
+      return data;
+    }
+
+    function selectedScopes() {
+      const scopes = [];
+      if (document.getElementById('scopeMarketing').checked) scopes.push('marketing_authorization');
+      if (document.getElementById('scopeClinical').checked) scopes.push('clinical_trial');
+      return scopes;
+    }
+
+    function renderUserCard(user) {
+      return `
+        <article class="rounded-3xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <div class="text-base font-bold tracking-tight">${user.display_name}</div>
+              <div class="text-sm text-slate-500 mt-1">${user.username}</div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-[11px] font-bold ${user.active ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'}">${user.active ? 'Active' : 'Disabled'}</span>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-full bg-slate-100 text-[11px] font-semibold text-slate-700">${user.role}</span>
+            ${(user.process_scopes || []).map((scope) => `<span class="px-2.5 py-1 rounded-full bg-blue-50 text-[11px] font-semibold text-blue-700">${scope === 'clinical_trial' ? 'Clinical Trial' : 'Marketing Authorization'}</span>`).join('')}
+          </div>
+          <div class="mt-4 flex items-center gap-2">
+            <button data-username="${user.username}" data-active="${user.active}" class="toggleAccessBtn px-3 py-2 rounded-xl border border-slate-200 text-sm font-semibold hover:bg-slate-50">${user.active ? 'Revoke access' : 'Grant access'}</button>
+          </div>
+        </article>
+      `;
+    }
+
+    function reviewerCandidates(users) {
+      return (users || []).filter((user) => user.active && (user.role === 'reviewer' || user.role === 'superuser'));
+    }
+
+    function renderAssignmentCard(dossier, users) {
+      const options = users.map((user) => `<option value="${user.username}">${user.display_name} (${user.username})</option>`).join('');
+      const label = dossier.progress_state === 'done' ? 'Done' : dossier.progress_state === 'in_progress' ? 'In progress' : 'Not started';
+      const colorClass = dossier.progress_color === 'green' ? 'bg-emerald-500' : dossier.progress_color === 'amber' ? 'bg-amber-500' : 'bg-slate-300';
+      return `
+        <article class="rounded-3xl border border-slate-200 bg-white/90 p-4 shadow-sm">
+          <div class="text-base font-bold tracking-tight">${dossier.dossier_id}</div>
+          <div class="text-sm text-slate-500 mt-1">${dossier.product_name || 'Unnamed product'} - ${dossier.company || 'Unknown company'}</div>
+          <div class="mt-3 text-xs font-semibold text-slate-500">${label} (${dossier.progress_percent}%)</div>
+          <div class="mt-2 h-2 rounded-full bg-slate-100 overflow-hidden">
+            <div class="h-2 ${colorClass}" style="width:${Math.max(0, Math.min(100, dossier.progress_percent || 0))}%"></div>
+          </div>
+          <div class="mt-4 flex items-center gap-2">
+            <select data-dossier-id="${dossier.dossier_id}" class="assignReviewerSelect flex-1 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm outline-none">
+              ${options}
+            </select>
+            <button data-dossier-id="${dossier.dossier_id}" class="assignDossierBtn px-3 py-2 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-500">Assign</button>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderPerformanceTable(rows) {
+      if (!rows.length) {
+        return '<div class="text-sm text-slate-500">No completed reviews yet.</div>';
+      }
+      const body = rows.map((row) => `
+        <tr class="border-b border-slate-100">
+          <td class="px-3 py-2 text-sm font-semibold text-slate-700">${row.reviewer}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.completed_reviews}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.average_tot_hours.toFixed(2)}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.fastest_tot_hours.toFixed(2)}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.slowest_tot_hours.toFixed(2)}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.struggle_signal || '-'}</td>
+        </tr>
+      `).join('');
+      return `
+        <table class="w-full rounded-2xl overflow-hidden border border-slate-200 bg-white">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Reviewer</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Done</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Avg ToT (h)</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Fastest (h)</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Slowest (h)</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Struggle signal</th>
+            </tr>
+          </thead>
+          <tbody>${body}</tbody>
+        </table>
+      `;
+    }
+
+    function renderSummaryCards(summary) {
+      const card = (label, value, toneClass) => `
+        <div class="rounded-2xl border border-slate-200 bg-white px-3 py-3">
+          <div class="text-[10px] uppercase tracking-wide text-slate-500 font-bold">${label}</div>
+          <div class="mt-1 text-xl font-extrabold ${toneClass}">${value}</div>
+        </div>
+      `;
+      return [
+        card('Total dossiers', summary.overall_total_dossiers || 0, 'text-slate-700'),
+        card('Not started', summary.overall_not_started || 0, 'text-slate-500'),
+        card('In progress', summary.overall_in_progress || 0, 'text-amber-700'),
+        card('Done', summary.overall_done || 0, 'text-emerald-700'),
+        card('Overall ToT (h)', Number(summary.overall_average_tot_hours || 0).toFixed(2), 'text-blue-700'),
+      ].join('');
+    }
+
+    function renderProgressByReviewerTable(rows) {
+      if (!rows.length) {
+        return '<div class="text-sm text-slate-500">No reviewer assignments yet.</div>';
+      }
+      const body = rows.map((row) => `
+        <tr class="border-b border-slate-100">
+          <td class="px-3 py-2 text-sm font-semibold text-slate-700">${row.reviewer_username}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.assigned_total}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.not_started}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.in_progress}</td>
+          <td class="px-3 py-2 text-sm text-slate-600">${row.done}</td>
+        </tr>
+      `).join('');
+      return `
+        <table class="w-full rounded-2xl overflow-hidden border border-slate-200 bg-white">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Reviewer</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Assigned</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Not Started</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">In Progress</th>
+              <th class="px-3 py-2 text-left text-xs font-bold uppercase tracking-wide text-slate-500">Done</th>
+            </tr>
+          </thead>
+          <tbody>${body}</tbody>
+        </table>
+      `;
+    }
+
+    async function refreshUsers() {
+      const data = await apiCall('/v1/admin/users');
+      const list = document.getElementById('userList');
+      list.innerHTML = data.items.map(renderUserCard).join('');
+      document.querySelectorAll('.toggleAccessBtn').forEach((button) => {
+        button.addEventListener('click', async () => {
+          const username = button.dataset.username;
+          const active = button.dataset.active === 'true';
+          await apiCall(`/v1/admin/users/${username}`, 'PATCH', { active: !active });
+          await refreshUsers();
+          await refreshAssignments();
+          await refreshAdminDashboard();
+          await refreshPerformance();
+        });
+      });
+      return data.items;
+    }
+
+    async function refreshAssignments(users = null) {
+      const reviewerUsers = reviewerCandidates(users || await refreshUsers());
+      const list = document.getElementById('assignmentList');
+      const data = await apiCall('/v1/admin/dossiers/unassigned');
+      if (!data.items.length) {
+        list.innerHTML = '<div class="text-sm text-slate-500">No unassigned dossiers in your review programs.</div>';
+        return;
+      }
+      list.innerHTML = data.items.map((dossier) => renderAssignmentCard(dossier, reviewerUsers)).join('');
+      document.querySelectorAll('.assignDossierBtn').forEach((button) => {
+        button.addEventListener('click', async () => {
+          const dossierId = button.dataset.dossierId;
+          const select = document.querySelector(`.assignReviewerSelect[data-dossier-id="${dossierId}"]`);
+          const reviewer = select.value;
+          await apiCall(`/v1/admin/dossiers/${dossierId}/assign`, 'POST', { reviewer_username: reviewer });
+          await refreshAssignments(reviewerUsers);
+          await refreshAdminDashboard();
+          await refreshPerformance();
+        });
+      });
+    }
+
+    async function refreshPerformance() {
+      const summary = document.getElementById('performanceSummary');
+      const table = document.getElementById('performanceTable');
+      const data = await apiCall('/v1/admin/reviewer-performance');
+      summary.textContent = `Overall average ToT: ${data.overall_average_tot_hours.toFixed(2)}h | Fastest reviewer: ${data.fastest_reviewer_username || '-'} | Slowest reviewer: ${data.slowest_reviewer_username || '-'}`;
+      table.innerHTML = renderPerformanceTable(data.reviewers || []);
+    }
+
+    async function refreshAdminDashboard() {
+      const cards = document.getElementById('adminSummaryCards');
+      const progressTable = document.getElementById('progressByReviewerTable');
+      const data = await apiCall('/v1/admin/dashboard-summary');
+      cards.innerHTML = renderSummaryCards(data);
+      progressTable.innerHTML = renderProgressByReviewerTable(data.progress_by_reviewer || []);
+    }
+
+    document.getElementById('refreshUsersBtn').addEventListener('click', refreshUsers);
+    document.getElementById('refreshAssignmentsBtn').addEventListener('click', async () => {
+      const users = await refreshUsers();
+      await refreshAssignments(users);
+    });
+    document.getElementById('refreshDashboardBtn').addEventListener('click', refreshAdminDashboard);
+    document.getElementById('refreshPerformanceBtn').addEventListener('click', refreshPerformance);
+    document.getElementById('createUserForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const message = document.getElementById('createUserMessage');
+      message.textContent = '';
+      try {
+        await apiCall('/v1/admin/users', 'POST', {
+          display_name: document.getElementById('displayName').value.trim(),
+          username: document.getElementById('username').value.trim(),
+          password: document.getElementById('password').value,
+          role: document.getElementById('role').value,
+          process_scopes: selectedScopes()
+        });
+        message.textContent = 'User created successfully.';
+        event.target.reset();
+        document.getElementById('scopeMarketing').checked = true;
+        document.getElementById('scopeClinical').checked = false;
+        const users = await refreshUsers();
+        await refreshAssignments(users);
+        await refreshAdminDashboard();
+        await refreshPerformance();
+      } catch (error) {
+        message.textContent = error.message || 'Could not create user.';
+      }
+    });
+
+    (async () => {
+      try {
+        const me = await apiCall('/v1/auth/me');
+        document.getElementById('adminUserBadge').textContent = `${me.display_name} · ${me.role}`;
+        const users = await refreshUsers();
+        await refreshAssignments(users);
+        await refreshAdminDashboard();
+        await refreshPerformance();
+      } catch (error) {
+        window.location.href = '/login';
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+{
+  "dossier_id": "HUM-REN-GEN-AMR-CEFT-0113",
+  "family_id": "FAM-0057",
+  "medicine_category": "human",
+  "submission_type": "renewal",
+  "application_pathway": "generic",
+  "product_class": "antimicrobial",
+  "is_antimicrobial": true,
+  "amr_class": "Watch",
+  "therapeutic_area": "infectious_disease",
+  "product_name": "Ceftriaxone 1 g powder for injection",
+  "inn": "ceftriaxone",
+  "active_ingredients": [
+    "ceftriaxone"
+  ],
+  "strength": "1 g",
+  "dosage_form": "powder for injection",
+  "route_of_administration": "intravenous",
+  "manufacturer_country": "India",
+  "applicant_country": "Uganda",
+  "manufacturer_name": "PrimeCrest Lifesciences Ltd",
+  "applicant_name": "Crestline Pharma Distributors Ltd",
+  "manufacturing_site_address": "Dar es Salaam Logistics Zone, Lot 9",
+  "document_quality_profile": "scanned_tables_and_certificates",
+  "submission_status": "correct",
+  "expected_sop_outcome": "pass",
+  "reference_required": true,
+  "reference_source_type": "official_product_information_static",
+  "known_queries": [],
+  "target_species": [],
+  "food_producing_species": false,
+  "requires_withdrawal_period": false,
+  "withdrawal_period_meat": "",
+  "withdrawal_period_milk": "",
+  "gmp_expiry_date": "2028-01-01",
+  "submission_date": "2025-12-02",
+  "sections": [
+    {
+      "module": "Module 1",
+      "section_id": "m1_application_form",
+      "section_name": "Application Form",
+      "text": "Application Form for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cover_letter",
+      "section_name": "Cover Letter",
+      "text": "Cover Letter for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_authorization_letter",
+      "section_name": "Letter of Authorization",
+      "text": "Letter of Authorization for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_gmp_certificate",
+      "section_name": "GMP Certificate",
+      "text": "GMP Certificate for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nGMP Certificate No: GMP-T-0113; Site Address: Dar es Salaam Logistics Zone, Lot 9; Expiry Date: 2028-01-01.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cpp_certificates",
+      "section_name": "CPP / Certificate Documents",
+      "text": "CPP / Certificate Documents for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_product_label",
+      "section_name": "Product Label",
+      "text": "Product Label for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_pil",
+      "section_name": "Patient Information Leaflet",
+      "text": "Patient Information Leaflet for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nPIL Section: What this medicine is and what it is used for.\nPIL Route and Form: Route=intravenous or intramuscular; Dosage form=powder for injection; Strength=1 g.\nPIL Instructions: Follow the prescribed dose schedule. Do not exceed recommended dose.\nPIL Warnings: Reference-aligned warning: hypersensitivity to cephalosporins. Reference-aligned warning: serious allergic reactions. Reference-aligned warning: antibiotic-associated diarrhoea.\nPIL Storage: Store below 30C and protect from light.\nPIL Adverse Effects: Common effects include gastrointestinal upset and headache; serious effects require urgent review.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_smpc",
+      "section_name": "SmPC",
+      "text": "SmPC for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nSmPC 4.1 Therapeutic indications: As approved in the application form.\nSmPC 4.2 Posology and method of administration: Dose by age/weight and clinical condition as approved.\nSmPC 4.3 Contraindications: hypersensitivity to ceftriaxone or other cephalosporins.\nSmPC 4.4 Special warnings and precautions: serious hypersensitivity reactions; antibiotic-associated colitis.\nSmPC 4.8 Undesirable effects: nausea, diarrhoea, rash, dizziness; serious adverse reactions listed.\nSmPC 6.4 Special precautions for storage: store according to label and stability commitments.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_payment_proof",
+      "section_name": "Proof of Payment",
+      "text": "Proof of Payment for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_qos",
+      "section_name": "Quality Overall Summary",
+      "text": "Quality Overall Summary for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_clinical_overview",
+      "section_name": "Clinical Overview / Justification",
+      "text": "Clinical Overview / Justification for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_be_summary",
+      "section_name": "Bioequivalence Summary",
+      "text": "Bioequivalence Summary for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_substance",
+      "section_name": "Drug Substance Information",
+      "text": "Drug Substance Information for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_product",
+      "section_name": "Drug Product Information",
+      "text": "Drug Product Information for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_manufacturing_process",
+      "section_name": "Manufacturing Process",
+      "text": "Manufacturing Process for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_batch_formula",
+      "section_name": "Batch Formula",
+      "text": "Batch Formula for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_specifications",
+      "section_name": "Specifications",
+      "text": "Specifications for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_analytical_procedures",
+      "section_name": "Analytical Procedures",
+      "text": "Analytical Procedures for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_method_validation",
+      "section_name": "Method Validation",
+      "text": "Method Validation for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_coa",
+      "section_name": "Certificate of Analysis",
+      "text": "Certificate of Analysis for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nCoA Table: Batch Number=BCH-24011; Specification Limits=Conforms; Results=Within limits; Conclusion=Pass; Authorized Signature=Present.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_stability",
+      "section_name": "Stability Data",
+      "text": "Stability Data for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nStability Table: 0, 3, 6, 9, 12 months; Conditions=30C/75%RH; Conclusion supports shelf life.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_container_closure",
+      "section_name": "Container Closure System",
+      "text": "Container Closure System for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 4",
+      "section_id": "m4_nonclinical",
+      "section_name": "Nonclinical Study Reports / Justification",
+      "text": "Nonclinical Study Reports / Justification for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_be_or_clinical",
+      "section_name": "Bioequivalence / Clinical Study Reports",
+      "text": "Bioequivalence / Clinical Study Reports for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nClinical Summary: Endpoint met where applicable; Effect size and safety summary included.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_reference_comparator",
+      "section_name": "Reference / Comparator Product Evidence",
+      "text": "Reference / Comparator Product Evidence for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nReference Product Evidence: Comparator is Ceftriaxone 1 g Powder for Injection; submitted PIL/SmPC statements are aligned to reference safety facts.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_renewal_history",
+      "section_name": "Renewal Product History",
+      "text": "Renewal Product History for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nRenewal Context: Previous authorization number present; product quality and safety trend documented.\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_renewal_declaration",
+      "section_name": "Renewal Declaration",
+      "text": "Renewal Declaration for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_variation_history",
+      "section_name": "Variation History",
+      "text": "Variation History for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_pv_recall_summary",
+      "section_name": "Pharmacovigilance / Complaint / Recall Summary",
+      "text": "Pharmacovigilance / Complaint / Recall Summary for dossier HUM-REN-GEN-AMR-CEFT-0113.\nProduct: Ceftriaxone 1 g powder for injection (ceftriaxone); strength 1 g; route intravenous.\nApplicant: Crestline Pharma Distributors Ltd (Uganda); Manufacturer: PrimeCrest Lifesciences Ltd (India).\nAntimicrobial Classification: Watch; stewardship warning and prudent-use statement included."
+    }
+  ]
+}

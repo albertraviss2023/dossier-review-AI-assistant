@@ -1,0 +1,74 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >> endobj
+4 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+5 0 obj << /Length 3145 >> stream
+BT
+/F1 10 Tf
+1 0 0 1 50 780 Tm (NATIONAL DRUG AGENCY) Tj
+1 0 0 1 50 766 Tm (Pre-Market Authorization Review Report) Tj
+1 0 0 1 50 752 Tm () Tj
+1 0 0 1 50 738 Tm (Robustness Final Review Report - SIM-SCANNED-20260513_082652) Tj
+1 0 0 1 50 724 Tm () Tj
+1 0 0 1 50 710 Tm (Submission Summary) Tj
+1 0 0 1 50 696 Tm (- Dossier Id: SIM-SCANNED-20260513_082652) Tj
+1 0 0 1 50 682 Tm (- Submission Type: pre_market_authorization) Tj
+1 0 0 1 50 668 Tm (- Review Type: generic) Tj
+1 0 0 1 50 654 Tm (- Applicant: Demo Applicant) Tj
+1 0 0 1 50 640 Tm (- Product Name: Scanned Review Demo) Tj
+1 0 0 1 50 626 Tm (- Active Ingredient: levofloxacin) Tj
+1 0 0 1 50 612 Tm (- Dosage Form: unknown) Tj
+1 0 0 1 50 598 Tm (- Strength: unknown) Tj
+1 0 0 1 50 584 Tm (- Jurisdiction: Uganda) Tj
+1 0 0 1 50 570 Tm (- Review Pathway: standard) Tj
+1 0 0 1 50 556 Tm () Tj
+1 0 0 1 50 542 Tm (Administrative Review Outcome) Tj
+1 0 0 1 50 528 Tm (- Status: administratively_incomplete) Tj
+1 0 0 1 50 514 Tm (- Administrative application section is missing.) Tj
+1 0 0 1 50 500 Tm () Tj
+1 0 0 1 50 486 Tm (Dossier Structure Review Outcome) Tj
+1 0 0 1 50 472 Tm (- Status: mapped) Tj
+1 0 0 1 50 458 Tm (- No structural dossier violations were detected.) Tj
+1 0 0 1 50 444 Tm () Tj
+1 0 0 1 50 430 Tm (Applicable Rules And Requirements) Tj
+1 0 0 1 50 416 Tm (- Administrative completeness checklist) Tj
+1 0 0 1 50 402 Tm (- Structural dossier completeness rules) Tj
+1 0 0 1 50 388 Tm (- WHO INN similarity rule) Tj
+1 0 0 1 50 374 Tm (- Section adequacy and evidence sufficiency rules) Tj
+1 0 0 1 50 360 Tm (- Generic review packaging and patient-information comparison against innovator reference when provided) Tj
+1 0 0 1 50 346 Tm (- WHO AWaRe stewardship rules) Tj
+1 0 0 1 50 332 Tm () Tj
+1 0 0 1 50 318 Tm (WHO INN Similarity Review) Tj
+1 0 0 1 50 304 Tm (- Proposed Name: Scanned Review Demo) Tj
+1 0 0 1 50 290 Tm (- Who Inn: levofloxacin) Tj
+1 0 0 1 50 276 Tm (- Similarity Index: 0.0588) Tj
+1 0 0 1 50 262 Tm (- Threshold: 0.7) Tj
+1 0 0 1 50 248 Tm (- Threshold Result: passed) Tj
+1 0 0 1 50 234 Tm (- Similarity Type: orthographic) Tj
+1 0 0 1 50 220 Tm (- Interpretation: Product name 'Scanned Review Demo' has 5.88% similarity to INN 'levofloxacin'. Rule result: pass. Evaluated against naming guidance: Reviewer How-To Tutorials. Ho) Tj
+1 0 0 1 50 206 Tm (- Flag Status: acceptable_naming) Tj
+1 0 0 1 50 192 Tm (- Rule Consequence: No blocking INN naming issue was identified.) Tj
+1 0 0 1 50 178 Tm () Tj
+1 0 0 1 50 164 Tm (Section-By-Section Technical Review) Tj
+1 0 0 1 50 150 Tm (- Imported Section 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False) Tj
+1 0 0 1 50 136 Tm (- Visual Evidence Summary - Page 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False) Tj
+1 0 0 1 50 122 Tm (- Visual Evidence Summary - Page 2: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False) Tj
+1 0 0 1 50 108 Tm () Tj
+1 0 0 1 50 94 Tm (Generic Review-Specific Assessment) Tj
+1 0 0 1 50 80 Tm (- Status: partial) Tj
+1 0 0 1 50 66 Tm (- Baseline available: Yes) Tj
+ET
+endstream endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+3508
+%%EOF

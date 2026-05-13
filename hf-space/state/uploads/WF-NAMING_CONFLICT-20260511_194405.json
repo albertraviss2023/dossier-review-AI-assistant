@@ -1,0 +1,294 @@
+{
+  "dossier_id": "WF-NAMING_CONFLICT-20260511_194405",
+  "country": "Uganda",
+  "submission_date": "2026-04-18",
+  "product": {
+    "product_name": "amoxicillin",
+    "inn_name": "amoxicillin",
+    "atc_code": "unknown",
+    "dosage_form": "unknown",
+    "strength": "unknown"
+  },
+  "organization": {
+    "applicant": "Workflow Applicant",
+    "manufacturer": "Workflow Manufacturer",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": true,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "inconclusive",
+    "aware_category": "access",
+    "amr_unmet_need": "not_applicable",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "stable",
+    "similarity_to_existing_watch": "not_applicable",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "sections": [
+    {
+      "section_id": "m1_application_admin",
+      "module": "1",
+      "title": "Application Form and Administrative Information",
+      "text": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for the commercial distribution of\nthis medicinal product. The proposed pharmaceutical form is capsule with a strength of 500 mg,\nclassified under ATC code J01CA01. All required administrative declarations, legal\nattestations, letters of authorization, and regional application forms have been completed,\nsigned by the responsible Qualified Person, and appended to Module 1. The manufacturing site\noperates under a fully implemented Pharmaceutical Quality System (PQS) aligned with ICH Q10.\nStability testing was conducted in climatic zones III and IV, reflecting the intended\ndistribution markets. The risk management plan includes routine pharmacovigilance and proposed\neducational materials for healthcare professionals. Applicant authorization documents and legal\nattestations were reconciled against the named manufacturing parties. Method validation records\nand quality controls were reviewed for internal consistency. All referenced documents are\navailable in the dossier annex and traceable by section identifier. The analytical procedure\nwas validated in accordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy,\nprecision, and specificity. The proposed prescribing information and patient information\nleaflet have been translated into local languages. Risk mitigation activities are documented\nwith ownership, timelines, and follow-up checkpoints. Pharmacokinetic parameters were",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1640
+      }
+    },
+    {
+      "section_id": "m1_manufacturer_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "The primary commercial manufacturing site for the finished pharmaceutical product is Sahel\nEssential Drugs Company, located in Botswana. The facility was subject to a comprehensive GMP\ninspection by a recognized stringent regulatory authority. The latest inspection concluded on\n2025-02-26, resulting in a formal compliance status of 'compliant'. The active GMP certificate\nnumber is GMP-156837, which remains valid until 2027-09-26. Site master files, a summary of\nrecent inspection observations, and evidence of completed Corrective and Preventive Actions\n(CAPA) are included in the annex. Recent regulatory inspections yielded no critical\nobservations, and all major findings have been effectively closed. Inspection history, CAPA\nclosure records, and site responsibilities were reconciled across the manufacturing chain.\nWhere applicable, protocol deviations were assessed for impact on interpretation of outcomes.\nMethod validation records and quality controls were reviewed for internal consistency.\nPharmacokinetic parameters were derived using non-compartmental analysis from the\nconcentration-time profiles. Adverse events were coded using the Medical Dictionary for\nRegulatory Activities (MedDRA) version 24.0. The GMP evidence package includes certificate\nstatus, inspection scope, and manufacturing-site accountability records. Stability testing was\nconducted in climatic zones III and IV, reflecting the intended distribution markets. The\n\nanalytical procedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating\nacceptable accuracy, precision, and specificity. Batch manufacturing records and standard\noperating procedures (SOPs) are maintained and archived on-\nSite Inspection History Summary:\nInspection Date    | Authority       | Scope           | Outcome\n-------------------+-----------------+-----------------+-------------\n2025-02-26         | National Auth   | FPP/General     | compliant\n2022-05-12         | SRA Joint       | API/Sterile     | compliant",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1995
+      }
+    },
+    {
+      "section_id": "m1_product_information",
+      "module": "1",
+      "title": "Product Information and Naming",
+      "text": "The proposed proprietary name for this medicinal product is Ampimed, containing the active\npharmaceutical ingredient ampicillin. The draft Summary of Product Characteristics (SmPC),\nPatient Information Leaflet (PIL), and primary/secondary packaging labels are provided for\nreview. These documents detail the approved therapeutic indications, posology,\ncontraindications, special warnings, and precautions for use. A comprehensive risk management\nplan to minimize medication errors is also submitted.  WHO AWaRe category: Access. Product is\npositioned for routine antibacterial use with standard stewardship monitoring and local\nresistance surveillance. Statistical significance was set at an alpha level of 0.05, and all\ntests were two-sided. The applicant confirms alignment with applicable technical guidance and\nregional submis",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 830
+      }
+    },
+    {
+      "section_id": "m2_quality_overall_summary",
+      "module": "2",
+      "title": "Quality Overall Summary",
+      "text": "This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry,\nmanufacturing, and controls (CMC) data for ampicillin. The control strategy justifies the\nproposed specifications for both the active substance and the finished product, emphasizing\ncritical quality attributes (CQAs) and critical process parameters (CPPs). Impurity profiles,\nincluding degradation products and potential genotoxic impurities, have been thoroughly\ncharacterized. Batch analysis data from three commercial-scale validation batches demonstrate\nconsistent manufacturing performance and compliance with all release criteria. The applicant\nconfirms alignment with applicable technical guidance and regional submission standards. The\ncontainer closure system consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial\nstandards. Risk mitigation activities are documented with ownership, timelines, and follow-up\ncheckpoints. The risk management plan includes routine pharmacovigilance and proposed\neducational materials for healthcare professionals. The analytical procedure was validated in\naccordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy, precision, and\nspecificity. Statistical significance was set at an alpha level of 0.05, and all tests were\ntwo-sided. Adverse events were coded using the Medical Dictionary for Regulatory Activities\n(MedDRA) version 24.0. A randomized, double-blind, parallel-group study design was employed to\nminimize selection and observer bias. The manufacturing site operates under a fully implemented\nPharmaceutical Quality System (PQS) aligned with ICH Q10. Data were analyzed using a mixed-\neffects model for repeated measures, adjusting for baseline covariates. Pharmacokinetic\nparameters were derived using non-compartmental analysis from the concentration-time profiles.\nMethod validation records and quality controls were reviewed for internal consistency. Where\napplicable, protocol deviations were assessed for impact on interpretation of outcomes. All\nreferenced documents are available in the dossier annex and traceable by section identifier.\nStability testing was conducted",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2145
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Ampimed\nfor the treatment of bacterial skin infection. The pivotal clinical development program\ncomprised 2 well-controlled studies. Based on the integrated analysis, the reported clinical\noutcome category is 'endpoint_met'. The overall benefit-risk profile is considered highly\nfavorable for the target patient population. Safety findings were consistent with the known\npharmacological class effects, and appropriate risk minimization measures have been integrated\ninto the proposed prescribing information.  GLASS-aligned surveillance trend is stable,\nsupporting continued first-line or second-line use with routine monitoring. The manufacturing\nsite operates under a fully implemented Pharmaceutical Quality System (PQS) aligned with ICH\nQ10. The container closure system consists of PVC/PVDC-Aluminum blisters, compliant with\npharmacopoeial standards. No new safety signals were identified during the extended open-label\nfollow-up period. Benefit-risk language was reviewed for consistency with the submitted\nefficacy and safety summaries. Data were analyzed using a mixed-effects model for repeated\nmeasures, adjusting for baseline covariates. Stability testing was conducted in climatic zones\nIII an",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1290
+      }
+    },
+    {
+      "section_id": "m3_api_quality",
+      "module": "3",
+      "title": "API Quality and Control Strategy",
+      "text": "The active pharmaceutical ingredient (API) section details the complete synthesis route,\nstarting from well-defined regulatory starting materials. Robust in-process controls and\nintermediate specifications ensure the consistent quality of the final drug substance. The\nanalytical procedures used for release and stability testing have been fully validated for\naccuracy, precision, linearity, and robustness. The impurity control strategy adequately\naddresses organic impurities, residual solvents, and elemental impurities in accordance with\ncurrent ICH guidelines. Forced degradation studies confirm the stability-indicating nature of\nthe assay methods. Pharmacokinetic parameters were derived using non-compartmental analysis\nfrom the concentration-time profiles. Data were analyzed using a mixed-effects model for\nrepeated measures, adjusting for baseline covariates. Statistical significance was set at an\nalpha level of 0.05, and all tests were two-sided. Risk mitigation activities are documented\nwith ownership, timelines, and follow-up checkpoints. The API package links specification\nlimits to validated analytical methods and impurity-control decisions. All referenced documents\nare available in the dossier annex and traceable by section identifier. The container closure\nsystem consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial standards. The\napplicant confirms alignment with applicable technical guidance and regional submission\nstandards. Stability testing was conducted in climatic zones III and IV, reflecting the\nintended distribution markets. A randomized, double-blind, parallel-group study design was\nemployed to minimize selection and observer bias. Adverse events were coded using the Medical\nDictionary for Regulatory Activities (MedDRA) version 24.0. Residual solvents and elemental\nimpurities are controlled well below ICH Q3C and Q3D permissible daily exposures. The\nmanufacturing site operates under a fully implemented Pharmaceutical Quality System (PQS)\naligned with ICH Q10. Where applicable, protocol deviations were assessed for impact on\ninterpretation of outcomes. Method validation records and quality controls were reviewed for\ninternal consistency. The synthetic route involves three well-characterized steps with defined\nstarting materials and isolated intermediates. The analytical procedure was validated in\naccordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy, precision, and\nspecificity. The risk management plan includes routine pharmacovigilance and proposed\neducational materials for healthcare professionals. Batch analysis, validation, and impurity\nmanagement records support the proposed API quality framework. Critical material attributes and\n\ncontrol strategy elements were reviewed for consistency across the quality dossier. Data were\nanalyzed using a mixed-effects model for repeated measures, adjusting for baseline covaria",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2918
+      }
+    },
+    {
+      "section_id": "m3_fpp_manufacturing",
+      "module": "3",
+      "title": "FPP Manufacturing Process and Controls",
+      "text": "The finished pharmaceutical product (FPP) manufacturing process utilizes standard, scalable\nunit operations. A formal quality risk assessment (e.g., FMEA) was conducted to identify\ncritical process parameters (CPPs) that impact critical quality attributes (CQAs). Process\nperformance qualification (PPQ) reports for three consecutive commercial-scale batches verify\nthat the process is maintained in a state of control. In-process controls, intermediate hold-\ntime studies, and packaging validation data are presented to substantiate the robustness and\nreproducibility of the commercial manufacturing operations. Risk mitigation activities are\ndocumented with ownership, timelines, and follow-up checkpoints. A randomized, double-blind,\nparallel-group study design was employed to minimize selection and observer bias. Where\napplicable, protocol deviations were assessed for impact on interpretation of outcomes. The\ncontainer closure system consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial\nstandards. Pharmacokinetic parameters were derived using non-compartmental analysis from the\nconcentration-time profiles. Data were analyzed using a mixed-effects model for repeated\nmeasures, adjusting for baseline covariates. Stability testing was conducted in climatic zones\nIII and IV, reflecting the intended distribution markets. All referenced documents are\navailable in the dossier annex and traceable by section identifier. The analytical procedure\nwas validated in accordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy,\nprecision, and specificity. The manufacturing site operates under a fully implemented\nPharmaceutical Quality System (PQS) aligned with ICH Q10. The risk management plan includes\nroutine pharmacovigilance and proposed educational materials for healthcare professionals.\nStatistical significance was set at an alpha level of 0.05, and all tests were two-sided.\nMethod validation records and quality controls were reviewed for internal consistency. The\napplicant confirms alignment with applicable technical guidance and regional submission\nstandards. Adverse events were coded using the Medical Dictionary for Regulatory Activities\n(MedDRA) version 24.0. All referenced documents are available in the dossier annex and\ntraceable by section identifier. Method validation records and quality controls were reviewed\nfor internal consistency. Pharmacokinetic parameters were derived using non-compartmental\nanalysis from the concentration-time profiles. The risk management plan includes routine\npharmacovigilance and proposed educational materials for healthcare professionals. Data were\nanalyzed using a mixed-effects model for repeated measures, adjusting for baseline covariates.\nStatistical significance was set at an alpha level of 0.05, and all tests were two-sided. The\napplicant confirms alignment with applicable technical guidance and regional submission\nstandards. Statistical significance was set at an alpha level",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2981
+      }
+    },
+    {
+      "section_id": "m3_stability",
+      "module": "3",
+      "title": "Stability and Shelf-Life Justification",
+      "text": "A comprehensive stability program has been executed to justify the proposed shelf-life and\nstorage conditions. Data from both accelerated (40\u00b0C/75% RH for 6 months) and long-term storage\nconditions (spanning up to 36 months) are presented for multiple primary stability batches.\nStatistical evaluation using linear regression and poolability tests confirms that degradation\ntrends remain well within the acceptable specification limits. Photostability and freeze-thaw\ncycling studies demonstrate that the product does not require specific handling precautions. A\npost-approval stability protocol commitment is included. The applicant confirms alignment with\napplicable technical guidance and regional submission standards. The risk management plan\nincludes routine pharmacovigilance and proposed educational materials for healthcare\n\nprofessionals. Pharmacokinetic parameters were derived using non-compartmental analysis from\nthe concentration-time profiles. All referenced documents are available in the dossier annex\nand traceable by section identifier. Where applicable, protocol deviations were assessed for\nimpact on interpretation of outcomes. The container closure system consists of PVC/PVDC-\nAluminum blisters, compliant with pharmacopoeial standards. Data were analyzed using a mixed-\neffects model for repeated measures, adjusting for baseline covariates. Risk mitigation\nactivities are documented with ownership, timelines, and follow-up checkpoints. Stability\ntesting was conducted in climatic zones III and IV, reflecting the intended distribution\nmarkets. Adverse events were coded using the Medical Dictionary for Regulatory Activities\n(MedDRA) version 24.0. A randomized, double-blind, parallel-group study design was employed to\nminimize selection and observer bias. The manufacturing",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1803
+      }
+    },
+    {
+      "section_id": "m4_nonclinical_summary",
+      "module": "4",
+      "title": "Nonclinical Study Summary",
+      "text": "The nonclinical testing program evaluated the primary pharmacodynamics, secondary\npharmacodynamics, safety pharmacology, and comprehensive toxicology profile of the compound.\nRepeat-dose toxicity studies in two mammalian species established clear no-observed-adverse-\neffect levels (NOAELs). Genotoxicity testing (Ames and in vivo micronucleus assays) yielded\nnegative results. Reproductive and developmental toxicity studies revealed no teratogenic\nsignals at clinically relevant exposures. The calculated safety margins support the proposed\nclinical dosing regimen without major safety concerns. Statistical significance was set at an\nalpha level of 0.05, and all tests were two-sided. Data were analyzed using a mixed-effects\nmodel for repeated measures, adjusting for baseline covariates. The container closure system\nconsists of PVC/PVDC-Aluminum blisters, com",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 865
+      }
+    },
+    {
+      "section_id": "m5_trial_listing",
+      "module": "5",
+      "title": "Tabular Listing of Clinical Studies",
+      "text": "The tabular listing of clinical studies provides a comprehensive inventory of all trials\nconducted in support of the proposed indication (bacterial skin infection). This includes Phase\nI pharmacokinetic/pharmacodynamic studies, Phase II dose-finding studies, and the pivotal Phase\nIII efficacy and safety trials. For each study, the table details the protocol identifier,\nstudy design, randomization ratio, number of enrolled subjects, study duration, and current\ncompletion status.  GLASS-aligned surveillance trend is stable, supporting continued first-line\nor second-line use with routine monitoring. The analytical procedure was validated in\naccordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy, precision, and\nspecificity. Data were analyzed using a mixed-effects model for repeated measures, adjusting\nfor baseline covariates. A randomized, double-blind, parallel-group study design was employed\nto minimize selection and observer bias. The manufacturing site operates under a fully\nimplemented Pharmaceutical Quality System (PQS) aligned with ICH Q10. The risk management plan\nincludes routine pharmacovigilance and proposed educational materials for healthcare\nprofessionals. The container closure system consists of PVC/PVDC-Aluminum blisters, compliant\nwith pharmacopoeial standards. All referenced documents are available in the dossier annex and\ntraceable by section identifier. Method validation records and quality controls were reviewed\nfor internal consistency. Risk mitigation activities are documented with ownership, timelines,\nand follow-up checkpoints. Statistical significance was set at an alpha level of 0.05, and all\ntests were two-sided. Adverse events were coded using the Medical Dictionary for Regulatory\nActivities (MedDRA) version 24.0. Wher\nPivotal Clinical Trial Inventory:\nProtocol ID     | Phase    | Enrollment   | Status\n\n----------------+----------+--------------+-------------\nPROT-001        | III      | 399          | completed\nPROT-002        | III      | 732          | completed",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2043
+      }
+    },
+    {
+      "section_id": "m5_pivotal_trial_reports",
+      "module": "5",
+      "title": "Pivotal Clinical Trial Reports",
+      "text": "Detailed clinical study reports (CSRs) for the pivotal efficacy trials are provided. These\nrandomized, double-blind, actively-controlled trials evaluated the primary and secondary\nendpoints in accordance with the pre-specified statistical analysis plan (SAP). The trials\nresulted in a formal outcome category of 'endpoint_met', demonstrating robust treatment effects\nin the intent-to-treat (ITT) and per-protocol populations. Subgroup analyses across age,\ngender, and baseline disease severity strata were consistent with the primary findings. Serious\nadverse events (SAEs) and discontinuations were systematically analyzed and adjudicated.\nGLASS-aligned surveillance trend is stable, supporting continued first-line or second-line use\nwith routine monitoring. Pharmacokinetic parameters were derived using non-compartmental\nanalysis from the concentration-time profiles. The primary efficacy endpoint was met,\ndemonstrating a statistically significant improvement over placebo (p < 0.001).\nDiscontinuations due to treatment-emergent adverse events (TEAEs) were low and balanced across\nall study arms. A randomized, double-blind, parallel-group study design was employed to\nminimize selection and observer bias. Method validation records and quality controls were\nreviewed for internal consistency. Stability testing was conducted in climatic zones III and\nIV, reflecting the intended distribution markets. The applicant confirms alignment with\napplicable technical guidance and regional submission standards. The pivotal study narratives\nalign endpoint definitions, analysis populations, and outcome interpretation. Clinical study\nreports document protocol adherence, endpoint handling, and safety interpretation in the target\npopulation. The analytical procedure was validated in accordance with ICH Q2(R1) guidelines,\ndemonstrating acceptable accuracy, precision, an",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1869
+      }
+    },
+    {
+      "section_id": "m5_bioequivalence",
+      "module": "5",
+      "title": "Biopharmaceutics and Bioequivalence Evidence",
+      "text": "Biopharmaceutics data substantiate the formulation development bridging between clinical trial\nmaterials and the proposed commercial product. In vivo bioequivalence studies demonstrated that\nthe 90% confidence intervals for the geometric mean ratios of Cmax and AUC parameters fell\nentirely within the standard acceptance criteria of 80.00% to 125.00%. Additionally, multi-\npoint comparative dissolution profiles across physiological pH ranges (pH 1.2, 4.5, and 6.8)\nconfirmed similarity (f2 > 50). The bioanalytical methods used for plasma quantification were\nfully validated. Where applicable, protocol deviations were assessed for impact on\ninterpretation of outcomes. The analytical procedure was validated in a\n\nREGULATORY DOSSIER SUBMISSION\n\nDossier ID: DOS-16B6AC14C4\n\nCountry: Tanzania\n\nSubmission Date: 2025-07-26\n\nProduct: Ampimed (ampicillin) | ATC: J01CA01 | Strength: 500 mg\n\nApplicant: United Therapeutics | Manufacturer: Sahel Essential Drugs Company\n\nPolicy Label: standard_review | Risk Score: 0.5\n\nAMR Stewardship: AWaRe=access | Unmet Need=routine | GLASS Trend=stable | Watch Similarity=low\n\nSECTION CONTENT",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1127
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "approval_denied",
+    "risk_score": 0.08,
+    "compliant_submission": false,
+    "review_program": "marketing_authorization"
+  },
+  "review_program": "marketing_authorization",
+  "provenance": {
+    "synthetic": false,
+    "defect_modes": [],
+    "ingestion_mode": "raw_file_intake",
+    "source_filename": "incoming_naming_conflict_submission.pdf",
+    "extraction": {
+      "extraction_method": "pdf_text_layer",
+      "page_count": 6,
+      "image_count": 0,
+      "ocr_used": false,
+      "warnings": [],
+      "visual_evidence": []
+    }
+  }
+}

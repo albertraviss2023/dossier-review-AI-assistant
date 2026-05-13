@@ -1,0 +1,32 @@
+{
+  "snapshot_version": "who_aware_snapshot_2026-04-11",
+  "source_name": "WHO AWaRe classification snapshot",
+  "records": [
+    { "inn_name": "amikacin", "aware_category": "watch" },
+    { "inn_name": "amoxicillin", "aware_category": "access" },
+    { "inn_name": "ampicillin", "aware_category": "access" },
+    { "inn_name": "azithromycin", "aware_category": "watch" },
+    { "inn_name": "benzylpenicillin", "aware_category": "access" },
+    { "inn_name": "cefalexin", "aware_category": "access" },
+    { "inn_name": "cefiderocol", "aware_category": "reserve" },
+    { "inn_name": "cefixime", "aware_category": "watch" },
+    { "inn_name": "cefpodoxime", "aware_category": "watch" },
+    { "inn_name": "ceftriaxone", "aware_category": "watch" },
+    { "inn_name": "chloramphenicol", "aware_category": "watch" },
+    { "inn_name": "ciprofloxacin", "aware_category": "watch" },
+    { "inn_name": "clarithromycin", "aware_category": "watch" },
+    { "inn_name": "clindamycin", "aware_category": "watch" },
+    { "inn_name": "colistin", "aware_category": "reserve" },
+    { "inn_name": "doxycycline", "aware_category": "access" },
+    { "inn_name": "erythromycin", "aware_category": "watch" },
+    { "inn_name": "gentamicin", "aware_category": "access" },
+    { "inn_name": "levofloxacin", "aware_category": "watch" },
+    { "inn_name": "linezolid", "aware_category": "reserve" },
+    { "inn_name": "metronidazole", "aware_category": "access" },
+    { "inn_name": "moxifloxacin", "aware_category": "watch" },
+    { "inn_name": "nitrofurantoin", "aware_category": "access" },
+    { "inn_name": "piperacillin", "aware_category": "watch" },
+    { "inn_name": "sulfamethoxazole", "aware_category": "access" },
+    { "inn_name": "trimethoprim", "aware_category": "access" }
+  ]
+}

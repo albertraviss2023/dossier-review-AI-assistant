@@ -1,0 +1,7 @@
+data_artifact,artifact_type,purpose,structural_completeness,realism_level,labeling_quality,visual_realism,failure_mode_coverage,requirement_alignment,usable_for_metrics,gap_summary,recommended_action
+sample_dossiers/*.json,sample,UI Demo,Partial (3 sections),Toy/Demo,High,None,Good (holistic),Partial,No,Repetitive filler text,Replace with CTD-aligned synthetic exports
+synthetic_data/.../dossiers.jsonl,training/eval,Policy/RAG eval,High (Module 1-5),Acceptable Synthetic,High (machine),None,Excellent,High,Yes,Relies on fixed filler sentences,Increase text diversity using local LLM
+synthetic_data/.../dossiers_pdf/*.pdf,PDF,Parser/OCR test,High,Weak Synthetic,High,None (Text-only),Excellent,Partial,No,Lacks tables/stamps/signatures,Enhance PDF generator with layouts
+sample_dossiers/incoming_files/*.pdf,sample,Smoke test,Mixed,Acceptable Synthetic,None,1 Scanned case,Mixed,Partial,Yes (Smoke),Only 1 realistic scanned case,Generate more "scanned-style" test cases
+state/source_snapshots/*.json,snapshot,Source lookup,High,Production-like,N/A,N/A,N/A,High,Yes,Static snapshots of live APIs,Validate with live API integration tests
+synthetic_data/data/gold/.../*.jsonl,evaluation,Model validation,High (Adjudicated),Acceptable Synthetic,Excellent,None,High,High,Yes,Gold set exists but not default in eval,Set gold as default evaluation target

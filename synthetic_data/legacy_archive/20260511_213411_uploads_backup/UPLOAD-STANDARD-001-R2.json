@@ -1,0 +1,152 @@
+{
+  "dossier_id": "UPLOAD-STANDARD-001-R2",
+  "country": "Kenya",
+  "submission_date": "2026-04-11",
+  "demo_focus": "New human generic antibacterial application with a complete administrative package, current GMP evidence, supplied innovator-style patient-information baseline, and supportive benefit-risk documentation for standard review.",
+  "product": {
+    "product_name": "Amoxera",
+    "inn_name": "amoxicillin",
+    "atc_code": "J01CA04",
+    "dosage_form": "capsule",
+    "strength": "500 mg"
+  },
+  "organization": {
+    "applicant": "Lake Region Medicines",
+    "manufacturer": "Nairobi Solid Dose Centre",
+    "facility_country": "Kenya"
+  },
+  "reference_materials": {
+    "innovator_reference_name": "Reference Amoxicillin Patient Information Leaflet",
+    "innovator_patient_information_text": "The innovator patient leaflet describes the indication, dosing instructions, contraindications, warnings and precautions, possible adverse reactions, and storage conditions for amoxicillin capsules.",
+    "innovator_packaging_text": "Primary and secondary packaging identify the active ingredient, strength, route, storage instructions, warnings, and sponsor details.",
+    "reference_urls": [
+      "https://example.invalid/amoxicillin/xpil/print",
+      "https://example.invalid/amoxicillin/pil.pdf"
+    ]
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "access",
+    "amr_unmet_need": "low",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "stable",
+    "similarity_to_existing_watch": "low",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "sections": [
+    {
+      "section_id": "m1_admin",
+      "module": "1",
+      "title": "Application Form and Administrative Information",
+      "text": "The signed application form, cover letter, proof of payment, applicant declarations, and required administrative annexes are included and follow the expected submission structure.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 172
+      }
+    },
+    {
+      "section_id": "m1_product_information",
+      "module": "1",
+      "title": "Product Information and Naming",
+      "text": "The draft Summary of Product Characteristics and Patient Information Leaflet describe the indication, dosing instructions, contraindications, warnings and precautions, adverse reactions, and storage conditions for Amoxera capsules. Primary and secondary packaging labels identify the active ingredient, strength, route of administration, storage instructions, and sponsor details.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 90,
+        "max_chars": 1000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 372
+      }
+    },
+    {
+      "section_id": "m1_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "The primary commercial manufacturing site for the finished pharmaceutical product is Nairobi Solid Dose Centre, located in Kenya. The facility was subject to a comprehensive GMP inspection by a recognized stringent regulatory authority. The latest inspection concluded on 2025-01-01, resulting in a formal compliance status of 'compliant'. The active GMP certificate number is GMP-123456, which remains valid until 2027-01-01. Site master files, a summary of recent inspection observations, and evidence of completed Corrective and Preventive Actions (CAPA) are included in the annex. The applicant confirms alignment with applicable technical guidance and regional submission standards. Where applicable, protocol deviations were assessed for impact on interpretation of outcomes. Site quality-system commitments were compared against the proposed commercial manufacturing activities. Method validation records and quality controls were reviewed for internal consistency. The analytical procedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy, precision, and specificity. Recent regulatory inspections yielded no critical observations, and all major findi The manufacturing site remains compliant and the GMP certificate is valid.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 600
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1275
+      }
+    },
+    {
+      "section_id": "m2_clinical",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Amoxera for the treatment of infections. The pivotal clinical development program comprised 2 well-controlled studies. Based on the integrated analysis, the reported clinical outcome category is 'endpoint_met'. The overall benefit-risk profile is considered highly favorable for the target patient population. Safety findings were consistent with the known pharmacological class effects, and appropriate risk minimization measures have been integrated into the proposed prescribing information.  GLASS-aligned surveillance trend is stable, supporting continued first-line or second-line use with routine monitoring. The risk management plan includes routine pharmacovigilance and proposed educational materials for healthcare professionals. Adverse events were coded using the Medical Dictionary for Regulatory Activities (MedDRA) version 24.0. Risk mitigation activities are documented with ownership, timelines, and follow-up checkpoints. Method validation records and quality controls were reviewed for internal consistency. Pharmacokinetic parameters were derived using non-compartmental analysis from the conce",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1200
+      }
+    },
+    {
+      "section_id": "m5_stewardship",
+      "module": "5",
+      "title": "AMR Stewardship Narrative",
+      "text": "The tabular listing of clinical studies provides a comprehensive inventory of all trials conducted in support of the proposed indication (infections). This includes Phase I pharmacokinetic/pharmacodynamic studies, Phase II dose-finding studies, and the pivotal Phase III efficacy and safety trials. For each study, the table details the protocol identifier, study design, randomization ratio, number of enrolled subjects, study duration, and current completion status.  GLASS-aligned surveillance trend is stable, supporting continued first-line or second-line use with routine monitoring. Statistical significance was set at an alpha level of 0.05, and all tests were two-sided. A randomized, double-blind, parallel-group study design was employed to minimize selection and observer bias. The manufacturing site operates under a fully implemented Pharmaceutical Quality System (PQS) aligned with ICH Q10. All referenced documents are available in the dossier annex and traceable by section identifier. Where applicable, protocol deviations were assessed for impact on interpretation of outcomes. The applicant confirms alignment with applicable technical guidance and regional submission standards. ",
+      "critical": true,
+      "constraints": {
+        "min_chars": 90,
+        "max_chars": 700
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1200
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "standard_review",
+    "risk_score": 0.22,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": true,
+    "defect_modes": []
+  }
+}

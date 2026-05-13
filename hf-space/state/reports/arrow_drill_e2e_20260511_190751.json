@@ -1,0 +1,289 @@
+{
+  "timestamp_utc": "2026-05-11T19:04:38.319836+00:00",
+  "mode": "arrow_only_stepper",
+  "runs": [
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001",
+      "conversation_id": "conv-388c3a58e4",
+      "ok": true,
+      "steps": [
+        {
+          "step": 1,
+          "step_id": "data_quality_and_vision_extraction_check",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "submission_intake_and_familiarization"
+        },
+        {
+          "step": 2,
+          "step_id": "submission_intake_and_familiarization",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "administrative_completeness_review"
+        },
+        {
+          "step": 3,
+          "step_id": "administrative_completeness_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "structural_dossier_mapping"
+        },
+        {
+          "step": 4,
+          "step_id": "structural_dossier_mapping",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "applicable_rules_identification"
+        },
+        {
+          "step": 5,
+          "step_id": "applicable_rules_identification",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "who_inn_similarity_review"
+        },
+        {
+          "step": 6,
+          "step_id": "who_inn_similarity_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "section_by_section_technical_review"
+        },
+        {
+          "step": 7,
+          "step_id": "section_by_section_technical_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "findings_register"
+        },
+        {
+          "step": 8,
+          "step_id": "amr_stewardship_review",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "findings_register"
+        },
+        {
+          "step": 9,
+          "step_id": "findings_register",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "severity_classification"
+        },
+        {
+          "step": 10,
+          "step_id": "severity_classification",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "cross_section_consistency_review"
+        },
+        {
+          "step": 11,
+          "step_id": "cross_section_consistency_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "review_completeness_confirmation"
+        },
+        {
+          "step": 12,
+          "step_id": "review_completeness_confirmation",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "overall_judgment"
+        },
+        {
+          "step": 13,
+          "step_id": "overall_judgment",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": null
+        }
+      ],
+      "report": {
+        "report_status": 200,
+        "report_id": "report-92de94ae481d"
+      }
+    },
+    {
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001-Q",
+      "conversation_id": "conv-6054732c75",
+      "ok": true,
+      "steps": [
+        {
+          "step": 1,
+          "step_id": "data_quality_and_vision_extraction_check",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "submission_intake_and_familiarization"
+        },
+        {
+          "step": 2,
+          "step_id": "submission_intake_and_familiarization",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "administrative_completeness_review"
+        },
+        {
+          "step": 3,
+          "step_id": "administrative_completeness_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "structural_dossier_mapping"
+        },
+        {
+          "step": 4,
+          "step_id": "structural_dossier_mapping",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "applicable_rules_identification"
+        },
+        {
+          "step": 5,
+          "step_id": "applicable_rules_identification",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "who_inn_similarity_review"
+        },
+        {
+          "step": 6,
+          "step_id": "who_inn_similarity_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "section_by_section_technical_review"
+        },
+        {
+          "step": 7,
+          "step_id": "section_by_section_technical_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "findings_register"
+        },
+        {
+          "step": 8,
+          "step_id": "amr_stewardship_review",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "findings_register"
+        },
+        {
+          "step": 9,
+          "step_id": "findings_register",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "severity_classification"
+        },
+        {
+          "step": 10,
+          "step_id": "severity_classification",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "cross_section_consistency_review"
+        },
+        {
+          "step": 11,
+          "step_id": "cross_section_consistency_review",
+          "status_code": 200,
+          "recommendation": "abstain",
+          "has_workflow_summary": false,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "review_completeness_confirmation"
+        },
+        {
+          "step": 12,
+          "step_id": "review_completeness_confirmation",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": "overall_judgment"
+        },
+        {
+          "step": 13,
+          "step_id": "overall_judgment",
+          "status_code": 200,
+          "recommendation": "approval_granted",
+          "has_workflow_summary": true,
+          "rationale_has_sop_item": true,
+          "completed_steps": null,
+          "current_step_id": null
+        }
+      ],
+      "report": {
+        "report_status": 200,
+        "report_id": "report-307622352b31"
+      }
+    }
+  ],
+  "passed": true
+}

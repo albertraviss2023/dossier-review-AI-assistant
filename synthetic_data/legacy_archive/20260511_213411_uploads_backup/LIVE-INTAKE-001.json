@@ -1,0 +1,103 @@
+{
+  "dossier_id": "LIVE-INTAKE-001",
+  "country": "Uganda",
+  "submission_date": "2026-04-11",
+  "product": {
+    "product_name": "Live Incoming Sample",
+    "inn_name": "levofloxacin hemihydrate",
+    "atc_code": "unknown",
+    "dosage_form": "unknown",
+    "strength": "unknown"
+  },
+  "organization": {
+    "applicant": "Live Applicant",
+    "manufacturer": "Live Manufacturer",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "watch",
+    "amr_unmet_need": "not_applicable",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "rising",
+    "similarity_to_existing_watch": "high",
+    "existing_watch_comparator": "ciprofloxacin"
+  },
+  "sections": [
+    {
+      "section_id": "raw_section_1",
+      "module": "raw",
+      "title": "Imported Section 1",
+      "text": "\ufeffManufacturer and GMP Evidence\n\nGMP certificate remains valid.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 62
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "Primary endpoint was met in the pivotal study.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 46
+      }
+    },
+    {
+      "section_id": "m5_stewardship",
+      "module": "5",
+      "title": "AMR Stewardship Narrative",
+      "text": "High similarity to ciprofloxacin with rising resistance supports restriction.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 77
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "standard_review",
+    "risk_score": 0.5,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": false,
+    "defect_modes": [],
+    "ingestion_mode": "raw_file_intake"
+  }
+}

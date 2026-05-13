@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-05-11T18:36:22.418183+00:00",
+  "steps": [
+    {
+      "step": "manager_login",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "ensure_revdrill_a",
+      "status_code": 409,
+      "ok": true
+    },
+    {
+      "step": "ensure_revdrill_b",
+      "status_code": 409,
+      "ok": true
+    },
+    {
+      "step": "assignments",
+      "ok": true,
+      "results": [
+        {
+          "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001",
+          "assignee": "revdrill_a",
+          "status_code": 200,
+          "ok": true
+        },
+        {
+          "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001-Q",
+          "assignee": "revdrill_a",
+          "status_code": 200,
+          "ok": true
+        },
+        {
+          "dossier_id": "VET-NEW-BIO-AMR-OXYT-0003",
+          "assignee": "revdrill_b",
+          "status_code": 200,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "step": "reviewer_login",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "access_control",
+      "can_see_clean": true,
+      "can_see_query": true,
+      "blocked_other": true,
+      "blocked_status": 403,
+      "ok": true
+    }
+  ],
+  "selected": {
+    "clean": "HUM-NEW-INNOV-AMR-SYNT-0001",
+    "query": "HUM-NEW-INNOV-AMR-SYNT-0001-Q",
+    "other": "VET-NEW-BIO-AMR-OXYT-0003"
+  },
+  "review_runs": [
+    {
+      "case": "clean",
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001",
+      "review_status": 200,
+      "recommendation": "approval_granted",
+      "workflow_summary_present": true,
+      "report_status": 200,
+      "report_id": "report-a6b7214fa6c2"
+    },
+    {
+      "case": "query",
+      "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001-Q",
+      "review_status": 200,
+      "recommendation": "approval_granted",
+      "workflow_summary_present": true,
+      "report_status": 200,
+      "report_id": "report-5afdc34196e6"
+    }
+  ],
+  "passed": true
+}

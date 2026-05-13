@@ -1,0 +1,77 @@
+{
+  "timestamp_utc": "2026-05-11T17:42:03.953596+00:00",
+  "steps": [
+    {
+      "step": "manager_login",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "ensure_user_alutakome",
+      "status_code": 409,
+      "ok": true
+    },
+    {
+      "step": "manager_assignments",
+      "ok": true,
+      "results": []
+    },
+    {
+      "step": "reviewer_login",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "scope_check",
+      "can_see_clean": false,
+      "can_see_query": false,
+      "blocked_unassigned": true,
+      "blocked_status": null,
+      "ok": false
+    }
+  ],
+  "selected_cases": {
+    "clean_dossier_id": null,
+    "query_dossier_id": null,
+    "other_dossier_id": null
+  },
+  "review_runs": [
+    {
+      "case": "clean_case",
+      "dossier_id": null,
+      "review_status": 422,
+      "review_error": {
+        "detail": [
+          {
+            "type": "string_type",
+            "loc": [
+              "body",
+              "dossier_id"
+            ],
+            "msg": "Input should be a valid string",
+            "input": null
+          }
+        ]
+      }
+    },
+    {
+      "case": "query_case",
+      "dossier_id": null,
+      "review_status": 422,
+      "review_error": {
+        "detail": [
+          {
+            "type": "string_type",
+            "loc": [
+              "body",
+              "dossier_id"
+            ],
+            "msg": "Input should be a valid string",
+            "input": null
+          }
+        ]
+      }
+    }
+  ],
+  "passed": false
+}

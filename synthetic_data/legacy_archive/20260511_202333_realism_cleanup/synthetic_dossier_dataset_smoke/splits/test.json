@@ -1,0 +1,9 @@
+{
+  "split": "test",
+  "dossier_ids": [
+    "HUM-NEW-FDC-AMR-SYNT-0009",
+    "HUM-NEW-FDC-AMR-SYNT-0009-Q",
+    "VET-NEW-LINE-NONAMR-MULT-0015",
+    "VET-NEW-LINE-NONAMR-MULT-0015-Q"
+  ]
+}

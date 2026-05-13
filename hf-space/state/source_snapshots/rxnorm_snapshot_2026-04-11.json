@@ -1,0 +1,32 @@
+{
+  "snapshot_version": "rxnorm_snapshot_2026-04-11",
+  "source_name": "RxNorm normalization snapshot",
+  "records": [
+    { "normalized_ingredient": "amikacin", "aliases": ["amikacin", "amikin"] },
+    { "normalized_ingredient": "amoxicillin", "aliases": ["amoxicillin", "amoxil", "amoxicillin trihydrate"] },
+    { "normalized_ingredient": "ampicillin", "aliases": ["ampicillin", "principen"] },
+    { "normalized_ingredient": "azithromycin", "aliases": ["azithromycin", "zithromax"] },
+    { "normalized_ingredient": "benzylpenicillin", "aliases": ["benzylpenicillin", "penicillin g"] },
+    { "normalized_ingredient": "cefalexin", "aliases": ["cefalexin", "cephalexin", "keflex"] },
+    { "normalized_ingredient": "cefiderocol", "aliases": ["cefiderocol", "fetroja", "lastlinefex"] },
+    { "normalized_ingredient": "cefixime", "aliases": ["cefixime", "suprax"] },
+    { "normalized_ingredient": "cefpodoxime", "aliases": ["cefpodoxime", "vantin"] },
+    { "normalized_ingredient": "ceftriaxone", "aliases": ["ceftriaxone", "rocephin"] },
+    { "normalized_ingredient": "chloramphenicol", "aliases": ["chloramphenicol"] },
+    { "normalized_ingredient": "ciprofloxacin", "aliases": ["ciprofloxacin", "cipro"] },
+    { "normalized_ingredient": "clarithromycin", "aliases": ["clarithromycin", "biaxin"] },
+    { "normalized_ingredient": "clindamycin", "aliases": ["clindamycin", "cleocin"] },
+    { "normalized_ingredient": "colistin", "aliases": ["colistin", "colistimethate sodium"] },
+    { "normalized_ingredient": "doxycycline", "aliases": ["doxycycline", "vibramycin"] },
+    { "normalized_ingredient": "erythromycin", "aliases": ["erythromycin"] },
+    { "normalized_ingredient": "gentamicin", "aliases": ["gentamicin", "garamycin"] },
+    { "normalized_ingredient": "levofloxacin", "aliases": ["levofloxacin", "levofloxacin hemihydrate", "respivox", "levaquin"] },
+    { "normalized_ingredient": "linezolid", "aliases": ["linezolid", "zyvox"] },
+    { "normalized_ingredient": "metronidazole", "aliases": ["metronidazole", "flagyl"] },
+    { "normalized_ingredient": "moxifloxacin", "aliases": ["moxifloxacin", "avelox"] },
+    { "normalized_ingredient": "nitrofurantoin", "aliases": ["nitrofurantoin", "macrobid"] },
+    { "normalized_ingredient": "piperacillin", "aliases": ["piperacillin", "pipracil"] },
+    { "normalized_ingredient": "sulfamethoxazole", "aliases": ["sulfamethoxazole", "sulphamethoxazole"] },
+    { "normalized_ingredient": "trimethoprim", "aliases": ["trimethoprim"] }
+  ]
+}

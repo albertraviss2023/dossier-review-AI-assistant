@@ -1,0 +1,103 @@
+{
+  "dossier_id": "UPLOAD-RESERVE-001",
+  "country": "Uganda",
+  "submission_date": "2026-04-11",
+  "demo_focus": "High-priority Reserve-category antibacterial submission for multidrug-resistant infection with controlled fast-track eligibility and stewardship-sensitive evidence.",
+  "product": {
+    "product_name": "Lastlinefex",
+    "inn_name": "cefiderocol",
+    "atc_code": "J01DI04",
+    "dosage_form": "powder for infusion",
+    "strength": "1 g vial"
+  },
+  "organization": {
+    "applicant": "Regional BioPharm",
+    "manufacturer": "Kampala Sterile Works",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "reserve",
+    "amr_unmet_need": "critical",
+    "targets_mdr_pathogen": true,
+    "glass_resistance_trend": "rising",
+    "similarity_to_existing_watch": "low",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "sections": [
+    {
+      "section_id": "m1_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "The primary commercial manufacturing site for the finished pharmaceutical product is Kampala Sterile Works, located in Uganda. The facility was subject to a comprehensive GMP inspection by a recognized stringent regulatory authority. The latest inspection concluded on 2025-01-01, resulting in a formal compliance status of 'compliant'. The active GMP certificate number is GMP-123456, which remains valid until 2027-01-01. Site master files, a summary of recent inspection observations, and evidence of completed Corrective and Preventive Actions (CAPA) are included in the annex. The applicant confirms alignment with applicable technical guidance and regional submission standards. Site quality-system commitments were compared against the proposed commercial manufacturing activities. The GMP evidence package includes certificate status, inspection scope, and manufacturing-site accountability records. Data were analyzed using a mixed-effects model for repeated measures, adjusting for baseline covariates. Pharmacokinetic parameters were derived using non-compartmental analysis from the concentration-time profiles. Recent regulatory inspections yielded no critical observations, and all majo The manufacturing site remains compliant and the GMP certificate is valid.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 600
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1275
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Lastlinefex for the treatment of infections. The pivotal clinical development program comprised 2 well-controlled studies. Based on the integrated analysis, the reported clinical outcome category is 'endpoint_met'. The overall benefit-risk profile is considered highly favorable for the target patient population. Safety findings were consistent with the known pharmacological class effects, and appropriate risk minimization measures have been integrated into the proposed prescribing information.  The clinical program addresses a critical unmet need in MDR infections. GLASS-aligned surveillance trend is rising, and enrollment focused on patients with limited remaining treatment options. Method validation records and quality controls were reviewed for internal consistency. The target population demographics are broadly representative of the intended commercial patient cohort. The risk management plan includes routine pharmacovigilance and proposed educational materials for healthcare professionals. Data were analyzed using a mixed-effects model for repeated measures, adjusting for baseline covariates. ",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1200
+      }
+    },
+    {
+      "section_id": "m5_stewardship",
+      "module": "5",
+      "title": "AMR Stewardship Narrative",
+      "text": "The tabular listing of clinical studies provides a comprehensive inventory of all trials conducted in support of the proposed indication (infections). This includes Phase I pharmacokinetic/pharmacodynamic studies, Phase II dose-finding studies, and the pivotal Phase III efficacy and safety trials. For each study, the table details the protocol identifier, study design, randomization ratio, number of enrolled subjects, study duration, and current completion status.  The clinical program addresses a critical unmet need in MDR infections. GLASS-aligned surveillance trend is rising, and enrollment focused on patients with limited remaining treatment options. Stability testing was conducted in climatic zones III and IV, reflecting the intended distribution markets. The manufacturing site operates under a fully implemented Pharmaceutical Quality System (PQS) aligned with ICH Q10. Data were analyzed using a mixed-effects model for repeated measures, adjusting for baseline covariates. Method validation records and quality controls were reviewed for internal consistency. Adverse events were coded using the Medical Dictionary for Regulatory Activities (MedDRA) version 24.0. Pharmacokinetic p",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1200
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "fast_track",
+    "risk_score": 0.18,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": true,
+    "defect_modes": []
+  }
+}

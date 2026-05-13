@@ -1,0 +1,383 @@
+{
+  "dossier_id": "VET-NEW-INNOV-AMR-LACT-0147",
+  "manifest": {
+    "dossier_id": "VET-NEW-INNOV-AMR-LACT-0147",
+    "family_id": "FAM-0074",
+    "medicine_category": "veterinary",
+    "submission_type": "new_submission",
+    "application_pathway": "innovator",
+    "product_class": "antimicrobial",
+    "is_antimicrobial": true,
+    "amr_class": "Reserve",
+    "therapeutic_area": "mastitis",
+    "product_name": "Lactomaxin 100 mg/syringe intramammary infusion",
+    "inn": "lactomaxin",
+    "active_ingredients": [
+      "lactomaxin"
+    ],
+    "strength": "100 mg/syringe",
+    "dosage_form": "intramammary infusion",
+    "route_of_administration": "intramammary",
+    "manufacturer_country": "India",
+    "applicant_country": "Kenya",
+    "manufacturer_name": "MedCore Formulations Ltd",
+    "applicant_name": "MediAxis Pharma Distributors Ltd",
+    "manufacturing_site_address": "Dar es Salaam Logistics Zone, Lot 9",
+    "document_quality_profile": "scanned_tables_and_certificates",
+    "submission_status": "correct",
+    "expected_sop_outcome": "pass",
+    "reference_required": false,
+    "reference_source_type": "not_required",
+    "known_queries": [],
+    "target_species": [
+      "dairy cattle"
+    ],
+    "food_producing_species": true,
+    "requires_withdrawal_period": true,
+    "withdrawal_period_meat": "28 days",
+    "withdrawal_period_milk": "7 days",
+    "gmp_expiry_date": "2028-01-01",
+    "submission_date": "2025-07-27",
+    "sections": [
+      {
+        "module": "Module 1",
+        "section_id": "m1_application_form",
+        "section_name": "Application Form",
+        "text": "Application Form for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_cover_letter",
+        "section_name": "Cover Letter",
+        "text": "Cover Letter for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_authorization_letter",
+        "section_name": "Letter of Authorization",
+        "text": "Letter of Authorization for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_gmp_certificate",
+        "section_name": "GMP Certificate",
+        "text": "GMP Certificate for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nGMP Certificate No: GMP-T-0147; Site Address: Dar es Salaam Logistics Zone, Lot 9; Expiry Date: 2028-01-01.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_cpp_certificates",
+        "section_name": "CPP / Certificate Documents",
+        "text": "CPP / Certificate Documents for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_product_label",
+        "section_name": "Product Label",
+        "text": "Product Label for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_pil",
+        "section_name": "Patient Information Leaflet",
+        "text": "Patient Information Leaflet for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nPIL Section: What this medicine is and what it is used for.\nPIL Route and Form: Route=intramammary; Dosage form=intramammary infusion; Strength=100 mg/syringe.\nPIL Instructions: Follow the prescribed dose schedule. Do not exceed recommended dose.\nPIL Warnings: Do not use if you are allergic to the active ingredient or related medicines. Seek immediate medical care for rash, breathing difficulty, or severe diarrhoea. Use exactly as prescribed; complete the full treatment course where applicable. For veterinary use in dairy cattle only.\nPIL Storage: Store below 30C, protect from moisture/light, keep out of reach of children.\nPIL Adverse Effects: Common effects include gastrointestinal upset and headache; serious effects require urgent review.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_smpc",
+        "section_name": "SmPC",
+        "text": "SmPC for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nSmPC 4.1 Therapeutic indications: As approved in the application form.\nSmPC 4.2 Posology and method of administration: Dose by age/weight and clinical condition as approved.\nSmPC 4.3 Contraindications: Known hypersensitivity to active ingredient or excipients, Severe allergy to related therapeutic class where applicable.\nSmPC 4.4 Special warnings and precautions: monitor organ function and hypersensitivity risks.\nSmPC 4.8 Undesirable effects: nausea, diarrhoea, rash, dizziness; serious adverse reactions listed.\nSmPC 6.4 Special precautions for storage: store according to label and stability commitments.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_payment_proof",
+        "section_name": "Proof of Payment",
+        "text": "Proof of Payment for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 2",
+        "section_id": "m2_qos",
+        "section_name": "Quality Overall Summary",
+        "text": "Quality Overall Summary for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 2",
+        "section_id": "m2_clinical_overview",
+        "section_name": "Clinical Overview / Justification",
+        "text": "Clinical Overview / Justification for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 2",
+        "section_id": "m2_be_summary",
+        "section_name": "Bioequivalence Summary",
+        "text": "Bioequivalence Summary for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_drug_substance",
+        "section_name": "Drug Substance Information",
+        "text": "Drug Substance Information for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_drug_product",
+        "section_name": "Drug Product Information",
+        "text": "Drug Product Information for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_manufacturing_process",
+        "section_name": "Manufacturing Process",
+        "text": "Manufacturing Process for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_batch_formula",
+        "section_name": "Batch Formula",
+        "text": "Batch Formula for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_specifications",
+        "section_name": "Specifications",
+        "text": "Specifications for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_analytical_procedures",
+        "section_name": "Analytical Procedures",
+        "text": "Analytical Procedures for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_method_validation",
+        "section_name": "Method Validation",
+        "text": "Method Validation for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_coa",
+        "section_name": "Certificate of Analysis",
+        "text": "Certificate of Analysis for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nCoA Table: Batch Number=BCH-24011; Specification Limits=Conforms; Results=Within limits; Conclusion=Pass; Authorized Signature=Present.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_stability",
+        "section_name": "Stability Data",
+        "text": "Stability Data for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nStability Table: 0, 3, 6, 9, 12 months; Conditions=30C/75%RH; Conclusion supports shelf life.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 3",
+        "section_id": "m3_container_closure",
+        "section_name": "Container Closure System",
+        "text": "Container Closure System for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 4",
+        "section_id": "m4_nonclinical",
+        "section_name": "Nonclinical Study Reports / Justification",
+        "text": "Nonclinical Study Reports / Justification for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 5",
+        "section_id": "m5_be_or_clinical",
+        "section_name": "Bioequivalence / Clinical Study Reports",
+        "text": "Bioequivalence / Clinical Study Reports for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nClinical Summary: Endpoint met where applicable; Effect size and safety summary included.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 5",
+        "section_id": "m5_reference_comparator",
+        "section_name": "Reference / Comparator Product Evidence",
+        "text": "Reference / Comparator Product Evidence for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_vet_target_species",
+        "section_name": "Target Species and Posology",
+        "text": "Target Species and Posology for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_vet_withdrawal_periods",
+        "section_name": "Withdrawal / Residue Information",
+        "text": "Withdrawal / Residue Information for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nWithdrawal Periods: Meat=28 days; Milk=7 days.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      },
+      {
+        "module": "Module 1",
+        "section_id": "m1_vet_user_safety",
+        "section_name": "Veterinary User Safety and Environmental Risk",
+        "text": "Veterinary User Safety and Environmental Risk for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "module": "Module 1",
+      "section_id": "m1_application_form",
+      "section_name": "Application Form",
+      "text": "Application Form for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cover_letter",
+      "section_name": "Cover Letter",
+      "text": "Cover Letter for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_authorization_letter",
+      "section_name": "Letter of Authorization",
+      "text": "Letter of Authorization for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_gmp_certificate",
+      "section_name": "GMP Certificate",
+      "text": "GMP Certificate for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nGMP Certificate No: GMP-T-0147; Site Address: Dar es Salaam Logistics Zone, Lot 9; Expiry Date: 2028-01-01.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cpp_certificates",
+      "section_name": "CPP / Certificate Documents",
+      "text": "CPP / Certificate Documents for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_product_label",
+      "section_name": "Product Label",
+      "text": "Product Label for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_pil",
+      "section_name": "Patient Information Leaflet",
+      "text": "Patient Information Leaflet for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nPIL Section: What this medicine is and what it is used for.\nPIL Route and Form: Route=intramammary; Dosage form=intramammary infusion; Strength=100 mg/syringe.\nPIL Instructions: Follow the prescribed dose schedule. Do not exceed recommended dose.\nPIL Warnings: Do not use if you are allergic to the active ingredient or related medicines. Seek immediate medical care for rash, breathing difficulty, or severe diarrhoea. Use exactly as prescribed; complete the full treatment course where applicable. For veterinary use in dairy cattle only.\nPIL Storage: Store below 30C, protect from moisture/light, keep out of reach of children.\nPIL Adverse Effects: Common effects include gastrointestinal upset and headache; serious effects require urgent review.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_smpc",
+      "section_name": "SmPC",
+      "text": "SmPC for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nSmPC 4.1 Therapeutic indications: As approved in the application form.\nSmPC 4.2 Posology and method of administration: Dose by age/weight and clinical condition as approved.\nSmPC 4.3 Contraindications: Known hypersensitivity to active ingredient or excipients, Severe allergy to related therapeutic class where applicable.\nSmPC 4.4 Special warnings and precautions: monitor organ function and hypersensitivity risks.\nSmPC 4.8 Undesirable effects: nausea, diarrhoea, rash, dizziness; serious adverse reactions listed.\nSmPC 6.4 Special precautions for storage: store according to label and stability commitments.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_payment_proof",
+      "section_name": "Proof of Payment",
+      "text": "Proof of Payment for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_qos",
+      "section_name": "Quality Overall Summary",
+      "text": "Quality Overall Summary for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_clinical_overview",
+      "section_name": "Clinical Overview / Justification",
+      "text": "Clinical Overview / Justification for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_be_summary",
+      "section_name": "Bioequivalence Summary",
+      "text": "Bioequivalence Summary for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_substance",
+      "section_name": "Drug Substance Information",
+      "text": "Drug Substance Information for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_product",
+      "section_name": "Drug Product Information",
+      "text": "Drug Product Information for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_manufacturing_process",
+      "section_name": "Manufacturing Process",
+      "text": "Manufacturing Process for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_batch_formula",
+      "section_name": "Batch Formula",
+      "text": "Batch Formula for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_specifications",
+      "section_name": "Specifications",
+      "text": "Specifications for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_analytical_procedures",
+      "section_name": "Analytical Procedures",
+      "text": "Analytical Procedures for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_method_validation",
+      "section_name": "Method Validation",
+      "text": "Method Validation for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_coa",
+      "section_name": "Certificate of Analysis",
+      "text": "Certificate of Analysis for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nCoA Table: Batch Number=BCH-24011; Specification Limits=Conforms; Results=Within limits; Conclusion=Pass; Authorized Signature=Present.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_stability",
+      "section_name": "Stability Data",
+      "text": "Stability Data for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nStability Table: 0, 3, 6, 9, 12 months; Conditions=30C/75%RH; Conclusion supports shelf life.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_container_closure",
+      "section_name": "Container Closure System",
+      "text": "Container Closure System for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 4",
+      "section_id": "m4_nonclinical",
+      "section_name": "Nonclinical Study Reports / Justification",
+      "text": "Nonclinical Study Reports / Justification for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_be_or_clinical",
+      "section_name": "Bioequivalence / Clinical Study Reports",
+      "text": "Bioequivalence / Clinical Study Reports for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nClinical Summary: Endpoint met where applicable; Effect size and safety summary included.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_reference_comparator",
+      "section_name": "Reference / Comparator Product Evidence",
+      "text": "Reference / Comparator Product Evidence for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_vet_target_species",
+      "section_name": "Target Species and Posology",
+      "text": "Target Species and Posology for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_vet_withdrawal_periods",
+      "section_name": "Withdrawal / Residue Information",
+      "text": "Withdrawal / Residue Information for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nWithdrawal Periods: Meat=28 days; Milk=7 days.\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_vet_user_safety",
+      "section_name": "Veterinary User Safety and Environmental Risk",
+      "text": "Veterinary User Safety and Environmental Risk for dossier VET-NEW-INNOV-AMR-LACT-0147.\nProduct: Lactomaxin 100 mg/syringe intramammary infusion (lactomaxin); strength 100 mg/syringe; route intramammary.\nApplicant: MediAxis Pharma Distributors Ltd (Kenya); Manufacturer: MedCore Formulations Ltd (India).\nAntimicrobial Classification: Reserve; stewardship warning and prudent-use statement included."
+    }
+  ],
+  "mutation_log": null
+}

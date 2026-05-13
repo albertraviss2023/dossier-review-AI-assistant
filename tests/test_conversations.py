@@ -43,7 +43,7 @@ def test_context_window_update_and_auto_compaction(client, api_module):
     dossier_id = next(iter(api_module.state["dossier_by_id"].keys()))
     create = client.post(
         "/v1/conversations",
-        json={"title": "Compaction thread", "model_id": "qwen-3.5", "context_window_tokens": 1024, "dossier_id": dossier_id},
+        json={"title": "Compaction thread", "model_id": "gemma-26b", "context_window_tokens": 1024, "dossier_id": dossier_id},
     )
     assert create.status_code == 200
     conversation_id = create.json()["conversation"]["conversation_id"]
@@ -57,7 +57,7 @@ def test_context_window_update_and_auto_compaction(client, api_module):
         json={
             "dossier_id": dossier_id,
             "conversation_id": conversation_id,
-            "model_id": "qwen-3.5",
+            "model_id": "gemma-26b",
             "question": long_question,
             "top_k": 5,
         },

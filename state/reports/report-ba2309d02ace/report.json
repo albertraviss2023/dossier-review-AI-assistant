@@ -1,0 +1,1733 @@
+{
+  "generated_at_utc": "2026-05-11T19:52:52.018128+00:00",
+  "dossier_id": "WF-NAMING_CONFLICT-20260511_195012",
+  "report_title": "Regulatory Review - WF-NAMING_CONFLICT-20260511_195012",
+  "recipient_email": null,
+  "product_name": "amoxicillin",
+  "inn_name": "amoxicillin",
+  "product_group": "antimicrobial",
+  "application_type": "new_application",
+  "antimicrobial": true,
+  "aware_category": "access",
+  "final_verdict": "not_acceptable",
+  "reviewer_username": "alutakome",
+  "review_type": "generic",
+  "review_program": "marketing_authorization",
+  "report_lifecycle_status": "completed",
+  "report_payload": {
+    "report_title": "Regulatory Review - WF-NAMING_CONFLICT-20260511_195012",
+    "workflow_report": {
+      "data_quality_and_vision_extraction_check": {
+        "status": "completed",
+        "scanned_document_challenge_mode": {
+          "enabled": false,
+          "vision_extraction_detected": [],
+          "text_rag_failure_risk": "low",
+          "extraction_confidence": {
+            "gmp_expiry_date": null,
+            "coa_batch_number": null,
+            "signature_or_stamp_detected": false
+          },
+          "ocr_used": false,
+          "extraction_method": "pdf_text_layer",
+          "page_count": 6,
+          "image_count": 0,
+          "warnings": []
+        }
+      },
+      "submission_summary": {
+        "dossier_id": "WF-NAMING_CONFLICT-20260511_195012",
+        "submission_type": "pre_market_authorization",
+        "review_type": "generic",
+        "applicant": "Workflow Applicant",
+        "product_name": "amoxicillin",
+        "active_ingredient": "amoxicillin",
+        "dosage_form": "unknown",
+        "strength": "unknown",
+        "jurisdiction": "Uganda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_incomplete",
+        "violations": [
+          "No proof of payment was detected in the administrative material."
+        ]
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "Generic review packaging and patient-information comparison against innovator reference when provided",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "amoxicillin",
+        "who_inn": "amoxicillin",
+        "similarity_index": 1.0,
+        "threshold": 0.7,
+        "threshold_result": "failed",
+        "similarity_type": "orthographic",
+        "interpretation": "Product name 'amoxicillin' has 100.00% similarity to INN 'amoxicillin'. Rule result: flagged. Evaluated against naming guidance: External Source Provenance and Audit. Source Precedence.Source Precedence\n\nDossier evidence remains primary for submission-specific claims. WHO AWaRe, GLASS, RxNorm, PubChem, ChEMBL, and UniChem are used to verify external policy, stewardship, naming, and chemistry facts. When external sources confl...",
+        "flag_status": "naming_violation",
+        "rule_consequence": "Product name cannot be accepted because INN similarity exceeds 70%."
+      },
+      "technical_section_review": {
+        "section_results": [],
+        "review_type_specific": {
+          "review_type": "generic",
+          "status": "partial",
+          "baseline_available": true,
+          "baseline_verified": true,
+          "baseline_reference_name": "Amoxicillin 250mg and 500mg Capsules - EMC patient leaflet",
+          "baseline_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=amoxicillin",
+            "https://products.mhra.gov.uk/?q=amoxicillin",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=amoxicillin",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin",
+            "https://www.medicines.org.uk/emc/product/14145/smpc"
+          ],
+          "verified_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=amoxicillin",
+            "https://products.mhra.gov.uk/?q=amoxicillin",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=amoxicillin",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin",
+            "https://www.medicines.org.uk/emc/product/14145/smpc"
+          ],
+          "comparison_matrix": [
+            {
+              "concept_key": "indication",
+              "dimension": "Indication",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service fficial guida...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "dosing",
+              "dimension": "Dosing",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "2 Posology and method of administration Posology The dose of Amoxicillin Powder for Oral Suspension Sugar Free that is selected to treat...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "contraindications",
+              "dimension": "Contraindications",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "These reactions are more likely to occur in individuals with a history of penicillin hypersensitiv Last updated on emc: 08 Sep 2025 Quick...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "warnings",
+              "dimension": "Warnings",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "4 Special warnings and precautions for use Hypersensitivity reactions Before initiating therapy with any penicillin, careful enquiry shou...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "adverse_reactions",
+              "dimension": "Adverse Reactions",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "storage",
+              "dimension": "Storage",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "These reactions are more likely to occur in individuals with a history of penicillin hypersensitiv Last updated on emc: 08 Sep 2025 Quick...",
+              "evidence_source": "mcp_external"
+            }
+          ],
+          "section_provenance": [
+            {
+              "section_name": "side_effects",
+              "source_url": "https://products.mhra.gov.uk/search/?query=amoxicillin",
+              "source_domain": "products.mhra.gov.uk",
+              "source_priority": 100,
+              "confidence_score": 0.75
+            },
+            {
+              "section_name": "dosage",
+              "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "warnings",
+              "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "indications",
+              "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "contraindications",
+              "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "storage",
+              "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            }
+          ],
+          "source_selection_policy": {
+            "order": [
+              "products.mhra.gov.uk",
+              "medicines.org.uk",
+              "ema.europa.eu",
+              "accessdata.fda.gov",
+              "dailymed.nlm.nih.gov",
+              "gov.uk",
+              "who.int"
+            ],
+            "strategy": "prefer_highest_priority_source_per_section"
+          },
+          "notes": [
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used Amoxicillin 250mg and 500mg Capsules - EMC patient leaflet through MCP patient-information tools with overall alignment not_aligned.",
+            "Example comparison classified the section as non_compliant."
+          ],
+          "findings": [
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for indications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "indications",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "dosage",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "contraindications",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "warnings",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "side_effects",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for storage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "storage",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "The current section does not adequately cover completeness.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "major",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover safety wording.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "critical",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover contraindications.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "critical",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover dosage clarity.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "major",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            }
+          ],
+          "example_comparison": {
+            "classification": "non_compliant",
+            "matched_good_patterns": [],
+            "matched_bad_patterns": [
+              "completeness",
+              "safety wording",
+              "contraindications",
+              "dosage clarity"
+            ],
+            "evidence": [
+              {
+                "dimension": "completeness",
+                "finding": "The current section does not adequately cover completeness.",
+                "severity": "major",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+              },
+              {
+                "dimension": "safety wording",
+                "finding": "The current section does not adequately cover safety wording.",
+                "severity": "critical",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+              },
+              {
+                "dimension": "contraindications",
+                "finding": "The current section does not adequately cover contraindications.",
+                "severity": "critical",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+              },
+              {
+                "dimension": "dosage clarity",
+                "finding": "The current section does not adequately cover dosage clarity.",
+                "severity": "major",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+              }
+            ]
+          }
+        }
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "access",
+        "stewardship_rule_application": "Access-category antibiotic remains under standard stewardship monitoring.",
+        "fast_track_status": false,
+        "authorization_control": "standard_authorization",
+        "watch_or_reserve_caution": false,
+        "findings": [
+          "MCP AWaRe reference resolved amoxicillin as Access.",
+          "MCP antimicrobial similarity returned stewardship flag review_required.",
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+        ],
+        "policy_decision": {
+          "decision": "standard_authorization",
+          "required_controls": [
+            "Standard stewardship monitoring"
+          ],
+          "decision_basis": {
+            "aware_category": "access",
+            "watch_similarity_restriction": false,
+            "glass_resistance_trend": "stable",
+            "comparator": "not_applicable",
+            "similarity_to_existing_watch": "not_applicable",
+            "targets_mdr_pathogen": false,
+            "amr_unmet_need": "not_applicable"
+          }
+        },
+        "amr_stewardship_check": {
+          "active_ingredient": "amoxicillin",
+          "amr_class": "access",
+          "product_type": "generic",
+          "indication": "not_stated",
+          "required_warning": "missing",
+          "stewardship_justification": "present",
+          "decision": "query_applicant",
+          "decision_reasons": [
+            "Required AMR warning is missing."
+          ]
+        }
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Administrative completeness review",
+          "issue": "No proof of payment was detected in the administrative material.",
+          "violated_rule": "Missing proof of payment where required = violation",
+          "severity": "minor",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Confirm the payment receipt or fee evidence is included where required.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "WHO INN similarity review",
+          "issue": "Product name exceeds the INN similarity threshold against amoxicillin.",
+          "violated_rule": "INN similarity > 70% = naming violation",
+          "severity": "critical",
+          "location": "Product Information and Naming",
+          "recommendation": "Rename the product before the dossier can be accepted.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for indications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "indications",
+          "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "dosage",
+          "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "contraindications",
+          "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "warnings",
+          "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "side_effects",
+          "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for storage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "storage",
+          "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover completeness.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "major",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover safety wording.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "critical",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover contraindications.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "critical",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover dosage clarity.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "major",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        },
+        {
+          "workflow_step": "AMR stewardship review using AWaRe rules",
+          "issue": "AMR stewardship check identified missing warning or stewardship justification.",
+          "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+          "severity": "major",
+          "location": "AMR Stewardship",
+          "recommendation": "Provide complete AMR warning statements and stewardship justification.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m5_bioequivalence"
+        },
+        {
+          "workflow_step": "Cross-section consistency review",
+          "issue": "Proposed product name is identical to the INN and may create naming confusion.",
+          "violated_rule": "Product identity inconsistency or confusion risk = violation",
+          "severity": "major",
+          "location": "Product Information and Naming",
+          "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections.",
+          "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+        }
+      ],
+      "findings_summary_tables": {
+        "administrative": [
+          {
+            "severity": "minor",
+            "violated_rule": "Missing proof of payment where required = violation",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Confirm the payment receipt or fee evidence is included where required."
+          }
+        ],
+        "naming_inn": [
+          {
+            "severity": "critical",
+            "violated_rule": "INN similarity > 70% = naming violation",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Rename the product before the dossier can be accepted."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Product identity inconsistency or confusion risk = violation",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections."
+          }
+        ],
+        "quality": [
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+          }
+        ],
+        "gmp": [],
+        "clinical_evidence": [
+          {
+            "severity": "major",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          }
+        ],
+        "amr_stewardship": [
+          {
+            "severity": "major",
+            "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m5_bioequivalence",
+            "recommendation": "Provide complete AMR warning statements and stewardship justification."
+          }
+        ],
+        "consistency_checks": []
+      },
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | [1] | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| critical | INN similarity > 70% = naming violation | [1] | Rename the product before the dossier can be accepted. |\n| major | Product identity inconsistency or confusion risk = violation | [1] | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [2] | Provide complete AMR warning statements and stewardship justification. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+      "severity_classification": {
+        "critical": 5,
+        "major": 8,
+        "minor": 1,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "violations_found",
+        "findings": [
+          "Proposed product name is identical to the INN and may create naming confusion."
+        ]
+      },
+      "review_completeness_confirmation": {
+        "status": "review_incomplete",
+        "mandatory_steps": {
+          "data_quality_and_vision_extraction_check": true,
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": true,
+          "structural_dossier_mapping": false,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": false,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "The review completed, but the dossier cannot be accepted because the INN similarity threshold was exceeded.",
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+          "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+          "Generic baseline comparison used Amoxicillin 250mg and 500mg Capsules - EMC patient leaflet through MCP patient-information tools with overall alignment not_aligned.",
+          "Example comparison classified the section as non_compliant."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "not_acceptable",
+        "system_recommendation": "approval_denied",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Product name exceeds the INN similarity threshold against amoxicillin.",
+          "Current patient information does not align closely with the innovator reference for indications.",
+          "Current patient information does not align closely with the innovator reference for dosage.",
+          "Current patient information does not align closely with the innovator reference for contraindications.",
+          "Current patient information does not align closely with the innovator reference for warnings.",
+          "Current patient information does not align closely with the innovator reference for side_effects.",
+          "Current patient information does not align closely with the innovator reference for storage.",
+          "The current section does not adequately cover completeness.",
+          "The current section does not adequately cover safety wording.",
+          "The current section does not adequately cover contraindications.",
+          "The current section does not adequately cover dosage clarity.",
+          "AMR stewardship check identified missing warning or stewardship justification.",
+          "Proposed product name is identical to the INN and may create naming confusion."
+        ],
+        "escalation_needed": false
+      }
+    },
+    "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | [1] | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| critical | INN similarity > 70% = naming violation | [1] | Rename the product before the dossier can be accepted. |\n| major | Product identity inconsistency or confusion risk = violation | [1] | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [2] | Provide complete AMR warning statements and stewardship justification. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+    "query_letter": {
+      "markdown": "Dear Applicant,\n\nFollowing screening of your submission for amoxicillin, the following queries are raised:\n\n1. Administrative completeness review\nNo proof of payment was detected in the administrative material.\nRule reference: Missing proof of payment where required = violation.\nEvidence location: Application Form and Administrative Information.\nRequested action: Confirm the payment receipt or fee evidence is included where required.\n\n2. WHO INN similarity review\nProduct name exceeds the INN similarity threshold against amoxicillin.\nRule reference: INN similarity > 70% = naming violation.\nEvidence location: Product Information and Naming.\nRequested action: Rename the product before the dossier can be accepted.\n\n3. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for indications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: indications.\nRequested action: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.\n\n4. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for dosage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: dosage.\nRequested action: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.\n\n5. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for contraindications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: contraindications.\nRequested action: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.\n\n6. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for warnings.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: warnings.\nRequested action: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.\n\n7. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for side_effects.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: side_effects.\nRequested action: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.\n\n8. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for storage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: storage.\nRequested action: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.\n\n9. Section-by-section technical review\nThe current section does not adequately cover completeness.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n10. Section-by-section technical review\nThe current section does not adequately cover safety wording.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n11. Section-by-section technical review\nThe current section does not adequately cover contraindications.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n12. Section-by-section technical review\nThe current section does not adequately cover dosage clarity.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n13. AMR stewardship review using AWaRe rules\nAMR stewardship check identified missing warning or stewardship justification.\nRule reference: AMR warning and stewardship justification must be present for antimicrobial submissions..\nEvidence location: AMR Stewardship.\nRequested action: Provide complete AMR warning statements and stewardship justification.\n\n14. Cross-section consistency review\nProposed product name is identical to the INN and may create naming confusion.\nRule reference: Product identity inconsistency or confusion risk = violation.\nEvidence location: Product Information and Naming.\nRequested action: Use a distinct product name and verify consistent naming across all dossier sections.\n\nRegards,\nRegulatory Reviewer",
+      "html": "<!doctype html><html><head><meta charset='utf-8'><title>Applicant Query Letter</title><style>body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f8fc;color:#1f2937;margin:0;padding:24px;}.letter{max-width:900px;margin:0 auto;background:#fff;border:1px solid #d7e3f1;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,.08);}.head{padding:22px 28px;background:linear-gradient(135deg,#0f4c81,#2563eb);color:#fff;}.head h1{margin:0;font-size:20px;letter-spacing:.02em;}.head p{margin:6px 0 0;opacity:.9;font-size:13px;}.meta{padding:14px 28px;background:#eef5ff;border-bottom:1px solid #d7e3f1;color:#334155;font-size:13px;}.content{padding:24px 28px;line-height:1.65;font-size:14px;}.q{margin:14px 0 0;padding:12px 14px;border:1px solid #dbe7f3;border-radius:10px;background:#f8fbff;}.q strong{color:#0f3d66;}.footer{padding:16px 28px;border-top:1px solid #e5edf6;background:#fafcff;color:#475569;font-size:12px;}</style></head><body><div class='letter'><div class='head'><h1>National Drug Agency</h1><p>Regulatory Review and Market Authorization Directorate</p></div><div class='meta'>Document: Applicant Query Letter &nbsp;|&nbsp; Generated: 2026-05-11 19:52 UTC</div><div class='content'><p>Dear Applicant,</p><br/><p>Following screening of your submission for amoxicillin, the following queries are raised:</p><br/><div class='q'><strong>1. Administrative completeness review</strong></div><p>No proof of payment was detected in the administrative material.</p><p>Rule reference: Missing proof of payment where required = violation.</p><p>Evidence location: Application Form and Administrative Information.</p><p>Requested action: Confirm the payment receipt or fee evidence is included where required.</p><br/><div class='q'><strong>2. WHO INN similarity review</strong></div><p>Product name exceeds the INN similarity threshold against amoxicillin.</p><p>Rule reference: INN similarity &gt; 70% = naming violation.</p><p>Evidence location: Product Information and Naming.</p><p>Requested action: Rename the product before the dossier can be accepted.</p><br/><div class='q'><strong>3. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for indications.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: indications.</p><p>Requested action: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>4. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for dosage.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: dosage.</p><p>Requested action: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>5. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for contraindications.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: contraindications.</p><p>Requested action: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>6. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for warnings.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: warnings.</p><p>Requested action: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>7. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for side_effects.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: side_effects.</p><p>Requested action: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>8. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for storage.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: storage.</p><p>Requested action: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>9. Section-by-section technical review</strong></div><p>The current section does not adequately cover completeness.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Application Form and Administrative Information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><p>10. Section-by-section technical review</p><p>The current section does not adequately cover safety wording.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Application Form and Administrative Information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><p>11. Section-by-section technical review</p><p>The current section does not adequately cover contraindications.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Application Form and Administrative Information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><p>12. Section-by-section technical review</p><p>The current section does not adequately cover dosage clarity.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Application Form and Administrative Information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><p>13. AMR stewardship review using AWaRe rules</p><p>AMR stewardship check identified missing warning or stewardship justification.</p><p>Rule reference: AMR warning and stewardship justification must be present for antimicrobial submissions..</p><p>Evidence location: AMR Stewardship.</p><p>Requested action: Provide complete AMR warning statements and stewardship justification.</p><br/><p>14. Cross-section consistency review</p><p>Proposed product name is identical to the INN and may create naming confusion.</p><p>Rule reference: Product identity inconsistency or confusion risk = violation.</p><p>Evidence location: Product Information and Naming.</p><p>Requested action: Use a distinct product name and verify consistent naming across all dossier sections.</p><br/><p>Regards,</p><p>Regulatory Reviewer</p></div><div class='footer'>This communication is issued by the National Drug Agency for regulatory follow-up on submitted dossier evidence.</div></div></body></html>",
+      "text": "Dear Applicant,\n\nFollowing screening of your submission for amoxicillin, the following queries are raised:\n\n1. Administrative completeness review\nNo proof of payment was detected in the administrative material.\nRule reference: Missing proof of payment where required = violation.\nEvidence location: Application Form and Administrative Information.\nRequested action: Confirm the payment receipt or fee evidence is included where required.\n\n2. WHO INN similarity review\nProduct name exceeds the INN similarity threshold against amoxicillin.\nRule reference: INN similarity > 70% = naming violation.\nEvidence location: Product Information and Naming.\nRequested action: Rename the product before the dossier can be accepted.\n\n3. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for indications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: indications.\nRequested action: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.\n\n4. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for dosage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: dosage.\nRequested action: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.\n\n5. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for contraindications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: contraindications.\nRequested action: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.\n\n6. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for warnings.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: warnings.\nRequested action: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.\n\n7. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for side_effects.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: side_effects.\nRequested action: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.\n\n8. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for storage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: storage.\nRequested action: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.\n\n9. Section-by-section technical review\nThe current section does not adequately cover completeness.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n10. Section-by-section technical review\nThe current section does not adequately cover safety wording.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n11. Section-by-section technical review\nThe current section does not adequately cover contraindications.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n12. Section-by-section technical review\nThe current section does not adequately cover dosage clarity.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Application Form and Administrative Information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n13. AMR stewardship review using AWaRe rules\nAMR stewardship check identified missing warning or stewardship justification.\nRule reference: AMR warning and stewardship justification must be present for antimicrobial submissions..\nEvidence location: AMR Stewardship.\nRequested action: Provide complete AMR warning statements and stewardship justification.\n\n14. Cross-section consistency review\nProposed product name is identical to the INN and may create naming confusion.\nRule reference: Product identity inconsistency or confusion risk = violation.\nEvidence location: Product Information and Naming.\nRequested action: Use a distinct product name and verify consistent naming across all dossier sections.\n\nRegards,\nRegulatory Reviewer"
+    },
+    "decision_log": [
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-001",
+        "rule_evaluated": "SOP-0001",
+        "rule_text": "Missing proof of payment where required = violation",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "No proof of payment was detected in the administrative material.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-002",
+        "rule_evaluated": "M1-INN-001",
+        "rule_text": "INN similarity > 70% = naming violation",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Product name exceeds the INN similarity threshold against amoxicillin.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-003",
+        "rule_evaluated": "SOP-0003",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for indications.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-004",
+        "rule_evaluated": "SOP-0004",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for dosage.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-005",
+        "rule_evaluated": "SOP-0005",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for contraindications.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-006",
+        "rule_evaluated": "SOP-0006",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for warnings.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-007",
+        "rule_evaluated": "SOP-0007",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for side_effects.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-008",
+        "rule_evaluated": "SOP-0008",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for storage.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-009",
+        "rule_evaluated": "SOP-0009",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "The current section does not adequately cover completeness.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-010",
+        "rule_evaluated": "SOP-0010",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "The current section does not adequately cover safety wording.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-011",
+        "rule_evaluated": "SOP-0011",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "The current section does not adequately cover contraindications.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-012",
+        "rule_evaluated": "SOP-0012",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "The current section does not adequately cover dosage clarity.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-013",
+        "rule_evaluated": "SOP-0013",
+        "rule_text": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m5_bioequivalence",
+        "extracted_value": "AMR stewardship check identified missing warning or stewardship justification.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      },
+      {
+        "log_id": "WF-NAMING_CONFLICT-20260511_195012-LOG-014",
+        "rule_evaluated": "SOP-0014",
+        "rule_text": "Product identity inconsistency or confusion risk = violation",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+        "extracted_value": "Proposed product name is identical to the INN and may create naming confusion.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:52:52.013072+00:00"
+      }
+    ],
+    "review_payload": {
+      "workspace": "review",
+      "dossier_id": "WF-NAMING_CONFLICT-20260511_195012",
+      "selected_model": {
+        "id": "gemma-4-4b-it",
+        "label": "Gemma 4 4B-IT (Default)",
+        "runtime_model_id": "gemma-4-4b-it",
+        "description": "High-precision instruction-tuned model for regulatory auditing (8GB VRAM)."
+      },
+      "intent": "dossier_review",
+      "response_contract": "dossier_review_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "sub_queries": [
+        "Provide the final overall judgment and recommendation.",
+        "details about Provide the final overall judgment and recommendation.",
+        "requirements for Provide the final overall judgment and recommendation."
+      ],
+      "conversation_id": "conv-9a32d41983",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 1406,
+        "remaining_tokens": 2690,
+        "usage_ratio": 0.34326,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 965,
+        "carryover_tokens": 0,
+        "active_message_tokens": 441,
+        "archived_messages_count": 23,
+        "compaction_count": 20,
+        "auto_compaction_required": false,
+        "last_compacted_at": "2026-05-11T19:52:45.226343+00:00",
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "approval_denied",
+      "route": "fallback",
+      "abstained": false,
+      "rationale": "### SOP Item In Review\n\n- Overall judgment\n\n### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 100.00% similarity to INN 'amoxicillin'. Rule result: flagged. Evaluated against naming guidance: External Source Provenance and Audit. Source Precedence.Source Precedence\n\nDossier evidence remains primary for submission-specific claims. WHO AWaRe, GLASS, RxNorm, PubChem, ChEMBL, and UniChem are used to verify external policy, stewardship, naming, and chemistry facts. When external sources confl..\n\nA recommendation to **Reject** is issued because the product name is too similar to a known WHO International Nonproprietary Name (INN), which may lead to clinical confusion.\n\n### Overall Judgment\n\nBased on the full structured review, the overall judgment is **not acceptable**. This aligns with the grounded system recommendation of **Approval Denied**.\n\nBlocking issues were identified and prevent acceptance at this stage.\n\n**AMR Stewardship Analysis:** The product is classified under the **ACCESS** category. Access-category antibiotic remains under standard stewardship monitoring. The ingredient was normalized to **amoxicillin** for stewardship checks. Current surveillance signals do not indicate an elevated resistance concern beyond standard monitoring.\n\n### Detailed Findings\n- Evidence from **Quality Overall Summary** supports This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for ampicillin. The control strategy justifies the proposed specifications.. [WF-NAMING_CONFLICT-20260511_195012:m2_quality_overall_summary:c1]\n\n### Conclusion\n\n**Approval Denied** is the grounded regulatory path. The reviewer should confirm the stewardship plan aligns with the AWaRe categorization and local resistance trends.\n\n### Findings Summary Tables\n\n#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | [1] | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| critical | INN similarity > 70% = naming violation | [1] | Rename the product before the dossier can be accepted. |\n| major | Product identity inconsistency or confusion risk = violation | [1] | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [2] | Provide complete AMR warning statements and stewardship justification. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n### Decision Support Snapshot\n\n| Signal | Value |\n| --- | --- |\n| Recommendation | approval_denied |\n| Confidence | 0.60 |\n| Submission Type | pre_market_authorization |\n\n### External vs Submitted Evidence (Patient/Safety)\n\n| Dimension | Submitted Dossier | External Source | Gap |\n| --- | --- | --- | --- |\n| Indication | Not stated | Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service fficial guida... | Yes |\n| Dosing | Not stated | 2 Posology and method of administration Posology The dose of Amoxicillin Powder for Oral Suspension Sugar Free that is selected to treat... | Yes |\n| Contraindications | Not stated | These reactions are more likely to occur in individuals with a history of penicillin hypersensitiv Last updated on emc: 08 Sep 2025 Quick... | Yes |\n| Warnings | Not stated | 4 Special warnings and precautions for use Hypersensitivity reactions Before initiating therapy with any penicillin, careful enquiry shou... | Yes |\n| Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Yes |\n| Storage | Not stated | These reactions are more likely to occur in individuals with a history of penicillin hypersensitiv Last updated on emc: 08 Sep 2025 Quick... | Yes |\n\nSummary: submitted dossier provides **0/6** patient-safety dimensions; external baseline provides **6/6**.\nInconsistencies detected in: **Indication, Dosing, Contraindications, Warnings, Adverse Reactions, Storage**. These require applicant clarification or correction.\n\nVerified external references:\n- [https://products.mhra.gov.uk/search/?query=amoxicillin](https://products.mhra.gov.uk/search/?query=amoxicillin)\n- [https://products.mhra.gov.uk/?q=amoxicillin](https://products.mhra.gov.uk/?q=amoxicillin)\n- [https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=amoxicillin](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=amoxicillin)\n- [https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin)\n- [https://www.medicines.org.uk/emc/product/14145/smpc](https://www.medicines.org.uk/emc/product/14145/smpc)\n\nSource selection policy:\n- Strategy: prefer_highest_priority_source_per_section\n- Priority order: products.mhra.gov.uk, medicines.org.uk, ema.europa.eu, accessdata.fda.gov, dailymed.nlm.nih.gov, gov.uk, who.int\n\n#### Clinical Evidence Reconciliation (Submitted vs External)\n\n| Dimension | Submitted | External | Reconciliation |\n| --- | --- | --- | --- |\n| Indication | Not stated | Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service fficial guida... | Mismatch - query applicant |\n| Contraindications | Not stated | These reactions are more likely to occur in individuals with a history of penicillin hypersensitiv Last updated on emc: 08 Sep 2025 Quick... | Mismatch - query applicant |\n| Warnings | Not stated | 4 Special warnings and precautions for use Hypersensitivity reactions Before initiating therapy with any penicillin, careful enquiry shou... | Mismatch - query applicant |\n| Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Mismatch - query applicant |\n\n#### External Source Provenance and Confidence\n\n| Section | Source Domain | Source Priority | Confidence |\n| --- | --- | --- | --- |\n| side_effects | products.mhra.gov.uk | 100 | 0.75 |\n| dosage | www.medicines.org.uk | 90 | 0.84 |\n| warnings | www.medicines.org.uk | 90 | 0.84 |\n| indications | www.medicines.org.uk | 90 | 0.84 |\n| contraindications | www.medicines.org.uk | 90 | 0.84 |\n| storage | www.medicines.org.uk | 90 | 0.84 |\n\n### SOP Stage Detail\n\n| Step | Stage | Output Detail |\n| --- | --- | --- |\n| 1 | Data quality and vision extraction check | completed |\n| 2 | Administrative completeness review | administratively_incomplete |\n| 3 | Structural dossier mapping | mapped |\n| 5 | WHO INN similarity review | failed |\n| 6 | Section-by-section technical review | 12 sections reviewed |\n| 7 | AMR stewardship review | standard_authorization |\n| 10 | Cross-section consistency review | violations_found |\n| 11 | Review completeness confirmation | review_complete |\n| 12 | Overall judgment | not_acceptable |\n\n### AMR Policy Decision Support\n\n| Signal | Value |\n| --- | --- |\n| Applicable | True |\n| AWaRe Category | access |\n| Authorization Control | standard_authorization |\n| Policy Decision | standard_authorization |\n| Fast Track Candidate | False |\n| Restriction Trigger | False |\n\nRequired controls:\n- Standard stewardship monitoring\n\nAMR evidence trace:\n- MCP AWaRe reference resolved amoxicillin as Access.\n- MCP antimicrobial similarity returned stewardship flag review_required.\n- RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.\n- WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.\n- WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.\n- Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.\n\n### AMR Stewardship Check\n\n- Active ingredient: amoxicillin\n- AMR class: access\n- Product type: generic\n- Indication: not_stated\n- Required warning: missing\n- Stewardship justification: present\n- Decision: query_applicant\n\n### Safety & Trust: Verdict Trace\n\n- Why this verdict: The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.\n- Final verdict: not_acceptable\n- Confidence score: 0.60\n- Uncertainty flags: overall confidence below 0.70; 13 critical/major findings require sponsor action; external source mode is unknown (not fully live)\n\n| Rule | Tool | Evidence | Decision |\n| --- | --- | --- | --- |\n| INN similarity > 70% = naming violation | retrieval + rule evaluation | WF-NAMING_CONFLICT-20260511_195012:m1_application_admin | Rename the product before the dossier can be accepted. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | WF-NAMING_CONFLICT-20260511_195012:m1_application_admin | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | WF-NAMING_CONFLICT-20260511_195012:m1_application_admin | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | WF-NAMING_CONFLICT-20260511_195012:m1_application_admin | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | WF-NAMING_CONFLICT-20260511_195012:m1_application_admin | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n\n### Global Resilience Mode\n\nExternal connectivity is constrained (`unknown`). Decision support continued on local inference with provenance warnings, and external refresh should be re-run when connectivity improves.",
+      "chain_of_thought": "{\n \"intent\": \"dossier_review\",\n \"resolved_terms\": [],\n \"retrieval_strategy\": \"Precision search across dossier_review_v1 domain\",\n \"bouncer_audit\": [\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260511_195012:m2_quality_overall_summary:c1\",\n \"section\": \"Quality Overall Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.532\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260511_195012:m2_clinical_overview:c1\",\n \"section\": \"Clinical Overview and Benefit-Risk Summary\",\n \"status\": \"DISCARD\",\n \"reason\": \"Insufficient keyword density (Found: overall).\",\n \"score\": 0.531\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260511_195012:m3_api_quality:c1\",\n \"section\": \"API Quality and Control Strategy\",\n \"status\": \"DISCARD\",\n \"reason\": \"Insufficient keyword density (Found: final).\",\n \"score\": 0.518\n }\n ]\n}",
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | [1] | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| critical | INN similarity > 70% = naming violation | [1] | Rename the product before the dossier can be accepted. |\n| major | Product identity inconsistency or confusion risk = violation | [1] | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [2] | Provide complete AMR warning statements and stewardship justification. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+      "workflow_summary": {
+        "data_quality_and_vision_extraction_check": {
+          "status": "completed",
+          "scanned_document_challenge_mode": {
+            "enabled": false,
+            "vision_extraction_detected": [],
+            "text_rag_failure_risk": "low",
+            "extraction_confidence": {
+              "gmp_expiry_date": null,
+              "coa_batch_number": null,
+              "signature_or_stamp_detected": false
+            },
+            "ocr_used": false,
+            "extraction_method": "pdf_text_layer",
+            "page_count": 6,
+            "image_count": 0,
+            "warnings": []
+          }
+        },
+        "submission_summary": {
+          "dossier_id": "WF-NAMING_CONFLICT-20260511_195012",
+          "submission_type": "pre_market_authorization",
+          "review_type": "generic",
+          "applicant": "Workflow Applicant",
+          "product_name": "amoxicillin",
+          "active_ingredient": "amoxicillin",
+          "dosage_form": "unknown",
+          "strength": "unknown",
+          "jurisdiction": "Uganda",
+          "review_pathway": "standard"
+        },
+        "administrative_review": {
+          "status": "administratively_incomplete",
+          "violations": [
+            "No proof of payment was detected in the administrative material."
+          ]
+        },
+        "dossier_structure_review": {
+          "status": "mapped",
+          "violations": []
+        },
+        "applicable_rules_identification": {
+          "rules": [
+            "Administrative completeness checklist",
+            "Structural dossier completeness rules",
+            "WHO INN similarity rule",
+            "Section adequacy and evidence sufficiency rules",
+            "Generic review packaging and patient-information comparison against innovator reference when provided",
+            "WHO AWaRe stewardship rules"
+          ]
+        },
+        "who_inn_similarity_review": {
+          "proposed_name": "amoxicillin",
+          "who_inn": "amoxicillin",
+          "similarity_index": 1.0,
+          "threshold": 0.7,
+          "threshold_result": "failed",
+          "similarity_type": "orthographic",
+          "interpretation": "Product name 'amoxicillin' has 100.00% similarity to INN 'amoxicillin'. Rule result: flagged. Evaluated against naming guidance: External Source Provenance and Audit. Source Precedence.Source Precedence\n\nDossier evidence remains primary for submission-specific claims. WHO AWaRe, GLASS, RxNorm, PubChem, ChEMBL, and UniChem are used to verify external policy, stewardship, naming, and chemistry facts. When external sources confl...",
+          "flag_status": "naming_violation",
+          "rule_consequence": "Product name cannot be accepted because INN similarity exceeds 70%."
+        },
+        "technical_section_review": {
+          "section_results": [
+            {
+              "section": "Application Form and Administrative Information",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Manufacturer and GMP Evidence",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Product Information and Naming",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Quality Overall Summary",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Clinical Overview and Benefit-Risk Summary",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "API Quality and Control Strategy",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "FPP Manufacturing Process and Controls",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Stability and Shelf-Life Justification",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Nonclinical Study Summary",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": false
+            },
+            {
+              "section": "Tabular Listing of Clinical Studies",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Pivotal Clinical Trial Reports",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Biopharmaceutics and Bioequivalence Evidence",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": false
+            }
+          ],
+          "review_type_specific": {
+            "review_type": "generic",
+            "status": "partial",
+            "baseline_available": true,
+            "baseline_verified": true,
+            "baseline_reference_name": "Amoxicillin 250mg and 500mg Capsules - EMC patient leaflet",
+            "baseline_reference_urls": [
+              "https://products.mhra.gov.uk/search/?query=amoxicillin",
+              "https://products.mhra.gov.uk/?q=amoxicillin",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=amoxicillin",
+              "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin",
+              "https://www.medicines.org.uk/emc/product/14145/smpc"
+            ],
+            "verified_reference_urls": [
+              "https://products.mhra.gov.uk/search/?query=amoxicillin",
+              "https://products.mhra.gov.uk/?q=amoxicillin",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=amoxicillin",
+              "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amoxicillin",
+              "https://www.medicines.org.uk/emc/product/14145/smpc"
+            ],
+            "comparison_matrix": [
+              {
+                "concept_key": "indication",
+                "dimension": "Indication",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service fficial guida...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "dosing",
+                "dimension": "Dosing",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "2 Posology and method of administration Posology The dose of Amoxicillin Powder for Oral Suspension Sugar Free that is selected to treat...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "contraindications",
+                "dimension": "Contraindications",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "These reactions are more likely to occur in individuals with a history of penicillin hypersensitiv Last updated on emc: 08 Sep 2025 Quick...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "warnings",
+                "dimension": "Warnings",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "4 Special warnings and precautions for use Hypersensitivity reactions Before initiating therapy with any penicillin, careful enquiry shou...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "adverse_reactions",
+                "dimension": "Adverse Reactions",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "storage",
+                "dimension": "Storage",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "These reactions are more likely to occur in individuals with a history of penicillin hypersensitiv Last updated on emc: 08 Sep 2025 Quick...",
+                "evidence_source": "mcp_external"
+              }
+            ],
+            "section_provenance": [
+              {
+                "section_name": "side_effects",
+                "source_url": "https://products.mhra.gov.uk/search/?query=amoxicillin",
+                "source_domain": "products.mhra.gov.uk",
+                "source_priority": 100,
+                "confidence_score": 0.75
+              },
+              {
+                "section_name": "dosage",
+                "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "warnings",
+                "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "indications",
+                "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "contraindications",
+                "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "storage",
+                "source_url": "https://www.medicines.org.uk/emc/product/14145/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              }
+            ],
+            "source_selection_policy": {
+              "order": [
+                "products.mhra.gov.uk",
+                "medicines.org.uk",
+                "ema.europa.eu",
+                "accessdata.fda.gov",
+                "dailymed.nlm.nih.gov",
+                "gov.uk",
+                "who.int"
+              ],
+              "strategy": "prefer_highest_priority_source_per_section"
+            },
+            "notes": [
+              "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+              "Generic baseline comparison used Amoxicillin 250mg and 500mg Capsules - EMC patient leaflet through MCP patient-information tools with overall alignment not_aligned.",
+              "Example comparison classified the section as non_compliant."
+            ],
+            "findings": [
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for indications.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "indications",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "dosage",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "critical",
+                "location": "contraindications",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "critical",
+                "location": "warnings",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "side_effects",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for storage.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "storage",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "The current section does not adequately cover completeness.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "major",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover safety wording.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "critical",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover contraindications.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "critical",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover dosage clarity.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "major",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              }
+            ],
+            "example_comparison": {
+              "classification": "non_compliant",
+              "matched_good_patterns": [],
+              "matched_bad_patterns": [
+                "completeness",
+                "safety wording",
+                "contraindications",
+                "dosage clarity"
+              ],
+              "evidence": [
+                {
+                  "dimension": "completeness",
+                  "finding": "The current section does not adequately cover completeness.",
+                  "severity": "major",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+                },
+                {
+                  "dimension": "safety wording",
+                  "finding": "The current section does not adequately cover safety wording.",
+                  "severity": "critical",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+                },
+                {
+                  "dimension": "contraindications",
+                  "finding": "The current section does not adequately cover contraindications.",
+                  "severity": "critical",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+                },
+                {
+                  "dimension": "dosage clarity",
+                  "finding": "The current section does not adequately cover dosage clarity.",
+                  "severity": "major",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Ampimed\n(ampicillin) submitted on 2025-07-26 to the national regulatory authority of Tanzania. The\napplicant, United Therapeutics, formally requests approval for t"
+                }
+              ]
+            }
+          }
+        },
+        "amr_stewardship_review": {
+          "applicable": true,
+          "antimicrobial_status": "antimicrobial",
+          "aware_category": "access",
+          "stewardship_rule_application": "Access-category antibiotic remains under standard stewardship monitoring.",
+          "fast_track_status": false,
+          "authorization_control": "standard_authorization",
+          "watch_or_reserve_caution": false,
+          "findings": [
+            "MCP AWaRe reference resolved amoxicillin as Access.",
+            "MCP antimicrobial similarity returned stewardship flag review_required.",
+            "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+            "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+            "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+            "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+            "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+          ],
+          "policy_decision": {
+            "decision": "standard_authorization",
+            "required_controls": [
+              "Standard stewardship monitoring"
+            ],
+            "decision_basis": {
+              "aware_category": "access",
+              "watch_similarity_restriction": false,
+              "glass_resistance_trend": "stable",
+              "comparator": "not_applicable",
+              "similarity_to_existing_watch": "not_applicable",
+              "targets_mdr_pathogen": false,
+              "amr_unmet_need": "not_applicable"
+            }
+          },
+          "amr_stewardship_check": {
+            "active_ingredient": "amoxicillin",
+            "amr_class": "access",
+            "product_type": "generic",
+            "indication": "not_stated",
+            "required_warning": "missing",
+            "stewardship_justification": "present",
+            "decision": "query_applicant",
+            "decision_reasons": [
+              "Required AMR warning is missing."
+            ]
+          }
+        },
+        "findings_register": [
+          {
+            "workflow_step": "Administrative completeness review",
+            "issue": "No proof of payment was detected in the administrative material.",
+            "violated_rule": "Missing proof of payment where required = violation",
+            "severity": "minor",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Confirm the payment receipt or fee evidence is included where required.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "WHO INN similarity review",
+            "issue": "Product name exceeds the INN similarity threshold against amoxicillin.",
+            "violated_rule": "INN similarity > 70% = naming violation",
+            "severity": "critical",
+            "location": "Product Information and Naming",
+            "recommendation": "Rename the product before the dossier can be accepted.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for indications.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "indications",
+            "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "dosage",
+            "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "critical",
+            "location": "contraindications",
+            "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "critical",
+            "location": "warnings",
+            "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "side_effects",
+            "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for storage.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "storage",
+            "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover completeness.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "major",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover safety wording.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "critical",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover contraindications.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "critical",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover dosage clarity.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "major",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          },
+          {
+            "workflow_step": "AMR stewardship review using AWaRe rules",
+            "issue": "AMR stewardship check identified missing warning or stewardship justification.",
+            "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+            "severity": "major",
+            "location": "AMR Stewardship",
+            "recommendation": "Provide complete AMR warning statements and stewardship justification.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m5_bioequivalence"
+          },
+          {
+            "workflow_step": "Cross-section consistency review",
+            "issue": "Proposed product name is identical to the INN and may create naming confusion.",
+            "violated_rule": "Product identity inconsistency or confusion risk = violation",
+            "severity": "major",
+            "location": "Product Information and Naming",
+            "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections.",
+            "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin"
+          }
+        ],
+        "findings_summary_tables": {
+          "administrative": [
+            {
+              "severity": "minor",
+              "violated_rule": "Missing proof of payment where required = violation",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Confirm the payment receipt or fee evidence is included where required."
+            }
+          ],
+          "naming_inn": [
+            {
+              "severity": "critical",
+              "violated_rule": "INN similarity > 70% = naming violation",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Rename the product before the dossier can be accepted."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Product identity inconsistency or confusion risk = violation",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections."
+            }
+          ],
+          "quality": [
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+            }
+          ],
+          "gmp": [],
+          "clinical_evidence": [
+            {
+              "severity": "major",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            }
+          ],
+          "amr_stewardship": [
+            {
+              "severity": "major",
+              "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+              "evidence_reference": "WF-NAMING_CONFLICT-20260511_195012:m5_bioequivalence",
+              "recommendation": "Provide complete AMR warning statements and stewardship justification."
+            }
+          ],
+          "consistency_checks": []
+        },
+        "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | [1] | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| critical | INN similarity > 70% = naming violation | [1] | Rename the product before the dossier can be accepted. |\n| major | Product identity inconsistency or confusion risk = violation | [1] | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [2] | Provide complete AMR warning statements and stewardship justification. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+        "severity_classification": {
+          "critical": 5,
+          "major": 8,
+          "minor": 1,
+          "advisory": 0
+        },
+        "cross_section_consistency_review": {
+          "status": "violations_found",
+          "findings": [
+            "Proposed product name is identical to the INN and may create naming confusion."
+          ]
+        },
+        "review_completeness_confirmation": {
+          "status": "review_complete",
+          "mandatory_steps": {
+            "data_quality_and_vision_extraction_check": true,
+            "submission_intake_and_familiarization": true,
+            "administrative_completeness_review": true,
+            "structural_dossier_mapping": true,
+            "applicable_rules_identification": true,
+            "who_inn_similarity_review": true,
+            "section_by_section_technical_review": true,
+            "amr_stewardship_review": true,
+            "findings_register": true,
+            "severity_classification": true,
+            "cross_section_consistency_review": true
+          },
+          "notes": [
+            "The review completed, but the dossier cannot be accepted because the INN similarity threshold was exceeded.",
+            "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used Amoxicillin 250mg and 500mg Capsules - EMC patient leaflet through MCP patient-information tools with overall alignment not_aligned.",
+            "Example comparison classified the section as non_compliant."
+          ]
+        },
+        "overall_judgment": {
+          "final_verdict": "not_acceptable",
+          "system_recommendation": "approval_denied",
+          "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+          "blocking_issues": [
+            "Product name exceeds the INN similarity threshold against amoxicillin.",
+            "Current patient information does not align closely with the innovator reference for indications.",
+            "Current patient information does not align closely with the innovator reference for dosage.",
+            "Current patient information does not align closely with the innovator reference for contraindications.",
+            "Current patient information does not align closely with the innovator reference for warnings.",
+            "Current patient information does not align closely with the innovator reference for side_effects.",
+            "Current patient information does not align closely with the innovator reference for storage.",
+            "The current section does not adequately cover completeness.",
+            "The current section does not adequately cover safety wording.",
+            "The current section does not adequately cover contraindications.",
+            "The current section does not adequately cover dosage clarity.",
+            "AMR stewardship check identified missing warning or stewardship justification.",
+            "Proposed product name is identical to the INN and may create naming confusion."
+          ],
+          "escalation_needed": false
+        }
+      },
+      "citations": [
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260511_195012:m2_quality_overall_summary:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260511_195012",
+          "section_id": "m2_quality_overall_summary",
+          "section_title": "Quality Overall Summary",
+          "score": 0.53189,
+          "snippet": "This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for ampicillin. The control strategy justifies the proposed specifications for both the active su..."
+        }
+      ],
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "amoxicillin",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "amoxicillin",
+        "parent_compound": "amoxicillin",
+        "pubchem_cid": "33613",
+        "canonical_smiles": "CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccc(O)cc3)N2C(=O)N1C(=O)O",
+        "inchikey": "OTBDXZCWBFLTOZ-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL1082",
+        "unichem_id": "UC33613",
+        "aware_category": "access",
+        "amr_unmet_need": "not_applicable",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "stable",
+        "similarity_to_existing_watch": "not_applicable",
+        "existing_watch_comparator": "not_applicable",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "standard_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": false,
+        "watch_similarity_restriction": false,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "MCP AWaRe reference resolved amoxicillin as Access.",
+          "MCP antimicrobial similarity returned stewardship flag review_required.",
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+        ],
+        "rationale": "Access-category antibiotic remains under standard stewardship monitoring."
+      },
+      "visualization_data": null,
+      "reviewer_username": "alutakome"
+    },
+    "email_subject": "Regulatory Review - WF-NAMING_CONFLICT-20260511_195012 - approval_denied",
+    "email_body": "NATIONAL DRUG AGENCY\nPre-Market Authorization Review Report\n\nRegulatory Review - WF-NAMING_CONFLICT-20260511_195012\n\nSubmission Summary\n- Dossier Id: WF-NAMING_CONFLICT-20260511_195012\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Workflow Applicant\n- Product Name: amoxicillin\n- Active Ingredient: amoxicillin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: amoxicillin"
+  },
+  "benchmark_panel": {
+    "report_generated_at_utc": null,
+    "dataset_version": "latest_report",
+    "records_evaluated": 40,
+    "metrics": [
+      {
+        "name": "Entity extraction accuracy",
+        "value": 1.0,
+        "display_value": "100.0%",
+        "source_metric_key": "gmp_evidence_extraction_macro_f1"
+      },
+      {
+        "name": "SOP issue detection",
+        "value": 0.966583,
+        "display_value": "96.7%",
+        "source_metric_key": "holistic_policy_macro_f1"
+      },
+      {
+        "name": "Scanned document extraction",
+        "value": 1.0,
+        "display_value": "100.0%",
+        "source_metric_key": "gmp_evidence_extraction_macro_f1"
+      },
+      {
+        "name": "False query rate",
+        "value": 0.02368,
+        "display_value": "2.4%",
+        "source_metric_key": "expected_calibration_error"
+      },
+      {
+        "name": "Evidence citation accuracy",
+        "value": 0.990785,
+        "display_value": "99.1%",
+        "source_metric_key": "retrieval_ndcg_at_10"
+      }
+    ]
+  },
+  "email_subject": "Regulatory Review - WF-NAMING_CONFLICT-20260511_195012 - approval_denied",
+  "email_body": "NATIONAL DRUG AGENCY\nPre-Market Authorization Review Report\n\nRegulatory Review - WF-NAMING_CONFLICT-20260511_195012\n\nSubmission Summary\n- Dossier Id: WF-NAMING_CONFLICT-20260511_195012\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Workflow Applicant\n- Product Name: amoxicillin\n- Active Ingredient: amoxicillin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: amoxicillin"
+}

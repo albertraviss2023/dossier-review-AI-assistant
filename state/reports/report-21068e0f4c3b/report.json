@@ -1,0 +1,472 @@
+{
+  "generated_at_utc": "2026-04-17T22:25:10.223007+00:00",
+  "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+  "report_title": "Structured Workflow Review Report - WF-RESERVE_FAST_TRACK-20260417_222251",
+  "recipient_email": null,
+  "report_payload": {
+    "report_title": "Structured Workflow Review Report - WF-RESERVE_FAST_TRACK-20260417_222251",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+        "submission_type": "pre_market_authorization",
+        "applicant": "Workflow Applicant",
+        "product_name": "Reserve Review Demo",
+        "active_ingredient": "cefiderocol",
+        "dosage_form": "unknown",
+        "strength": "unknown",
+        "jurisdiction": "Uganda",
+        "review_pathway": "fast_track"
+      },
+      "administrative_review": {
+        "status": "administratively_complete",
+        "violations": []
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Reserve Review Demo",
+        "who_inn": "respivox",
+        "similarity_index": 0.6939,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "No INN infringement detected for 'Reserve Review Demo'.",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [
+          {
+            "section": "Application Form and Administrative Information",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Manufacturer and GMP Evidence",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Product Information and Naming",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Quality Overall Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "API Quality and Control Strategy",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "FPP Manufacturing Process and Controls",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Stability and Shelf-Life Justification",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Nonclinical Study Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          },
+          {
+            "section": "Tabular Listing of Clinical Studies",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Pivotal Clinical Trial Reports",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Biopharmaceutics and Bioequivalence Evidence",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          }
+        ]
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "reserve",
+        "stewardship_rule_application": "Reserve antibiotic targets a critical MDR unmet need and is eligible for accelerated review. Restricted authorization is recommended to preserve last-resort effectiveness. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to cefiderocol. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved cefiderocol as reserve. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved cefiderocol trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as low against comparator not_applicable. Chemistry snapshot provided active moiety cefiderocol, parent compound cefiderocol, PubChem CID 121338436, ChEMBL CHEMBL4594438, and UniChem UC121338436.",
+        "fast_track_status": true,
+        "authorization_control": "restricted_authorization",
+        "watch_or_reserve_caution": true,
+        "findings": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to cefiderocol.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved cefiderocol as reserve.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved cefiderocol trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as low against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety cefiderocol, parent compound cefiderocol, PubChem CID 121338436, ChEMBL CHEMBL4594438, and UniChem UC121338436."
+        ]
+      },
+      "findings_register": [
+        {
+          "workflow_step": "AMR stewardship review using AWaRe rules",
+          "issue": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+          "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+          "severity": "major",
+          "location": "AMR Stewardship Narrative",
+          "recommendation": "Document the stewardship restriction and reviewer control measures."
+        }
+      ],
+      "severity_classification": {
+        "critical": 0,
+        "major": 1,
+        "minor": 0,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "consistent",
+        "findings": []
+      },
+      "review_completeness_confirmation": {
+        "status": "review_complete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": true,
+          "structural_dossier_mapping": true,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": true,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "acceptable_with_conditions",
+        "system_recommendation": "approval_granted",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution."
+        ],
+        "escalation_needed": false
+      }
+    },
+    "review_payload": {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+      "selected_model": {
+        "id": "gemma-e4b",
+        "label": "Gemma E4B",
+        "runtime_model_id": "gemma-e4b",
+        "description": "Primary balanced local model for dossier review."
+      },
+      "sub_queries": [
+        "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "details about Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "requirements for Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification."
+      ],
+      "intent": "dossier_review",
+      "response_contract": "dossier_review_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "conversation_id": "conv-58c58c7548",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 2141,
+        "remaining_tokens": 1955,
+        "usage_ratio": 0.52271,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 974,
+        "carryover_tokens": 0,
+        "active_message_tokens": 1167,
+        "archived_messages_count": 20,
+        "compaction_count": 2,
+        "auto_compaction_required": false,
+        "last_compacted_at": "2026-04-17T22:25:10.174005+00:00",
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "approval_granted",
+      "confidence": 0.58801,
+      "route": "fallback",
+      "abstained": false,
+      "abstain_reason": null,
+      "rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Reserve Review Demo'.\n\n### Overall Judgment\n\nBased on the full structured review, the overall judgment is **acceptable with conditions**. This aligns with the grounded system recommendation of **Approval Granted**.\n\nThe dossier can proceed only with the documented policy conditions and stewardship controls.\n\n**AMR Stewardship Analysis:** The product is classified under the **RESERVE** category. Reserve antibiotic targets a critical MDR unmet need and is eligible for accelerated review. Restricted authorization is recommended to preserve last-resort effectiveness. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to cefiderocol. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved cefiderocol as reserve. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved cefiderocol trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as low against comparator not_applicable. Chemistry snapshot provided active moiety cefiderocol, parent compound cefiderocol, PubChem CID 121338436, ChEMBL CHEMBL4594438, and UniChem UC121338436. Furthermore, local GLASS surveillance data indicates rising resistance trends, increasing the regulatory risk.\n\n### Detailed Findings\n- Evidence from **Product Information and Naming** supports The proposed proprietary name for this medicinal product is Doxyvia, containing the active pharmaceutical ingredient doxycycline. The draft Summary of Product Characteristics (SmPC), Patient Inform.. [WF-RESERVE_FAST_TRACK-20260417_222251:m1_product_information:c1]\n- Evidence from **Manufacturer and GMP Evidence** supports The primary commercial manufacturing site for the finished pharmaceutical product is Gaborone Life Sciences, located in Botswana. The facility was subject to a comprehensive GMP inspection by a rec.. [WF-RESERVE_FAST_TRACK-20260417_222251:m1_manufacturer_gmp:c1]\n\n### Conclusion. In conclusion, **Approval Granted** is the grounded regulatory path. The reviewer should confirm the stewardship plan aligns with the AWaRe categorization and local resistance trends.",
+      "chain_of_thought": "{\n \"intent\": \"dossier_review\",\n \"resolved_terms\": [],\n \"retrieval_strategy\": \"Precision search across dossier_review_v1 domain\",\n \"bouncer_audit\": [\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m1_product_information:c1\",\n \"section\": \"Product Information and Naming\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.208\n },\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m1_manufacturer_gmp:c1\",\n \"section\": \"Manufacturer and GMP Evidence\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.184\n },\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m3_stability:c1\",\n \"section\": \"Stability and Shelf-Life Justification\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.175\n },\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m2_quality_overall_summary:c1\",\n \"section\": \"Quality Overall Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.153\n },\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m3_api_quality:c1\",\n \"section\": \"API Quality and Control Strategy\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.147\n },\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m5_pivotal_trial_reports:c1\",\n \"section\": \"Pivotal Clinical Trial Reports\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.136\n },\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m4_nonclinical_summary:c1\",\n \"section\": \"Nonclinical Study Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.133\n },\n {\n \"chunk_id\": \"WF-RESERVE_FAST_TRACK-20260417_222251:m3_fpp_manufacturing:c1\",\n \"section\": \"FPP Manufacturing Process and Controls\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.133\n }\n ]\n}",
+      "policy_rule_hits": [
+        "reserve_fast_track_unmet_need",
+        "restricted_authorization"
+      ],
+      "section_diagnostics": [
+        {
+          "section_id": "m1_application_admin",
+          "title": "Application Form and Administrative Information",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_manufacturer_gmp",
+          "title": "Manufacturer and GMP Evidence",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_product_information",
+          "title": "Product Information and Naming",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m2_quality_overall_summary",
+          "title": "Quality Overall Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_api_quality",
+          "title": "API Quality and Control Strategy",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_fpp_manufacturing",
+          "title": "FPP Manufacturing Process and Controls",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_stability",
+          "title": "Stability and Shelf-Life Justification",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m4_nonclinical_summary",
+          "title": "Nonclinical Study Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        },
+        {
+          "section_id": "m5_trial_listing",
+          "title": "Tabular Listing of Clinical Studies",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m5_pivotal_trial_reports",
+          "title": "Pivotal Clinical Trial Reports",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m5_bioequivalence",
+          "title": "Biopharmaceutics and Bioequivalence Evidence",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m1_product_information:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m1_product_information",
+          "section_title": "Product Information and Naming",
+          "score": 0.20778,
+          "snippet": "The proposed proprietary name for this medicinal product is Doxyvia, containing the active pharmaceutical ingredient doxycycline. The draft Summary of Product Characteristics (SmPC), Patient Information Leaflet (PIL), an..."
+        },
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m1_manufacturer_gmp:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m1_manufacturer_gmp",
+          "section_title": "Manufacturer and GMP Evidence",
+          "score": 0.18438,
+          "snippet": "The primary commercial manufacturing site for the finished pharmaceutical product is Gaborone Life Sciences, located in Botswana. The facility was subject to a comprehensive GMP inspection by a recognized stringent regul..."
+        },
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m3_stability:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m3_stability",
+          "section_title": "Stability and Shelf-Life Justification",
+          "score": 0.17469,
+          "snippet": "A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. Data from both accelerated (40\u00b0C/75% RH for 6 months) and long-term storage conditions (spanning up to 36 mon..."
+        },
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m2_quality_overall_summary:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m2_quality_overall_summary",
+          "section_title": "Quality Overall Summary",
+          "score": 0.15295,
+          "snippet": "This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for doxycycline. The control strategy justifies the proposed specifications for both the active s..."
+        },
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m3_api_quality:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m3_api_quality",
+          "section_title": "API Quality and Control Strategy",
+          "score": 0.14732,
+          "snippet": "The active pharmaceutical ingredient (API) section details the complete synthesis route, starting from well-defined regulatory starting materials. Robust in-process controls and intermediate specifications ensure the con..."
+        },
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m5_pivotal_trial_reports:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m5_pivotal_trial_reports",
+          "section_title": "Pivotal Clinical Trial Reports",
+          "score": 0.13575,
+          "snippet": "Detailed clinical study reports (CSRs) for the pivotal efficacy trials are provided. These randomized, double-blind, actively-controlled trials evaluated the primary and secondary endpoints in accordance with the pre-spe..."
+        },
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m4_nonclinical_summary:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m4_nonclinical_summary",
+          "section_title": "Nonclinical Study Summary",
+          "score": 0.13317,
+          "snippet": "The nonclinical testing program evaluated the primary pharmacodynamics, secondary pharmacodynamics, safety pharmacology, and comprehensive toxicology profile of the compound. Repeat-dose toxicity studies in two mammalian..."
+        },
+        {
+          "citation_id": "WF-RESERVE_FAST_TRACK-20260417_222251:m3_fpp_manufacturing:c1",
+          "dossier_id": "WF-RESERVE_FAST_TRACK-20260417_222251",
+          "section_id": "m3_fpp_manufacturing",
+          "section_title": "FPP Manufacturing Process and Controls",
+          "score": 0.13293,
+          "snippet": "The finished pharmaceutical product (FPP) manufacturing process utilizes standard, scalable unit operations. A formal quality risk assessment (e.g., FMEA) was conducted to identify critical process parameters (CPPs) that..."
+        }
+      ],
+      "verifier": {
+        "grounded_claim_rate": 1.0,
+        "unsupported_critical_claim_rate": 0.0,
+        "passed": true
+      },
+      "memory": {
+        "process_rss_gb": 0.9757,
+        "system_total_ram_gb": 31.7568,
+        "system_available_ram_gb": 11.647,
+        "system_used_ram_percent": 63.3,
+        "min_free_ram_gb": 0.5,
+        "standard_route_rss_limit_gb": 20.0,
+        "fallback_route_rss_limit_gb": 26.0,
+        "within_budget": true
+      },
+      "lineage_tags": {
+        "data_classification": "synthetic",
+        "data_version": "balanced_v1_2026-04-05",
+        "split_version": "balanced_v1_2026-04-05",
+        "model_policy": "local_multi_model",
+        "model_id": "gemma-e4b",
+        "prompt_version": "review_v1",
+        "route_profile": "fallback"
+      },
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "cefiderocol",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "cefiderocol",
+        "parent_compound": "cefiderocol",
+        "pubchem_cid": "121338436",
+        "canonical_smiles": "CC1=C(C(=O)N2CC(C(N2C1=O)C(=O)O)=C(O)CSc1nnnn1-c1ccccc1)C(=O)O)O",
+        "inchikey": "HBPSMMXRESDUSG-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL4594438",
+        "unichem_id": "UC121338436",
+        "aware_category": "reserve",
+        "amr_unmet_need": "critical",
+        "targets_mdr_pathogen": true,
+        "glass_resistance_trend": "rising",
+        "similarity_to_existing_watch": "low",
+        "existing_watch_comparator": "not_applicable",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "restricted_authorization",
+        "fast_track_candidate": true,
+        "restricted_authorization": true,
+        "watch_similarity_restriction": false,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to cefiderocol.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved cefiderocol as reserve.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved cefiderocol trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as low against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety cefiderocol, parent compound cefiderocol, PubChem CID 121338436, ChEMBL CHEMBL4594438, and UniChem UC121338436."
+        ],
+        "rationale": "Reserve antibiotic targets a critical MDR unmet need and is eligible for accelerated review. Restricted authorization is recommended to preserve last-resort effectiveness. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to cefiderocol. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved cefiderocol as reserve. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved cefiderocol trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as low against comparator not_applicable. Chemistry snapshot provided active moiety cefiderocol, parent compound cefiderocol, PubChem CID 121338436, ChEMBL CHEMBL4594438, and UniChem UC121338436."
+      },
+      "metrics": {
+        "latency_seconds": 0.092,
+        "input_tokens_estimate": 1596,
+        "output_tokens_estimate": 899
+      },
+      "visualization_data": null
+    },
+    "email_subject": "Structured Workflow Review Report - WF-RESERVE_FAST_TRACK-20260417_222251 - approval_granted",
+    "email_body": "Structured Workflow Review Report - WF-RESERVE_FAST_TRACK-20260417_222251\n\nSubmission Summary\n- Dossier Id: WF-RESERVE_FAST_TRACK-20260417_222251\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: Reserve Review Demo\n- Active Ingredient: cefiderocol\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: fast_track\n\nAdministrative Review Outcome\n- Status: administratively_complete\n- No administrative violations were detected from the available dossier evidence.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: Reserve Review Demo\n- Who Inn: respivox\n- Similarity Index: 0.6939\n- Threshold: 0.7\n- Threshold Result: passed\n- Similarity Type: orthographic\n- Interpretation: No INN infringement detected for 'Reserve Review Demo'.\n- Flag Status: acceptable_naming\n- Rule Consequence: No blocking INN naming issue was identified.\n\nSection-by-Section Scientific And Regulatory Findings\n- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True\n- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True"
+  },
+  "email_subject": "Structured Workflow Review Report - WF-RESERVE_FAST_TRACK-20260417_222251 - approval_granted",
+  "email_body": "Structured Workflow Review Report - WF-RESERVE_FAST_TRACK-20260417_222251\n\nSubmission Summary\n- Dossier Id: WF-RESERVE_FAST_TRACK-20260417_222251\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: Reserve Review Demo\n- Active Ingredient: cefiderocol\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: fast_track\n\nAdministrative Review Outcome\n- Status: administratively_complete\n- No administrative violations were detected from the available dossier evidence.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: Reserve Review Demo\n- Who Inn: respivox\n- Similarity Index: 0.6939\n- Threshold: 0.7\n- Threshold Result: passed\n- Similarity Type: orthographic\n- Interpretation: No INN infringement detected for 'Reserve Review Demo'.\n- Flag Status: acceptable_naming\n- Rule Consequence: No blocking INN naming issue was identified.\n\nSection-by-Section Scientific And Regulatory Findings\n- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True\n- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True"
+}

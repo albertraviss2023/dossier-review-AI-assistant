@@ -1,0 +1,111 @@
+{
+  "dossier_id": "INTAKE-1776107808838",
+  "country": "Uganda",
+  "submission_date": "2026-04-13",
+  "product": {
+    "product_name": "Incoming dossier",
+    "inn_name": "unknown",
+    "atc_code": "unknown",
+    "dosage_form": "unknown",
+    "strength": "unknown"
+  },
+  "organization": {
+    "applicant": "Unknown applicant",
+    "manufacturer": "Unknown manufacturer",
+    "facility_country": "Unknown"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "not_applicable",
+    "amr_unmet_need": "not_applicable",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "not_applicable",
+    "similarity_to_existing_watch": "not_applicable",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "sections": [
+    {
+      "section_id": "m1_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "GMP certificate remains valid and CAPA closure evidence is attached.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 68
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "Primary endpoint was met in the pivotal study for an uncomplicated bacterial infection.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 87
+      }
+    },
+    {
+      "section_id": "m5_stewardship",
+      "module": "5",
+      "title": "AMR Stewardship Narrative",
+      "text": "Access category product for routine antibacterial use with standard stewardship monitoring and stable local resistance trends.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 126
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "standard_review",
+    "risk_score": 0.5,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": false,
+    "defect_modes": [],
+    "ingestion_mode": "raw_file_intake",
+    "source_filename": "incoming_access_standard_submission.pdf",
+    "extraction": {
+      "extraction_method": "pdf_text_layer",
+      "page_count": 1,
+      "image_count": 0,
+      "ocr_used": false,
+      "warnings": []
+    }
+  }
+}

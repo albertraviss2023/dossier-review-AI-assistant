@@ -1,0 +1,129 @@
+{
+  "dossier_id": "SIM-SCANNED-20260511_195526",
+  "country": "Uganda",
+  "submission_date": "2026-04-18",
+  "product": {
+    "product_name": "Scanned Review Demo",
+    "inn_name": "levofloxacin",
+    "atc_code": "unknown",
+    "dosage_form": "unknown",
+    "strength": "unknown"
+  },
+  "organization": {
+    "applicant": "Demo Applicant",
+    "manufacturer": "Demo Manufacturer",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "expired",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "expired",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "inconclusive",
+    "aware_category": "watch",
+    "amr_unmet_need": "moderate",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "stable",
+    "similarity_to_existing_watch": "low",
+    "existing_watch_comparator": "levofloxacin"
+  },
+  "sections": [
+    {
+      "section_id": "raw_section_1",
+      "module": "raw",
+      "title": "Imported Section 1",
+      "text": "Scanned IncomingPDF\nManufacturerand GMP Evidence\nGMPcertificate expired and critic\nClinical Overview and Benefit-Risk Summary\nPrimaryendpoint was not metand the reviewer needsreturn-for-completion action.\n\nAMRStewardship Narrative\nWatch-classimilarity remains highand resistance concernsare rising\nThe chemistrycomperatorislevofloxacinand additional restrictionsmayaply",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 369
+      }
+    },
+    {
+      "section_id": "visual_page_1",
+      "module": "visual",
+      "title": "Visual Evidence Summary - Page 1",
+      "text": "Visual evidence type: gmp certificate or site evidence. Visual evidence suggests an expired GMP certificate or expired quality evidence.\n\nOCR excerpt: Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expired and critic Clinical Overview and Benefit-Risk Summary Primaryendpoint was not metand the reviewer needsreturn-for-completion action.",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 355
+      }
+    },
+    {
+      "section_id": "visual_page_2",
+      "module": "visual",
+      "title": "Visual Evidence Summary - Page 2",
+      "text": "Visual evidence type: general visual attachment. Visual evidence OCR highlights: AMRStewardship Narrative Watch-classimilarity remains highand resistance concernsare rising The chemistrycomperatorislevofloxacinand additional restrictionsmayaply\n\nOCR excerpt: AMRStewardship Narrative Watch-classimilarity remains highand resistance concernsare rising The chemistrycomperatorislevofloxacinand additional restrictionsmayaply",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 422
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "additional_information_required",
+    "risk_score": 0.11,
+    "compliant_submission": false,
+    "review_program": "marketing_authorization"
+  },
+  "review_program": "marketing_authorization",
+  "provenance": {
+    "synthetic": false,
+    "defect_modes": [],
+    "ingestion_mode": "raw_file_intake",
+    "source_filename": "incoming_scanned_quality_failure.pdf",
+    "extraction": {
+      "extraction_method": "pdf_ocr",
+      "page_count": 2,
+      "image_count": 2,
+      "ocr_used": true,
+      "warnings": [
+        "ocr_fallback_used"
+      ],
+      "visual_evidence": [
+        {
+          "page_number": 1,
+          "evidence_type": "gmp_certificate_or_site_evidence",
+          "summary": "Visual evidence suggests an expired GMP certificate or expired quality evidence.",
+          "ocr_excerpt": "Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expired and critic Clinical Overview and Benefit-Risk Summary Primaryendpoint was not metand the reviewer needsreturn-for-completion action."
+        },
+        {
+          "page_number": 2,
+          "evidence_type": "general_visual_attachment",
+          "summary": "Visual evidence OCR highlights: AMRStewardship Narrative Watch-classimilarity remains highand resistance concernsare rising The chemistrycomperatorislevofloxacinand additional restrictionsmayaply",
+          "ocr_excerpt": "AMRStewardship Narrative Watch-classimilarity remains highand resistance concernsare rising The chemistrycomperatorislevofloxacinand additional restrictionsmayaply"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "section_id": "m1_pil",
+  "section_name": "Patient Information Leaflet",
+  "quality": "correct",
+  "required_fields_present": [
+    "route_of_administration",
+    "dosage_form",
+    "strength",
+    "patient_instructions",
+    "warnings",
+    "storage_conditions",
+    "adverse_effects"
+  ],
+  "text": "Patient Information Leaflet\nProduct: Synthetic Ceftriaxone Product 1 g powder for injection.\nRoute and form: Intravenous / intramuscular powder for injection.\nInstructions: Reconstitute and administer only by trained healthcare professionals.\nWarnings: Hypersensitivity to cephalosporins; severe allergic reactions; antibiotic-associated diarrhoea.\nStorage: Store below 30C. Protect from moisture and light.\nAdverse effects: diarrhoea, rash, nausea; serious reactions require urgent medical attention."
+}

@@ -1,0 +1,160 @@
+{
+  "report_id": "robustness_simulation_20260417_213706",
+  "executed_at_utc": "2026-04-17T21:38:29.337624",
+  "total_scenarios": 10,
+  "passed_scenarios": 10,
+  "failed_scenarios": 0,
+  "scenario_results": [
+    {
+      "scenario_id": "S1",
+      "category": "greeting_and_naturalness",
+      "prompt": "hi fried",
+      "passed": true,
+      "dossier_id": null,
+      "notes": [
+        "Expected a natural greeting response rather than dossier-heavy content."
+      ],
+      "response_excerpt": "Hi friend. I am ready to assist. You can ask for dossier review, issue discovery, policy guidance, AMR stewardship analysis, or a report-focused summary.",
+      "recommendation": null,
+      "route": "chat_only",
+      "citations": 0
+    },
+    {
+      "scenario_id": "S2",
+      "category": "typo_issue_discovery",
+      "prompt": "identfy key isues and contrdictions in this dossir",
+      "passed": true,
+      "dossier_id": "SIM-WATCH-20260417_213706",
+      "notes": [
+        "Expected typo-tolerant issue discovery with citations."
+      ],
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Watch Review Demo'.\n\n**AMR St",
+      "recommendation": "additional_information_required",
+      "route": "fallback",
+      "citations": 3
+    },
+    {
+      "scenario_id": "S3",
+      "category": "query_expansion_stability",
+      "prompt": "review stablity snd shelf lif justifcation",
+      "passed": true,
+      "dossier_id": "SIM-STANDARD-20260417_213706",
+      "notes": [
+        "Expected stability-oriented retrieval despite typos."
+      ],
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Demo Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Standard Review Demo'.\n\n**AMR Stewardshi",
+      "recommendation": "approval_granted",
+      "route": "fallback",
+      "citations": 6
+    },
+    {
+      "scenario_id": "S4",
+      "category": "reranking_specificity",
+      "prompt": "focus on gmp cert expirry, not clinical",
+      "passed": true,
+      "dossier_id": "SIM-SCANNED-20260417_213706",
+      "notes": [
+        "Expected GMP-specific evidence to outrank unrelated clinical material."
+      ],
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **3** unresolved requirement-level concerns. The primary manufacturing site is identified as **Demo Manufacturer**, located in **Uganda**",
+      "recommendation": "additional_information_required",
+      "route": "fallback",
+      "citations": 2
+    },
+    {
+      "scenario_id": "S5",
+      "category": "ambiguous_followup",
+      "prompt": "so can we move ahead with this one?",
+      "passed": true,
+      "dossier_id": "SIM-WATCH-20260417_213706",
+      "notes": [
+        "Expected the assistant to resolve the ambiguous follow-up using conversation context."
+      ],
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-c",
+      "recommendation": "additional_information_required",
+      "route": "fallback",
+      "citations": 4
+    },
+    {
+      "scenario_id": "S6",
+      "category": "guidance_and_mcp_routing",
+      "prompt": "what reviwer guidnce and who aware poicy applies here?",
+      "passed": true,
+      "dossier_id": "SIM-WATCH-20260417_213706",
+      "notes": [
+        "Expected routed guidance response using the unified assistant path."
+      ],
+      "response_excerpt": "I found guidance that is relevant to this review question:\n- Active dossier context: **Watch Review Demo** (levofloxacin).\n- WHO AWaRe and GLASS Policy Stack - AWaRe Source of Truth: WHO AWaRe and GLASS Policy Stack. AWaRe Source of Truth.AWaRe Source of Truth WHO AWaRe is the authoritative source for Access, Watch, and Reserve assignment. Production policy dec... [knowledge_wiki:who-aware-and-gla",
+      "recommendation": null,
+      "route": "knowledge_wiki",
+      "citations": 4
+    },
+    {
+      "scenario_id": "S7",
+      "category": "amr_stewardship_decision",
+      "prompt": "does this require restricted authoriztion and why?",
+      "passed": true,
+      "dossier_id": "SIM-WATCH-20260417_213706",
+      "notes": [
+        "Expected stewardship reasoning and authorization-control output."
+      ],
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Watch Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-c",
+      "recommendation": "additional_information_required",
+      "route": "fallback",
+      "citations": 2
+    },
+    {
+      "scenario_id": "S8",
+      "category": "hallucination_resistance",
+      "prompt": "what exact humidity was the storage room set to?",
+      "passed": true,
+      "dossier_id": "SIM-STANDARD-20260417_213706",
+      "notes": [
+        "Expected abstention or explicit silence when the dossier does not provide the requested fact."
+      ],
+      "response_excerpt": "Abstained because no evidence chunks were retrieved for the request.",
+      "recommendation": "abstain",
+      "route": "fallback",
+      "citations": 0
+    },
+    {
+      "scenario_id": "S9",
+      "category": "user_error_wrong_dossier",
+      "prompt": "summarize dossier",
+      "passed": true,
+      "dossier_id": "DOS-NOT-REAL",
+      "notes": [
+        "Expected a graceful not-found response for an invalid dossier id."
+      ],
+      "response_excerpt": "{\"detail\":\"Dossier DOS-NOT-REAL not found\"}",
+      "recommendation": null,
+      "route": null,
+      "citations": 0
+    },
+    {
+      "scenario_id": "S10",
+      "category": "chain_of_thought_pipeline",
+      "prompt": "review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations.",
+      "passed": true,
+      "dossier_id": "SIM-SCANNED-20260417_213706",
+      "notes": [
+        "Expected reasoning trace, final recommendation, and citations in the end-to-end pipeline."
+      ],
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AM",
+      "recommendation": "additional_information_required",
+      "route": "fallback",
+      "citations": 2
+    }
+  ],
+  "final_review_report": {
+    "report_id": "report-15e7c9fbcf97",
+    "dossier_id": "SIM-SCANNED-20260417_213706",
+    "message": "Reviewer report generated successfully.",
+    "report_title": "Robustness Final Review Report - SIM-SCANNED-20260417_213706",
+    "html_download_url": "/v1/reports/report-15e7c9fbcf97/html",
+    "text_download_url": "/v1/reports/report-15e7c9fbcf97/text",
+    "json_download_url": "/v1/reports/report-15e7c9fbcf97/json",
+    "email_subject": "Robustness Final Review Report - SIM-SCANNED-20260417_213706 - additional_information_required",
+    "email_body": "Robustness Final Review Report - SIM-SCANNED-20260417_213706\nDossier: SIM-SCANNED-20260417_213706\nProduct: Scanned Review Demo\nApplicant: Demo Applicant\nRecommendation: additional_information_required\nConfidence: 0.56701\nAuthorization: restricted_authorization\n\nExecutive Summary\n### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096. A restricted authorization is triggered due to **high** chemical similarity to ciprofloxacin. Furthermore, local GLASS surveillance data indicates rising resistance trends, increasing the regulatory risk.\n\n### Detailed Findings\n\nI have prioritized the following **3** key issues based on their likely regulatory impact:\n\n1. **MAJOR**: GMP and manufacturing quality evidence - Manufacturing quality evidence shows non-compliance or expired certification. [SIM-SCANNED-20260417_213706:visual_page_1:c1]\n\n2. **MAJOR**: Clinical efficacy and benefit-risk support - Clinical support is insufficient because the pivotal endpoint failed or remains unclear. [SIM-SCANNED-20260417_213706:visual_page_1:c1]\n\n3. **MAJOR**: AMR stewardship alignment - Stewardship review applies and authorization controls are required. [SIM-SCANNED-20260417_213706:raw_section_1:c1]\n\n### Conclusion. In conclusion, **Additional Information Required** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents.\n\nFindings Across Criteria\n- **Scanned Review Demo** (INN: levofloxacin) submitted by **Demo Applicant** was assessed for pre-market authorization.\n- The system recommendation is **Additional Information Required** through the **Fallback** review path.\n- Decision-driving policy signals: Gmp Expired, Gmp Certificate Expired, Policy Information Gap, Restricted Authorization.\n- No critical dossier criteria were flagged as missing, malformed, or incorrect in the current review pass.\n- Groundedness verification **passed** with a grounded claim rate of 1.0.\n- AMR stewardship outcome: **AWaRe WATCH**, GLASS trend **Rising**, authorization control **Restricted Authorization**.\n\nCriteria Diagnostics"
+  }
+}

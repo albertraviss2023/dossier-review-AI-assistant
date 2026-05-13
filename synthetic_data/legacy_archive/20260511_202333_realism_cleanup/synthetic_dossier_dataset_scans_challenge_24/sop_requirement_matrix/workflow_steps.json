@@ -1,0 +1,62 @@
+[
+  {
+    "step_id": 1,
+    "step_key": "submission_intake_and_familiarization",
+    "step_label": "Submission intake and familiarization"
+  },
+  {
+    "step_id": 2,
+    "step_key": "administrative_completeness_review",
+    "step_label": "Administrative completeness review"
+  },
+  {
+    "step_id": 3,
+    "step_key": "structural_dossier_mapping",
+    "step_label": "Structural dossier mapping"
+  },
+  {
+    "step_id": 4,
+    "step_key": "applicable_rules_identification",
+    "step_label": "Applicable rules and requirements identification"
+  },
+  {
+    "step_id": 5,
+    "step_key": "who_inn_similarity_review",
+    "step_label": "WHO INN similarity review"
+  },
+  {
+    "step_id": 6,
+    "step_key": "section_by_section_technical_review",
+    "step_label": "Section-by-section technical review"
+  },
+  {
+    "step_id": 7,
+    "step_key": "amr_stewardship_review",
+    "step_label": "AMR stewardship review using AWaRe rules (conditional)"
+  },
+  {
+    "step_id": 8,
+    "step_key": "findings_register",
+    "step_label": "Identification and recording of findings"
+  },
+  {
+    "step_id": 9,
+    "step_key": "severity_classification",
+    "step_label": "Severity classification"
+  },
+  {
+    "step_id": 10,
+    "step_key": "cross_section_consistency_review",
+    "step_label": "Cross-section consistency review"
+  },
+  {
+    "step_id": 11,
+    "step_key": "review_completeness_confirmation",
+    "step_label": "Review completeness confirmation"
+  },
+  {
+    "step_id": 12,
+    "step_key": "overall_judgment",
+    "step_label": "Overall judgment"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "source_simulation": "D:\\projects\\ai dossier assistant\\state\\reports\\workflow_simulation_20260508_103430.json",
+  "total_steps": 24,
+  "issue_count": 2,
+  "critical_count": 2,
+  "major_count": 0,
+  "issues": [
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260508_103430",
+      "step_id": 7,
+      "step_name": "AMR Stewardship",
+      "issue": "AMR step lacks policy-depth terms required for decision support.",
+      "severity": "critical",
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Reserve Review Demo** (cefiderocol), submitted by **Workflow Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n###"
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260508_103430",
+      "step_id": 7,
+      "step_name": "AMR Stewardship",
+      "issue": "AMR step lacks policy-depth terms required for decision support.",
+      "severity": "critical",
+      "response_excerpt": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Po"
+    }
+  ],
+  "status": "needs_improvement"
+}

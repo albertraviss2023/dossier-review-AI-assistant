@@ -17,13 +17,13 @@ import json
 import random
 import textwrap
 import uuid
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Dict, List, Tuple
 
 COUNTRIES = ["Tanzania", "Burkina Faso", "Uganda", "Botswana"]
-DOSAGE_FORMS = ["tablet", "capsule", "suspension", "injectable", "cream"]
+DOSAGE_FORMS = ["tablet", "capsule", "suspension", "injectable", "cream", "inhaler", "eye drops", "syrup"]
 APPLICANT_PREFIXES = ["Alpha", "Prime", "National", "Global", "United"]
 ATC_CODES = [
     "A02BC01",
@@ -495,7 +495,121 @@ FILLER_SENTENCES = [
     "Method validation records and quality controls were reviewed for internal consistency.",
     "Risk mitigation activities are documented with ownership, timelines, and follow-up checkpoints.",
     "Where applicable, protocol deviations were assessed for impact on interpretation of outcomes.",
+    "Data were analyzed using a mixed-effects model for repeated measures, adjusting for baseline covariates.",
+    "The analytical procedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating acceptable accuracy, precision, and specificity.",
+    "Adverse events were coded using the Medical Dictionary for Regulatory Activities (MedDRA) version 24.0.",
+    "Pharmacokinetic parameters were derived using non-compartmental analysis from the concentration-time profiles.",
+    "The risk management plan includes routine pharmacovigilance and proposed educational materials for healthcare professionals.",
+    "Stability testing was conducted in climatic zones III and IV, reflecting the intended distribution markets.",
+    "The container closure system consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial standards.",
+    "A randomized, double-blind, parallel-group study design was employed to minimize selection and observer bias.",
+    "Statistical significance was set at an alpha level of 0.05, and all tests were two-sided.",
+    "The manufacturing site operates under a fully implemented Pharmaceutical Quality System (PQS) aligned with ICH Q10.",
 ]
+
+SECTION_FILLER_SENTENCES = {
+    "m1_application_admin": [
+        "Administrative cover letters, declarations, and fee records were cross-checked against the submission index.",
+        "Applicant authorization documents and legal attestations were reconciled against the named manufacturing parties.",
+        "Regional administrative forms were checked for signature completeness and dossier version alignment.",
+        "The proposed prescribing information and patient information leaflet have been translated into local languages.",
+        "A comprehensive table of contents and glossary of abbreviations are provided to facilitate regulatory review.",
+    ],
+    "m1_manufacturer_gmp": [
+        "Inspection history, CAPA closure records, and site responsibilities were reconciled across the manufacturing chain.",
+        "The GMP evidence package includes certificate status, inspection scope, and manufacturing-site accountability records.",
+        "Site quality-system commitments were compared against the proposed commercial manufacturing activities.",
+        "Recent regulatory inspections yielded no critical observations, and all major findings have been effectively closed.",
+        "Batch manufacturing records and standard operating procedures (SOPs) are maintained and archived on-site.",
+    ],
+    "m2_clinical_overview": [
+        "Clinical interpretation focuses on whether efficacy, safety, and benefit-risk conclusions are supported by the submitted evidence.",
+        "The clinical overview links the therapeutic rationale to the pivotal evidence package and the proposed indication.",
+        "Benefit-risk language was reviewed for consistency with the submitted efficacy and safety summaries.",
+        "The target population demographics are broadly representative of the intended commercial patient cohort.",
+        "No new safety signals were identified during the extended open-label follow-up period.",
+    ],
+    "m3_api_quality": [
+        "The API package links specification limits to validated analytical methods and impurity-control decisions.",
+        "Critical material attributes and control strategy elements were reviewed for consistency across the quality dossier.",
+        "Batch analysis, validation, and impurity management records support the proposed API quality framework.",
+        "Residual solvents and elemental impurities are controlled well below ICH Q3C and Q3D permissible daily exposures.",
+        "The synthetic route involves three well-characterized steps with defined starting materials and isolated intermediates.",
+    ],
+    "m5_pivotal_trial_reports": [
+        "The pivotal study narratives align endpoint definitions, analysis populations, and outcome interpretation.",
+        "Clinical study reports document protocol adherence, endpoint handling, and safety interpretation in the target population.",
+        "The trial reports connect efficacy conclusions to the prespecified analysis framework and observed safety findings.",
+        "The primary efficacy endpoint was met, demonstrating a statistically significant improvement over placebo (p < 0.001).",
+        "Discontinuations due to treatment-emergent adverse events (TEAEs) were low and balanced across all study arms.",
+    ],
+}
+
+INN_PRODUCT_PROFILES = {
+    "abacavir": {"atc_code": "J05AF06", "forms": ["tablet"], "strengths": ["300 mg"]},
+    "acyclovir": {"atc_code": "J05AB01", "forms": ["tablet", "suspension"], "strengths": ["200 mg", "400 mg"]},
+    "albendazole": {"atc_code": "P02CA03", "forms": ["tablet", "suspension"], "strengths": ["200 mg", "400 mg"]},
+    "amlodipine": {"atc_code": "C08CA01", "forms": ["tablet"], "strengths": ["5 mg", "10 mg"]},
+    "artemether": {"atc_code": "P01BE01", "forms": ["tablet", "injectable"], "strengths": ["20 mg", "80 mg/mL"]},
+    "atenolol": {"atc_code": "C07AB03", "forms": ["tablet"], "strengths": ["50 mg", "100 mg"]},
+    "atorvastatin": {"atc_code": "C10AA05", "forms": ["tablet"], "strengths": ["10 mg", "20 mg", "40 mg"]},
+    "beclometasone": {"atc_code": "R03BA01", "forms": ["inhaler", "cream"], "strengths": ["100 mcg/dose", "0.05%"]},
+    "bisoprolol": {"atc_code": "C07AB07", "forms": ["tablet"], "strengths": ["2.5 mg", "5 mg", "10 mg"]},
+    "budesonide": {"atc_code": "R03BA02", "forms": ["inhaler"], "strengths": ["100 mcg/dose", "200 mcg/dose"]},
+    "carbamazepine": {"atc_code": "N03AF01", "forms": ["tablet", "suspension"], "strengths": ["200 mg", "400 mg"]},
+    "cetirizine": {"atc_code": "R06AE07", "forms": ["tablet", "syrup"], "strengths": ["10 mg", "1 mg/mL"]},
+    "clobetasol": {"atc_code": "D07AD01", "forms": ["cream"], "strengths": ["0.05%"]},
+    "clopidogrel": {"atc_code": "B01AC04", "forms": ["tablet"], "strengths": ["75 mg"]},
+    "clotrimazole": {"atc_code": "D01AC01", "forms": ["cream"], "strengths": ["1%"]},
+    "dapagliflozin": {"atc_code": "A10BK01", "forms": ["tablet"], "strengths": ["5 mg", "10 mg"]},
+    "dexamethasone": {"atc_code": "H02AB02", "forms": ["tablet", "injectable"], "strengths": ["4 mg", "4 mg/mL"]},
+    "diclofenac": {"atc_code": "M01AB05", "forms": ["tablet", "injectable"], "strengths": ["50 mg", "75 mg/3 mL"]},
+    "efavirenz": {"atc_code": "J05AG03", "forms": ["tablet"], "strengths": ["600 mg"]},
+    "enalapril": {"atc_code": "C09AA02", "forms": ["tablet"], "strengths": ["5 mg", "10 mg", "20 mg"]},
+    "enoxaparin": {"atc_code": "B01AB05", "forms": ["injectable"], "strengths": ["40 mg/0.4 mL", "60 mg/0.6 mL"]},
+    "esomeprazole": {"atc_code": "A02BC05", "forms": ["capsule", "injectable"], "strengths": ["20 mg", "40 mg"]},
+    "fluconazole": {"atc_code": "J02AC01", "forms": ["tablet", "suspension"], "strengths": ["150 mg", "200 mg", "50 mg/5 mL"]},
+    "fluoxetine": {"atc_code": "N06AB03", "forms": ["capsule"], "strengths": ["20 mg"]},
+    "fluticasone": {"atc_code": "R03BA05", "forms": ["inhaler"], "strengths": ["125 mcg/dose", "250 mcg/dose"]},
+    "furosemide": {"atc_code": "C03CA01", "forms": ["tablet", "injectable"], "strengths": ["40 mg", "10 mg/mL"]},
+    "hydrochlorothiazide": {"atc_code": "C03AA03", "forms": ["tablet"], "strengths": ["12.5 mg", "25 mg"]},
+    "hydroxychloroquine": {"atc_code": "P01BA02", "forms": ["tablet"], "strengths": ["200 mg"]},
+    "ibuprofen": {"atc_code": "M01AE01", "forms": ["tablet", "suspension"], "strengths": ["200 mg", "400 mg", "100 mg/5 mL"]},
+    "imatinib": {"atc_code": "L01EA01", "forms": ["tablet"], "strengths": ["100 mg", "400 mg"]},
+    "insulin glargine": {"atc_code": "A10AE04", "forms": ["injectable"], "strengths": ["100 units/mL"]},
+    "isoniazid": {"atc_code": "J04AC01", "forms": ["tablet"], "strengths": ["100 mg", "300 mg"]},
+    "ivermectin": {"atc_code": "P02CF01", "forms": ["tablet"], "strengths": ["3 mg", "6 mg"]},
+    "ketoconazole": {"atc_code": "D01AC08", "forms": ["cream", "tablet"], "strengths": ["2%", "200 mg"]},
+    "levothyroxine": {"atc_code": "H03AA01", "forms": ["tablet"], "strengths": ["50 mcg", "100 mcg"]},
+    "loratadine": {"atc_code": "R06AX13", "forms": ["tablet", "syrup"], "strengths": ["10 mg", "1 mg/mL"]},
+    "losartan": {"atc_code": "C09CA01", "forms": ["tablet"], "strengths": ["50 mg", "100 mg"]},
+    "metformin": {"atc_code": "A10BA02", "forms": ["tablet"], "strengths": ["500 mg", "850 mg", "1000 mg"]},
+    "metoprolol": {"atc_code": "C07AB02", "forms": ["tablet"], "strengths": ["50 mg", "100 mg"]},
+    "naproxen": {"atc_code": "M01AE02", "forms": ["tablet"], "strengths": ["250 mg", "500 mg"]},
+    "nifedipine": {"atc_code": "C08CA05", "forms": ["tablet"], "strengths": ["20 mg", "30 mg"]},
+    "omeprazole": {"atc_code": "A02BC01", "forms": ["capsule"], "strengths": ["20 mg", "40 mg"]},
+    "ondansetron": {"atc_code": "A04AA01", "forms": ["tablet", "injectable"], "strengths": ["4 mg", "8 mg"]},
+    "oseltamivir": {"atc_code": "J05AH02", "forms": ["capsule", "suspension"], "strengths": ["30 mg", "75 mg"]},
+    "paracetamol": {"atc_code": "N02BE01", "forms": ["tablet", "suspension"], "strengths": ["500 mg", "1000 mg", "120 mg/5 mL"]},
+    "phenobarbital": {"atc_code": "N03AA02", "forms": ["tablet"], "strengths": ["30 mg", "60 mg"]},
+    "praziquantel": {"atc_code": "P02BA01", "forms": ["tablet"], "strengths": ["600 mg"]},
+    "prednisolone": {"atc_code": "H02AB06", "forms": ["tablet"], "strengths": ["5 mg", "20 mg"]},
+    "propranolol": {"atc_code": "C07AA05", "forms": ["tablet"], "strengths": ["40 mg", "80 mg"]},
+    "pyrazinamide": {"atc_code": "J04AK01", "forms": ["tablet"], "strengths": ["500 mg"]},
+    "ritonavir": {"atc_code": "J05AE03", "forms": ["tablet"], "strengths": ["100 mg"]},
+    "salbutamol": {"atc_code": "R03AC02", "forms": ["inhaler"], "strengths": ["100 mcg/dose"]},
+    "sertraline": {"atc_code": "N06AB06", "forms": ["tablet"], "strengths": ["50 mg", "100 mg"]},
+    "simvastatin": {"atc_code": "C10AA01", "forms": ["tablet"], "strengths": ["20 mg", "40 mg"]},
+    "spironolactone": {"atc_code": "C03DA01", "forms": ["tablet"], "strengths": ["25 mg", "50 mg"]},
+    "tamoxifen": {"atc_code": "L02BA01", "forms": ["tablet"], "strengths": ["20 mg"]},
+    "tenofovir disoproxil": {"atc_code": "J05AF07", "forms": ["tablet"], "strengths": ["300 mg"]},
+    "timolol": {"atc_code": "S01ED01", "forms": ["eye drops"], "strengths": ["0.25%", "0.5%"]},
+    "tramadol": {"atc_code": "N02AX02", "forms": ["capsule", "injectable"], "strengths": ["50 mg", "100 mg/2 mL"]},
+    "valaciclovir": {"atc_code": "J05AB11", "forms": ["tablet"], "strengths": ["500 mg"]},
+    "valsartan": {"atc_code": "C09CA03", "forms": ["tablet"], "strengths": ["80 mg", "160 mg"]},
+    "warfarin": {"atc_code": "B01AA03", "forms": ["tablet"], "strengths": ["5 mg"]},
+    "zidovudine": {"atc_code": "J05AF01", "forms": ["tablet", "syrup"], "strengths": ["300 mg", "50 mg/5 mL"]},
+}
 
 
 @dataclass
@@ -527,6 +641,7 @@ class Context:
     similarity_to_existing_watch: str
     existing_watch_comparator: str
     defects: List[str]
+    used_filler_sentences: set[str] = field(default_factory=set)
 
 
 def parse_args() -> argparse.Namespace:
@@ -591,6 +706,104 @@ def generate_brand_name(rng: random.Random) -> str:
     prefixes = ["Nova", "Cura", "Vita", "Medi", "Thera", "Heal", "Pharma"]
     suffixes = ["line", "plus", "care", "med", "fex", "zyme", "aid"]
     return f"{rng.choice(prefixes)}{rng.choice(suffixes)}"
+
+
+def generate_brand_name_for_inn(rng: random.Random, inn: str) -> str:
+    stem = "".join(part[:4] for part in inn.split())[:6].capitalize()
+    suffixes = ["ra", "via", "med", "care", "nova", "zen"]
+    return f"{stem}{rng.choice(suffixes)}"
+
+
+def resolve_non_antibacterial_profile(inn: str) -> dict[str, list[str] | str]:
+    profile = INN_PRODUCT_PROFILES.get(inn)
+    if profile:
+        return profile
+
+    topical_inns = {"clobetasol", "clotrimazole", "ketoconazole"}
+    inhaled_inns = {"salbutamol", "budesonide", "fluticasone"}
+    ophthalmic_inns = {"timolol"}
+    injectable_inns = {"insulin glargine", "enoxaparin"}
+    antihypertensives = {"captopril", "carvedilol", "diltiazem", "digoxin", "isosorbide mononitrate", "lisinopril"}
+    analgesics = {"aceclofenac", "codeine", "etoricoxib"}
+    psychiatric_neuro = {"baclofen", "diazepam", "donepezil", "gabapentin", "haloperidol"}
+    endocrine_metabolic = {"allopurinol", "glibenclamide", "gliclazide"}
+    oncology_immunology = {"abiraterone", "adalimumab", "azathioprine", "cyclophosphamide", "cyclosporine", "methotrexate"}
+    antiviral_agents = {"lamivudine", "nevirapine", "dolutegravir"}
+    gi_agents = {"famotidine"}
+
+    if inn in topical_inns:
+        return {"atc_code": "D01AC08", "forms": ["cream"], "strengths": ["1%"]}
+    if inn in inhaled_inns:
+        return {"atc_code": "R03AC02", "forms": ["inhaler"], "strengths": ["100 mcg/dose"]}
+    if inn in ophthalmic_inns:
+        return {"atc_code": "S01ED01", "forms": ["eye drops"], "strengths": ["0.5%"]}
+    if inn in injectable_inns:
+        return {"atc_code": "B01AB05", "forms": ["injectable"], "strengths": ["100 units/mL"]}
+    if inn in antihypertensives:
+        return {"atc_code": "C09AA02", "forms": ["tablet"], "strengths": ["5 mg", "10 mg", "20 mg"]}
+    if inn in analgesics:
+        return {"atc_code": "M01AE01", "forms": ["tablet", "capsule"], "strengths": ["50 mg", "100 mg", "200 mg"]}
+    if inn in psychiatric_neuro:
+        return {"atc_code": "N05BA01", "forms": ["tablet"], "strengths": ["5 mg", "10 mg", "25 mg", "100 mg"]}
+    if inn in endocrine_metabolic:
+        return {"atc_code": "A10BB12", "forms": ["tablet"], "strengths": ["5 mg", "80 mg", "100 mg", "300 mg"]}
+    if inn in oncology_immunology:
+        return {"atc_code": "L01XE01", "forms": ["tablet", "injectable"], "strengths": ["2.5 mg", "50 mg", "100 mg", "500 mg"]}
+    if inn in antiviral_agents:
+        return {"atc_code": "J05AF10", "forms": ["tablet"], "strengths": ["50 mg", "150 mg", "300 mg"]}
+    if inn in gi_agents:
+        return {"atc_code": "A02BA03", "forms": ["tablet"], "strengths": ["20 mg", "40 mg"]}
+    return {"atc_code": "A10BA02", "forms": ["tablet"], "strengths": ["500 mg", "850 mg"]}
+
+
+def resolve_antibacterial_form_strength(inn: str) -> tuple[list[str], list[str]]:
+    injectable_only = {"amikacin", "benzylpenicillin", "ceftriaxone", "cefiderocol", "colistin", "gentamicin", "vancomycin", "piperacillin"}
+    oral_and_injectable = {"linezolid", "metronidazole", "levofloxacin"}
+    pediatric_oral = {"amoxicillin", "ampicillin", "azithromycin", "cefalexin", "cefixime", "cefpodoxime", "clarithromycin"}
+    fluoroquinolones = {"ciprofloxacin", "levofloxacin", "moxifloxacin"}
+
+    if inn in injectable_only:
+        return ["injectable"], ["1 g/vial", "500 mg/vial"]
+    if inn in oral_and_injectable:
+        return ["tablet", "injectable"], ["500 mg", "600 mg", "400 mg/200 mL"]
+    if inn in pediatric_oral:
+        return ["tablet", "capsule", "suspension"], ["250 mg", "500 mg", "125 mg/5 mL"]
+    if inn in fluoroquinolones:
+        return ["tablet", "injectable"], ["500 mg", "750 mg", "5 mg/mL"]
+    return ["tablet", "capsule"], ["250 mg", "500 mg"]
+
+
+def strength_matches_form(dosage_form: str, strength: str) -> bool:
+    lowered = strength.lower()
+    if dosage_form in {"tablet", "capsule"}:
+        return all(token not in lowered for token in ("/ml", "/5 ml", "/200 ml", "/0.4 ml", "/0.6 ml", "/vial", "%", "dose", "units/ml"))
+    if dosage_form in {"suspension", "syrup"}:
+        return any(token in lowered for token in ("/ml", "/5 ml"))
+    if dosage_form == "injectable":
+        return any(token in lowered for token in ("/ml", "/vial", "units/ml"))
+    if dosage_form in {"cream", "eye drops"}:
+        return "%" in lowered
+    if dosage_form == "inhaler":
+        return "dose" in lowered
+    return True
+
+
+def resolve_product_profile(rng: random.Random, inn: str) -> tuple[str, str, str, str]:
+    antibacterial_profile = ANTIBIOTIC_PROFILES.get(inn)
+    if antibacterial_profile:
+        atc_code = str(antibacterial_profile["atc_code"])
+        forms, strengths = resolve_antibacterial_form_strength(inn)
+        dosage_form = rng.choice(forms)
+        compatible_strengths = [strength for strength in strengths if strength_matches_form(dosage_form, strength)]
+        strength = rng.choice(compatible_strengths or strengths)
+        return atc_code, dosage_form, strength, generate_brand_name_for_inn(rng, inn)
+
+    profile = resolve_non_antibacterial_profile(inn)
+    dosage_form = rng.choice(list(profile["forms"]))
+    strengths = list(profile["strengths"])
+    compatible_strengths = [strength for strength in strengths if strength_matches_form(dosage_form, strength)]
+    strength = rng.choice(compatible_strengths or strengths)
+    return str(profile["atc_code"]), dosage_form, strength, generate_brand_name_for_inn(rng, inn)
 
 
 def build_antibacterial_profile(rng: random.Random, inn: str) -> Dict[str, str | bool]:
@@ -682,10 +895,10 @@ def amr_clinical_statement(ctx: Context) -> str:
 
 def build_base_context(rng: random.Random) -> Context:
     inn = rng.choice(INN_POOL)
+    atc_code, dosage_form, strength, product_name = resolve_product_profile(rng, inn)
     antibacterial_profile = ANTIBIOTIC_PROFILES.get(inn)
     if antibacterial_profile:
         amr_profile = build_antibacterial_profile(rng, inn)
-        atc_code = str(amr_profile["atc_code"])
         therapeutic_area = str(amr_profile["therapeutic_area"])
         aware_category = str(amr_profile["aware_category"])
         amr_unmet_need = str(amr_profile["amr_unmet_need"])
@@ -694,7 +907,6 @@ def build_base_context(rng: random.Random) -> Context:
         similarity_to_existing_watch = str(amr_profile["similarity_to_existing_watch"])
         existing_watch_comparator = str(amr_profile["existing_watch_comparator"])
     else:
-        atc_code = rng.choice(NON_ANTIBACTERIAL_ATC_CODES)
         therapeutic_area = "non_antibacterial"
         aware_category = "not_applicable"
         amr_unmet_need = "not_applicable"
@@ -709,11 +921,11 @@ def build_base_context(rng: random.Random) -> Context:
         dossier_id=f"DOS-{uuid.uuid4().hex[:10].upper()}",
         country=rng.choice(COUNTRIES),
         submission_date=submission.isoformat(),
-        product_name=generate_brand_name(rng),
+        product_name=product_name,
         inn_name=inn,
         atc_code=atc_code,
-        dosage_form=rng.choice(DOSAGE_FORMS),
-        strength=f"{rng.choice([125, 250, 500, 850, 1000])} mg",
+        dosage_form=dosage_form,
+        strength=strength,
         applicant=f"{rng.choice(APPLICANT_PREFIXES)} Therapeutics",
         manufacturer=rng.choice(MANUFACTURERS),
         facility_country=rng.choice(COUNTRIES),
@@ -739,71 +951,129 @@ def build_base_context(rng: random.Random) -> Context:
 
 def pad_to_target_length(rng: random.Random, text: str, target_length: int) -> str:
     out = text.strip()
+    filler_pool = list(FILLER_SENTENCES)
     while len(out) < target_length:
-        out += " " + rng.choice(FILLER_SENTENCES)
+        unused = [sentence for sentence in filler_pool if sentence not in out]
+        next_sentence = rng.choice(unused or filler_pool)
+        out += " " + next_sentence
+    return out[:target_length]
+
+
+def pad_section_text(rng: random.Random, section_id: str, text: str, target_length: int) -> str:
+    out = text.strip()
+    section_fillers = SECTION_FILLER_SENTENCES.get(section_id, [])
+    filler_pool = section_fillers + FILLER_SENTENCES
+    while len(out) < target_length:
+        unused = [sentence for sentence in filler_pool if sentence not in out]
+        next_sentence = rng.choice(unused or filler_pool)
+        out += " " + next_sentence
     return out[:target_length]
 
 
 def compose_section_text(rng: random.Random, section_id: str, ctx: Context, target_length: int) -> str:
     templates = {
         "m1_application_admin": (
-            f"Application dossier for {ctx.product_name} ({ctx.inn_name}) submitted on {ctx.submission_date} "
-            f"to the {ctx.country} authority. Applicant: {ctx.applicant}. Proposed dosage form: {ctx.dosage_form}; "
-            f"strength: {ctx.strength}; ATC: {ctx.atc_code}. Administrative declarations, legal attestations, and "
-            "regional forms are complete and signed."
+            f"This dossier constitutes a formal application for Marketing Authorization of {ctx.product_name} ({ctx.inn_name}) "
+            f"submitted on {ctx.submission_date} to the national regulatory authority of {ctx.country}. "
+            f"The applicant, {ctx.applicant}, formally requests approval for the commercial distribution of this medicinal product. "
+            f"The proposed pharmaceutical form is {ctx.dosage_form} with a strength of {ctx.strength}, "
+            f"classified under ATC code {ctx.atc_code}. All required administrative declarations, legal attestations, "
+            f"letters of authorization, and regional application forms have been completed, signed by the responsible "
+            f"Qualified Person, and appended to Module 1."
         ),
         "m1_manufacturer_gmp": (
-            f"Primary manufacturing site: {ctx.manufacturer} in {ctx.facility_country}. Latest GMP inspection date: "
-            f"{ctx.gmp_last_inspection}. GMP status: {ctx.gmp_status}. GMP certificate number: {ctx.gmp_certificate_number}; "
-            f"certificate expiry: {ctx.gmp_certificate_expiry}. CAPA evidence and inspection observations are attached."
+            f"The primary commercial manufacturing site for the finished pharmaceutical product is {ctx.manufacturer}, "
+            f"located in {ctx.facility_country}. The facility was subject to a comprehensive GMP inspection by a recognized "
+            f"stringent regulatory authority. The latest inspection concluded on {ctx.gmp_last_inspection}, resulting in a "
+            f"formal compliance status of '{ctx.gmp_status}'. The active GMP certificate number is {ctx.gmp_certificate_number}, "
+            f"which remains valid until {ctx.gmp_certificate_expiry}. Site master files, a summary of recent inspection "
+            f"observations, and evidence of completed Corrective and Preventive Actions (CAPA) are included in the annex."
         ),
         "m1_product_information": (
-            f"Proposed product name is {ctx.product_name}. INN is {ctx.inn_name}. Labeling, SmPC/PIL content, contraindications, "
-            "dosing information, and medication error mitigation statements are included with linguistic review notes."
+            f"The proposed proprietary name for this medicinal product is {ctx.product_name}, containing the active "
+            f"pharmaceutical ingredient {ctx.inn_name}. The draft Summary of Product Characteristics (SmPC), Patient "
+            f"Information Leaflet (PIL), and primary/secondary packaging labels are provided for review. These documents "
+            f"detail the approved therapeutic indications, posology, contraindications, special warnings, and precautions "
+            f"for use. A comprehensive risk management plan to minimize medication errors is also submitted. "
             f"{amr_product_statement(ctx)}"
         ),
         "m2_quality_overall_summary": (
-            f"Quality Overall Summary for API {ctx.inn_name} describes specification strategy, control points, impurity profile, "
-            "batch analysis, and release criteria. Manufacturing process validation confirms consistency and quality attributes."
+            f"This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and "
+            f"controls (CMC) data for {ctx.inn_name}. The control strategy justifies the proposed specifications for both "
+            f"the active substance and the finished product, emphasizing critical quality attributes (CQAs) and critical "
+            f"process parameters (CPPs). Impurity profiles, including degradation products and potential genotoxic impurities, "
+            f"have been thoroughly characterized. Batch analysis data from three commercial-scale validation batches "
+            f"demonstrate consistent manufacturing performance and compliance with all release criteria."
         ),
         "m2_clinical_overview": (
-            f"Clinical overview summarizes therapeutic rationale for {ctx.indication}. Pivotal program includes "
-            f"{ctx.pivotal_trial_count} studies. Reported outcome category: {ctx.clinical_outcome}. Benefit-risk narrative, "
-            f"safety findings, and subgroup considerations are included.{amr_clinical_statement(ctx)}"
+            f"The Clinical Overview synthesizes the efficacy and safety data supporting the use of {ctx.product_name} "
+            f"for the treatment of {ctx.indication}. The pivotal clinical development program comprised {ctx.pivotal_trial_count} "
+            f"well-controlled studies. Based on the integrated analysis, the reported clinical outcome category is '{ctx.clinical_outcome}'. "
+            f"The overall benefit-risk profile is considered highly favorable for the target patient population. "
+            f"Safety findings were consistent with the known pharmacological class effects, and appropriate risk minimization "
+            f"measures have been integrated into the proposed prescribing information. {amr_clinical_statement(ctx)}"
         ),
         "m3_api_quality": (
-            f"API quality section provides synthesis route, material controls, specification limits, analytical validation, "
-            "stability profile, and impurity control strategy. Data support batch-to-batch consistency and quality assurance."
+            f"The active pharmaceutical ingredient (API) section details the complete synthesis route, starting from "
+            f"well-defined regulatory starting materials. Robust in-process controls and intermediate specifications "
+            f"ensure the consistent quality of the final drug substance. The analytical procedures used for release and "
+            f"stability testing have been fully validated for accuracy, precision, linearity, and robustness. "
+            f"The impurity control strategy adequately addresses organic impurities, residual solvents, and elemental "
+            f"impurities in accordance with current ICH guidelines. Forced degradation studies confirm the "
+            f"stability-indicating nature of the assay methods."
         ),
         "m3_fpp_manufacturing": (
-            "FPP process includes critical process parameters, in-process controls, hold time studies, packaging validation, "
-            "and process performance qualification reports with traceability to quality risk management outputs."
+            f"The finished pharmaceutical product (FPP) manufacturing process utilizes standard, scalable unit operations. "
+            f"A formal quality risk assessment (e.g., FMEA) was conducted to identify critical process parameters (CPPs) "
+            f"that impact critical quality attributes (CQAs). Process performance qualification (PPQ) reports for three "
+            f"consecutive commercial-scale batches verify that the process is maintained in a state of control. "
+            f"In-process controls, intermediate hold-time studies, and packaging validation data are presented to "
+            f"substantiate the robustness and reproducibility of the commercial manufacturing operations."
         ),
         "m3_stability": (
-            "Stability program includes accelerated and long-term conditions, trend analysis, protocol adherence, and "
-            "shelf-life assignment justification with out-of-trend management records."
+            f"A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. "
+            f"Data from both accelerated (40°C/75% RH for 6 months) and long-term storage conditions (spanning up to 36 months) "
+            f"are presented for multiple primary stability batches. Statistical evaluation using linear regression and "
+            f"poolability tests confirms that degradation trends remain well within the acceptable specification limits. "
+            f"Photostability and freeze-thaw cycling studies demonstrate that the product does not require specific "
+            f"handling precautions. A post-approval stability protocol commitment is included."
         ),
         "m4_nonclinical_summary": (
-            "Nonclinical data summarize pharmacology, toxicology, local tolerance, and safety margins. Study quality and "
-            "species relevance are discussed with limitations and translational considerations."
+            f"The nonclinical testing program evaluated the primary pharmacodynamics, secondary pharmacodynamics, "
+            f"safety pharmacology, and comprehensive toxicology profile of the compound. Repeat-dose toxicity studies "
+            f"in two mammalian species established clear no-observed-adverse-effect levels (NOAELs). "
+            f"Genotoxicity testing (Ames and in vivo micronucleus assays) yielded negative results. "
+            f"Reproductive and developmental toxicity studies revealed no teratogenic signals at clinically relevant exposures. "
+            f"The calculated safety margins support the proposed clinical dosing regimen without major safety concerns."
         ),
         "m5_trial_listing": (
-            f"Clinical study table lists pivotal and supportive studies for {ctx.indication}, including protocol IDs, trial phase, "
-            "sample sizes, randomization details, and completion status."
-            f"{amr_clinical_statement(ctx)}"
+            f"The tabular listing of clinical studies provides a comprehensive inventory of all trials conducted in support "
+            f"of the proposed indication ({ctx.indication}). This includes Phase I pharmacokinetic/pharmacodynamic studies, "
+            f"Phase II dose-finding studies, and the pivotal Phase III efficacy and safety trials. "
+            f"For each study, the table details the protocol identifier, study design, randomization ratio, "
+            f"number of enrolled subjects, study duration, and current completion status. {amr_clinical_statement(ctx)}"
         ),
         "m5_pivotal_trial_reports": (
-            f"Pivotal trial reports document primary and secondary endpoints, statistical analysis plan adherence, "
-            f"and outcome category {ctx.clinical_outcome}. Safety outcomes, serious adverse events, and subgroup analyses are included."
+            f"Detailed clinical study reports (CSRs) for the pivotal efficacy trials are provided. "
+            f"These randomized, double-blind, actively-controlled trials evaluated the primary and secondary endpoints "
+            f"in accordance with the pre-specified statistical analysis plan (SAP). "
+            f"The trials resulted in a formal outcome category of '{ctx.clinical_outcome}', demonstrating robust "
+            f"treatment effects in the intent-to-treat (ITT) and per-protocol populations. "
+            f"Subgroup analyses across age, gender, and baseline disease severity strata were consistent with the "
+            f"primary findings. Serious adverse events (SAEs) and discontinuations were systematically analyzed and adjudicated. "
             f"{amr_clinical_statement(ctx)}"
         ),
         "m5_bioequivalence": (
-            "Biopharmaceutics section includes comparative dissolution, bioequivalence evidence, analytical method validation, "
-            "and protocol deviations with impact assessment."
+            f"Biopharmaceutics data substantiate the formulation development bridging between clinical trial materials "
+            f"and the proposed commercial product. In vivo bioequivalence studies demonstrated that the 90% confidence "
+            f"intervals for the geometric mean ratios of Cmax and AUC parameters fell entirely within the standard "
+            f"acceptance criteria of 80.00% to 125.00%. "
+            f"Additionally, multi-point comparative dissolution profiles across physiological pH ranges (pH 1.2, 4.5, and 6.8) "
+            f"confirmed similarity (f2 > 50). The bioanalytical methods used for plasma quantification were fully validated."
         ),
     }
     base_text = templates[section_id]
-    return pad_to_target_length(rng, base_text, target_length)
+    return pad_section_text(rng, section_id, base_text, target_length)
 
 
 def create_base_sections(rng: random.Random, ctx: Context) -> Dict[str, Dict]:
@@ -834,7 +1104,7 @@ def set_section_text(
     spec = SECTION_SPEC_MAP[section_id]
     if keep_within_length_bounds:
         target = rng.randint(spec["min_chars"], spec["max_chars"])
-        text = pad_to_target_length(rng, text, target)
+        text = pad_section_text(rng, section_id, text, target)
     sections[section_id]["text"] = text
 
 
@@ -1161,21 +1431,21 @@ def holistic_decision(
     )
 
     if high_risk or incorrect_critical >= 2:
-        return "reject_and_return", 0.92
+        return "approval_denied", 0.92
 
     if watch_similarity_guard:
-        return "deep_review", 0.74
+        return "additional_information_required", 0.74
 
     if (not clinical_data_available) or (not gmp_recent) or incorrect_critical == 1:
-        return "deep_review", 0.78
+        return "additional_information_required", 0.78
 
     if reserve_fast_track:
-        return "fast_track", 0.34
+        return "approval_granted", 0.34
 
     if partial_sections >= 1:
-        return "standard_review", 0.64
+        return "approval_granted", 0.64
 
-    return "fast_track", 0.28
+    return "approval_granted", 0.28
 
 
 def build_dossier_record(rng: random.Random, compliant: bool) -> Dict:
@@ -1449,6 +1719,24 @@ def _split_lines_for_pdf(lines: List[str], max_chars: int = 95) -> List[str]:
     return wrapped
 
 
+def _render_ascii_table(header: List[str], rows: List[List[str]], col_widths: List[int]) -> List[str]:
+    lines = []
+    
+    def format_row(cells):
+        parts = []
+        for cell, width in zip(cells, col_widths):
+            cell_str = str(cell)[:width]
+            parts.append(cell_str.ljust(width))
+        return " | ".join(parts)
+
+    separator = "-+-".join("-" * w for w in col_widths)
+    lines.append(format_row(header))
+    lines.append(separator)
+    for row in rows:
+        lines.append(format_row(row))
+    return lines
+
+
 def _dossier_to_pdf_lines(dossier: Dict) -> List[str]:
     lines: List[str] = []
     lines.append("REGULATORY DOSSIER SUBMISSION")
@@ -1487,9 +1775,31 @@ def _dossier_to_pdf_lines(dossier: Dict) -> List[str]:
         )
         if section["labels"]["error_tags"]:
             lines.append(f"Error tags: {', '.join(section['labels']['error_tags'])}")
+        
         content = section["text"].strip() if section["text"].strip() else "[MISSING SECTION]"
         lines.append(content)
         lines.append("")
+
+        # Add realistic tabular data for specific sections
+        if section["section_id"] == "m1_manufacturer_gmp" and section["labels"]["presence"] == "present":
+            lines.append("Site Inspection History Summary:")
+            gmp_header = ["Inspection Date", "Authority", "Scope", "Outcome"]
+            gmp_rows = [
+                [dossier["gmp_details"]["last_inspection_date"], "National Auth", "FPP/General", dossier["policy_signals"]["gmp_inspection_status"]],
+                ["2022-05-12", "SRA Joint", "API/Sterile", "compliant"],
+            ]
+            lines.extend(_render_ascii_table(gmp_header, gmp_rows, [18, 15, 15, 12]))
+            lines.append("")
+
+        if section["section_id"] == "m5_trial_listing" and section["labels"]["presence"] == "present":
+            lines.append("Pivotal Clinical Trial Inventory:")
+            trial_header = ["Protocol ID", "Phase", "Enrollment", "Status"]
+            trial_rows = []
+            for i in range(dossier["clinical_details"]["pivotal_trial_count"]):
+                trial_rows.append([f"PROT-00{i+1}", "III", random.randint(200, 800), "completed"])
+            lines.extend(_render_ascii_table(trial_header, trial_rows, [15, 8, 12, 12]))
+            lines.append("")
+
     return _split_lines_for_pdf(lines)
 
 
@@ -1514,13 +1824,23 @@ def _write_basic_pdf(path: Path, lines: List[str]) -> None:
 
     catalog_num = add_obj("<< /Type /Catalog /Pages 2 0 R >>")
     pages_num = add_obj("<< /Type /Pages /Count 0 /Kids [] >>")
-    font_num = add_obj("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>")
+    f1_num = add_obj("<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>")
+    f2_num = add_obj("<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>")
 
     page_nums: List[int] = []
     for page_lines in pages:
-        stream_parts = ["BT", "/F1 10 Tf"]
+        stream_parts = ["BT"]
         y = top_start
+        current_font = None
         for line in page_lines:
+            # Use monospaced font for tables or headers
+            is_table = any(c in line for c in ("|", "+-", "  ")) and len(line) > 10
+            target_font = "/F2" if is_table else "/F1"
+            
+            if target_font != current_font:
+                stream_parts.append(f"{target_font} 10 Tf")
+                current_font = target_font
+                
             escaped = _pdf_escape(line)
             stream_parts.append(f"1 0 0 1 {left_margin} {y} Tm ({escaped}) Tj")
             y -= leading
@@ -1534,7 +1854,7 @@ def _write_basic_pdf(path: Path, lines: List[str]) -> None:
             (
                 f"<< /Type /Page /Parent {pages_num} 0 R "
                 f"/MediaBox [0 0 {page_width} {page_height}] "
-                f"/Resources << /Font << /F1 {font_num} 0 R >> >> "
+                f"/Resources << /Font << /F1 {f1_num} 0 R /F2 {f2_num} 0 R >> >> "
                 f"/Contents {content_num} 0 R >>"
             )
         )

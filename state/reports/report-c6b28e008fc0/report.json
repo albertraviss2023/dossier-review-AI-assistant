@@ -1,0 +1,460 @@
+{
+  "generated_at_utc": "2026-05-08T11:44:04.660784+00:00",
+  "dossier_id": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001",
+  "report_title": "Complete dossier E2E E2E-HUM-NEW-INNOV-AMR-SYNT-0001",
+  "recipient_email": null,
+  "product_name": "Synthetic Synteromycin Product",
+  "inn_name": "synteromycin",
+  "product_group": "antimicrobial",
+  "application_type": "new_application",
+  "antimicrobial": true,
+  "aware_category": "reserve",
+  "final_verdict": "escalate_for_higher_review",
+  "reviewer_username": "alutakome",
+  "review_type": "generic",
+  "review_program": "marketing_authorization",
+  "report_lifecycle_status": "completed",
+  "report_payload": {
+    "report_title": "Complete dossier E2E E2E-HUM-NEW-INNOV-AMR-SYNT-0001",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001",
+        "submission_type": "pre_market_authorization",
+        "review_type": "generic",
+        "applicant": "Synthetic Applicant 858",
+        "product_name": "Synthetic Synteromycin Product",
+        "active_ingredient": "synteromycin",
+        "dosage_form": "oral suspension",
+        "strength": "250 mg/5 mL",
+        "jurisdiction": "Rwanda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_complete",
+        "violations": []
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "Generic review packaging and patient-information comparison against innovator reference when provided",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Synthetic Synteromycin Product",
+        "who_inn": "synteromycin",
+        "similarity_index": 0.4286,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "Product name 'Synthetic Synteromycin Product' has 42.86% similarity to INN 'synteromycin'. Rule result: pass. Evaluated against naming guidance: WHO AWaRe and GLASS Policy Stack. AWaRe Source of Truth.AWaRe Source of Truth\n\nWHO AWaRe is the authoritative source for Access, Watch, and Reserve assignment. Production policy decisions must not rely on synthetic or hand-maintained substitute lists. who aware glass antimicrobial-resistance...",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [],
+        "review_type_specific": {
+          "review_type": "generic",
+          "status": "partial",
+          "baseline_available": true,
+          "baseline_verified": true,
+          "baseline_reference_name": "synteromycin reference",
+          "baseline_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=synteromycin",
+            "https://products.mhra.gov.uk/?q=synteromycin",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=synteromycin",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=synteromycin",
+            "https://www.ema.europa.eu/en/partners-networks/patients-consumers/getting-involved-ema-activities-patient-consumer-or-carer",
+            "https://www.ema.europa.eu/en/partners-networks/patients-consumers/eligible-patients-consumers-organisations",
+            "https://www.ema.europa.eu/en/committees/working-parties-other-groups/comp-working-parties-other-groups/patients-consumers-working-party"
+          ],
+          "verified_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=synteromycin",
+            "https://products.mhra.gov.uk/?q=synteromycin",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=synteromycin",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=synteromycin",
+            "https://www.ema.europa.eu/en/partners-networks/patients-consumers/getting-involved-ema-activities-patient-consumer-or-carer",
+            "https://www.ema.europa.eu/en/partners-networks/patients-consumers/eligible-patients-consumers-organisations",
+            "https://www.ema.europa.eu/en/committees/working-parties-other-groups/comp-working-parties-other-groups/patients-consumers-working-party"
+          ],
+          "comparison_matrix": [
+            {
+              "concept_key": "indication",
+              "dimension": "Indication",
+              "submitted_present": true,
+              "external_present": false,
+              "gap": false,
+              "submitted_evidence": "PIL Section: What this medicine is and what it is used for",
+              "external_evidence": "Not stated",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "dosing",
+              "dimension": "Dosing",
+              "submitted_present": true,
+              "external_present": false,
+              "gap": false,
+              "submitted_evidence": "PIL Route and Form: Route=oral; Dosage form=oral suspension; Strength=250 mg/5 mL",
+              "external_evidence": "Not stated",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "contraindications",
+              "dimension": "Contraindications",
+              "submitted_present": false,
+              "external_present": false,
+              "gap": false,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Not stated",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "warnings",
+              "dimension": "Warnings",
+              "submitted_present": true,
+              "external_present": true,
+              "gap": false,
+              "submitted_evidence": "PIL Warnings: Do not use if you are allergic to the active ingredient or related medicines",
+              "external_evidence": "Food and Drug Administration Search Menu Search FDA Submit search Featured Contact FDA FDA Guidance Documents Recalls, Market Withdrawals...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "adverse_reactions",
+              "dimension": "Adverse Reactions",
+              "submitted_present": true,
+              "external_present": true,
+              "gap": false,
+              "submitted_evidence": "PIL Adverse Effects: Common effects include gastrointestinal upset and headache; serious effects require urgent review",
+              "external_evidence": "ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "storage",
+              "dimension": "Storage",
+              "submitted_present": true,
+              "external_present": false,
+              "gap": false,
+              "submitted_evidence": "PIL Storage: Store below 30C, protect from moisture/light, keep out of reach of children",
+              "external_evidence": "Not stated",
+              "evidence_source": "mcp_external"
+            }
+          ],
+          "section_provenance": [
+            {
+              "section_name": "side_effects",
+              "source_url": "https://products.mhra.gov.uk/search/?query=synteromycin",
+              "source_domain": "products.mhra.gov.uk",
+              "source_priority": 100,
+              "confidence_score": 0.75
+            },
+            {
+              "section_name": "dosage",
+              "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=synteromycin",
+              "source_domain": "www.accessdata.fda.gov",
+              "source_priority": 75,
+              "confidence_score": 0.825
+            },
+            {
+              "section_name": "warnings",
+              "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=synteromycin",
+              "source_domain": "www.accessdata.fda.gov",
+              "source_priority": 75,
+              "confidence_score": 0.825
+            },
+            {
+              "section_name": "indications",
+              "source_url": "https://www.ema.europa.eu/en/partners-networks/patients-consumers/getting-involved-ema-activities-patient-consumer-or-carer",
+              "source_domain": "www.ema.europa.eu",
+              "source_priority": 80,
+              "confidence_score": 0.83
+            },
+            {
+              "section_name": "contraindications",
+              "source_url": "https://www.ema.europa.eu/en/partners-networks/patients-consumers/eligible-patients-consumers-organisations",
+              "source_domain": "www.ema.europa.eu",
+              "source_priority": 80,
+              "confidence_score": 0.83
+            }
+          ],
+          "source_selection_policy": {
+            "order": [
+              "products.mhra.gov.uk",
+              "medicines.org.uk",
+              "ema.europa.eu",
+              "accessdata.fda.gov",
+              "dailymed.nlm.nih.gov",
+              "gov.uk",
+              "who.int"
+            ],
+            "strategy": "prefer_highest_priority_source_per_section"
+          },
+          "notes": [
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used synteromycin reference through MCP patient-information tools with overall alignment not_aligned.",
+            "Example comparison classified the section as partially_compliant."
+          ],
+          "findings": [
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for indications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "indications",
+              "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+              "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "dosage",
+              "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+              "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "contraindications",
+              "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+              "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "warnings",
+              "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+              "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "The current section does not adequately cover contraindications.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "critical",
+              "location": "Patient Information Leaflet",
+              "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            }
+          ],
+          "example_comparison": {
+            "classification": "partially_compliant",
+            "matched_good_patterns": [
+              "completeness",
+              "safety wording",
+              "dosage clarity"
+            ],
+            "matched_bad_patterns": [
+              "contraindications"
+            ],
+            "evidence": [
+              {
+                "dimension": "contraindications",
+                "finding": "The current section does not adequately cover contraindications.",
+                "severity": "critical",
+                "evidence_excerpt": "Patient Information Leaflet for dossier HUM-NEW-INNOV-AMR-SYNT-0001.\nProduct: Synthetic Synteromycin Product (synteromycin); strength 250 mg/5 mL; route oral.\nApplicant: Synthetic Applicant 858 (Rwanda); Manufacturer: Synthetic Manufacturer"
+              }
+            ]
+          }
+        }
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "reserve",
+        "stewardship_rule_application": "Restricted authorization is recommended to preserve last-resort effectiveness.",
+        "fast_track_status": false,
+        "authorization_control": "restricted_authorization",
+        "watch_or_reserve_caution": true,
+        "findings": [
+          "MCP AWaRe reference resolved synteromycin as Unknown.",
+          "MCP antimicrobial similarity returned stewardship flag not_applicable.",
+          "RxNorm snapshot had no normalization entry for synteromycin; used dossier product identity as provided.",
+          "WHO AWaRe snapshot had no entry for synteromycin; fell back to dossier policy_signals.",
+          "WHO GLASS snapshot had no entry for synteromycin; fell back to dossier policy_signals.",
+          "Chemistry snapshot had no entry for synteromycin; fell back to dossier policy_signals for Watch similarity."
+        ],
+        "policy_decision": {
+          "decision": "restricted_authorization",
+          "required_controls": [
+            "Restricted authorization conditions",
+            "Stewardship monitoring plan",
+            "Resistance surveillance commitments"
+          ],
+          "decision_basis": {
+            "aware_category": "reserve",
+            "watch_similarity_restriction": false,
+            "glass_resistance_trend": "stable",
+            "comparator": "not_applicable",
+            "similarity_to_existing_watch": "low",
+            "targets_mdr_pathogen": false,
+            "amr_unmet_need": "routine"
+          }
+        }
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for indications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "indications",
+          "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "dosage",
+          "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "contraindications",
+          "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "warnings",
+          "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover contraindications.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "critical",
+          "location": "Patient Information Leaflet",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil"
+        },
+        {
+          "workflow_step": "AMR stewardship review using AWaRe rules",
+          "issue": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+          "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+          "severity": "major",
+          "location": "AMR Stewardship Narrative",
+          "recommendation": "Document the stewardship restriction and reviewer control measures.",
+          "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_application_form"
+        }
+      ],
+      "findings_summary_tables": {
+        "administrative": [],
+        "naming_inn": [],
+        "quality": [
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+            "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+            "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+            "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+            "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+          }
+        ],
+        "gmp": [],
+        "clinical_evidence": [
+          {
+            "severity": "critical",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_pil",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          }
+        ],
+        "amr_stewardship": [
+          {
+            "severity": "major",
+            "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+            "evidence_reference": "E2E-HUM-NEW-INNOV-AMR-SYNT-0001:m1_application_form",
+            "recommendation": "Document the stewardship restriction and reviewer control measures."
+          }
+        ],
+        "consistency_checks": []
+      },
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | 2 | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+      "severity_classification": {
+        "critical": 3,
+        "major": 3,
+        "minor": 0,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "consistent",
+        "findings": []
+      },
+      "review_completeness_confirmation": {
+        "status": "review_incomplete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": true,
+          "structural_dossier_mapping": false,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": false,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+          "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+          "Generic baseline comparison used synteromycin reference through MCP patient-information tools with overall alignment not_aligned.",
+          "Example comparison classified the section as partially_compliant."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "escalate_for_higher_review",
+        "system_recommendation": "abstain",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Current patient information does not align closely with the innovator reference for indications.",
+          "Current patient information does not align closely with the innovator reference for dosage.",
+          "Current patient information does not align closely with the innovator reference for contraindications.",
+          "Current patient information does not align closely with the innovator reference for warnings.",
+          "The current section does not adequately cover contraindications.",
+          "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution."
+        ],
+        "escalation_needed": true
+      }
+    },
+    "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | 2 | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+    "review_payload": {
+      "recommendation": "abstain"
+    },
+    "email_subject": "Complete dossier E2E E2E-HUM-NEW-INNOV-AMR-SYNT-0001 - abstain",
+    "email_body": "Complete dossier E2E E2E-HUM-NEW-INNOV-AMR-SYNT-0001\n\nSubmission Summary\n- Dossier Id: E2E-HUM-NEW-INNOV-AMR-SYNT-0001\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Synthetic Applicant 858\n- Product Name: Synthetic Synteromycin Product\n- Active Ingredient: synteromycin\n- Dosage Form: oral suspension\n- Strength: 250 mg/5 mL\n- Jurisdiction: Rwanda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_complete\n- No administrative violations were detected from the available dossier evidence.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Synthetic Synteromycin Product\n- Who Inn: synteromycin\n- Similarity Index: 0.4286\n- Threshold: 0.7"
+  },
+  "email_subject": "Complete dossier E2E E2E-HUM-NEW-INNOV-AMR-SYNT-0001 - abstain",
+  "email_body": "Complete dossier E2E E2E-HUM-NEW-INNOV-AMR-SYNT-0001\n\nSubmission Summary\n- Dossier Id: E2E-HUM-NEW-INNOV-AMR-SYNT-0001\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Synthetic Applicant 858\n- Product Name: Synthetic Synteromycin Product\n- Active Ingredient: synteromycin\n- Dosage Form: oral suspension\n- Strength: 250 mg/5 mL\n- Jurisdiction: Rwanda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_complete\n- No administrative violations were detected from the available dossier evidence.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Synthetic Synteromycin Product\n- Who Inn: synteromycin\n- Similarity Index: 0.4286\n- Threshold: 0.7"
+}

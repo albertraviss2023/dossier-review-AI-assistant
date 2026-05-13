@@ -1,0 +1,577 @@
+{
+  "generated_at_utc": "2026-04-20T13:58:50.026375+00:00",
+  "dossier_id": "UPLOAD-INNOVATION-001",
+  "report_title": "Innovation Review Demo - UPLOAD-INNOVATION-001",
+  "recipient_email": null,
+  "product_name": "Novathera",
+  "inn_name": "novathera",
+  "product_group": "other_product",
+  "application_type": "new_application",
+  "antimicrobial": false,
+  "aware_category": "not_applicable",
+  "final_verdict": "acceptable",
+  "reviewer_username": "alutakome",
+  "review_type": "innovation",
+  "report_lifecycle_status": "completed",
+  "report_payload": {
+    "report_title": "Innovation Review Demo - UPLOAD-INNOVATION-001",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "UPLOAD-INNOVATION-001",
+        "submission_type": "pre_market_authorization",
+        "review_type": "innovation",
+        "applicant": "Innovation Health Sciences",
+        "product_name": "Novathera",
+        "active_ingredient": "novathera",
+        "dosage_form": "tablet",
+        "strength": "150 mg",
+        "jurisdiction": "Uganda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_complete",
+        "violations": []
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "Innovation review completeness, clarity, safety wording, and regulatory adequacy assessment"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Novathera",
+        "who_inn": "zithromax",
+        "similarity_index": 0.6296,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "No INN infringement detected for 'Novathera'.",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [
+          {
+            "section": "Application Form and Administrative Information",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Product Information and Naming",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Manufacturer and GMP Evidence",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Clinical Overview and Benefit-Risk Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          }
+        ],
+        "review_type_specific": {
+          "review_type": "innovation",
+          "status": "adequate",
+          "baseline_available": false,
+          "baseline_reference_name": null,
+          "baseline_reference_urls": [],
+          "notes": [
+            "Innovation workflow checks completeness, clarity, safety wording, and regulatory adequacy without requiring wording equivalence to an innovator baseline."
+          ],
+          "findings": []
+        }
+      },
+      "amr_stewardship_review": {
+        "applicable": false,
+        "antimicrobial_status": "not_applicable",
+        "aware_category": "not_applicable",
+        "stewardship_rule_application": "AMR stewardship lifecycle rules do not apply to this dossier.",
+        "fast_track_status": false,
+        "authorization_control": "standard_authorization",
+        "watch_or_reserve_caution": false,
+        "findings": [
+          "RxNorm snapshot had no normalization entry for novathera; used dossier product identity as provided.",
+          "WHO AWaRe snapshot had no entry for novathera; fell back to dossier policy_signals.",
+          "WHO GLASS snapshot had no entry for novathera; fell back to dossier policy_signals.",
+          "Chemistry snapshot had no entry for novathera; fell back to dossier policy_signals for Watch similarity."
+        ]
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Cross-section consistency review",
+          "issue": "Proposed product name is identical to the INN and may create naming confusion.",
+          "violated_rule": "Product identity inconsistency or confusion risk = violation",
+          "severity": "major",
+          "location": "Product Information and Naming",
+          "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections.",
+          "evidence_reference": "UPLOAD-INNOVATION-001:m1_product_information"
+        },
+        {
+          "workflow_step": "Cross-section consistency review",
+          "issue": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+          "violated_rule": "Claim not supported by evidence = violation",
+          "severity": "major",
+          "location": "Stability and Shelf-Life Justification",
+          "recommendation": "Provide or correctly map the stability section before finalizing the review.",
+          "evidence_reference": "UPLOAD-INNOVATION-001:unknown"
+        }
+      ],
+      "findings_summary_tables": {
+        "administrative": [],
+        "naming_inn": [
+          {
+            "severity": "major",
+            "violated_rule": "Product identity inconsistency or confusion risk = violation",
+            "evidence_reference": "UPLOAD-INNOVATION-001:m1_product_information",
+            "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections."
+          }
+        ],
+        "quality": [],
+        "gmp": [],
+        "clinical_evidence": [],
+        "amr_stewardship": [],
+        "consistency_checks": [
+          {
+            "severity": "major",
+            "violated_rule": "Claim not supported by evidence = violation",
+            "evidence_reference": "UPLOAD-INNOVATION-001:unknown",
+            "recommendation": "Provide or correctly map the stability section before finalizing the review."
+          }
+        ]
+      },
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Product identity inconsistency or confusion risk = violation | UPLOAD-INNOVATION-001:m1_product_information | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-INNOVATION-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+      "severity_classification": {
+        "critical": 0,
+        "major": 2,
+        "minor": 0,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "violations_found",
+        "findings": [
+          "Proposed product name is identical to the INN and may create naming confusion.",
+          "No stability section was mapped, so shelf-life claims cannot be cross-checked."
+        ]
+      },
+      "review_completeness_confirmation": {
+        "status": "review_complete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": true,
+          "structural_dossier_mapping": true,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": true,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "Innovation workflow checks completeness, clarity, safety wording, and regulatory adequacy without requiring wording equivalence to an innovator baseline."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "acceptable",
+        "system_recommendation": "approval_granted",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Proposed product name is identical to the INN and may create naming confusion.",
+          "Shelf-life claims could not be cross-checked against a mapped stability section."
+        ],
+        "escalation_needed": false
+      }
+    },
+    "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Product identity inconsistency or confusion risk = violation | UPLOAD-INNOVATION-001:m1_product_information | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-INNOVATION-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+    "review_payload": {
+      "dossier_id": "UPLOAD-INNOVATION-001",
+      "selected_model": {
+        "id": "gemma-e4b",
+        "label": "Gemma E4B",
+        "runtime_model_id": "gemma-e4b",
+        "description": "Primary balanced local model for dossier review."
+      },
+      "sub_queries": [
+        "Run the full structured review for this innovation dossier, assess completeness and regulatory adequacy, summarize all rule violations, and recommend the regulatory action.",
+        "regulatory policy for Run the full structured review for this innovation dossier, assess completeness and regulatory adequacy, summarize all rule violations, and recommend the regulatory action.",
+        "official guidance on Run the full structured review for this innovation dossier, assess completeness and regulatory adequacy, summarize all rule violations, and recommend the regulatory action.",
+        "Run the full structured review for this innovation dossier, assess completeness and regulatory adequacy, summarize all rule violations, and recommend the regulatory action. constrained to Product Submission",
+        "Run the full structured review for this innovation dossier, assess completeness and regulatory adequacy, summarize all rule violations, and recommend the regulatory action. with related terms medicine, submission product, inn, active ingredient"
+      ],
+      "intent": "policy_guidance",
+      "response_contract": "policy_guidance_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "conversation_id": "conv-6934a24d60",
+      "review_type": "innovation",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 710,
+        "remaining_tokens": 3386,
+        "usage_ratio": 0.17334,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 0,
+        "carryover_tokens": 0,
+        "active_message_tokens": 710,
+        "archived_messages_count": 0,
+        "compaction_count": 0,
+        "auto_compaction_required": false,
+        "last_compacted_at": null,
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "approval_granted",
+      "confidence": 0.57504,
+      "route": "fallback",
+      "abstained": false,
+      "abstain_reason": null,
+      "rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Novathera** (novathera), submitted by **Innovation Health Sciences**.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Novathera'.\n\n### Detailed Findings\n- Evidence from **Application Form and Administrative Information** supports The signed application form, cover letter, proof of payment, and required legal declarations are included in the administrative module. [UPLOAD-INNOVATION-001:m1_admin:fallback]\n- Evidence from **Product Information and Naming** supports The proposed Summary of Product Characteristics and Patient Information Leaflet state the indication, dose, contraindications, warnings, adverse reactions, storage conditions, and instructions for.. [UPLOAD-INNOVATION-001:m1_product_information:fallback]\n\n### Conclusion\n\n**Approval Granted** is the grounded regulatory path. The dossier appears structurally adequate for the proposed recommendation.\n\n### Findings Summary Tables\n\n#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Product identity inconsistency or confusion risk = violation | UPLOAD-INNOVATION-001:m1_product_information | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-INNOVATION-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+      "chain_of_thought": "{\n \"intent\": \"policy_guidance\",\n \"resolved_terms\": [\n \"Product\",\n \"Submission\"\n ],\n \"retrieval_strategy\": \"Precision search across policy_guidance_v1 domain\",\n \"bouncer_audit\": []\n}",
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Product identity inconsistency or confusion risk = violation | UPLOAD-INNOVATION-001:m1_product_information | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-INNOVATION-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+      "workflow_summary": {
+        "submission_summary": {
+          "dossier_id": "UPLOAD-INNOVATION-001",
+          "submission_type": "pre_market_authorization",
+          "review_type": "innovation",
+          "applicant": "Innovation Health Sciences",
+          "product_name": "Novathera",
+          "active_ingredient": "novathera",
+          "dosage_form": "tablet",
+          "strength": "150 mg",
+          "jurisdiction": "Uganda",
+          "review_pathway": "standard"
+        },
+        "administrative_review": {
+          "status": "administratively_complete",
+          "violations": []
+        },
+        "dossier_structure_review": {
+          "status": "mapped",
+          "violations": []
+        },
+        "applicable_rules_identification": {
+          "rules": [
+            "Administrative completeness checklist",
+            "Structural dossier completeness rules",
+            "WHO INN similarity rule",
+            "Section adequacy and evidence sufficiency rules",
+            "Innovation review completeness, clarity, safety wording, and regulatory adequacy assessment"
+          ]
+        },
+        "who_inn_similarity_review": {
+          "proposed_name": "Novathera",
+          "who_inn": "zithromax",
+          "similarity_index": 0.6296,
+          "threshold": 0.7,
+          "threshold_result": "passed",
+          "similarity_type": "orthographic",
+          "interpretation": "No INN infringement detected for 'Novathera'.",
+          "flag_status": "acceptable_naming",
+          "rule_consequence": "No blocking INN naming issue was identified."
+        },
+        "technical_section_review": {
+          "section_results": [
+            {
+              "section": "Application Form and Administrative Information",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Product Information and Naming",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Manufacturer and GMP Evidence",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Clinical Overview and Benefit-Risk Summary",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            }
+          ],
+          "review_type_specific": {
+            "review_type": "innovation",
+            "status": "adequate",
+            "baseline_available": false,
+            "baseline_reference_name": null,
+            "baseline_reference_urls": [],
+            "notes": [
+              "Innovation workflow checks completeness, clarity, safety wording, and regulatory adequacy without requiring wording equivalence to an innovator baseline."
+            ],
+            "findings": []
+          }
+        },
+        "amr_stewardship_review": {
+          "applicable": false,
+          "antimicrobial_status": "not_applicable",
+          "aware_category": "not_applicable",
+          "stewardship_rule_application": "AMR stewardship lifecycle rules do not apply to this dossier.",
+          "fast_track_status": false,
+          "authorization_control": "standard_authorization",
+          "watch_or_reserve_caution": false,
+          "findings": [
+            "RxNorm snapshot had no normalization entry for novathera; used dossier product identity as provided.",
+            "WHO AWaRe snapshot had no entry for novathera; fell back to dossier policy_signals.",
+            "WHO GLASS snapshot had no entry for novathera; fell back to dossier policy_signals.",
+            "Chemistry snapshot had no entry for novathera; fell back to dossier policy_signals for Watch similarity."
+          ]
+        },
+        "findings_register": [
+          {
+            "workflow_step": "Cross-section consistency review",
+            "issue": "Proposed product name is identical to the INN and may create naming confusion.",
+            "violated_rule": "Product identity inconsistency or confusion risk = violation",
+            "severity": "major",
+            "location": "Product Information and Naming",
+            "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections.",
+            "evidence_reference": "UPLOAD-INNOVATION-001:m1_product_information"
+          },
+          {
+            "workflow_step": "Cross-section consistency review",
+            "issue": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+            "violated_rule": "Claim not supported by evidence = violation",
+            "severity": "major",
+            "location": "Stability and Shelf-Life Justification",
+            "recommendation": "Provide or correctly map the stability section before finalizing the review.",
+            "evidence_reference": "UPLOAD-INNOVATION-001:unknown"
+          }
+        ],
+        "findings_summary_tables": {
+          "administrative": [],
+          "naming_inn": [
+            {
+              "severity": "major",
+              "violated_rule": "Product identity inconsistency or confusion risk = violation",
+              "evidence_reference": "UPLOAD-INNOVATION-001:m1_product_information",
+              "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections."
+            }
+          ],
+          "quality": [],
+          "gmp": [],
+          "clinical_evidence": [],
+          "amr_stewardship": [],
+          "consistency_checks": [
+            {
+              "severity": "major",
+              "violated_rule": "Claim not supported by evidence = violation",
+              "evidence_reference": "UPLOAD-INNOVATION-001:unknown",
+              "recommendation": "Provide or correctly map the stability section before finalizing the review."
+            }
+          ]
+        },
+        "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Product identity inconsistency or confusion risk = violation | UPLOAD-INNOVATION-001:m1_product_information | Use a distinct product name and verify consistent naming across all dossier sections. |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-INNOVATION-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+        "severity_classification": {
+          "critical": 0,
+          "major": 2,
+          "minor": 0,
+          "advisory": 0
+        },
+        "cross_section_consistency_review": {
+          "status": "violations_found",
+          "findings": [
+            "Proposed product name is identical to the INN and may create naming confusion.",
+            "No stability section was mapped, so shelf-life claims cannot be cross-checked."
+          ]
+        },
+        "review_completeness_confirmation": {
+          "status": "review_complete",
+          "mandatory_steps": {
+            "submission_intake_and_familiarization": true,
+            "administrative_completeness_review": true,
+            "structural_dossier_mapping": true,
+            "applicable_rules_identification": true,
+            "who_inn_similarity_review": true,
+            "section_by_section_technical_review": true,
+            "amr_stewardship_review": true,
+            "findings_register": true,
+            "severity_classification": true,
+            "cross_section_consistency_review": true
+          },
+          "notes": [
+            "Innovation workflow checks completeness, clarity, safety wording, and regulatory adequacy without requiring wording equivalence to an innovator baseline."
+          ]
+        },
+        "overall_judgment": {
+          "final_verdict": "acceptable",
+          "system_recommendation": "approval_granted",
+          "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+          "blocking_issues": [
+            "Proposed product name is identical to the INN and may create naming confusion.",
+            "Shelf-life claims could not be cross-checked against a mapped stability section."
+          ],
+          "escalation_needed": false
+        }
+      },
+      "policy_rule_hits": [],
+      "section_diagnostics": [
+        {
+          "section_id": "m1_admin",
+          "title": "Application Form and Administrative Information",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_product_information",
+          "title": "Product Information and Naming",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_gmp",
+          "title": "Manufacturer and GMP Evidence",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m2_clinical",
+          "title": "Clinical Overview and Benefit-Risk Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "UPLOAD-INNOVATION-001:m1_admin:fallback",
+          "dossier_id": "UPLOAD-INNOVATION-001",
+          "section_id": "m1_admin",
+          "section_title": "Application Form and Administrative Information",
+          "score": 0.15,
+          "snippet": "The signed application form, cover letter, proof of payment, and required legal declarations are included in the administrative module."
+        },
+        {
+          "citation_id": "UPLOAD-INNOVATION-001:m1_product_information:fallback",
+          "dossier_id": "UPLOAD-INNOVATION-001",
+          "section_id": "m1_product_information",
+          "section_title": "Product Information and Naming",
+          "score": 0.15,
+          "snippet": "The proposed Summary of Product Characteristics and Patient Information Leaflet state the indication, dose, contraindications, warnings, adverse reactions, storage conditions, and instructions for use. Safety wording hig..."
+        },
+        {
+          "citation_id": "UPLOAD-INNOVATION-001:m1_gmp:fallback",
+          "dossier_id": "UPLOAD-INNOVATION-001",
+          "section_id": "m1_gmp",
+          "section_title": "Manufacturer and GMP Evidence",
+          "score": 0.15,
+          "snippet": "The primary manufacturing site remains compliant, the GMP certificate is valid, and recent inspection observations have been closed with documented CAPA evidence."
+        },
+        {
+          "citation_id": "UPLOAD-INNOVATION-001:m2_clinical:fallback",
+          "dossier_id": "UPLOAD-INNOVATION-001",
+          "section_id": "m2_clinical",
+          "section_title": "Clinical Overview and Benefit-Risk Summary",
+          "score": 0.15,
+          "snippet": "The pivotal clinical evidence met the primary endpoint and the benefit-risk overview explains efficacy, safety, uncertainties, and proposed risk minimization measures in a clear manner."
+        }
+      ],
+      "verifier": {
+        "grounded_claim_rate": 1.0,
+        "unsupported_critical_claim_rate": 0.0,
+        "passed": true
+      },
+      "memory": {
+        "process_rss_gb": 0.9039,
+        "system_total_ram_gb": 31.7568,
+        "system_available_ram_gb": 12.1984,
+        "system_used_ram_percent": 61.6,
+        "min_free_ram_gb": 0.5,
+        "standard_route_rss_limit_gb": 20.0,
+        "fallback_route_rss_limit_gb": 26.0,
+        "within_budget": true
+      },
+      "lineage_tags": {
+        "data_classification": "synthetic",
+        "data_version": "balanced_v1_2026-04-05",
+        "split_version": "balanced_v1_2026-04-05",
+        "model_policy": "local_multi_model",
+        "model_id": "gemma-e4b",
+        "prompt_version": "review_v1",
+        "route_profile": "fallback"
+      },
+      "amr_stewardship": {
+        "applies": false,
+        "normalized_ingredient": "novathera",
+        "normalization_source": "raw_product_fields",
+        "active_moiety": "not_available",
+        "parent_compound": "not_available",
+        "pubchem_cid": "not_available",
+        "canonical_smiles": "not_available",
+        "inchikey": "not_available",
+        "chembl_id": "not_available",
+        "unichem_id": "not_available",
+        "aware_category": "not_applicable",
+        "amr_unmet_need": "not_applicable",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "not_applicable",
+        "similarity_to_existing_watch": "not_applicable",
+        "existing_watch_comparator": "not_applicable",
+        "chemistry_source": "signals_fallback",
+        "authorization_control": "standard_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": false,
+        "watch_similarity_restriction": false,
+        "source_mode": "signals_fallback",
+        "source_trace": [
+          "RxNorm snapshot had no normalization entry for novathera; used dossier product identity as provided.",
+          "WHO AWaRe snapshot had no entry for novathera; fell back to dossier policy_signals.",
+          "WHO GLASS snapshot had no entry for novathera; fell back to dossier policy_signals.",
+          "Chemistry snapshot had no entry for novathera; fell back to dossier policy_signals for Watch similarity."
+        ],
+        "rationale": "AMR stewardship lifecycle rules do not apply to this dossier."
+      },
+      "metrics": {
+        "latency_seconds": 0.6587,
+        "input_tokens_estimate": 66,
+        "output_tokens_estimate": 1092
+      },
+      "visualization_data": null
+    },
+    "email_subject": "Innovation Review Demo - UPLOAD-INNOVATION-001 - approval_granted",
+    "email_body": "Innovation Review Demo - UPLOAD-INNOVATION-001\n\nSubmission Summary\n- Dossier Id: UPLOAD-INNOVATION-001\n- Submission Type: pre_market_authorization\n- Review Type: innovation\n- Applicant: Innovation Health Sciences\n- Product Name: Novathera\n- Active Ingredient: novathera\n- Dosage Form: tablet\n- Strength: 150 mg\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_complete\n- No administrative violations were detected from the available dossier evidence.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Innovation review completeness, clarity, safety wording, and regulatory adequacy assessment\n\nWHO INN Similarity Review\n- Proposed Name: Novathera\n- Who Inn: zithromax\n- Similarity Index: 0.6296\n- Threshold: 0.7\n- Threshold Result: passed"
+  },
+  "email_subject": "Innovation Review Demo - UPLOAD-INNOVATION-001 - approval_granted",
+  "email_body": "Innovation Review Demo - UPLOAD-INNOVATION-001\n\nSubmission Summary\n- Dossier Id: UPLOAD-INNOVATION-001\n- Submission Type: pre_market_authorization\n- Review Type: innovation\n- Applicant: Innovation Health Sciences\n- Product Name: Novathera\n- Active Ingredient: novathera\n- Dosage Form: tablet\n- Strength: 150 mg\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_complete\n- No administrative violations were detected from the available dossier evidence.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Innovation review completeness, clarity, safety wording, and regulatory adequacy assessment\n\nWHO INN Similarity Review\n- Proposed Name: Novathera\n- Who Inn: zithromax\n- Similarity Index: 0.6296\n- Threshold: 0.7\n- Threshold Result: passed"
+}

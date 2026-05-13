@@ -1,0 +1,106 @@
+{
+  "dossier_id": "UPLOAD-WATCH-001",
+  "country": "Tanzania",
+  "submission_date": "2026-04-11",
+  "product": {
+    "product_name": "Respivox",
+    "inn_name": "levofloxacin",
+    "atc_code": "J01MA12",
+    "dosage_form": "tablet",
+    "strength": "500 mg"
+  },
+  "organization": {
+    "applicant": "East Africa Therapeutics",
+    "manufacturer": "Dar Health Formulations",
+    "facility_country": "Tanzania"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "watch",
+    "amr_unmet_need": "moderate",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "rising",
+    "similarity_to_existing_watch": "high",
+    "existing_watch_comparator": "ciprofloxacin"
+  },
+  "sections": [
+    {
+      "section_id": "m1_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "Manufacturing site passed its last inspection and current GMP certification is valid with no critical findings.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 600
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 104
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "Clinical overview reports the primary endpoint was met in respiratory infection, but the overall stewardship narrative emphasizes resistance risk and careful comparator analysis.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 173
+      }
+    },
+    {
+      "section_id": "m5_stewardship",
+      "module": "5",
+      "title": "AMR Stewardship Narrative",
+      "text": "The dossier acknowledges high similarity to ciprofloxacin and cites rising resistance concerns. The applicant proposes additional restrictions to reduce stewardship friction.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "partial",
+        "error_tags": [
+          "watch_similarity_risk"
+        ]
+      },
+      "metrics": {
+        "char_count": 165
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "deep_review",
+    "risk_score": 0.61,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": true,
+    "defect_modes": [
+      "watch_similarity_restriction"
+    ]
+  }
+}

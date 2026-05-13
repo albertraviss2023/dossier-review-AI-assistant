@@ -1,0 +1,39 @@
+{
+  "source": "WHO AWaRe cached fixture",
+  "source_date": "2026-04-25",
+  "records": [
+    {
+      "active_ingredient": "amoxicillin",
+      "aware_category": "Access",
+      "is_antimicrobial": true,
+      "reserve_related": false,
+      "nearest_reserve_agent": null,
+      "class_family": "penicillin"
+    },
+    {
+      "active_ingredient": "levofloxacin",
+      "aware_category": "Watch",
+      "is_antimicrobial": true,
+      "reserve_related": false,
+      "nearest_reserve_agent": "ciprofloxacin",
+      "class_family": "fluoroquinolone"
+    },
+    {
+      "active_ingredient": "colistin",
+      "aware_category": "Reserve",
+      "is_antimicrobial": true,
+      "reserve_related": true,
+      "nearest_reserve_agent": "colistin",
+      "class_family": "polymyxin"
+    },
+    {
+      "active_ingredient": "paracetamol",
+      "aware_category": "Not listed",
+      "is_antimicrobial": false,
+      "reserve_related": false,
+      "nearest_reserve_agent": null,
+      "class_family": "non_antimicrobial"
+    }
+  ]
+}
+

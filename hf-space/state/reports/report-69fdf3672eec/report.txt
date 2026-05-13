@@ -1,0 +1,39 @@
+Live Reviewer Decision Report
+Dossier: UPLOAD-WATCH-001
+Product: Respivox
+Applicant: East Africa Therapeutics
+Recommendation: deep_review
+Confidence: 0.54873
+Authorization: restricted_authorization
+
+Executive Summary
+Question: Review this dossier, summarize the findings across all criteria, and recommend the regulatory action with citations.
+Selected model: gemma-e4b
+Proposed recommendation: deep_review
+Conversation context: none
+Grounded rationale:
+1. Evidence from Model Switching Guidance - Recommended Usage supports regulatory assessment for deep_review using model gemma-e4b. [knowledge_wiki:model-switching-guidance:2:c1]
+2. Evidence from Manufacturer and GMP Evidence supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m1_gmp:c1]
+3. Evidence from AMR Stewardship Narrative supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m5_stewardship:c1]
+
+Findings Across Criteria
+- Respivox submitted by East Africa Therapeutics was assessed for pre-market authorization.
+- The system recommendation is deep_review through the fallback review path.
+- Decision-driving policy signals: restricted_authorization.
+- Critical criteria needing reviewer attention: AMR Stewardship Narrative [present, length_ok, partial].
+- Groundedness verification passed with grounded claim rate 1.0.
+- AMR stewardship outcome: AWaRe watch, GLASS trend rising, authorization control restricted_authorization.
+
+Criteria Diagnostics
+- Manufacturer and GMP Evidence: presence=present, length=length_ok, correctness=correct, critical=True
+- Clinical Overview and Benefit-Risk Summary: presence=present, length=length_ok, correctness=correct, critical=True
+- AMR Stewardship Narrative: presence=present, length=length_ok, correctness=partial, critical=True
+
+Evidence Citations
+- knowledge_wiki:model-switching-guidance:2:c1 | Model Switching Guidance - Recommended Usage | Model Switching Guidance. Recommended Usage.Recommended Usage Gemma E4B should be used as the balanced default, Gemma E2B as the lighter fast option, and Qwen 3.5 as an alternative synthesis profile for difficult compara...
+- UPLOAD-WATCH-001:m1_gmp:c1 | Manufacturer and GMP Evidence | Manufacturing site passed its last inspection and current GMP certification is valid with no critical findings.
+- UPLOAD-WATCH-001:m5_stewardship:c1 | AMR Stewardship Narrative | The dossier acknowledges high similarity to ciprofloxacin and cites rising resistance concerns. The applicant proposes additional restrictions to reduce stewardship friction.
+- UPLOAD-WATCH-001:m2_clinical_overview:c1 | Clinical Overview and Benefit-Risk Summary | Clinical overview reports the primary endpoint was met in respiratory infection, but the overall stewardship narrative emphasizes resistance risk and careful comparator analysis.
+- knowledge_wiki:model-switching-guidance:1:c1 | Model Switching Guidance - Role of the Model Switch | Model Switching Guidance. Role of the Model Switch.Role of the Model Switch UI model switching exists to let reviewers and developers compare local synthesis behavior across Gemma E4B, Gemma E2B, and Qwen 3.5. It does no...
+- knowledge_wiki:retrieval-first-architecture:1:c1 | Retrieval-First Architecture - Core Principle | Retrieval-First Architecture. Core Principle.Core Principle The project treats retrieval quality as the primary determinant of dossier-review quality. Model choice is secondary to chunking, source coverage, query decompo...
+- knowledge_wiki:who-aware-and-glass:3:c1 | WHO AWaRe and GLASS Policy Stack - Watch Escalation | WHO AWaRe and GLASS Policy Stack. Watch Escalation.Watch Escalation A Watch antibiotic that is highly similar to an existing Watch comparator and paired with rising GLASS resistance should be escalated for restricted aut...

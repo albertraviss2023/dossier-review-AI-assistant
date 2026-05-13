@@ -1,0 +1,63 @@
+[
+  {
+    "requirement_id": "PATH-GEN-001",
+    "module": "Module 5",
+    "section": "Reference / Comparator Product Evidence",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "reference_product_name",
+      "comparator_evidence"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Generic pathway requires valid reference/comparator evidence."
+  },
+  {
+    "requirement_id": "PATH-INNOV-001",
+    "module": "Module 4",
+    "section": "Nonclinical Study Reports / Justification",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "nonclinical_or_justification"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Innovator/new active requires nonclinical evidence or valid justification."
+  }
+]

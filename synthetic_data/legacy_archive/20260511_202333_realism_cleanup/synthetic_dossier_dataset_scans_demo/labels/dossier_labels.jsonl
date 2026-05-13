@@ -1,0 +1,8 @@
+{"dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001", "submission_status": "correct", "expected_sop_outcome": "pass", "known_queries": []}
+{"dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001-Q", "submission_status": "query", "expected_sop_outcome": "query_applicant", "known_queries": ["missing_coa_batch_number"]}
+{"dossier_id": "VET-NEW-BIO-AMR-OXYT-0003", "submission_status": "correct", "expected_sop_outcome": "pass", "known_queries": []}
+{"dossier_id": "VET-NEW-BIO-AMR-OXYT-0003-Q", "submission_status": "query", "expected_sop_outcome": "query_applicant", "known_queries": ["stability_data_missing"]}
+{"dossier_id": "HUM-REN-BIO-NONAMR-CARD-0005", "submission_status": "correct", "expected_sop_outcome": "pass", "known_queries": []}
+{"dossier_id": "HUM-REN-BIO-NONAMR-CARD-0005-Q", "submission_status": "query", "expected_sop_outcome": "query_applicant", "known_queries": ["missing_coa_batch_number"]}
+{"dossier_id": "VET-REN-GEN-NONAMR-MULT-0007", "submission_status": "correct", "expected_sop_outcome": "pass", "known_queries": []}
+{"dossier_id": "VET-REN-GEN-NONAMR-MULT-0007-Q", "submission_status": "query", "expected_sop_outcome": "query_applicant", "known_queries": ["inconsistent_strength"]}

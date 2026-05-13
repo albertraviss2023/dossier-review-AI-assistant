@@ -1,0 +1,47 @@
+[
+  {
+    "example_id": "pil-generic-correct-1",
+    "label": "correct",
+    "section_type": "patient_information_leaflet",
+    "product_type": "generic",
+    "section_text": "The patient information leaflet clearly states the indications, dosage instructions, contraindications, warnings and precautions, possible side effects, and storage conditions for the product.",
+    "why_labeled": "Contains the core safety and usability elements expected in a compliant generic PIL.",
+    "metadata": {
+      "dimensions": ["completeness", "safety wording", "contraindications", "dosage clarity", "storage"]
+    }
+  },
+  {
+    "example_id": "pil-generic-correct-2",
+    "label": "correct",
+    "section_type": "patient_information_leaflet",
+    "product_type": "any",
+    "section_text": "The leaflet explains when to use the medicine, how much to take, who must not take it, the main warnings, side effects to watch for, and how to store the medicine safely.",
+    "why_labeled": "Expresses the same required patient-information concepts in clear reviewer-facing language.",
+    "metadata": {
+      "dimensions": ["completeness", "contraindications", "warnings", "side effects", "storage"]
+    }
+  },
+  {
+    "example_id": "pil-generic-incorrect-1",
+    "label": "incorrect",
+    "section_type": "patient_information_leaflet",
+    "product_type": "generic",
+    "section_text": "The leaflet only states the indication and basic dose. Contraindications, warnings, and storage instructions are not described.",
+    "why_labeled": "Missing critical safety wording and handling instructions.",
+    "metadata": {
+      "dimensions": ["safety wording", "contraindications", "storage"]
+    }
+  },
+  {
+    "example_id": "pil-generic-incorrect-2",
+    "label": "incorrect",
+    "section_type": "patient_information_leaflet",
+    "product_type": "any",
+    "section_text": "The dosage wording is vague and the leaflet does not explain major warnings or side effects clearly.",
+    "why_labeled": "Demonstrates inadequate dosage clarity and incomplete risk communication.",
+    "metadata": {
+      "dimensions": ["dosage clarity", "warnings", "side effects"]
+    }
+  }
+]
+

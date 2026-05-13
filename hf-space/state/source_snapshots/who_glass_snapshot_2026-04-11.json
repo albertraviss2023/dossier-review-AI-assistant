@@ -1,0 +1,32 @@
+{
+  "snapshot_version": "who_glass_snapshot_2026-04-11",
+  "source_name": "WHO GLASS trend snapshot",
+  "records": [
+    { "inn_name": "amikacin", "glass_resistance_trend": "stable" },
+    { "inn_name": "amoxicillin", "glass_resistance_trend": "stable" },
+    { "inn_name": "ampicillin", "glass_resistance_trend": "stable" },
+    { "inn_name": "azithromycin", "glass_resistance_trend": "stable" },
+    { "inn_name": "benzylpenicillin", "glass_resistance_trend": "stable" },
+    { "inn_name": "cefalexin", "glass_resistance_trend": "stable" },
+    { "inn_name": "cefiderocol", "glass_resistance_trend": "rising" },
+    { "inn_name": "cefixime", "glass_resistance_trend": "rising" },
+    { "inn_name": "cefpodoxime", "glass_resistance_trend": "stable" },
+    { "inn_name": "ceftriaxone", "glass_resistance_trend": "rising" },
+    { "inn_name": "chloramphenicol", "glass_resistance_trend": "stable" },
+    { "inn_name": "ciprofloxacin", "glass_resistance_trend": "rising" },
+    { "inn_name": "clarithromycin", "glass_resistance_trend": "stable" },
+    { "inn_name": "clindamycin", "glass_resistance_trend": "stable" },
+    { "inn_name": "colistin", "glass_resistance_trend": "rising" },
+    { "inn_name": "doxycycline", "glass_resistance_trend": "stable" },
+    { "inn_name": "erythromycin", "glass_resistance_trend": "stable" },
+    { "inn_name": "gentamicin", "glass_resistance_trend": "stable" },
+    { "inn_name": "levofloxacin", "glass_resistance_trend": "rising" },
+    { "inn_name": "linezolid", "glass_resistance_trend": "stable" },
+    { "inn_name": "metronidazole", "glass_resistance_trend": "stable" },
+    { "inn_name": "moxifloxacin", "glass_resistance_trend": "rising" },
+    { "inn_name": "nitrofurantoin", "glass_resistance_trend": "stable" },
+    { "inn_name": "piperacillin", "glass_resistance_trend": "stable" },
+    { "inn_name": "sulfamethoxazole", "glass_resistance_trend": "stable" },
+    { "inn_name": "trimethoprim", "glass_resistance_trend": "stable" }
+  ]
+}

@@ -1,0 +1,31 @@
+Pre-Market Authorization Review - INTAKE-1776257008519
+Dossier: INTAKE-1776257008519
+Product: incoming scanned quality failure
+Applicant: Not provided
+Recommendation: additional_information_required
+Confidence: unknown
+Authorization: standard_authorization
+
+Executive Summary
+### Executive Summary
+
+Based on a comprehensive review of the grounded dossier evidence, the current regulatory recommendation is **Additional Information Required**. This assessment is derived from synthesized analysis of the submission sections, quality standards, and linked external stewardship policies.
+
+### Detailed Findings
+- Evidence from **Imported Section 1** supports Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expired and critic Clinical Overview and Benefit-Risk Summary Primaryendpoint was not metand the reviewer needsreturn-for-completion.. [INTAKE-1776257008519:raw_section_1:fallback]
+- Evidence from **Visual Evidence Summary - Page 1** supports Visual evidence type: gmp certificate or site evidence. Visual evidence suggests an expired GMP certificate or expired quality evidence. OCR excerpt: Scanned IncomingPDF Manufacturerand GMP Evidenc.. [INTAKE-1776257008519:visual_page_1:fallback]
+
+### Conclusion. In conclusion, **Additional Information Required** is the grounded regulatory path. Reviewer verification should focus on addressing the identified gap regarding **AMR stewardship Narrative Watch-class similarity remains high and resistance concerns are rising The chemistry comparator islevofloxacin and additional restrictions may apply**.
+
+Findings Across Criteria
+- **incoming scanned quality failure** (INN: Not provided) submitted by **Not provided** was assessed for pre-market authorization.
+- The system recommendation is **Additional Information Required** through the **Fallback** review path.
+- No critical dossier criteria were flagged as missing, malformed, or incorrect in the current review pass.
+- Groundedness verification **failed** with a grounded claim rate of unknown.
+
+Criteria Diagnostics
+
+Evidence Citations
+- INTAKE-1776257008519:raw_section_1:fallback | Imported Section 1 | Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expired and critic Clinical Overview and Benefit-Risk Summary Primaryendpoint was not metand the reviewer needsreturn-for-completion action. AMRStewardship ...
+- INTAKE-1776257008519:visual_page_1:fallback | Visual Evidence Summary - Page 1 | Visual evidence type: gmp certificate or site evidence. Visual evidence suggests an expired GMP certificate or expired quality evidence. OCR excerpt: Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expire...
+- INTAKE-1776257008519:visual_page_2:fallback | Visual Evidence Summary - Page 2 | Visual evidence type: general visual attachment. Visual evidence OCR highlights: AMRStewardship Narrative Watch-classimilarity remains highand resistance concernsare rising The chemistrycomperatorislevofloxacinand additi...

@@ -1,0 +1,9 @@
+product_key,medicine_category,application_pathway_options,is_antimicrobial,amr_class,inn,active_ingredients,dosage_form,route_of_administration,strength,therapeutic_area,target_species,food_producing_species,requires_withdrawal_period,reference_required,suitable_for_new_submission,suitable_for_renewal
+hum_gen_amr_cef,human,generic|line_extension,True,Watch,ceftriaxone,ceftriaxone,powder for injection,intravenous,1 g,infectious_disease,,False,False,True,True,True
+hum_gen_nonamr_met,human,generic|fixed_dose_combination,False,not_applicable,metformin,metformin,tablet,oral,500 mg,endocrine,,False,False,True,True,True
+hum_innov_amr_syn,human,innovator|biosimilar_or_biological,True,Reserve,synteromycin,synteromycin,oral suspension,oral,250 mg/5 mL,infectious_disease,,False,False,False,True,True
+hum_innov_nonamr_syn,human,innovator|line_extension,False,not_applicable,cardiovex,cardiovex,tablet,oral,20 mg,cardiovascular,,False,False,False,True,True
+vet_gen_amr_oxy,veterinary,generic|line_extension,True,Watch,oxytetracycline,oxytetracycline,injectable solution,intramuscular,200 mg/mL,infectious_disease,cattle|goats|sheep,True,True,True,True,True
+vet_gen_nonamr_multi,veterinary,generic|fixed_dose_combination,False,not_applicable,multivitamin blend,vitamin a|vitamin d3|vitamin e,oral solution,oral,label claim,nutrition,cattle|goats|sheep,True,False,False,True,True
+vet_innov_amr_im,veterinary,innovator|line_extension,True,Reserve,lactomaxin,lactomaxin,intramammary infusion,intramammary,100 mg/syringe,mastitis,dairy cattle,True,True,False,True,True
+vet_innov_nonamr_antiinf,veterinary,innovator|biosimilar_or_biological,False,not_applicable,antiinflamox,antiinflamox,injectable suspension,subcutaneous,50 mg/mL,anti-inflammatory,cattle|dogs,True,True,False,True,True

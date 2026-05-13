@@ -1,0 +1,126 @@
+Structured Workflow Review Report - WF-STANDARD-20260417_222251
+
+Submission Summary
+- Dossier Id: WF-STANDARD-20260417_222251
+- Submission Type: pre_market_authorization
+- Applicant: Workflow Applicant
+- Product Name: Standard Review Demo
+- Active Ingredient: nitrofurantoin
+- Dosage Form: unknown
+- Strength: unknown
+- Jurisdiction: Uganda
+- Review Pathway: standard
+
+Administrative Review Outcome
+- Status: administratively_incomplete
+- No proof of payment was detected in the administrative material.
+
+Dossier Structure Review Outcome
+- Status: mapped
+- No structural dossier violations were detected.
+
+WHO INN Similarity Review
+- Proposed Name: Standard Review Demo
+- Who Inn: metronidazole
+- Similarity Index: 0.5474
+- Threshold: 0.7
+- Threshold Result: passed
+- Similarity Type: orthographic
+- Interpretation: No INN infringement detected for 'Standard Review Demo'.
+- Flag Status: acceptable_naming
+- Rule Consequence: No blocking INN naming issue was identified.
+
+Section-by-Section Scientific And Regulatory Findings
+- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Product Information and Naming: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Quality Overall Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Clinical Overview and Benefit-Risk Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- API Quality and Control Strategy: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- FPP Manufacturing Process and Controls: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Stability and Shelf-Life Justification: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Nonclinical Study Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+- Tabular Listing of Clinical Studies: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Pivotal Clinical Trial Reports: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Biopharmaceutics and Bioequivalence Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+
+AMR Stewardship Review
+- Applicable: True
+- AWaRe Category: access
+- Fast Track Status: False
+- Authorization Control: standard_authorization
+- Stewardship Rule Application: Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to nitrofurantoin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved nitrofurantoin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved nitrofurantoin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety nitrofurantoin, parent compound nitrofurantoin, PubChem CID 6604200, ChEMBL CHEMBL572, and UniChem UC6604200.
+
+Findings Register
+- [MINOR] Administrative completeness review: No proof of payment was detected in the administrative material. | Rule: Missing proof of payment where required = violation | Location: Application Form and Administrative Information | Recommendation: Confirm the payment receipt or fee evidence is included where required.
+
+Cross-Consistency Findings
+- No cross-section consistency findings were detected.
+
+Review Completeness Confirmation
+{
+  "status": "review_complete",
+  "mandatory_steps": {
+    "submission_intake_and_familiarization": true,
+    "administrative_completeness_review": true,
+    "structural_dossier_mapping": true,
+    "applicable_rules_identification": true,
+    "who_inn_similarity_review": true,
+    "section_by_section_technical_review": true,
+    "amr_stewardship_review": true,
+    "findings_register": true,
+    "severity_classification": true,
+    "cross_section_consistency_review": true
+  },
+  "notes": [
+    "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path."
+  ]
+}
+
+Overall Decision
+{
+  "final_verdict": "acceptable",
+  "system_recommendation": "approval_granted",
+  "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+  "blocking_issues": [],
+  "escalation_needed": false
+}
+
+Grounded Review Narrative
+### Final Answer
+
+### Executive Summary
+
+The current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Standard Review Demo** (nitrofurantoin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.
+
+### Naming Policy Compliance
+
+No INN infringement detected for 'Standard Review Demo'.
+
+### Overall Judgment
+
+Based on the full structured review, the overall judgment is **acceptable**. This aligns with the grounded system recommendation of **Approval Granted**.
+
+No blocking rule violations prevent the dossier from proceeding on the current evidence.
+
+**AMR Stewardship Analysis:** The product is classified under the **ACCESS** category. Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to nitrofurantoin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved nitrofurantoin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved nitrofurantoin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety nitrofurantoin, parent compound nitrofurantoin, PubChem CID 6604200, ChEMBL CHEMBL572, and UniChem UC6604200.
+
+### Detailed Findings
+- Evidence from **Application Form and Administrative Information** supports This dossier constitutes a formal application for Marketing Authorization of Simvvia (simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The applicant, Unite.. [WF-STANDARD-20260417_222251:m1_application_admin:c1]
+- Evidence from **Stability and Shelf-Life Justification** supports A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. Data from both accelerated (40°C/75% RH for 6 months) and long-term storage conditions.. [WF-STANDARD-20260417_222251:m3_stability:c1]
+
+### Conclusion. In conclusion, **Approval Granted** is the grounded regulatory path. The reviewer should confirm the stewardship plan aligns with the AWaRe categorization and local resistance trends.
+
+Evidence Citations
+- WF-STANDARD-20260417_222251:m1_application_admin:c1 | Application Form and Administrative Information | This dossier constitutes a formal application for Marketing Authorization of Simvvia (simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The applicant, United Therapeutics, formall...
+- WF-STANDARD-20260417_222251:m3_stability:c1 | Stability and Shelf-Life Justification | A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. Data from both accelerated (40°C/75% RH for 6 months) and long-term storage conditions (spanning up to 36 mon...
+- WF-STANDARD-20260417_222251:m4_nonclinical_summary:c1 | Nonclinical Study Summary | The nonclinical testing program evaluated the primary pharmacodynamics, secondary pharmacodynamics, safety pharmacology, and comprehensive toxicology profile of the compound. Repeat-dose toxicity studies in two mammalian...
+- WF-STANDARD-20260417_222251:m2_quality_overall_summary:c1 | Quality Overall Summary | This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for simvastatin. The control strategy justifies the proposed specifications for both the active s...
+- WF-STANDARD-20260417_222251:m3_api_quality:c1 | API Quality and Control Strategy | The active pharmaceutical ingredient (API) section details the complete synthesis route, starting from well-defined regulatory starting materials. Robust in-process controls and intermediate specifications ensure the con...
+- WF-STANDARD-20260417_222251:m2_clinical_overview:c1 | Clinical Overview and Benefit-Risk Summary | The Clinical Overview synthesizes the efficacy and safety data supporting the use of Simvvia for the treatment of bacterial skin infection. The pivotal clinical development program comprised 2 well-controlled studies. Ba...
+- WF-STANDARD-20260417_222251:m1_product_information:c1 | Product Information and Naming | The proposed proprietary name for this medicinal product is Simvvia, containing the active pharmaceutical ingredient simvastatin. The draft Summary of Product Characteristics (SmPC), Patient Information Leaflet (PIL), an...
+- WF-STANDARD-20260417_222251:m5_pivotal_trial_reports:c1 | Pivotal Clinical Trial Reports | Detailed clinical study reports (CSRs) for the pivotal efficacy trials are provided. These randomized, double-blind, actively-controlled trials evaluated the primary and secondary endpoints in accordance with the pre-spe...
+
+Verification Summary
+- Grounded claim rate: 1.0
+- Verifier passed: True

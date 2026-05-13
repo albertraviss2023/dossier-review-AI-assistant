@@ -1,0 +1,102 @@
+{
+  "dossier_id": "UPLOAD-RESERVE-LIVE-20260411130844",
+  "country": "Uganda",
+  "submission_date": "2026-04-11",
+  "product": {
+    "product_name": "Lastlinefex",
+    "inn_name": "cefiderocol",
+    "atc_code": "J01DI04",
+    "dosage_form": "powder for infusion",
+    "strength": "1 g vial"
+  },
+  "organization": {
+    "applicant": "Regional BioPharm",
+    "manufacturer": "Kampala Sterile Works",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "reserve",
+    "amr_unmet_need": "critical",
+    "targets_mdr_pathogen": true,
+    "glass_resistance_trend": "rising",
+    "similarity_to_existing_watch": "low",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "sections": [
+    {
+      "section_id": "m1_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "Primary manufacturing site inspection passed in 2025. GMP certificate remains valid and CAPA closure evidence is attached.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 600
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 117
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "Clinical overview states the pivotal program met the primary endpoint in carbapenem-resistant gram-negative infection and supports a favorable benefit-risk conclusion for restricted use.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 184
+      }
+    },
+    {
+      "section_id": "m5_stewardship",
+      "module": "5",
+      "title": "AMR Stewardship Narrative",
+      "text": "The product is positioned as a last-resort option for critical MDR pathogens. The dossier requests accelerated review while accepting restricted authorization and stewardship controls.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 100,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 181
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "fast_track",
+    "risk_score": 0.18,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": true,
+    "defect_modes": []
+  }
+}

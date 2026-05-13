@@ -1,0 +1,123 @@
+{
+  "dossier_id": "UPLOAD-INNOVATION-001-R2",
+  "country": "Uganda",
+  "submission_date": "2026-04-20",
+  "demo_focus": "Innovation review example for a new product where completeness, clarity, patient information, and regulatory adequacy are assessed without innovator wording matching.",
+  "product": {
+    "product_name": "Novathera",
+    "inn_name": "ivabradine",
+    "atc_code": "L01XX99",
+    "dosage_form": "tablet",
+    "strength": "150 mg"
+  },
+  "organization": {
+    "applicant": "Innovation Health Sciences",
+    "manufacturer": "Kampala Advanced Therapeutics",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "endpoint_met",
+    "aware_category": "not_applicable",
+    "amr_unmet_need": "not_applicable",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "not_applicable",
+    "similarity_to_existing_watch": "not_applicable",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "sections": [
+    {
+      "section_id": "m1_admin",
+      "module": "1",
+      "title": "Application Form and Administrative Information",
+      "text": "The signed application form, cover letter, proof of payment, and required legal declarations are included in the administrative module.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 800
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 138
+      }
+    },
+    {
+      "section_id": "m1_product_information",
+      "module": "1",
+      "title": "Product Information and Naming",
+      "text": "The proposed Summary of Product Characteristics and Patient Information Leaflet state the indication, dose, contraindications, warnings, adverse reactions, storage conditions, and instructions for use for Novathera containing ivabradine. Safety wording highlights key monitoring needs and explains how the benefit-risk profile should be communicated to patients.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 1200
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 321
+      }
+    },
+    {
+      "section_id": "m1_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "The primary manufacturing site remains compliant, the GMP certificate is valid, and recent inspection observations have been closed with documented CAPA evidence.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 1200
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 152
+      }
+    },
+    {
+      "section_id": "m2_clinical",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "The pivotal clinical evidence met the primary endpoint and the benefit-risk overview explains efficacy, safety, uncertainties, and proposed risk minimization measures in a clear manner.",
+      "critical": true,
+      "constraints": {
+        "min_chars": 80,
+        "max_chars": 1200
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 183
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "standard_review",
+    "risk_score": 0.18,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": true,
+    "defect_modes": []
+  }
+}

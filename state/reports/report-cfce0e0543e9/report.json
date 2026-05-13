@@ -1,0 +1,1871 @@
+{
+  "generated_at_utc": "2026-05-11T19:58:15.539675+00:00",
+  "dossier_id": "SIM-SCANNED-20260511_195632",
+  "report_title": "Robustness Final Review Report - SIM-SCANNED-20260511_195632",
+  "recipient_email": null,
+  "product_name": "Scanned Review Demo",
+  "inn_name": "levofloxacin",
+  "product_group": "antimicrobial",
+  "application_type": "new_application",
+  "antimicrobial": true,
+  "aware_category": "watch",
+  "final_verdict": "escalate_for_higher_review",
+  "reviewer_username": "alutakome",
+  "review_type": "generic",
+  "review_program": "marketing_authorization",
+  "report_lifecycle_status": "completed",
+  "report_payload": {
+    "report_title": "Robustness Final Review Report - SIM-SCANNED-20260511_195632",
+    "workflow_report": {
+      "data_quality_and_vision_extraction_check": {
+        "status": "completed",
+        "scanned_document_challenge_mode": {
+          "enabled": true,
+          "vision_extraction_detected": [
+            "scanned GMP certificate",
+            "low-resolution stability table"
+          ],
+          "text_rag_failure_risk": "high",
+          "extraction_confidence": {
+            "gmp_expiry_date": 0.82,
+            "coa_batch_number": null,
+            "signature_or_stamp_detected": false
+          },
+          "ocr_used": true,
+          "extraction_method": "pdf_ocr",
+          "page_count": 2,
+          "image_count": 2,
+          "warnings": [
+            "ocr_fallback_used"
+          ]
+        }
+      },
+      "submission_summary": {
+        "dossier_id": "SIM-SCANNED-20260511_195632",
+        "submission_type": "pre_market_authorization",
+        "review_type": "generic",
+        "applicant": "Demo Applicant",
+        "product_name": "Scanned Review Demo",
+        "active_ingredient": "levofloxacin",
+        "dosage_form": "unknown",
+        "strength": "unknown",
+        "jurisdiction": "Uganda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_incomplete",
+        "violations": [
+          "Administrative application section is missing."
+        ]
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "Generic review packaging and patient-information comparison against innovator reference when provided",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Scanned Review Demo",
+        "who_inn": "levofloxacin",
+        "similarity_index": 0.0588,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "Product name 'Scanned Review Demo' has 5.88% similarity to INN 'levofloxacin'. Rule result: pass. Evaluated against naming guidance: Reviewer How-To Tutorials. How To Ask For Guidance And SOP Help.How To Ask For Guidance And SOP Help\n\nReviewers can ask natural questions such as show me the SOPs for dossier review, what guidance applies here, or explain the AMR stewardship rule. The assistant should surface the relevant SOP or pol...",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [
+          {
+            "section": "Imported Section 1",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          },
+          {
+            "section": "Visual Evidence Summary - Page 1",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          },
+          {
+            "section": "Visual Evidence Summary - Page 2",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          }
+        ],
+        "review_type_specific": {
+          "review_type": "generic",
+          "status": "partial",
+          "baseline_available": true,
+          "baseline_verified": true,
+          "baseline_reference_name": "levofloxacin reference",
+          "baseline_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=levofloxacin",
+            "https://products.mhra.gov.uk/?q=levofloxacin",
+            "https://www.medicines.org.uk/emc/search?q=levofloxacin",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=levofloxacin",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin",
+            "https://www.medicines.org.uk/emc/product/13768/smpc"
+          ],
+          "verified_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=levofloxacin",
+            "https://products.mhra.gov.uk/?q=levofloxacin",
+            "https://www.medicines.org.uk/emc/search?q=levofloxacin",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=levofloxacin",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin",
+            "https://www.medicines.org.uk/emc/product/13768/smpc"
+          ],
+          "comparison_matrix": [
+            {
+              "concept_key": "indication",
+              "dimension": "Indication",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "dosing",
+              "dimension": "Dosing",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service ps, solution...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "contraindications",
+              "dimension": "Contraindications",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "warnings",
+              "dimension": "Warnings",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "adverse_reactions",
+              "dimension": "Adverse Reactions",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "storage",
+              "dimension": "Storage",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L...",
+              "evidence_source": "mcp_external"
+            }
+          ],
+          "section_provenance": [
+            {
+              "section_name": "side_effects",
+              "source_url": "https://products.mhra.gov.uk/search/?query=levofloxacin",
+              "source_domain": "products.mhra.gov.uk",
+              "source_priority": 100,
+              "confidence_score": 0.75
+            },
+            {
+              "section_name": "dosage",
+              "source_url": "https://www.medicines.org.uk/emc/search?q=levofloxacin",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "warnings",
+              "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "indications",
+              "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "contraindications",
+              "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "storage",
+              "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            }
+          ],
+          "source_selection_policy": {
+            "order": [
+              "products.mhra.gov.uk",
+              "medicines.org.uk",
+              "ema.europa.eu",
+              "accessdata.fda.gov",
+              "dailymed.nlm.nih.gov",
+              "gov.uk",
+              "who.int"
+            ],
+            "strategy": "prefer_highest_priority_source_per_section"
+          },
+          "notes": [
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used levofloxacin reference through MCP patient-information tools with overall alignment not_aligned.",
+            "Example comparison classified the section as non_compliant."
+          ],
+          "findings": [
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for indications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "indications",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "dosage",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "contraindications",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "warnings",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "side_effects",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for storage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "storage",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "The current section does not adequately cover completeness.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "major",
+              "location": "Product information",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover safety wording.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "critical",
+              "location": "Product information",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover contraindications.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "critical",
+              "location": "Product information",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover dosage clarity.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "major",
+              "location": "Product information",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            }
+          ],
+          "example_comparison": {
+            "classification": "non_compliant",
+            "matched_good_patterns": [],
+            "matched_bad_patterns": [
+              "completeness",
+              "safety wording",
+              "contraindications",
+              "dosage clarity"
+            ],
+            "evidence": [
+              {
+                "dimension": "completeness",
+                "finding": "The current section does not adequately cover completeness.",
+                "severity": "major",
+                "evidence_excerpt": ""
+              },
+              {
+                "dimension": "safety wording",
+                "finding": "The current section does not adequately cover safety wording.",
+                "severity": "critical",
+                "evidence_excerpt": ""
+              },
+              {
+                "dimension": "contraindications",
+                "finding": "The current section does not adequately cover contraindications.",
+                "severity": "critical",
+                "evidence_excerpt": ""
+              },
+              {
+                "dimension": "dosage clarity",
+                "finding": "The current section does not adequately cover dosage clarity.",
+                "severity": "major",
+                "evidence_excerpt": ""
+              }
+            ]
+          }
+        }
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "watch",
+        "stewardship_rule_application": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization.",
+        "fast_track_status": false,
+        "authorization_control": "restricted_authorization",
+        "watch_or_reserve_caution": true,
+        "findings": [
+          "MCP AWaRe reference resolved levofloxacin as Watch.",
+          "MCP antimicrobial similarity returned stewardship flag review_required.",
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.",
+          "Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+        ],
+        "policy_decision": {
+          "decision": "restricted_authorization",
+          "required_controls": [
+            "Restricted authorization conditions",
+            "Stewardship monitoring plan",
+            "Resistance surveillance commitments"
+          ],
+          "decision_basis": {
+            "aware_category": "watch",
+            "watch_similarity_restriction": true,
+            "glass_resistance_trend": "rising",
+            "comparator": "ciprofloxacin",
+            "similarity_to_existing_watch": "high",
+            "targets_mdr_pathogen": false,
+            "amr_unmet_need": "moderate"
+          }
+        },
+        "amr_stewardship_check": {
+          "active_ingredient": "levofloxacin",
+          "amr_class": "watch",
+          "product_type": "generic",
+          "indication": "not_stated",
+          "required_warning": "missing",
+          "stewardship_justification": "missing",
+          "decision": "query_applicant",
+          "decision_reasons": [
+            "Required AMR warning is missing.",
+            "Stewardship justification is missing."
+          ]
+        }
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Administrative completeness review",
+          "issue": "Mandatory administrative application section is missing.",
+          "violated_rule": "Missing mandatory administrative documents = violation",
+          "severity": "major",
+          "location": "Module 1 / Administrative",
+          "recommendation": "Provide the required administrative section and supporting documents.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for indications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "indications",
+          "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "dosage",
+          "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "contraindications",
+          "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "warnings",
+          "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "side_effects",
+          "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for storage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "storage",
+          "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover completeness.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "major",
+          "location": "Product information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover safety wording.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "critical",
+          "location": "Product information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover contraindications.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "critical",
+          "location": "Product information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover dosage clarity.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "major",
+          "location": "Product information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Technical review identified policy information gap.",
+          "violated_rule": "Present but inadequate section = violation",
+          "severity": "major",
+          "location": "Scientific dossier content",
+          "recommendation": "Provide the missing technical evidence or clarifying support.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+          "violated_rule": "Required evidence missing = violation",
+          "severity": "major",
+          "location": "Manufacturer and GMP Evidence",
+          "recommendation": "Resolve GMP deficiencies and provide current manufacturing evidence.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1"
+        },
+        {
+          "workflow_step": "AMR stewardship review using AWaRe rules",
+          "issue": "AMR stewardship check identified missing warning or stewardship justification.",
+          "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+          "severity": "major",
+          "location": "AMR Stewardship",
+          "recommendation": "Provide complete AMR warning statements and stewardship justification.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1"
+        },
+        {
+          "workflow_step": "AMR stewardship review using AWaRe rules",
+          "issue": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+          "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+          "severity": "major",
+          "location": "AMR Stewardship Narrative",
+          "recommendation": "Document the stewardship restriction and reviewer control measures.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1"
+        },
+        {
+          "workflow_step": "Cross-section consistency review",
+          "issue": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+          "violated_rule": "Claim not supported by evidence = violation",
+          "severity": "major",
+          "location": "Stability and Shelf-Life Justification",
+          "recommendation": "Provide or correctly map the stability section before finalizing the review.",
+          "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+        }
+      ],
+      "findings_summary_tables": {
+        "administrative": [
+          {
+            "severity": "major",
+            "violated_rule": "Missing mandatory administrative documents = violation",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Provide the required administrative section and supporting documents."
+          }
+        ],
+        "naming_inn": [],
+        "quality": [
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Present but inadequate section = violation",
+            "evidence_reference": "SIM-SCANNED-20260511_195632",
+            "recommendation": "Provide the missing technical evidence or clarifying support."
+          }
+        ],
+        "gmp": [
+          {
+            "severity": "major",
+            "violated_rule": "Required evidence missing = violation",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1",
+            "recommendation": "Resolve GMP deficiencies and provide current manufacturing evidence."
+          }
+        ],
+        "clinical_evidence": [
+          {
+            "severity": "major",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          }
+        ],
+        "amr_stewardship": [
+          {
+            "severity": "major",
+            "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1",
+            "recommendation": "Provide complete AMR warning statements and stewardship justification."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1",
+            "recommendation": "Document the stewardship restriction and reviewer control measures."
+          }
+        ],
+        "consistency_checks": [
+          {
+            "severity": "major",
+            "violated_rule": "Claim not supported by evidence = violation",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+            "recommendation": "Provide or correctly map the stability section before finalizing the review."
+          }
+        ]
+      },
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | [1] | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | [2] | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Required evidence missing = violation | [3] | Resolve GMP deficiencies and provide current manufacturing evidence. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [3] | Provide complete AMR warning statements and stewardship justification. |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | [3] | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | [1] | Provide or correctly map the stability section before finalizing the review. |",
+      "severity_classification": {
+        "critical": 4,
+        "major": 12,
+        "minor": 0,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "violations_found",
+        "findings": [
+          "No stability section was mapped, so shelf-life claims cannot be cross-checked."
+        ]
+      },
+      "review_completeness_confirmation": {
+        "status": "review_incomplete",
+        "mandatory_steps": {
+          "data_quality_and_vision_extraction_check": true,
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": false,
+          "structural_dossier_mapping": true,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": true,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "Administrative completeness review could not be confirmed because the administrative section was not mapped.",
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+          "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+          "Generic baseline comparison used levofloxacin reference through MCP patient-information tools with overall alignment not_aligned.",
+          "Example comparison classified the section as non_compliant."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "escalate_for_higher_review",
+        "system_recommendation": "additional_information_required",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Mandatory administrative application section is missing.",
+          "Current patient information does not align closely with the innovator reference for indications.",
+          "Current patient information does not align closely with the innovator reference for dosage.",
+          "Current patient information does not align closely with the innovator reference for contraindications.",
+          "Current patient information does not align closely with the innovator reference for warnings.",
+          "Current patient information does not align closely with the innovator reference for side_effects.",
+          "Current patient information does not align closely with the innovator reference for storage.",
+          "The current section does not adequately cover completeness.",
+          "The current section does not adequately cover safety wording.",
+          "The current section does not adequately cover contraindications.",
+          "The current section does not adequately cover dosage clarity.",
+          "Technical review identified policy information gap.",
+          "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+          "AMR stewardship check identified missing warning or stewardship justification.",
+          "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+          "Shelf-life claims could not be cross-checked against a mapped stability section."
+        ],
+        "escalation_needed": true
+      }
+    },
+    "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | [1] | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | [2] | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Required evidence missing = violation | [3] | Resolve GMP deficiencies and provide current manufacturing evidence. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [3] | Provide complete AMR warning statements and stewardship justification. |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | [3] | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | [1] | Provide or correctly map the stability section before finalizing the review. |",
+    "query_letter": {
+      "markdown": "Dear Applicant,\n\nFollowing screening of your submission for Scanned Review Demo, the following queries are raised:\n\n1. Administrative completeness review\nMandatory administrative application section is missing.\nRule reference: Missing mandatory administrative documents = violation.\nEvidence location: Module 1 / Administrative.\nRequested action: Provide the required administrative section and supporting documents.\n\n2. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for indications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: indications.\nRequested action: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.\n\n3. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for dosage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: dosage.\nRequested action: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.\n\n4. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for contraindications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: contraindications.\nRequested action: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.\n\n5. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for warnings.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: warnings.\nRequested action: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.\n\n6. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for side_effects.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: side_effects.\nRequested action: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.\n\n7. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for storage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: storage.\nRequested action: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.\n\n8. Section-by-section technical review\nThe current section does not adequately cover completeness.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n9. Section-by-section technical review\nThe current section does not adequately cover safety wording.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n10. Section-by-section technical review\nThe current section does not adequately cover contraindications.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n11. Section-by-section technical review\nThe current section does not adequately cover dosage clarity.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n12. Section-by-section technical review\nTechnical review identified policy information gap.\nRule reference: Present but inadequate section = violation.\nEvidence location: Scientific dossier content.\nRequested action: Provide the missing technical evidence or clarifying support.\n\n13. Section-by-section technical review\nManufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.\nRule reference: Required evidence missing = violation.\nEvidence location: Manufacturer and GMP Evidence.\nRequested action: Resolve GMP deficiencies and provide current manufacturing evidence.\n\n14. AMR stewardship review using AWaRe rules\nAMR stewardship check identified missing warning or stewardship justification.\nRule reference: AMR warning and stewardship justification must be present for antimicrobial submissions..\nEvidence location: AMR Stewardship.\nRequested action: Provide complete AMR warning statements and stewardship justification.\n\n15. AMR stewardship review using AWaRe rules\nAWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.\nRule reference: Watch / Reserve stewardship-sensitive products should trigger stewardship caution.\nEvidence location: AMR Stewardship Narrative.\nRequested action: Document the stewardship restriction and reviewer control measures.\n\n16. Cross-section consistency review\nShelf-life claims could not be cross-checked against a mapped stability section.\nRule reference: Claim not supported by evidence = violation.\nEvidence location: Stability and Shelf-Life Justification.\nRequested action: Provide or correctly map the stability section before finalizing the review.\n\nRegards,\nRegulatory Reviewer",
+      "html": "<!doctype html><html><head><meta charset='utf-8'><title>Applicant Query Letter</title><style>body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f8fc;color:#1f2937;margin:0;padding:24px;}.letter{max-width:900px;margin:0 auto;background:#fff;border:1px solid #d7e3f1;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,.08);}.head{padding:22px 28px;background:linear-gradient(135deg,#0f4c81,#2563eb);color:#fff;}.head h1{margin:0;font-size:20px;letter-spacing:.02em;}.head p{margin:6px 0 0;opacity:.9;font-size:13px;}.meta{padding:14px 28px;background:#eef5ff;border-bottom:1px solid #d7e3f1;color:#334155;font-size:13px;}.content{padding:24px 28px;line-height:1.65;font-size:14px;}.q{margin:14px 0 0;padding:12px 14px;border:1px solid #dbe7f3;border-radius:10px;background:#f8fbff;}.q strong{color:#0f3d66;}.footer{padding:16px 28px;border-top:1px solid #e5edf6;background:#fafcff;color:#475569;font-size:12px;}</style></head><body><div class='letter'><div class='head'><h1>National Drug Agency</h1><p>Regulatory Review and Market Authorization Directorate</p></div><div class='meta'>Document: Applicant Query Letter &nbsp;|&nbsp; Generated: 2026-05-11 19:58 UTC</div><div class='content'><p>Dear Applicant,</p><br/><p>Following screening of your submission for Scanned Review Demo, the following queries are raised:</p><br/><div class='q'><strong>1. Administrative completeness review</strong></div><p>Mandatory administrative application section is missing.</p><p>Rule reference: Missing mandatory administrative documents = violation.</p><p>Evidence location: Module 1 / Administrative.</p><p>Requested action: Provide the required administrative section and supporting documents.</p><br/><div class='q'><strong>2. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for indications.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: indications.</p><p>Requested action: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>3. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for dosage.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: dosage.</p><p>Requested action: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>4. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for contraindications.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: contraindications.</p><p>Requested action: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>5. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for warnings.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: warnings.</p><p>Requested action: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>6. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for side_effects.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: side_effects.</p><p>Requested action: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>7. Section-by-section technical review</strong></div><p>Current patient information does not align closely with the innovator reference for storage.</p><p>Rule reference: Generic review must compare dossier patient information against innovator reference materials when provided.</p><p>Evidence location: storage.</p><p>Requested action: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.</p><br/><div class='q'><strong>8. Section-by-section technical review</strong></div><p>The current section does not adequately cover completeness.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Product information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><div class='q'><strong>9. Section-by-section technical review</strong></div><p>The current section does not adequately cover safety wording.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Product information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><p>10. Section-by-section technical review</p><p>The current section does not adequately cover contraindications.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Product information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><p>11. Section-by-section technical review</p><p>The current section does not adequately cover dosage clarity.</p><p>Rule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.</p><p>Evidence location: Product information.</p><p>Requested action: Address the highlighted patient-information issue in line with compliant section examples.</p><br/><p>12. Section-by-section technical review</p><p>Technical review identified policy information gap.</p><p>Rule reference: Present but inadequate section = violation.</p><p>Evidence location: Scientific dossier content.</p><p>Requested action: Provide the missing technical evidence or clarifying support.</p><br/><p>13. Section-by-section technical review</p><p>Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.</p><p>Rule reference: Required evidence missing = violation.</p><p>Evidence location: Manufacturer and GMP Evidence.</p><p>Requested action: Resolve GMP deficiencies and provide current manufacturing evidence.</p><br/><p>14. AMR stewardship review using AWaRe rules</p><p>AMR stewardship check identified missing warning or stewardship justification.</p><p>Rule reference: AMR warning and stewardship justification must be present for antimicrobial submissions..</p><p>Evidence location: AMR Stewardship.</p><p>Requested action: Provide complete AMR warning statements and stewardship justification.</p><br/><p>15. AMR stewardship review using AWaRe rules</p><p>AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.</p><p>Rule reference: Watch / Reserve stewardship-sensitive products should trigger stewardship caution.</p><p>Evidence location: AMR Stewardship Narrative.</p><p>Requested action: Document the stewardship restriction and reviewer control measures.</p><br/><p>16. Cross-section consistency review</p><p>Shelf-life claims could not be cross-checked against a mapped stability section.</p><p>Rule reference: Claim not supported by evidence = violation.</p><p>Evidence location: Stability and Shelf-Life Justification.</p><p>Requested action: Provide or correctly map the stability section before finalizing the review.</p><br/><p>Regards,</p><p>Regulatory Reviewer</p></div><div class='footer'>This communication is issued by the National Drug Agency for regulatory follow-up on submitted dossier evidence.</div></div></body></html>",
+      "text": "Dear Applicant,\n\nFollowing screening of your submission for Scanned Review Demo, the following queries are raised:\n\n1. Administrative completeness review\nMandatory administrative application section is missing.\nRule reference: Missing mandatory administrative documents = violation.\nEvidence location: Module 1 / Administrative.\nRequested action: Provide the required administrative section and supporting documents.\n\n2. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for indications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: indications.\nRequested action: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.\n\n3. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for dosage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: dosage.\nRequested action: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.\n\n4. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for contraindications.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: contraindications.\nRequested action: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.\n\n5. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for warnings.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: warnings.\nRequested action: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.\n\n6. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for side_effects.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: side_effects.\nRequested action: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.\n\n7. Section-by-section technical review\nCurrent patient information does not align closely with the innovator reference for storage.\nRule reference: Generic review must compare dossier patient information against innovator reference materials when provided.\nEvidence location: storage.\nRequested action: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.\n\n8. Section-by-section technical review\nThe current section does not adequately cover completeness.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n9. Section-by-section technical review\nThe current section does not adequately cover safety wording.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n10. Section-by-section technical review\nThe current section does not adequately cover contraindications.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n11. Section-by-section technical review\nThe current section does not adequately cover dosage clarity.\nRule reference: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks.\nEvidence location: Product information.\nRequested action: Address the highlighted patient-information issue in line with compliant section examples.\n\n12. Section-by-section technical review\nTechnical review identified policy information gap.\nRule reference: Present but inadequate section = violation.\nEvidence location: Scientific dossier content.\nRequested action: Provide the missing technical evidence or clarifying support.\n\n13. Section-by-section technical review\nManufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.\nRule reference: Required evidence missing = violation.\nEvidence location: Manufacturer and GMP Evidence.\nRequested action: Resolve GMP deficiencies and provide current manufacturing evidence.\n\n14. AMR stewardship review using AWaRe rules\nAMR stewardship check identified missing warning or stewardship justification.\nRule reference: AMR warning and stewardship justification must be present for antimicrobial submissions..\nEvidence location: AMR Stewardship.\nRequested action: Provide complete AMR warning statements and stewardship justification.\n\n15. AMR stewardship review using AWaRe rules\nAWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.\nRule reference: Watch / Reserve stewardship-sensitive products should trigger stewardship caution.\nEvidence location: AMR Stewardship Narrative.\nRequested action: Document the stewardship restriction and reviewer control measures.\n\n16. Cross-section consistency review\nShelf-life claims could not be cross-checked against a mapped stability section.\nRule reference: Claim not supported by evidence = violation.\nEvidence location: Stability and Shelf-Life Justification.\nRequested action: Provide or correctly map the stability section before finalizing the review.\n\nRegards,\nRegulatory Reviewer"
+    },
+    "decision_log": [
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-001",
+        "rule_evaluated": "SOP-0001",
+        "rule_text": "Missing mandatory administrative documents = violation",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Mandatory administrative application section is missing.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-002",
+        "rule_evaluated": "SOP-0002",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for indications.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-003",
+        "rule_evaluated": "SOP-0003",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for dosage.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-004",
+        "rule_evaluated": "SOP-0004",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for contraindications.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-005",
+        "rule_evaluated": "SOP-0005",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for warnings.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-006",
+        "rule_evaluated": "SOP-0006",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for side_effects.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-007",
+        "rule_evaluated": "SOP-0007",
+        "rule_text": "Generic review must compare dossier patient information against innovator reference materials when provided",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Current patient information does not align closely with the innovator reference for storage.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-008",
+        "rule_evaluated": "SOP-0008",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "The current section does not adequately cover completeness.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-009",
+        "rule_evaluated": "SOP-0009",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "The current section does not adequately cover safety wording.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-010",
+        "rule_evaluated": "SOP-0010",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "The current section does not adequately cover contraindications.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-011",
+        "rule_evaluated": "SOP-0011",
+        "rule_text": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "The current section does not adequately cover dosage clarity.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-012",
+        "rule_evaluated": "SOP-0012",
+        "rule_text": "Present but inadequate section = violation",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632",
+        "extracted_value": "Technical review identified policy information gap.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-013",
+        "rule_evaluated": "SOP-0013",
+        "rule_text": "Required evidence missing = violation",
+        "tool_called": "OCR extraction",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:raw_section_1",
+        "extracted_value": "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-014",
+        "rule_evaluated": "SOP-0014",
+        "rule_text": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:raw_section_1",
+        "extracted_value": "AMR stewardship check identified missing warning or stewardship justification.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-015",
+        "rule_evaluated": "SOP-0015",
+        "rule_text": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+        "tool_called": "retrieval + rule evaluation",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:raw_section_1",
+        "extracted_value": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      },
+      {
+        "log_id": "SIM-SCANNED-20260511_195632-LOG-016",
+        "rule_evaluated": "SOP-0016",
+        "rule_text": "Claim not supported by evidence = violation",
+        "tool_called": "OCR extraction",
+        "evidence_retrieved": "SIM-SCANNED-20260511_195632:unknown",
+        "extracted_value": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+        "rule_result": "query",
+        "reviewer_action": "pending",
+        "reviewer_username": "alutakome",
+        "timestamp_utc": "2026-05-11T19:58:15.535161+00:00"
+      }
+    ],
+    "review_payload": {
+      "dossier_id": "SIM-SCANNED-20260511_195632",
+      "selected_model": {
+        "id": "gemma-4-4b-it",
+        "label": "Gemma 4 4B-IT (Default)",
+        "runtime_model_id": "gemma-4-4b-it",
+        "description": "High-precision instruction-tuned model for regulatory auditing (8GB VRAM)."
+      },
+      "sub_queries": [
+        "Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations.",
+        "details about Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations.",
+        "requirements for Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations.",
+        "Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations. constrained to Submission",
+        "Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations. with related terms not provided, incomplete, omission, absent evidence"
+      ],
+      "intent": "dossier_review",
+      "response_contract": "dossier_review_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "conversation_id": "conv-177d3a1a2f",
+      "review_type": "generic",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 3710,
+        "remaining_tokens": 386,
+        "usage_ratio": 0.90576,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 0,
+        "carryover_tokens": 0,
+        "active_message_tokens": 3710,
+        "archived_messages_count": 0,
+        "compaction_count": 0,
+        "auto_compaction_required": false,
+        "last_compacted_at": null,
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "additional_information_required",
+      "confidence": 0.57382,
+      "route": "fallback",
+      "abstained": false,
+      "abstain_reason": null,
+      "rationale": "### Data Quality Check (Mandatory Step 1)\n\n- Status: completed\n- OCR/Vision used: yes\n- Pages analyzed: 2\n- Image-heavy pages: 2\n- Scan signals detected: scanned GMP certificate, low-resolution stability table\n\n### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nProduct name 'Scanned Review Demo' has 5.88% similarity to INN 'levofloxacin'. Rule result: pass. Evaluated against naming guidance: Reviewer How-To Tutorials. How To Ask For Guidance And SOP Help.How To Ask For Guidance And SOP Help\n\nReviewers can ask natural questions such as show me the SOPs for dossier review, what guidance applies here, or explain the AMR stewardship rule. The assistant should surface the relevant SOP or pol..\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. The ingredient was normalized to **levofloxacin** for stewardship checks. Restricted authorization is triggered because the chemistry profile shows **high** similarity to **ciprofloxacin**. Local GLASS surveillance data indicates rising resistance, which increases the stewardship risk.\n\n### Detailed Findings\n\nI have prioritized the following **3** key issues based on their likely regulatory impact:\n\n1. **MAJOR**: GMP and manufacturing quality evidence - Manufacturing quality evidence shows non-compliance or expired certification. [SIM-SCANNED-20260511_195632:visual_page_1:c1]\n\n2. **MAJOR**: Clinical efficacy and benefit-risk support - Clinical support is insufficient because the pivotal endpoint failed or remains unclear. [SIM-SCANNED-20260511_195632:visual_page_1:c1]\n\n3. **MAJOR**: AMR stewardship alignment - Stewardship review applies and authorization controls are required. [SIM-SCANNED-20260511_195632:raw_section_1:c1]\n\n### Conclusion\n\n**Additional Information Required** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents.\n\n### Findings Summary Tables\n\n#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | [1] | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | [2] | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Required evidence missing = violation | [3] | Resolve GMP deficiencies and provide current manufacturing evidence. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [3] | Provide complete AMR warning statements and stewardship justification. |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | [3] | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | [1] | Provide or correctly map the stability section before finalizing the review. |\n\n### Decision Support Snapshot\n\n| Signal | Value |\n| --- | --- |\n| Recommendation | additional_information_required |\n| Confidence | 0.57 |\n| Submission Type | pre_market_authorization |\n\n### External vs Submitted Evidence (Patient/Safety)\n\n| Dimension | Submitted Dossier | External Source | Gap |\n| --- | --- | --- | --- |\n| Indication | Not stated | 4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only | Yes |\n| Dosing | Not stated | Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service ps, solution... | Yes |\n| Contraindications | Not stated | Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L... | Yes |\n| Warnings | Not stated | 4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only | Yes |\n| Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Yes |\n| Storage | Not stated | Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L... | Yes |\n\nSummary: submitted dossier provides **0/6** patient-safety dimensions; external baseline provides **6/6**.\nInconsistencies detected in: **Indication, Dosing, Contraindications, Warnings, Adverse Reactions, Storage**. These require applicant clarification or correction.\n\nVerified external references:\n- [https://products.mhra.gov.uk/search/?query=levofloxacin](https://products.mhra.gov.uk/search/?query=levofloxacin)\n- [https://products.mhra.gov.uk/?q=levofloxacin](https://products.mhra.gov.uk/?q=levofloxacin)\n- [https://www.medicines.org.uk/emc/search?q=levofloxacin](https://www.medicines.org.uk/emc/search?q=levofloxacin)\n- [https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=levofloxacin](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=levofloxacin)\n- [https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin)\n- [https://www.medicines.org.uk/emc/product/13768/smpc](https://www.medicines.org.uk/emc/product/13768/smpc)\n\nSource selection policy:\n- Strategy: prefer_highest_priority_source_per_section\n- Priority order: products.mhra.gov.uk, medicines.org.uk, ema.europa.eu, accessdata.fda.gov, dailymed.nlm.nih.gov, gov.uk, who.int\n\n#### Clinical Evidence Reconciliation (Submitted vs External)\n\n| Dimension | Submitted | External | Reconciliation |\n| --- | --- | --- | --- |\n| Indication | Not stated | 4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only | Mismatch - query applicant |\n| Contraindications | Not stated | Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L... | Mismatch - query applicant |\n| Warnings | Not stated | 4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only | Mismatch - query applicant |\n| Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Mismatch - query applicant |\n\n#### External Source Provenance and Confidence\n\n| Section | Source Domain | Source Priority | Confidence |\n| --- | --- | --- | --- |\n| side_effects | products.mhra.gov.uk | 100 | 0.75 |\n| dosage | www.medicines.org.uk | 90 | 0.84 |\n| warnings | www.medicines.org.uk | 90 | 0.84 |\n| indications | www.medicines.org.uk | 90 | 0.84 |\n| contraindications | www.medicines.org.uk | 90 | 0.84 |\n| storage | www.medicines.org.uk | 90 | 0.84 |\n\n### SOP Stage Detail\n\n| Step | Stage | Output Detail |\n| --- | --- | --- |\n| 1 | Data quality and vision extraction check | completed |\n| 2 | Administrative completeness review | administratively_incomplete |\n| 3 | Structural dossier mapping | mapped |\n| 5 | WHO INN similarity review | passed |\n| 6 | Section-by-section technical review | 3 sections reviewed |\n| 7 | AMR stewardship review | restricted_authorization |\n| 10 | Cross-section consistency review | violations_found |\n| 11 | Review completeness confirmation | review_incomplete |\n| 12 | Overall judgment | escalate_for_higher_review |\n\n### Scanned-Document Challenge Mode\n\nVision extraction detected:\n- scanned GMP certificate\n- low-resolution stability table\n\nExtraction confidence:\n- GMP expiry date: 0.82\n- CoA batch number: None\n- Signature/stamp detected: no\n\nText-only RAG challenge:\n- Risk of missing key evidence without vision: high\n- Why MCP+vision matters: key regulatory evidence exists in scanned certificates/tables, not plain text.\n\n### AMR Policy Decision Support\n\n| Signal | Value |\n| --- | --- |\n| Applicable | True |\n| AWaRe Category | watch |\n| Authorization Control | restricted_authorization |\n| Policy Decision | restricted_authorization |\n| Fast Track Candidate | False |\n| Restriction Trigger | True |\n\nRequired controls:\n- Restricted authorization conditions\n- Stewardship monitoring plan\n- Resistance surveillance commitments\n\nAMR evidence trace:\n- MCP AWaRe reference resolved levofloxacin as Watch.\n- MCP antimicrobial similarity returned stewardship flag review_required.\n- RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.\n- WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.\n- WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.\n- Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.\n\n### AMR Stewardship Check\n\n- Active ingredient: levofloxacin\n- AMR class: watch\n- Product type: generic\n- Indication: not_stated\n- Required warning: missing\n- Stewardship justification: missing\n- Decision: query_applicant\n\n### Safety & Trust: Verdict Trace\n\n- Why this verdict: The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.\n- Final verdict: escalate_for_higher_review\n- Confidence score: 0.57\n- Uncertainty flags: overall confidence below 0.70; 16 critical/major findings require sponsor action; external source mode is unknown (not fully live)\n\n| Rule | Tool | Evidence | Decision |\n| --- | --- | --- | --- |\n| Missing mandatory administrative documents = violation | retrieval + rule evaluation | SIM-SCANNED-20260511_195632:unknown | Provide the required administrative section and supporting documents. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | SIM-SCANNED-20260511_195632:unknown | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | SIM-SCANNED-20260511_195632:unknown | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | SIM-SCANNED-20260511_195632:unknown | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | SIM-SCANNED-20260511_195632:unknown | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n\n### Global Resilience Mode\n\nExternal connectivity is constrained (`unknown`). Decision support continued on local inference with provenance warnings, and external refresh should be re-run when connectivity improves.",
+      "chain_of_thought": "{\n \"intent\": \"dossier_review\",\n \"resolved_terms\": [\n \"Submission\"\n ],\n \"retrieval_strategy\": \"Precision search across dossier_review_v1 domain\",\n \"bouncer_audit\": [\n {\n \"chunk_id\": \"SIM-SCANNED-20260511_195632:visual_page_1:c1\",\n \"section\": \"Visual Evidence Summary - Page 1\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.486\n },\n {\n \"chunk_id\": \"SIM-SCANNED-20260511_195632:raw_section_1:c1\",\n \"section\": \"Imported Section 1\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.475\n },\n {\n \"chunk_id\": \"SIM-SCANNED-20260511_195632:visual_page_2:c1\",\n \"section\": \"Visual Evidence Summary - Page 2\",\n \"status\": \"DISCARD\",\n \"reason\": \"Insufficient keyword density (Found: evidence).\",\n \"score\": 0.469\n }\n ]\n}",
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | [1] | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | [2] | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Required evidence missing = violation | [3] | Resolve GMP deficiencies and provide current manufacturing evidence. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [3] | Provide complete AMR warning statements and stewardship justification. |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | [3] | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | [1] | Provide or correctly map the stability section before finalizing the review. |",
+      "workflow_summary": {
+        "data_quality_and_vision_extraction_check": {
+          "status": "completed",
+          "scanned_document_challenge_mode": {
+            "enabled": true,
+            "vision_extraction_detected": [
+              "scanned GMP certificate",
+              "low-resolution stability table"
+            ],
+            "text_rag_failure_risk": "high",
+            "extraction_confidence": {
+              "gmp_expiry_date": 0.82,
+              "coa_batch_number": null,
+              "signature_or_stamp_detected": false
+            },
+            "ocr_used": true,
+            "extraction_method": "pdf_ocr",
+            "page_count": 2,
+            "image_count": 2,
+            "warnings": [
+              "ocr_fallback_used"
+            ]
+          }
+        },
+        "submission_summary": {
+          "dossier_id": "SIM-SCANNED-20260511_195632",
+          "submission_type": "pre_market_authorization",
+          "review_type": "generic",
+          "applicant": "Demo Applicant",
+          "product_name": "Scanned Review Demo",
+          "active_ingredient": "levofloxacin",
+          "dosage_form": "unknown",
+          "strength": "unknown",
+          "jurisdiction": "Uganda",
+          "review_pathway": "standard"
+        },
+        "administrative_review": {
+          "status": "administratively_incomplete",
+          "violations": [
+            "Administrative application section is missing."
+          ]
+        },
+        "dossier_structure_review": {
+          "status": "mapped",
+          "violations": []
+        },
+        "applicable_rules_identification": {
+          "rules": [
+            "Administrative completeness checklist",
+            "Structural dossier completeness rules",
+            "WHO INN similarity rule",
+            "Section adequacy and evidence sufficiency rules",
+            "Generic review packaging and patient-information comparison against innovator reference when provided",
+            "WHO AWaRe stewardship rules"
+          ]
+        },
+        "who_inn_similarity_review": {
+          "proposed_name": "Scanned Review Demo",
+          "who_inn": "levofloxacin",
+          "similarity_index": 0.0588,
+          "threshold": 0.7,
+          "threshold_result": "passed",
+          "similarity_type": "orthographic",
+          "interpretation": "Product name 'Scanned Review Demo' has 5.88% similarity to INN 'levofloxacin'. Rule result: pass. Evaluated against naming guidance: Reviewer How-To Tutorials. How To Ask For Guidance And SOP Help.How To Ask For Guidance And SOP Help\n\nReviewers can ask natural questions such as show me the SOPs for dossier review, what guidance applies here, or explain the AMR stewardship rule. The assistant should surface the relevant SOP or pol...",
+          "flag_status": "acceptable_naming",
+          "rule_consequence": "No blocking INN naming issue was identified."
+        },
+        "technical_section_review": {
+          "section_results": [
+            {
+              "section": "Imported Section 1",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": false
+            },
+            {
+              "section": "Visual Evidence Summary - Page 1",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": false
+            },
+            {
+              "section": "Visual Evidence Summary - Page 2",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": false
+            }
+          ],
+          "review_type_specific": {
+            "review_type": "generic",
+            "status": "partial",
+            "baseline_available": true,
+            "baseline_verified": true,
+            "baseline_reference_name": "levofloxacin reference",
+            "baseline_reference_urls": [
+              "https://products.mhra.gov.uk/search/?query=levofloxacin",
+              "https://products.mhra.gov.uk/?q=levofloxacin",
+              "https://www.medicines.org.uk/emc/search?q=levofloxacin",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=levofloxacin",
+              "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin",
+              "https://www.medicines.org.uk/emc/product/13768/smpc"
+            ],
+            "verified_reference_urls": [
+              "https://products.mhra.gov.uk/search/?query=levofloxacin",
+              "https://products.mhra.gov.uk/?q=levofloxacin",
+              "https://www.medicines.org.uk/emc/search?q=levofloxacin",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=levofloxacin",
+              "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin",
+              "https://www.medicines.org.uk/emc/product/13768/smpc"
+            ],
+            "comparison_matrix": [
+              {
+                "concept_key": "indication",
+                "dimension": "Indication",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "dosing",
+                "dimension": "Dosing",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service ps, solution...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "contraindications",
+                "dimension": "Contraindications",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "warnings",
+                "dimension": "Warnings",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "adverse_reactions",
+                "dimension": "Adverse Reactions",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "storage",
+                "dimension": "Storage",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L...",
+                "evidence_source": "mcp_external"
+              }
+            ],
+            "section_provenance": [
+              {
+                "section_name": "side_effects",
+                "source_url": "https://products.mhra.gov.uk/search/?query=levofloxacin",
+                "source_domain": "products.mhra.gov.uk",
+                "source_priority": 100,
+                "confidence_score": 0.75
+              },
+              {
+                "section_name": "dosage",
+                "source_url": "https://www.medicines.org.uk/emc/search?q=levofloxacin",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "warnings",
+                "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "indications",
+                "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "contraindications",
+                "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "storage",
+                "source_url": "https://www.medicines.org.uk/emc/product/13768/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              }
+            ],
+            "source_selection_policy": {
+              "order": [
+                "products.mhra.gov.uk",
+                "medicines.org.uk",
+                "ema.europa.eu",
+                "accessdata.fda.gov",
+                "dailymed.nlm.nih.gov",
+                "gov.uk",
+                "who.int"
+              ],
+              "strategy": "prefer_highest_priority_source_per_section"
+            },
+            "notes": [
+              "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+              "Generic baseline comparison used levofloxacin reference through MCP patient-information tools with overall alignment not_aligned.",
+              "Example comparison classified the section as non_compliant."
+            ],
+            "findings": [
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for indications.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "indications",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "dosage",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "critical",
+                "location": "contraindications",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "critical",
+                "location": "warnings",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "side_effects",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for storage.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "storage",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "The current section does not adequately cover completeness.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "major",
+                "location": "Product information",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover safety wording.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "critical",
+                "location": "Product information",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover contraindications.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "critical",
+                "location": "Product information",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover dosage clarity.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "major",
+                "location": "Product information",
+                "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              }
+            ],
+            "example_comparison": {
+              "classification": "non_compliant",
+              "matched_good_patterns": [],
+              "matched_bad_patterns": [
+                "completeness",
+                "safety wording",
+                "contraindications",
+                "dosage clarity"
+              ],
+              "evidence": [
+                {
+                  "dimension": "completeness",
+                  "finding": "The current section does not adequately cover completeness.",
+                  "severity": "major",
+                  "evidence_excerpt": ""
+                },
+                {
+                  "dimension": "safety wording",
+                  "finding": "The current section does not adequately cover safety wording.",
+                  "severity": "critical",
+                  "evidence_excerpt": ""
+                },
+                {
+                  "dimension": "contraindications",
+                  "finding": "The current section does not adequately cover contraindications.",
+                  "severity": "critical",
+                  "evidence_excerpt": ""
+                },
+                {
+                  "dimension": "dosage clarity",
+                  "finding": "The current section does not adequately cover dosage clarity.",
+                  "severity": "major",
+                  "evidence_excerpt": ""
+                }
+              ]
+            }
+          }
+        },
+        "amr_stewardship_review": {
+          "applicable": true,
+          "antimicrobial_status": "antimicrobial",
+          "aware_category": "watch",
+          "stewardship_rule_application": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization.",
+          "fast_track_status": false,
+          "authorization_control": "restricted_authorization",
+          "watch_or_reserve_caution": true,
+          "findings": [
+            "MCP AWaRe reference resolved levofloxacin as Watch.",
+            "MCP antimicrobial similarity returned stewardship flag review_required.",
+            "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.",
+            "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.",
+            "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.",
+            "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.",
+            "Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+          ],
+          "policy_decision": {
+            "decision": "restricted_authorization",
+            "required_controls": [
+              "Restricted authorization conditions",
+              "Stewardship monitoring plan",
+              "Resistance surveillance commitments"
+            ],
+            "decision_basis": {
+              "aware_category": "watch",
+              "watch_similarity_restriction": true,
+              "glass_resistance_trend": "rising",
+              "comparator": "ciprofloxacin",
+              "similarity_to_existing_watch": "high",
+              "targets_mdr_pathogen": false,
+              "amr_unmet_need": "moderate"
+            }
+          },
+          "amr_stewardship_check": {
+            "active_ingredient": "levofloxacin",
+            "amr_class": "watch",
+            "product_type": "generic",
+            "indication": "not_stated",
+            "required_warning": "missing",
+            "stewardship_justification": "missing",
+            "decision": "query_applicant",
+            "decision_reasons": [
+              "Required AMR warning is missing.",
+              "Stewardship justification is missing."
+            ]
+          }
+        },
+        "findings_register": [
+          {
+            "workflow_step": "Administrative completeness review",
+            "issue": "Mandatory administrative application section is missing.",
+            "violated_rule": "Missing mandatory administrative documents = violation",
+            "severity": "major",
+            "location": "Module 1 / Administrative",
+            "recommendation": "Provide the required administrative section and supporting documents.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for indications.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "indications",
+            "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "dosage",
+            "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "critical",
+            "location": "contraindications",
+            "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "critical",
+            "location": "warnings",
+            "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "side_effects",
+            "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for storage.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "storage",
+            "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover completeness.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "major",
+            "location": "Product information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover safety wording.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "critical",
+            "location": "Product information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover contraindications.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "critical",
+            "location": "Product information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover dosage clarity.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "major",
+            "location": "Product information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Technical review identified policy information gap.",
+            "violated_rule": "Present but inadequate section = violation",
+            "severity": "major",
+            "location": "Scientific dossier content",
+            "recommendation": "Provide the missing technical evidence or clarifying support.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+            "violated_rule": "Required evidence missing = violation",
+            "severity": "major",
+            "location": "Manufacturer and GMP Evidence",
+            "recommendation": "Resolve GMP deficiencies and provide current manufacturing evidence.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1"
+          },
+          {
+            "workflow_step": "AMR stewardship review using AWaRe rules",
+            "issue": "AMR stewardship check identified missing warning or stewardship justification.",
+            "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+            "severity": "major",
+            "location": "AMR Stewardship",
+            "recommendation": "Provide complete AMR warning statements and stewardship justification.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1"
+          },
+          {
+            "workflow_step": "AMR stewardship review using AWaRe rules",
+            "issue": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+            "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+            "severity": "major",
+            "location": "AMR Stewardship Narrative",
+            "recommendation": "Document the stewardship restriction and reviewer control measures.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1"
+          },
+          {
+            "workflow_step": "Cross-section consistency review",
+            "issue": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+            "violated_rule": "Claim not supported by evidence = violation",
+            "severity": "major",
+            "location": "Stability and Shelf-Life Justification",
+            "recommendation": "Provide or correctly map the stability section before finalizing the review.",
+            "evidence_reference": "SIM-SCANNED-20260511_195632:unknown"
+          }
+        ],
+        "findings_summary_tables": {
+          "administrative": [
+            {
+              "severity": "major",
+              "violated_rule": "Missing mandatory administrative documents = violation",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Provide the required administrative section and supporting documents."
+            }
+          ],
+          "naming_inn": [],
+          "quality": [
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Present but inadequate section = violation",
+              "evidence_reference": "SIM-SCANNED-20260511_195632",
+              "recommendation": "Provide the missing technical evidence or clarifying support."
+            }
+          ],
+          "gmp": [
+            {
+              "severity": "major",
+              "violated_rule": "Required evidence missing = violation",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1",
+              "recommendation": "Resolve GMP deficiencies and provide current manufacturing evidence."
+            }
+          ],
+          "clinical_evidence": [
+            {
+              "severity": "major",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            }
+          ],
+          "amr_stewardship": [
+            {
+              "severity": "major",
+              "violated_rule": "AMR warning and stewardship justification must be present for antimicrobial submissions.",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1",
+              "recommendation": "Provide complete AMR warning statements and stewardship justification."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:raw_section_1",
+              "recommendation": "Document the stewardship restriction and reviewer control measures."
+            }
+          ],
+          "consistency_checks": [
+            {
+              "severity": "major",
+              "violated_rule": "Claim not supported by evidence = violation",
+              "evidence_reference": "SIM-SCANNED-20260511_195632:unknown",
+              "recommendation": "Provide or correctly map the stability section before finalizing the review."
+            }
+          ]
+        },
+        "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | [1] | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | [1] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | [2] | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Required evidence missing = violation | [3] | Resolve GMP deficiencies and provide current manufacturing evidence. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [1] | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [3] | Provide complete AMR warning statements and stewardship justification. |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | [3] | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | [1] | Provide or correctly map the stability section before finalizing the review. |",
+        "severity_classification": {
+          "critical": 4,
+          "major": 12,
+          "minor": 0,
+          "advisory": 0
+        },
+        "cross_section_consistency_review": {
+          "status": "violations_found",
+          "findings": [
+            "No stability section was mapped, so shelf-life claims cannot be cross-checked."
+          ]
+        },
+        "review_completeness_confirmation": {
+          "status": "review_incomplete",
+          "mandatory_steps": {
+            "data_quality_and_vision_extraction_check": true,
+            "submission_intake_and_familiarization": true,
+            "administrative_completeness_review": false,
+            "structural_dossier_mapping": true,
+            "applicable_rules_identification": true,
+            "who_inn_similarity_review": true,
+            "section_by_section_technical_review": true,
+            "amr_stewardship_review": true,
+            "findings_register": true,
+            "severity_classification": true,
+            "cross_section_consistency_review": true
+          },
+          "notes": [
+            "Administrative completeness review could not be confirmed because the administrative section was not mapped.",
+            "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used levofloxacin reference through MCP patient-information tools with overall alignment not_aligned.",
+            "Example comparison classified the section as non_compliant."
+          ]
+        },
+        "overall_judgment": {
+          "final_verdict": "escalate_for_higher_review",
+          "system_recommendation": "additional_information_required",
+          "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+          "blocking_issues": [
+            "Mandatory administrative application section is missing.",
+            "Current patient information does not align closely with the innovator reference for indications.",
+            "Current patient information does not align closely with the innovator reference for dosage.",
+            "Current patient information does not align closely with the innovator reference for contraindications.",
+            "Current patient information does not align closely with the innovator reference for warnings.",
+            "Current patient information does not align closely with the innovator reference for side_effects.",
+            "Current patient information does not align closely with the innovator reference for storage.",
+            "The current section does not adequately cover completeness.",
+            "The current section does not adequately cover safety wording.",
+            "The current section does not adequately cover contraindications.",
+            "The current section does not adequately cover dosage clarity.",
+            "Technical review identified policy information gap.",
+            "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+            "AMR stewardship check identified missing warning or stewardship justification.",
+            "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+            "Shelf-life claims could not be cross-checked against a mapped stability section."
+          ],
+          "escalation_needed": true
+        }
+      },
+      "policy_rule_hits": [
+        "gmp_expired",
+        "gmp_certificate_expired",
+        "policy_information_gap",
+        "restricted_authorization"
+      ],
+      "section_diagnostics": [
+        {
+          "section_id": "raw_section_1",
+          "title": "Imported Section 1",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        },
+        {
+          "section_id": "visual_page_1",
+          "title": "Visual Evidence Summary - Page 1",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        },
+        {
+          "section_id": "visual_page_2",
+          "title": "Visual Evidence Summary - Page 2",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "SIM-SCANNED-20260511_195632:visual_page_1:c1",
+          "dossier_id": "SIM-SCANNED-20260511_195632",
+          "section_id": "visual_page_1",
+          "section_title": "Visual Evidence Summary - Page 1",
+          "score": 0.48563,
+          "snippet": "Visual evidence type: gmp certificate or site evidence. Visual evidence suggests an expired GMP certificate or expired quality evidence. OCR excerpt: Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expire..."
+        },
+        {
+          "citation_id": "SIM-SCANNED-20260511_195632:raw_section_1:c1",
+          "dossier_id": "SIM-SCANNED-20260511_195632",
+          "section_id": "raw_section_1",
+          "section_title": "Imported Section 1",
+          "score": 0.47545,
+          "snippet": "Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expired and critic Clinical Overview and Benefit-Risk Summary Primaryendpoint was not metand the reviewer needsreturn-for-completion action. AMRStewardship ..."
+        }
+      ],
+      "verifier": {
+        "grounded_claim_rate": 1.0,
+        "unsupported_critical_claim_rate": 0.0,
+        "passed": true
+      },
+      "memory": {
+        "process_rss_gb": 0.3865,
+        "system_total_ram_gb": 31.7568,
+        "system_available_ram_gb": 9.7829,
+        "system_used_ram_percent": 69.2,
+        "min_free_ram_gb": 0.5,
+        "standard_route_rss_limit_gb": 20.0,
+        "fallback_route_rss_limit_gb": 26.0,
+        "within_budget": true
+      },
+      "lineage_tags": {
+        "data_classification": "synthetic",
+        "data_version": "realistic_v2_2026-05-11",
+        "split_version": "realistic_v2_2026-05-11",
+        "model_policy": "local_multi_model",
+        "model_id": "gemma-4-4b-it",
+        "prompt_version": "review_v1",
+        "route_profile": "fallback"
+      },
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "levofloxacin",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "levofloxacin",
+        "parent_compound": "levofloxacin",
+        "pubchem_cid": "149096",
+        "canonical_smiles": "CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23",
+        "inchikey": "GSDSWSVVBLHKDQ-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL1433",
+        "unichem_id": "UC149096",
+        "aware_category": "watch",
+        "amr_unmet_need": "moderate",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "rising",
+        "similarity_to_existing_watch": "high",
+        "existing_watch_comparator": "ciprofloxacin",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "restricted_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": true,
+        "watch_similarity_restriction": true,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "MCP AWaRe reference resolved levofloxacin as Watch.",
+          "MCP antimicrobial similarity returned stewardship flag review_required.",
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.",
+          "Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+        ],
+        "rationale": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization."
+      },
+      "metrics": {
+        "latency_seconds": 7.0929,
+        "input_tokens_estimate": 50,
+        "output_tokens_estimate": 5816
+      },
+      "visualization_data": null,
+      "reviewer_username": "alutakome"
+    },
+    "email_subject": "Robustness Final Review Report - SIM-SCANNED-20260511_195632 - additional_information_required",
+    "email_body": "NATIONAL DRUG AGENCY\nPre-Market Authorization Review Report\n\nRobustness Final Review Report - SIM-SCANNED-20260511_195632\n\nSubmission Summary\n- Dossier Id: SIM-SCANNED-20260511_195632\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Demo Applicant\n- Product Name: Scanned Review Demo\n- Active Ingredient: levofloxacin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- Administrative application section is missing.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Scanned Review Demo"
+  },
+  "benchmark_panel": {
+    "report_generated_at_utc": null,
+    "dataset_version": "latest_report",
+    "records_evaluated": 40,
+    "metrics": [
+      {
+        "name": "Entity extraction accuracy",
+        "value": 1.0,
+        "display_value": "100.0%",
+        "source_metric_key": "gmp_evidence_extraction_macro_f1"
+      },
+      {
+        "name": "SOP issue detection",
+        "value": 0.966583,
+        "display_value": "96.7%",
+        "source_metric_key": "holistic_policy_macro_f1"
+      },
+      {
+        "name": "Scanned document extraction",
+        "value": 1.0,
+        "display_value": "100.0%",
+        "source_metric_key": "gmp_evidence_extraction_macro_f1"
+      },
+      {
+        "name": "False query rate",
+        "value": 0.02368,
+        "display_value": "2.4%",
+        "source_metric_key": "expected_calibration_error"
+      },
+      {
+        "name": "Evidence citation accuracy",
+        "value": 0.990785,
+        "display_value": "99.1%",
+        "source_metric_key": "retrieval_ndcg_at_10"
+      }
+    ]
+  },
+  "email_subject": "Robustness Final Review Report - SIM-SCANNED-20260511_195632 - additional_information_required",
+  "email_body": "NATIONAL DRUG AGENCY\nPre-Market Authorization Review Report\n\nRobustness Final Review Report - SIM-SCANNED-20260511_195632\n\nSubmission Summary\n- Dossier Id: SIM-SCANNED-20260511_195632\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Demo Applicant\n- Product Name: Scanned Review Demo\n- Active Ingredient: levofloxacin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- Administrative application section is missing.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Scanned Review Demo"
+}

@@ -1,0 +1,94 @@
+{
+  "generated_at_utc": "2026-04-15T08:53:05.795448+00:00",
+  "dossier_id": "INTAKE-1776239766435",
+  "report_title": "Pre-Market Authorization Review - INTAKE-1776239766435",
+  "recipient_email": null,
+  "review_payload": {
+    "workspace": "review",
+    "dossier_id": "INTAKE-1776239766435",
+    "selected_model": {
+      "id": "gemma-e4b",
+      "label": "Gemma E4B",
+      "runtime_model_id": "gemma-e4b",
+      "description": "Primary balanced local model for dossier review."
+    },
+    "intent": "issue_discovery",
+    "response_contract": "issue_discovery_v1",
+    "model_packet_version": "mcp_router_packet_v1",
+    "sub_queries": [
+      "Identify key issues"
+    ],
+    "conversation_id": "conv-12ce65b57b",
+    "context_monitor": {
+      "context_window_tokens": 4096,
+      "used_tokens": 701,
+      "remaining_tokens": 3395,
+      "usage_ratio": 0.17114,
+      "threshold_tokens": 4014,
+      "compaction_threshold_ratio": 0.98,
+      "rolling_summary_tokens": 0,
+      "carryover_tokens": 0,
+      "active_message_tokens": 701,
+      "archived_messages_count": 0,
+      "compaction_count": 0,
+      "auto_compaction_required": false,
+      "last_compacted_at": null,
+      "conversation_engine": "langgraph"
+    },
+    "recommendation": "standard_review",
+    "route": "fallback",
+    "abstained": false,
+    "rationale": "I have reviewed the dossier for your inquiry: Identify key issues. The findings below are derived from the grounded evidence in the submission. My review identified material gaps that require regulatory follow-up: - Imported Section 1: the section is too long and may not contain sufficient usable detail. [INTAKE-1776239766435:raw_section_1:c3] - Imported Section 1: a formal quality risk assessment (e.g., fmea) was conducted to identify critical process parameters (cpps) that impact critical quality attributes (cqas) [INTAKE-1776239766435:raw_section_1:c3] In conclusion, standard review is the grounded regulatory path. Reviewer verification should focus on addressing the identified Imported Section 1: the section is too long and may not contain sufficient usable detail.",
+    "citations": [
+      {
+        "citation_id": "INTAKE-1776239766435:raw_section_1:c3",
+        "dossier_id": "INTAKE-1776239766435",
+        "section_id": "raw_section_1",
+        "section_title": "Imported Section 1",
+        "score": 0.14586,
+        "snippet": "patient population. Safety findings were consistent with the known pharmacological class effects, and appropriate risk minimization measures have been integrated into the proposed prescribing information. The applicant c..."
+      },
+      {
+        "citation_id": "INTAKE-1776239766435:raw_section_1:c9",
+        "dossier_id": "INTAKE-1776239766435",
+        "section_id": "raw_section_1",
+        "section_title": "Imported Section 1",
+        "score": 0.14586,
+        "snippet": "The container closure system consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial standards. Statistical significance was set at an alpha level of 0.05, and all tests were two-sided. The manufacturing si..."
+      }
+    ],
+    "amr_stewardship": {
+      "applies": false,
+      "normalized_ingredient": "not provided",
+      "normalization_source": "raw_product_fields",
+      "active_moiety": "not_available",
+      "parent_compound": "not_available",
+      "pubchem_cid": "not_available",
+      "canonical_smiles": "not_available",
+      "inchikey": "not_available",
+      "chembl_id": "not_available",
+      "unichem_id": "not_available",
+      "aware_category": "not_applicable",
+      "amr_unmet_need": "not_applicable",
+      "targets_mdr_pathogen": false,
+      "glass_resistance_trend": "not_applicable",
+      "similarity_to_existing_watch": "not_applicable",
+      "existing_watch_comparator": "not_applicable",
+      "chemistry_source": "signals_fallback",
+      "authorization_control": "standard_authorization",
+      "fast_track_candidate": false,
+      "restricted_authorization": false,
+      "watch_similarity_restriction": false,
+      "source_mode": "signals_fallback",
+      "source_trace": [
+        "RxNorm snapshot had no normalization entry for not provided; used dossier product identity as provided.",
+        "WHO AWaRe snapshot had no entry for not provided; fell back to dossier policy_signals.",
+        "WHO GLASS snapshot had no entry for not provided; fell back to dossier policy_signals.",
+        "Chemistry snapshot had no entry for not provided; fell back to dossier policy_signals for Watch similarity."
+      ],
+      "rationale": "AMR stewardship lifecycle rules do not apply to this dossier. RxNorm snapshot had no normalization entry for not provided; used dossier product identity as provided. WHO AWaRe snapshot had no entry for not provided; fell back to dossier policy_signals. WHO GLASS snapshot had no entry for not provided; fell back to dossier policy_signals. Chemistry snapshot had no entry for not provided; fell back to dossier policy_signals for Watch similarity."
+    }
+  },
+  "email_subject": "Pre-Market Authorization Review - INTAKE-1776239766435 - standard_review",
+  "email_body": "Pre-Market Authorization Review - INTAKE-1776239766435\nDossier: INTAKE-1776239766435\nProduct: incoming missing clinical reports\nApplicant: Not provided\nRecommendation: standard_review\nConfidence: unknown\nAuthorization: standard_authorization\n\nExecutive Summary\nI have reviewed the dossier for your inquiry: Identify key issues. The findings below are derived from the grounded evidence in the submission. My review identified material gaps that require regulatory follow-up: - Imported Section 1: the section is too long and may not contain sufficient usable detail. [INTAKE-1776239766435:raw_section_1:c3] - Imported Section 1: a formal quality risk assessment (e.g., fmea) was conducted to identify critical process parameters (cpps) that impact critical quality attributes (cqas) [INTAKE-1776239766435:raw_section_1:c3] In conclusion, standard review is the grounded regulatory path. Reviewer verification should focus on addressing the identified Imported Section 1: the section is too long and may not contain sufficient usable detail.\n\nFindings Across Criteria\n- incoming missing clinical reports submitted by Not provided was assessed for pre-market authorization.\n- The system recommendation is standard_review through the fallback review path.\n- No critical dossier criteria were flagged as missing, malformed, or incorrect in the current review pass.\n- Groundedness verification failed with grounded claim rate unknown.\n\nCriteria Diagnostics\n\nEvidence Citations"
+}

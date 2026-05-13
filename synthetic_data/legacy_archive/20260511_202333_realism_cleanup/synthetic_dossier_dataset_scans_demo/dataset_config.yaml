@@ -1,0 +1,21 @@
+seed: 20260508
+query_ratio: 0.5
+stress_test_ratio: 0.12
+default_context:
+  applicant_countries: ["Uganda", "Kenya", "Tanzania", "Rwanda", "Botswana"]
+  manufacturer_countries: ["India", "China", "South Africa", "Egypt", "Uganda"]
+  document_quality_profiles:
+    clean_text_only: { scanned_min: 0.0, scanned_max: 0.0 }
+    mostly_clean_with_scanned_certificates: { scanned_min: 0.15, scanned_max: 0.25 }
+    mixed_text_and_scanned: { scanned_min: 0.30, scanned_max: 0.50 }
+    scanned_tables_and_certificates: { scanned_min: 0.40, scanned_max: 0.60 }
+    difficult_scan_stress_test: { scanned_min: 0.60, scanned_max: 0.80 }
+matrix:
+  medicine_categories: ["human", "veterinary"]
+  submission_types: ["new_submission", "renewal"]
+  application_pathways: ["generic", "innovator", "fixed_dose_combination", "line_extension", "biosimilar_or_biological"]
+  product_classes: ["antimicrobial", "non_antimicrobial"]
+split_ratios:
+  train: 0.7
+  validation: 0.15
+  test: 0.15

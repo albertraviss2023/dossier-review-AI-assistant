@@ -1,0 +1,35 @@
+{
+  "reference_product": "Amoxicillin 250mg and 500mg Capsules - EMC patient leaflet",
+  "active_ingredient": "amoxicillin",
+  "raw_source_refs": [
+    "https://www.medicines.org.uk/emc/product/541/pil",
+    "https://www.medicines.org.uk/emc/product/541/smpc"
+  ],
+  "sections": [
+    {
+      "section_name": "indications",
+      "text": "The leaflet explains what the medicine is for and when it should be used."
+    },
+    {
+      "section_name": "dosage",
+      "text": "The leaflet explains how much to take, how often to take it, and what to do if a dose is missed."
+    },
+    {
+      "section_name": "contraindications",
+      "text": "The leaflet explains who must not take the medicine, including relevant allergy restrictions."
+    },
+    {
+      "section_name": "warnings",
+      "text": "The leaflet includes warnings and precautions for safe use."
+    },
+    {
+      "section_name": "side_effects",
+      "text": "The leaflet lists possible side effects and what to do if they occur."
+    },
+    {
+      "section_name": "storage",
+      "text": "The leaflet explains how to store the medicine safely."
+    }
+  ]
+}
+

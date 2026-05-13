@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "errors": [],
+  "counts": {
+    "dossiers": 192,
+    "section_labels": 5432,
+    "chunk_labels": 5432,
+    "issue_labels": 96,
+    "pages": 5892,
+    "scanned_pages": 2017
+  }
+}

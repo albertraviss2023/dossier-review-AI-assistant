@@ -1,0 +1,13 @@
+dossier_id,country,section_id,module,presence,length_status,correctness,error_tags,char_count,min_chars,max_chars,critical
+DOS-95E44970AA,Tanzania,m1_application_admin,1,present,length_ok,correct,,1715,900,2200,True
+DOS-95E44970AA,Tanzania,m1_manufacturer_gmp,1,present,length_ok,correct,,1037,700,1800,True
+DOS-95E44970AA,Tanzania,m1_product_information,1,present,length_ok,correct,,1277,600,1600,True
+DOS-95E44970AA,Tanzania,m2_quality_overall_summary,2,present,length_ok,correct,,1428,1200,3000,True
+DOS-95E44970AA,Tanzania,m2_clinical_overview,2,present,length_ok,incorrect,clinical_missing,2423,900,2500,True
+DOS-95E44970AA,Tanzania,m3_api_quality,3,present,length_ok,correct,,2173,1300,3200,True
+DOS-95E44970AA,Tanzania,m3_fpp_manufacturing,3,present,length_ok,correct,,2409,1200,3000,True
+DOS-95E44970AA,Tanzania,m3_stability,3,present,length_ok,correct,,1535,900,2600,True
+DOS-95E44970AA,Tanzania,m4_nonclinical_summary,4,present,length_ok,correct,,906,700,2000,False
+DOS-95E44970AA,Tanzania,m5_trial_listing,5,present,length_ok,correct,,1517,700,1800,True
+DOS-95E44970AA,Tanzania,m5_pivotal_trial_reports,5,missing,missing,incorrect,clinical_missing,0,1500,3800,True
+DOS-95E44970AA,Tanzania,m5_bioequivalence,5,present,length_ok,correct,,1684,600,1800,False

@@ -1,0 +1,218 @@
+Innovation Review Demo - UPLOAD-INNOVATION-001
+
+Submission Summary
+- Dossier Id: UPLOAD-INNOVATION-001
+- Submission Type: pre_market_authorization
+- Review Type: innovation
+- Applicant: Innovation Health Sciences
+- Product Name: Novathera
+- Active Ingredient: novathera
+- Dosage Form: tablet
+- Strength: 150 mg
+- Jurisdiction: Uganda
+- Review Pathway: standard
+
+Administrative Review Outcome
+- Status: administratively_complete
+- No administrative violations were detected from the available dossier evidence.
+
+Dossier Structure Review Outcome
+- Status: mapped
+- No structural dossier violations were detected.
+
+Applicable Rules And Requirements
+- Administrative completeness checklist
+- Structural dossier completeness rules
+- WHO INN similarity rule
+- Section adequacy and evidence sufficiency rules
+- Innovation review completeness, clarity, safety wording, and regulatory adequacy assessment
+
+WHO INN Similarity Review
+- Proposed Name: Novathera
+- Who Inn: zithromax
+- Similarity Index: 0.6296
+- Threshold: 0.7
+- Threshold Result: passed
+- Similarity Type: orthographic
+- Interpretation: No INN infringement detected for 'Novathera'.
+- Flag Status: acceptable_naming
+- Rule Consequence: No blocking INN naming issue was identified.
+
+Section-By-Section Technical Review
+- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Product Information and Naming: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Clinical Overview and Benefit-Risk Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+
+Innovation Review-Specific Assessment
+- Status: adequate
+- Baseline available: No
+- Note: Innovation workflow checks completeness, clarity, safety wording, and regulatory adequacy without requiring wording equivalence to an innovator baseline.
+
+AMR Stewardship Review
+- Applicable: False
+- AWaRe Category: not_applicable
+- Fast Track Status: False
+- Authorization Control: standard_authorization
+- Stewardship Rule Application: AMR stewardship lifecycle rules do not apply to this dossier.
+- AMR finding: RxNorm snapshot had no normalization entry for novathera; used dossier product identity as provided.
+- AMR finding: WHO AWaRe snapshot had no entry for novathera; fell back to dossier policy_signals.
+- AMR finding: WHO GLASS snapshot had no entry for novathera; fell back to dossier policy_signals.
+- AMR finding: Chemistry snapshot had no entry for novathera; fell back to dossier policy_signals for Watch similarity.
+
+Findings Register
+- [MAJOR] Cross-section consistency review: Proposed product name is identical to the INN and may create naming confusion. | Rule: Product identity inconsistency or confusion risk = violation | Location: Product Information and Naming | Recommendation: Use a distinct product name and verify consistent naming across all dossier sections.
+- [MAJOR] Cross-section consistency review: Shelf-life claims could not be cross-checked against a mapped stability section. | Rule: Claim not supported by evidence = violation | Location: Stability and Shelf-Life Justification | Recommendation: Provide or correctly map the stability section before finalizing the review.
+
+Severity Classification
+- Critical: 0
+- Major: 2
+- Minor: 0
+- Advisory: 0
+
+Findings Summary Tables
+#### Administrative
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### Naming / INN
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| major | Product identity inconsistency or confusion risk = violation | UPLOAD-INNOVATION-001:m1_product_information | Use a distinct product name and verify consistent naming across all dossier sections. |
+
+#### Quality
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### GMP
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### Clinical / Evidence
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### AMR Stewardship
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### Consistency Checks
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| major | Claim not supported by evidence = violation | UPLOAD-INNOVATION-001:unknown | Provide or correctly map the stability section before finalizing the review. |
+
+Cross-Section Consistency Review
+- Status: violations_found
+- Proposed product name is identical to the INN and may create naming confusion.
+- No stability section was mapped, so shelf-life claims cannot be cross-checked.
+
+Review Completeness Confirmation
+- Status: review_complete
+- Mandatory workflow steps:
+  - Submission Intake And Familiarization: Yes
+  - Administrative Completeness Review: Yes
+  - Structural Dossier Mapping: Yes
+  - Applicable Rules Identification: Yes
+  - Who Inn Similarity Review: Yes
+  - Section By Section Technical Review: Yes
+  - Amr Stewardship Review: Yes
+  - Findings Register: Yes
+  - Severity Classification: Yes
+  - Cross Section Consistency Review: Yes
+- Completeness notes:
+  - Innovation workflow checks completeness, clarity, safety wording, and regulatory adequacy without requiring wording equivalence to an innovator baseline.
+
+Overall Judgment
+- Final verdict: acceptable
+- System recommendation: approval_granted
+- Authorization control: standard_authorization
+- Justification: The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.
+- Escalation needed: No
+- Blocking issues:
+  - Proposed product name is identical to the INN and may create naming confusion.
+  - Shelf-life claims could not be cross-checked against a mapped stability section.
+
+Reviewer Narrative Summary
+### Final Answer
+
+### Executive Summary
+
+The current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Novathera** (novathera), submitted by **Innovation Health Sciences**.
+
+### Naming Policy Compliance
+
+No INN infringement detected for 'Novathera'.
+
+### Detailed Findings
+- Evidence from **Application Form and Administrative Information** supports The signed application form, cover letter, proof of payment, and required legal declarations are included in the administrative module. [UPLOAD-INNOVATION-001:m1_admin:fallback]
+- Evidence from **Product Information and Naming** supports The proposed Summary of Product Characteristics and Patient Information Leaflet state the indication, dose, contraindications, warnings, adverse reactions, storage conditions, and instructions for.. [UPLOAD-INNOVATION-001:m1_product_information:fallback]
+
+### Conclusion
+
+**Approval Granted** is the grounded regulatory path. The dossier appears structurally adequate for the proposed recommendation.
+
+### Findings Summary Tables
+
+#### Administrative
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### Naming / INN
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| major | Product identity inconsistency or confusion risk = violation | UPLOAD-INNOVATION-001:m1_product_information | Use a distinct product name and verify consistent naming across all dossier sections. |
+
+#### Quality
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### GMP
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### Clinical / Evidence
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### AMR Stewardship
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| none | No recorded violations in this area | n/a | Continue standard review monitoring |
+
+#### Consistency Checks
+
+| Severity | Violated rule | Evidence reference | Recommendation |
+| --- | --- | --- | --- |
+| major | Claim not supported by evidence = violation | UPLOAD-INNOVATION-001:unknown | Provide or correctly map the stability section before finalizing the review. |
+
+Evidence Citations
+- UPLOAD-INNOVATION-001:m1_admin:fallback | Application Form and Administrative Information | The signed application form, cover letter, proof of payment, and required legal declarations are included in the administrative module.
+- UPLOAD-INNOVATION-001:m1_product_information:fallback | Product Information and Naming | The proposed Summary of Product Characteristics and Patient Information Leaflet state the indication, dose, contraindications, warnings, adverse reactions, storage conditions, and instructions for use. Safety wording hig...
+- UPLOAD-INNOVATION-001:m1_gmp:fallback | Manufacturer and GMP Evidence | The primary manufacturing site remains compliant, the GMP certificate is valid, and recent inspection observations have been closed with documented CAPA evidence.
+- UPLOAD-INNOVATION-001:m2_clinical:fallback | Clinical Overview and Benefit-Risk Summary | The pivotal clinical evidence met the primary endpoint and the benefit-risk overview explains efficacy, safety, uncertainties, and proposed risk minimization measures in a clear manner.
+
+Verification Summary
+- Grounded claim rate: 1.0
+- Verifier passed: True

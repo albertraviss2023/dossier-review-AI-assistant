@@ -152,3 +152,5 @@ Synthetic dossiers are generated across:
 - This dataset is synthetic and safe for development.
 - Tune `--compliant-rate` and defect weights in script to rebalance class distribution.
 - Keep a human-reviewed subset for final validation and calibration.
+- The corpus is designed to mimic CTD-style pre-market authorization dossiers, but it is still a simulation. It is strongest on structure, label coverage, and policy-path diversity, and weaker on the messy formatting, annex volume, table complexity, scanned-image variability, and inconsistent authoring style seen in real manufacturer submissions.
+- For realistic product demonstrations, pair the synthetic corpus with a curated incoming-file pack that mimics common submission outcomes and document quality conditions.

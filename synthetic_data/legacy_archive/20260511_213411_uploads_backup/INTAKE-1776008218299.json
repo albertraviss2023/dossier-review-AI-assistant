@@ -1,0 +1,73 @@
+{
+  "dossier_id": "INTAKE-1776008218299",
+  "country": "Uganda",
+  "submission_date": "2026-04-11",
+  "product": {
+    "product_name": "Incoming Sample",
+    "inn_name": "levofloxacin hemihydrate",
+    "atc_code": "unknown",
+    "dosage_form": "unknown",
+    "strength": "unknown"
+  },
+  "organization": {
+    "applicant": "Test Applicant",
+    "manufacturer": "Test Manufacturer",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "expired",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "expired",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "inconclusive",
+    "aware_category": "watch",
+    "amr_unmet_need": "not_applicable",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "not_applicable",
+    "similarity_to_existing_watch": "not_applicable",
+    "existing_watch_comparator": "levofloxacin"
+  },
+  "sections": [
+    {
+      "section_id": "raw_section_1",
+      "module": "raw",
+      "title": "Imported Section 1",
+      "text": "Scanned IncomingPDF\nManufacturerand GMP Evidence\nGMPcertificate expired and critic\nClinical Overview and Benefit-Risk Summary\nPrimaryendpoint was not metand the reviewer needsreturn-for-completion action.\n\nAMRStewardship Narrative\nWatch-classimilarity remains highand resistance concernsare rising\nThe chemistrycomperatorislevofloxacinand additional restrictionsmayaply",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 369
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "standard_review",
+    "risk_score": 0.5,
+    "compliant_submission": true
+  },
+  "provenance": {
+    "synthetic": false,
+    "defect_modes": [],
+    "ingestion_mode": "raw_file_intake",
+    "source_filename": "incoming_scanned_quality_failure.pdf",
+    "extraction": {
+      "extraction_method": "pdf_ocr",
+      "page_count": 2,
+      "image_count": 2,
+      "ocr_used": true,
+      "warnings": [
+        "ocr_fallback_used"
+      ]
+    }
+  }
+}

@@ -1,0 +1,132 @@
+Repository Demo Report
+
+Submission Summary
+- Dossier Id: DOS-9D9BC5402A
+- Submission Type: pre_market_authorization
+- Applicant: National Therapeutics
+- Product Name: Medizyme
+- Active Ingredient: levofloxacin
+- Dosage Form: tablet
+- Strength: 850 mg
+- Jurisdiction: Burkina Faso
+- Review Pathway: standard
+
+Administrative Review Outcome
+- Status: administratively_incomplete
+- No proof of payment was detected in the administrative material.
+
+Dossier Structure Review Outcome
+- Status: mapped_with_violations
+- Clinical Overview and Benefit-Risk Summary: presence=present, length=length_ok, correctness=incorrect
+- Pivotal Clinical Trial Reports: presence=present, length=length_ok, correctness=incorrect
+
+WHO INN Similarity Review
+- Proposed Name: Medizyme
+- Who Inn: cefixime
+- Similarity Index: 0.6667
+- Threshold: 0.7
+- Threshold Result: passed
+- Similarity Type: orthographic
+- Interpretation: No INN infringement detected for 'Medizyme'.
+- Flag Status: acceptable_naming
+- Rule Consequence: No blocking INN naming issue was identified.
+
+Section-by-Section Scientific And Regulatory Findings
+- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Product Information and Naming: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Quality Overall Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Clinical Overview and Benefit-Risk Summary: status=partially_compliant, presence=present, length=length_ok, correctness=incorrect, critical=True
+- API Quality and Control Strategy: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- FPP Manufacturing Process and Controls: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Stability and Shelf-Life Justification: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Nonclinical Study Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+- Tabular Listing of Clinical Studies: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Pivotal Clinical Trial Reports: status=partially_compliant, presence=present, length=length_ok, correctness=incorrect, critical=True
+- Biopharmaceutics and Bioequivalence Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+
+AMR Stewardship Review
+- Applicable: True
+- AWaRe Category: watch
+- Fast Track Status: False
+- Authorization Control: restricted_authorization
+- Stewardship Rule Application: Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization.
+
+Findings Register
+- [MINOR] Administrative completeness review: No proof of payment was detected in the administrative material. | Rule: Missing proof of payment where required = violation | Location: Application Form and Administrative Information | Recommendation: Confirm the payment receipt or fee evidence is included where required.
+- [MAJOR] Structural dossier mapping: Clinical Overview and Benefit-Risk Summary is missing, malformed, or incomplete. | Rule: Missing required section = violation | Location: Clinical Overview and Benefit-Risk Summary | Recommendation: Restore the required section with readable and complete content.
+- [MAJOR] Structural dossier mapping: Pivotal Clinical Trial Reports is missing, malformed, or incomplete. | Rule: Missing required section = violation | Location: Pivotal Clinical Trial Reports | Recommendation: Restore the required section with readable and complete content.
+- [MAJOR] Section-by-section technical review: Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support. | Rule: Required evidence missing = violation | Location: Manufacturer and GMP Evidence | Recommendation: Resolve GMP deficiencies and provide current manufacturing evidence.
+- [MAJOR] AMR stewardship review using AWaRe rules: AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution. | Rule: Watch / Reserve stewardship-sensitive products should trigger stewardship caution | Location: AMR Stewardship Narrative | Recommendation: Document the stewardship restriction and reviewer control measures.
+
+Cross-Consistency Findings
+- No cross-section consistency findings were detected.
+
+Review Completeness Confirmation
+{
+  "status": "review_complete",
+  "mandatory_steps": {
+    "submission_intake_and_familiarization": true,
+    "administrative_completeness_review": true,
+    "structural_dossier_mapping": true,
+    "applicable_rules_identification": true,
+    "who_inn_similarity_review": true,
+    "section_by_section_technical_review": true,
+    "amr_stewardship_review": true,
+    "findings_register": true,
+    "severity_classification": true,
+    "cross_section_consistency_review": true
+  },
+  "notes": [
+    "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path."
+  ]
+}
+
+Overall Decision
+{
+  "final_verdict": "not_acceptable",
+  "system_recommendation": "approval_denied",
+  "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+  "blocking_issues": [
+    "Clinical Overview and Benefit-Risk Summary is missing, malformed, or incomplete.",
+    "Pivotal Clinical Trial Reports is missing, malformed, or incomplete.",
+    "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+    "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution."
+  ],
+  "escalation_needed": false
+}
+
+Grounded Review Narrative
+### Final Answer
+
+### Executive Summary
+
+The current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **Medizyme** (levofloxacin), submitted by **National Therapeutics**. The structured review found **4** unresolved requirement-level concerns.
+
+### Naming Policy Compliance
+
+No INN infringement detected for 'Medizyme'.
+
+**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. The ingredient was normalized to **levofloxacin** for stewardship checks. Restricted authorization is triggered because the chemistry profile shows **high** similarity to **ciprofloxacin**. Local GLASS surveillance data indicates rising resistance, which increases the stewardship risk.
+
+### Detailed Findings
+- Evidence from **Manufacturer and GMP Evidence** supports Primary manufacturing site: EastAfrica Health Products in Uganda. Latest GMP inspection date: 2024-07-07. GMP status: compliant. GMP certificate number: GMP-304165; certificate expiry: 2026-03-14.. [DOS-9D9BC5402A:m1_manufacturer_gmp:c1]
+- Evidence from **Product Information and Naming** supports Proposed product name is Medizyme. INN is levofloxacin. Labeling, SmPC/PIL content, contraindications, dosing information, and medication error mitigation statements are included with linguistic re.. [DOS-9D9BC5402A:m1_product_information:c1]
+
+### Conclusion
+
+**Approval Denied** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents.
+
+Evidence Citations
+- DOS-9D9BC5402A:m1_manufacturer_gmp:c1 | Manufacturer and GMP Evidence | Primary manufacturing site: EastAfrica Health Products in Uganda. Latest GMP inspection date: 2024-07-07. GMP status: compliant. GMP certificate number: GMP-304165; certificate expiry: 2026-03-14. CAPA evidence and inspe...
+- DOS-9D9BC5402A:m1_product_information:c1 | Product Information and Naming | Proposed product name is Medizyme. INN is levofloxacin. Labeling, SmPC/PIL content, contraindications, dosing information, and medication error mitigation statements are included with linguistic review notes. WHO AWaRe c...
+- DOS-9D9BC5402A:m1_application_admin:c1 | Application Form and Administrative Information | Application dossier for Medizyme (levofloxacin) submitted on 2025-12-01 to the Burkina Faso authority. Applicant: National Therapeutics. Proposed dosage form: tablet; strength: 850 mg; ATC: J01MA12. Administrative declar...
+- DOS-9D9BC5402A:m3_api_quality:c1 | API Quality and Control Strategy | API quality section provides synthesis route, material controls, specification limits, analytical validation, stability profile, and impurity control strategy. Data support batch-to-batch consistency and quality assuranc...
+- DOS-9D9BC5402A:m3_fpp_manufacturing:c1 | FPP Manufacturing Process and Controls | FPP process includes critical process parameters, in-process controls, hold time studies, packaging validation, and process performance qualification reports with traceability to quality risk management outputs. Where ap...
+- DOS-9D9BC5402A:m3_stability:c1 | Stability and Shelf-Life Justification | Stability program includes accelerated and long-term conditions, trend analysis, protocol adherence, and shelf-life assignment justification with out-of-trend management records. All referenced documents are available in...
+- DOS-9D9BC5402A:m5_bioequivalence:c1 | Biopharmaceutics and Bioequivalence Evidence | Biopharmaceutics section includes comparative dissolution, bioequivalence evidence, analytical method validation, and protocol deviations with impact assessment. Method validation records and quality controls were review...
+- DOS-9D9BC5402A:m2_clinical_overview:c1 | Clinical Overview and Benefit-Risk Summary | Clinical overview for bacterial skin infection indicates pivotal efficacy outcomes did not meet the primary endpoint. Current evidence does not support a favorable benefit-risk conclusion for authorization. Method valida...
+
+Verification Summary
+- Grounded claim rate: 1.0
+- Verifier passed: True

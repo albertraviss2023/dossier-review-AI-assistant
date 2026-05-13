@@ -1,0 +1,174 @@
+{
+  "generated_at_utc": "2026-04-12T14:43:02.508243+00:00",
+  "dossier_id": "UPLOAD-WATCH-001",
+  "report_title": "Live Reviewer Decision Report",
+  "recipient_email": "board@example.org",
+  "review_payload": {
+    "dossier_id": "UPLOAD-WATCH-001",
+    "selected_model": {
+      "id": "gemma-e4b",
+      "label": "Gemma E4B",
+      "runtime_model_id": "gemma-e4b",
+      "description": "Primary balanced local model for dossier review."
+    },
+    "sub_queries": [
+      "Review this dossier, summarize the findings across all criteria, and recommend the regulatory action with citations.",
+      "Review this dossier, summarize the findings across all criteria",
+      "recommend the regulatory action",
+      "citations"
+    ],
+    "conversation_id": null,
+    "context_monitor": null,
+    "recommendation": "deep_review",
+    "confidence": 0.54873,
+    "route": "fallback",
+    "abstained": false,
+    "abstain_reason": null,
+    "rationale": "Question: Review this dossier, summarize the findings across all criteria, and recommend the regulatory action with citations.\nSelected model: gemma-e4b\nProposed recommendation: deep_review\nConversation context: none\nGrounded rationale:\n1. Evidence from Model Switching Guidance - Recommended Usage supports regulatory assessment for deep_review using model gemma-e4b. [knowledge_wiki:model-switching-guidance:2:c1]\n2. Evidence from Manufacturer and GMP Evidence supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m1_gmp:c1]\n3. Evidence from AMR Stewardship Narrative supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m5_stewardship:c1]",
+    "policy_rule_hits": [
+      "restricted_authorization"
+    ],
+    "section_diagnostics": [
+      {
+        "section_id": "m1_gmp",
+        "title": "Manufacturer and GMP Evidence",
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "critical": true
+      },
+      {
+        "section_id": "m2_clinical_overview",
+        "title": "Clinical Overview and Benefit-Risk Summary",
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "critical": true
+      },
+      {
+        "section_id": "m5_stewardship",
+        "title": "AMR Stewardship Narrative",
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "partial",
+        "critical": true
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "knowledge_wiki:model-switching-guidance:2:c1",
+        "dossier_id": "knowledge_wiki",
+        "section_id": "model-switching-guidance:2",
+        "section_title": "Model Switching Guidance - Recommended Usage",
+        "score": 0.24252,
+        "snippet": "Model Switching Guidance. Recommended Usage.Recommended Usage Gemma E4B should be used as the balanced default, Gemma E2B as the lighter fast option, and Qwen 3.5 as an alternative synthesis profile for difficult compara..."
+      },
+      {
+        "citation_id": "UPLOAD-WATCH-001:m1_gmp:c1",
+        "dossier_id": "UPLOAD-WATCH-001",
+        "section_id": "m1_gmp",
+        "section_title": "Manufacturer and GMP Evidence",
+        "score": 0.18719,
+        "snippet": "Manufacturing site passed its last inspection and current GMP certification is valid with no critical findings."
+      },
+      {
+        "citation_id": "UPLOAD-WATCH-001:m5_stewardship:c1",
+        "dossier_id": "UPLOAD-WATCH-001",
+        "section_id": "m5_stewardship",
+        "section_title": "AMR Stewardship Narrative",
+        "score": 0.18141,
+        "snippet": "The dossier acknowledges high similarity to ciprofloxacin and cites rising resistance concerns. The applicant proposes additional restrictions to reduce stewardship friction."
+      },
+      {
+        "citation_id": "UPLOAD-WATCH-001:m2_clinical_overview:c1",
+        "dossier_id": "UPLOAD-WATCH-001",
+        "section_id": "m2_clinical_overview",
+        "section_title": "Clinical Overview and Benefit-Risk Summary",
+        "score": 0.17113,
+        "snippet": "Clinical overview reports the primary endpoint was met in respiratory infection, but the overall stewardship narrative emphasizes resistance risk and careful comparator analysis."
+      },
+      {
+        "citation_id": "knowledge_wiki:model-switching-guidance:1:c1",
+        "dossier_id": "knowledge_wiki",
+        "section_id": "model-switching-guidance:1",
+        "section_title": "Model Switching Guidance - Role of the Model Switch",
+        "score": 0.17062,
+        "snippet": "Model Switching Guidance. Role of the Model Switch.Role of the Model Switch UI model switching exists to let reviewers and developers compare local synthesis behavior across Gemma E4B, Gemma E2B, and Qwen 3.5. It does no..."
+      },
+      {
+        "citation_id": "knowledge_wiki:retrieval-first-architecture:1:c1",
+        "dossier_id": "knowledge_wiki",
+        "section_id": "retrieval-first-architecture:1",
+        "section_title": "Retrieval-First Architecture - Core Principle",
+        "score": 0.16434,
+        "snippet": "Retrieval-First Architecture. Core Principle.Core Principle The project treats retrieval quality as the primary determinant of dossier-review quality. Model choice is secondary to chunking, source coverage, query decompo..."
+      },
+      {
+        "citation_id": "knowledge_wiki:who-aware-and-glass:3:c1",
+        "dossier_id": "knowledge_wiki",
+        "section_id": "who-aware-and-glass:3",
+        "section_title": "WHO AWaRe and GLASS Policy Stack - Watch Escalation",
+        "score": 0.14642,
+        "snippet": "WHO AWaRe and GLASS Policy Stack. Watch Escalation.Watch Escalation A Watch antibiotic that is highly similar to an existing Watch comparator and paired with rising GLASS resistance should be escalated for restricted aut..."
+      }
+    ],
+    "verifier": {
+      "grounded_claim_rate": 1.0,
+      "unsupported_critical_claim_rate": 0.0,
+      "passed": true
+    },
+    "memory": {
+      "process_rss_gb": 0.8646,
+      "system_total_ram_gb": 31.7568,
+      "system_available_ram_gb": 13.0195,
+      "system_used_ram_percent": 59.0,
+      "min_free_ram_gb": 0.5,
+      "standard_route_rss_limit_gb": 20.0,
+      "fallback_route_rss_limit_gb": 26.0,
+      "within_budget": true
+    },
+    "lineage_tags": {
+      "data_classification": "synthetic",
+      "data_version": "balanced_v1_2026-04-05",
+      "split_version": "balanced_v1_2026-04-05",
+      "model_policy": "local_multi_model",
+      "model_id": "gemma-e4b",
+      "prompt_version": "review_v1",
+      "route_profile": "fallback"
+    },
+    "amr_stewardship": {
+      "applies": true,
+      "normalized_ingredient": "levofloxacin",
+      "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+      "active_moiety": "levofloxacin",
+      "parent_compound": "levofloxacin",
+      "pubchem_cid": "149096",
+      "canonical_smiles": "CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23",
+      "inchikey": "GSDSWSVVBLHKDQ-UHFFFAOYSA-N",
+      "chembl_id": "CHEMBL1433",
+      "unichem_id": "UC149096",
+      "aware_category": "watch",
+      "amr_unmet_need": "moderate",
+      "targets_mdr_pathogen": false,
+      "glass_resistance_trend": "rising",
+      "similarity_to_existing_watch": "high",
+      "existing_watch_comparator": "ciprofloxacin",
+      "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+      "authorization_control": "restricted_authorization",
+      "fast_track_candidate": false,
+      "restricted_authorization": true,
+      "watch_similarity_restriction": true,
+      "source_mode": "snapshot_backed",
+      "source_trace": [
+        "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.",
+        "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.",
+        "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.",
+        "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.",
+        "Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+      ],
+      "rationale": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+    }
+  },
+  "email_subject": "Live Reviewer Decision Report - deep_review",
+  "email_body": "Live Reviewer Decision Report\nDossier: UPLOAD-WATCH-001\nProduct: Respivox\nApplicant: East Africa Therapeutics\nRecommendation: deep_review\nConfidence: 0.54873\nAuthorization: restricted_authorization\n\nExecutive Summary\nQuestion: Review this dossier, summarize the findings across all criteria, and recommend the regulatory action with citations.\nSelected model: gemma-e4b\nProposed recommendation: deep_review\nConversation context: none\nGrounded rationale:\n1. Evidence from Model Switching Guidance - Recommended Usage supports regulatory assessment for deep_review using model gemma-e4b. [knowledge_wiki:model-switching-guidance:2:c1]\n2. Evidence from Manufacturer and GMP Evidence supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m1_gmp:c1]\n3. Evidence from AMR Stewardship Narrative supports regulatory assessment for deep_review using model gemma-e4b. [UPLOAD-WATCH-001:m5_stewardship:c1]\n\nFindings Across Criteria\n- Respivox submitted by East Africa Therapeutics was assessed for pre-market authorization.\n- The system recommendation is deep_review through the fallback review path.\n- Decision-driving policy signals: restricted_authorization.\n- Critical criteria needing reviewer attention: AMR Stewardship Narrative [present, length_ok, partial].\n- Groundedness verification passed with grounded claim rate 1.0.\n- AMR stewardship outcome: AWaRe watch, GLASS trend rising, authorization control restricted_authorization.\n\nCriteria Diagnostics"
+}

@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-04-20T11:07:51.988733",
+  "improvements": [
+    "conversation history entries can now be cleared individually",
+    "knowledge graph now includes product groups, application types, review domains, recommendation nodes, product-specific and INN-specific rollups",
+    "visualization queries can filter approval distributions more precisely using graph context such as antimicrobial focus"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "incoming_standard_review_submission.pdf": {
+    "description": "New human generic application for a standard oral antibacterial with a clean administrative package, current GMP evidence, and a complete benefit-risk narrative.",
+    "product_group": "antimicrobial",
+    "application_type": "new_application",
+    "review_pathway": "standard_review",
+    "document_condition": "well-structured CTD-style PDF with readable annex references",
+    "expected_outcome": "acceptable"
+  },
+  "incoming_access_standard_submission.pdf": {
+    "description": "New human antibacterial submission in the AWaRe Access pathway with routine stewardship monitoring and no restricted-authorization trigger.",
+    "product_group": "antimicrobial",
+    "application_type": "new_application",
+    "review_pathway": "standard_review",
+    "document_condition": "clean PDF dossier with complete stewardship narrative",
+    "expected_outcome": "acceptable"
+  },
+  "incoming_watch_submission.pdf": {
+    "description": "Human Watch-category antibacterial submission with rising resistance, comparator similarity concerns, and restricted-authorization implications.",
+    "product_group": "antimicrobial",
+    "application_type": "new_application",
+    "review_pathway": "deep_review",
+    "document_condition": "well-structured PDF with stewardship-sensitive scientific content",
+    "expected_outcome": "requires_revision"
+  },
+  "incoming_reserve_fast_track_submission.pdf": {
+    "description": "Reserve-category antibacterial submission for multidrug-resistant infection with critical unmet need and controlled fast-track eligibility.",
+    "product_group": "antimicrobial",
+    "application_type": "new_application",
+    "review_pathway": "fast_track",
+    "document_condition": "high-priority dossier with complete stewardship justification",
+    "expected_outcome": "acceptable_with_conditions"
+  },
+  "incoming_clinical_endpoint_failure.pdf": {
+    "description": "New application where the pivotal endpoint was not met despite acceptable quality documentation and otherwise readable dossier structure.",
+    "product_group": "other_product",
+    "application_type": "new_application",
+    "review_pathway": "reject_and_return",
+    "document_condition": "readable PDF with clinically adverse outcome",
+    "expected_outcome": "not_acceptable"
+  },
+  "incoming_gmp_expired_submission.pdf": {
+    "description": "Submission with expired GMP certification, outdated inspection evidence, and a quality-system package that should fail administrative and technical checks.",
+    "product_group": "other_product",
+    "application_type": "new_application",
+    "review_pathway": "reject_and_return",
+    "document_condition": "readable PDF with materially deficient GMP annexes",
+    "expected_outcome": "not_acceptable"
+  },
+  "incoming_missing_clinical_reports.pdf": {
+    "description": "Submission missing the pivotal clinical reports required for scientific assessment, designed to simulate an evidence-deficient filing.",
+    "product_group": "other_product",
+    "application_type": "new_application",
+    "review_pathway": "reject_and_return",
+    "document_condition": "partially complete dossier with missing clinical annexes",
+    "expected_outcome": "not_acceptable"
+  },
+  "incoming_naming_conflict_submission.pdf": {
+    "description": "Human medicine submission centered on look-alike naming risk, WHO INN similarity review, and labeling consistency checks.",
+    "product_group": "other_product",
+    "application_type": "new_application",
+    "review_pathway": "standard_review",
+    "document_condition": "well-organized dossier with naming-risk scenario",
+    "expected_outcome": "requires_revision"
+  },
+  "incoming_chemistry_alignment_case.pdf": {
+    "description": "Watch-category antimicrobial dossier intended for chemistry identity alignment, comparator review, and stewardship reasoning under controlled use.",
+    "product_group": "antimicrobial",
+    "application_type": "renewal",
+    "review_pathway": "deep_review",
+    "document_condition": "scientifically dense dossier with comparator-heavy stewardship evidence",
+    "expected_outcome": "requires_revision"
+  },
+  "incoming_scanned_quality_failure.pdf": {
+    "description": "Scanned, image-heavy submission with expired GMP evidence and failed clinical support, designed to exercise OCR and difficult-document review.",
+    "product_group": "other_product",
+    "application_type": "new_application",
+    "review_pathway": "reject_and_return",
+    "document_condition": "scanned and image-heavy dossier requiring OCR fallback",
+    "expected_outcome": "escalate_for_higher_review"
+  },
+  "incoming_deep_review_incomplete_evidence.pdf": {
+    "description": "Deep-review submission with partially developed evidence, unresolved gaps, and follow-up needs across quality and benefit-risk sections.",
+    "product_group": "other_product",
+    "application_type": "new_application",
+    "review_pathway": "deep_review",
+    "document_condition": "mixed-quality dossier with incomplete evidence package",
+    "expected_outcome": "requires_revision"
+  }
+}

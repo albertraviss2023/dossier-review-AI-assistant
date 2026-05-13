@@ -1,0 +1,25 @@
+{
+  "num_dossiers": 1,
+  "seed": 42,
+  "compliant_rate_target": 0.35,
+  "countries": [
+    "Tanzania",
+    "Burkina Faso",
+    "Uganda",
+    "Botswana"
+  ],
+  "holistic_distribution": {
+    "reject_and_return": 1
+  },
+  "defect_distribution": {
+    "clinical_failed": 1,
+    "gmp_certificate_expired": 1,
+    "inn_infringement": 1
+  },
+  "files": {
+    "dossiers_jsonl": "dossiers.jsonl",
+    "section_labels_csv": "section_labels.csv",
+    "holistic_labels_csv": "holistic_labels.csv",
+    "dossiers_pdf_dir": "dossiers_pdf"
+  }
+}

@@ -20,7 +20,7 @@ Priority note:
 - Define dossier schema, section taxonomy, and policy output schema.
 - Define external-source contracts for WHO AWaRe, WHO GLASS, RxNorm, PubChem, ChEMBL, and identifier reconciliation.
 - Define the knowledge wiki content model, citation boundaries, and update workflow.
-- Define the switchable local model catalog and UI contract for Gemma E4B, Gemma E2B, and Qwen 3.5.
+- Define the switchable local model catalog and UI contract for Gemma 4B Optimized, Gemma 2B Fast, and Gemma 2 27B-IT.
 - Define conversation-thread contracts, context-window telemetry, linked-chat carryover behavior, and LangGraph-compatible state flow.
 - Stand up local dependencies: Postgres/pgvector, MinIO, MLflow, Redis.
 - Bootstrap FastAPI policy service and UI shell.
@@ -55,6 +55,9 @@ Exit criteria:
 ### Day 4: Agentic RAG Pipeline
 - Implement orchestrator and specialized agents.
 - Build hybrid retrieval and reranking pipeline.
+- Implement chunking-policy framework with versioned profiles for dossier sections, wiki pages, and future issue-like artifacts.
+- Add token-aware chunk builder with embedding-safe size checks, overlap controls, and parent-span provenance.
+- Run chunking ablations before retriever tuning; treat chunking as a first-order retrieval lever rather than a preprocessing afterthought.
 - Implement external evidence retrieval adapters and cache layers for WHO AWaRe, WHO GLASS, RxNorm, PubChem, ChEMBL, and source snapshot replay.
 - Index the curated knowledge wiki and wire it into retrieval and synthesis flows as a distinct evidence corpus.
 - Implement query decomposition and evidence-pack assembly for compare/synthesize prompts that span dossier, wiki, and external sources.
@@ -66,11 +69,12 @@ Exit criteria:
 - End-to-end recommendation path works with citations.
 - Antibacterial decisions are grounded in real-source retrieval or pinned source snapshots.
 - Unsupported-claim gate blocks unsafe answers.
+- Chunking-policy evaluation shows measurable retrieval gain over a naive whole-section baseline and documents the chosen profile version.
 
 ### Day 5: Inference Optimization (Quantized + Streaming)
 - Integrate Docker Model Runner as primary inference runtime.
 - Configure quantized local model route.
-- Register switchable local profiles for Gemma E4B, Gemma E2B, and Qwen 3.5.
+- Register switchable local profiles for Gemma 4B Optimized, Gemma 2B Fast, and Gemma 2 27B-IT.
 - Expose model selection in the UI and propagate the chosen profile through review responses and audit logs.
 - Add local vLLM compatibility path and env-driven Hugging Face token handling without writing secrets to disk.
 - Add streamed-weight fallback route for hard cases.
@@ -119,6 +123,8 @@ Exit criteria:
 ## 5. Risk Register and Mitigations
 - Risk: Hallucinated unsupported outputs.
   - Mitigation: evidence and faithfulness gates, abstention protocol.
+- Risk: Retrieval underperforms because chunks are too large, semantically diluted, or silently truncated by the embedding model.
+  - Mitigation: token-budget enforcement, structure-aware segmentation, profile ablation tests, and corpus-specific chunking policies.
 - Risk: Latency spikes from streamed fallback.
   - Mitigation: routing thresholds, queue controls, route-specific SLOs.
 - Risk: Synthetic data mismatch with field reality.

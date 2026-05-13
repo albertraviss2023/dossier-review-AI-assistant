@@ -1,0 +1,774 @@
+{
+  "generated_at_utc": "2026-04-20T14:02:19.087184+00:00",
+  "dossier_id": "UPLOAD-STANDARD-001",
+  "report_title": "Generic Review Demo - UPLOAD-STANDARD-001",
+  "recipient_email": null,
+  "product_name": "Amoxera",
+  "inn_name": "amoxicillin",
+  "product_group": "antimicrobial",
+  "application_type": "new_application",
+  "antimicrobial": true,
+  "aware_category": "access",
+  "final_verdict": "escalate_for_higher_review",
+  "reviewer_username": "alutakome",
+  "review_type": "generic",
+  "report_lifecycle_status": "completed",
+  "report_payload": {
+    "report_title": "Generic Review Demo - UPLOAD-STANDARD-001",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "UPLOAD-STANDARD-001",
+        "submission_type": "pre_market_authorization",
+        "review_type": "generic",
+        "applicant": "Lake Region Medicines",
+        "product_name": "Amoxera",
+        "active_ingredient": "amoxicillin",
+        "dosage_form": "capsule",
+        "strength": "500 mg",
+        "jurisdiction": "Kenya",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_incomplete",
+        "violations": [
+          "Administrative application section is missing."
+        ]
+      },
+      "dossier_structure_review": {
+        "status": "mapped_with_violations",
+        "violations": [
+          "Manufacturer and GMP Evidence: presence=present, length=too_long, correctness=correct",
+          "Clinical Overview and Benefit-Risk Summary: presence=present, length=too_long, correctness=correct",
+          "AMR Stewardship Narrative: presence=present, length=too_long, correctness=correct"
+        ]
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "Generic review packaging and patient-information comparison against innovator reference when provided",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Amoxera",
+        "who_inn": "amikacin",
+        "similarity_index": 0.681,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "No INN infringement detected for 'Amoxera'.",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [
+          {
+            "section": "Manufacturer and GMP Evidence",
+            "status": "partially_compliant",
+            "presence": "present",
+            "length_status": "too_long",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Clinical Overview and Benefit-Risk Summary",
+            "status": "partially_compliant",
+            "presence": "present",
+            "length_status": "too_long",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "AMR Stewardship Narrative",
+            "status": "partially_compliant",
+            "presence": "present",
+            "length_status": "too_long",
+            "correctness": "correct",
+            "critical": true
+          }
+        ],
+        "review_type_specific": {
+          "review_type": "generic",
+          "status": "partial",
+          "baseline_available": true,
+          "baseline_reference_name": "Reference Paracetamol Patient Information Leaflet",
+          "baseline_reference_urls": [
+            "https://www.medicines.org.uk/emc/product/5164/xpil/print",
+            "https://www.medicines.org.uk/emc/files/pil.5164.pdf"
+          ],
+          "notes": [
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used Reference Paracetamol Patient Information Leaflet with lexical overlap ratio 0.07."
+          ],
+          "findings": [
+            {
+              "issue": "Generic dossier wording diverges materially from the supplied innovator baseline (Reference Paracetamol Patient Information Leaflet).",
+              "violated_rule": "Generic review packaging and patient-information comparison against innovator baseline",
+              "severity": "major",
+              "location": "Clinical Overview and Benefit-Risk Summary",
+              "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+              "recommendation": "Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations."
+            },
+            {
+              "issue": "Generic dossier patient-information content is missing baseline concepts: dosing, contraindications, warnings, storage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "Clinical Overview and Benefit-Risk Summary",
+              "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+              "recommendation": "Restore the missing patient-information concepts or justify the generic-labeling deviation."
+            }
+          ]
+        }
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "access",
+        "stewardship_rule_application": "Access-category antibiotic remains under standard stewardship monitoring.",
+        "fast_track_status": false,
+        "authorization_control": "standard_authorization",
+        "watch_or_reserve_caution": false,
+        "findings": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+        ]
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Administrative completeness review",
+          "issue": "Mandatory administrative application section is missing.",
+          "violated_rule": "Missing mandatory administrative documents = violation",
+          "severity": "major",
+          "location": "Module 1 / Administrative",
+          "recommendation": "Provide the required administrative section and supporting documents.",
+          "evidence_reference": "UPLOAD-STANDARD-001:unknown"
+        },
+        {
+          "workflow_step": "Structural dossier mapping",
+          "issue": "Manufacturer and GMP Evidence is missing, malformed, or incomplete.",
+          "violated_rule": "Missing required section = violation",
+          "severity": "major",
+          "location": "Manufacturer and GMP Evidence",
+          "recommendation": "Restore the required section with readable and complete content.",
+          "evidence_reference": "UPLOAD-STANDARD-001:m1_gmp"
+        },
+        {
+          "workflow_step": "Structural dossier mapping",
+          "issue": "Clinical Overview and Benefit-Risk Summary is missing, malformed, or incomplete.",
+          "violated_rule": "Missing required section = violation",
+          "severity": "major",
+          "location": "Clinical Overview and Benefit-Risk Summary",
+          "recommendation": "Restore the required section with readable and complete content.",
+          "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical"
+        },
+        {
+          "workflow_step": "Structural dossier mapping",
+          "issue": "AMR Stewardship Narrative is missing, malformed, or incomplete.",
+          "violated_rule": "Missing required section = violation",
+          "severity": "major",
+          "location": "AMR Stewardship Narrative",
+          "recommendation": "Restore the required section with readable and complete content.",
+          "evidence_reference": "UPLOAD-STANDARD-001:m5_stewardship"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Generic dossier wording diverges materially from the supplied innovator baseline (Reference Paracetamol Patient Information Leaflet).",
+          "violated_rule": "Generic review packaging and patient-information comparison against innovator baseline",
+          "severity": "major",
+          "location": "Clinical Overview and Benefit-Risk Summary",
+          "recommendation": "Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations.",
+          "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Generic dossier patient-information content is missing baseline concepts: dosing, contraindications, warnings, storage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "Clinical Overview and Benefit-Risk Summary",
+          "recommendation": "Restore the missing patient-information concepts or justify the generic-labeling deviation.",
+          "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical"
+        },
+        {
+          "workflow_step": "Cross-section consistency review",
+          "issue": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+          "violated_rule": "Claim not supported by evidence = violation",
+          "severity": "major",
+          "location": "Stability and Shelf-Life Justification",
+          "recommendation": "Provide or correctly map the stability section before finalizing the review.",
+          "evidence_reference": "UPLOAD-STANDARD-001:unknown"
+        }
+      ],
+      "findings_summary_tables": {
+        "administrative": [
+          {
+            "severity": "major",
+            "violated_rule": "Missing mandatory administrative documents = violation",
+            "evidence_reference": "UPLOAD-STANDARD-001:unknown",
+            "recommendation": "Provide the required administrative section and supporting documents."
+          }
+        ],
+        "naming_inn": [],
+        "quality": [],
+        "gmp": [
+          {
+            "severity": "major",
+            "violated_rule": "Missing required section = violation",
+            "evidence_reference": "UPLOAD-STANDARD-001:m1_gmp",
+            "recommendation": "Restore the required section with readable and complete content."
+          }
+        ],
+        "clinical_evidence": [
+          {
+            "severity": "major",
+            "violated_rule": "Missing required section = violation",
+            "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+            "recommendation": "Restore the required section with readable and complete content."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review packaging and patient-information comparison against innovator baseline",
+            "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+            "recommendation": "Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+            "recommendation": "Restore the missing patient-information concepts or justify the generic-labeling deviation."
+          }
+        ],
+        "amr_stewardship": [
+          {
+            "severity": "major",
+            "violated_rule": "Missing required section = violation",
+            "evidence_reference": "UPLOAD-STANDARD-001:m5_stewardship",
+            "recommendation": "Restore the required section with readable and complete content."
+          }
+        ],
+        "consistency_checks": [
+          {
+            "severity": "major",
+            "violated_rule": "Claim not supported by evidence = violation",
+            "evidence_reference": "UPLOAD-STANDARD-001:unknown",
+            "recommendation": "Provide or correctly map the stability section before finalizing the review."
+          }
+        ]
+      },
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | UPLOAD-STANDARD-001:unknown | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m1_gmp | Restore the required section with readable and complete content. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m2_clinical | Restore the required section with readable and complete content. |\n| major | Generic review packaging and patient-information comparison against innovator baseline | UPLOAD-STANDARD-001:m2_clinical | Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | UPLOAD-STANDARD-001:m2_clinical | Restore the missing patient-information concepts or justify the generic-labeling deviation. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m5_stewardship | Restore the required section with readable and complete content. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-STANDARD-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+      "severity_classification": {
+        "critical": 0,
+        "major": 7,
+        "minor": 0,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "violations_found",
+        "findings": [
+          "No stability section was mapped, so shelf-life claims cannot be cross-checked."
+        ]
+      },
+      "review_completeness_confirmation": {
+        "status": "review_incomplete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": false,
+          "structural_dossier_mapping": true,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": true,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "Administrative completeness review could not be confirmed because the administrative section was not mapped.",
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+          "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+          "Generic baseline comparison used Reference Paracetamol Patient Information Leaflet with lexical overlap ratio 0.07."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "escalate_for_higher_review",
+        "system_recommendation": "approval_granted",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Mandatory administrative application section is missing.",
+          "Manufacturer and GMP Evidence is missing, malformed, or incomplete.",
+          "Clinical Overview and Benefit-Risk Summary is missing, malformed, or incomplete.",
+          "AMR Stewardship Narrative is missing, malformed, or incomplete.",
+          "Generic dossier wording diverges materially from the supplied innovator baseline (Reference Paracetamol Patient Information Leaflet).",
+          "Generic dossier patient-information content is missing baseline concepts: dosing, contraindications, warnings, storage.",
+          "Shelf-life claims could not be cross-checked against a mapped stability section."
+        ],
+        "escalation_needed": true
+      }
+    },
+    "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | UPLOAD-STANDARD-001:unknown | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m1_gmp | Restore the required section with readable and complete content. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m2_clinical | Restore the required section with readable and complete content. |\n| major | Generic review packaging and patient-information comparison against innovator baseline | UPLOAD-STANDARD-001:m2_clinical | Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | UPLOAD-STANDARD-001:m2_clinical | Restore the missing patient-information concepts or justify the generic-labeling deviation. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m5_stewardship | Restore the required section with readable and complete content. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-STANDARD-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+    "review_payload": {
+      "dossier_id": "UPLOAD-STANDARD-001",
+      "selected_model": {
+        "id": "gemma-e4b",
+        "label": "Gemma E4B",
+        "runtime_model_id": "gemma-e4b",
+        "description": "Primary balanced local model for dossier review."
+      },
+      "sub_queries": [
+        "Run the full structured review for this generic dossier, compare the patient information against the innovator baseline where provided, summarize all rule violations, and recommend the regulatory action.",
+        "regulatory policy for Run the full structured review for this generic dossier, compare the patient information against the innovator baseline where provided, summarize all rule violations, and recommend the regulatory action.",
+        "official guidance on Run the full structured review for this generic dossier, compare the patient information against the innovator baseline where provided, summarize all rule violations, and recommend the regulatory action.",
+        "Run the full structured review for this generic dossier, compare the patient information against the innovator baseline where provided, summarize all rule violations, and recommend the regulatory action. constrained to Product Submission",
+        "Run the full structured review for this generic dossier, compare the patient information against the innovator baseline where provided, summarize all rule violations, and recommend the regulatory action. with related terms medicine, submission product, inn, active ingredient"
+      ],
+      "intent": "policy_guidance",
+      "response_contract": "policy_guidance_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "conversation_id": "conv-3415a5773f",
+      "review_type": "generic",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 982,
+        "remaining_tokens": 3114,
+        "usage_ratio": 0.23975,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 0,
+        "carryover_tokens": 0,
+        "active_message_tokens": 982,
+        "archived_messages_count": 0,
+        "compaction_count": 0,
+        "auto_compaction_required": false,
+        "last_compacted_at": null,
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "approval_granted",
+      "confidence": 0.57216,
+      "route": "fallback",
+      "abstained": false,
+      "abstain_reason": null,
+      "rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Granted**. The submission covers the product **Amoxera** (amoxicillin), submitted by **Lake Region Medicines**.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Amoxera'.\n\n**AMR Stewardship Analysis:** The product is classified under the **ACCESS** category. Access-category antibiotic remains under standard stewardship monitoring. The ingredient was normalized to **amoxicillin** for stewardship checks. Current surveillance signals do not indicate an elevated resistance concern beyond standard monitoring.\n\n### Detailed Findings\n- Evidence from **Manufacturer and GMP Evidence** supports The primary commercial manufacturing site for the finished pharmaceutical product is Nairobi Solid Dose Centre, located in Kenya. The facility was subject to a comprehensive GMP inspection by a rec.. [UPLOAD-STANDARD-001:m1_gmp:fallback]\n- Evidence from **Clinical Overview and Benefit-Risk Summary** supports The Clinical Overview synthesizes the efficacy and safety data supporting the use of Amoxera for the treatment of infections. The pivotal clinical development program comprised 2 well-controlled st.. [UPLOAD-STANDARD-001:m2_clinical:fallback]\n\n### Conclusion\n\n**Approval Granted** is the grounded regulatory path. The reviewer should confirm the stewardship plan aligns with the AWaRe categorization and local resistance trends.\n\n### Findings Summary Tables\n\n#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | UPLOAD-STANDARD-001:unknown | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m1_gmp | Restore the required section with readable and complete content. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m2_clinical | Restore the required section with readable and complete content. |\n| major | Generic review packaging and patient-information comparison against innovator baseline | UPLOAD-STANDARD-001:m2_clinical | Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | UPLOAD-STANDARD-001:m2_clinical | Restore the missing patient-information concepts or justify the generic-labeling deviation. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m5_stewardship | Restore the required section with readable and complete content. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-STANDARD-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+      "chain_of_thought": "{\n \"intent\": \"policy_guidance\",\n \"resolved_terms\": [\n \"Product\",\n \"Submission\"\n ],\n \"retrieval_strategy\": \"Precision search across policy_guidance_v1 domain\",\n \"bouncer_audit\": []\n}",
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | UPLOAD-STANDARD-001:unknown | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m1_gmp | Restore the required section with readable and complete content. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m2_clinical | Restore the required section with readable and complete content. |\n| major | Generic review packaging and patient-information comparison against innovator baseline | UPLOAD-STANDARD-001:m2_clinical | Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | UPLOAD-STANDARD-001:m2_clinical | Restore the missing patient-information concepts or justify the generic-labeling deviation. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m5_stewardship | Restore the required section with readable and complete content. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-STANDARD-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+      "workflow_summary": {
+        "submission_summary": {
+          "dossier_id": "UPLOAD-STANDARD-001",
+          "submission_type": "pre_market_authorization",
+          "review_type": "generic",
+          "applicant": "Lake Region Medicines",
+          "product_name": "Amoxera",
+          "active_ingredient": "amoxicillin",
+          "dosage_form": "capsule",
+          "strength": "500 mg",
+          "jurisdiction": "Kenya",
+          "review_pathway": "standard"
+        },
+        "administrative_review": {
+          "status": "administratively_incomplete",
+          "violations": [
+            "Administrative application section is missing."
+          ]
+        },
+        "dossier_structure_review": {
+          "status": "mapped_with_violations",
+          "violations": [
+            "Manufacturer and GMP Evidence: presence=present, length=too_long, correctness=correct",
+            "Clinical Overview and Benefit-Risk Summary: presence=present, length=too_long, correctness=correct",
+            "AMR Stewardship Narrative: presence=present, length=too_long, correctness=correct"
+          ]
+        },
+        "applicable_rules_identification": {
+          "rules": [
+            "Administrative completeness checklist",
+            "Structural dossier completeness rules",
+            "WHO INN similarity rule",
+            "Section adequacy and evidence sufficiency rules",
+            "Generic review packaging and patient-information comparison against innovator reference when provided",
+            "WHO AWaRe stewardship rules"
+          ]
+        },
+        "who_inn_similarity_review": {
+          "proposed_name": "Amoxera",
+          "who_inn": "amikacin",
+          "similarity_index": 0.681,
+          "threshold": 0.7,
+          "threshold_result": "passed",
+          "similarity_type": "orthographic",
+          "interpretation": "No INN infringement detected for 'Amoxera'.",
+          "flag_status": "acceptable_naming",
+          "rule_consequence": "No blocking INN naming issue was identified."
+        },
+        "technical_section_review": {
+          "section_results": [
+            {
+              "section": "Manufacturer and GMP Evidence",
+              "status": "partially_compliant",
+              "presence": "present",
+              "length_status": "too_long",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Clinical Overview and Benefit-Risk Summary",
+              "status": "partially_compliant",
+              "presence": "present",
+              "length_status": "too_long",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "AMR Stewardship Narrative",
+              "status": "partially_compliant",
+              "presence": "present",
+              "length_status": "too_long",
+              "correctness": "correct",
+              "critical": true
+            }
+          ],
+          "review_type_specific": {
+            "review_type": "generic",
+            "status": "partial",
+            "baseline_available": true,
+            "baseline_reference_name": "Reference Paracetamol Patient Information Leaflet",
+            "baseline_reference_urls": [
+              "https://www.medicines.org.uk/emc/product/5164/xpil/print",
+              "https://www.medicines.org.uk/emc/files/pil.5164.pdf"
+            ],
+            "notes": [
+              "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+              "Generic baseline comparison used Reference Paracetamol Patient Information Leaflet with lexical overlap ratio 0.07."
+            ],
+            "findings": [
+              {
+                "issue": "Generic dossier wording diverges materially from the supplied innovator baseline (Reference Paracetamol Patient Information Leaflet).",
+                "violated_rule": "Generic review packaging and patient-information comparison against innovator baseline",
+                "severity": "major",
+                "location": "Clinical Overview and Benefit-Risk Summary",
+                "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+                "recommendation": "Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations."
+              },
+              {
+                "issue": "Generic dossier patient-information content is missing baseline concepts: dosing, contraindications, warnings, storage.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "Clinical Overview and Benefit-Risk Summary",
+                "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+                "recommendation": "Restore the missing patient-information concepts or justify the generic-labeling deviation."
+              }
+            ]
+          }
+        },
+        "amr_stewardship_review": {
+          "applicable": true,
+          "antimicrobial_status": "antimicrobial",
+          "aware_category": "access",
+          "stewardship_rule_application": "Access-category antibiotic remains under standard stewardship monitoring.",
+          "fast_track_status": false,
+          "authorization_control": "standard_authorization",
+          "watch_or_reserve_caution": false,
+          "findings": [
+            "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+            "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+            "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+            "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+            "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+          ]
+        },
+        "findings_register": [
+          {
+            "workflow_step": "Administrative completeness review",
+            "issue": "Mandatory administrative application section is missing.",
+            "violated_rule": "Missing mandatory administrative documents = violation",
+            "severity": "major",
+            "location": "Module 1 / Administrative",
+            "recommendation": "Provide the required administrative section and supporting documents.",
+            "evidence_reference": "UPLOAD-STANDARD-001:unknown"
+          },
+          {
+            "workflow_step": "Structural dossier mapping",
+            "issue": "Manufacturer and GMP Evidence is missing, malformed, or incomplete.",
+            "violated_rule": "Missing required section = violation",
+            "severity": "major",
+            "location": "Manufacturer and GMP Evidence",
+            "recommendation": "Restore the required section with readable and complete content.",
+            "evidence_reference": "UPLOAD-STANDARD-001:m1_gmp"
+          },
+          {
+            "workflow_step": "Structural dossier mapping",
+            "issue": "Clinical Overview and Benefit-Risk Summary is missing, malformed, or incomplete.",
+            "violated_rule": "Missing required section = violation",
+            "severity": "major",
+            "location": "Clinical Overview and Benefit-Risk Summary",
+            "recommendation": "Restore the required section with readable and complete content.",
+            "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical"
+          },
+          {
+            "workflow_step": "Structural dossier mapping",
+            "issue": "AMR Stewardship Narrative is missing, malformed, or incomplete.",
+            "violated_rule": "Missing required section = violation",
+            "severity": "major",
+            "location": "AMR Stewardship Narrative",
+            "recommendation": "Restore the required section with readable and complete content.",
+            "evidence_reference": "UPLOAD-STANDARD-001:m5_stewardship"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Generic dossier wording diverges materially from the supplied innovator baseline (Reference Paracetamol Patient Information Leaflet).",
+            "violated_rule": "Generic review packaging and patient-information comparison against innovator baseline",
+            "severity": "major",
+            "location": "Clinical Overview and Benefit-Risk Summary",
+            "recommendation": "Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations.",
+            "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Generic dossier patient-information content is missing baseline concepts: dosing, contraindications, warnings, storage.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "Clinical Overview and Benefit-Risk Summary",
+            "recommendation": "Restore the missing patient-information concepts or justify the generic-labeling deviation.",
+            "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical"
+          },
+          {
+            "workflow_step": "Cross-section consistency review",
+            "issue": "Shelf-life claims could not be cross-checked against a mapped stability section.",
+            "violated_rule": "Claim not supported by evidence = violation",
+            "severity": "major",
+            "location": "Stability and Shelf-Life Justification",
+            "recommendation": "Provide or correctly map the stability section before finalizing the review.",
+            "evidence_reference": "UPLOAD-STANDARD-001:unknown"
+          }
+        ],
+        "findings_summary_tables": {
+          "administrative": [
+            {
+              "severity": "major",
+              "violated_rule": "Missing mandatory administrative documents = violation",
+              "evidence_reference": "UPLOAD-STANDARD-001:unknown",
+              "recommendation": "Provide the required administrative section and supporting documents."
+            }
+          ],
+          "naming_inn": [],
+          "quality": [],
+          "gmp": [
+            {
+              "severity": "major",
+              "violated_rule": "Missing required section = violation",
+              "evidence_reference": "UPLOAD-STANDARD-001:m1_gmp",
+              "recommendation": "Restore the required section with readable and complete content."
+            }
+          ],
+          "clinical_evidence": [
+            {
+              "severity": "major",
+              "violated_rule": "Missing required section = violation",
+              "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+              "recommendation": "Restore the required section with readable and complete content."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review packaging and patient-information comparison against innovator baseline",
+              "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+              "recommendation": "Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "UPLOAD-STANDARD-001:m2_clinical",
+              "recommendation": "Restore the missing patient-information concepts or justify the generic-labeling deviation."
+            }
+          ],
+          "amr_stewardship": [
+            {
+              "severity": "major",
+              "violated_rule": "Missing required section = violation",
+              "evidence_reference": "UPLOAD-STANDARD-001:m5_stewardship",
+              "recommendation": "Restore the required section with readable and complete content."
+            }
+          ],
+          "consistency_checks": [
+            {
+              "severity": "major",
+              "violated_rule": "Claim not supported by evidence = violation",
+              "evidence_reference": "UPLOAD-STANDARD-001:unknown",
+              "recommendation": "Provide or correctly map the stability section before finalizing the review."
+            }
+          ]
+        },
+        "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing mandatory administrative documents = violation | UPLOAD-STANDARD-001:unknown | Provide the required administrative section and supporting documents. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m1_gmp | Restore the required section with readable and complete content. |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m2_clinical | Restore the required section with readable and complete content. |\n| major | Generic review packaging and patient-information comparison against innovator baseline | UPLOAD-STANDARD-001:m2_clinical | Align the product information and patient-information wording more closely to the innovator baseline or justify the deviations. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | UPLOAD-STANDARD-001:m2_clinical | Restore the missing patient-information concepts or justify the generic-labeling deviation. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Missing required section = violation | UPLOAD-STANDARD-001:m5_stewardship | Restore the required section with readable and complete content. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Claim not supported by evidence = violation | UPLOAD-STANDARD-001:unknown | Provide or correctly map the stability section before finalizing the review. |",
+        "severity_classification": {
+          "critical": 0,
+          "major": 7,
+          "minor": 0,
+          "advisory": 0
+        },
+        "cross_section_consistency_review": {
+          "status": "violations_found",
+          "findings": [
+            "No stability section was mapped, so shelf-life claims cannot be cross-checked."
+          ]
+        },
+        "review_completeness_confirmation": {
+          "status": "review_incomplete",
+          "mandatory_steps": {
+            "submission_intake_and_familiarization": true,
+            "administrative_completeness_review": false,
+            "structural_dossier_mapping": true,
+            "applicable_rules_identification": true,
+            "who_inn_similarity_review": true,
+            "section_by_section_technical_review": true,
+            "amr_stewardship_review": true,
+            "findings_register": true,
+            "severity_classification": true,
+            "cross_section_consistency_review": true
+          },
+          "notes": [
+            "Administrative completeness review could not be confirmed because the administrative section was not mapped.",
+            "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used Reference Paracetamol Patient Information Leaflet with lexical overlap ratio 0.07."
+          ]
+        },
+        "overall_judgment": {
+          "final_verdict": "escalate_for_higher_review",
+          "system_recommendation": "approval_granted",
+          "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+          "blocking_issues": [
+            "Mandatory administrative application section is missing.",
+            "Manufacturer and GMP Evidence is missing, malformed, or incomplete.",
+            "Clinical Overview and Benefit-Risk Summary is missing, malformed, or incomplete.",
+            "AMR Stewardship Narrative is missing, malformed, or incomplete.",
+            "Generic dossier wording diverges materially from the supplied innovator baseline (Reference Paracetamol Patient Information Leaflet).",
+            "Generic dossier patient-information content is missing baseline concepts: dosing, contraindications, warnings, storage.",
+            "Shelf-life claims could not be cross-checked against a mapped stability section."
+          ],
+          "escalation_needed": true
+        }
+      },
+      "policy_rule_hits": [],
+      "section_diagnostics": [
+        {
+          "section_id": "m1_gmp",
+          "title": "Manufacturer and GMP Evidence",
+          "presence": "present",
+          "length_status": "too_long",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m2_clinical",
+          "title": "Clinical Overview and Benefit-Risk Summary",
+          "presence": "present",
+          "length_status": "too_long",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m5_stewardship",
+          "title": "AMR Stewardship Narrative",
+          "presence": "present",
+          "length_status": "too_long",
+          "correctness": "correct",
+          "critical": true
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "UPLOAD-STANDARD-001:m1_gmp:fallback",
+          "dossier_id": "UPLOAD-STANDARD-001",
+          "section_id": "m1_gmp",
+          "section_title": "Manufacturer and GMP Evidence",
+          "score": 0.15,
+          "snippet": "The primary commercial manufacturing site for the finished pharmaceutical product is Nairobi Solid Dose Centre, located in Kenya. The facility was subject to a comprehensive GMP inspection by a recognized stringent regul..."
+        },
+        {
+          "citation_id": "UPLOAD-STANDARD-001:m2_clinical:fallback",
+          "dossier_id": "UPLOAD-STANDARD-001",
+          "section_id": "m2_clinical",
+          "section_title": "Clinical Overview and Benefit-Risk Summary",
+          "score": 0.15,
+          "snippet": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Amoxera for the treatment of infections. The pivotal clinical development program comprised 2 well-controlled studies. Based on the int..."
+        },
+        {
+          "citation_id": "UPLOAD-STANDARD-001:m5_stewardship:fallback",
+          "dossier_id": "UPLOAD-STANDARD-001",
+          "section_id": "m5_stewardship",
+          "section_title": "AMR Stewardship Narrative",
+          "score": 0.15,
+          "snippet": "The tabular listing of clinical studies provides a comprehensive inventory of all trials conducted in support of the proposed indication (infections). This includes Phase I pharmacokinetic/pharmacodynamic studies, Phase ..."
+        }
+      ],
+      "verifier": {
+        "grounded_claim_rate": 1.0,
+        "unsupported_critical_claim_rate": 0.0,
+        "passed": true
+      },
+      "memory": {
+        "process_rss_gb": 0.8858,
+        "system_total_ram_gb": 31.7568,
+        "system_available_ram_gb": 12.0752,
+        "system_used_ram_percent": 62.0,
+        "min_free_ram_gb": 0.5,
+        "standard_route_rss_limit_gb": 20.0,
+        "fallback_route_rss_limit_gb": 26.0,
+        "within_budget": true
+      },
+      "lineage_tags": {
+        "data_classification": "synthetic",
+        "data_version": "balanced_v1_2026-04-05",
+        "split_version": "balanced_v1_2026-04-05",
+        "model_policy": "local_multi_model",
+        "model_id": "gemma-e4b",
+        "prompt_version": "review_v1",
+        "route_profile": "fallback"
+      },
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "amoxicillin",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "amoxicillin",
+        "parent_compound": "amoxicillin",
+        "pubchem_cid": "33613",
+        "canonical_smiles": "CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccc(O)cc3)N2C(=O)N1C(=O)O",
+        "inchikey": "OTBDXZCWBFLTOZ-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL1082",
+        "unichem_id": "UC33613",
+        "aware_category": "access",
+        "amr_unmet_need": "low",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "stable",
+        "similarity_to_existing_watch": "not_applicable",
+        "existing_watch_comparator": "not_applicable",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "standard_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": false,
+        "watch_similarity_restriction": false,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+        ],
+        "rationale": "Access-category antibiotic remains under standard stewardship monitoring."
+      },
+      "metrics": {
+        "latency_seconds": 0.6084,
+        "input_tokens_estimate": 79,
+        "output_tokens_estimate": 1487
+      },
+      "visualization_data": null
+    },
+    "email_subject": "Generic Review Demo - UPLOAD-STANDARD-001 - approval_granted",
+    "email_body": "Generic Review Demo - UPLOAD-STANDARD-001\n\nSubmission Summary\n- Dossier Id: UPLOAD-STANDARD-001\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Lake Region Medicines\n- Product Name: Amoxera\n- Active Ingredient: amoxicillin\n- Dosage Form: capsule\n- Strength: 500 mg\n- Jurisdiction: Kenya\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- Administrative application section is missing.\n\nDossier Structure Review Outcome\n- Status: mapped_with_violations\n- Manufacturer and GMP Evidence: presence=present, length=too_long, correctness=correct\n- Clinical Overview and Benefit-Risk Summary: presence=present, length=too_long, correctness=correct\n- AMR Stewardship Narrative: presence=present, length=too_long, correctness=correct\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Amoxera\n- Who Inn: amikacin"
+  },
+  "email_subject": "Generic Review Demo - UPLOAD-STANDARD-001 - approval_granted",
+  "email_body": "Generic Review Demo - UPLOAD-STANDARD-001\n\nSubmission Summary\n- Dossier Id: UPLOAD-STANDARD-001\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Lake Region Medicines\n- Product Name: Amoxera\n- Active Ingredient: amoxicillin\n- Dosage Form: capsule\n- Strength: 500 mg\n- Jurisdiction: Kenya\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- Administrative application section is missing.\n\nDossier Structure Review Outcome\n- Status: mapped_with_violations\n- Manufacturer and GMP Evidence: presence=present, length=too_long, correctness=correct\n- Clinical Overview and Benefit-Risk Summary: presence=present, length=too_long, correctness=correct\n- AMR Stewardship Narrative: presence=present, length=too_long, correctness=correct\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Amoxera\n- Who Inn: amikacin"
+}

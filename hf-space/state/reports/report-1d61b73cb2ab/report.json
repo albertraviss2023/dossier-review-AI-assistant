@@ -1,0 +1,510 @@
+{
+  "generated_at_utc": "2026-04-17T22:16:14.734400+00:00",
+  "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+  "report_title": "Structured Workflow Review Report - WF-NAMING_CONFLICT-20260417_221400",
+  "recipient_email": null,
+  "report_payload": {
+    "report_title": "Structured Workflow Review Report - WF-NAMING_CONFLICT-20260417_221400",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+        "submission_type": "pre_market_authorization",
+        "applicant": "Workflow Applicant",
+        "product_name": "amoxicillin",
+        "active_ingredient": "amoxicillin",
+        "dosage_form": "unknown",
+        "strength": "unknown",
+        "jurisdiction": "Uganda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_incomplete",
+        "violations": [
+          "No proof of payment was detected in the administrative material."
+        ]
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "amoxicillin",
+        "who_inn": "ampicillin",
+        "similarity_index": 0.9248,
+        "threshold": 0.7,
+        "threshold_result": "failed",
+        "similarity_type": "orthographic",
+        "interpretation": "Product name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).",
+        "flag_status": "naming_violation",
+        "rule_consequence": "Product name cannot be accepted because INN similarity exceeds 70%."
+      },
+      "technical_section_review": {
+        "section_results": [
+          {
+            "section": "Application Form and Administrative Information",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Manufacturer and GMP Evidence",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Product Information and Naming",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Quality Overall Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Clinical Overview and Benefit-Risk Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "API Quality and Control Strategy",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "FPP Manufacturing Process and Controls",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Stability and Shelf-Life Justification",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Nonclinical Study Summary",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          },
+          {
+            "section": "Tabular Listing of Clinical Studies",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Pivotal Clinical Trial Reports",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": true
+          },
+          {
+            "section": "Biopharmaceutics and Bioequivalence Evidence",
+            "status": "compliant",
+            "presence": "present",
+            "length_status": "length_ok",
+            "correctness": "correct",
+            "critical": false
+          }
+        ]
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "access",
+        "stewardship_rule_application": "Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613.",
+        "fast_track_status": false,
+        "authorization_control": "standard_authorization",
+        "watch_or_reserve_caution": false,
+        "findings": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+        ]
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Administrative completeness review",
+          "issue": "No proof of payment was detected in the administrative material.",
+          "violated_rule": "Missing proof of payment where required = violation",
+          "severity": "minor",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Confirm the payment receipt or fee evidence is included where required."
+        },
+        {
+          "workflow_step": "WHO INN similarity review",
+          "issue": "Product name exceeds the INN similarity threshold against ampicillin.",
+          "violated_rule": "INN similarity > 70% = naming violation",
+          "severity": "critical",
+          "location": "Product Information and Naming",
+          "recommendation": "Rename the product before the dossier can be accepted."
+        },
+        {
+          "workflow_step": "Cross-section consistency review",
+          "issue": "Proposed product name is identical to the INN and may create naming confusion.",
+          "violated_rule": "Product identity inconsistency or confusion risk = violation",
+          "severity": "major",
+          "location": "Product Information and Naming",
+          "recommendation": "Use a distinct product name and verify consistent naming across all dossier sections."
+        }
+      ],
+      "severity_classification": {
+        "critical": 1,
+        "major": 1,
+        "minor": 1,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "violations_found",
+        "findings": [
+          "Proposed product name is identical to the INN and may create naming confusion."
+        ]
+      },
+      "review_completeness_confirmation": {
+        "status": "review_complete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": true,
+          "structural_dossier_mapping": true,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": true,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "The review completed, but the dossier cannot be accepted because the INN similarity threshold was exceeded.",
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "not_acceptable",
+        "system_recommendation": "approval_denied",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Product name exceeds the INN similarity threshold against ampicillin.",
+          "Proposed product name is identical to the INN and may create naming confusion."
+        ],
+        "escalation_needed": false
+      }
+    },
+    "review_payload": {
+      "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+      "selected_model": {
+        "id": "gemma-e4b",
+        "label": "Gemma E4B",
+        "runtime_model_id": "gemma-e4b",
+        "description": "Primary balanced local model for dossier review."
+      },
+      "sub_queries": [
+        "Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "details about Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification.",
+        "requirements for Based on the complete structured review, give the overall judgment as acceptable, acceptable with conditions, requires revision, not acceptable, or escalate for higher review, with justification."
+      ],
+      "intent": "dossier_review",
+      "response_contract": "dossier_review_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "conversation_id": "conv-4c77f015d4",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 3431,
+        "remaining_tokens": 665,
+        "usage_ratio": 0.83765,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 923,
+        "carryover_tokens": 0,
+        "active_message_tokens": 2508,
+        "archived_messages_count": 14,
+        "compaction_count": 1,
+        "auto_compaction_required": false,
+        "last_compacted_at": "2026-04-17T22:16:14.245134+00:00",
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "approval_denied",
+      "confidence": 0.58686,
+      "route": "fallback",
+      "abstained": false,
+      "abstain_reason": null,
+      "rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **amoxicillin** (amoxicillin), submitted by **Workflow Applicant**. The structured review found **1** unresolved requirement-level concern.\n\n### Naming Policy Violation\n\nProduct name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n\nA recommendation to **Reject** is issued because the product name is too similar to a known WHO International Nonproprietary Name (INN), which may lead to clinical confusion.\n\n**AMR Stewardship Analysis:** The product is classified under the **ACCESS** category. Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613.\n\n### Detailed Findings\n- Evidence from **Product Information and Naming** supports The proposed proprietary name for this medicinal product is Ampimed, containing the active pharmaceutical ingredient ampicillin. The draft Summary of Product Characteristics (SmPC), Patient Informa.. [WF-NAMING_CONFLICT-20260417_221400:m1_product_information:c1]\n- Evidence from **Stability and Shelf-Life Justification** supports A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. Data from both accelerated (40\u00b0C/75% RH for 6 months) and long-term storage conditions.. [WF-NAMING_CONFLICT-20260417_221400:m3_stability:c1]\n\n### Conclusion. In conclusion, **Approval Denied** is the grounded regulatory path. The reviewer should confirm the stewardship plan aligns with the AWaRe categorization and local resistance trends.",
+      "chain_of_thought": "{\n \"intent\": \"dossier_review\",\n \"resolved_terms\": [],\n \"retrieval_strategy\": \"Precision search across dossier_review_v1 domain\",\n \"bouncer_audit\": [\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m1_product_information:c1\",\n \"section\": \"Product Information and Naming\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.176\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m3_stability:c1\",\n \"section\": \"Stability and Shelf-Life Justification\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.164\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m2_clinical_overview:c1\",\n \"section\": \"Clinical Overview and Benefit-Risk Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.155\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m2_quality_overall_summary:c1\",\n \"section\": \"Quality Overall Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.152\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m3_api_quality:c1\",\n \"section\": \"API Quality and Control Strategy\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.148\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m5_bioequivalence:c1\",\n \"section\": \"Biopharmaceutics and Bioequivalence Evidence\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.146\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m5_trial_listing:c1\",\n \"section\": \"Tabular Listing of Clinical Studies\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.138\n },\n {\n \"chunk_id\": \"WF-NAMING_CONFLICT-20260417_221400:m5_pivotal_trial_reports:c1\",\n \"section\": \"Pivotal Clinical Trial Reports\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.138\n }\n ]\n}",
+      "policy_rule_hits": [
+        "inn_infringement",
+        "policy_severe_failure"
+      ],
+      "section_diagnostics": [
+        {
+          "section_id": "m1_application_admin",
+          "title": "Application Form and Administrative Information",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_manufacturer_gmp",
+          "title": "Manufacturer and GMP Evidence",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m1_product_information",
+          "title": "Product Information and Naming",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m2_quality_overall_summary",
+          "title": "Quality Overall Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m2_clinical_overview",
+          "title": "Clinical Overview and Benefit-Risk Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_api_quality",
+          "title": "API Quality and Control Strategy",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_fpp_manufacturing",
+          "title": "FPP Manufacturing Process and Controls",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m3_stability",
+          "title": "Stability and Shelf-Life Justification",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m4_nonclinical_summary",
+          "title": "Nonclinical Study Summary",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        },
+        {
+          "section_id": "m5_trial_listing",
+          "title": "Tabular Listing of Clinical Studies",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m5_pivotal_trial_reports",
+          "title": "Pivotal Clinical Trial Reports",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": true
+        },
+        {
+          "section_id": "m5_bioequivalence",
+          "title": "Biopharmaceutics and Bioequivalence Evidence",
+          "presence": "present",
+          "length_status": "length_ok",
+          "correctness": "correct",
+          "critical": false
+        }
+      ],
+      "citations": [
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m1_product_information:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m1_product_information",
+          "section_title": "Product Information and Naming",
+          "score": 0.1764,
+          "snippet": "The proposed proprietary name for this medicinal product is Ampimed, containing the active pharmaceutical ingredient ampicillin. The draft Summary of Product Characteristics (SmPC), Patient Information Leaflet (PIL), and..."
+        },
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m3_stability:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m3_stability",
+          "section_title": "Stability and Shelf-Life Justification",
+          "score": 0.16422,
+          "snippet": "A comprehensive stability program has been executed to justify the proposed shelf-life and storage conditions. Data from both accelerated (40\u00b0C/75% RH for 6 months) and long-term storage conditions (spanning up to 36 mon..."
+        },
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m2_clinical_overview:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m2_clinical_overview",
+          "section_title": "Clinical Overview and Benefit-Risk Summary",
+          "score": 0.15509,
+          "snippet": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Ampimed for the treatment of bacterial skin infection. The pivotal clinical development program comprised 2 well-controlled studies. Ba..."
+        },
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m2_quality_overall_summary:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m2_quality_overall_summary",
+          "section_title": "Quality Overall Summary",
+          "score": 0.15245,
+          "snippet": "This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for ampicillin. The control strategy justifies the proposed specifications for both the active su..."
+        },
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m3_api_quality:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m3_api_quality",
+          "section_title": "API Quality and Control Strategy",
+          "score": 0.14753,
+          "snippet": "The active pharmaceutical ingredient (API) section details the complete synthesis route, starting from well-defined regulatory starting materials. Robust in-process controls and intermediate specifications ensure the con..."
+        },
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m5_bioequivalence:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m5_bioequivalence",
+          "section_title": "Biopharmaceutics and Bioequivalence Evidence",
+          "score": 0.14551,
+          "snippet": "Biopharmaceutics data substantiate the formulation development bridging between clinical trial materials and the proposed commercial product. In vivo bioequivalence studies demonstrated that the 90% confidence intervals ..."
+        },
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m5_trial_listing:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m5_trial_listing",
+          "section_title": "Tabular Listing of Clinical Studies",
+          "score": 0.13824,
+          "snippet": "The tabular listing of clinical studies provides a comprehensive inventory of all trials conducted in support of the proposed indication (bacterial skin infection). This includes Phase I pharmacokinetic/pharmacodynamic s..."
+        },
+        {
+          "citation_id": "WF-NAMING_CONFLICT-20260417_221400:m5_pivotal_trial_reports:c1",
+          "dossier_id": "WF-NAMING_CONFLICT-20260417_221400",
+          "section_id": "m5_pivotal_trial_reports",
+          "section_title": "Pivotal Clinical Trial Reports",
+          "score": 0.13754,
+          "snippet": "Detailed clinical study reports (CSRs) for the pivotal efficacy trials are provided. These randomized, double-blind, actively-controlled trials evaluated the primary and secondary endpoints in accordance with the pre-spe..."
+        }
+      ],
+      "verifier": {
+        "grounded_claim_rate": 1.0,
+        "unsupported_critical_claim_rate": 0.0,
+        "passed": true
+      },
+      "memory": {
+        "process_rss_gb": 0.9618,
+        "system_total_ram_gb": 31.7568,
+        "system_available_ram_gb": 12.1938,
+        "system_used_ram_percent": 61.6,
+        "min_free_ram_gb": 0.5,
+        "standard_route_rss_limit_gb": 20.0,
+        "fallback_route_rss_limit_gb": 26.0,
+        "within_budget": true
+      },
+      "lineage_tags": {
+        "data_classification": "synthetic",
+        "data_version": "balanced_v1_2026-04-05",
+        "split_version": "balanced_v1_2026-04-05",
+        "model_policy": "local_multi_model",
+        "model_id": "gemma-e4b",
+        "prompt_version": "review_v1",
+        "route_profile": "fallback"
+      },
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "amoxicillin",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "amoxicillin",
+        "parent_compound": "amoxicillin",
+        "pubchem_cid": "33613",
+        "canonical_smiles": "CC1(C)S[C@@H]2[C@H](NC(=O)[C@H](N)c3ccc(O)cc3)N2C(=O)N1C(=O)O",
+        "inchikey": "OTBDXZCWBFLTOZ-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL1082",
+        "unichem_id": "UC33613",
+        "aware_category": "access",
+        "amr_unmet_need": "not_applicable",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "stable",
+        "similarity_to_existing_watch": "not_applicable",
+        "existing_watch_comparator": "not_applicable",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "standard_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": false,
+        "watch_similarity_restriction": false,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable.",
+          "Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+        ],
+        "rationale": "Access-category antibiotic remains under standard stewardship monitoring. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to amoxicillin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved amoxicillin as access. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved amoxicillin trend as stable. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as not_applicable against comparator not_applicable. Chemistry snapshot provided active moiety amoxicillin, parent compound amoxicillin, PubChem CID 33613, ChEMBL CHEMBL1082, and UniChem UC33613."
+      },
+      "metrics": {
+        "latency_seconds": 0.0766,
+        "input_tokens_estimate": 1669,
+        "output_tokens_estimate": 782
+      },
+      "visualization_data": null
+    },
+    "email_subject": "Structured Workflow Review Report - WF-NAMING_CONFLICT-20260417_221400 - approval_denied",
+    "email_body": "Structured Workflow Review Report - WF-NAMING_CONFLICT-20260417_221400\n\nSubmission Summary\n- Dossier Id: WF-NAMING_CONFLICT-20260417_221400\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: amoxicillin\n- Active Ingredient: amoxicillin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: amoxicillin\n- Who Inn: ampicillin\n- Similarity Index: 0.9248\n- Threshold: 0.7\n- Threshold Result: failed\n- Similarity Type: orthographic\n- Interpretation: Product name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n- Flag Status: naming_violation\n- Rule Consequence: Product name cannot be accepted because INN similarity exceeds 70%.\n\nSection-by-Section Scientific And Regulatory Findings\n- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True\n- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True"
+  },
+  "email_subject": "Structured Workflow Review Report - WF-NAMING_CONFLICT-20260417_221400 - approval_denied",
+  "email_body": "Structured Workflow Review Report - WF-NAMING_CONFLICT-20260417_221400\n\nSubmission Summary\n- Dossier Id: WF-NAMING_CONFLICT-20260417_221400\n- Submission Type: pre_market_authorization\n- Applicant: Workflow Applicant\n- Product Name: amoxicillin\n- Active Ingredient: amoxicillin\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nWHO INN Similarity Review\n- Proposed Name: amoxicillin\n- Who Inn: ampicillin\n- Similarity Index: 0.9248\n- Threshold: 0.7\n- Threshold Result: failed\n- Similarity Type: orthographic\n- Interpretation: Product name 'amoxicillin' has 0.92 similarity to INN 'ampicillin' (Threshold: 0.7).\n- Flag Status: naming_violation\n- Rule Consequence: Product name cannot be accepted because INN similarity exceeds 70%.\n\nSection-by-Section Scientific And Regulatory Findings\n- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True\n- Manufacturer and GMP Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True"
+}

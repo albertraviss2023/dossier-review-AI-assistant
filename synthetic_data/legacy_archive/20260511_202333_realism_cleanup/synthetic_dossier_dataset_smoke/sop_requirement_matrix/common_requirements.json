@@ -1,0 +1,170 @@
+[
+  {
+    "requirement_id": "COM-APP-001",
+    "module": "Module 1",
+    "section": "Application Form",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "product_name",
+      "inn",
+      "strength",
+      "dosage_form",
+      "route_of_administration",
+      "applicant_name",
+      "manufacturer_name"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Missing mandatory product identity fields in application form."
+  },
+  {
+    "requirement_id": "COM-GMP-001",
+    "module": "Module 1",
+    "section": "GMP Certificate",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "certificate_number",
+      "expiry_date",
+      "site_address"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "GMP certificate missing or invalid evidence."
+  },
+  {
+    "requirement_id": "COM-LABEL-001",
+    "module": "Module 1",
+    "section": "Product Label",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "product_name",
+      "strength",
+      "dosage_form",
+      "route_of_administration",
+      "storage_conditions"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Label fields missing or inconsistent."
+  },
+  {
+    "requirement_id": "COM-COA-001",
+    "module": "Module 3",
+    "section": "Certificate of Analysis",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "batch_number",
+      "specification_limits",
+      "results",
+      "conclusion",
+      "signature"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "CoA missing required fields."
+  },
+  {
+    "requirement_id": "COM-STABILITY-001",
+    "module": "Module 3",
+    "section": "Stability Data",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "storage_conditions",
+      "shelf_life",
+      "timepoints"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Stability evidence insufficient for shelf-life."
+  }
+]

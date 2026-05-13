@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "inn": "paracetamol",
+      "aliases": ["paracetamol", "acetaminophen"],
+      "source_url": "https://www.who.int/teams/health-product-and-policy-standards/inn"
+    },
+    {
+      "inn": "amoxicillin",
+      "aliases": ["amoxicillin"],
+      "source_url": "https://www.who.int/teams/health-product-and-policy-standards/inn"
+    },
+    {
+      "inn": "digoxin",
+      "aliases": ["digoxin"],
+      "source_url": "https://www.who.int/teams/health-product-and-policy-standards/inn"
+    },
+    {
+      "inn": "levofloxacin",
+      "aliases": ["levofloxacin"],
+      "source_url": "https://www.who.int/teams/health-product-and-policy-standards/inn"
+    }
+  ]
+}
+

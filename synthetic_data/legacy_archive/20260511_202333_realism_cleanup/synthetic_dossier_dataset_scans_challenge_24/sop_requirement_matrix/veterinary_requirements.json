@@ -1,0 +1,64 @@
+[
+  {
+    "requirement_id": "VET-SPECIES-001",
+    "module": "Module 1",
+    "section": "Target Species and Posology",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "target_species",
+      "species_dosing"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Target species/dosing missing."
+  },
+  {
+    "requirement_id": "VET-WITHDRAWAL-001",
+    "module": "Module 1",
+    "section": "Withdrawal / Residue Information",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "withdrawal_period_meat",
+      "withdrawal_period_milk"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Withdrawal periods missing for food species."
+  }
+]

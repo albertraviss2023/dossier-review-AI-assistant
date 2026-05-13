@@ -1,0 +1,186 @@
+NATIONAL DRUG AGENCY
+Pre-Market Authorization Review Report
+
+E2E 31B Demo - DOS-9D9BC5402A
+
+Submission Summary
+- Dossier Id: DOS-9D9BC5402A
+- Submission Type: pre_market_authorization
+- Review Type: generic
+- Applicant: National Therapeutics
+- Product Name: Medizyme
+- Active Ingredient: levofloxacin
+- Dosage Form: tablet
+- Strength: 850 mg
+- Jurisdiction: Burkina Faso
+- Review Pathway: standard
+
+Administrative Review Outcome
+- Status: administratively_incomplete
+- No proof of payment was detected in the administrative material.
+
+Dossier Structure Review Outcome
+- Status: mapped
+- No structural dossier violations were detected.
+
+Applicable Rules And Requirements
+- Administrative completeness checklist
+- Structural dossier completeness rules
+- WHO INN similarity rule
+- Section adequacy and evidence sufficiency rules
+- Generic review packaging and patient-information comparison against innovator reference when provided
+- WHO AWaRe stewardship rules
+
+WHO INN Similarity Review
+- Proposed Name: Medizyme
+- Who Inn: levofloxacin
+- Similarity Index: 0.0833
+- Threshold: 0.7
+- Threshold Result: passed
+- Similarity Type: orthographic
+- Interpretation: Product name 'Medizyme' has 8.33% similarity to INN 'levofloxacin'. Rule result: pass. Evaluated against naming guidance: External Source Provenance and Audit. Source Precedence.Source Precedence
+
+Dossier evidence remains primary for submission-specific claims. WHO AWaRe, GLASS, RxNorm, PubChem, ChEMBL, and UniChem are used to verify external policy, stewardship, naming, and chemistry facts. When external sources confl...
+- Flag Status: acceptable_naming
+- Rule Consequence: No blocking INN naming issue was identified.
+
+Section-By-Section Technical Review
+
+Generic Review-Specific Assessment
+- Status: partial
+- Baseline available: Yes
+- Baseline reference: levofloxacin reference
+- Note: Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.
+- Note: Generic baseline comparison used levofloxacin reference through MCP patient-information tools with overall alignment not_aligned.
+- Note: Example comparison classified the section as partially_compliant.
+
+AMR Stewardship Review
+- Applicable: True
+- AWaRe Category: watch
+- Fast Track Status: False
+- Authorization Control: restricted_authorization
+- Stewardship Rule Application: Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization.
+- AMR finding: MCP AWaRe reference resolved levofloxacin as Watch.
+- AMR finding: MCP antimicrobial similarity returned stewardship flag review_required.
+- AMR finding: RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.
+- AMR finding: WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.
+- AMR finding: WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.
+- AMR finding: Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.
+- AMR finding: Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096.
+
+Findings Register
+- [MINOR] Administrative completeness review: No proof of payment was detected in the administrative material. | Rule: Missing proof of payment where required = violation | Location: Application Form and Administrative Information | Recommendation: Confirm the payment receipt or fee evidence is included where required.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for indications. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: indications | Recommendation: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for dosage. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: dosage | Recommendation: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.
+- [CRITICAL] Section-by-section technical review: Current patient information does not align closely with the innovator reference for contraindications. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: contraindications | Recommendation: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.
+- [CRITICAL] Section-by-section technical review: Current patient information does not align closely with the innovator reference for warnings. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: warnings | Recommendation: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for side_effects. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: side_effects | Recommendation: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for storage. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: storage | Recommendation: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.
+- [CRITICAL] Section-by-section technical review: The current section does not adequately cover safety wording. | Rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Location: Product Information and Naming | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- [MAJOR] Section-by-section technical review: The current section does not adequately cover dosage clarity. | Rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Location: Product Information and Naming | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- [MAJOR] AMR stewardship review using AWaRe rules: AMR stewardship check identified missing warning or stewardship justification. | Rule: AMR warning and stewardship justification must be present for antimicrobial submissions. | Location: AMR Stewardship | Recommendation: Provide complete AMR warning statements and stewardship justification.
+- [MAJOR] AMR stewardship review using AWaRe rules: AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution. | Rule: Watch / Reserve stewardship-sensitive products should trigger stewardship caution | Location: AMR Stewardship Narrative | Recommendation: Document the stewardship restriction and reviewer control measures.
+
+Severity Classification
+- Critical: 3
+- Major: 7
+- Minor: 1
+- Advisory: 0
+
+Findings Summary Tables
+Administrative
+- Severity: minor | Violated rule: Missing proof of payment where required = violation | Evidence reference: 1 | Recommendation: Confirm the payment receipt or fee evidence is included where required.
+
+Naming / INN
+- Severity: critical | Violated rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Evidence reference: 2 | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- Severity: major | Violated rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Evidence reference: 2 | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+
+Quality
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.
+- Severity: critical | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.
+- Severity: critical | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.
+
+GMP
+- Severity: none | Violated rule: No recorded violations in this area | Evidence reference: n/a | Recommendation: Continue standard review monitoring
+
+Clinical / Evidence
+- Severity: none | Violated rule: No recorded violations in this area | Evidence reference: n/a | Recommendation: Continue standard review monitoring
+
+AMR Stewardship
+- Severity: major | Violated rule: AMR warning and stewardship justification must be present for antimicrobial submissions. | Evidence reference: 2 | Recommendation: Provide complete AMR warning statements and stewardship justification.
+- Severity: major | Violated rule: Watch / Reserve stewardship-sensitive products should trigger stewardship caution | Evidence reference: 2 | Recommendation: Document the stewardship restriction and reviewer control measures.
+
+Consistency Checks
+- Severity: none | Violated rule: No recorded violations in this area | Evidence reference: n/a | Recommendation: Continue standard review monitoring
+
+
+Cross-Section Consistency Review
+- Status: consistent
+- No cross-section consistency findings were detected.
+
+Review Completeness Confirmation
+- Status: review_incomplete
+- Mandatory workflow steps:
+  - Data Quality And Vision Extraction Check: Yes
+  - Submission Intake And Familiarization: Yes
+  - Administrative Completeness Review: Yes
+  - Structural Dossier Mapping: No
+  - Applicable Rules Identification: Yes
+  - Who Inn Similarity Review: Yes
+  - Section By Section Technical Review: No
+  - Amr Stewardship Review: Yes
+  - Findings Register: Yes
+  - Severity Classification: Yes
+  - Cross Section Consistency Review: Yes
+- Completeness notes:
+  - AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.
+  - Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.
+  - Generic baseline comparison used levofloxacin reference through MCP patient-information tools with overall alignment not_aligned.
+  - Example comparison classified the section as partially_compliant.
+
+Overall Judgment
+- Final verdict: escalate_for_higher_review
+- System recommendation: approval_denied
+- Authorization control: restricted_authorization
+- Justification: The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.
+- Escalation needed: Yes
+- Blocking issues:
+  - Current patient information does not align closely with the innovator reference for indications.
+  - Current patient information does not align closely with the innovator reference for dosage.
+  - Current patient information does not align closely with the innovator reference for contraindications.
+  - Current patient information does not align closely with the innovator reference for warnings.
+  - Current patient information does not align closely with the innovator reference for side_effects.
+  - Current patient information does not align closely with the innovator reference for storage.
+  - The current section does not adequately cover safety wording.
+  - The current section does not adequately cover dosage clarity.
+  - AMR stewardship check identified missing warning or stewardship justification.
+  - AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.
+
+Reviewer Narrative Summary
+### Data Quality Check (Mandatory Step 1) - Status: completed - OCR/Vision used: no - Pages analyzed: 0 - Image-heavy pages: 0 ### Final Answer ### Executive Summary The current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **Medizyme** (levofloxacin), submitted by **National Therapeutics**. The structured review found **4** unresolved requirement-level concerns. ### Naming Policy Compliance Product name 'Medizyme' has 8.33% similarity to INN 'levofloxacin'. Rule result: pass. Evaluated against naming guidance: External Source Provenance and Audit. Source Precedence.Source Precedence Dossier evidence remains primary for submission-specific claims. WHO AWaRe, GLASS, RxNorm, PubChem, ChEMBL, and UniChem are used to verify external policy, stewardship, naming, and chemistry facts. When external sources confl.. **AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. The ingredient was normalized to **levofloxacin** for stewardship checks. Restricted authorization is triggered because the chemistry profile shows **high** similarity to **ciprofloxacin**. Local GLASS surveillance data indicates rising resistance, which increases the stewardship risk. **Quality and GMP Note:** GMP evidence confirms the site's inspection history and certificate status are generally consistent with regulatory requirements, though specific verification of validity dates is recommended. ### Conclusion **Approval Denied** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents. ### Findings Summary Tables #### Administrative | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | minor | Missing proof of payment where required = violation | [1] | Confirm the payment receipt or fee evidence is included where required. | #### Naming / INN | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [2] | Address the highlighted patient-information issue in line with compliant section examples. | | major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [2] | Address the highlighted patient-information issue in line with compliant section examples. | #### Quality | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. | | critical | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. | | critical | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. | #### GMP | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | Required evidence missing = violation | [3] | Resolve GMP deficiencies and provide current manufacturing evidence. | #### Clinical / Evidence | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | Missing required section = violation | [4] | Restore the required section with readable and complete content. | | major | Missing required section = violation | [5] | Restore the required section with readable and complete content. | #### AMR Stewardship | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [2] | Provide complete AMR warning statements and stewardship justification. | | major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | [2] | Document the stewardship restriction and reviewer control measures. | #### Consistency Checks | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | none | No recorded violations in this area | n/a | Continue standard review monitoring | ### Decision Support Snapshot | Signal | Value | | --- | --- | | Recommendation | approval_denied | | Confidence | 0.58 | | Submission Type | pre_market_authorization | ### AMR Policy Decision Support | Signal | Value | | --- | --- | | Applicable | True | | AWaRe Category | watch | | Authorization Control | restricted_authorization | | Policy Decision | restricted_authorization | | Fast Track Candidate | False | | Restriction Trigger | True | Required controls: - Restricted authorization conditions - Stewardship monitoring plan - Resistance surveillance commitments AMR evidence trace: - MCP AWaRe reference resolved levofloxacin as Watch. - MCP antimicrobial similarity returned stewardship flag review_required. - RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. - WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. - WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. - Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. ### AMR Stewardship Check - Active ingredient: levofloxacin - AMR class: watch - Product type: generic - Indication: not_stated - Required warning: missing - Stewardship justification: missing - Decision: query_applicant ### SOP Progress (Pre-Market Authorization) | Step | Review Stage | Status | | --- | --- | --- | | 1 | Data quality and vision extraction check | Pending | | 2 | Submission intake and familiarization | Pending | | 3 | Administrative completeness review | Pending | | 4 | Structural dossier mapping | Pending | | 5 | Applicable rules and requirements identification | Pending | | 6 | WHO INN similarity review | Pending | | 7 | Section-by-section technical review | Pending | | 8 | AMR stewardship review using AWaRe rules | Pending | | 9 | Identification and recording of findings | Pending | | 10 | Severity classification | Pending | | 11 | Cross-section consistency review | Pending | | 12 | Review completeness confirmation | Pending | | 13 | Overall judgment | Pending | ![SOP flow illustration](/sop-flow.svg) ### External vs Submitted Evidence (Patient/Safety) | Dimension | Submitted Dossier | External Source | Gap | | --- | --- | --- | --- | | Indication | Labeling, SmPC/PIL content, contraindications, dosing information, and medication error mitigation statements are included with linguisti... | 4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only | No | | Dosing | Labeling, SmPC/PIL content, contraindications, dosing information, and medication error mitigation statements are included with linguisti... | Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service ps, solution... | No | | Contraindications | Labeling, SmPC/PIL content, contraindications, dosing information, and medication error mitigation statements are included with linguisti... | Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L... | No | | Warnings | Not stated | 4 Special warnings and precautions for use Ocular effects Ducressa is for ocular use only | Yes | | Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Yes | | Storage | Not stated | Prolonged use of topical ophthalmic corticosteroids may result in ocular hypertension/glaucoma b Last updated on emc: 28 Oct 2022 Quick L... | Yes | Summary: submitted dossier provides **3/6** patient-safety dimensions; external baseline provides **6/6**. Inconsistencies detected in: **Warnings, Adverse Reactions, Storage**. These require applicant clarification or correction. Verified external references: - (https://products.mhra.gov.uk/search/?query=levofloxacin) - (https://products.mhra.gov.uk/?q=levofloxacin) - (https://www.medicines.org.uk/emc/search?q=levofloxacin) - (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=levofloxacin) - (https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levofloxacin) - (https://www.medicines.org.uk/emc/product/13768/smpc) Source selection policy: - Strategy: prefer_highest_priority_source_per_section - Priority order: products.mhra.gov.uk, medicines.org.uk, ema.europa.eu, accessdata.fda.gov, dailymed.nlm.nih.gov, gov.uk, who.int #### External Source Provenance and Confidence | Section | Source Domain | Source Priority | Confidence | | --- | --- | --- | --- | | side_effects | products.mhra.gov.uk | 100 | 0.75 | | dosage | www.medicines.org.uk | 90 | 0.84 | | warnings | www.medicines.org.uk | 90 | 0.84 | | indications | www.medicines.org.uk | 90 | 0.84 | | contraindications | www.medicines.org.uk | 90 | 0.84 | | storage | www.medicines.org.uk | 90 | 0.84 | ### SOP Stage Detail | Step | Stage | Output Detail | | --- | --- | --- | | 1 | Data quality and vision extraction check | completed | | 2 | Administrative completeness review | administratively_incomplete | | 3 | Structural dossier mapping | mapped_with_violations | | 5 | WHO INN similarity review | passed | | 6 | Section-by-section technical review | 12 sections reviewed | | 7 | AMR stewardship review | restricted_authorization | | 10 | Cross-section consistency review | consistent | | 11 | Review completeness confirmation | review_complete | | 12 | Overall judgment | not_acceptable |
+
+Evidence Citations
+- DOS-9D9BC5402A:m1_application_admin:fallback | Application Form and Administrative Information | Application dossier for Medizyme (levofloxacin) submitted on 2025-12-01 to the Burkina Faso authority. Applicant: National Therapeutics. Proposed dosage form: tablet; strength: 850 mg; ATC: J01MA12. Administrative declar...
+- DOS-9D9BC5402A:m1_manufacturer_gmp:fallback | Manufacturer and GMP Evidence | Primary manufacturing site: EastAfrica Health Products in Uganda. Latest GMP inspection date: 2024-07-07. GMP status: compliant. GMP certificate number: GMP-304165; certificate expiry: 2026-03-14. CAPA evidence and inspe...
+- DOS-9D9BC5402A:m1_product_information:fallback | Product Information and Naming | Proposed product name is Medizyme. INN is levofloxacin. Labeling, SmPC/PIL content, contraindications, dosing information, and medication error mitigation statements are included with linguistic review notes. WHO AWaRe c...
+- DOS-9D9BC5402A:m2_quality_overall_summary:fallback | Quality Overall Summary | Quality Overall Summary for API levofloxacin describes specification strategy, control points, impurity profile, batch analysis, and release criteria. Manufacturing process validation confirms consistency and quality att...
+
+Verification Summary
+- Grounded claim rate: unknown
+- Verifier passed: False
+
+Decision Log
+- Rule: SOP-0001 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_application_admin | Result: query | Action: pending
+- Rule: SOP-0002 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0003 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0004 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0005 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0006 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0007 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0008 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0009 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0010 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0011 | Tool: retrieval + rule evaluation | Evidence: DOS-9D9BC5402A:m1_product_information | Result: query | Action: pending

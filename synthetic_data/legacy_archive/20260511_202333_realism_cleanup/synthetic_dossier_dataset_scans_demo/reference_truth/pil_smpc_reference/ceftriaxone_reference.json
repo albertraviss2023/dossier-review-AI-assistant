@@ -1,0 +1,26 @@
+{
+  "reference_id": "REF-HUM-CEFTRIAXONE-001",
+  "inn": "ceftriaxone",
+  "dosage_form": "powder for injection",
+  "route_of_administration": "intravenous",
+  "reference_product_name": "Synthetic Reference Ceftriaxone Product",
+  "source_type": "official_product_information_static",
+  "required_pil_facts": {
+    "route": "intravenous or intramuscular depending on product presentation",
+    "key_warnings": [
+      "hypersensitivity to cephalosporins",
+      "serious allergic reactions",
+      "antibiotic-associated diarrhoea"
+    ],
+    "storage": "store according to approved product information"
+  },
+  "required_smpc_facts": {
+    "contraindications": [
+      "hypersensitivity to ceftriaxone or cephalosporins"
+    ],
+    "warnings": [
+      "serious hypersensitivity reactions",
+      "antibiotic-associated colitis"
+    ]
+  }
+}

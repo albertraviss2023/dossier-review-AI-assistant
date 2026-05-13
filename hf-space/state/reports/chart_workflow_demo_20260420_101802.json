@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-04-20T10:22:29.899908",
+  "ui_improvements": [
+    "plot overlay now includes chart controls",
+    "reviewer can change chart type",
+    "reviewer can change palette",
+    "reviewer can swap axes for bar charts",
+    "plot subtitle guides follow-up analysis",
+    "follow-up chips can seed the next analysis prompt",
+    "plot closes through a dedicated close action and purges the old chart"
+  ],
+  "supported_chart_modes": [
+    "bar",
+    "line",
+    "pie",
+    "network"
+  ],
+  "notes": "Axis labels and legend are now rendered for analytical charts. Conversation can continue after visualization without leaving the review flow."
+}

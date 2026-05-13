@@ -1,0 +1,85 @@
+{
+  "timestamp_utc": "2026-05-11T17:43:01.605258+00:00",
+  "steps": [
+    {
+      "step": "manager_login",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "ensure_revdrill_a",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "ensure_revdrill_b",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "manager_assignments",
+      "ok": true,
+      "results": [
+        {
+          "dossier_id": "DOS-9D9BC5402A",
+          "assignee": "revdrill_a",
+          "status_code": 200,
+          "ok": true
+        },
+        {
+          "dossier_id": "DOS-76DAEB8367",
+          "assignee": "revdrill_a",
+          "status_code": 200,
+          "ok": true
+        },
+        {
+          "dossier_id": "DOS-07D1D5033F",
+          "assignee": "revdrill_b",
+          "status_code": 200,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "step": "reviewer_login",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "scope_check",
+      "can_see_clean": true,
+      "can_see_query": true,
+      "blocked_unassigned": true,
+      "blocked_status": 403,
+      "ok": true
+    }
+  ],
+  "selected_cases": {
+    "clean_dossier_id": "DOS-9D9BC5402A",
+    "query_dossier_id": "DOS-76DAEB8367",
+    "other_dossier_id": "DOS-07D1D5033F"
+  },
+  "review_runs": [
+    {
+      "case": "clean_case",
+      "dossier_id": "DOS-9D9BC5402A",
+      "review_status": 200,
+      "recommendation": "approval_denied",
+      "workflow_summary_present": true,
+      "report_status": 200,
+      "report_id": "report-07565d4dbf3b",
+      "final_verdict": null
+    },
+    {
+      "case": "query_case",
+      "dossier_id": "DOS-76DAEB8367",
+      "review_status": 200,
+      "recommendation": "approval_denied",
+      "workflow_summary_present": true,
+      "report_status": 200,
+      "report_id": "report-fe19d8b2d855",
+      "final_verdict": null
+    }
+  ],
+  "passed": true
+}

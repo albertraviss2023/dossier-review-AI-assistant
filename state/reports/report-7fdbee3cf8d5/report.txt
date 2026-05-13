@@ -1,0 +1,23 @@
+Pre-Market Authorization Review - INTAKE-1776113235664
+Dossier: INTAKE-1776113235664
+Product: incoming chemistry alignment case
+Applicant: Not provided
+Recommendation: standard_review
+Confidence: unknown
+Authorization: standard_authorization
+
+Executive Summary
+I reviewed the dossier with your question in mind: summarise issues per dossier section. The response below focuses on the most relevant grounded evidence from the submission. I identified material dossier issues that need reviewer attention. The current risk profile is moderate. - Clinical Overview and Benefit-Risk Summary: the section is too short and may not contain sufficient usable detail. This finding is grounded in the dossier and suggests a meaningful review concern. [INTAKE-1776113235664:m2_clinical_overview:fallback] In conclusion, the dossier currently supports a standard review path. The next reviewer step should be to verify the highest-priority gaps against the cited dossier sections before finalizing a recommendation.
+
+Findings Across Criteria
+- incoming chemistry alignment case submitted by Not provided was assessed for pre-market authorization.
+- The system recommendation is standard_review through the fallback review path.
+- No critical dossier criteria were flagged as missing, malformed, or incorrect in the current review pass.
+- Groundedness verification failed with grounded claim rate unknown.
+
+Criteria Diagnostics
+
+Evidence Citations
+- INTAKE-1776113235664:m1_gmp:fallback | Manufacturer and GMP Evidence | GMP certificate remains valid and site quality commitments are documented.
+- INTAKE-1776113235664:m2_clinical_overview:fallback | Clinical Overview and Benefit-Risk Summary | Primary endpoint was met in the pivotal study.
+- INTAKE-1776113235664:m5_stewardship:fallback | AMR Stewardship Narrative | Levofloxacin product with controlled use narrative and comparator discussion against ciprofloxacin under stewardship monitoring.

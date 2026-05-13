@@ -1,0 +1,210 @@
+{
+  "dossier_id": "VET-NEW-INNOV-NONAMR-ANTI-0143",
+  "family_id": "FAM-0072",
+  "medicine_category": "veterinary",
+  "submission_type": "new_submission",
+  "application_pathway": "innovator",
+  "product_class": "non_antimicrobial",
+  "is_antimicrobial": false,
+  "amr_class": "not_applicable",
+  "therapeutic_area": "anti-inflammatory",
+  "product_name": "Antiinflamox 50 mg/mL injectable suspension",
+  "inn": "antiinflamox",
+  "active_ingredients": [
+    "antiinflamox"
+  ],
+  "strength": "50 mg/mL",
+  "dosage_form": "injectable suspension",
+  "route_of_administration": "subcutaneous",
+  "manufacturer_country": "China",
+  "applicant_country": "Tanzania",
+  "manufacturer_name": "GrandOak Therapeutics Ltd",
+  "applicant_name": "MediAxis Lifesciences Uganda Ltd",
+  "manufacturing_site_address": "Namanve Industrial Park, Block C",
+  "document_quality_profile": "difficult_scan_stress_test",
+  "submission_status": "correct",
+  "expected_sop_outcome": "pass",
+  "reference_required": false,
+  "reference_source_type": "not_required",
+  "known_queries": [],
+  "target_species": [
+    "cattle",
+    "dogs"
+  ],
+  "food_producing_species": true,
+  "requires_withdrawal_period": true,
+  "withdrawal_period_meat": "28 days",
+  "withdrawal_period_milk": "7 days",
+  "gmp_expiry_date": "2028-01-01",
+  "submission_date": "2025-11-21",
+  "sections": [
+    {
+      "module": "Module 1",
+      "section_id": "m1_application_form",
+      "section_name": "Application Form",
+      "text": "Application Form for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cover_letter",
+      "section_name": "Cover Letter",
+      "text": "Cover Letter for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_authorization_letter",
+      "section_name": "Letter of Authorization",
+      "text": "Letter of Authorization for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_gmp_certificate",
+      "section_name": "GMP Certificate",
+      "text": "GMP Certificate for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China).\nGMP Certificate No: GMP-I-0143; Site Address: Namanve Industrial Park, Block C; Expiry Date: 2028-01-01."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cpp_certificates",
+      "section_name": "CPP / Certificate Documents",
+      "text": "CPP / Certificate Documents for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_product_label",
+      "section_name": "Product Label",
+      "text": "Product Label for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_pil",
+      "section_name": "Patient Information Leaflet",
+      "text": "Patient Information Leaflet for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China).\nPIL Section: What this medicine is and what it is used for.\nPIL Route and Form: Route=subcutaneous; Dosage form=injectable suspension; Strength=50 mg/mL.\nPIL Instructions: Follow the prescribed dose schedule. Do not exceed recommended dose.\nPIL Warnings: Do not stop treatment abruptly unless advised by a healthcare professional. Tell your doctor about kidney, liver, or heart conditions before use. Report dizziness, fainting, severe abdominal pain, or persistent vomiting immediately. For veterinary use in cattle, dogs only.\nPIL Storage: Store below 30C, protect from moisture/light, keep out of reach of children.\nPIL Adverse Effects: Common effects include gastrointestinal upset and headache; serious effects require urgent review."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_smpc",
+      "section_name": "SmPC",
+      "text": "SmPC for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China).\nSmPC 4.1 Therapeutic indications: As approved in the application form.\nSmPC 4.2 Posology and method of administration: Dose by age/weight and clinical condition as approved.\nSmPC 4.3 Contraindications: Known hypersensitivity to active ingredient or excipients, Severe allergy to related therapeutic class where applicable.\nSmPC 4.4 Special warnings and precautions: monitor organ function and hypersensitivity risks.\nSmPC 4.8 Undesirable effects: nausea, diarrhoea, rash, dizziness; serious adverse reactions listed.\nSmPC 6.4 Special precautions for storage: store according to label and stability commitments."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_payment_proof",
+      "section_name": "Proof of Payment",
+      "text": "Proof of Payment for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_qos",
+      "section_name": "Quality Overall Summary",
+      "text": "Quality Overall Summary for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_clinical_overview",
+      "section_name": "Clinical Overview / Justification",
+      "text": "Clinical Overview / Justification for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_be_summary",
+      "section_name": "Bioequivalence Summary",
+      "text": "Bioequivalence Summary for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_substance",
+      "section_name": "Drug Substance Information",
+      "text": "Drug Substance Information for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_product",
+      "section_name": "Drug Product Information",
+      "text": "Drug Product Information for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_manufacturing_process",
+      "section_name": "Manufacturing Process",
+      "text": "Manufacturing Process for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_batch_formula",
+      "section_name": "Batch Formula",
+      "text": "Batch Formula for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_specifications",
+      "section_name": "Specifications",
+      "text": "Specifications for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_analytical_procedures",
+      "section_name": "Analytical Procedures",
+      "text": "Analytical Procedures for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_method_validation",
+      "section_name": "Method Validation",
+      "text": "Method Validation for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_coa",
+      "section_name": "Certificate of Analysis",
+      "text": "Certificate of Analysis for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China).\nCoA Table: Batch Number=BCH-24011; Specification Limits=Conforms; Results=Within limits; Conclusion=Pass; Authorized Signature=Present."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_stability",
+      "section_name": "Stability Data",
+      "text": "Stability Data for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China).\nStability Table: 0, 3, 6, 9, 12 months; Conditions=30C/75%RH; Conclusion supports shelf life."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_container_closure",
+      "section_name": "Container Closure System",
+      "text": "Container Closure System for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 4",
+      "section_id": "m4_nonclinical",
+      "section_name": "Nonclinical Study Reports / Justification",
+      "text": "Nonclinical Study Reports / Justification for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_be_or_clinical",
+      "section_name": "Bioequivalence / Clinical Study Reports",
+      "text": "Bioequivalence / Clinical Study Reports for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China).\nClinical Summary: Endpoint met where applicable; Effect size and safety summary included."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_reference_comparator",
+      "section_name": "Reference / Comparator Product Evidence",
+      "text": "Reference / Comparator Product Evidence for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_vet_target_species",
+      "section_name": "Target Species and Posology",
+      "text": "Target Species and Posology for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_vet_withdrawal_periods",
+      "section_name": "Withdrawal / Residue Information",
+      "text": "Withdrawal / Residue Information for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China).\nWithdrawal Periods: Meat=28 days; Milk=7 days."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_vet_user_safety",
+      "section_name": "Veterinary User Safety and Environmental Risk",
+      "text": "Veterinary User Safety and Environmental Risk for dossier VET-NEW-INNOV-NONAMR-ANTI-0143.\nProduct: Antiinflamox 50 mg/mL injectable suspension (antiinflamox); strength 50 mg/mL; route subcutaneous.\nApplicant: MediAxis Lifesciences Uganda Ltd (Tanzania); Manufacturer: GrandOak Therapeutics Ltd (China)."
+    }
+  ]
+}

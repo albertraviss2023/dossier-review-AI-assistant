@@ -1,0 +1,26 @@
+{
+  "source_simulation": "D:\\projects\\ai dossier assistant\\state\\reports\\workflow_simulation_20260508_103159.json",
+  "total_steps": 24,
+  "issue_count": 2,
+  "critical_count": 2,
+  "major_count": 0,
+  "issues": [
+    {
+      "dossier_id": "WF-RESERVE_FAST_TRACK-20260508_103159",
+      "step_id": 7,
+      "step_name": "AMR Stewardship",
+      "issue": "AMR step lacks policy-depth terms required for decision support.",
+      "severity": "critical",
+      "response_excerpt": "I found guidance that is relevant to this review question:\n- Active dossier context: **Reserve Review Demo** (cefiderocol).\n- WHO AWaRe and GLASS Policy Stack - AWaRe Source of Truth: WHO AWaRe and GLASS Policy Stack. AWaRe Source of Truth.AWaRe Source of Truth WHO AWaRe is the authoritative source "
+    },
+    {
+      "dossier_id": "WF-NAMING_CONFLICT-20260508_103159",
+      "step_id": 7,
+      "step_name": "AMR Stewardship",
+      "issue": "AMR step lacks policy-depth terms required for decision support.",
+      "severity": "critical",
+      "response_excerpt": "I found guidance that is relevant to this review question:\n- Active dossier context: **amoxicillin** (amoxicillin).\n- WHO AWaRe and GLASS Policy Stack - AWaRe Source of Truth: WHO AWaRe and GLASS Policy Stack. AWaRe Source of Truth.AWaRe Source of Truth WHO AWaRe is the authoritative source for Acce"
+    }
+  ],
+  "status": "needs_improvement"
+}

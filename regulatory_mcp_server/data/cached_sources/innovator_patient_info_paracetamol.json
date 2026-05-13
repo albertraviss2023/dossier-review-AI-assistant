@@ -1,0 +1,33 @@
+{
+  "reference_product": "Panadol",
+  "raw_source_refs": [
+    "https://www.medicines.org.uk/emc/product/5164/xpil/print",
+    "https://www.medicines.org.uk/emc/files/pil.5164.pdf"
+  ],
+  "sections": [
+    {
+      "section_name": "indications",
+      "text": "Paracetamol is used to relieve mild to moderate pain and to reduce fever."
+    },
+    {
+      "section_name": "dosage",
+      "text": "Adults and adolescents should take the stated dose at the recommended interval and must not exceed the daily maximum."
+    },
+    {
+      "section_name": "contraindications",
+      "text": "Do not take this product if you are allergic to paracetamol or any of the ingredients."
+    },
+    {
+      "section_name": "warnings",
+      "text": "Seek medical advice before use in liver disease. Do not take more than directed. Keep out of the sight and reach of children."
+    },
+    {
+      "section_name": "side_effects",
+      "text": "Serious side effects are rare, but allergic reactions and severe skin reactions require urgent attention."
+    },
+    {
+      "section_name": "storage",
+      "text": "Store below 25 degrees Celsius and keep the container tightly closed."
+    }
+  ]
+}

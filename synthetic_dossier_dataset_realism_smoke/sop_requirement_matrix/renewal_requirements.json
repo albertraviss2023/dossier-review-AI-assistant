@@ -1,0 +1,95 @@
+[
+  {
+    "requirement_id": "REN-HISTORY-001",
+    "module": "Module 1",
+    "section": "Renewal Product History",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "authorization_number",
+      "renewal_period",
+      "product_history"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Renewal history incomplete."
+  },
+  {
+    "requirement_id": "REN-VARIATION-001",
+    "module": "Module 1",
+    "section": "Variation History",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "variation_history"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "Variation history missing."
+  },
+  {
+    "requirement_id": "REN-PV-001",
+    "module": "Module 1",
+    "section": "Pharmacovigilance / Complaint / Recall Summary",
+    "required_for_medicine_category": [
+      "human",
+      "veterinary"
+    ],
+    "required_for_submission_type": [
+      "new_submission",
+      "renewal"
+    ],
+    "required_for_pathway": [
+      "generic",
+      "innovator",
+      "fixed_dose_combination",
+      "line_extension",
+      "biosimilar_or_biological"
+    ],
+    "required_when": {
+      "is_antimicrobial": null,
+      "medicine_category": null,
+      "food_producing_species": null
+    },
+    "required_information": [
+      "pv_summary",
+      "recall_summary"
+    ],
+    "pass_condition": "Required information is present, extractable, and consistent with supporting sections.",
+    "query_condition": "PV/recall summary missing."
+  }
+]

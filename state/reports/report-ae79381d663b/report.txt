@@ -1,0 +1,96 @@
+Structured Workflow Review Report - WF-QUALITY_FAILURE-20260417_221400
+
+Submission Summary
+- Dossier Id: WF-QUALITY_FAILURE-20260417_221400
+- Submission Type: pre_market_authorization
+- Applicant: Workflow Applicant
+- Product Name: Scanned Review Demo
+- Active Ingredient: levofloxacin
+- Dosage Form: unknown
+- Strength: unknown
+- Jurisdiction: Uganda
+- Review Pathway: standard
+
+Administrative Review Outcome
+- Status: administratively_incomplete
+- Administrative application section is missing.
+
+Dossier Structure Review Outcome
+- Status: mapped
+- No structural dossier violations were detected.
+
+WHO INN Similarity Review
+- Proposed Name: Scanned Review Demo
+- Who Inn: cefalexin
+- Similarity Index: 0.5497
+- Threshold: 0.7
+- Threshold Result: passed
+- Similarity Type: orthographic
+- Interpretation: No INN infringement detected for 'Scanned Review Demo'.
+- Flag Status: acceptable_naming
+- Rule Consequence: No blocking INN naming issue was identified.
+
+Section-by-Section Scientific And Regulatory Findings
+- Imported Section 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+- Visual Evidence Summary - Page 1: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+- Visual Evidence Summary - Page 2: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+
+AMR Stewardship Review
+- Applicable: True
+- AWaRe Category: watch
+- Fast Track Status: False
+- Authorization Control: restricted_authorization
+- Stewardship Rule Application: Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096.
+
+Findings Register
+- [MAJOR] Administrative completeness review: Mandatory administrative application section is missing. | Rule: Missing mandatory administrative documents = violation | Location: Module 1 / Administrative | Recommendation: Provide the required administrative section and supporting documents.
+- [MAJOR] Section-by-section technical review: Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support. | Rule: Required evidence missing = violation | Location: Manufacturer and GMP Evidence | Recommendation: Resolve GMP deficiencies and provide current manufacturing evidence.
+- [MAJOR] AMR stewardship review using AWaRe rules: AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution. | Rule: Watch / Reserve stewardship-sensitive products should trigger stewardship caution | Location: AMR Stewardship Narrative | Recommendation: Document the stewardship restriction and reviewer control measures.
+- [MAJOR] Cross-section consistency review: Shelf-life claims could not be cross-checked against a mapped stability section. | Rule: Claim not supported by evidence = violation | Location: Stability and Shelf-Life Justification | Recommendation: Provide or correctly map the stability section before finalizing the review.
+
+Cross-Consistency Findings
+- No stability section was mapped, so shelf-life claims cannot be cross-checked.
+
+Review Completeness Confirmation
+{
+  "status": "review_incomplete",
+  "mandatory_steps": {
+    "submission_intake_and_familiarization": true,
+    "administrative_completeness_review": false,
+    "structural_dossier_mapping": true,
+    "applicable_rules_identification": true,
+    "who_inn_similarity_review": true,
+    "section_by_section_technical_review": true,
+    "amr_stewardship_review": true,
+    "findings_register": true,
+    "severity_classification": true,
+    "cross_section_consistency_review": true
+  },
+  "notes": [
+    "Administrative completeness review could not be confirmed because the administrative section was not mapped.",
+    "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path."
+  ]
+}
+
+Overall Decision
+{
+  "final_verdict": "escalate_for_higher_review",
+  "system_recommendation": "abstain",
+  "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+  "blocking_issues": [
+    "Mandatory administrative application section is missing.",
+    "Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.",
+    "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+    "Shelf-life claims could not be cross-checked against a mapped stability section."
+  ],
+  "escalation_needed": true
+}
+
+Grounded Review Narrative
+Abstained because no evidence chunks were retrieved for the request.
+
+Evidence Citations
+
+Verification Summary
+- Grounded claim rate: 0.0
+- Verifier passed: False

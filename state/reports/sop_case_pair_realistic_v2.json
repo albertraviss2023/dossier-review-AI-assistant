@@ -1,0 +1,50 @@
+[
+  {
+    "case": "correct",
+    "dossier_id": "VET-NEW-BIO-AMR-OXYT-0003",
+    "product_name": "Oxytetracycline 200 mg/mL injectable solution",
+    "manufacturer_name": "Sterling Formulations Ltd",
+    "application_pathway": "biosimilar_or_biological",
+    "document_quality_profile": "mixed_text_and_scanned",
+    "known_queries": [],
+    "expected_sop_outcome": "pass",
+    "overall_expected_action": "accept_requirement",
+    "requirement_results": [
+      {
+        "requirement_id": "ALL-APPLICABLE",
+        "status": "pass",
+        "reason": "All applicable requirements pass.",
+        "affected_sections": [],
+        "affected_chunks": [],
+        "expected_query": ""
+      }
+    ]
+  },
+  {
+    "case": "query",
+    "dossier_id": "HUM-NEW-INNOV-AMR-SYNT-0001-Q",
+    "product_name": "Synteromycin 250 mg/5 mL oral suspension",
+    "manufacturer_name": "BlueRidge Formulations Ltd",
+    "application_pathway": "innovator",
+    "document_quality_profile": "clean_text_only",
+    "known_queries": [
+      "expired_gmp_certificate"
+    ],
+    "expected_sop_outcome": "query_applicant",
+    "overall_expected_action": "query_applicant",
+    "requirement_results": [
+      {
+        "requirement_id": "COM-GMP-001",
+        "status": "query",
+        "reason": "expired gmp certificate",
+        "affected_sections": [
+          "m1_gmp_certificate"
+        ],
+        "affected_chunks": [
+          "HUM-NEW-INNOV-AMR-SYNT-0001-Q_m1_gmp_certificate_CHUNK_004"
+        ],
+        "expected_query": "Applicant should provide a valid current GMP certificate."
+      }
+    ]
+  }
+]

@@ -1,0 +1,2 @@
+[console_scripts]
+regulatory-mcp = regulatory_mcp_server.server:main

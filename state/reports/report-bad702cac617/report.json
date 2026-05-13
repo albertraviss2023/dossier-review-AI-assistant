@@ -1,0 +1,1410 @@
+{
+  "generated_at_utc": "2026-05-08T11:57:26.276737+00:00",
+  "dossier_id": "E2E-COMPLETE-20260508_115413",
+  "report_title": "E2E E2E-COMPLETE-20260508_115413",
+  "recipient_email": null,
+  "product_name": "Complete Review Demo",
+  "inn_name": "ceftriaxone",
+  "product_group": "antimicrobial",
+  "application_type": "new_application",
+  "antimicrobial": true,
+  "aware_category": "not_applicable",
+  "final_verdict": "escalate_for_higher_review",
+  "reviewer_username": "alutakome",
+  "review_type": "generic",
+  "review_program": "marketing_authorization",
+  "report_lifecycle_status": "completed",
+  "report_payload": {
+    "report_title": "E2E E2E-COMPLETE-20260508_115413",
+    "workflow_report": {
+      "submission_summary": {
+        "dossier_id": "E2E-COMPLETE-20260508_115413",
+        "submission_type": "pre_market_authorization",
+        "review_type": "generic",
+        "applicant": "Complete Applicant",
+        "product_name": "Complete Review Demo",
+        "active_ingredient": "ceftriaxone",
+        "dosage_form": "unknown",
+        "strength": "unknown",
+        "jurisdiction": "Uganda",
+        "review_pathway": "standard"
+      },
+      "administrative_review": {
+        "status": "administratively_incomplete",
+        "violations": [
+          "No proof of payment was detected in the administrative material."
+        ]
+      },
+      "dossier_structure_review": {
+        "status": "mapped",
+        "violations": []
+      },
+      "applicable_rules_identification": {
+        "rules": [
+          "Administrative completeness checklist",
+          "Structural dossier completeness rules",
+          "WHO INN similarity rule",
+          "Section adequacy and evidence sufficiency rules",
+          "Generic review packaging and patient-information comparison against innovator reference when provided",
+          "WHO AWaRe stewardship rules"
+        ]
+      },
+      "who_inn_similarity_review": {
+        "proposed_name": "Complete Review Demo",
+        "who_inn": "ceftriaxone",
+        "similarity_index": 0.2222,
+        "threshold": 0.7,
+        "threshold_result": "passed",
+        "similarity_type": "orthographic",
+        "interpretation": "Product name 'Complete Review Demo' has 22.22% similarity to INN 'ceftriaxone'. Rule result: pass. Evaluated against naming guidance: Structured Dossier Review SOP. Closure Requirements.Closure Requirements\n\nA review cannot be closed as complete if a mandatory workflow stage is missing. The final report must include all workflow items that violate the rules, not only selected highlights. sop workflow review checklist regulatory Re...",
+        "flag_status": "acceptable_naming",
+        "rule_consequence": "No blocking INN naming issue was identified."
+      },
+      "technical_section_review": {
+        "section_results": [],
+        "review_type_specific": {
+          "review_type": "generic",
+          "status": "partial",
+          "baseline_available": true,
+          "baseline_verified": true,
+          "baseline_reference_name": "ceftriaxone reference",
+          "baseline_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=ceftriaxone",
+            "https://products.mhra.gov.uk/?q=ceftriaxone",
+            "https://www.ema.europa.eu/en/search?search_api_fulltext=ceftriaxone",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=ceftriaxone",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftriaxone",
+            "https://www.medicines.org.uk/emc/product/15077/smpc"
+          ],
+          "verified_reference_urls": [
+            "https://products.mhra.gov.uk/search/?query=ceftriaxone",
+            "https://products.mhra.gov.uk/?q=ceftriaxone",
+            "https://www.ema.europa.eu/en/search?search_api_fulltext=ceftriaxone",
+            "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=ceftriaxone",
+            "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftriaxone",
+            "https://www.medicines.org.uk/emc/product/15077/smpc"
+          ],
+          "comparison_matrix": [
+            {
+              "concept_key": "indication",
+              "dimension": "Indication",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service icial guideli...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "dosing",
+              "dimension": "Dosing",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "2 Posology and method of administration Posology The dose depends on the severity, susceptibility, site and type of infection and on the...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "contraindications",
+              "dimension": "Contraindications",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Adults and children over 12 years of age ( &#8805; 50 kg) Ceftriaxone Dosage* Treatment frequency** Indications 1-2 g Once daily Communit...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "warnings",
+              "dimension": "Warnings",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "4 Special warnings and precautions for use Hypersensitivity reactions As with all beta-lactam antibacterial agents, serious and occasiona...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "adverse_reactions",
+              "dimension": "Adverse Reactions",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with...",
+              "evidence_source": "mcp_external"
+            },
+            {
+              "concept_key": "storage",
+              "dimension": "Storage",
+              "submitted_present": false,
+              "external_present": true,
+              "gap": true,
+              "submitted_evidence": "Not stated",
+              "external_evidence": "Last updated on emc: 15 Sep 2023 Quick Links Undesirable Effects Pharmacological Properties Interactions Posology Contraindications Excip...",
+              "evidence_source": "mcp_external"
+            }
+          ],
+          "section_provenance": [
+            {
+              "section_name": "side_effects",
+              "source_url": "https://products.mhra.gov.uk/search/?query=ceftriaxone",
+              "source_domain": "products.mhra.gov.uk",
+              "source_priority": 100,
+              "confidence_score": 0.75
+            },
+            {
+              "section_name": "dosage",
+              "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "warnings",
+              "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "indications",
+              "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "contraindications",
+              "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            },
+            {
+              "section_name": "storage",
+              "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+              "source_domain": "www.medicines.org.uk",
+              "source_priority": 90,
+              "confidence_score": 0.84
+            }
+          ],
+          "source_selection_policy": {
+            "order": [
+              "products.mhra.gov.uk",
+              "medicines.org.uk",
+              "ema.europa.eu",
+              "accessdata.fda.gov",
+              "dailymed.nlm.nih.gov",
+              "gov.uk",
+              "who.int"
+            ],
+            "strategy": "prefer_highest_priority_source_per_section"
+          },
+          "notes": [
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used ceftriaxone reference through MCP patient-information tools with overall alignment not_aligned.",
+            "Example comparison classified the section as non_compliant."
+          ],
+          "findings": [
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for indications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "indications",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "dosage",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "contraindications",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "critical",
+              "location": "warnings",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "side_effects",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "Current patient information does not align closely with the innovator reference for storage.",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "severity": "major",
+              "location": "storage",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "issue": "The current section does not adequately cover completeness.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "major",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover safety wording.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "critical",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover contraindications.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "critical",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "issue": "The current section does not adequately cover dosage clarity.",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "severity": "major",
+              "location": "Application Form and Administrative Information",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            }
+          ],
+          "example_comparison": {
+            "classification": "non_compliant",
+            "matched_good_patterns": [],
+            "matched_bad_patterns": [
+              "completeness",
+              "safety wording",
+              "contraindications",
+              "dosage clarity"
+            ],
+            "evidence": [
+              {
+                "dimension": "completeness",
+                "finding": "The current section does not adequately cover completeness.",
+                "severity": "major",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+              },
+              {
+                "dimension": "safety wording",
+                "finding": "The current section does not adequately cover safety wording.",
+                "severity": "critical",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+              },
+              {
+                "dimension": "contraindications",
+                "finding": "The current section does not adequately cover contraindications.",
+                "severity": "critical",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+              },
+              {
+                "dimension": "dosage clarity",
+                "finding": "The current section does not adequately cover dosage clarity.",
+                "severity": "major",
+                "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+              }
+            ]
+          }
+        }
+      },
+      "amr_stewardship_review": {
+        "applicable": true,
+        "antimicrobial_status": "antimicrobial",
+        "aware_category": "watch",
+        "stewardship_rule_application": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator cefixime plus rising GLASS resistance supports restricted authorization.",
+        "fast_track_status": false,
+        "authorization_control": "restricted_authorization",
+        "watch_or_reserve_caution": true,
+        "findings": [
+          "MCP AWaRe reference resolved ceftriaxone as Unknown.",
+          "MCP antimicrobial similarity returned stewardship flag not_applicable.",
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to ceftriaxone.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved ceftriaxone as watch.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved ceftriaxone trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator cefixime.",
+          "Chemistry snapshot provided active moiety ceftriaxone, parent compound ceftriaxone, PubChem CID 5479530, ChEMBL CHEMBL1200690, and UniChem UC5479530."
+        ],
+        "policy_decision": {
+          "decision": "restricted_authorization",
+          "required_controls": [
+            "Restricted authorization conditions",
+            "Stewardship monitoring plan",
+            "Resistance surveillance commitments"
+          ],
+          "decision_basis": {
+            "aware_category": "watch",
+            "watch_similarity_restriction": true,
+            "glass_resistance_trend": "rising",
+            "comparator": "cefixime",
+            "similarity_to_existing_watch": "high",
+            "targets_mdr_pathogen": false,
+            "amr_unmet_need": "not_applicable"
+          }
+        }
+      },
+      "findings_register": [
+        {
+          "workflow_step": "Administrative completeness review",
+          "issue": "No proof of payment was detected in the administrative material.",
+          "violated_rule": "Missing proof of payment where required = violation",
+          "severity": "minor",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Confirm the payment receipt or fee evidence is included where required.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for indications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "indications",
+          "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "dosage",
+          "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "contraindications",
+          "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "critical",
+          "location": "warnings",
+          "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "side_effects",
+          "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "Current patient information does not align closely with the innovator reference for storage.",
+          "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+          "severity": "major",
+          "location": "storage",
+          "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover completeness.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "major",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover safety wording.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "critical",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover contraindications.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "critical",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "Section-by-section technical review",
+          "issue": "The current section does not adequately cover dosage clarity.",
+          "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+          "severity": "major",
+          "location": "Application Form and Administrative Information",
+          "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+        },
+        {
+          "workflow_step": "AMR stewardship review using AWaRe rules",
+          "issue": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+          "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+          "severity": "major",
+          "location": "AMR Stewardship Narrative",
+          "recommendation": "Document the stewardship restriction and reviewer control measures.",
+          "evidence_reference": "E2E-COMPLETE-20260508_115413:m5_bioequivalence"
+        }
+      ],
+      "findings_summary_tables": {
+        "administrative": [
+          {
+            "severity": "minor",
+            "violated_rule": "Missing proof of payment where required = violation",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Confirm the payment receipt or fee evidence is included where required."
+          }
+        ],
+        "naming_inn": [],
+        "quality": [
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+          }
+        ],
+        "gmp": [],
+        "clinical_evidence": [
+          {
+            "severity": "major",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "critical",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          },
+          {
+            "severity": "major",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+          }
+        ],
+        "amr_stewardship": [
+          {
+            "severity": "major",
+            "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m5_bioequivalence",
+            "recommendation": "Document the stewardship restriction and reviewer control measures."
+          }
+        ],
+        "consistency_checks": []
+      },
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | 1 | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | 2 | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+      "severity_classification": {
+        "critical": 4,
+        "major": 7,
+        "minor": 1,
+        "advisory": 0
+      },
+      "cross_section_consistency_review": {
+        "status": "consistent",
+        "findings": []
+      },
+      "review_completeness_confirmation": {
+        "status": "review_incomplete",
+        "mandatory_steps": {
+          "submission_intake_and_familiarization": true,
+          "administrative_completeness_review": true,
+          "structural_dossier_mapping": false,
+          "applicable_rules_identification": true,
+          "who_inn_similarity_review": true,
+          "section_by_section_technical_review": false,
+          "amr_stewardship_review": true,
+          "findings_register": true,
+          "severity_classification": true,
+          "cross_section_consistency_review": true
+        },
+        "notes": [
+          "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+          "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+          "Generic baseline comparison used ceftriaxone reference through MCP patient-information tools with overall alignment not_aligned.",
+          "Example comparison classified the section as non_compliant."
+        ]
+      },
+      "overall_judgment": {
+        "final_verdict": "escalate_for_higher_review",
+        "system_recommendation": "additional_information_required",
+        "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+        "blocking_issues": [
+          "Current patient information does not align closely with the innovator reference for indications.",
+          "Current patient information does not align closely with the innovator reference for dosage.",
+          "Current patient information does not align closely with the innovator reference for contraindications.",
+          "Current patient information does not align closely with the innovator reference for warnings.",
+          "Current patient information does not align closely with the innovator reference for side_effects.",
+          "Current patient information does not align closely with the innovator reference for storage.",
+          "The current section does not adequately cover completeness.",
+          "The current section does not adequately cover safety wording.",
+          "The current section does not adequately cover contraindications.",
+          "The current section does not adequately cover dosage clarity.",
+          "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution."
+        ],
+        "escalation_needed": true
+      }
+    },
+    "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | 1 | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | 2 | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+    "review_payload": {
+      "workspace": "review",
+      "dossier_id": "E2E-COMPLETE-20260508_115413",
+      "selected_model": {
+        "id": "gemma-4-4b-it",
+        "label": "Gemma 4 4B-IT (Default)",
+        "runtime_model_id": "gemma-4-4b-it",
+        "description": "High-precision instruction-tuned model for regulatory auditing (8GB VRAM)."
+      },
+      "intent": "dossier_review",
+      "response_contract": "dossier_review_v1",
+      "model_packet_version": "reason_and_route_v2",
+      "sub_queries": [
+        "Provide the final overall judgment and recommendation.",
+        "details about Provide the final overall judgment and recommendation.",
+        "requirements for Provide the final overall judgment and recommendation."
+      ],
+      "conversation_id": "conv-00fd55a496",
+      "context_monitor": {
+        "context_window_tokens": 4096,
+        "used_tokens": 3510,
+        "remaining_tokens": 586,
+        "usage_ratio": 0.85693,
+        "threshold_tokens": 4014,
+        "compaction_threshold_ratio": 0.98,
+        "rolling_summary_tokens": 974,
+        "carryover_tokens": 0,
+        "active_message_tokens": 2536,
+        "archived_messages_count": 23,
+        "compaction_count": 12,
+        "auto_compaction_required": false,
+        "last_compacted_at": "2026-05-08T11:57:18.441900+00:00",
+        "conversation_engine": "langgraph"
+      },
+      "recommendation": "additional_information_required",
+      "route": "fallback",
+      "abstained": false,
+      "rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Complete Review Demo** (ceftriaxone), submitted by **Complete Applicant**. The structured review found **2** unresolved requirement-level concerns.\n\n### Overall Judgment\n\nBased on the full structured review, the overall judgment is **requires revision**. This aligns with the grounded system recommendation of **Additional Information Required**.\n\nMajor unresolved issues require revision before the dossier can proceed.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator cefixime plus rising GLASS resistance supports restricted authorization. The ingredient was normalized to **ceftriaxone** for stewardship checks. Restricted authorization is triggered because the chemistry profile shows **high** similarity to **cefixime**. Local GLASS surveillance data indicates rising resistance, which increases the stewardship risk.\n\n### Detailed Findings\n- Evidence from **Quality Overall Summary** supports This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for simvastatin. The control strategy justifies the proposed specification.. [E2E-COMPLETE-20260508_115413:m2_quality_overall_summary:c1]\n\n### Conclusion\n\n**Additional Information Required** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to cefixime agents.\n\n### Findings Summary Tables\n\n#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | 1 | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | 2 | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | 3 | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n### Decision Support Snapshot\n\n| Signal | Value |\n| --- | --- |\n| Recommendation | additional_information_required |\n| Confidence | 0.58 |\n| Submission Type | pre_market_authorization |\n\n### External vs Submitted Evidence (Patient/Safety)\n\n| Dimension | Submitted Dossier | External Source | Gap |\n| --- | --- | --- | --- |\n| Indication | Not stated | Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service icial guideli... | Yes |\n| Dosing | Not stated | 2 Posology and method of administration Posology The dose depends on the severity, susceptibility, site and type of infection and on the... | Yes |\n| Contraindications | Not stated | Adults and children over 12 years of age ( &#8805; 50 kg) Ceftriaxone Dosage* Treatment frequency** Indications 1-2 g Once daily Communit... | Yes |\n| Warnings | Not stated | 4 Special warnings and precautions for use Hypersensitivity reactions As with all beta-lactam antibacterial agents, serious and occasiona... | Yes |\n| Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Yes |\n| Storage | Not stated | Last updated on emc: 15 Sep 2023 Quick Links Undesirable Effects Pharmacological Properties Interactions Posology Contraindications Excip... | Yes |\n\nSummary: submitted dossier provides **0/6** patient-safety dimensions; external baseline provides **6/6**.\nInconsistencies detected in: **Indication, Dosing, Contraindications, Warnings, Adverse Reactions, Storage**. These require applicant clarification or correction.\n\nVerified external references:\n- [https://products.mhra.gov.uk/search/?query=ceftriaxone](https://products.mhra.gov.uk/search/?query=ceftriaxone)\n- [https://products.mhra.gov.uk/?q=ceftriaxone](https://products.mhra.gov.uk/?q=ceftriaxone)\n- [https://www.ema.europa.eu/en/search?search_api_fulltext=ceftriaxone](https://www.ema.europa.eu/en/search?search_api_fulltext=ceftriaxone)\n- [https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=ceftriaxone](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=ceftriaxone)\n- [https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftriaxone](https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftriaxone)\n- [https://www.medicines.org.uk/emc/product/15077/smpc](https://www.medicines.org.uk/emc/product/15077/smpc)\n\nSource selection policy:\n- Strategy: prefer_highest_priority_source_per_section\n- Priority order: products.mhra.gov.uk, medicines.org.uk, ema.europa.eu, accessdata.fda.gov, dailymed.nlm.nih.gov, gov.uk, who.int\n\n#### External Source Provenance and Confidence\n\n| Section | Source Domain | Source Priority | Confidence |\n| --- | --- | --- | --- |\n| side_effects | products.mhra.gov.uk | 100 | 0.75 |\n| dosage | www.medicines.org.uk | 90 | 0.84 |\n| warnings | www.medicines.org.uk | 90 | 0.84 |\n| indications | www.medicines.org.uk | 90 | 0.84 |\n| contraindications | www.medicines.org.uk | 90 | 0.84 |\n| storage | www.medicines.org.uk | 90 | 0.84 |\n\n### SOP Stage Detail\n\n| Step | Stage | Output Detail |\n| --- | --- | --- |\n| 2 | Administrative completeness review | administratively_incomplete |\n| 3 | Structural dossier mapping | mapped |\n| 5 | WHO INN similarity review | passed |\n| 6 | Section-by-section technical review | 12 sections reviewed |\n| 7 | AMR stewardship review | restricted_authorization |\n| 10 | Cross-section consistency review | consistent |\n| 11 | Review completeness confirmation | review_complete |\n| 12 | Overall judgment | requires_revision |\n\n### AMR Policy Decision Support\n\n| Signal | Value |\n| --- | --- |\n| Applicable | True |\n| AWaRe Category | watch |\n| Authorization Control | restricted_authorization |\n| Policy Decision | restricted_authorization |\n| Fast Track Candidate | False |\n| Restriction Trigger | True |\n\nRequired controls:\n- Restricted authorization conditions\n- Stewardship monitoring plan\n- Resistance surveillance commitments\n\nAMR evidence trace:\n- MCP AWaRe reference resolved ceftriaxone as Unknown.\n- MCP antimicrobial similarity returned stewardship flag not_applicable.\n- RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to ceftriaxone.\n- WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved ceftriaxone as watch.\n- WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved ceftriaxone trend as rising.\n- Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator cefixime.",
+      "chain_of_thought": "{\n \"intent\": \"dossier_review\",\n \"resolved_terms\": [],\n \"retrieval_strategy\": \"Precision search across dossier_review_v1 domain\",\n \"bouncer_audit\": [\n {\n \"chunk_id\": \"E2E-COMPLETE-20260508_115413:m2_clinical_overview:c1\",\n \"section\": \"Clinical Overview and Benefit-Risk Summary\",\n \"status\": \"DISCARD\",\n \"reason\": \"Insufficient keyword density (Found: overall).\",\n \"score\": 0.537\n },\n {\n \"chunk_id\": \"E2E-COMPLETE-20260508_115413:m2_quality_overall_summary:c1\",\n \"section\": \"Quality Overall Summary\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.532\n },\n {\n \"chunk_id\": \"E2E-COMPLETE-20260508_115413:m3_api_quality:c1\",\n \"section\": \"API Quality and Control Strategy\",\n \"status\": \"DISCARD\",\n \"reason\": \"Insufficient keyword density (Found: final).\",\n \"score\": 0.518\n }\n ]\n}",
+      "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | 1 | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | 2 | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | 3 | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+      "workflow_summary": {
+        "submission_summary": {
+          "dossier_id": "E2E-COMPLETE-20260508_115413",
+          "submission_type": "pre_market_authorization",
+          "review_type": "generic",
+          "applicant": "Complete Applicant",
+          "product_name": "Complete Review Demo",
+          "active_ingredient": "ceftriaxone",
+          "dosage_form": "unknown",
+          "strength": "unknown",
+          "jurisdiction": "Uganda",
+          "review_pathway": "standard"
+        },
+        "administrative_review": {
+          "status": "administratively_incomplete",
+          "violations": [
+            "No proof of payment was detected in the administrative material."
+          ]
+        },
+        "dossier_structure_review": {
+          "status": "mapped",
+          "violations": []
+        },
+        "applicable_rules_identification": {
+          "rules": [
+            "Administrative completeness checklist",
+            "Structural dossier completeness rules",
+            "WHO INN similarity rule",
+            "Section adequacy and evidence sufficiency rules",
+            "Generic review packaging and patient-information comparison against innovator reference when provided",
+            "WHO AWaRe stewardship rules"
+          ]
+        },
+        "who_inn_similarity_review": {
+          "proposed_name": "Complete Review Demo",
+          "who_inn": "ceftriaxone",
+          "similarity_index": 0.2222,
+          "threshold": 0.7,
+          "threshold_result": "passed",
+          "similarity_type": "orthographic",
+          "interpretation": "Product name 'Complete Review Demo' has 22.22% similarity to INN 'ceftriaxone'. Rule result: pass. Evaluated against naming guidance: Structured Dossier Review SOP. Closure Requirements.Closure Requirements\n\nA review cannot be closed as complete if a mandatory workflow stage is missing. The final report must include all workflow items that violate the rules, not only selected highlights. sop workflow review checklist regulatory Re...",
+          "flag_status": "acceptable_naming",
+          "rule_consequence": "No blocking INN naming issue was identified."
+        },
+        "technical_section_review": {
+          "section_results": [
+            {
+              "section": "Application Form and Administrative Information",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Manufacturer and GMP Evidence",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Product Information and Naming",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Quality Overall Summary",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Clinical Overview and Benefit-Risk Summary",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "API Quality and Control Strategy",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "FPP Manufacturing Process and Controls",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Stability and Shelf-Life Justification",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Nonclinical Study Summary",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": false
+            },
+            {
+              "section": "Tabular Listing of Clinical Studies",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Pivotal Clinical Trial Reports",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": true
+            },
+            {
+              "section": "Biopharmaceutics and Bioequivalence Evidence",
+              "status": "compliant",
+              "presence": "present",
+              "length_status": "length_ok",
+              "correctness": "correct",
+              "critical": false
+            }
+          ],
+          "review_type_specific": {
+            "review_type": "generic",
+            "status": "partial",
+            "baseline_available": true,
+            "baseline_verified": true,
+            "baseline_reference_name": "ceftriaxone reference",
+            "baseline_reference_urls": [
+              "https://products.mhra.gov.uk/search/?query=ceftriaxone",
+              "https://products.mhra.gov.uk/?q=ceftriaxone",
+              "https://www.ema.europa.eu/en/search?search_api_fulltext=ceftriaxone",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=ceftriaxone",
+              "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftriaxone",
+              "https://www.medicines.org.uk/emc/product/15077/smpc"
+            ],
+            "verified_reference_urls": [
+              "https://products.mhra.gov.uk/search/?query=ceftriaxone",
+              "https://products.mhra.gov.uk/?q=ceftriaxone",
+              "https://www.ema.europa.eu/en/search?search_api_fulltext=ceftriaxone",
+              "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=ceftriaxone",
+              "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ceftriaxone",
+              "https://www.medicines.org.uk/emc/product/15077/smpc"
+            ],
+            "comparison_matrix": [
+              {
+                "concept_key": "indication",
+                "dimension": "Indication",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "Medicines and Healthcare products Regulatory Agency Cookie Policy Privacy Policy Accessibility Statement About this service icial guideli...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "dosing",
+                "dimension": "Dosing",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "2 Posology and method of administration Posology The dose depends on the severity, susceptibility, site and type of infection and on the...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "contraindications",
+                "dimension": "Contraindications",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "Adults and children over 12 years of age ( &#8805; 50 kg) Ceftriaxone Dosage* Treatment frequency** Indications 1-2 g Once daily Communit...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "warnings",
+                "dimension": "Warnings",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "4 Special warnings and precautions for use Hypersensitivity reactions As with all beta-lactam antibacterial agents, serious and occasiona...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "adverse_reactions",
+                "dimension": "Adverse Reactions",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with...",
+                "evidence_source": "mcp_external"
+              },
+              {
+                "concept_key": "storage",
+                "dimension": "Storage",
+                "submitted_present": false,
+                "external_present": true,
+                "gap": true,
+                "submitted_evidence": "Not stated",
+                "external_evidence": "Last updated on emc: 15 Sep 2023 Quick Links Undesirable Effects Pharmacological Properties Interactions Posology Contraindications Excip...",
+                "evidence_source": "mcp_external"
+              }
+            ],
+            "section_provenance": [
+              {
+                "section_name": "side_effects",
+                "source_url": "https://products.mhra.gov.uk/search/?query=ceftriaxone",
+                "source_domain": "products.mhra.gov.uk",
+                "source_priority": 100,
+                "confidence_score": 0.75
+              },
+              {
+                "section_name": "dosage",
+                "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "warnings",
+                "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "indications",
+                "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "contraindications",
+                "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              },
+              {
+                "section_name": "storage",
+                "source_url": "https://www.medicines.org.uk/emc/product/15077/smpc",
+                "source_domain": "www.medicines.org.uk",
+                "source_priority": 90,
+                "confidence_score": 0.84
+              }
+            ],
+            "source_selection_policy": {
+              "order": [
+                "products.mhra.gov.uk",
+                "medicines.org.uk",
+                "ema.europa.eu",
+                "accessdata.fda.gov",
+                "dailymed.nlm.nih.gov",
+                "gov.uk",
+                "who.int"
+              ],
+              "strategy": "prefer_highest_priority_source_per_section"
+            },
+            "notes": [
+              "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+              "Generic baseline comparison used ceftriaxone reference through MCP patient-information tools with overall alignment not_aligned.",
+              "Example comparison classified the section as non_compliant."
+            ],
+            "findings": [
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for indications.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "indications",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "dosage",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "critical",
+                "location": "contraindications",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "critical",
+                "location": "warnings",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "side_effects",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "Current patient information does not align closely with the innovator reference for storage.",
+                "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+                "severity": "major",
+                "location": "storage",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+              },
+              {
+                "issue": "The current section does not adequately cover completeness.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "major",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover safety wording.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "critical",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover contraindications.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "critical",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              },
+              {
+                "issue": "The current section does not adequately cover dosage clarity.",
+                "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+                "severity": "major",
+                "location": "Application Form and Administrative Information",
+                "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+                "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+              }
+            ],
+            "example_comparison": {
+              "classification": "non_compliant",
+              "matched_good_patterns": [],
+              "matched_bad_patterns": [
+                "completeness",
+                "safety wording",
+                "contraindications",
+                "dosage clarity"
+              ],
+              "evidence": [
+                {
+                  "dimension": "completeness",
+                  "finding": "The current section does not adequately cover completeness.",
+                  "severity": "major",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+                },
+                {
+                  "dimension": "safety wording",
+                  "finding": "The current section does not adequately cover safety wording.",
+                  "severity": "critical",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+                },
+                {
+                  "dimension": "contraindications",
+                  "finding": "The current section does not adequately cover contraindications.",
+                  "severity": "critical",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+                },
+                {
+                  "dimension": "dosage clarity",
+                  "finding": "The current section does not adequately cover dosage clarity.",
+                  "severity": "major",
+                  "evidence_excerpt": "This dossier constitutes a formal application for Marketing Authorization of Simvvia\n(simvastatin) submitted on 2026-03-11 to the national regulatory authority of Burkina Faso. The\napplicant, United Therapeutics, formally requests approval "
+                }
+              ]
+            }
+          }
+        },
+        "amr_stewardship_review": {
+          "applicable": true,
+          "antimicrobial_status": "antimicrobial",
+          "aware_category": "watch",
+          "stewardship_rule_application": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator cefixime plus rising GLASS resistance supports restricted authorization.",
+          "fast_track_status": false,
+          "authorization_control": "restricted_authorization",
+          "watch_or_reserve_caution": true,
+          "findings": [
+            "MCP AWaRe reference resolved ceftriaxone as Unknown.",
+            "MCP antimicrobial similarity returned stewardship flag not_applicable.",
+            "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to ceftriaxone.",
+            "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved ceftriaxone as watch.",
+            "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved ceftriaxone trend as rising.",
+            "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator cefixime.",
+            "Chemistry snapshot provided active moiety ceftriaxone, parent compound ceftriaxone, PubChem CID 5479530, ChEMBL CHEMBL1200690, and UniChem UC5479530."
+          ],
+          "policy_decision": {
+            "decision": "restricted_authorization",
+            "required_controls": [
+              "Restricted authorization conditions",
+              "Stewardship monitoring plan",
+              "Resistance surveillance commitments"
+            ],
+            "decision_basis": {
+              "aware_category": "watch",
+              "watch_similarity_restriction": true,
+              "glass_resistance_trend": "rising",
+              "comparator": "cefixime",
+              "similarity_to_existing_watch": "high",
+              "targets_mdr_pathogen": false,
+              "amr_unmet_need": "not_applicable"
+            }
+          }
+        },
+        "findings_register": [
+          {
+            "workflow_step": "Administrative completeness review",
+            "issue": "No proof of payment was detected in the administrative material.",
+            "violated_rule": "Missing proof of payment where required = violation",
+            "severity": "minor",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Confirm the payment receipt or fee evidence is included where required.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for indications.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "indications",
+            "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for dosage.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "dosage",
+            "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for contraindications.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "critical",
+            "location": "contraindications",
+            "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for warnings.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "critical",
+            "location": "warnings",
+            "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for side_effects.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "side_effects",
+            "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Current patient information does not align closely with the innovator reference for storage.",
+            "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+            "severity": "major",
+            "location": "storage",
+            "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover completeness.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "major",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover safety wording.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "critical",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover contraindications.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "critical",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "The current section does not adequately cover dosage clarity.",
+            "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+            "severity": "major",
+            "location": "Application Form and Administrative Information",
+            "recommendation": "Address the highlighted patient-information issue in line with compliant section examples.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin"
+          },
+          {
+            "workflow_step": "Section-by-section technical review",
+            "issue": "Technical review identified policy information gap.",
+            "violated_rule": "Present but inadequate section = violation",
+            "severity": "major",
+            "location": "Scientific dossier content",
+            "recommendation": "Provide the missing technical evidence or clarifying support.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413"
+          },
+          {
+            "workflow_step": "AMR stewardship review using AWaRe rules",
+            "issue": "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution.",
+            "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+            "severity": "major",
+            "location": "AMR Stewardship Narrative",
+            "recommendation": "Document the stewardship restriction and reviewer control measures.",
+            "evidence_reference": "E2E-COMPLETE-20260508_115413:m5_bioequivalence"
+          }
+        ],
+        "findings_summary_tables": {
+          "administrative": [
+            {
+              "severity": "minor",
+              "violated_rule": "Missing proof of payment where required = violation",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Confirm the payment receipt or fee evidence is included where required."
+            }
+          ],
+          "naming_inn": [],
+          "quality": [
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Generic review must compare dossier patient information against innovator reference materials when provided",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Present but inadequate section = violation",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413",
+              "recommendation": "Provide the missing technical evidence or clarifying support."
+            }
+          ],
+          "gmp": [],
+          "clinical_evidence": [
+            {
+              "severity": "major",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "critical",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            },
+            {
+              "severity": "major",
+              "violated_rule": "Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m1_application_admin",
+              "recommendation": "Address the highlighted patient-information issue in line with compliant section examples."
+            }
+          ],
+          "amr_stewardship": [
+            {
+              "severity": "major",
+              "violated_rule": "Watch / Reserve stewardship-sensitive products should trigger stewardship caution",
+              "evidence_reference": "E2E-COMPLETE-20260508_115413:m5_bioequivalence",
+              "recommendation": "Document the stewardship restriction and reviewer control measures."
+            }
+          ],
+          "consistency_checks": []
+        },
+        "findings_summary_markdown": "#### Administrative\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| minor | Missing proof of payment where required = violation | 1 | Confirm the payment receipt or fee evidence is included where required. |\n\n#### Naming / INN\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Quality\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. |\n| critical | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. |\n| major | Generic review must compare dossier patient information against innovator reference materials when provided | 1 | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. |\n| major | Present but inadequate section = violation | 2 | Provide the missing technical evidence or clarifying support. |\n\n#### GMP\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |\n\n#### Clinical / Evidence\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n| major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | 1 | Address the highlighted patient-information issue in line with compliant section examples. |\n\n#### AMR Stewardship\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| major | Watch / Reserve stewardship-sensitive products should trigger stewardship caution | 3 | Document the stewardship restriction and reviewer control measures. |\n\n#### Consistency Checks\n\n| Severity | Violated rule | Evidence reference | Recommendation |\n| --- | --- | --- | --- |\n| none | No recorded violations in this area | n/a | Continue standard review monitoring |",
+        "severity_classification": {
+          "critical": 4,
+          "major": 8,
+          "minor": 1,
+          "advisory": 0
+        },
+        "cross_section_consistency_review": {
+          "status": "consistent",
+          "findings": []
+        },
+        "review_completeness_confirmation": {
+          "status": "review_complete",
+          "mandatory_steps": {
+            "submission_intake_and_familiarization": true,
+            "administrative_completeness_review": true,
+            "structural_dossier_mapping": true,
+            "applicable_rules_identification": true,
+            "who_inn_similarity_review": true,
+            "section_by_section_technical_review": true,
+            "amr_stewardship_review": true,
+            "findings_register": true,
+            "severity_classification": true,
+            "cross_section_consistency_review": true
+          },
+          "notes": [
+            "AMR stewardship review was completed using WHO AWaRe and the source-backed stewardship policy path.",
+            "Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.",
+            "Generic baseline comparison used ceftriaxone reference through MCP patient-information tools with overall alignment not_aligned.",
+            "Example comparison classified the section as non_compliant."
+          ]
+        },
+        "overall_judgment": {
+          "final_verdict": "requires_revision",
+          "system_recommendation": "additional_information_required",
+          "justification": "The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.",
+          "blocking_issues": [
+            "Current patient information does not align closely with the innovator reference for indications.",
+            "Current patient information does not align closely with the innovator reference for dosage.",
+            "Current patient information does not align closely with the innovator reference for contraindications.",
+            "Current patient information does not align closely with the innovator reference for warnings.",
+            "Current patient information does not align closely with the innovator reference for side_effects.",
+            "Current patient information does not align closely with the innovator reference for storage.",
+            "The current section does not adequately cover completeness.",
+            "The current section does not adequately cover safety wording.",
+            "The current section does not adequately cover contraindications.",
+            "The current section does not adequately cover dosage clarity.",
+            "Technical review identified policy information gap.",
+            "AWaRe-controlled antimicrobial requires restricted authorization or stewardship caution."
+          ],
+          "escalation_needed": false
+        }
+      },
+      "citations": [
+        {
+          "citation_id": "E2E-COMPLETE-20260508_115413:m2_quality_overall_summary:c1",
+          "dossier_id": "E2E-COMPLETE-20260508_115413",
+          "section_id": "m2_quality_overall_summary",
+          "section_title": "Quality Overall Summary",
+          "score": 0.53189,
+          "snippet": "This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry, manufacturing, and controls (CMC) data for simvastatin. The control strategy justifies the proposed specifications for both the active s..."
+        }
+      ],
+      "amr_stewardship": {
+        "applies": true,
+        "normalized_ingredient": "ceftriaxone",
+        "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+        "active_moiety": "ceftriaxone",
+        "parent_compound": "ceftriaxone",
+        "pubchem_cid": "5479530",
+        "canonical_smiles": "CC1=C(C(=O)N2CC(C(N2C1=O)C(=O)O)=C(SCC3=NC(=NO3)N)N)C(=O)O",
+        "inchikey": "MKWTRMWEYTVXJG-UHFFFAOYSA-N",
+        "chembl_id": "CHEMBL1200690",
+        "unichem_id": "UC5479530",
+        "aware_category": "watch",
+        "amr_unmet_need": "not_applicable",
+        "targets_mdr_pathogen": false,
+        "glass_resistance_trend": "rising",
+        "similarity_to_existing_watch": "high",
+        "existing_watch_comparator": "cefixime",
+        "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+        "authorization_control": "restricted_authorization",
+        "fast_track_candidate": false,
+        "restricted_authorization": true,
+        "watch_similarity_restriction": true,
+        "source_mode": "snapshot_backed",
+        "source_trace": [
+          "MCP AWaRe reference resolved ceftriaxone as Unknown.",
+          "MCP antimicrobial similarity returned stewardship flag not_applicable.",
+          "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to ceftriaxone.",
+          "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved ceftriaxone as watch.",
+          "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved ceftriaxone trend as rising.",
+          "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator cefixime.",
+          "Chemistry snapshot provided active moiety ceftriaxone, parent compound ceftriaxone, PubChem CID 5479530, ChEMBL CHEMBL1200690, and UniChem UC5479530."
+        ],
+        "rationale": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator cefixime plus rising GLASS resistance supports restricted authorization."
+      },
+      "visualization_data": null
+    },
+    "email_subject": "E2E E2E-COMPLETE-20260508_115413 - additional_information_required",
+    "email_body": "E2E E2E-COMPLETE-20260508_115413\n\nSubmission Summary\n- Dossier Id: E2E-COMPLETE-20260508_115413\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Complete Applicant\n- Product Name: Complete Review Demo\n- Active Ingredient: ceftriaxone\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Complete Review Demo\n- Who Inn: ceftriaxone\n- Similarity Index: 0.2222\n- Threshold: 0.7"
+  },
+  "email_subject": "E2E E2E-COMPLETE-20260508_115413 - additional_information_required",
+  "email_body": "E2E E2E-COMPLETE-20260508_115413\n\nSubmission Summary\n- Dossier Id: E2E-COMPLETE-20260508_115413\n- Submission Type: pre_market_authorization\n- Review Type: generic\n- Applicant: Complete Applicant\n- Product Name: Complete Review Demo\n- Active Ingredient: ceftriaxone\n- Dosage Form: unknown\n- Strength: unknown\n- Jurisdiction: Uganda\n- Review Pathway: standard\n\nAdministrative Review Outcome\n- Status: administratively_incomplete\n- No proof of payment was detected in the administrative material.\n\nDossier Structure Review Outcome\n- Status: mapped\n- No structural dossier violations were detected.\n\nApplicable Rules And Requirements\n- Administrative completeness checklist\n- Structural dossier completeness rules\n- WHO INN similarity rule\n- Section adequacy and evidence sufficiency rules\n- Generic review packaging and patient-information comparison against innovator reference when provided\n- WHO AWaRe stewardship rules\n\nWHO INN Similarity Review\n- Proposed Name: Complete Review Demo\n- Who Inn: ceftriaxone\n- Similarity Index: 0.2222\n- Threshold: 0.7"
+}

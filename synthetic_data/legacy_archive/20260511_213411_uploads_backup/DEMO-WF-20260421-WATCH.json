@@ -1,0 +1,294 @@
+{
+  "dossier_id": "DEMO-WF-20260421-WATCH",
+  "country": "Uganda",
+  "submission_date": "2026-04-21",
+  "product": {
+    "product_name": "Watch Review Demo",
+    "inn_name": "levofloxacin",
+    "atc_code": "unknown",
+    "dosage_form": "unknown",
+    "strength": "unknown"
+  },
+  "organization": {
+    "applicant": "Workflow Applicant",
+    "manufacturer": "Workflow Manufacturer",
+    "facility_country": "Uganda"
+  },
+  "policy_signals": {
+    "inn_infringement": false,
+    "gmp_inspection_status": "compliant",
+    "gmp_inspection_recent": true,
+    "gmp_certificate_validity": "valid",
+    "clinical_data_available": true,
+    "pivotal_trial_outcome": "inconclusive",
+    "aware_category": "watch",
+    "amr_unmet_need": "moderate",
+    "targets_mdr_pathogen": false,
+    "glass_resistance_trend": "stable",
+    "similarity_to_existing_watch": "low",
+    "existing_watch_comparator": "not_applicable"
+  },
+  "sections": [
+    {
+      "section_id": "m1_application_admin",
+      "module": "1",
+      "title": "Application Form and Administrative Information",
+      "text": "This dossier constitutes a formal application for Marketing Authorization of Digovia (digoxin)\nsubmitted on 2025-09-22 to the national regulatory authority of Tanzania. The applicant, Prime\nTherapeutics, formally requests approval for the commercial distribution of this medicinal\nproduct. The proposed pharmaceutical form is tablet with a strength of 5 mg, classified under\nATC code C09AA02. All required administrative declarations, legal attestations, letters of\nauthorization, and regional application forms have been completed, signed by the responsible\nQualified Person, and appended to Module 1. Adverse events were coded using the Medical\nDictionary for Regulatory Activities (MedDRA) version 24.0. The risk management plan includes\nroutine pharmacovigilance and proposed educational materials for healthcare professionals. The\ncontainer closure system consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial\nstandards. Data were analyzed using a mixed-effects model for repeated measures, adjusting for\nbaseline covariates. All referenced documents are available in the dossier annex and traceable\nby section identifier. The applicant confirms alignment with applicable technical guidance and\nregional submission standards. A comprehensive table of contents and glossary of abbreviations\nare provided to facilitate re",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1340
+      }
+    },
+    {
+      "section_id": "m1_manufacturer_gmp",
+      "module": "1",
+      "title": "Manufacturer and GMP Evidence",
+      "text": "The primary commercial manufacturing site for the finished pharmaceutical product is\nPanRegional Pharma Holdings, located in Tanzania. The facility was subject to a comprehensive\nGMP inspection by a recognized stringent regulatory authority. The latest inspection concluded\non 2024-09-13, resulting in a formal compliance status of 'compliant'. The active GMP\ncertificate number is GMP-196214, which remains valid until 2026-12-28. Site master files, a\nsummary of recent inspection observations, and evidence of completed Corrective and Preventive\nActions (CAPA) are included in the annex. Statistical significance was set at an alpha level of\n0.05, and all tests were two-sided. Site quality-system commitments were compared against the\nproposed commercial manufacturing activities. The GMP evidence package includes certificate\nstatus, inspection scope, and manufacturing-site accountability records. The applicant confirms\nalignment with applicable technical guidance and regional submission standards. Risk mitigation\nactivities are documented with ownership, timelines, and follow-up checkpoints. The container\nclosure system consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial standards.\nPharmacokinetic parameters were derived using non-compartmental analysis from the\nconcentration-time profiles. Inspection history, CAPA closure records,\nSite Inspection History Summary:\nInspection Date    | Authority       | Scope           | Outcome\n\n-------------------+-----------------+-----------------+-------------\n2024-09-13         | National Auth   | FPP/General     | compliant\n2022-05-12         | SRA Joint       | API/Sterile     | compliant",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1667
+      }
+    },
+    {
+      "section_id": "m1_product_information",
+      "module": "1",
+      "title": "Product Information and Naming",
+      "text": "The proposed proprietary name for this medicinal product is Digovia, containing the active\npharmaceutical ingredient digoxin. The draft Summary of Product Characteristics (SmPC), Patient\nInformation Leaflet (PIL), and primary/secondary packaging labels are provided for review.\nThese documents detail the approved therapeutic indications, posology, contraindications,\nspecial warnings, and precautions for use. A comprehensive risk management plan to minimize\nmedication errors is also submitted.  WHO AWaRe category: Watch. Similarity to existing Watch\ncomparator not_applicable is assessed as not_applicable. Stewardship materials describe\ncontrolled use to limit cross-resistance pressure. The applicant confirms alignment with\napplicable technical guidance and regional submission standards. Data were analyzed using a\nmixed-effects model for repeated measures, adjusting for baseline covariates. The risk\nmanagement plan includes routine pharmacovigilance and proposed educational materials for\nhealthcare professionals. Statistical significance was set at an alpha level of 0.05, and all\ntests were two-sided. Pharmacokinetic parameters were derived using non-compartmental analysis\nfrom the concentration-time profiles. The container closure system consists of PVC/PVDC-\nAluminum blis",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1291
+      }
+    },
+    {
+      "section_id": "m2_quality_overall_summary",
+      "module": "2",
+      "title": "Quality Overall Summary",
+      "text": "This Quality Overall Summary (QOS) provides a critical evaluation of the chemistry,\nmanufacturing, and controls (CMC) data for digoxin. The control strategy justifies the proposed\nspecifications for both the active substance and the finished product, emphasizing critical\nquality attributes (CQAs) and critical process parameters (CPPs). Impurity profiles, including\ndegradation products and potential genotoxic impurities, have been thoroughly characterized.\nBatch analysis data from three commercial-scale validation batches demonstrate consistent\nmanufacturing performance and compliance with all release criteria. Adverse events were coded\nusing the Medical Dictionary for Regulatory Activities (MedDRA) version 24.0. The analytical\nprocedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating acceptable\naccuracy, precision, and specificity. Where applicable, protocol deviations were assessed for\nimpact on interpretation of outcomes. Risk mitigation activities are documented with ownership,\ntimelines, and follow-up checkpoints. A randomized, double-blind, parallel-group study design\nwas employed to minimize selection and observer bias. The applicant confirms alignment with\napplicable technical guidance and regional submission standards. Stability testing was\nconducted in climatic zones III and IV, reflecting the intended distribution markets.\nStatistical significance was set at an alpha level of 0.05, and all tests were two-sided. All\nreferenced documents are available in the dossier annex and traceable by section identifier.\nPharmacokinetic parameters were derived using non-compartmental analysis from the\nconcentration-time profiles. The manufacturing site operates under a fully implemented\nPharmaceutical Quality System (PQS) aligned with ICH Q10. The container closure system consists\nof PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial standards. The risk management\nplan includes routine pharmacovigilance and proposed educational materials for healthcare\nprofessionals. Data were analyzed using a mixed-effects model for repeated measures, adjusting\nfor baseline covariates. Method validation records and quality controls were reviewed for\ninternal consistency. Risk mitigation activities are documented with ownership, timelines, and\nfollow-up checkpoints. The analytical procedure was validated in accordance with ICH Q2(R1)\n\nguidelines, demonstrating acceptable accuracy, precision, an",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2444
+      }
+    },
+    {
+      "section_id": "m2_clinical_overview",
+      "module": "2",
+      "title": "Clinical Overview and Benefit-Risk Summary",
+      "text": "The Clinical Overview synthesizes the efficacy and safety data supporting the use of Digovia\nfor the treatment of bacterial skin infection. The pivotal clinical development program\ncomprised 4 well-controlled studies. Based on the integrated analysis, the reported clinical\noutcome category is 'endpoint_met'. The overall benefit-risk profile is considered highly\nfavorable for the target patient population. Safety findings were consistent with the known\npharmacological class effects, and appropriate risk minimization measures have been integrated\ninto the proposed prescribing information.  GLASS-aligned surveillance trend is not_applicable,\nand cross-resistance risk relative to not_applicable is assessed as not_applicable. The\nclinical overview links the therapeutic rationale to the pivotal evidence package and the\nproposed indication. Clinical interpretation focuses on whether efficacy, safety, and benefit-\nrisk conclusions are supported by the submitted evidence. Risk mitigation activities are\ndocumented with ownership, timelines, and follow-up checkpoints. Adverse events were coded\nusing the Medical Dictionary for Regulatory Activities (MedDRA) version 24.0. Where applicable,\nprotocol deviations were assessed for impact on interpretation of outcomes. A randomized,\ndouble-blind, parallel-group study design was employed to minimize selection and observer bias.\nNo new safety signals were identified during the extended open-label follow-up period. The\nmanufacturing site operates under a fully implemented Pharmaceutical Quality System (PQS)\naligned with ICH Q10. Method validation records and quality controls were reviewed for internal\nconsistency. Data were analyzed using a mixed-effects model for repeated measures, adjusting\nfor baseline covariates. Pharmacokinetic parameters were derived using non-compartmental\nanalysis from the concentration-time profiles. The target population demographics are broadly\nrepresentative of the intended commercial patient cohort. Benefit-risk language was reviewed\nfor consistency with the submitted efficacy and safety summaries. The risk management plan\nincludes",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2127
+      }
+    },
+    {
+      "section_id": "m3_api_quality",
+      "module": "3",
+      "title": "API Quality and Control Strategy",
+      "text": "The active pharmaceutical ingredient (API) section details the complete synthesis route,\nstarting from well-defined regulatory starting materials. Robust in-process controls and\nintermediate specifications ensure the consistent quality of the final drug substance. The\nanalytical procedures used for release and stability testing have been fully validated for\naccuracy, precision, linearity, and robustness. The impurity control strategy adequately\naddresses organic impurities, residual solvents, and elemental impurities in accordance with\ncurrent ICH guidelines. Forced degradation studies confirm the stability-indicating nature of\nthe assay methods. Pharmacokinetic parameters were derived using non-compartmental analysis\nfrom the concentration-time profiles. All referenced documents are available in the dossier\nannex and traceable by section identifier. The synthetic route involves three well-\ncharacterized steps with defined starting materials and isolated intermediates. Stability\ntesting was conducted in climatic zones III and IV, reflecting the intended distribution\nmarkets. Where applicable, protocol deviations were assessed for impact on interpretation of\noutcomes. The analytical procedure was validated in accordance with ICH Q2(R1) guidelines,\ndemonstrating acceptable accuracy, precision, and specificity. Adverse events were coded using\nthe Medical Dictionary for Regulatory Activities (MedDRA) version 24.0. A randomized, double-\nblind, parallel-group study design was employed to minimize selection and observer bias. Method\nvalidation records and quality controls were reviewed for internal consistency. Critical\nmaterial attributes and control strategy elements were reviewed for consistency across the\n\nquality dossier. The risk management plan includes routine pharmacovigilance and proposed\neducational materials for healthcare professionals. The API package links specification limits\nto validated analytical methods and impurity-control decisions. Statistical significance was\nset at an alpha level of 0.05, and all tests were two-sided. Batch analysis, validation, and\nimpurity management records support the proposed API quality framework. Data were analyzed\nusing a mixed-effects model for repeated measures, adjusting for baseline covariates. Residual\nsolvents and elemental impurities are controlled well below ICH Q3C and Q3D permissible daily\nexposures. The container closure system consists of PVC/PVDC-Aluminum blisters, compliant with\npharmacopoeial standards. The manufacturing site operates under a fully implemented\nPharmaceutical Quality System (PQS) aligned with ICH Q10. Risk mitigation activities are\ndocumented with ownership, timelines, and follow-up checkpoints. The applicant confirms\nalignment with applicable technical guidance and regional submission standards. Pharmacokine",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2832
+      }
+    },
+    {
+      "section_id": "m3_fpp_manufacturing",
+      "module": "3",
+      "title": "FPP Manufacturing Process and Controls",
+      "text": "The finished pharmaceutical product (FPP) manufacturing process utilizes standard, scalable\nunit operations. A formal quality risk assessment (e.g., FMEA) was conducted to identify\ncritical process parameters (CPPs) that impact critical quality attributes (CQAs). Process\nperformance qualification (PPQ) reports for three consecutive commercial-scale batches verify\nthat the process is maintained in a state of control. In-process controls, intermediate hold-\ntime studies, and packaging validation data are presented to substantiate the robustness and\nreproducibility of the commercial manufacturing operations. The applicant confirms alignment\nwith applicable technical guidance and regional submission standards. Adverse events were coded\nusing the Medical Dictionary for Regulatory Activities (MedDRA) version 24.0. All referenced\ndocuments are available in the dossier annex and traceable by section identifier.\nPharmacokinetic parameters were derived using non-compartmental analysis from the\nconcentration-time profiles. Where applicable, protocol deviations were assessed for impact on\ninterpretation of outcomes. The manufacturing site operates under a fully implemented\nPharmaceutical Quality System (PQS) aligned with ICH Q10. A randomized, double-blind, parallel-\ngroup study design was employed to minimize selection and observer bias. Stability testing was\nconducted in climatic zones III and IV, reflecting the intended distribution markets. Method\nvalidation records and quality controls were reviewed for internal consistency. The risk\nmanagement plan includes routine pharmacovigilance and proposed educational materials for\nhealthcare professionals. Risk mitigation activities are documented with ownership, timelines,\nand follow-up checkpoints. The analytical procedure was",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1793
+      }
+    },
+    {
+      "section_id": "m3_stability",
+      "module": "3",
+      "title": "Stability and Shelf-Life Justification",
+      "text": "A comprehensive stability program has been executed to justify the proposed shelf-life and\nstorage conditions. Data from both accelerated (40\u00b0C/75% RH for 6 months) and long-term storage\nconditions (spanning up to 36 months) are presented for multiple primary stability batches.\nStatistical evaluation using linear regression and poolability tests confirms that degradation\ntrends remain well within the acceptable specification limits. Photostability and freeze-thaw\ncycling studies demonstrate that the product does not require specific handling precautions. A\npost-approval stability protocol commitment is included. The risk management plan includes\nroutine pharmacovigilance and proposed educational materials for healthcare professionals. The\nanalytical procedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating\nacceptable accuracy, precision, and specificity. Stability testing was conducted in climatic\nzones III and IV, reflecting the intended distribution markets. The applicant confirms\nalignment with applicable technical guidance and regional submission standards. Pharmacokinetic\n\nparameters were derived using non-compartmental analysis from the concentration-time profiles.\nData were analyzed using a mixed-effects model for repeated measures, adjusting for baseline\ncovariates. The container closure system consists of PVC/PVDC-Aluminum blisters, compliant with\npharmacopoeial standards. Where applicable, protocol deviations were assessed for impact on\ninterpretation of outcomes. Risk mitigation activities are documented with ownership,\ntimelines, and follow-up checkpoints. Method validation records and quality controls were\nreviewed for internal consistency. All referenced documents are available in the dossier annex\nand traceable by section iden",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1793
+      }
+    },
+    {
+      "section_id": "m4_nonclinical_summary",
+      "module": "4",
+      "title": "Nonclinical Study Summary",
+      "text": "The nonclinical testing program evaluated the primary pharmacodynamics, secondary\npharmacodynamics, safety pharmacology, and comprehensive toxicology profile of the compound.\nRepeat-dose toxicity studies in two mammalian species established clear no-observed-adverse-\neffect levels (NOAELs). Genotoxicity testing (Ames and in vivo micronucleus assays) yielded\nnegative results. Reproductive and developmental toxicity studies revealed no teratogenic\nsignals at clinically relevant exposures. The calculated safety margins support the proposed\nclinical dosing regimen without major safety concerns. Stability testing was conducted in\nclimatic zones III and IV, reflecting the intended distribution markets. The applicant confirms\nalignment with applicable technical guidance and regional submission standards. The risk\nmanagement plan includes routine pharmacovigilance and proposed educational materials for\nhealthcare professionals. The container closure system consists of PVC/PVDC-Aluminum blisters,\ncompliant with pharmacopoeial standards. Where applicable, protocol deviations were assessed\nfor impact on interpretation of outcomes. Adverse events were coded using the Medical\nDictionary for Regulatory Activities (MedDRA) version 24.0. Pharmacokinetic parameters were\nderived using non-compartmental analysis from the concentration-time profiles. Risk mitigation\nactivities are documented with ownership, timelines, and follow-up checkpoints. Method\nvalidation records and quality controls were reviewed for internal consistency. All referenced\ndocuments are available in the dossier annex and traceable by section identifier. The\nanalytical procedure was validated in accordance with ICH Q2(R1) guidelines, demonstrating\nacceptable accurac",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1746
+      }
+    },
+    {
+      "section_id": "m5_trial_listing",
+      "module": "5",
+      "title": "Tabular Listing of Clinical Studies",
+      "text": "The tabular listing of clinical studies provides a comprehensive inventory of all trials\nconducted in support of the proposed indication (bacterial skin infection). This includes Phase\nI pharmacokinetic/pharmacodynamic studies, Phase II dose-finding studies, and the pivotal Phase\nIII efficacy and safety trials. For each study, the table details the protocol identifier,\nstudy design, randomization ratio, number of enrolled subjects, study duration, and current\ncompletion status.  GLASS-aligned surveillance trend is not_applicable, and cross-resistance\nrisk relative to not_applicable is assessed as not_applicable. Risk mitigation activities are\ndocumented with ownership, timelines, and follow-up checkpoints. Method validation records and\nquality controls were reviewed for internal consistency. The container closure system consists\nof PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial standards. Where applicable,\nprotocol deviations were assessed for impact on interpretation of outcomes. The manufacturing\nsite operates under a fully implemented Pharmaceutical Quality System (PQS) aligned with ICH\nQ10. The applicant confirms alignment with applicable technical guidance and regional\nsubmission standards\nPivotal Clinical Trial Inventory:\n\nProtocol ID     | Phase    | Enrollment   | Status\n----------------+----------+--------------+-------------\nPROT-001        | III      | 628          | completed\nPROT-002        | III      | 271          | completed\nPROT-003        | III      | 693          | completed\nPROT-004        | III      | 651          | completed",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 1583
+      }
+    },
+    {
+      "section_id": "m5_pivotal_trial_reports",
+      "module": "5",
+      "title": "Pivotal Clinical Trial Reports",
+      "text": "Detailed clinical study reports (CSRs) for the pivotal efficacy trials are provided. These\nrandomized, double-blind, actively-controlled trials evaluated the primary and secondary\nendpoints in accordance with the pre-specified statistical analysis plan (SAP). The trials\nresulted in a formal outcome category of 'endpoint_met', demonstrating robust treatment effects\nin the intent-to-treat (ITT) and per-protocol populations. Subgroup analyses across age,\ngender, and baseline disease severity strata were consistent with the primary findings. Serious\nadverse events (SAEs) and discontinuations were systematically analyzed and adjudicated.\nGLASS-aligned surveillance trend is not_applicable, and cross-resistance risk relative to\nnot_applicable is assessed as not_applicable. Stability testing was conducted in climatic zones\nIII and IV, reflecting the intended distribution markets. The risk management plan includes\nroutine pharmacovigilance and proposed educational materials for healthcare professionals. The\ncontainer closure system consists of PVC/PVDC-Aluminum blisters, compliant with pharmacopoeial\nstandards. Data were analyzed using a mixed-effects model for repeated measures, adjusting for\nbaseline covariates. The analytical procedure was validated in accordance with ICH Q2(R1)\nguidelines, demonstrating acceptable accuracy, precision, and specificity. The trial reports\nconnect efficacy conclusions to the prespecified analysis framework and observed safety\nfindings. Risk mitigation activities are documented with ownership, timelines, and follow-up\ncheckpoints. Clinical study reports document protocol adherence, endpoint handling, and safety\ninterpretation in the target population. Adverse events were coded using the Medical Dictionary\nfor Regulatory Activities (MedDRA) version 24.0. Pharmacokinetic parameters were derived using\nnon-compartmental analysis from the concentration-time profiles. The applicant confirms\nalignment with applicable technical guidance and regional submission standards. Method\nvalidation records and quality controls were reviewed for internal consistency. The pivotal\nstudy narratives align endpoint definitions, analysis populations, and outcome interpretation.\nAll refe",
+      "critical": true,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2224
+      }
+    },
+    {
+      "section_id": "m5_bioequivalence",
+      "module": "5",
+      "title": "Biopharmaceutics and Bioequivalence Evidence",
+      "text": "Biopharmaceutics data substantiate the formulation development bridging between clinical trial\nmaterials and the proposed commercial product. In vivo bioequivalence studies demonstrated that\nthe 90% confidence intervals for the geometric mean ratios of Cmax and AUC parameters fell\nentirely within the standard acceptance criteria of 80.00% to 125.00%. Additionally, multi-\npoint comparative dissolution profiles across physiological pH ranges (pH 1.2, 4.5, and 6.8)\nconfirmed similarity (f2 > 50). The bioanalytical methods used for plasma quantification were\nfully validated. The applicant confirms alignment with applicable technical guidance and\nregional submission standards. Data were analyzed using a mixed-effects model for repeated\nmeasures, adjusting for baseline covariates. The risk management plan includes routine\npharmacovigilance and proposed educational materials for healthcare professionals. Stability\ntesting was conducted in climatic zones III and IV, reflecting the intended distribution\nmarkets. All referenced documents are available in the dossier annex and traceable by section\nidentifier. Method validation records and quality controls were reviewed for internal\n\nconsistency. The container closure system consists of PVC/PVDC-Aluminum blisters, compliant\nwith pharmacopoeial standards. Pharmacokinetic parameters were derived using non-compartmental\nanalysis from the concentration-time profiles. Risk mitigation activities are documented with\nownership, timelines, and follow-up checkpoints. The manufacturing site operates under a fully\nimplemented Pharmaceutical Quality System (PQS) aligned with ICH Q10. Wher\n\nREGULATORY DOSSIER SUBMISSION\n\nDossier ID: DOS-76059AB0F5\n\nCountry: Tanzania\n\nSubmission Date: 2025-09-22\n\nProduct: Digovia (digoxin) | ATC: C09AA02 | Strength: 5 mg\n\nApplicant: Prime Therapeutics | Manufacturer: PanRegional Pharma Holdings\n\nPolicy Label: standard_review | Risk Score: 0.5\n\nAMR Stewardship: AWaRe=watch | Unmet Need=not_applicable | GLASS Trend=not_applicable | Watch\n\nSimilarity=not_applicable\n\nSECTION CONTENT",
+      "critical": false,
+      "constraints": {
+        "min_chars": 50,
+        "max_chars": 12000
+      },
+      "labels": {
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "error_tags": []
+      },
+      "metrics": {
+        "char_count": 2071
+      }
+    }
+  ],
+  "labels": {
+    "holistic_policy_decision": "additional_information_required",
+    "risk_score": 0.11,
+    "compliant_submission": false,
+    "review_program": "marketing_authorization"
+  },
+  "review_program": "marketing_authorization",
+  "provenance": {
+    "synthetic": false,
+    "defect_modes": [],
+    "ingestion_mode": "raw_file_intake",
+    "source_filename": "incoming_watch_submission.pdf",
+    "extraction": {
+      "extraction_method": "pdf_text_layer",
+      "page_count": 7,
+      "image_count": 0,
+      "ocr_used": false,
+      "warnings": [],
+      "visual_evidence": []
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-04-20T10:40:38.255364",
+  "generated_report_id": "report-47f526c3dcd0",
+  "repository_total_items": 19,
+  "latest_repository_item": {
+    "report_id": "report-47f526c3dcd0",
+    "dossier_id": "DOS-9D9BC5402A",
+    "report_title": "Repository Demo Report",
+    "generated_at_utc": "2026-04-20T07:40:37.903464+00:00",
+    "product_name": "Medizyme",
+    "inn_name": "levofloxacin",
+    "product_group": "antimicrobial",
+    "application_type": "new_application",
+    "antimicrobial": true,
+    "aware_category": "watch",
+    "final_verdict": "not_acceptable",
+    "html_download_url": "/v1/reports/report-47f526c3dcd0/html",
+    "text_download_url": "/v1/reports/report-47f526c3dcd0/text",
+    "json_download_url": "/v1/reports/report-47f526c3dcd0/json"
+  },
+  "sop_preview": "Here is a practical guide based on the retrieved reviewer guidance:\n1. Reviewer How-To Tutorials - How To Ask For Guidance And SOP Help: Reviewer How-To Tutorials. How To Ask For Guidance And SOP Help.How To Ask For Guidance And SOP Help Reviewers can ask natural questions such as show me the SOPs for dossier review, what gui... [knowledge_wiki:reviewer-how-to-tutorials:2:c1]\n2. Structured Dossier Review SOP - Core Review Sequence: Structured Dossier Review SOP. Core Review Sequence.Core Review ",
+  "tutorial_preview": "Here is a practical guide based on the retrieved reviewer guidance:\n1. Reviewer How-To Tutorials - How To Generate And Reuse Reports: Reviewer How-To Tutorials. How To Generate And Reuse Reports.How To Generate And Reuse Reports After a completed review turn, generate the report from the review workspace. Reports should th... [knowledge_wiki:reviewer-how-to-tutorials:3:c1]\n2. Reviewer How-To Tutorials - How To Ask For Guidance And SOP Help: Reviewer How-To Tutorials. How To Ask For Guidance And "
+}

@@ -1,0 +1,163 @@
+{
+  "generated_at_utc": "2026-04-17T21:30:40.587517+00:00",
+  "dossier_id": "SIM-SCANNED-20260417_212921",
+  "report_title": "Robustness Final Review Report - SIM-SCANNED-20260417_212921",
+  "recipient_email": null,
+  "review_payload": {
+    "dossier_id": "SIM-SCANNED-20260417_212921",
+    "selected_model": {
+      "id": "gemma-e4b",
+      "label": "Gemma E4B",
+      "runtime_model_id": "gemma-e4b",
+      "description": "Primary balanced local model for dossier review."
+    },
+    "sub_queries": [
+      "Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations.",
+      "details about Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations.",
+      "requirements for Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations.",
+      "Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations. constrained to Submission",
+      "Review this dossier, identify missing or contradictory evidence, explain the key issues, and give a recommendation with citations. with related terms not provided, incomplete, omission, absent evidence"
+    ],
+    "intent": "dossier_review",
+    "response_contract": "dossier_review_v1",
+    "model_packet_version": "reason_and_route_v2",
+    "conversation_id": "conv-4cd5a36f5f",
+    "context_monitor": {
+      "context_window_tokens": 4096,
+      "used_tokens": 607,
+      "remaining_tokens": 3489,
+      "usage_ratio": 0.14819,
+      "threshold_tokens": 4014,
+      "compaction_threshold_ratio": 0.98,
+      "rolling_summary_tokens": 0,
+      "carryover_tokens": 0,
+      "active_message_tokens": 607,
+      "archived_messages_count": 0,
+      "compaction_count": 0,
+      "auto_compaction_required": false,
+      "last_compacted_at": null,
+      "conversation_engine": "langgraph"
+    },
+    "recommendation": "additional_information_required",
+    "confidence": 0.56701,
+    "route": "fallback",
+    "abstained": false,
+    "abstain_reason": null,
+    "rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096. A restricted authorization is triggered due to **high** chemical similarity to ciprofloxacin. Furthermore, local GLASS surveillance data indicates rising resistance trends, increasing the regulatory risk.\n\n### Detailed Findings\n\nI have prioritized the following **3** key issues based on their likely regulatory impact:\n\n1. **MAJOR**: GMP and manufacturing quality evidence - Manufacturing quality evidence shows non-compliance or expired certification. [SIM-SCANNED-20260417_212921:visual_page_1:c1]\n\n2. **MAJOR**: Clinical efficacy and benefit-risk support - Clinical support is insufficient because the pivotal endpoint failed or remains unclear. [SIM-SCANNED-20260417_212921:visual_page_1:c1]\n\n3. **MAJOR**: AMR stewardship alignment - Stewardship review applies and authorization controls are required. [SIM-SCANNED-20260417_212921:raw_section_1:c1]\n\n### Conclusion. In conclusion, **Additional Information Required** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents.",
+    "chain_of_thought": "{\n \"intent\": \"dossier_review\",\n \"resolved_terms\": [\n \"Submission\"\n ],\n \"retrieval_strategy\": \"Precision search across dossier_review_v1 domain\",\n \"bouncer_audit\": [\n {\n \"chunk_id\": \"SIM-SCANNED-20260417_212921:visual_page_1:c1\",\n \"section\": \"Visual Evidence Summary - Page 1\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.199\n },\n {\n \"chunk_id\": \"SIM-SCANNED-20260417_212921:raw_section_1:c1\",\n \"section\": \"Imported Section 1\",\n \"status\": \"KEEP\",\n \"reason\": \"Passed relevance audit.\",\n \"score\": 0.179\n },\n {\n \"chunk_id\": \"SIM-SCANNED-20260417_212921:visual_page_2:c1\",\n \"section\": \"Visual Evidence Summary - Page 2\",\n \"status\": \"DISCARD\",\n \"reason\": \"Insufficient keyword density (Found: evidence).\",\n \"score\": 0.167\n }\n ]\n}",
+    "policy_rule_hits": [
+      "gmp_expired",
+      "gmp_certificate_expired",
+      "policy_information_gap",
+      "restricted_authorization"
+    ],
+    "section_diagnostics": [
+      {
+        "section_id": "raw_section_1",
+        "title": "Imported Section 1",
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "critical": false
+      },
+      {
+        "section_id": "visual_page_1",
+        "title": "Visual Evidence Summary - Page 1",
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "critical": false
+      },
+      {
+        "section_id": "visual_page_2",
+        "title": "Visual Evidence Summary - Page 2",
+        "presence": "present",
+        "length_status": "length_ok",
+        "correctness": "correct",
+        "critical": false
+      }
+    ],
+    "citations": [
+      {
+        "citation_id": "SIM-SCANNED-20260417_212921:visual_page_1:c1",
+        "dossier_id": "SIM-SCANNED-20260417_212921",
+        "section_id": "visual_page_1",
+        "section_title": "Visual Evidence Summary - Page 1",
+        "score": 0.19884,
+        "snippet": "Visual evidence type: gmp certificate or site evidence. Visual evidence suggests an expired GMP certificate or expired quality evidence. OCR excerpt: Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expire..."
+      },
+      {
+        "citation_id": "SIM-SCANNED-20260417_212921:raw_section_1:c1",
+        "dossier_id": "SIM-SCANNED-20260417_212921",
+        "section_id": "raw_section_1",
+        "section_title": "Imported Section 1",
+        "score": 0.17858,
+        "snippet": "Scanned IncomingPDF Manufacturerand GMP Evidence GMPcertificate expired and critic Clinical Overview and Benefit-Risk Summary Primaryendpoint was not metand the reviewer needsreturn-for-completion action. AMRStewardship ..."
+      }
+    ],
+    "verifier": {
+      "grounded_claim_rate": 1.0,
+      "unsupported_critical_claim_rate": 0.0,
+      "passed": true
+    },
+    "memory": {
+      "process_rss_gb": 0.9464,
+      "system_total_ram_gb": 31.7568,
+      "system_available_ram_gb": 11.3563,
+      "system_used_ram_percent": 64.2,
+      "min_free_ram_gb": 0.5,
+      "standard_route_rss_limit_gb": 20.0,
+      "fallback_route_rss_limit_gb": 26.0,
+      "within_budget": true
+    },
+    "lineage_tags": {
+      "data_classification": "synthetic",
+      "data_version": "balanced_v1_2026-04-05",
+      "split_version": "balanced_v1_2026-04-05",
+      "model_policy": "local_multi_model",
+      "model_id": "gemma-e4b",
+      "prompt_version": "review_v1",
+      "route_profile": "fallback"
+    },
+    "amr_stewardship": {
+      "applies": true,
+      "normalized_ingredient": "levofloxacin",
+      "normalization_source": "rxnorm_snapshot:rxnorm_snapshot_2026-04-11",
+      "active_moiety": "levofloxacin",
+      "parent_compound": "levofloxacin",
+      "pubchem_cid": "149096",
+      "canonical_smiles": "CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23",
+      "inchikey": "GSDSWSVVBLHKDQ-UHFFFAOYSA-N",
+      "chembl_id": "CHEMBL1433",
+      "unichem_id": "UC149096",
+      "aware_category": "watch",
+      "amr_unmet_need": "moderate",
+      "targets_mdr_pathogen": false,
+      "glass_resistance_trend": "rising",
+      "similarity_to_existing_watch": "high",
+      "existing_watch_comparator": "ciprofloxacin",
+      "chemistry_source": "chemistry_snapshot:chemistry_similarity_snapshot_2026-04-11",
+      "authorization_control": "restricted_authorization",
+      "fast_track_candidate": false,
+      "restricted_authorization": true,
+      "watch_similarity_restriction": true,
+      "source_mode": "snapshot_backed",
+      "source_trace": [
+        "RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin.",
+        "WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch.",
+        "WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising.",
+        "Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin.",
+        "Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+      ],
+      "rationale": "Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096."
+    },
+    "metrics": {
+      "latency_seconds": 0.0731,
+      "input_tokens_estimate": 50,
+      "output_tokens_estimate": 834
+    },
+    "visualization_data": null
+  },
+  "email_subject": "Robustness Final Review Report - SIM-SCANNED-20260417_212921 - additional_information_required",
+  "email_body": "Robustness Final Review Report - SIM-SCANNED-20260417_212921\nDossier: SIM-SCANNED-20260417_212921\nProduct: Scanned Review Demo\nApplicant: Demo Applicant\nRecommendation: additional_information_required\nConfidence: 0.56701\nAuthorization: restricted_authorization\n\nExecutive Summary\n### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Additional Information Required**. The submission covers the product **Scanned Review Demo** (levofloxacin), submitted by **Demo Applicant**. The structured review found **3** unresolved requirement-level concerns.\n\n### Naming Policy Compliance\n\nNo INN infringement detected for 'Scanned Review Demo'.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. RxNorm snapshot rxnorm_snapshot_2026-04-11 normalized product identity to levofloxacin. WHO AWaRe snapshot who_aware_snapshot_2026-04-11 resolved levofloxacin as watch. WHO GLASS snapshot who_glass_snapshot_2026-04-11 resolved levofloxacin trend as rising. Chemistry snapshot chemistry_similarity_snapshot_2026-04-11 resolved Watch similarity as high against comparator ciprofloxacin. Chemistry snapshot provided active moiety levofloxacin, parent compound levofloxacin, PubChem CID 149096, ChEMBL CHEMBL1433, and UniChem UC149096. A restricted authorization is triggered due to **high** chemical similarity to ciprofloxacin. Furthermore, local GLASS surveillance data indicates rising resistance trends, increasing the regulatory risk.\n\n### Detailed Findings\n\nI have prioritized the following **3** key issues based on their likely regulatory impact:\n\n1. **MAJOR**: GMP and manufacturing quality evidence - Manufacturing quality evidence shows non-compliance or expired certification. [SIM-SCANNED-20260417_212921:visual_page_1:c1]\n\n2. **MAJOR**: Clinical efficacy and benefit-risk support - Clinical support is insufficient because the pivotal endpoint failed or remains unclear. [SIM-SCANNED-20260417_212921:visual_page_1:c1]\n\n3. **MAJOR**: AMR stewardship alignment - Stewardship review applies and authorization controls are required. [SIM-SCANNED-20260417_212921:raw_section_1:c1]\n\n### Conclusion. In conclusion, **Additional Information Required** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents.\n\nFindings Across Criteria\n- **Scanned Review Demo** (INN: levofloxacin) submitted by **Demo Applicant** was assessed for pre-market authorization.\n- The system recommendation is **Additional Information Required** through the **Fallback** review path.\n- Decision-driving policy signals: Gmp Expired, Gmp Certificate Expired, Policy Information Gap, Restricted Authorization.\n- No critical dossier criteria were flagged as missing, malformed, or incorrect in the current review pass.\n- Groundedness verification **passed** with a grounded claim rate of 1.0.\n- AMR stewardship outcome: **AWaRe WATCH**, GLASS trend **Rising**, authorization control **Restricted Authorization**.\n\nCriteria Diagnostics"
+}

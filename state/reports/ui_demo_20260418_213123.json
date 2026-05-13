@@ -1,0 +1,29 @@
+{
+  "review_page_has_history": true,
+  "review_page_has_reasoning_trace": true,
+  "review_page_has_context_usage": true,
+  "review_page_has_removed_old_gauges": true,
+  "dossier_id": "DOS-9D9BC5402A",
+  "review_intent": "amr_stewardship",
+  "review_route": "fallback",
+  "review_recommendation": "approval_denied",
+  "review_rationale": "### Final Answer\n\n### Executive Summary\n\nThe current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **Medizyme** (levofloxacin), submitted by **National Therapeutics**. The structured review found **4** unresolved requirement-level concerns.\n\n**AMR Stewardship Analysis:** The product is classified under the **WATCH** category. Watch-category antibiotic requires stewardship review for resistance risk. High similarity to existing Watch comparator ciprofloxacin plus rising GLASS resistance supports restricted authorization. The ingredient was normalized to **levofloxacin** for stewardship checks. Restricted authorization is triggered because the chemistry profile shows **high** similarity to **ciprofloxacin**. Local GLASS surveillance data indicates rising resistance, which increases the stewardship risk.\n\n### Conclusion. In conclusion, **Approval Denied** is the grounded regulatory path. The reviewer should specifically confirm the restricted authorization controls due to **high** chemical similarity to ciprofloxacin agents.",
+  "wiki_intent": "policy_guidance",
+  "wiki_route": "knowledge_wiki",
+  "wiki_rationale": "I found guidance that is relevant to this review question:\n- Active dossier context: **Medizyme** (levofloxacin).\n- WHO AWaRe and GLASS Policy Stack - AWaRe Source of Truth: WHO AWaRe and GLASS Policy Stack. AWaRe Source of Truth.AWaRe Source of Truth WHO AWaRe is the authoritative source for Access, Watch, and Reserve assignment. Production policy dec... [knowledge_wiki:who-aware-and-glass:1:c1]\n- WHO AWaRe and GLASS Policy Stack - Watch Escalation: WHO AWaRe and GLASS Policy Stack. Watch Escalation.Watch Escalation A Watch antibiotic that is highly similar to an existing Watch comparator and paired with rising GLASS resistanc... [knowledge_wiki:who-aware-and-glass:3:c1]\n- WHO AWaRe and GLASS Policy Stack - Reserve Stewardship: WHO AWaRe and GLASS Policy Stack. Reserve Stewardship.Reserve Stewardship Reserve antibiotics can be accelerated for review when they address critical MDR unmet need, but authoriza... [knowledge_wiki:who-aware-and-glass:2:c1]\nUse this guidance to frame the next dossier-specific assessment step and keep conclusions tied to cited evidence.",
+  "wiki_citations": [
+    "WHO AWaRe and GLASS Policy Stack - AWaRe Source of Truth",
+    "WHO AWaRe and GLASS Policy Stack - Watch Escalation",
+    "WHO AWaRe and GLASS Policy Stack - Reserve Stewardship",
+    "WHO AWaRe and GLASS Policy Stack - Title"
+  ],
+  "viz_intent": "visualization",
+  "viz_route": "fallback",
+  "viz_has_visualization": true,
+  "viz_title": "Approvals vs Rejections vs Requests for Info",
+  "viz_labels": [
+    "Approved",
+    "Rejected",
+    "Request Info"
+  ]
+}

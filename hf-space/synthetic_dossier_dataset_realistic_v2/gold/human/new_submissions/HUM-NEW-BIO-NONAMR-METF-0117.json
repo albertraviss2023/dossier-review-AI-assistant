@@ -1,0 +1,189 @@
+{
+  "dossier_id": "HUM-NEW-BIO-NONAMR-METF-0117",
+  "family_id": "FAM-0059",
+  "medicine_category": "human",
+  "submission_type": "new_submission",
+  "application_pathway": "biosimilar_or_biological",
+  "product_class": "non_antimicrobial",
+  "is_antimicrobial": false,
+  "amr_class": "not_applicable",
+  "therapeutic_area": "endocrine",
+  "product_name": "Metformin 500 mg tablet",
+  "inn": "metformin",
+  "active_ingredients": [
+    "metformin"
+  ],
+  "strength": "500 mg",
+  "dosage_form": "tablet",
+  "route_of_administration": "oral",
+  "manufacturer_country": "South Africa",
+  "applicant_country": "Tanzania",
+  "manufacturer_name": "AtlasBio Formulations Ltd",
+  "applicant_name": "Pioneer Pharma Distributors Ltd",
+  "manufacturing_site_address": "Dar es Salaam Logistics Zone, Lot 9",
+  "document_quality_profile": "scanned_tables_and_certificates",
+  "submission_status": "correct",
+  "expected_sop_outcome": "pass",
+  "reference_required": true,
+  "reference_source_type": "official_product_information_static",
+  "known_queries": [],
+  "target_species": [],
+  "food_producing_species": false,
+  "requires_withdrawal_period": false,
+  "withdrawal_period_meat": "",
+  "withdrawal_period_milk": "",
+  "gmp_expiry_date": "2028-01-01",
+  "submission_date": "2024-12-22",
+  "sections": [
+    {
+      "module": "Module 1",
+      "section_id": "m1_application_form",
+      "section_name": "Application Form",
+      "text": "Application Form for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cover_letter",
+      "section_name": "Cover Letter",
+      "text": "Cover Letter for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_authorization_letter",
+      "section_name": "Letter of Authorization",
+      "text": "Letter of Authorization for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_gmp_certificate",
+      "section_name": "GMP Certificate",
+      "text": "GMP Certificate for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa).\nGMP Certificate No: GMP-F-0117; Site Address: Dar es Salaam Logistics Zone, Lot 9; Expiry Date: 2028-01-01."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_cpp_certificates",
+      "section_name": "CPP / Certificate Documents",
+      "text": "CPP / Certificate Documents for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_product_label",
+      "section_name": "Product Label",
+      "text": "Product Label for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_pil",
+      "section_name": "Patient Information Leaflet",
+      "text": "Patient Information Leaflet for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa).\nPIL Section: What this medicine is and what it is used for.\nPIL Route and Form: Route=oral; Dosage form=tablet; Strength=500 mg.\nPIL Instructions: Follow the prescribed dose schedule. Do not exceed recommended dose.\nPIL Warnings: Reference-aligned warning: risk of lactic acidosis in predisposed patients. Reference-aligned warning: renal impairment requires clinical monitoring.\nPIL Storage: Store below 25C in original package.\nPIL Adverse Effects: Common effects include gastrointestinal upset and headache; serious effects require urgent review."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_smpc",
+      "section_name": "SmPC",
+      "text": "SmPC for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa).\nSmPC 4.1 Therapeutic indications: As approved in the application form.\nSmPC 4.2 Posology and method of administration: Dose by age/weight and clinical condition as approved.\nSmPC 4.3 Contraindications: severe renal impairment, metabolic acidosis including diabetic ketoacidosis.\nSmPC 4.4 Special warnings and precautions: lactic acidosis risk; renal function monitoring requirements.\nSmPC 4.8 Undesirable effects: nausea, diarrhoea, rash, dizziness; serious adverse reactions listed.\nSmPC 6.4 Special precautions for storage: store according to label and stability commitments."
+    },
+    {
+      "module": "Module 1",
+      "section_id": "m1_payment_proof",
+      "section_name": "Proof of Payment",
+      "text": "Proof of Payment for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_qos",
+      "section_name": "Quality Overall Summary",
+      "text": "Quality Overall Summary for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_clinical_overview",
+      "section_name": "Clinical Overview / Justification",
+      "text": "Clinical Overview / Justification for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 2",
+      "section_id": "m2_be_summary",
+      "section_name": "Bioequivalence Summary",
+      "text": "Bioequivalence Summary for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_substance",
+      "section_name": "Drug Substance Information",
+      "text": "Drug Substance Information for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_drug_product",
+      "section_name": "Drug Product Information",
+      "text": "Drug Product Information for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_manufacturing_process",
+      "section_name": "Manufacturing Process",
+      "text": "Manufacturing Process for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_batch_formula",
+      "section_name": "Batch Formula",
+      "text": "Batch Formula for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_specifications",
+      "section_name": "Specifications",
+      "text": "Specifications for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_analytical_procedures",
+      "section_name": "Analytical Procedures",
+      "text": "Analytical Procedures for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_method_validation",
+      "section_name": "Method Validation",
+      "text": "Method Validation for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_coa",
+      "section_name": "Certificate of Analysis",
+      "text": "Certificate of Analysis for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa).\nCoA Table: Batch Number=BCH-24011; Specification Limits=Conforms; Results=Within limits; Conclusion=Pass; Authorized Signature=Present."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_stability",
+      "section_name": "Stability Data",
+      "text": "Stability Data for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa).\nStability Table: 0, 3, 6, 9, 12 months; Conditions=30C/75%RH; Conclusion supports shelf life."
+    },
+    {
+      "module": "Module 3",
+      "section_id": "m3_container_closure",
+      "section_name": "Container Closure System",
+      "text": "Container Closure System for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 4",
+      "section_id": "m4_nonclinical",
+      "section_name": "Nonclinical Study Reports / Justification",
+      "text": "Nonclinical Study Reports / Justification for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa)."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_be_or_clinical",
+      "section_name": "Bioequivalence / Clinical Study Reports",
+      "text": "Bioequivalence / Clinical Study Reports for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa).\nClinical Summary: Endpoint met where applicable; Effect size and safety summary included."
+    },
+    {
+      "module": "Module 5",
+      "section_id": "m5_reference_comparator",
+      "section_name": "Reference / Comparator Product Evidence",
+      "text": "Reference / Comparator Product Evidence for dossier HUM-NEW-BIO-NONAMR-METF-0117.\nProduct: Metformin 500 mg tablet (metformin); strength 500 mg; route oral.\nApplicant: Pioneer Pharma Distributors Ltd (Tanzania); Manufacturer: AtlasBio Formulations Ltd (South Africa).\nReference Product Evidence: Comparator is Metformin 500 mg Film-coated Tablets; submitted PIL/SmPC statements are aligned to reference safety facts."
+    }
+  ]
+}

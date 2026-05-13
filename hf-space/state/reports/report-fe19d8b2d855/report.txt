@@ -1,0 +1,216 @@
+NATIONAL DRUG AGENCY
+Pre-Market Authorization Review Report
+
+UI Drill query_case DOS-76DAEB8367
+
+Submission Summary
+- Dossier Id: DOS-76DAEB8367
+- Submission Type: pre_market_authorization
+- Review Type: generic
+- Applicant: Global Therapeutics
+- Product Name: RifaSafe
+- Active Ingredient: losartan
+- Dosage Form: cream
+- Strength: 500 mg
+- Jurisdiction: Burkina Faso
+- Review Pathway: standard
+
+Administrative Review Outcome
+- Status: administratively_incomplete
+- No signature evidence was detected in the administrative material.
+- No proof of payment was detected in the administrative material.
+
+Dossier Structure Review Outcome
+- Status: mapped_with_violations
+- Manufacturer and GMP Evidence: presence=present, length=length_ok, correctness=incorrect
+- Product Information and Naming: presence=present, length=length_ok, correctness=incorrect
+
+Applicable Rules And Requirements
+- Administrative completeness checklist
+- Structural dossier completeness rules
+- WHO INN similarity rule
+- Section adequacy and evidence sufficiency rules
+- Generic review packaging and patient-information comparison against innovator reference when provided
+
+WHO INN Similarity Review
+- Proposed Name: RifaSafe
+- Who Inn: losartan
+- Similarity Index: 0.125
+- Threshold: 0.7
+- Threshold Result: passed
+- Similarity Type: orthographic
+- Interpretation: Product name 'RifaSafe' has 12.50% similarity to INN 'losartan'. Rule result: pass. Evaluated against naming guidance: External Source Provenance and Audit. Source Precedence.Source Precedence
+
+Dossier evidence remains primary for submission-specific claims. WHO AWaRe, GLASS, RxNorm, PubChem, ChEMBL, and UniChem are used to verify external policy, stewardship, naming, and chemistry facts. When external sources confl...
+- Flag Status: acceptable_naming
+- Rule Consequence: No blocking INN naming issue was identified.
+
+Section-By-Section Technical Review
+- Application Form and Administrative Information: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Manufacturer and GMP Evidence: status=partially_compliant, presence=present, length=length_ok, correctness=incorrect, critical=True
+- Product Information and Naming: status=partially_compliant, presence=present, length=length_ok, correctness=incorrect, critical=True
+- Quality Overall Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Clinical Overview and Benefit-Risk Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- API Quality and Control Strategy: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- FPP Manufacturing Process and Controls: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Stability and Shelf-Life Justification: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Nonclinical Study Summary: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+- Tabular Listing of Clinical Studies: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Pivotal Clinical Trial Reports: status=compliant, presence=present, length=length_ok, correctness=correct, critical=True
+- Biopharmaceutics and Bioequivalence Evidence: status=compliant, presence=present, length=length_ok, correctness=correct, critical=False
+
+Generic Review-Specific Assessment
+- Status: partial
+- Baseline available: Yes
+- Baseline reference: losartan reference
+- Note: Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.
+- Note: Generic baseline comparison used losartan reference through MCP patient-information tools with overall alignment not_aligned.
+- Note: Example comparison classified the section as non_compliant.
+
+AMR Stewardship Review
+- Applicable: False
+- AWaRe Category: not_applicable
+- Fast Track Status: False
+- Authorization Control: standard_authorization
+- Stewardship Rule Application: AMR stewardship lifecycle rules do not apply to this dossier.
+- AMR finding: MCP AWaRe reference resolved losartan as Unknown.
+- AMR finding: MCP antimicrobial similarity returned stewardship flag not_applicable.
+- AMR finding: RxNorm snapshot had no normalization entry for losartan; used dossier product identity as provided.
+- AMR finding: WHO AWaRe snapshot had no entry for losartan; fell back to dossier policy_signals.
+- AMR finding: WHO GLASS snapshot had no entry for losartan; fell back to dossier policy_signals.
+- AMR finding: Chemistry snapshot had no entry for losartan; fell back to dossier policy_signals for Watch similarity.
+
+Findings Register
+- [MAJOR] Administrative completeness review: No signature evidence was detected in the administrative material. | Rule: Missing signed application form = violation | Location: Application Form and Administrative Information | Recommendation: Confirm the signed application form is present and legible.
+- [MINOR] Administrative completeness review: No proof of payment was detected in the administrative material. | Rule: Missing proof of payment where required = violation | Location: Application Form and Administrative Information | Recommendation: Confirm the payment receipt or fee evidence is included where required.
+- [MAJOR] Structural dossier mapping: Manufacturer and GMP Evidence is missing, malformed, or incomplete. | Rule: Missing required section = violation | Location: Manufacturer and GMP Evidence | Recommendation: Restore the required section with readable and complete content.
+- [MAJOR] Structural dossier mapping: Product Information and Naming is missing, malformed, or incomplete. | Rule: Missing required section = violation | Location: Product Information and Naming | Recommendation: Restore the required section with readable and complete content.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for indications. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: indications | Recommendation: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for dosage. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: dosage | Recommendation: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.
+- [CRITICAL] Section-by-section technical review: Current patient information does not align closely with the innovator reference for contraindications. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: contraindications | Recommendation: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.
+- [CRITICAL] Section-by-section technical review: Current patient information does not align closely with the innovator reference for warnings. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: warnings | Recommendation: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for side_effects. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: side_effects | Recommendation: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.
+- [MAJOR] Section-by-section technical review: Current patient information does not align closely with the innovator reference for storage. | Rule: Generic review must compare dossier patient information against innovator reference materials when provided | Location: storage | Recommendation: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.
+- [MAJOR] Section-by-section technical review: The current section does not adequately cover completeness. | Rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Location: Product Information and Naming | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- [CRITICAL] Section-by-section technical review: The current section does not adequately cover safety wording. | Rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Location: Product Information and Naming | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- [CRITICAL] Section-by-section technical review: The current section does not adequately cover contraindications. | Rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Location: Product Information and Naming | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- [MAJOR] Section-by-section technical review: The current section does not adequately cover dosage clarity. | Rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Location: Product Information and Naming | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- [CRITICAL] Section-by-section technical review: Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support. | Rule: Required evidence missing = violation | Location: Manufacturer and GMP Evidence | Recommendation: Resolve GMP deficiencies and provide current manufacturing evidence.
+- [MAJOR] AMR stewardship review using AWaRe rules: AMR stewardship check identified missing warning or stewardship justification. | Rule: AMR warning and stewardship justification must be present for antimicrobial submissions. | Location: AMR Stewardship | Recommendation: Provide complete AMR warning statements and stewardship justification.
+
+Severity Classification
+- Critical: 5
+- Major: 10
+- Minor: 1
+- Advisory: 0
+
+Findings Summary Tables
+Administrative
+- Severity: major | Violated rule: Missing signed application form = violation | Evidence reference: 1 | Recommendation: Confirm the signed application form is present and legible.
+- Severity: minor | Violated rule: Missing proof of payment where required = violation | Evidence reference: 1 | Recommendation: Confirm the payment receipt or fee evidence is included where required.
+
+Naming / INN
+- Severity: major | Violated rule: Missing required section = violation | Evidence reference: 2 | Recommendation: Restore the required section with readable and complete content.
+- Severity: major | Violated rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Evidence reference: 2 | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- Severity: critical | Violated rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Evidence reference: 2 | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- Severity: critical | Violated rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Evidence reference: 2 | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+- Severity: major | Violated rule: Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | Evidence reference: 2 | Recommendation: Address the highlighted patient-information issue in line with compliant section examples.
+
+Quality
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference.
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference.
+- Severity: critical | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference.
+- Severity: critical | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference.
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference.
+- Severity: major | Violated rule: Generic review must compare dossier patient information against innovator reference materials when provided | Evidence reference: 2 | Recommendation: Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference.
+
+GMP
+- Severity: major | Violated rule: Missing required section = violation | Evidence reference: 3 | Recommendation: Restore the required section with readable and complete content.
+- Severity: critical | Violated rule: Required evidence missing = violation | Evidence reference: 3 | Recommendation: Resolve GMP deficiencies and provide current manufacturing evidence.
+
+Clinical / Evidence
+- Severity: none | Violated rule: No recorded violations in this area | Evidence reference: n/a | Recommendation: Continue standard review monitoring
+
+AMR Stewardship
+- Severity: major | Violated rule: AMR warning and stewardship justification must be present for antimicrobial submissions. | Evidence reference: 4 | Recommendation: Provide complete AMR warning statements and stewardship justification.
+
+Consistency Checks
+- Severity: none | Violated rule: No recorded violations in this area | Evidence reference: n/a | Recommendation: Continue standard review monitoring
+
+
+Cross-Section Consistency Review
+- Status: consistent
+- No cross-section consistency findings were detected.
+
+Review Completeness Confirmation
+- Status: review_complete
+- Mandatory workflow steps:
+  - Data Quality And Vision Extraction Check: Yes
+  - Submission Intake And Familiarization: Yes
+  - Administrative Completeness Review: Yes
+  - Structural Dossier Mapping: Yes
+  - Applicable Rules Identification: Yes
+  - Who Inn Similarity Review: Yes
+  - Section By Section Technical Review: Yes
+  - Amr Stewardship Review: Yes
+  - Findings Register: Yes
+  - Severity Classification: Yes
+  - Cross Section Consistency Review: Yes
+- Completeness notes:
+  - Generic workflow requires comparison of packaging and patient information against innovator reference material when provided.
+  - Generic baseline comparison used losartan reference through MCP patient-information tools with overall alignment not_aligned.
+  - Example comparison classified the section as non_compliant.
+
+Overall Judgment
+- Final verdict: not_acceptable
+- System recommendation: approval_denied
+- Authorization control: standard_authorization
+- Justification: The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations.
+- Escalation needed: No
+- Blocking issues:
+  - No signature evidence was detected in the administrative material.
+  - Manufacturer and GMP Evidence is missing, malformed, or incomplete.
+  - Product Information and Naming is missing, malformed, or incomplete.
+  - Current patient information does not align closely with the innovator reference for indications.
+  - Current patient information does not align closely with the innovator reference for dosage.
+  - Current patient information does not align closely with the innovator reference for contraindications.
+  - Current patient information does not align closely with the innovator reference for warnings.
+  - Current patient information does not align closely with the innovator reference for side_effects.
+  - Current patient information does not align closely with the innovator reference for storage.
+  - The current section does not adequately cover completeness.
+  - The current section does not adequately cover safety wording.
+  - The current section does not adequately cover contraindications.
+  - The current section does not adequately cover dosage clarity.
+  - Manufacturing quality evidence indicates GMP non-compliance, expiry, or missing support.
+  - AMR stewardship check identified missing warning or stewardship justification.
+
+Reviewer Narrative Summary
+### SOP Item In Review - Overall judgment ### Data Quality Check (Mandatory Step 1) - Status: completed - OCR/Vision used: no - Pages analyzed: 0 - Image-heavy pages: 0 ### Final Answer ### Executive Summary The current grounded regulatory recommendation is **Approval Denied**. The submission covers the product **RifaSafe** (losartan), submitted by **Global Therapeutics**. The structured review found **2** unresolved requirement-level concerns. ### Naming Policy Compliance Product name 'RifaSafe' has 12.50% similarity to INN 'losartan'. Rule result: pass. Evaluated against naming guidance: External Source Provenance and Audit. Source Precedence.Source Precedence Dossier evidence remains primary for submission-specific claims. WHO AWaRe, GLASS, RxNorm, PubChem, ChEMBL, and UniChem are used to verify external policy, stewardship, naming, and chemistry facts. When external sources confl.. ### Review Completeness Confirmation - Submission intake and familiarization: completed. - Administrative completeness review: completed. - Structural dossier mapping: completed. - Applicable rules identification: completed. - WHO INN similarity review: completed. - Section-by-section technical review: completed. - AMR stewardship review: not applicable and explicitly closed. The current workflow status is **review complete**. ### Detailed Findings - Evidence from **Application Form and Administrative Information** supports Application dossier for RifaSafe (losartan) submitted on 2025-11-08 to the Burkina Faso authority. Applicant: Global Therapeutics. Proposed dosage form: cream; strength: 500 mg; ATC: C08CA01. Admin.. - Evidence from **Manufacturer and GMP Evidence** supports Inspection findings for Global Access Generics identified critical GMP deficiencies. Inspection date: 2022-12-12. Status: non_compliant. CAPA package is incomplete and verification of closure is pe.. ### Conclusion **Approval Denied** is the grounded regulatory path. Reviewer verification should focus on addressing the identified gap regarding **Administrative declarations are present but naming conflict remediation documents are incomplete**. ### Findings Summary Tables #### Administrative | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | Missing signed application form = violation | [1] | Confirm the signed application form is present and legible. | | minor | Missing proof of payment where required = violation | [1] | Confirm the payment receipt or fee evidence is included where required. | #### Naming / INN | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | Missing required section = violation | [2] | Restore the required section with readable and complete content. | | major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [2] | Address the highlighted patient-information issue in line with compliant section examples. | | critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [2] | Address the highlighted patient-information issue in line with compliant section examples. | | critical | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [2] | Address the highlighted patient-information issue in line with compliant section examples. | | major | Section content must satisfy completeness, safety wording, contraindications, and dosage clarity checks | [2] | Address the highlighted patient-information issue in line with compliant section examples. | #### Quality | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. | | critical | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for contraindications more closely with the innovator reference or justify the difference. | | critical | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for warnings more closely with the innovator reference or justify the difference. | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for side_effects more closely with the innovator reference or justify the difference. | | major | Generic review must compare dossier patient information against innovator reference materials when provided | [2] | Align the generic leaflet wording for storage more closely with the innovator reference or justify the difference. | #### GMP | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | Missing required section = violation | [3] | Restore the required section with readable and complete content. | | critical | Required evidence missing = violation | [3] | Resolve GMP deficiencies and provide current manufacturing evidence. | #### Clinical / Evidence | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | none | No recorded violations in this area | n/a | Continue standard review monitoring | #### AMR Stewardship | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | major | AMR warning and stewardship justification must be present for antimicrobial submissions. | [4] | Provide complete AMR warning statements and stewardship justification. | #### Consistency Checks | Severity | Violated rule | Evidence reference | Recommendation | | --- | --- | --- | --- | | none | No recorded violations in this area | n/a | Continue standard review monitoring | ### Decision Support Snapshot | Signal | Value | | --- | --- | | Recommendation | approval_denied | | Confidence | 0.58 | | Submission Type | pre_market_authorization | ### SOP Progress (Pre-Market Authorization) | Step | Review Stage | Status | | --- | --- | --- | | 1 | Data quality and vision extraction check | Completed | | 2 | Submission intake and familiarization | Completed | | 3 | Administrative completeness review | Completed | | 4 | Structural dossier mapping | Completed | | 5 | Applicable rules and requirements identification | Completed | | 6 | WHO INN similarity review | Completed | | 7 | Section-by-section technical review | Completed | | 8 | Identification and recording of findings | Completed | | 9 | Severity classification | Completed | | 10 | Cross-section consistency review | Completed | | 11 | Review completeness confirmation | Completed | | 12 | Overall judgment | Completed | ![SOP flow illustration](/sop-flow.svg) ### External vs Submitted Evidence (Patient/Safety) | Dimension | Submitted Dossier | External Source | Gap | | --- | --- | --- | --- | | Indication | Not stated | 4 Special warnings and precautions for use Losartan Angioedema Patients with a history of angioedema (swelling of the face, lips, throat,... | Yes | | Dosing | Not stated | Dose titration with the individual components (losartan and hydrochlorothiazide) is recommended | Yes | | Contraindications | Not stated | Hypotension and Intr Last updated on emc: 17 Mar 2025 Quick Links Undesirable Effects Pharmacological Properties Interactions Posology Co... | Yes | | Warnings | Not stated | 4 Special warnings and precautions for use Losartan Angioedema Patients with a history of angioedema (swelling of the face, lips, throat,... | Yes | | Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Yes | | Storage | Not stated | Hypotension and Intr Last updated on emc: 17 Mar 2025 Quick Links Undesirable Effects Pharmacological Properties Interactions Posology Co... | Yes | Summary: submitted dossier provides **0/6** patient-safety dimensions; external baseline provides **6/6**. Inconsistencies detected in: **Indication, Dosing, Contraindications, Warnings, Adverse Reactions, Storage**. These require applicant clarification or correction. Verified external references: - (https://products.mhra.gov.uk/search/?query=losartan) - (https://products.mhra.gov.uk/?q=losartan) - (https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=BasicSearch.process&searchterm=losartan) - (https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=losartan) - (https://www.medicines.org.uk/emc/product/7783/smpc) Source selection policy: - Strategy: prefer_highest_priority_source_per_section - Priority order: products.mhra.gov.uk, medicines.org.uk, ema.europa.eu, accessdata.fda.gov, dailymed.nlm.nih.gov, gov.uk, who.int #### Clinical Evidence Reconciliation (Submitted vs External) | Dimension | Submitted | External | Reconciliation | | --- | --- | --- | --- | | Indication | Not stated | 4 Special warnings and precautions for use Losartan Angioedema Patients with a history of angioedema (swelling of the face, lips, throat,... | Mismatch - query applicant | | Contraindications | Not stated | Hypotension and Intr Last updated on emc: 17 Mar 2025 Quick Links Undesirable Effects Pharmacological Properties Interactions Posology Co... | Mismatch - query applicant | | Warnings | Not stated | 4 Special warnings and precautions for use Losartan Angioedema Patients with a history of angioedema (swelling of the face, lips, throat,... | Mismatch - query applicant | | Adverse Reactions | Not stated | ive substance: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 Yellow Card Yellow Card Report a side effect with... | Mismatch - query applicant | #### External Source Provenance and Confidence | Section | Source Domain | Source Priority | Confidence | | --- | --- | --- | --- | | side_effects | products.mhra.gov.uk | 100 | 0.75 | | dosage | www.medicines.org.uk | 90 | 0.84 | | warnings | www.medicines.org.uk | 90 | 0.84 | | indications | www.medicines.org.uk | 90 | 0.84 | | contraindications | www.medicines.org.uk | 90 | 0.84 | | storage | www.medicines.org.uk | 90 | 0.84 | ### SOP Stage Detail | Step | Stage | Output Detail | | --- | --- | --- | | 1 | Data quality and vision extraction check | completed | | 2 | Administrative completeness review | administratively_incomplete | | 3 | Structural dossier mapping | mapped_with_violations | | 5 | WHO INN similarity review | passed | | 6 | Section-by-section technical review | 12 sections reviewed | | 7 | AMR stewardship review | standard_authorization | | 10 | Cross-section consistency review | consistent | | 11 | Review completeness confirmation | review_complete | | 12 | Overall judgment | not_acceptable | ### AMR Policy Decision Support | Signal | Value | | --- | --- | | Applicable | False | | AWaRe Category | not_applicable | | Authorization Control | standard_authorization | | Policy Decision | standard_authorization | | Fast Track Candidate | False | | Restriction Trigger | False | Required controls: - Standard stewardship monitoring AMR evidence trace: - MCP AWaRe reference resolved losartan as Unknown. - MCP antimicrobial similarity returned stewardship flag not_applicable. - RxNorm snapshot had no normalization entry for losartan; used dossier product identity as provided. - WHO AWaRe snapshot had no entry for losartan; fell back to dossier policy_signals. - WHO GLASS snapshot had no entry for losartan; fell back to dossier policy_signals. - Chemistry snapshot had no entry for losartan; fell back to dossier policy_signals for Watch similarity. ### AMR Stewardship Check - Active ingredient: losartan - AMR class: not_applicable - Product type: generic - Indication: not_stated - Required warning: missing - Stewardship justification: missing - Decision: query_applicant ### Safety & Trust: Verdict Trace - Why this verdict: The final verdict reflects the full structured review, including naming safety, technical adequacy, stewardship policy, and recorded rule violations. - Final verdict: not_acceptable - Confidence score: 0.58 - Uncertainty flags: overall confidence below 0.70; 15 critical/major findings require sponsor action; external source mode is unknown (not fully live) | Rule | Tool | Evidence | Decision | | --- | --- | --- | --- | | Missing signed application form = violation | retrieval + rule evaluation | DOS-76DAEB8367:m1_application_admin | Confirm the signed application form is present and legible. | | Missing required section = violation | OCR extraction | DOS-76DAEB8367:m1_manufacturer_gmp | Restore the required section with readable and complete content. | | Missing required section = violation | retrieval + rule evaluation | DOS-76DAEB8367:m1_product_information | Restore the required section with readable and complete content. | | Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | DOS-76DAEB8367:m1_product_information | Align the generic leaflet wording for indications more closely with the innovator reference or justify the difference. | | Generic review must compare dossier patient information against innovator reference materials when provided | retrieval + rule evaluation | DOS-76DAEB8367:m1_product_information | Align the generic leaflet wording for dosage more closely with the innovator reference or justify the difference. | ### Global Resilience Mode External connectivity is constrained (`unknown`). Decision support continued on local inference with provenance warnings, and external refresh should be re-run when connectivity improves.
+
+Evidence Citations
+- DOS-76DAEB8367:m1_application_admin:fallback | Application Form and Administrative Information | Application dossier for RifaSafe (losartan) submitted on 2025-11-08 to the Burkina Faso authority. Applicant: Global Therapeutics. Proposed dosage form: cream; strength: 500 mg; ATC: C08CA01. Administrative declarations ...
+- DOS-76DAEB8367:m1_manufacturer_gmp:fallback | Manufacturer and GMP Evidence | Inspection findings for Global Access Generics identified critical GMP deficiencies. Inspection date: 2022-12-12. Status: non_compliant. CAPA package is incomplete and verification of closure is pending. All referenced d...
+- DOS-76DAEB8367:m1_product_information:fallback | Product Information and Naming | Proposed product name is RifaSafe, with INN listed as losartan. Name similarity review indicates potential confusion with protected and existing nomenclature classes. The submission did not include a sufficient different...
+- DOS-76DAEB8367:m2_quality_overall_summary:fallback | Quality Overall Summary | Quality Overall Summary for API losartan describes specification strategy, control points, impurity profile, batch analysis, and release criteria. Manufacturing process validation confirms consistency and quality attribu...
+
+Verification Summary
+- Grounded claim rate: 1.0
+- Verifier passed: True
+
+Decision Log
+- Rule: SOP-0001 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_application_admin | Result: query | Action: pending
+- Rule: SOP-0002 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_application_admin | Result: query | Action: pending
+- Rule: SOP-0003 | Tool: OCR extraction | Evidence: DOS-76DAEB8367:m1_manufacturer_gmp | Result: query | Action: pending
+- Rule: SOP-0004 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0005 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0006 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0007 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0008 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0009 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0010 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0011 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0012 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0013 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0014 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:m1_product_information | Result: query | Action: pending
+- Rule: SOP-0015 | Tool: OCR extraction | Evidence: DOS-76DAEB8367:m1_manufacturer_gmp | Result: query | Action: pending
+- Rule: SOP-0016 | Tool: retrieval + rule evaluation | Evidence: DOS-76DAEB8367:unknown | Result: query | Action: pending

@@ -1,0 +1,80 @@
+{
+  "timestamp_utc": "2026-05-11T17:41:06.856230+00:00",
+  "steps": [
+    {
+      "step": "manager_login",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "ensure_user_alutakome",
+      "status_code": 409,
+      "ok": true
+    },
+    {
+      "step": "ensure_user_namayanja",
+      "status_code": 409,
+      "ok": true
+    },
+    {
+      "step": "manager_assignments",
+      "results": [
+        {
+          "dossier_id": "DOS-9D9BC5402A",
+          "assignee": "alutakome",
+          "status_code": 400,
+          "ok": false
+        },
+        {
+          "dossier_id": "DOS-76DAEB8367",
+          "assignee": "alutakome",
+          "status_code": 400,
+          "ok": false
+        },
+        {
+          "dossier_id": "DOS-07D1D5033F",
+          "assignee": "namayanja",
+          "status_code": 400,
+          "ok": false
+        }
+      ],
+      "ok": false
+    },
+    {
+      "step": "reviewer_login_alutakome",
+      "status_code": 200,
+      "ok": true
+    },
+    {
+      "step": "reviewer_scope_check",
+      "can_see_clean": false,
+      "can_see_query": false,
+      "blocked_unassigned": true,
+      "blocked_status": 403,
+      "ok": false
+    }
+  ],
+  "selected_cases": {
+    "clean_dossier_id": "DOS-9D9BC5402A",
+    "query_dossier_id": "DOS-76DAEB8367"
+  },
+  "review_runs": [
+    {
+      "case": "clean_case",
+      "dossier_id": "DOS-9D9BC5402A",
+      "review_status": 403,
+      "review_error": {
+        "detail": "You do not have access to the clinical trial review program."
+      }
+    },
+    {
+      "case": "query_case",
+      "dossier_id": "DOS-76DAEB8367",
+      "review_status": 403,
+      "review_error": {
+        "detail": "You do not have access to the clinical trial review program."
+      }
+    }
+  ],
+  "passed": false
+}
