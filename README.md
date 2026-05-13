@@ -1,16 +1,18 @@
 # dossier-review-AI-assistant
 
-Policy-focused MLOps project for regulatory dossier review with local-first privacy controls.
+Policy-focused regulatory review workstation for pre-market authorization dossiers, with local-first privacy controls and a real MCP tool layer.
 
 ## Structure
 - `docs/` requirements, architecture diagrams, implementation plan, acceptance criteria
+- `regulatory_mcp_server/` real MCP server, tool contracts, fixtures, and MCP-specific tests
 - `synthetic_data/` synthetic dossier generator, gold-set adjudication, split tooling
 - `state/` handoff context for cross-laptop continuation
 
 ## Model Policy
-- Switchable local profiles: Gemma E4B, Gemma E2B, and Qwen 3.5.
+- Switchable local profiles: Gemma E4B, Gemma E2B, and Gemma 26B.
 - Optional local vLLM path is supported through environment configuration; Hugging Face tokens must be injected through environment variables and never committed.
 - Development host can be Asus (current), while release memory envelopes target a 32 GB Zenbook profile.
+- Public demo profile is supported via Gemini API without changing feature logic (`DOSSIER_MODEL_PROVIDER=gemini`).
 
 ## API Contracts
 - Current API surface is documented in `docs/api-contracts.md`.
@@ -25,6 +27,11 @@ python dossier-review-AI-assistant/synthetic_data/create_splits.py --help
 Run the local API:
 ```powershell
 python -m uvicorn dossier_review_ai_assistant.api:app --reload --app-dir src
+```
+
+Run the real Regulatory MCP server:
+```powershell
+python -m regulatory_mcp_server.server
 ```
 
 Optional vLLM runtime setup:
@@ -51,6 +58,38 @@ python scripts/check_eval_gate.py state/eval/final_report.json --acceptance docs
 python scripts/security_gate.py
 python scripts/retention_compliance.py --retention-days 30 --output state/audit/retention_report.json
 ```
+
+## Public Demo Profile
+
+This repository supports one codebase with runtime switching:
+
+- local profile: `DOSSIER_MODEL_PROVIDER=local`
+- public demo profile: `DOSSIER_MODEL_PROVIDER=gemini`
+
+Use `.env.demo.example` as a template for the public profile.
+Deployment details are in `docs/public-demo-deployment.md`.
+
+Run MCP validation:
+```powershell
+python -m pytest regulatory_mcp_server/tests -q
+python scripts/test_mcp_end_to_end.py
+python scripts/run_mcp_realistic_simulations.py
+```
+
+## Regulatory MCP
+
+The application now uses a real MCP tool layer for structured review workflows. The server exposes independently callable JSON tools for:
+
+- vector search
+- reranking
+- correct/incorrect section comparison
+- WHO INN similarity
+- AWaRe / Reserve stewardship review
+- innovator patient-information lookup and generic comparison
+- evidence packet construction
+- findings-table generation
+
+See [regulatory_mcp_server/README.md](/D:/projects/ai%20dossier%20assistant/regulatory_mcp_server/README.md) and [regulatory-mcp-server.md](/D:/projects/ai%20dossier%20assistant/docs/regulatory-mcp-server.md).
 
 ## Current Dataset Snapshot
 - Raw (active): `synthetic_data/data/raw/balanced_v1_2026-04-05` (1475 dossiers)

@@ -11,6 +11,7 @@ from uuid import uuid4
 from contextvars import ContextVar
 
 from fastapi import Body, FastAPI, File, Form, HTTPException, Request, Response, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -26,7 +27,7 @@ from .data import (
     load_uploaded_dossiers,
 )
 from .governance import build_lineage_tags
-from .inference import LocalModelClient
+from .inference import build_model_client
 from .intake import build_dossier_from_raw_text, parse_uploaded_document
 from .knowledge_graph import KnowledgeGraph
 from .orchestrator import ReasoningEngine, build_section_diagnostics, run_review_orchestration
@@ -1978,6 +1979,15 @@ app = FastAPI(
     summary="Local-first policy copilot foundation service",
 )
 
+if settings.cors_origins:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=list(settings.cors_origins),
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
 PUBLIC_PATHS = {
     "/login",
     "/favicon.svg",
@@ -2595,7 +2605,7 @@ async def intake_dossier_file(
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
-    model_client = LocalModelClient(model_id=settings.model_id)
+    model_client = build_model_client(model_id=settings.model_id)
     dossier = build_dossier_from_raw_text(
         dossier_id=dossier_id,
         country=country,

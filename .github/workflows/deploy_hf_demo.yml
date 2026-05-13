@@ -1,0 +1,59 @@
+name: Deploy Public Demo to Hugging Face Space
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ secrets.HF_TOKEN != '' && vars.HF_SPACE_REPO != '' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Clone Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE_REPO: ${{ vars.HF_SPACE_REPO }}
+        run: |
+          git clone "https://oauth2:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE_REPO}" hf-space
+
+      - name: Sync demo files
+        run: |
+          rsync -av --delete \
+            --exclude ".git/" \
+            --exclude ".github/" \
+            --exclude ".venv/" \
+            --exclude "__pycache__/" \
+            --exclude ".pytest_cache/" \
+            --exclude "tests/" \
+            --exclude "scripts/" \
+            --exclude "docs/" \
+            --exclude "evaluation/" \
+            --exclude "regulatory_mcp_server/" \
+            --exclude "synthetic_data/" \
+            --exclude "synthetic_dossier_dataset_realism_smoke/" \
+            --exclude "synthetic_dossier_dataset_realistic_v1/" \
+            --exclude "state/audit/" \
+            --exclude "state/reports/" \
+            --exclude "state/runtime/" \
+            --exclude "state/uploads/" \
+            ./ hf-space/
+
+      - name: Commit and push
+        working-directory: hf-space
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to deploy."
+            exit 0
+          fi
+          git commit -m "sync demo from main"
+          git push
