@@ -10,13 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ secrets.HF_TOKEN != '' && vars.HF_SPACE_REPO != '' }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Configure git
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "github-actions[bot]"
+
+      - name: Clone source repository without actions/checkout
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          GH_SHA: ${{ github.sha }}
+        run: |
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPO}.git" src-repo
+          cd src-repo
+          git checkout "${GH_SHA}"
 
       - name: Clone Hugging Face Space
         env:
@@ -27,6 +34,7 @@ jobs:
 
       - name: Sync demo files
         run: |
+          cd src-repo
           rsync -av --delete \
             --exclude ".git/" \
             --exclude ".github/" \
@@ -45,7 +53,7 @@ jobs:
             --exclude "state/reports/" \
             --exclude "state/runtime/" \
             --exclude "state/uploads/" \
-            ./ hf-space/
+            ./ ../hf-space/
 
       - name: Commit and push
         working-directory: hf-space
