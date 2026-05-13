@@ -1,0 +1,1904 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pre-Market Screening Workstation</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/claude.css">
+  <style>
+    :root[data-theme="stone"] { --accent-color: #f59e0b; --bg-main: #f8f6f1; --bg-sidebar: #f4efe5; --border-color: #e6dcc8; --text-primary: #2f2417; --text-secondary: #7a6a54; }
+    :root[data-theme="ocean"] { --accent-color: #0ea5e9; --bg-main: #f3f9ff; --bg-sidebar: #eaf4ff; --border-color: #cfe3f7; --text-primary: #0f2942; --text-secondary: #4e6f91; }
+    :root[data-theme="forest"] { --accent-color: #10b981; --bg-main: #f3faf6; --bg-sidebar: #e9f5ec; --border-color: #cde7d5; --text-primary: #113225; --text-secondary: #4f7365; }
+    :root[data-theme="rose"] { --accent-color: #e11d48; --bg-main: #fff5f8; --bg-sidebar: #ffedf2; --border-color: #f3cfdb; --text-primary: #441424; --text-secondary: #8e4d63; }
+    .ring-fill {
+      fill: none;
+      stroke: var(--accent-color);
+      stroke-width: 3;
+      stroke-dasharray: 100 100;
+      stroke-dashoffset: 100;
+      transition: stroke-dashoffset 0.5s ease;
+    }
+    .ring-bg {
+      fill: none;
+      stroke: rgba(0,0,0,0.05);
+      stroke-width: 3;
+    }
+    .nav-item.active {
+      background: linear-gradient(90deg, color-mix(in srgb, var(--accent-color) 16%, white), rgba(255,255,255,0.7));
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    .surface-card {
+      border: 1px solid var(--border-color);
+      background: linear-gradient(160deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.82) 100%);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+      backdrop-filter: blur(7px);
+    }
+    .dash-card {
+      border-radius: 0.8rem;
+      border: 1px solid;
+      padding: 0.8rem;
+      background: rgba(255,255,255,0.84);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+      transition: transform 0.16s ease, box-shadow 0.16s ease;
+    }
+    .dash-card:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(15,23,42,0.09); }
+    .dash-assigned { border-color: #bfdbfe; background: linear-gradient(180deg, #f0f7ff 0%, #e8f2ff 100%); }
+    .dash-progress { border-color: #fde68a; background: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%); }
+    .dash-finished { border-color: #bbf7d0; background: linear-gradient(180deg, #f0fdf4 0%, #dcfce7 100%); }
+    .dash-reports { border-color: #c7d2fe; background: linear-gradient(180deg, #eef2ff 0%, #e0e7ff 100%); }
+    .dash-approved { border-color: #86efac; background: linear-gradient(180deg, #ecfdf5 0%, #d1fae5 100%); }
+    .dash-queried { border-color: #fecaca; background: linear-gradient(180deg, #fff1f2 0%, #ffe4e6 100%); }
+    .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+      font-weight: 700;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+    .markdown-body p { margin-bottom: 1rem; }
+    .markdown-body ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+    .markdown-body table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 1rem 0;
+      font-size: 0.86rem;
+      line-height: 1.45;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .markdown-body th, .markdown-body td {
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.58rem 0.62rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .markdown-body th {
+      background: linear-gradient(180deg, #fafaf9 0%, #f5f5f4 100%);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .markdown-body tr:nth-child(even) td { background-color: #fcfcfb; }
+    .markdown-body tr:hover td { background-color: #fff7ed; }
+    .markdown-body tr:last-child td { border-bottom: none; }
+    .table-shell {
+      margin: 10px 0 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: auto;
+      max-width: 100%;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+      background: #fff;
+    }
+    .table-shell > table {
+      min-width: 640px;
+      margin: 0;
+      border: none;
+      border-radius: 0;
+    }
+    .provenance-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .provenance-table th,
+    .provenance-table td {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border-color);
+      text-align: left;
+      vertical-align: top;
+    }
+    .provenance-table th {
+      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .provenance-table tbody tr:nth-child(even) td { background: #fcfcfd; }
+    .provenance-table tbody tr:hover td { background: #fef3c7; }
+    .provenance-table tbody tr:last-child td { border-bottom: none; }
+    .citation-ref {
+      position: relative;
+      cursor: help;
+      color: #1d4ed8;
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 2px;
+    }
+    .citation-ref:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+    .citation-ref .citation-tooltip {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.12s ease;
+      position: absolute;
+      left: 0;
+      bottom: 120%;
+      z-index: 40;
+      min-width: 320px;
+      max-width: 520px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #d6d3d1;
+      background: #fff;
+      color: #1f2937;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      font-size: 11px;
+      line-height: 1.45;
+      font-weight: 500;
+      white-space: normal;
+    }
+    .citation-ref:hover .citation-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+    .viz-card {
+      margin-top: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.06);
+    }
+    .viz-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px;
+      border-bottom: 1px solid var(--border-color);
+      background: #fafaf9;
+    }
+    .viz-toolbar input, .viz-toolbar select {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 6px 8px;
+      font-size: 12px;
+      background: white;
+    }
+    .viz-editor {
+      display: flex;
+      gap: 8px;
+      padding: 10px;
+      border-top: 1px solid var(--border-color);
+      background: #fcfcfb;
+    }
+    .viz-editor input {
+      flex: 1;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 7px 9px;
+      font-size: 12px;
+    }
+    .viz-editor button {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      background: white;
+    }
+    .telemetry-card {
+      border: 1px solid #dbeafe;
+      background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .demo-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid #cbd5e1;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      background: #fff;
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <div class="flex items-center gap-2">
+        <img src="/brand-mark.svg" class="w-8 h-8" alt="Logo">
+        <span class="font-bold text-lg tracking-tight">Pre-Market Screening Workstation</span>
+      </div>
+      <button id="toggleSidebar" class="action-btn lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="sidebar-content">
+      <div class="mb-6 px-2">
+        <button id="newReviewBtn" class="w-full flex items-center justify-between p-3 rounded-xl border border-dashed border-[var(--border-color)] hover:bg-white/50 transition-colors group">
+          <span class="text-sm font-semibold">New Review</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+        </button>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-[10px] font-bold text-[var(--text-secondary)] uppercase tracking-wider px-4 mb-2">Workspace</h3>
+        <div id="openDashboardBtn" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span class="text-sm font-medium">Dashboard</span>
+        </div>
+        <div id="openIntakeBtn" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+          <span class="text-sm font-medium">Intake Dossier</span>
+        </div>
+        <div id="openReportsBtn" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span class="text-sm font-medium">Reports</span>
+        </div>
+        <div id="openAdminBtn" class="nav-item hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v5c0 5-3.8 8.7-7 9-3.2-.3-7-4-7-9V7l7-4z"/><path d="M9.5 12.5l1.5 1.5 3.5-3.5"/></svg>
+          <span class="text-sm font-medium">Admin Panel</span>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <div class="flex items-center justify-between px-4 mb-2">
+          <h3 class="text-[10px] font-bold text-[var(--text-secondary)] uppercase tracking-wider">Previous Chats</h3>
+          <span id="historyCount" class="text-[10px] font-bold opacity-30">0</span>
+        </div>
+        <div id="conversationList" class="px-2 space-y-1">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-footer p-4 border-t border-[var(--border-color)]">
+      <div id="userProfile" class="flex items-center gap-3 p-2 rounded-lg hover:bg-white/50 cursor-pointer transition-colors">
+        <div id="userInitial" class="w-8 h-8 rounded-full bg-[var(--accent-color)] flex items-center justify-center text-white font-bold text-xs">U</div>
+        <div class="min-w-0">
+          <div id="userBadge" class="text-xs font-bold truncate">Loading...</div>
+          <div class="text-[10px] text-[var(--text-secondary)]" id="logoutBtn">Sign Out</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-container">
+    <header class="top-nav">
+      <div class="flex-1 flex items-center gap-4">
+        <button id="mobileMenuBtn" class="action-btn lg:hidden" title="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        </button>
+        <button id="chatToggleBtn" class="action-btn" title="Show all chats">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg>
+        </button>
+        <div class="brand-lockup hidden xl:flex">
+          <span class="brand-agency">National Food and Drug Regulation Agency</span>
+          <span class="brand-workstation">Pre-Market Screening Workstation</span>
+        </div>
+        <button id="toggleSopPanelBtn" class="action-btn top-pill-btn" title="Toggle automated review panel">
+          Automated Review
+        </button>
+        <div id="activeDossierBadge" class="top-pill-btn flex items-center gap-2 cursor-pointer transition-colors">
+          <span id="dossierName" class="text-xs font-bold">No Active Dossier</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-9"/></svg>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button id="generateReportBtn" class="action-btn top-primary-btn" title="Generate report (HTML/PDF)">Generate Report</button>
+        <div class="flex items-center gap-2">
+          <div class="relative w-8 h-8">
+            <svg class="w-8 h-8 -rotate-90" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.915"></circle>
+              <circle id="contextRing" class="ring-fill" cx="18" cy="18" r="15.915"></circle>
+            </svg>
+            <div id="contextLabel" class="absolute inset-0 flex items-center justify-center text-[8px] font-bold">0%</div>
+          </div>
+          <div class="hidden md:flex flex-col text-right">
+            <div id="contextMeta" class="text-[10px] font-bold opacity-60">0 tokens</div>
+            <div id="contextNotice" class="text-[10px] font-semibold opacity-75 text-amber-700 hidden">Auto compaction enabled at 98%</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="dashboardView" class="chat-viewport hidden">
+      <div class="chat-container p-4">
+        <div class="rounded-xl surface-card p-4">
+          <div class="text-xs font-bold uppercase tracking-wider text-[var(--text-secondary)] mb-3">My Dashboard</div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-xs">
+            <div class="dash-card dash-assigned"><div class="opacity-70">Assigned</div><div id="dashAssigned" class="font-bold text-2xl">0</div></div>
+            <div class="dash-card dash-progress"><div class="opacity-70">In Progress</div><div id="dashInProgress" class="font-bold text-2xl">0</div></div>
+            <div class="dash-card dash-finished"><div class="opacity-70">Finished</div><div id="dashFinished" class="font-bold text-2xl">0</div></div>
+            <div class="dash-card dash-reports"><div class="opacity-70">Reports</div><div id="dashReports" class="font-bold text-2xl">0</div></div>
+            <div class="dash-card dash-approved"><div class="opacity-70">Approved</div><div id="dashApproved" class="font-bold text-2xl">0</div></div>
+            <div class="dash-card dash-queried"><div class="opacity-70">Queried</div><div id="dashQueried" class="font-bold text-2xl">0</div></div>
+          </div>
+          <div class="mt-3 text-sm text-slate-600">Average ToT: <span id="dashAvgTot" class="font-bold">0.00h</span></div>
+        </div>
+        <div class="rounded-xl surface-card p-4 mt-4">
+          <div class="text-xs font-bold uppercase tracking-wider text-[var(--text-secondary)] mb-3">Benchmark Score Panel</div>
+          <div id="benchmarkMeta" class="text-[11px] text-slate-500 mb-2">Loading latest benchmark...</div>
+          <div id="benchmarkList" class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs"></div>
+        </div>
+        <div class="rounded-xl surface-card p-4 mt-4">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--text-secondary)]">Hard Telemetry Panel</div>
+            <span id="liveExternalMode" class="demo-pill">External mode: loading...</span>
+          </div>
+          <div id="telemetryMeta" class="text-[11px] text-slate-500 mb-2">Loading telemetry...</div>
+          <div id="telemetryList" class="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs"></div>
+          <div id="offlineNarrative" class="text-[11px] text-amber-700 mt-3 hidden"></div>
+        </div>
+        <div class="rounded-xl surface-card p-4 mt-4">
+          <div class="text-xs font-bold uppercase tracking-wider text-[var(--text-secondary)] mb-3">Case Studies</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs">
+            <button id="casePassBtn" class="action-btn">Run Pass Case</button>
+            <button id="caseAmrQueryBtn" class="action-btn">Run AMR Query Case</button>
+            <button id="caseVetQueryBtn" class="action-btn">Run Vet Withdrawal Case</button>
+          </div>
+          <div class="text-[11px] text-slate-500 mt-2">Each case runs full SOP review and verdict trace.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reportsView" class="chat-viewport hidden">
+      <div class="chat-container p-4">
+        <div class="rounded-xl surface-card p-4">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--text-secondary)]">Generated Reports</div>
+            <button id="refreshReportsBtn" class="action-btn">Refresh</button>
+          </div>
+          <div id="reportsList" class="mt-3 space-y-2 text-sm"></div>
+        </div>
+      </div>
+    </section>
+
+    <div id="chatViewport" class="chat-viewport">
+      <div id="messages" class="chat-container">
+        <div id="sopStepperReveal" class="hidden mb-3">
+          <button id="sopRevealBtn" class="action-btn text-xs">Show Automated Review (following SOP)</button>
+        </div>
+        <div id="sopStepperPanel" class="rounded-xl surface-card p-4 mb-4">
+          <div class="flex items-center justify-between mb-2">
+            <div class="text-xs font-bold uppercase tracking-wider text-[var(--text-secondary)]">Automated Review (following SOP)</div>
+            <button id="sopStepperCloseBtn" class="action-btn text-[10px]" title="Hide SOP panel">Hide</button>
+          </div>
+          <div id="sopStepperMeta" class="text-[11px] text-slate-500 mb-2">Select a dossier to load workflow steps.</div>
+          <div class="flex items-center gap-2 mb-2">
+            <button id="sopPrevBtn" class="action-btn text-xs">◀ Previous</button>
+            <button id="sopRunBtn" class="action-btn text-xs">Run Current Step</button>
+            <button id="sopNextBtn" class="action-btn text-xs">Next ▶</button>
+            <span id="sopCurrentLabel" class="text-[11px] text-slate-500 ml-2"></span>
+          </div>
+          <div id="sopStepperList" class="space-y-2 text-xs"></div>
+        </div>
+        <!-- Messages -->
+      </div>
+    </div>
+
+    <div class="composer-container">
+      <div id="composerShell" class="composer-box">
+        <textarea id="chatInput" class="composer-input" placeholder="Ask about the dossier or request a review..." rows="1"></textarea>
+        <div class="composer-actions">
+          <div class="flex items-center gap-2">
+            <button id="uploadBtn" class="action-btn" title="Intake Evidence">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.51a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+            </button>
+            <button id="voiceBtn" class="action-btn" title="Record audio">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1.75a3.75 3.75 0 0 0-3.75 3.75v5.5a3.75 3.75 0 1 0 7.5 0v-5.5A3.75 3.75 0 0 0 12 1.75z"/><path d="M19.5 10.75a7.5 7.5 0 0 1-15 0"/><path d="M12 19.75v3.5"/><path d="M8.5 22.75h7"/></svg>
+            </button>
+            <select id="reviewTypeSelect" class="bg-transparent text-[10px] font-bold uppercase tracking-widest outline-none opacity-50 hover:opacity-100 transition-opacity">
+              <option value="generic">Generic Path</option>
+              <option value="innovator">Innovation Path</option>
+            </select>
+          </div>
+          <div class="flex items-center gap-2">
+            <select id="modelSelect" class="bg-transparent text-xs font-bold outline-none cursor-pointer border border-[var(--border-color)] rounded-md px-2 py-1">
+              <!-- Populated by JS -->
+            </select>
+            <button id="sendMessageBtn" class="send-btn" title="Send message">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="composer-meta flex items-center justify-between text-[10px] text-[var(--text-secondary)] mt-3">
+          <span id="composerContextMeta">Context window 16,384 tokens · compaction at 98%</span>
+          <span id="composerModelMeta">Model: loading...</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <input type="file" id="hiddenUploadInput" class="hidden" accept=".pdf,.json,.txt,.zip" />
+
+  <!-- Modals (Dossier, Reports, Intake) - Standard structure -->
+  <div id="dossierModal" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[200] flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]">
+      <div class="p-6 border-b flex items-center justify-between">
+        <h2 class="text-lg font-bold">Select Active Dossier</h2>
+        <button id="closeDossierModal" class="action-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="dossierList" class="p-4 grid grid-cols-1 md:grid-cols-2 gap-3 overflow-y-auto"></div>
+    </div>
+  </div>
+  <div id="settingsModal" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[210] flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden">
+      <div class="p-6 border-b flex items-center justify-between">
+        <h2 class="text-lg font-bold">Context & Theme Settings</h2>
+        <button id="closeSettingsModal" class="action-btn">Close</button>
+      </div>
+      <div class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold mb-2">Context Window Tokens</label>
+          <select id="contextWindowSelect" class="w-full border border-[var(--border-color)] rounded-lg px-3 py-2 text-sm">
+            <option value="4096">4,096</option>
+            <option value="8192">8,192</option>
+            <option value="16384">16,384</option>
+            <option value="32768">32,768</option>
+          </select>
+          <div class="text-[11px] text-[var(--text-secondary)] mt-1">Auto-compaction remains at 98% usage.</div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold mb-2">Theme</label>
+          <select id="themeSelect" class="w-full border border-[var(--border-color)] rounded-lg px-3 py-2 text-sm">
+            <option value="stone">Stone</option>
+            <option value="ocean">Ocean</option>
+            <option value="forest">Forest</option>
+            <option value="rose">Rose</option>
+          </select>
+        </div>
+        <button id="saveSettingsBtn" class="w-full border border-[var(--border-color)] rounded-lg px-3 py-2 text-sm font-bold">Save Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const state = {
+      activeDossierId: localStorage.getItem('pmada-active-dossier') || "",
+      activeConversationId: localStorage.getItem('pmada-active-conversation') || "",
+      isBusy: false,
+      currentUser: null,
+      preferredContextWindow: parseInt(localStorage.getItem('pmada-context-window') || "16384", 10),
+      selectedTheme: localStorage.getItem('pmada-theme') || "stone",
+      lastReviewResponse: null,
+      dossiersById: {},
+      chartCounter: 0,
+      chartRegistry: {},
+      lowConnectivityMode: false,
+      workflowState: null,
+      sopPanelVisible: localStorage.getItem('pmada-sop-panel-visible') !== '0',
+    };
+
+    const chatInput = document.getElementById('chatInput');
+    const messages = document.getElementById('messages');
+    const chatViewport = document.getElementById('chatViewport');
+    const fileInput = document.getElementById('hiddenUploadInput') || document.getElementById('fileInput');
+    const sidebar = document.getElementById('sidebar');
+    const contextMeta = document.getElementById('contextMeta');
+    const contextNotice = document.getElementById('contextNotice');
+    const composerContextMeta = document.getElementById('composerContextMeta');
+    const composerModelMeta = document.getElementById('composerModelMeta');
+    const reviewTypeSelect = document.getElementById('reviewTypeSelect');
+    const modelSelect = document.getElementById('modelSelect');
+    const audioBtn = document.getElementById('voiceBtn') || document.getElementById('audioBtn');
+    const chatToggleBtn = document.getElementById('chatToggleBtn');
+    const toggleSopPanelBtn = document.getElementById('toggleSopPanelBtn');
+    const contextWindowSelect = document.getElementById('contextWindowSelect');
+    const themeSelect = document.getElementById('themeSelect');
+    const dashboardView = document.getElementById('dashboardView');
+    const reportsView = document.getElementById('reportsView');
+    const composerShell = document.getElementById('composerShell');
+    const openDashboardBtn = document.getElementById('openDashboardBtn');
+    const openReportsBtn = document.getElementById('openReportsBtn');
+    const openIntakeBtn = document.getElementById('openIntakeBtn');
+    const openAdminBtn = document.getElementById('openAdminBtn');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const refreshReportsBtn = document.getElementById('refreshReportsBtn');
+    const casePassBtn = document.getElementById('casePassBtn');
+    const caseAmrQueryBtn = document.getElementById('caseAmrQueryBtn');
+    const caseVetQueryBtn = document.getElementById('caseVetQueryBtn');
+    const sopStepperMeta = document.getElementById('sopStepperMeta');
+    const sopStepperList = document.getElementById('sopStepperList');
+    const sopPrevBtn = document.getElementById('sopPrevBtn');
+    const sopRunBtn = document.getElementById('sopRunBtn');
+    const sopNextBtn = document.getElementById('sopNextBtn');
+    const sopCurrentLabel = document.getElementById('sopCurrentLabel');
+    const sopStepperPanel = document.getElementById('sopStepperPanel');
+    const sopStepperCloseBtn = document.getElementById('sopStepperCloseBtn');
+    const sopStepperReveal = document.getElementById('sopStepperReveal');
+    const sopRevealBtn = document.getElementById('sopRevealBtn');
+
+    function setSopPanelVisibility(visible) {
+      state.sopPanelVisible = !!visible;
+      if (sopStepperPanel) sopStepperPanel.classList.toggle('hidden', !state.sopPanelVisible);
+      if (sopStepperReveal) sopStepperReveal.classList.toggle('hidden', state.sopPanelVisible);
+      if (toggleSopPanelBtn) {
+        toggleSopPanelBtn.classList.toggle('bg-white', state.sopPanelVisible);
+        toggleSopPanelBtn.classList.toggle('border-[var(--border-color)]', state.sopPanelVisible);
+      }
+      localStorage.setItem('pmada-sop-panel-visible', state.sopPanelVisible ? '1' : '0');
+    }
+
+    function getCurrentWorkflowStep() {
+      const wf = state.workflowState;
+      if (!wf || !Array.isArray(wf.steps) || !wf.steps.length) return null;
+      const current = wf.steps.find((s) => s.status === 'current');
+      if (current) return current;
+      const firstPending = wf.steps.find((s) => s.status !== 'completed');
+      if (firstPending) return firstPending;
+      return wf.steps[wf.steps.length - 1] || null;
+    }
+
+    function updateChartsStageBadges() {
+      const step = getCurrentWorkflowStep();
+      const stageLabel = step ? `Step ${step.ordinal}: ${step.step_label}` : 'Step unavailable';
+      document.querySelectorAll('[data-viz-stage-badge]').forEach((node) => {
+        node.textContent = `Dossier: ${state.activeDossierId || 'none'} | ${stageLabel}`;
+      });
+      Object.keys(state.chartRegistry).forEach((chartId) => {
+        const model = state.chartRegistry[chartId] || {};
+        model.stepId = step?.step_id || null;
+        model.stepLabel = step?.step_label || null;
+        model.stepOrdinal = step?.ordinal || null;
+        model.dossierId = state.activeDossierId || null;
+        model.conversationId = state.activeConversationId || null;
+        state.chartRegistry[chartId] = model;
+      });
+    }
+
+    function resetContextUi() {
+      document.getElementById('contextLabel').innerText = '0%';
+      document.getElementById('contextRing').style.strokeDashoffset = 100;
+      contextMeta.innerText = `0 / ${state.preferredContextWindow.toLocaleString()} tokens`;
+      composerContextMeta.innerText = `Context window ${state.preferredContextWindow.toLocaleString()} tokens · compaction at 98%`;
+      contextNotice.classList.add('hidden');
+    }
+
+    function resetReviewSessionUi() {
+      clearRenderedMessages();
+      state.lastReviewResponse = null;
+      state.workflowState = null;
+      resetContextUi();
+      if (sopStepperMeta) sopStepperMeta.innerText = 'Preparing new review workflow...';
+      if (sopStepperList) sopStepperList.innerHTML = '';
+      if (sopCurrentLabel) sopCurrentLabel.innerText = '';
+    }
+
+    function clearRenderedMessages() {
+      messages.querySelectorAll('.message, [data-chat-transient="1"]').forEach((node) => node.remove());
+    }
+
+    async function createFreshConversationForActiveDossier() {
+      const payload = {
+        dossier_id: state.activeDossierId || null,
+        context_window_tokens: state.preferredContextWindow,
+        model_id: modelSelect?.value || null,
+      };
+      const conv = await apiCall('/v1/conversations', 'POST', payload);
+      if (conv?.conversation?.conversation_id) {
+        state.activeConversationId = conv.conversation.conversation_id;
+        localStorage.setItem('pmada-active-conversation', state.activeConversationId);
+      }
+      if (conv?.conversation?.context_monitor) updateContextRing(conv.conversation.context_monitor);
+    }
+
+    async function apiCall(url, method = 'GET', body = null) {
+      const options = { method, headers: { 'Content-Type': 'application/json' } };
+      if (body) options.body = JSON.stringify(body);
+      const res = await fetch(url, options);
+      const data = await res.json();
+      if (!res.ok) throw new Error(data?.detail?.message || data?.message || 'Request failed');
+      return data;
+    }
+
+    function renderMessage(role, text, citations = [], visualizationData = null, reviewPayload = null) {
+      const msgDiv = document.createElement('div');
+      msgDiv.className = `message ${role === 'user' ? 'user-message' : 'assistant-message'}`;
+      
+      let displayContent = text;
+      let thinkingHtml = "";
+      const reasoningMatch = text.match(/<reasoning>([\s\S]*?)<\/reasoning>/);
+      
+      if (reasoningMatch) {
+        displayContent = text.replace(/<reasoning>[\s\S]*?<\/reasoning>/, '').trim();
+        try {
+          const trace = JSON.parse(reasoningMatch[1]);
+          const thinkingDetails = renderThinkingDetails(trace);
+          thinkingHtml = `
+            <div class="thinking-block">
+              <div class="thinking-header" onclick="this.parentElement.classList.toggle('expanded')">
+                <span>Show Thinking</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <div class="thinking-content">
+                ${thinkingDetails}
+              </div>
+            </div>
+          `;
+        } catch(e) {
+          thinkingHtml = `
+            <div class="thinking-block">
+              <div class="thinking-header" onclick="this.parentElement.classList.toggle('expanded')">
+                <span>Show Thinking</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <div class="thinking-content">
+                <pre class="text-[10px]">${reasoningMatch[1]}</pre>
+              </div>
+            </div>
+          `;
+        }
+      }
+
+      if (role === 'assistant') {
+        displayContent = normalizeAssistantContent(displayContent);
+      }
+      let renderedContent = marked.parse(displayContent);
+      if (role === 'assistant' && citations?.length) {
+        renderedContent = applyNumberedCitations(renderedContent, citations);
+      }
+      renderedContent = withExternalLinkTargets(renderedContent);
+
+      msgDiv.innerHTML = `
+        <div class="message-header">
+          <div class="w-6 h-6 rounded-md ${role === 'user' ? 'bg-slate-200' : 'bg-[var(--accent-color)]'} flex items-center justify-center text-[10px] text-white font-bold">
+            ${role === 'user' ? 'U' : 'AI'}
+          </div>
+          <span>${role === 'user' ? 'You' : 'Assistant'}</span>
+        </div>
+        <div class="message-content markdown-body">
+          ${role === 'assistant' ? thinkingHtml : ''}
+          ${renderedContent}
+        </div>
+      `;
+      enhanceTables(msgDiv);
+
+      if (
+        role === 'assistant'
+        && visualizationData
+        && (
+          Array.isArray(visualizationData.datasets)
+          || Array.isArray(visualizationData.labels)
+          || typeof visualizationData.type === 'string'
+        )
+      ) {
+        const vizBlock = buildVisualizationBlock(visualizationData);
+        msgDiv.querySelector('.message-content').appendChild(vizBlock);
+      }
+      if (role === 'assistant' && reviewPayload?.workflow_summary) {
+        const provenancePanel = buildProvenancePanel(reviewPayload.workflow_summary);
+        if (provenancePanel) {
+          msgDiv.querySelector('.message-content').appendChild(provenancePanel);
+        }
+        const shouldRenderRecap = shouldRenderFinalRecap(reviewPayload);
+        if (shouldRenderRecap) {
+          const recapPanel = buildFinalRecapPanel(reviewPayload.workflow_summary);
+          if (recapPanel) msgDiv.querySelector('.message-content').appendChild(recapPanel);
+          const issueCards = buildIssueCardsPanel(reviewPayload.workflow_summary);
+          if (issueCards) msgDiv.querySelector('.message-content').appendChild(issueCards);
+        }
+      }
+      
+      messages.appendChild(msgDiv);
+      messages.scrollTop = messages.scrollHeight;
+      // Assistant speech output intentionally disabled for professional review workflow UX.
+    }
+
+    function normalizeAssistantContent(text) {
+      let content = String(text || "");
+      const looksLikeWrappedMarkdown = /<p>\s*(#{1,6}\s+|\|\s*[-A-Za-z0-9_ ]+\s*\|)/i.test(content);
+      if (looksLikeWrappedMarkdown) {
+        content = content
+          .replace(/<br\s*\/?>/gi, "\n")
+          .replace(/<\/p>\s*<p>/gi, "\n\n")
+          .replace(/<\/?p[^>]*>/gi, "");
+      }
+      return content
+        .replace(/&nbsp;/g, " ")
+        .replace(/\r\n/g, "\n");
+    }
+
+    function shouldRenderFinalRecap(reviewPayload) {
+      const q = String(reviewPayload?._user_question || '').toLowerCase();
+      return [
+        'final verdict',
+        'overall judgment',
+        'overall judgement',
+        'final recommendation',
+        'final decision',
+        'authorize or reject',
+      ].some((term) => q.includes(term));
+    }
+
+    function buildFinalRecapPanel(workflowSummary) {
+      const submission = workflowSummary?.submission_summary || {};
+      const overall = workflowSummary?.overall_judgment || {};
+      const findings = Array.isArray(workflowSummary?.findings_register) ? workflowSummary.findings_register : [];
+      if (!Object.keys(overall).length) return null;
+
+      const critical = findings.filter((f) => ['critical', 'major'].includes(String(f.severity || '').toLowerCase()));
+      const criticalBullets = critical.slice(0, 5).map((f) => `<li>${escapeHtml(String(f.issue || 'Unspecified issue'))}</li>`).join('');
+      const riskScore = Math.min(100, critical.length * 25 + Math.max(0, findings.length - critical.length) * 5);
+      const riskLevel = riskScore >= 60 ? 'High' : (riskScore >= 30 ? 'Medium' : 'Low');
+      const riskTone = riskLevel === 'High' ? 'text-rose-700 bg-rose-50 border-rose-200' : (riskLevel === 'Medium' ? 'text-amber-700 bg-amber-50 border-amber-200' : 'text-emerald-700 bg-emerald-50 border-emerald-200');
+      const recommendation = String(overall.system_recommendation || 'query_applicant').replaceAll('_', ' ');
+      const status = String(overall.final_verdict || 'unknown').replaceAll('_', ' ');
+
+      const card = document.createElement('div');
+      card.className = 'viz-card mt-3';
+      card.innerHTML = `
+        <div class="viz-toolbar"><strong style="font-size:12px;">Regulatory Risk Triage Recap</strong></div>
+        <div style="padding:12px;">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            <div><strong>Dossier:</strong> ${escapeHtml(String(submission.product_name || 'Unknown product'))}</div>
+            <div><strong>Submission type:</strong> ${escapeHtml(String(submission.review_type || 'unknown'))}</div>
+            <div><strong>AMR class:</strong> ${escapeHtml(String(workflowSummary?.amr_stewardship_review?.aware_category || 'not_applicable'))}</div>
+            <div><strong>Overall status:</strong> ${escapeHtml(status.toUpperCase())}</div>
+          </div>
+          <div class="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${riskTone}">
+            <strong>Risk level:</strong> ${riskLevel} <span style="opacity:.7;">(${riskScore}/100)</span>
+          </div>
+          <div class="mt-3 text-xs"><strong>Recommended action:</strong> ${escapeHtml(recommendation)}</div>
+          <div class="mt-3 text-xs">
+            <strong>Critical findings:</strong>
+            <ul style="margin-top:6px; padding-left:18px; list-style:disc;">
+              ${criticalBullets || '<li>No critical or major findings recorded.</li>'}
+            </ul>
+          </div>
+        </div>
+      `;
+      return card;
+    }
+
+    function buildIssueCardsPanel(workflowSummary) {
+      const findings = Array.isArray(workflowSummary?.findings_register) ? workflowSummary.findings_register : [];
+      if (!findings.length) return null;
+      const submission = workflowSummary?.submission_summary || {};
+      const overall = workflowSummary?.overall_judgment || {};
+      const cardsWrap = document.createElement('div');
+      cardsWrap.className = 'mt-3';
+      const title = document.createElement('div');
+      title.className = 'text-xs font-bold uppercase tracking-wide text-slate-500 mb-2';
+      title.innerText = 'Evidence-Grounded Issue Cards';
+      cardsWrap.appendChild(title);
+
+      findings.forEach((item) => {
+        const issue = String(item.issue || 'Unspecified issue');
+        const rule = String(item.violated_rule || 'Not specified');
+        const evidenceRef = String(item.evidence_reference || '').trim();
+        const location = String(item.location || 'Unknown location');
+        const tool = /scan|certificate|gmp|coa|stability|image/i.test(`${issue} ${location}`) ? 'OCR extraction' : 'retrieval + rule evaluation';
+        const submittedInfo = String(item.issue || 'Not captured');
+        const expectedInfo = String(item.violated_rule || 'Required information not satisfied');
+        const decision = String(item.recommendation || 'Query applicant');
+        const severity = String(item.severity || 'major').toLowerCase();
+        const confidence = Number(state.lastReviewResponse?.confidence || 0);
+        const uncertaintyFlags = [];
+        if (confidence < 0.7) uncertaintyFlags.push('low-confidence');
+        if (['critical', 'major'].includes(severity)) uncertaintyFlags.push(`${severity}-risk`);
+        if (/fallback|snapshot|signals_fallback/i.test(String(state.lastReviewResponse?.amr_stewardship?.source_mode || ''))) uncertaintyFlags.push('external-not-live');
+
+        const card = document.createElement('div');
+        card.className = 'viz-card mb-2';
+        card.innerHTML = `
+          <div style="padding:10px 12px; font-size:12px;">
+            <div><strong>Issue:</strong> ${escapeHtml(issue)}</div>
+            <div><strong>Product:</strong> ${escapeHtml(String(submission.product_name || 'Unknown product'))}</div>
+            <div><strong>SOP rule:</strong> ${escapeHtml(rule)}</div>
+            <div><strong>Audit chain:</strong> ${escapeHtml(rule)} -> ${escapeHtml(tool)} -> ${escapeHtml(location)} ${evidenceRef ? `[${escapeHtml(evidenceRef)}]` : ''} -> ${escapeHtml(decision)}</div>
+            <div><strong>Expected information:</strong> ${escapeHtml(expectedInfo)}</div>
+            <div><strong>Submitted information:</strong> ${escapeHtml(submittedInfo)}</div>
+            <div><strong>Decision:</strong> ${escapeHtml(decision)}</div>
+            <div><strong>Confidence:</strong> ${confidence.toFixed(2)} | <strong>Uncertainty:</strong> ${escapeHtml(uncertaintyFlags.join(', ') || 'none')}</div>
+            <div><strong>Verdict rationale:</strong> ${escapeHtml(String(overall.justification || 'Structured SOP + evidence-grounded rule checks applied.'))}</div>
+          </div>
+        `;
+        const content = card.querySelector('div');
+        content.innerHTML = applyNumberedCitations(content.innerHTML, state.lastReviewResponse?.citations || []);
+        cardsWrap.appendChild(card);
+      });
+      return cardsWrap;
+    }
+
+    function enhanceTables(container) {
+      const markdownTables = container.querySelectorAll('.message-content.markdown-body table');
+      markdownTables.forEach((table) => {
+        if (!table.closest('.table-shell')) {
+          const shell = document.createElement('div');
+          shell.className = 'table-shell';
+          table.parentNode.insertBefore(shell, table);
+          shell.appendChild(table);
+        }
+      });
+    }
+
+    function buildProvenancePanel(workflowSummary) {
+      const reviewSpecific = workflowSummary?.technical_section_review?.review_type_specific || {};
+      const rows = Array.isArray(reviewSpecific.section_provenance) ? reviewSpecific.section_provenance : [];
+      if (!rows.length) return null;
+
+      const card = document.createElement('div');
+      card.className = 'viz-card mt-3';
+      const tableId = `provenance-table-${++state.chartCounter}`;
+      const sourcePolicy = reviewSpecific.source_selection_policy || {};
+      card.innerHTML = `
+        <div class="viz-toolbar">
+          <strong style="font-size:12px;">External Evidence Provenance</strong>
+          <select data-role="sort">
+            <option value="confidence_desc">Sort by confidence (high to low)</option>
+            <option value="confidence_asc">Sort by confidence (low to high)</option>
+            <option value="priority_desc">Sort by source priority (high to low)</option>
+            <option value="section_asc">Sort by section name (A-Z)</option>
+          </select>
+        </div>
+        <div style="padding:8px 10px; font-size:11px; color:#475569;">
+          Strategy: ${escapeHtml(sourcePolicy.strategy || 'prefer_highest_priority_source_per_section')}
+        </div>
+        <div style="overflow:auto; max-height:320px; padding:0 10px 10px;">
+          <table class="provenance-table" id="${tableId}">
+            <thead>
+              <tr>
+                <th>Section</th>
+                <th>Source Domain</th>
+                <th>Priority</th>
+                <th>Confidence</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      `;
+
+      const tbody = card.querySelector('tbody');
+      const sortSelect = card.querySelector('[data-role="sort"]');
+      const dataset = rows.map((row) => ({
+        section_name: String(row.section_name || 'unknown'),
+        source_domain: String(row.source_domain || 'unknown'),
+        source_priority: Number(row.source_priority || 0),
+        confidence_score: Number(row.confidence_score || 0),
+      }));
+
+      function renderRows(items) {
+        tbody.innerHTML = items.map((row) => `
+          <tr>
+            <td>${escapeHtml(row.section_name)}</td>
+            <td>${escapeHtml(row.source_domain)}</td>
+            <td>${row.source_priority}</td>
+            <td>${row.confidence_score.toFixed(3)}</td>
+          </tr>
+        `).join('');
+      }
+
+      function sortRows(mode) {
+        const items = [...dataset];
+        if (mode === 'confidence_asc') items.sort((a, b) => a.confidence_score - b.confidence_score);
+        if (mode === 'confidence_desc') items.sort((a, b) => b.confidence_score - a.confidence_score);
+        if (mode === 'priority_desc') items.sort((a, b) => b.source_priority - a.source_priority);
+        if (mode === 'section_asc') items.sort((a, b) => a.section_name.localeCompare(b.section_name));
+        renderRows(items);
+      }
+
+      sortRows('confidence_desc');
+      sortSelect.addEventListener('change', () => sortRows(sortSelect.value));
+      return card;
+    }
+
+    function buildVisualizationBlock(vizData) {
+      const chartId = `viz-chart-${++state.chartCounter}`;
+      const step = getCurrentWorkflowStep();
+      const stageLabel = step ? `Step ${step.ordinal}: ${step.step_label}` : 'Step unavailable';
+      const card = document.createElement('div');
+      card.className = 'viz-card';
+      card.innerHTML = `
+        <div class="viz-toolbar">
+          <input type="text" data-role="title" placeholder="Chart title" value="${escapeHtml(vizData.title || 'Regulatory trend analysis')}" />
+          <select data-role="type">
+            <option value="bar">Bar</option>
+            <option value="line">Line</option>
+            <option value="pie">Pie</option>
+            <option value="network">Network</option>
+          </select>
+          <input type="text" data-role="x" placeholder="X-axis label" value="Category" />
+          <input type="text" data-role="y" placeholder="Y-axis label" value="Count" />
+        </div>
+        <div data-viz-stage-badge style="padding:8px 10px; font-size:11px; color:#475569; border-bottom:1px solid var(--border-color); background:#fcfcfb;">
+          Dossier: ${escapeHtml(state.activeDossierId || 'none')} | ${escapeHtml(stageLabel)}
+        </div>
+        <div id="${chartId}" style="height:420px;"></div>
+        <div class="viz-editor">
+          <input type="text" data-role="nl" placeholder="Edit chart naturally: e.g. switch to line chart and title approvals by year" />
+          <button type="button" data-role="apply-nl">Apply</button>
+        </div>
+      `;
+      const typeSel = card.querySelector('[data-role="type"]');
+      typeSel.value = String(vizData.type || 'bar').toLowerCase();
+
+      const model = normalizeVizModel(vizData);
+      model.stepId = step?.step_id || null;
+      model.stepLabel = step?.step_label || null;
+      model.stepOrdinal = step?.ordinal || null;
+      model.dossierId = state.activeDossierId || null;
+      model.conversationId = state.activeConversationId || null;
+      state.chartRegistry[chartId] = model;
+      plotChart(chartId, model);
+
+      const titleInput = card.querySelector('[data-role="title"]');
+      const xInput = card.querySelector('[data-role="x"]');
+      const yInput = card.querySelector('[data-role="y"]');
+      [titleInput, typeSel, xInput, yInput].forEach(control => {
+        control.addEventListener('change', () => {
+          const updated = state.chartRegistry[chartId];
+          updated.title = titleInput.value.trim() || updated.title;
+          updated.type = typeSel.value;
+          updated.xTitle = xInput.value.trim() || 'Category';
+          updated.yTitle = yInput.value.trim() || 'Count';
+          plotChart(chartId, updated);
+        });
+      });
+
+      card.querySelector('[data-role="apply-nl"]').addEventListener('click', () => {
+        const input = card.querySelector('[data-role="nl"]');
+        const command = input.value.trim();
+        if (!command) return;
+        const updated = applyChartNlEdits(state.chartRegistry[chartId], command);
+        state.chartRegistry[chartId] = updated;
+        titleInput.value = updated.title;
+        typeSel.value = updated.type;
+        xInput.value = updated.xTitle;
+        yInput.value = updated.yTitle;
+        plotChart(chartId, updated);
+      });
+      return card;
+    }
+
+    function normalizeVizModel(vizData) {
+      const labels = Array.isArray(vizData.labels) ? vizData.labels : [];
+      const datasets = Array.isArray(vizData.datasets) ? vizData.datasets : [];
+      const ds = datasets.length ? datasets[0] : { data: [] };
+      return {
+        type: String(vizData.type || 'bar').toLowerCase(),
+        title: String(vizData.title || 'Regulatory trend analysis'),
+        labels,
+        values: Array.isArray(ds.data) ? ds.data : [],
+        seriesName: String(ds.label || 'Series'),
+        datasets,
+        networkNodes: Array.isArray(ds.nodes) ? ds.nodes : [],
+        networkEdges: Array.isArray(ds.edges) ? ds.edges : [],
+        xTitle: 'Category',
+        yTitle: 'Count',
+      };
+    }
+
+    function plotChart(chartId, model) {
+      if (model.type === 'network') {
+        const nodes = Array.isArray(model.networkNodes) ? model.networkNodes : [];
+        const edges = Array.isArray(model.networkEdges) ? model.networkEdges : [];
+        const edgeX = [];
+        const edgeY = [];
+        edges.forEach((edge) => {
+          const source = nodes[edge.source];
+          const target = nodes[edge.target];
+          if (!source || !target) return;
+          edgeX.push(source.x, target.x, null);
+          edgeY.push(source.y, target.y, null);
+        });
+        const edgeTrace = {
+          type: 'scatter',
+          mode: 'lines',
+          x: edgeX,
+          y: edgeY,
+          hoverinfo: 'none',
+          line: { width: 1.2, color: '#94a3b8' },
+          name: 'links',
+        };
+        const nodeTrace = {
+          type: 'scatter',
+          mode: 'markers+text',
+          x: nodes.map((n) => Number(n.x || 0)),
+          y: nodes.map((n) => Number(n.y || 0)),
+          text: nodes.map((n) => String(n.label || 'node')),
+          textposition: 'top center',
+          hovertemplate: '%{text}<extra></extra>',
+          marker: {
+            size: 12,
+            color: nodes.map((n) => String(n.group || 'Unknown')),
+            colorscale: 'Viridis',
+            line: { width: 1, color: '#ffffff' },
+          },
+          name: 'entities',
+        };
+        Plotly.react(chartId, [edgeTrace, nodeTrace], {
+          title: model.title,
+          margin: { t: 45, r: 20, b: 20, l: 20 },
+          xaxis: { visible: false },
+          yaxis: { visible: false },
+          showlegend: false,
+        }, { responsive: true, displaylogo: false });
+        return;
+      }
+      const traces = model.type === 'pie'
+        ? [{ type: 'pie', labels: model.labels, values: model.values, textinfo: 'label+percent' }]
+        : (model.datasets || []).filter(ds => Array.isArray(ds.data)).map((ds, idx) => ({
+            type: model.type,
+            x: model.labels,
+            y: ds.data,
+            name: String(ds.label || `Series ${idx + 1}`),
+            marker: ds.backgroundColor ? { color: Array.isArray(ds.backgroundColor) ? ds.backgroundColor[0] : ds.backgroundColor } : undefined,
+          }));
+      const finalTraces = traces.length ? traces : [{ type: model.type, x: model.labels, y: model.values, name: model.seriesName }];
+      const layout = {
+        title: model.title,
+        margin: { t: 52, r: 30, b: 62, l: 70 },
+        legend: { orientation: 'h', y: -0.2, x: 0, font: { size: 12 } },
+        paper_bgcolor: '#ffffff',
+        plot_bgcolor: '#fcfcfb',
+        xaxis: model.type === 'pie' ? undefined : { title: model.xTitle },
+        yaxis: model.type === 'pie' ? undefined : { title: model.yTitle, gridcolor: '#e2e8f0' },
+      };
+      const polishedTraces = finalTraces.map((trace, idx) => ({
+        ...trace,
+        marker: {
+          ...(trace.marker || {}),
+          color: (trace.marker && trace.marker.color) ? trace.marker.color : ['#2563eb', '#0ea5e9', '#14b8a6', '#22c55e', '#f59e0b', '#ef4444'][idx % 6],
+        },
+        line: model.type === 'line' ? { width: 3, color: ['#2563eb', '#0ea5e9', '#14b8a6', '#22c55e', '#f59e0b', '#ef4444'][idx % 6] } : trace.line,
+      }));
+      Plotly.react(chartId, polishedTraces, layout, { responsive: true, displaylogo: false });
+    }
+
+    function applyChartNlEdits(model, command) {
+      const lowered = command.toLowerCase();
+      const next = { ...model };
+      if (lowered.includes('bar')) next.type = 'bar';
+      if (lowered.includes('line')) next.type = 'line';
+      if (lowered.includes('pie')) next.type = 'pie';
+
+      const titleMatch = command.match(/title\s+(?:to|as)?\s*[:\-]?\s*(.+)$/i);
+      if (titleMatch && titleMatch[1]) next.title = titleMatch[1].trim();
+
+      const xMatch = command.match(/x(?:-|\s)?axis\s+(?:to|as)?\s*[:\-]?\s*([a-z0-9 _/-]+)/i);
+      if (xMatch && xMatch[1]) next.xTitle = xMatch[1].trim();
+
+      const yMatch = command.match(/y(?:-|\s)?axis\s+(?:to|as)?\s*[:\-]?\s*([a-z0-9 _/-]+)/i);
+      if (yMatch && yMatch[1]) next.yTitle = yMatch[1].trim();
+      return next;
+    }
+
+    function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function withExternalLinkTargets(html) {
+      const temp = document.createElement('div');
+      temp.innerHTML = html;
+      temp.querySelectorAll('a[href]').forEach((anchor) => {
+        anchor.setAttribute('target', '_blank');
+        anchor.setAttribute('rel', 'noopener noreferrer');
+      });
+      return temp.innerHTML;
+    }
+
+    function applyNumberedCitations(html, citations) {
+      const citationById = new Map();
+      citations.forEach(c => citationById.set(c.citation_id, c));
+      const seenIds = [];
+      const numberById = new Map();
+      const citationByNumber = new Map();
+
+      function citationBadge(citation, num) {
+        const title = escapeHtml(citation.section_title || citation.citation_id);
+        const snippet = escapeHtml(citation.snippet || "No preview available.");
+        const dossier = escapeHtml(citation.dossier_id || "");
+        return `<sup class="citation-ref">[${num}]<span class="citation-tooltip"><strong>[${num}] ${title}</strong><br>${snippet}<br><em>${dossier}</em></span></sup>`;
+      }
+
+      const citationPattern = /\[([^[\]]+)\]/g;
+      return html.replace(citationPattern, (match, rawContent) => {
+        const token = String(rawContent || "").trim();
+        if (!token) return match;
+
+        // Case 1: raw citation ids like [DOS-..._CHUNK_001]
+        const directCitation = citationById.get(token);
+        if (directCitation) {
+          if (!numberById.has(token)) {
+            seenIds.push(token);
+            const idx = seenIds.length;
+            numberById.set(token, idx);
+            citationByNumber.set(idx, directCitation);
+          }
+          const num = numberById.get(token);
+          return citationBadge(directCitation, num);
+        }
+
+        // Case 2: numeric references in tables or summaries: [2], [2,3], [2 3]
+        const numericParts = token.split(/[\s,;]+/).map(part => part.trim()).filter(Boolean);
+        if (!numericParts.length || !numericParts.every(part => /^\d+$/.test(part))) {
+          return match;
+        }
+        const rendered = [];
+        for (const part of numericParts) {
+          const num = Number(part);
+          if (num <= 0) continue;
+          const resolvedCitation = citationByNumber.get(num) || citations[num - 1];
+          if (!resolvedCitation) {
+            rendered.push(`[${num}]`);
+            continue;
+          }
+          citationByNumber.set(num, resolvedCitation);
+          rendered.push(citationBadge(resolvedCitation, num));
+        }
+        return rendered.join("");
+      });
+    }
+
+    function renderThinkingDetails(trace) {
+      if (Array.isArray(trace.steps)) {
+        return `
+          <ol class="thinking-steps">
+            ${trace.steps.map(step => `<li>${typeof step === 'string' ? step : JSON.stringify(step)}</li>`).join('')}
+          </ol>
+        `;
+      }
+      if (trace.summary || trace.steps) {
+        const lines = [];
+        if (trace.summary) lines.push(`<li>${trace.summary}</li>`);
+        if (Array.isArray(trace.steps)) lines.push(...trace.steps.map(step => `<li>${step}</li>`));
+        return `<ol class="thinking-steps">${lines.join('')}</ol>`;
+      }
+      return `<pre class="text-[10px]">${JSON.stringify(trace, null, 2)}</pre>`;
+    }
+
+    async function sendMessage() {
+      const q = chatInput.value.trim();
+      if (!q || state.isBusy) return;
+      chatInput.value = "";
+      chatInput.style.height = "auto";
+      state.isBusy = true;
+      renderMessage('user', q);
+      
+      try {
+        const response = await apiCall('/v1/assistant/message', 'POST', {
+          question: q,
+          dossier_id: state.activeDossierId || null,
+          conversation_id: state.activeConversationId || null,
+          model_id: modelSelect.value,
+          review_type: reviewTypeSelect.value,
+          context_window_tokens: state.preferredContextWindow,
+          force_fallback: state.lowConnectivityMode
+        });
+
+        if (response.conversation_id) {
+          state.activeConversationId = response.conversation_id;
+          localStorage.setItem('pmada-active-conversation', response.conversation_id);
+        }
+        response._user_question = q;
+        state.lastReviewResponse = response;
+        renderMessage('assistant', response.rationale, response.citations, response.visualization_data || null, response);
+        updateContextRing(response.context_monitor);
+      } catch (e) {
+        renderMessage('assistant', "Error: " + e.message);
+      } finally {
+        state.isBusy = false;
+        refreshConversations();
+        refreshReviewerDashboard();
+        loadWorkflowStepper();
+      }
+    }
+
+    function updateContextRing(monitor) {
+      if (!monitor) return;
+      const pct = Math.min(100, Math.round((monitor.usage_ratio || 0) * 100));
+      const compactionRatio = monitor.compaction_threshold_ratio || 0.98;
+      const archived = monitor.archived_messages_count != null ? monitor.archived_messages_count : 'N/A';
+      document.getElementById('contextLabel').innerText = `${pct}%`;
+      document.getElementById('contextRing').style.strokeDashoffset = 100 - pct;
+      contextMeta.innerText = `${(monitor.used_tokens || 0).toLocaleString()} / ${(monitor.context_window_tokens || state.preferredContextWindow).toLocaleString()} tokens`;
+      composerContextMeta.innerText = `Context window ${(monitor.context_window_tokens || state.preferredContextWindow).toLocaleString()} tokens · compaction at ${Math.round(compactionRatio * 100)}% · archived ${archived}`;
+      composerModelMeta.innerText = `Model: ${modelSelect.value}`;
+      state.preferredContextWindow = monitor.context_window_tokens || state.preferredContextWindow;
+      localStorage.setItem('pmada-context-window', String(state.preferredContextWindow));
+      if (contextWindowSelect) contextWindowSelect.value = String(state.preferredContextWindow);
+      if ((monitor.usage_ratio || 0) >= compactionRatio || monitor.auto_compaction_required) {
+        contextNotice.classList.remove('hidden');
+      } else {
+        contextNotice.classList.add('hidden');
+      }
+    }
+
+    async function refreshConversations() {
+      const data = await apiCall('/v1/conversations');
+      const list = document.getElementById('conversationList');
+      list.innerHTML = "";
+      document.getElementById('historyCount').innerText = data.items.length;
+      const conversationTitle = (item) => {
+        const dossier = item?.dossier_id ? state.dossiersById[item.dossier_id] : null;
+        const product = dossier?.product_name || "";
+        const manufacturer = dossier?.manufacturer_name || "";
+        if (product && manufacturer) return `${manufacturer} - ${product}`;
+        if (product) return product;
+        return item.title || 'Untitled';
+      };
+      data.items.forEach(c => {
+        const div = document.createElement('div');
+        div.className = `nav-item ${c.conversation_id === state.activeConversationId ? 'active' : ''}`;
+        const label = conversationTitle(c);
+        div.innerHTML = `<span class="truncate" title="${escapeHtml(label)}">${escapeHtml(label)}</span>`;
+        div.onclick = () => loadConversation(c.conversation_id);
+        list.appendChild(div);
+      });
+    }
+
+    async function refreshReviewerDashboard() {
+      try {
+        const data = await apiCall('/v1/reviewer/dashboard');
+        const setVal = (id, val) => { const el = document.getElementById(id); if (el) el.innerText = String(val); };
+        setVal('dashAssigned', data.assigned_to_me || 0);
+        setVal('dashInProgress', data.in_progress || 0);
+        setVal('dashFinished', data.finished_reviews || 0);
+        setVal('dashReports', data.reports_generated || 0);
+        setVal('dashApproved', data.dossiers_approved || 0);
+        setVal('dashQueried', data.dossiers_queried || 0);
+        setVal('dashAvgTot', `${Number(data.average_tot_hours || 0).toFixed(2)}h`);
+        await refreshBenchmarkPanel();
+        await refreshTelemetryPanel();
+      } catch (_) {
+        // Keep dashboard non-blocking for UI boot.
+      }
+    }
+
+    async function refreshTelemetryPanel() {
+      const list = document.getElementById('telemetryList');
+      const meta = document.getElementById('telemetryMeta');
+      const modeBadge = document.getElementById('liveExternalMode');
+      const narrative = document.getElementById('offlineNarrative');
+      if (!list || !meta || !modeBadge || !narrative) return;
+      try {
+        const data = await apiCall('/v1/telemetry/panel');
+        modeBadge.textContent = data.daily_live_external_check_enabled ? 'External mode: live_prefer' : 'External mode: non-live';
+        meta.textContent = `Records evaluated: ${data.records_evaluated || 0}`;
+        const metrics = Array.isArray(data.metrics) ? data.metrics : [];
+        list.innerHTML = metrics.map((m) => `
+          <div class="telemetry-card">
+            <div class="font-semibold">${escapeHtml(m.name || 'Metric')}</div>
+            <div class="text-lg font-bold text-slate-800">${escapeHtml(m.display_value || 'n/a')}</div>
+            <div class="text-[11px] text-slate-600 mt-1">${escapeHtml(m.description || '')}</div>
+          </div>
+        `).join('');
+        const externalMetric = metrics.find((m) => (m.name || '').toLowerCase().includes('external-source hit rate'));
+        const lowExternal = typeof externalMetric?.value === 'number' && externalMetric.value < 0.6;
+        if (!data.daily_live_external_check_enabled || lowExternal) {
+          narrative.classList.remove('hidden');
+          narrative.textContent = 'Live-demo fallback narrative: if external sources are slow or unavailable, workflow continues with clear provenance flags while daily live checks remain mandatory.';
+        } else {
+          narrative.classList.add('hidden');
+          narrative.textContent = '';
+        }
+      } catch (e) {
+        modeBadge.textContent = 'External mode: unavailable';
+        meta.textContent = 'Telemetry unavailable';
+        list.innerHTML = `<div class="text-xs text-rose-600">Could not load telemetry: ${escapeHtml(e.message || 'request failed')}</div>`;
+      }
+    }
+
+    async function refreshBenchmarkPanel() {
+      const list = document.getElementById('benchmarkList');
+      const meta = document.getElementById('benchmarkMeta');
+      if (!list || !meta) return;
+      try {
+        const data = await apiCall('/v1/benchmark/panel');
+        const records = data.records_evaluated ?? 'n/a';
+        const version = data.dataset_version || 'latest_report';
+        meta.textContent = `Dataset: ${version} · Records: ${records}`;
+        const metrics = Array.isArray(data.metrics) ? data.metrics : [];
+        if (!metrics.length) {
+          list.innerHTML = '<div class="text-xs text-slate-500">No benchmark metrics available.</div>';
+          return;
+        }
+        list.innerHTML = metrics.map((m) => `
+          <div class="p-2 rounded border border-slate-200 bg-slate-50">
+            <div class="font-semibold">${escapeHtml(m.name || 'Metric')}</div>
+            <div class="text-lg font-bold text-slate-800">${escapeHtml(m.display_value || 'n/a')}</div>
+          </div>
+        `).join('');
+      } catch (e) {
+        meta.textContent = 'Benchmark unavailable';
+        list.innerHTML = `<div class="text-xs text-rose-600">Could not load benchmark: ${escapeHtml(e.message || 'request failed')}</div>`;
+      }
+    }
+
+    async function refreshReportsList() {
+      const list = document.getElementById('reportsList');
+      if (!list) return;
+      list.innerHTML = '<div class="text-xs text-slate-500">Loading reports...</div>';
+      try {
+        const data = await apiCall('/v1/reports');
+        if (!data.items?.length) {
+          list.innerHTML = '<div class="text-xs text-slate-500">No generated reports yet.</div>';
+          return;
+        }
+        list.innerHTML = data.items.map((r) => `
+          <article class="rounded-lg border border-slate-200 bg-white p-3">
+            <div class="font-semibold text-sm">${escapeHtml(r.report_title || r.report_id)}</div>
+            <div class="text-xs text-slate-500 mt-1">${escapeHtml(r.dossier_id || '')} · ${escapeHtml(r.final_verdict || 'unknown')}</div>
+            <div class="mt-2 flex flex-wrap gap-2 text-xs">
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/html" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-slate-300 hover:bg-slate-50">HTML</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/pdf" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-slate-300 hover:bg-slate-50">PDF</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/text" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-slate-300 hover:bg-slate-50">Text</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/word" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-slate-300 hover:bg-slate-50">Word</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/json" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-slate-300 hover:bg-slate-50">JSON</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/query_letter" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-slate-300 hover:bg-slate-50">Query Letter</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/decision_log" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-slate-300 hover:bg-slate-50">Decision Log</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/judge_pack_html" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-indigo-300 text-indigo-700 hover:bg-indigo-50">Judge Pack HTML</a>
+              <a href="/v1/reports/${encodeURIComponent(r.report_id)}/judge_pack_pdf" target="_blank" rel="noopener noreferrer" class="px-2 py-1 rounded border border-indigo-300 text-indigo-700 hover:bg-indigo-50">Judge Pack PDF</a>
+            </div>
+          </article>
+        `).join('');
+      } catch (e) {
+        list.innerHTML = `<div class="text-xs text-rose-600">Could not load reports: ${escapeHtml(e.message || 'request failed')}</div>`;
+      }
+    }
+
+    function setWorkspaceView(view) {
+      const showDashboard = view === 'dashboard';
+      const showReports = view === 'reports';
+      const showReview = view === 'review';
+      dashboardView.classList.toggle('hidden', !showDashboard);
+      reportsView.classList.toggle('hidden', !showReports);
+      chatViewport.classList.toggle('hidden', !showReview);
+      composerShell.classList.toggle('hidden', !showReview);
+      openDashboardBtn.classList.toggle('active', showDashboard);
+      openReportsBtn.classList.toggle('active', showReports);
+      openIntakeBtn.classList.toggle('active', showReview);
+      if (showDashboard) refreshReviewerDashboard();
+      if (showReports) refreshReportsList();
+    }
+
+    async function loadConversation(id) {
+      state.activeConversationId = id;
+      localStorage.setItem('pmada-active-conversation', id);
+      const data = await apiCall(`/v1/conversations/${id}`);
+      clearRenderedMessages();
+      const maxRenderedMessages = 80;
+      const items = Array.isArray(data.messages) ? data.messages : [];
+      const start = Math.max(0, items.length - maxRenderedMessages);
+      const sliced = items.slice(start);
+      if (start > 0) {
+        const notice = document.createElement('div');
+        notice.setAttribute('data-chat-transient', '1');
+        notice.className = 'text-[11px] text-slate-500 mb-2';
+        notice.innerText = `Showing latest ${sliced.length} messages for faster loading.`;
+        messages.appendChild(notice);
+      }
+      sliced.forEach(m => renderMessage(m.role, m.content, m.citations));
+      updateContextRing(data.conversation.context_monitor);
+      refreshConversations();
+      loadWorkflowStepper();
+    }
+
+    async function refreshDossierList() {
+      const data = await apiCall('/v1/dossiers');
+      const list = document.getElementById('dossierList');
+      list.innerHTML = "";
+      state.dossiersById = {};
+      data.items.forEach(d => {
+        state.dossiersById[d.dossier_id] = d;
+        const div = document.createElement('div');
+        div.className = `p-3 rounded-xl border cursor-pointer hover:bg-slate-50 transition-all ${d.dossier_id === state.activeDossierId ? 'border-[var(--accent-color)] bg-orange-50' : 'border-[#e5e5e0]'}`;
+        const barColor = d.progress_color === 'green' ? '#16a34a' : d.progress_color === 'amber' ? '#d97706' : '#9ca3af';
+        const statusLabel = d.progress_state === 'done' ? 'Done' : d.progress_state === 'in_progress' ? 'In progress' : 'Not started';
+        div.innerHTML = `
+          <div class="text-sm font-bold truncate">${d.product_name}</div>
+          <div class="text-[10px] text-[#6e6e6a]">${d.country}</div>
+          <div class="mt-2">
+            <div class="flex items-center justify-between text-[10px] font-semibold text-slate-500">
+              <span>${statusLabel}</span><span>${d.progress_percent || 0}%</span>
+            </div>
+            <div class="mt-1 h-1.5 rounded-full bg-slate-200 overflow-hidden">
+              <div style="width:${d.progress_percent || 0}%;background:${barColor};height:100%;"></div>
+            </div>
+          </div>
+        `;
+        div.onclick = () => {
+          state.activeDossierId = d.dossier_id;
+          localStorage.setItem('pmada-active-dossier', d.dossier_id);
+          document.getElementById('dossierName').innerText = d.product_name;
+          document.getElementById('dossierModal').classList.add('hidden');
+          resetReviewSessionUi();
+          setSopPanelVisibility(true);
+          createFreshConversationForActiveDossier()
+            .then(() => Promise.all([refreshConversations(), refreshReviewerDashboard(), loadWorkflowStepper()]))
+            .catch((e) => renderMessage('assistant', `Could not start new dossier review session: ${e.message}`));
+        };
+        list.appendChild(div);
+      });
+    }
+
+    async function loadWorkflowStepper() {
+      if (!sopStepperList || !sopStepperMeta) return;
+      if (!state.activeDossierId) {
+        sopStepperMeta.innerText = 'Select a dossier to load workflow steps.';
+        sopStepperList.innerHTML = '';
+        updateChartsStageBadges();
+        return;
+      }
+      try {
+        const qs = new URLSearchParams({ dossier_id: state.activeDossierId });
+        if (state.activeConversationId) qs.set('conversation_id', state.activeConversationId);
+        const wf = await apiCall(`/v1/workflow/state?${qs.toString()}`);
+        state.workflowState = wf;
+        renderWorkflowStepper();
+        updateChartsStageBadges();
+      } catch (e) {
+        sopStepperMeta.innerText = `Workflow state unavailable: ${e.message}`;
+        sopStepperList.innerHTML = '';
+        updateChartsStageBadges();
+      }
+    }
+
+    function renderWorkflowStepper() {
+      const wf = state.workflowState;
+      if (!wf || !Array.isArray(wf.steps)) return;
+      const currentIndex = wf.steps.findIndex((s) => s.status === 'current');
+      const activeIndex = currentIndex >= 0 ? currentIndex : Math.max(0, wf.steps.findIndex((s) => s.status !== 'completed'));
+      sopStepperMeta.innerText = wf.all_completed
+        ? 'All SOP steps completed. You can finalize exports.'
+        : `Current step: ${wf.steps.find((s) => s.status === 'current')?.step_label || 'n/a'}`;
+      if (sopCurrentLabel) {
+        const active = wf.steps[activeIndex];
+        sopCurrentLabel.innerText = active ? `Focused: Step ${active.ordinal} - ${active.step_label}` : '';
+      }
+      sopStepperList.innerHTML = wf.steps.map((step) => {
+        const isCompleted = step.status === 'completed';
+        const isCurrent = step.status === 'current';
+        const disabled = !(isCompleted || isCurrent);
+        const tone = isCompleted
+          ? 'border-emerald-200 bg-emerald-50'
+          : isCurrent
+            ? 'border-amber-200 bg-amber-50'
+            : 'border-slate-200 bg-slate-50';
+        return `
+          <div class="rounded-lg border ${tone} p-2">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="text-[11px] font-bold">Step ${step.ordinal}: ${escapeHtml(step.step_label)}</div>
+                <div class="text-[11px] text-slate-600 mt-1">${escapeHtml(step.prompt_template || '')}</div>
+              </div>
+              <div class="flex flex-col items-end gap-1">
+                <span class="text-[10px] font-bold uppercase">${escapeHtml(step.status)}</span>
+                <button data-step-id="${escapeHtml(step.step_id)}" class="action-btn text-[10px]" ${disabled ? 'disabled' : ''}>
+                  ${isCompleted ? 'Re-run' : 'Run Step'}
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+      sopStepperList.querySelectorAll('button[data-step-id]').forEach((btn) => {
+        btn.addEventListener('click', () => runSopStep(btn.getAttribute('data-step-id')));
+      });
+      if (sopPrevBtn) {
+        sopPrevBtn.disabled = activeIndex <= 0;
+        sopPrevBtn.onclick = () => focusStepperStep(activeIndex - 1);
+      }
+      if (sopNextBtn) {
+        sopNextBtn.disabled = activeIndex >= wf.steps.length - 1;
+        sopNextBtn.onclick = () => focusStepperStep(activeIndex + 1);
+      }
+      if (sopRunBtn) {
+        const active = wf.steps[activeIndex];
+        sopRunBtn.disabled = !active || active.status === 'pending';
+        sopRunBtn.onclick = () => active && runSopStep(active.step_id);
+      }
+    }
+
+    function focusStepperStep(index) {
+      const wf = state.workflowState;
+      if (!wf || !Array.isArray(wf.steps)) return;
+      const bounded = Math.max(0, Math.min(index, wf.steps.length - 1));
+      const rows = sopStepperList.querySelectorAll('div.rounded-lg.border');
+      rows.forEach((row, idx) => {
+        row.classList.toggle('ring-2', idx === bounded);
+        row.classList.toggle('ring-[var(--accent-color)]', idx === bounded);
+      });
+      const step = wf.steps[bounded];
+      if (sopCurrentLabel && step) sopCurrentLabel.innerText = `Focused: Step ${step.ordinal} - ${step.step_label}`;
+      if (sopRunBtn) sopRunBtn.disabled = !step || step.status === 'pending';
+      if (sopRunBtn && step) sopRunBtn.onclick = () => runSopStep(step.step_id);
+      if (sopPrevBtn) sopPrevBtn.disabled = bounded <= 0;
+      if (sopNextBtn) sopNextBtn.disabled = bounded >= wf.steps.length - 1;
+    }
+
+    async function runSopStep(stepId) {
+      const wf = state.workflowState;
+      const step = wf?.steps?.find((s) => s.step_id === stepId);
+      if (!step || !state.activeDossierId || state.isBusy) return;
+      state.isBusy = true;
+      const prompt = step.prompt_template;
+      const apiQuestion = `${prompt}\n\nsop_step_id::${step.step_id}`;
+      try {
+        renderMessage('user', `[SOP Step ${step.ordinal}: ${step.step_label}]\n${prompt}`);
+        const response = await apiCall('/v1/assistant/message', 'POST', {
+          question: apiQuestion,
+          dossier_id: state.activeDossierId || null,
+          conversation_id: state.activeConversationId || null,
+          model_id: modelSelect.value,
+          review_type: reviewTypeSelect.value,
+          context_window_tokens: state.preferredContextWindow,
+          force_fallback: state.lowConnectivityMode
+        });
+        if (response.conversation_id) {
+          state.activeConversationId = response.conversation_id;
+          localStorage.setItem('pmada-active-conversation', response.conversation_id);
+        }
+        response._user_question = prompt;
+        state.lastReviewResponse = response;
+        renderMessage('assistant', response.rationale, response.citations, response.visualization_data || null, response);
+      } catch (e) {
+        renderMessage('assistant', `SOP step failed: ${e.message}`);
+      } finally {
+        state.isBusy = false;
+        await loadWorkflowStepper();
+        refreshConversations();
+        refreshReviewerDashboard();
+      }
+    }
+
+    document.getElementById('activeDossierBadge').onclick = () => {
+      document.getElementById('dossierModal').classList.remove('hidden');
+      refreshDossierList();
+    };
+    document.getElementById('closeDossierModal').onclick = () => document.getElementById('dossierModal').classList.add('hidden');
+    document.getElementById('contextMeta').onclick = () => document.getElementById('settingsModal').classList.remove('hidden');
+    document.getElementById('contextLabel').onclick = () => document.getElementById('settingsModal').classList.remove('hidden');
+    document.getElementById('closeSettingsModal').onclick = () => document.getElementById('settingsModal').classList.add('hidden');
+    const uploadBtn = document.getElementById('uploadBtn') || document.getElementById('attachBtn');
+    uploadBtn.onclick = () => fileInput.click();
+    openDashboardBtn.onclick = () => setWorkspaceView('dashboard');
+    openReportsBtn.onclick = () => setWorkspaceView('reports');
+    openIntakeBtn.onclick = () => { setWorkspaceView('review'); fileInput.click(); };
+    if (openAdminBtn) {
+      openAdminBtn.onclick = () => { window.location.href = '/admin'; };
+    }
+    if (toggleSopPanelBtn) {
+      toggleSopPanelBtn.onclick = () => {
+        setWorkspaceView('review');
+        setSopPanelVisibility(!state.sopPanelVisible);
+      };
+    }
+    if (sopRevealBtn) sopRevealBtn.onclick = () => setSopPanelVisibility(true);
+    if (refreshReportsBtn) refreshReportsBtn.onclick = refreshReportsList;
+    if (logoutBtn) {
+      logoutBtn.onclick = async () => {
+        try {
+          await apiCall('/v1/auth/logout', 'POST', {});
+        } catch (_) {
+          // Even if logout call fails, route user to login to avoid stranded session UI.
+        } finally {
+          localStorage.removeItem('pmada-active-conversation');
+          window.location.href = '/login';
+        }
+      };
+    }
+    audioBtn.onclick = toggleAudioCapture;
+    chatToggleBtn.onclick = () => sidebar.classList.toggle('collapsed');
+    document.getElementById('mobileMenuBtn').onclick = () => sidebar.classList.toggle('collapsed');
+    fileInput.onchange = () => {
+      const file = fileInput.files[0];
+      if (file) {
+        uploadEvidenceFile(file);
+      }
+      fileInput.value = "";
+    };
+    document.getElementById('sendMessageBtn').onclick = sendMessage;
+    document.getElementById('generateReportBtn').onclick = async () => {
+      if (!state.activeDossierId) {
+        renderMessage('assistant', 'Select an active dossier first, then run a review before generating a report.');
+        return;
+      }
+      if (!state.lastReviewResponse || !state.lastReviewResponse.workflow_summary) {
+        renderMessage('assistant', 'Run a review first so I can generate a report from the latest decision payload.');
+        return;
+      }
+      try {
+        const payload = state.lastReviewResponse;
+        const report = await apiCall('/v1/reports/generate', 'POST', {
+          dossier_id: state.activeDossierId,
+          conversation_id: state.activeConversationId || null,
+          report_title: `Pre-Market Authorization Review Report - ${state.activeDossierId}`,
+          review_payload: {
+            recommendation: payload.recommendation,
+            confidence: payload.confidence,
+            review_type: reviewTypeSelect.value || "generic",
+            policy_rule_hits: payload.policy_rule_hits || [],
+            section_diagnostics: payload.section_diagnostics || [],
+            amr_stewardship: payload.amr_stewardship || {},
+            verifier: payload.verifier || {},
+            citations: payload.citations || [],
+            rationale: payload.rationale || "",
+          }
+        });
+        renderMessage(
+          'assistant',
+          `Report generated.\n\n- HTML: [Open report](${report.html_download_url})\n- PDF: [Open report](${report.pdf_download_url})`
+        );
+        refreshReviewerDashboard();
+        refreshReportsList();
+      } catch (e) {
+        renderMessage('assistant', `Report generation failed: ${e.message}`);
+      }
+    };
+    chatInput.onkeydown = (e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } };
+    document.getElementById('newReviewBtn').onclick = () => {
+      resetReviewSessionUi();
+      setSopPanelVisibility(true);
+      if (!state.activeDossierId) {
+        document.getElementById('dossierModal').classList.remove('hidden');
+        refreshDossierList();
+        renderMessage('assistant', 'Select a dossier to start the automated SOP review workflow.');
+        return;
+      }
+      createFreshConversationForActiveDossier()
+        .then(() => Promise.all([refreshConversations(), refreshReviewerDashboard(), loadWorkflowStepper()]))
+        .catch((e) => renderMessage('assistant', `Could not start a fresh review session: ${e.message}`));
+    };
+    if (sopStepperCloseBtn) sopStepperCloseBtn.onclick = () => setSopPanelVisibility(false);
+    document.getElementById('saveSettingsBtn').onclick = async () => {
+      const nextWindow = parseInt(contextWindowSelect.value, 10) || state.preferredContextWindow;
+      const nextTheme = themeSelect.value || "stone";
+      state.preferredContextWindow = nextWindow;
+      state.selectedTheme = nextTheme;
+      localStorage.setItem('pmada-context-window', String(nextWindow));
+      localStorage.setItem('pmada-theme', nextTheme);
+      document.documentElement.setAttribute('data-theme', nextTheme);
+      if (state.activeConversationId) {
+        try {
+          const payload = await apiCall(`/v1/conversations/${state.activeConversationId}/context`, 'PATCH', { context_window_tokens: nextWindow });
+          updateContextRing(payload.conversation.context_monitor);
+        } catch (e) {
+          renderMessage('assistant', `Context window update failed: ${e.message}`);
+        }
+      } else {
+        composerContextMeta.innerText = `Context window ${nextWindow.toLocaleString()} tokens · compaction at 98%`;
+      }
+      document.getElementById('settingsModal').classList.add('hidden');
+    };
+
+    async function init() {
+      try {
+        const user = await apiCall('/v1/auth/me');
+        state.currentUser = user;
+        document.getElementById('userBadge').innerText = user.display_name;
+        document.getElementById('userInitial').innerText = user.display_name.charAt(0);
+        if (openAdminBtn) {
+          const isSuperuser = String(user.role || '').toLowerCase() === 'superuser';
+          openAdminBtn.classList.toggle('hidden', !isSuperuser);
+        }
+      } catch(e) { window.location.href = '/login'; }
+
+      const mData = await apiCall('/v1/models');
+      const modelSelectElement = document.getElementById('modelSelect');
+      mData.available_models.forEach(m => {
+        const opt = document.createElement('option');
+        opt.value = m.id;
+        opt.textContent = m.label;
+        modelSelectElement.appendChild(opt);
+      });
+      if (mData.default_model_id) {
+        modelSelectElement.value = mData.default_model_id;
+      }
+      themeSelect.value = state.selectedTheme;
+      contextWindowSelect.value = String(state.preferredContextWindow);
+      document.documentElement.setAttribute('data-theme', state.selectedTheme);
+      composerModelMeta.innerText = `Model: ${modelSelectElement.value || 'unknown'}`;
+      composerContextMeta.innerText = `Context window ${state.preferredContextWindow.toLocaleString()} tokens · compaction at 98%`;
+      setSopPanelVisibility(state.sopPanelVisible);
+
+      await refreshDossierList();
+      await refreshConversations();
+      await refreshReviewerDashboard();
+      await loadWorkflowStepper();
+      setWorkspaceView('review');
+    }
+
+    async function uploadEvidenceFile(file) {
+      if (state.isBusy) return;
+      const activeDossier = state.dossiersById[state.activeDossierId];
+      if (!activeDossier) {
+        renderMessage('assistant', 'Select an active dossier first before uploading evidence.');
+        return;
+      }
+
+      const generatedDossierId = `intake-${Date.now()}`;
+      const form = new FormData();
+      form.append('file', file, file.name);
+      form.append('dossier_id', generatedDossierId);
+      form.append('country', activeDossier.country || 'Unknown');
+      form.append('submission_date', activeDossier.submission_date || new Date().toISOString().slice(0, 10));
+      form.append('product_name', activeDossier.product_name || 'Uploaded Evidence');
+      form.append('inn_name', activeDossier.inn_name || 'Unknown');
+      form.append('applicant', activeDossier.inn_name || 'Unknown');
+      form.append('manufacturer', activeDossier.product_name || 'Unknown');
+      form.append('facility_country', activeDossier.country || 'Unknown');
+      form.append('review_program', activeDossier.review_program || 'marketing_authorization');
+
+      state.isBusy = true;
+      renderMessage('assistant', `Uploading ${file.name} to intake ${generatedDossierId}...`);
+      try {
+        const response = await fetch('/v1/dossiers/intake', {
+          method: 'POST',
+          body: form,
+        });
+        const payload = await response.json();
+        if (!response.ok) {
+          throw new Error(payload?.detail || payload?.message || response.statusText);
+        }
+        renderMessage('assistant', `File uploaded successfully. ${payload.message}`);
+        refreshDossierList();
+        refreshReviewerDashboard();
+      } catch (err) {
+        renderMessage('assistant', `File upload failed: ${err.message}`);
+      } finally {
+        state.isBusy = false;
+      }
+    }
+
+    const speechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+    let recognition = null;
+    let isRecordingAudio = false;
+    let finalTranscript = "";
+
+    function toggleAudioCapture() {
+      if (!speechRecognition) {
+        renderMessage('assistant', 'Audio input is not available in this browser.');
+        return;
+      }
+      if (!recognition) {
+        recognition = new speechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = true;
+        recognition.lang = 'en-US';
+        recognition.onresult = (event) => {
+          let transcript = "";
+          let stable = "";
+          for (let i = 0; i < event.results.length; i += 1) {
+            const piece = event.results[i][0]?.transcript || "";
+            transcript += piece;
+            if (event.results[i].isFinal) stable += piece;
+          }
+          finalTranscript = (stable || transcript).trim();
+          chatInput.value = transcript.trim();
+        };
+        recognition.onerror = (event) => {
+          renderMessage('assistant', `Audio transcription error: ${event.error}`);
+          audioBtn.classList.remove('recording');
+          isRecordingAudio = false;
+        };
+        recognition.onend = () => {
+          audioBtn.classList.remove('recording');
+          isRecordingAudio = false;
+          const transcript = (finalTranscript || chatInput.value || "").trim();
+          if (transcript && !state.isBusy) {
+            chatInput.value = transcript;
+            sendMessage();
+          }
+          finalTranscript = "";
+        };
+      }
+      if (isRecordingAudio) {
+        recognition.stop();
+        isRecordingAudio = false;
+        audioBtn.classList.remove('recording');
+      } else {
+        finalTranscript = "";
+        recognition.start();
+        isRecordingAudio = true;
+        audioBtn.classList.add('recording');
+      }
+    }
+
+    function pickCaseDossier(items, mode) {
+      if (!Array.isArray(items) || !items.length) return null;
+      if (mode === 'pass') {
+        return items.find((d) => /GOOD|COMPLETE|PASS/i.test(d.dossier_id || '') || /metformin|amlodipine|paracetamol/i.test(d.product_name || '')) || items[0];
+      }
+      if (mode === 'amr') {
+        return items.find((d) => /AMR|WATCH|CEF|CIP|AZI|AMOX/i.test(`${d.dossier_id} ${d.product_name}`)) || items[0];
+      }
+      if (mode === 'vet') {
+        return items.find((d) => /VET|OXY|TYLO|ENRO|CATTLE|GOAT/i.test(`${d.dossier_id} ${d.product_name}`)) || items[0];
+      }
+      return items[0];
+    }
+
+    async function sendProgrammaticMessage(prompt) {
+      const response = await apiCall('/v1/assistant/message', 'POST', {
+        question: prompt,
+        dossier_id: state.activeDossierId || null,
+        conversation_id: state.activeConversationId || null,
+        model_id: modelSelect.value,
+        review_type: reviewTypeSelect.value,
+        context_window_tokens: state.preferredContextWindow,
+        force_fallback: state.lowConnectivityMode
+      });
+      if (response.conversation_id) {
+        state.activeConversationId = response.conversation_id;
+        localStorage.setItem('pmada-active-conversation', response.conversation_id);
+      }
+      response._user_question = prompt;
+      state.lastReviewResponse = response;
+      renderMessage('assistant', response.rationale, response.citations, response.visualization_data || null, response);
+    }
+
+    async function runCaseStudy(mode) {
+      const dossiers = await apiCall('/v1/dossiers');
+      const items = Array.isArray(dossiers.items) ? dossiers.items : [];
+      const chosen = pickCaseDossier(items, mode);
+      if (!chosen) {
+        renderMessage('assistant', 'No dossier available for case study.');
+        return;
+      }
+      state.activeDossierId = chosen.dossier_id;
+      document.getElementById('dossierName').innerText = chosen.product_name || chosen.dossier_id;
+      const prompt = mode === 'pass'
+        ? 'Run full SOP review with data quality first and provide a pass-focused verdict with confidence and trace.'
+        : mode === 'amr'
+          ? 'Run full SOP review with AMR stewardship focus, identify gaps, and provide query-applicant verdict with trace.'
+          : 'Run full SOP review with veterinary withdrawal/residue safety focus and provide verdict with trace.';
+      await sendProgrammaticMessage(prompt);
+      await sendProgrammaticMessage('show sop status');
+    }
+
+
+    if (casePassBtn) casePassBtn.onclick = () => runCaseStudy('pass').catch((e) => renderMessage('assistant', `Case study failed: ${e.message}`));
+    if (caseAmrQueryBtn) caseAmrQueryBtn.onclick = () => runCaseStudy('amr').catch((e) => renderMessage('assistant', `Case study failed: ${e.message}`));
+    if (caseVetQueryBtn) caseVetQueryBtn.onclick = () => runCaseStudy('vet').catch((e) => renderMessage('assistant', `Case study failed: ${e.message}`));
+
+    init();
+  </script>
+</body>
+</html>
+
+
