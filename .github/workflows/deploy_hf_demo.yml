@@ -8,8 +8,21 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ secrets.HF_TOKEN != '' && vars.HF_SPACE_REPO != '' }}
     steps:
+      - name: Validate required deploy credentials
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE_REPO: ${{ vars.HF_SPACE_REPO }}
+        run: |
+          if [ -z "${HF_TOKEN}" ]; then
+            echo "Missing required secret: HF_TOKEN"
+            exit 1
+          fi
+          if [ -z "${HF_SPACE_REPO}" ]; then
+            echo "Missing required variable: HF_SPACE_REPO"
+            exit 1
+          fi
+
       - name: Configure git
         run: |
           git config --global user.email "actions@github.com"
